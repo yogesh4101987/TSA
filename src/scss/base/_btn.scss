@@ -1,0 +1,47 @@
+// btn
+.btn {
+    display: inline-block;
+    font-family: $font-medium;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;  
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 1.2rem 1.6em;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    @include border-radius(0.8rem);
+    background: $clr-primary;
+    color: $clr-root;
+    border: 1px solid $clr-primary;
+    min-width: 15rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    @media only screen and (max-width: $media-sm) {
+        min-width: 21rem;
+    }
+    &.btn-disable {
+        cursor: none;
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    &.btn-link {
+        padding: 0rem;
+        min-width: auto;
+        @media only screen and (max-width: $media-sm) {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+    }
+    &.btn-secondary {
+        background: transparent;
+        color: $clr-primary;
+        border: 2px solid $clr-primary;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        font-family: $font-bold;
+        border-radius: 1px;
+    }
+}
