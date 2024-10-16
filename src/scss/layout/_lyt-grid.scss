@@ -1,0 +1,17 @@
+.lyt-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    @media only screen and (max-width: $media-mobile) {
+       flex-direction: column;
+    }
+    &.typ-col-2{
+        .grid-col{
+            width: 50%;
+            @media only screen and (max-width: $media-mobile) {
+                width: 100%;
+            }
+        }
+    }
+}

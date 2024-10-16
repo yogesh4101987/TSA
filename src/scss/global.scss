@@ -16,7 +16,7 @@
 @import "./base/base-setup";
 @import "./base/bs-sec"; 
 @import "./base/btn"; 
-/* component */
+@import "./vendor-override/swiperOverride"; 
 
-// @import "component/cp-header";
-// @import "component/cp-footer";
+/* layout */
+@import "./layout/lyt-grid";

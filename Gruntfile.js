@@ -41,7 +41,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 8000,
-          base: ['assets', 'assets/css', 'assets/images', 'src', 'src/pages'],
+          base: ['assets', 'assets/css', 'assets/js', 'assets/images', 'src', 'src/pages'],
           livereload: true,
           open: true,
           middleware: function(connect, options, middlewares) {
