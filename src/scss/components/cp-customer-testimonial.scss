@@ -57,6 +57,7 @@
             font-size: 2.8rem;
             color: $clr-root;
             z-index: 2;
+            cursor: pointer;
         }
     }
     .content-wrap{
@@ -109,6 +110,7 @@
             width: 14.5rem;
             height: 17rem;
             background: url(/components/cp-customer-testimonial/images/comment-img.png) 0 0 no-repeat;
+            background-size: contain;
             display: block;
             position: absolute;
             top: 0;
