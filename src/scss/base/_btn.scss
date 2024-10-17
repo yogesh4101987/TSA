@@ -30,6 +30,23 @@
     &.btn-link {
         padding: 0rem;
         min-width: auto;
+        background: none;
+        color: $clr-primary;
+        border: none;
+        // text-decoration: underline;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        position: relative;
+        &::after{
+            content: '';
+            width: 9.1rem;
+            height: .1rem;
+            background-color: $clr-primary;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
         @media only screen and (max-width: $media-sm) {
             font-size: 1.4rem;
             line-height: 1.8rem;
