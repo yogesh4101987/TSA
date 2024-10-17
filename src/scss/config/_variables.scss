@@ -1,11 +1,12 @@
 /* colors */
 
 $clr-root: #FFFFFF;
-$clr-base: #000000;
+$clr-base: #333333;
 $clr-primary: #3D7EDB;
 $clr-secondary: #D2042D;
 $clr-para: #666666;
 $clr-bg: #ECF2FB;
+$clr-border: #DEDEDE;
 
 /*font family*/
 $font-light: 'Poppins Light'; //300
@@ -13,7 +14,7 @@ $font-regular: 'Poppins Regular'; //400
 $font-medium: 'Poppins Medium'; //500
 $font-semiBold: 'Poppins Semibold'; //600
 $font-bold: 'Poppins Bold'; //700
-$font-bold: 'Poppins ExtraBold'; //800
+$font-extraBold: 'Poppins ExtraBold'; //800
 
 /* breakpoints */
 $media-mobile: 767px;

@@ -21,13 +21,26 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: 'src/scss/components',  
-            src: ['*.scss'],            
-            dest: 'src/components',      
+            cwd: 'src/scss/components',
+            src: ['*.scss'],
+            dest: 'src/components',
             ext: '.css',
             rename: function(dest, src) {
               const componentName = src.split('.')[0];
               const outputPath = `${dest}/${componentName}/${componentName}.css`;
+              console.log(`Compiling ${src} to ${outputPath}`);
+              return outputPath;
+            }
+          },
+          {
+            expand: true,
+            cwd: 'src/scss/layout',  
+            src: ['*.scss'],
+            dest: 'src/components/layout',
+            ext: '.css',
+            rename: function(dest, src) {
+              const layoutName = src.split('.')[0];
+              const outputPath = `${dest}/${layoutName}.css`;
               console.log(`Compiling ${src} to ${outputPath}`);
               return outputPath;
             }
@@ -41,7 +54,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 8000,
-          base: ['assets', 'assets/css', 'assets/images', 'src', 'src/pages'],
+          base: ['assets', 'assets/css', 'assets/js', 'assets/images', 'src', 'src/pages'],
           livereload: true,
           open: true,
           middleware: function(connect, options, middlewares) {
