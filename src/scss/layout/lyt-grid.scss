@@ -1,3 +1,6 @@
+@import "../config/variables";
+@import "../config/mixin";
+
 .lyt-grid{
     display: flex;
     justify-content: space-between;
