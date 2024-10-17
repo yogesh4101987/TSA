@@ -10,7 +10,8 @@
     }
     .img-wrap{
         @include border-radius(1.6rem);
-        max-height: 16.8rem;        
+        height: 16.8rem;
+        display: block;    
         img {
             @include border-radius(1.6rem);
             object-fit: contain;
@@ -71,7 +72,7 @@
         .c-title{
             font-family: $font-semiBold;
             font-size: 1.6rem;
-            line-height: 2.4rem;
+            line-height: 2.3rem;
             color: #333333;
             margin-bottom: 1.2rem;
             overflow: hidden;

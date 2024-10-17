@@ -22,7 +22,8 @@
   border-radius: 1.6rem;
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
-  max-height: 16.8rem;
+  height: 16.8rem;
+  display: block;
 }
 .cp-blog .img-wrap img {
   border-radius: 1.6rem;
@@ -95,7 +96,7 @@
 .cp-blog .content-wrap .c-title {
   font-family: "Poppins Semibold";
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 2.3rem;
   color: #333333;
   margin-bottom: 1.2rem;
   overflow: hidden;
