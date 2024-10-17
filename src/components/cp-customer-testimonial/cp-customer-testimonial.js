@@ -1,11 +1,15 @@
 var winWidth = $(window).width();
 
-$(document).ready(function() {
-    homeTestimonialSlider();
+$(document).ready(function() {    
+    if ($(window).width() < 769) {
+        homeTestimonialSlider();
+    }
 });
 
 $(window).resize(function() {
-    homeTestimonialSlider();
+    if ($(window).width() < 769) {
+        homeTestimonialSlider();
+    }
 });
 
 function homeTestimonialSlider() {
