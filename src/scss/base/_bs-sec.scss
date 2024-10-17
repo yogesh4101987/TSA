@@ -8,6 +8,16 @@
     &.typ-gray-bg{
         background:#ECF2FB;
     }
+    &.typ-prodcut{
+        position: relative;
+        padding-top: 0rem;
+        .cont-wrap{
+            position: absolute;
+            top: 50%;
+            vertical-align: middle;
+            transform: translateY(-50%);
+        }
+    }
     @media only screen and (max-width: $media-sm) {
         padding: 2.8rem 0rem;
     }
@@ -24,6 +34,7 @@
         color: $clr-base;
         &.typ-white{
             color: $clr-root;
+            margin-bottom: 2.4rem;
         }
         @media only screen and (max-width: $media-sm) {
             font-size: 3rem;
@@ -38,4 +49,5 @@
     }
     .sec-cont {
     }
+
 }
