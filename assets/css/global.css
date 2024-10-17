@@ -842,7 +842,7 @@ p {
   font-family: "Poppins Regular";
   color: #666666;
 }
-.btn {
+.btn-primary {
   display: inline-block;
   font-family: "Poppins Medium";
   text-align: center;
@@ -866,16 +866,16 @@ p {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media only screen and (max-width: 991px) {
-  .btn {
+  .btn-primary {
     min-width: 21rem;
   }
 }
-.btn.btn-disable {
+.btn-primary.btn-disable {
   cursor: none;
   opacity: 0.5;
   pointer-events: none;
 }
-.btn.btn-link {
+.btn-primary.btn-link {
   padding: 0rem;
   min-width: auto;
   background: none;
@@ -885,7 +885,7 @@ p {
   line-height: 2.4rem;
   position: relative;
 }
-.btn.btn-link::after {
+.btn-primary.btn-link::after {
   content: "";
   width: 9.1rem;
   height: 0.1rem;
@@ -896,12 +896,16 @@ p {
   bottom: 0;
 }
 @media only screen and (max-width: 991px) {
-  .btn.btn-link {
+  .btn-primary.btn-link {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
 }
-.btn.btn-secondary {
+.btn-primary:hover {
+  background-color: #FFFFFF;
+  color: #3D7EDB;
+}
+.btn-primary.btn-secondary {
   background: transparent;
   color: #3D7EDB;
   border: 2px solid #3D7EDB;

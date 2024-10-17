@@ -43,11 +43,21 @@
                position: absolute;
                bottom: -30px;
                padding-left: 0;
+               width: 100%;
+            }
+            .location-wrap{
+                @media only screen and (max-width: $media-mobile) {
+                    width: 100%;
+
+                }
             }
             .location-text{
                 font-size: 1.4rem;
                 color: $clr-base;
                 font-family: $font-regular;
+                @media only screen and (max-width: $media-mobile) {
+                    width: 90%;
+                }
             }
             .update-location{
                 font-size: 1.2rem;
@@ -55,6 +65,20 @@
                 color: $clr-primary;
                 text-decoration: underline;
                 padding-right: 2.4rem;
+                @media only screen and (max-width: $media-mobile) {
+                    display: none;
+                }
+            }
+            .icon{
+                display: none;
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 2.4rem;
+                    color: #999;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
             }
             .btn-order{
                 font-size: 1.4rem;
@@ -71,20 +95,48 @@
         padding: 1.8rem 0;
         .container{
             display: flex;
+            justify-content: space-between;
         }
         .nav-list{
           display: flex;
           @media only screen and (max-width: $media-mobile) {
             display: none;
+            left: -100%;
+            position: absolute;
+            transition: all ease 0.7s;
+
+        }
+        &.active{
+            opacity: 1;
+            display: block;
+            width: 100%;
+            top: 0;
+            background: #fff;
+            height: 100%;
+            left: 0;
+            padding: 1rem;
+            z-index: 1;
+            padding: 5rem;
         }
         .nav-item{
             position: relative;
+            @media only screen and (max-width: $media-mobile) {
+                margin-bottom: 2rem;
+            }
             .nav-link{
                 font-size: 1.4rem;
-                color: $clr-base;
                 font-family: $font-semiBold;
                 padding: 0 2.4rem;
                 position: relative;
+                background-size: 200% 100%;
+                background-position: -100%;
+                background-image: linear-gradient(to right, $clr-primary,    $clr-primary 50%,$clr-base 50%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 0.3s ease-in-out;
+                @media only screen and (max-width: $media-mobile) {
+                    padding: 0;
+                } 
                  &::after{
                      content: "";
                      height: 2.4rem;
@@ -93,8 +145,34 @@
                      position: absolute;
                      right: 0;
                      top:0px;
+                     @media only screen and (max-width: $media-mobile) {
+                        display: none;
+                     }
                  }
+                //  &::before{
+                //     content: '';
+                //     background: #54b3d6;
+                //     display: block;
+                //     position: absolute;
+                //     bottom: -3px;
+                //     left: 0;
+                //     width: 0;
+                //     height: 3px;
+                //     transition: all 0.3s ease-in-out;
+                    
+                // }
+                &:hover{
+                    background-position: 0;
+                    // &:before{
+                    //     width: 100%;
+                    // }
+                }
             }  
+            &:first-child{
+                .nav-link{
+                    padding-left: 0;
+                }
+            }
             &:last-child{
                 .nav-link{
                     &::after{
@@ -131,6 +209,12 @@
             }
             .quick-link-icon-item{
                 position: relative;
+                &:first-child{
+                    display: none;
+                    @media only screen and (max-width: $media-mobile) {
+                        display: block;
+                    }
+                }
                 &:last-child{
                     .quick-link-item{
                     &::after{
@@ -148,8 +232,10 @@
             .quick-link-item{
                 font-size:2.4rem;
                 color: #999;
-                padding: 0 1rem;
-                
+                padding: 0 1.3rem;
+                @media only screen and (max-width: $media-mobile) {
+                    padding: 0 0.8rem;
+                }
             }
         }
     }
@@ -159,25 +245,26 @@
             display: block;
         }
         .open-menu{
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             position: relative;
+            z-index: 2;
             cursor: pointer;
             border-radius: 5px;
             span{
                 display: inline-block;
                 position: absolute;
-                width: 45%;
-                left: 14px;
-                height: 3px;
+                width: 52%;
+                left: 0px;
+                height: 2px;
                 border-radius: 2px;
                 background: #999999;
                 transition: all .4s;
                 &:nth-child(1){
-                    top:17px;
+                    top:21px;
                 }
                 &:nth-child(2){
-                    top:24px;
+                    top:26px;
                 }
                 &:nth-child(3){
                     top:31px;
@@ -187,7 +274,7 @@
                 span{
                     &:nth-child(1) {
                         top: 18px;
-                        left: 14px;
+                        left: 0px;
                         transform: translateY(6px) rotate(-45deg);
                         width: 40%;
                     }
@@ -196,7 +283,7 @@
                     }
                     &:nth-child(3) {
                         top: 30px;
-                        left: 14px;
+                        left: 0px;
                         transform: translateY(-6px) rotate(45deg);
                         width: 40%;
                     }
