@@ -1,0 +1,16 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.lyt-stage .stage-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -1rem;
+}
+.lyt-stage .stage-item {
+  margin: 0 1rem;
+}
+
+/*# sourceMappingURL=home.css.map */

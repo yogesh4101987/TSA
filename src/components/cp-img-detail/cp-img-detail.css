@@ -1,0 +1,30 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-img-detail {
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+.cp-img-detail .detail-wrap {
+  background: #FFFFFF;
+  padding: 1.6rem;
+}
+.cp-img-detail .detail-wrap .detail-tile {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #333333;
+  font-family: "Poppins Semibold";
+  margin-bottom: 0.8rem;
+}
+.cp-img-detail .detail-wrap .detail-desc {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #666666;
+  font-family: "Poppins Regular";
+  margin-bottom: 0.8rem;
+}
+
+/*# sourceMappingURL=cp-img-detail.css.map */
