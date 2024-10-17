@@ -1,0 +1,24 @@
+@import "./config/variables";
+@import "./config/mixin";
+
+.cp-architect {
+  .arch-left {
+    .title {
+      font-family: $font-semiBold;
+      font-size: 4rem;
+      line-height: 5.2rem;
+      color: $clr-base;
+    }
+    .desc {
+        font-family: $font-regular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .sevice-btn {
+    }
+  }
+
+  .arch-right {
+  }
+}
