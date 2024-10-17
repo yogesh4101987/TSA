@@ -756,7 +756,7 @@ p {
   .container {
     width: 100%;
     padding: 0rem 1.6rem;
-    max-width: auto;
+    width: auto;
   }
 }
 
@@ -808,6 +808,16 @@ p {
 .bs-sec.typ-gray-bg {
   background: #ECF2FB;
 }
+.bs-sec.typ-prodcut {
+  position: relative;
+  padding-top: 0rem;
+}
+.bs-sec.typ-prodcut .cont-wrap {
+  position: absolute;
+  top: 50%;
+  vertical-align: middle;
+  transform: translateY(-50%);
+}
 @media only screen and (max-width: 991px) {
   .bs-sec {
     padding: 2.8rem 0rem;
@@ -829,6 +839,7 @@ p {
 }
 .bs-sec .sec-title.typ-white {
   color: #FFFFFF;
+  margin-bottom: 2.4rem;
 }
 @media only screen and (max-width: 991px) {
   .bs-sec .sec-title {
@@ -894,6 +905,11 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  .btn.btn-link::after {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .btn.btn-link {
