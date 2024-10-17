@@ -1,0 +1,55 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-icon-details {
+  text-align: center;
+  align-items: center;
+}
+.cp-icon-details .icon-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+.cp-icon-details .icon-wrap .icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.cp-icon-details .subtitle {
+  color: #666666;
+  font-size: 2rem;
+  font-family: "Poppins Medium";
+  line-height: 2.8rem;
+  text-transform: capitalize;
+}
+.cp-icon-details .icon-title {
+  font-family: "Poppins Semibold";
+  font-size: 3.6rem;
+  color: #333333;
+  line-height: 4.8rem;
+}
+@media only screen and (max-width: 767px) {
+  .cp-icon-details .icon-wrap {
+    margin-bottom: 1.8rem;
+  }
+  .cp-icon-details .icon-wrap .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .cp-icon-details .subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .cp-icon-details .icon-title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+/*# sourceMappingURL=cp-icon-details.css.map */
