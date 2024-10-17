@@ -807,9 +807,16 @@ p {
 }
 .bs-sec.typ-gray-bg {
   background: #ECF2FB;
-  border-radius: 5.6rem;
-  -webkit-border-radius: 5.6rem;
-  -moz-border-radius: 5.6rem;
+  border-radius: 4.8rem 4.8rem 0 0;
+  -webkit-border-radius: 4.8rem 4.8rem 0 0;
+  -moz-border-radius: 4.8rem 4.8rem 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .bs-sec.typ-gray-bg {
+    border-radius: 2.4rem 2.4rem 0 0;
+    -webkit-border-radius: 2.4rem 2.4rem 0 0;
+    -moz-border-radius: 2.4rem 2.4rem 0 0;
+  }
 }
 @media only screen and (max-width: 991px) {
   .bs-sec {
@@ -928,12 +935,13 @@ p {
 }
 @media only screen and (max-width: 767px) {
   .bs-swiper.typ-home-testimonial {
-    margin-right: -1.6rem;
+    margin-right: -2rem;
   }
 }
 .bs-swiper.typ-home-testimonial .swiper-slide {
   width: auto !important;
   margin-right: 2rem;
+  min-width: 29.6rem;
 }
 @media only screen and (max-width: 767px) {
   .bs-swiper.typ-home-testimonial .swiper-slide {

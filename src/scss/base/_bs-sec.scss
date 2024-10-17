@@ -7,7 +7,10 @@
     }
     &.typ-gray-bg{
         background:#ECF2FB;
-        @include border-radius(5.6rem);
+        @include border-radius(4.8rem 4.8rem 0 0);
+        @media only screen and (max-width: $media-mobile) {
+            @include border-radius(2.4rem 2.4rem 0 0);
+        }
     }
     @media only screen and (max-width: $media-sm) {
         padding: 2.8rem 0rem;
