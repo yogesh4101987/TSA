@@ -403,8 +403,8 @@ th {
 }
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?ewurrz");
-  src: url("fonts/icomoon.eot?ewurrz#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?ewurrz") format("truetype"), url("fonts/icomoon.woff?ewurrz") format("woff"), url("fonts/icomoon.svg?ewurrz#icomoon") format("svg");
+  src: url("/fonts/icomoon.eot?ewurrz");
+  src: url("/fonts/icomoon.eot?ewurrz#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?ewurrz") format("truetype"), url("/fonts/icomoon.woff?ewurrz") format("woff"), url("/fonts/icomoon.svg?ewurrz#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -807,6 +807,9 @@ p {
 }
 .bs-sec.typ-gray-bg {
   background: #ECF2FB;
+  border-radius: 5.6rem;
+  -webkit-border-radius: 5.6rem;
+  -moz-border-radius: 5.6rem;
 }
 @media only screen and (max-width: 991px) {
   .bs-sec {
@@ -887,13 +890,13 @@ p {
 }
 .btn.btn-link::after {
   content: "";
-  width: 9.1rem;
+  width: 100%;
   height: 0.1rem;
   background-color: #3D7EDB;
   position: absolute;
   left: 0;
-  right: 0;
   bottom: 0;
+  display: block;
 }
 @media only screen and (max-width: 991px) {
   .btn.btn-link {
@@ -909,6 +912,33 @@ p {
   line-height: 1.6rem;
   font-family: "Poppins Bold";
   border-radius: 1px;
+}
+
+/* colors */
+/*font family*/
+/* breakpoints */
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-blog {
+    margin-right: -1.6rem;
+  }
+}
+.bs-swiper.typ-blog .swiper-slide {
+  width: auto !important;
+  margin-right: 1.8rem;
+}
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-home-testimonial {
+    margin-right: -1.6rem;
+  }
+}
+.bs-swiper.typ-home-testimonial .swiper-slide {
+  width: auto !important;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-home-testimonial .swiper-slide {
+    margin-right: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */

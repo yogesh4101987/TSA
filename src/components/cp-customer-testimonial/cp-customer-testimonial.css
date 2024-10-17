@@ -1,0 +1,77 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.customer-testimonial {
+  position: relative;
+}
+.customer-testimonial .view-btn {
+  position: absolute;
+  top: -5rem;
+  right: 0;
+}
+
+.cp-customer-testimonial {
+  max-width: 29.6rem;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  border: 1px solid #DEDEDE;
+}
+@media only screen and (max-width: 767px) {
+  .cp-customer-testimonial {
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+  }
+}
+.cp-customer-testimonial .img-wrap {
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  max-height: 16.8rem;
+  position: relative;
+}
+.cp-customer-testimonial .img-wrap:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.cp-customer-testimonial .img-wrap img {
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  object-fit: contain;
+}
+@media only screen and (max-width: 767px) {
+  .cp-customer-testimonial .img-wrap {
+    max-height: 14.4rem;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+  }
+  .cp-customer-testimonial .img-wrap img {
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+  }
+}
+.cp-customer-testimonial .content-wrap {
+  padding: 1.8rem 1.6rem 1.6rem;
+}
+@media only screen and (max-width: 767px) {
+  .cp-customer-testimonial .content-wrap {
+    padding: 1.6rem;
+  }
+}
+
+/*# sourceMappingURL=cp-customer-testimonial.css.map */

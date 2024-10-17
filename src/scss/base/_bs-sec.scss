@@ -7,6 +7,7 @@
     }
     &.typ-gray-bg{
         background:#ECF2FB;
+        @include border-radius(5.6rem);
     }
     @media only screen and (max-width: $media-sm) {
         padding: 2.8rem 0rem;
@@ -38,4 +39,6 @@
     }
     .sec-cont {
     }
+
+
 }
