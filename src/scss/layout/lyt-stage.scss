@@ -1,6 +1,13 @@
+@import "../config/variables";
+@import "../config/mixin";
+
 .lyt-stage{
     .stage-list{
         display: flex;
         justify-content: space-between;
+        margin: 0 -1rem;
+    }
+    .stage-item{
+        margin: 0 1rem;
     }
 }
