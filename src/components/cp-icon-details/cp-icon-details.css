@@ -14,8 +14,11 @@
   margin-bottom: 2.4rem;
 }
 .cp-icon-details .icon-wrap .icon {
-  width: 4.8rem;
-  height: 4.8rem;
+  padding: 1.4rem;
+  font-size: 2.8rem;
+  background-color: #D2042D;
+  color: #FFFFFF;
+  border-radius: 50%;
 }
 .cp-icon-details .subtitle {
   color: #666666;
@@ -35,8 +38,7 @@
     margin-bottom: 1.8rem;
   }
   .cp-icon-details .icon-wrap .icon {
-    width: 2rem;
-    height: 2rem;
+    padding: 0.5rem;
   }
   .cp-icon-details .subtitle {
     font-size: 1.2rem;
@@ -46,10 +48,6 @@
     font-size: 2rem;
     line-height: 2.8rem;
   }
-}
-
-.center {
-  text-align: center;
 }
 
 /*# sourceMappingURL=cp-icon-details.css.map */

@@ -10,10 +10,14 @@
     justify-content: center;
     margin-bottom: 2.4rem;
     .icon {
-      width: 4.8rem;
-      height: 4.8rem;
+      padding: 1.4rem;
+      font-size: 2.8rem;
+      background-color: $clr-secondary;
+      color: $clr-root;
+      border-radius: 50%;
     }
   }
+
   .subtitle {
     color: $clr-para;
     font-size: 2rem;
@@ -32,8 +36,7 @@
     .icon-wrap {
       margin-bottom: 1.8rem;
       .icon {
-        width: 2rem;
-        height: 2rem;
+        padding: 0.5rem;
       }
     }
     .subtitle {
@@ -46,11 +49,3 @@
     }
   }
 }
-
-.center{
-  text-align: center;
-
-  
-}
-
-
