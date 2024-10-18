@@ -2,17 +2,17 @@ var winWidth = $(window).width();
 
 $(document).ready(function () {
  
-    homeTestimonialSlider();
+  architectSlider();
   
 });
 
 $(window).resize(function () {
   if ($(window).width() < 769) {
-    homeTestimonialSlider();
+    architectSlider();
   }
 });
 
-function homeTestimonialSlider() {
+function architectSlider() {
   var swiper = new Swiper(".js-architect", {
     slidesPerView: "auto",
     loop: false,

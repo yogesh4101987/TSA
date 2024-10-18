@@ -7,8 +7,14 @@
   justify-content: space-between;
   position: relative;
   gap: 2rem;
+
   .arch-left {
-    width: 24%;
+    width: 30%;
+    padding-left: 10rem;
+
+    @media only screen and (max-width: $media-mobile) {
+      padding: 0 1.6rem; 
+    }
     .title {
       font-family: $font-semiBold;
       font-size: 4rem;
@@ -16,29 +22,32 @@
       color: $clr-base;
       margin-bottom: 0.8rem;
     }
+
     .desc {
       font-family: $font-regular;
       font-size: 1.6rem;
       line-height: 2.4rem;
       margin-bottom: 1.6rem;
     }
-  }
 
-  .service-btn {
-    position: absolute;
-    left: 0;
-    bottom: 9rem;
-    transform: translateY(-50%);
+    .service-btn {
+      @media only screen and (max-width: $media-mobile) {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+    }
   }
-
   .arch-right {
-    width: 74%;
-
+    width: 69%;
+    overflow: hidden;
 }
 
   @media only screen and (max-width: $media-mobile) {
     flex-direction: column;
     gap: 1.6rem;
+    padding-bottom: 6.4rem;
     .arch-left {
       width: 100%;
       .title {
@@ -50,20 +59,9 @@
         margin-bottom: 0rem;
       }
     }
-    .service-btn {
-      position: static;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transform: none;
-
-    }
+    
     .arch-right {
       width: 100%;
-
-
-      
     }
   }
 }
@@ -98,8 +96,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-inline: 2.4rem;
-    padding-bottom: 1.6rem;
+    padding: 0 1.6rem 2.4rem 2.4rem;
     z-index: 2;
   }
   .card-title {
@@ -123,11 +120,10 @@
         margin-right: 1rem;
 
         .location-icon  {
-          position: relative;
           width: 1.6rem;
           height: 1.6rem;
           .icon{
-            font-size: 2.8rem;
+            font-size: 1.6rem;
             color: $clr-root;
           }
         }
@@ -138,7 +134,7 @@
           color: $clr-root;
           font-family: $font-medium;
           line-height: 1.6rem;
-          margin-left: 1.2rem;
+          margin-right: 1.2rem;
         }
       }
 
@@ -146,7 +142,7 @@
         width: 1px;
         height: 1.2rem;
         background-color: #ccc;
-        margin-right: 0.5rem;
+        margin-right: 1.2rem;
       }
 
       .rating-details {
@@ -160,11 +156,13 @@
           width: 0.8rem;
           height: 0.8rem;
           margin-right: 0.25rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           .icon{
-            font-size: 2.8rem;
+            font-size: 1rem;
             color: $clr-root;
-            
           }
         }
 
@@ -172,7 +170,6 @@
           color: $clr-root;
           font-size: 1.2rem;
           line-height: 1.6rem;
-
         }
       }
     }
@@ -182,15 +179,25 @@
       height: 2.4rem;
       border: 1px solid $clr-root;
       border-radius: 0.4rem;
-      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .icon {
-        color: $clr-root;;
-        font-size: 2.8rem;
-        z-index: 10;
-        border: 1px solid white;
+        color: $clr-root;
+        font-size: 1.8rem;
       }
-      
     }
-   
+  }
+}
+
+.architect-container {
+  margin: 0 0 0 auto;
+  padding: 0px;
+  width: 124rem;
+
+  @media only screen and (max-width: $media-mobile) {
+    width: 100%;
+    padding: 0rem 1.6rem;
+    width: auto;
   }
 }

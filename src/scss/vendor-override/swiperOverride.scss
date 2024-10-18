@@ -81,4 +81,74 @@
           }
       }
   }
+
+  &.typ-architect {
+   
+    @media only screen and (max-width: $media-mobile) {
+      padding-left: 1.6rem;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+      padding-left: 10rem;
+      @media only screen and (max-width: $media-mobile) {
+        padding-left: 1.6rem;
+      }
+    }
+
+    .swiper-wrapper{
+      padding-bottom:9.6rem;
+      @media only screen and (max-width: $media-mobile) {
+        padding-bottom:0;
+      }
+    }
+
+    .swiper-slide {
+      width: auto !important;
+      margin-right: 2rem;
+      min-width: 29.6rem;
+      @media only screen and (max-width: $media-mobile) {
+        margin-right: 1.2rem;
+      }
+    }
+    .swiper-nav{
+      position: absolute;
+      bottom: 0;
+      right: 10rem;      
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      padding:3rem;
+      border: 1px solid black;
+      border-radius:50%;
+      @media only screen and (max-width: $media-mobile) {
+        display: none;
+      }
+    }
+    
+      .swiper-button-next{
+        left: 3.5rem;
+      }
+      .swiper-button-prev{
+        left: -3.5rem;
+      } 
+
+      .swiper-button-prev:after{
+        font-size: 3.5rem;
+        font-weight: normal; 
+        font-family: 'icomoon'; 
+        content:'\e91e';
+        color: black;
+      }
+
+       .swiper-button-next:after{
+        font-size: 3.5rem;
+        font-weight: normal; 
+        font-family: 'icomoon'; 
+        color: black;
+        content:'\e91d';
+
+      }
+  }
 }
+
