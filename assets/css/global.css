@@ -937,47 +937,62 @@ p {
   border-radius: 1px;
 }
 
-/* colors */
-/*font family*/
-/* breakpoints */
-/*transform*/
-/*opacity*/
-/*opacity- end*/
-.lyt-grid .grid-col-3 {
-  padding-top: 3.2rem;
-  padding-bottom: 4.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-}
-.lyt-grid .grid-col-3 .seprate {
-  width: 1px;
-  background: #DEDEDE;
-  height: 16rem;
-}
-@media only screen and (max-width: 767px) {
-  .lyt-grid .grid-col-3 {
-    padding-bottom: 4rem;
-    padding-top: 0.8rem;
-  }
-  .lyt-grid .grid-col-3 .seprate {
-    height: 7rem;
-  }
-}
-.lyt-grid .border-end {
-  background: #DEDEDE;
-  width: 100%;
-  height: 1px;
-}
-
-/* colors */
-/*font family*/
-/* breakpoints */
 /* component */
 /* colors */
 /*font family*/
 /* breakpoints */
+.bs-swiper .swiper-pagination-fraction,
+.bs-swiper .swiper-pagination-custom,
+.bs-swiper .swiper-horizontal > .swiper-pagination-bullets,
+.bs-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+.bs-swiper .swiper-pagination-bullet {
+  width: 0.4rem;
+  height: 0.4rem;
+  opacity: 1;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  transition: all 0.5s ease !important;
+  background-color: #FFFFFF;
+}
+.bs-swiper .swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
+  width: 2rem;
+  border-radius: 0.3rem;
+  opacity: 1;
+}
+.bs-swiper .swiper-pagination-bullet-active-next,
+.bs-swiper .swiper-pagination-bullet-active-next-next,
+.bs-swiper .swiper-pagination-bullet-active-prev {
+  background: #FFFFFF;
+}
+.bs-swiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.bs-swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 2px;
+}
+.bs-swiper .swiper-button-next, .bs-swiper .swiper-button-prev {
+  color: #D2042D;
+  top: unset;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.bs-swiper .swiper-button-next.swiper-button-disabled, .bs-swiper .swiper-button-prev.swiper-button-disabled {
+  color: #B3B3B3;
+  opacity: 0.5;
+}
+.bs-swiper .swiper-button-prev:after, .bs-swiper .swiper-button-next:after {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.bs-swiper .swiper-button-next {
+  right: auto;
+  left: 1.5rem;
+}
+.bs-swiper .swiper-button-prev {
+  left: -1.5rem;
+}
 @media only screen and (max-width: 767px) {
   .bs-swiper.typ-blog {
     margin-right: -1.6rem;

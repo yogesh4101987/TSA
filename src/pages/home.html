@@ -19,6 +19,11 @@
       rel="stylesheet"
       href="/components/cp-icon-details/cp-icon-details.css"
     />
+    <link rel="stylesheet" href="/components/layout/lyt-grid.css">
+    <link rel="stylesheet" href="/components/layout/lyt-stage.css">
+    <link rel="stylesheet" href="/components/cp-blog/cp-blog.css">
+    <link rel="stylesheet" href="/components/cp-video/cp-video.css">
+    <link rel="stylesheet" href="/components/cp-toast/cp-toast.css">
     <link rel="stylesheet" href="/components/cp-img-detail/cp-img-detail.css">
     <link rel="stylesheet" href="/components/cp-customer-testimonial/cp-customer-testimonial.css">
 
@@ -35,6 +40,107 @@
     </header>
     <!-- Header end -->
     <main class="main">
+        <!-- Blog and Article start -->  
+        <section class="bs-sec">
+            <div class="sec-cont">
+                <div class="container">
+                   <div class="lyt-grid typ-col-2">
+                        <div class="grid-col">
+                            <div class="bs-swiper swiper typ-blog js-blog">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="cp-blog">
+                                            <a href="#" class="img-wrap">
+                                               <img src="../components/cp-blog/images/blog-img.png" alt="blog-img"/>
+                                            </a>
+                                            <div class="content-wrap">
+                                                <ul class="tag-list">
+                                                    <li class="tag-item">
+                                                        <span class="tag">Construction</span>
+                                                        <span class="tag">Constructor</span>
+                                                    </li>
+                                                    <li class="tag-item">
+                                                        <span class="icon js-add-favorite icon-unfill-like"></span>
+                                                    </li>
+                                                </ul>
+                                                <h3 class="c-title">Government schemes for first time home builders</h3>
+                                                <div class="post-date">
+                                                    <span class="post-detail">Mon, 26 Aug 2024</span>
+                                                    <span class="post-detail">5 mins read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cp-blog">
+                                            <a href="#" class="img-wrap">
+                                               <img src="../components/cp-blog/images/blog-img.png" alt="blog-img"/>
+                                            </a>
+                                            <div class="content-wrap">
+                                                <ul class="tag-list">
+                                                    <li class="tag-item">
+                                                        <span class="tag">Construction</span>
+                                                        <span class="tag">Constructor</span>
+                                                    </li>
+                                                    <li class="tag-item">
+                                                        <span class="icon js-add-favorite icon-unfill-like"></span>
+                                                    </li>
+                                                </ul>
+                                                <h3 class="c-title">Government schemes for first time home builders 2</h3>
+                                                <div class="post-date">
+                                                    <span class="post-detail">Mon, 26 Aug 2024</span>
+                                                    <span class="post-detail">5 mins read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-col"> 
+                            <div class="cp-video">
+                                <div class="img-wrap">
+                                    <img src="../components/cp-video/images/video-img.png" alt="video-img"/>
+                                </div>
+                                <button class="icon-wrap">
+                                    <img class="play-icon" src="../components/cp-video/images/play-icon.svg"/>
+                                </button>
+                                <div class="content-wrap">
+                                    <ul class="tag-list">
+                                        <li class="tag-item">
+                                            <span class="tag">Home loan</span>
+                                        </li>
+                                    </ul>
+                                    <h3 class="title">Home loans - All you need to know</h3>
+                                    <div class="post-date">
+                                        <span class="post-detail">Mon, 26 Aug 2024</span>
+                                        <span class="post-detail">5 mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="cp-toast">
+                        <p class="msg">Added to Favorite</p>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog and Article end -->  
+
+        <!--<section class="bs-sec">
+            <div class="sec-head">
+                <div class="container">
+                    <h2 class="sec-title">Title</h2>
+                    <p class="sec-desc">Description</p>
+                </div
+            </div>
+            <div class="sec-cont">
+                <div class="container">
+                    <p>Main content</p>
+                </div
+            </div>
+        </section>-->
         <!--  start Home Building tageS -->
         <section class="bs-sec typ-gray-bg">
             <div class="container">
@@ -251,7 +357,6 @@
                 <img src="../../../assets/images/prodcut-banner.png" alt="">
             </div>
         </div>
-      </div>
     </footer>
     <!-- Footer end -->
 
@@ -261,6 +366,7 @@
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
     <script src="/components/cp-header/cp-header.js"></script>
+    <script src="/components/cp-blog/cp-blog.js"></script>
     <script src="/components/cp-customer-testimonial/cp-customer-testimonial.js"></script>
     <!-- endbuild -->
 
