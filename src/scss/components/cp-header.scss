@@ -5,6 +5,11 @@
 
 .cp-header{
     padding: 1.6rem 0 0;
+    @media only screen and (max-width: $media-mobile) {
+        padding-bottom: 4rem;
+        border-bottom: 1px solid #DEDEDE;
+
+    }
     &.js-fixed-header{
         position: fixed;
         top: 0;
@@ -41,9 +46,10 @@
             padding-left: 14rem;
             @media only screen and (max-width: $media-mobile) {
                position: absolute;
-               bottom: -30px;
+               bottom: -33px;
                padding-left: 0;
                width: 100%;
+               z-index: 2;
             }
             .location-wrap{
                 @media only screen and (max-width: $media-mobile) {
@@ -95,7 +101,9 @@
     .bottom-sec{
         border-top: 1px solid #DEDEDE;
         border-bottom: 1px solid #DEDEDE;
-        padding: 1.8rem 0;
+        @media only screen and (max-width: $media-mobile) {
+            border-top:0;
+        }
         .container{
             display: flex;
             justify-content: space-between;
@@ -123,6 +131,8 @@
         }
         .nav-item{
             position: relative;
+            padding: 1.8rem 0;
+
             @media only screen and (max-width: $media-mobile) {
                 margin-bottom: 2rem;
             }
@@ -212,6 +222,10 @@
             }
             .quick-link-icon-item{
                 position: relative;
+                padding: 1.8rem 0;
+                @media only screen and (max-width: $media-mobile) {
+                    padding: 0;
+                }
                 &:first-child{
                     display: none;
                     @media only screen and (max-width: $media-mobile) {
@@ -227,7 +241,10 @@
                         width: 1px;
                         position: absolute;
                         left: 0;
-                        top:0px;
+                        top:17px;
+                        @media only screen and (max-width: $media-mobile) {
+                            top:0;
+                        }
                     }
                 }
                 }

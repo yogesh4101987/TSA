@@ -7,6 +7,12 @@
 .cp-header {
   padding: 1.6rem 0 0;
 }
+@media only screen and (max-width: 767px) {
+  .cp-header {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #DEDEDE;
+  }
+}
 .cp-header.js-fixed-header {
   position: fixed;
   top: 0;
@@ -45,9 +51,10 @@
 @media only screen and (max-width: 767px) {
   .cp-header .top-sec .rhs {
     position: absolute;
-    bottom: -30px;
+    bottom: -33px;
     padding-left: 0;
     width: 100%;
+    z-index: 2;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -105,7 +112,11 @@
 .cp-header .bottom-sec {
   border-top: 1px solid #DEDEDE;
   border-bottom: 1px solid #DEDEDE;
-  padding: 1.8rem 0;
+}
+@media only screen and (max-width: 767px) {
+  .cp-header .bottom-sec {
+    border-top: 0;
+  }
 }
 .cp-header .bottom-sec .container {
   display: flex;
@@ -136,6 +147,7 @@
 }
 .cp-header .bottom-sec .nav-list .nav-item {
   position: relative;
+  padding: 1.8rem 0;
 }
 @media only screen and (max-width: 767px) {
   .cp-header .bottom-sec .nav-list .nav-item {
@@ -209,6 +221,12 @@
 }
 .cp-header .bottom-sec .quick-link-list .quick-link-icon-item {
   position: relative;
+  padding: 1.8rem 0;
+}
+@media only screen and (max-width: 767px) {
+  .cp-header .bottom-sec .quick-link-list .quick-link-icon-item {
+    padding: 0;
+  }
 }
 .cp-header .bottom-sec .quick-link-list .quick-link-icon-item:first-child {
   display: none;
@@ -225,7 +243,12 @@
   width: 1px;
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 17px;
+}
+@media only screen and (max-width: 767px) {
+  .cp-header .bottom-sec .quick-link-list .quick-link-icon-item:last-child .quick-link-item::after {
+    top: 0;
+  }
 }
 .cp-header .bottom-sec .quick-link-list .quick-link-item {
   font-size: 2.4rem;
