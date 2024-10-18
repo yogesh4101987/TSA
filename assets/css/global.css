@@ -843,8 +843,8 @@ p {
 }
 @media only screen and (max-width: 991px) {
   .bs-sec .sec-title {
-    font-size: 3rem;
-    line-height: 3.6rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
   }
 }
 .bs-sec .sec-desc {
