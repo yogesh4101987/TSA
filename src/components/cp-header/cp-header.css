@@ -55,6 +55,9 @@
     width: 100%;
   }
 }
+.cp-header .top-sec .rhs .map-icon {
+  font-size: 1.5rem;
+}
 .cp-header .top-sec .rhs .location-text {
   font-size: 1.4rem;
   color: #333333;
