@@ -1,0 +1,62 @@
+@import "../config/variables";
+
+.bs-swiper {
+  &.typ-blog {
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+    }
+    .swiper-slide {
+      width: auto !important;
+      margin-right: 1.8rem;
+    }
+  }
+  &.typ-home-testimonial {
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -2rem;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      width: auto !important;
+      margin-right: 2rem;
+      min-width: 29.6rem;
+      @media only screen and (max-width: $media-mobile) {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+  &.typ-architect {
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -2rem;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-wrapper{
+      padding-bottom:9.6rem;
+      @media only screen and (max-width: $media-mobile) {
+        padding-bottom:0rem;
+      }
+    }
+
+    .swiper-slide {
+      width: auto !important;
+      margin-right: 2rem;
+      min-width: 29.6rem;
+      @media only screen and (max-width: $media-mobile) {
+        margin-right: 1.2rem;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+
+      @media only screen and (max-width: $media-mobile) {
+        display: none;
+      }
+    }
+  }
+}
