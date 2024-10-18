@@ -6,11 +6,11 @@
 /*opacity- end*/
 .cp-header {
   padding: 1.6rem 0 0;
+  border-bottom: 1px solid #DEDEDE;
 }
 @media only screen and (max-width: 767px) {
   .cp-header {
     padding-bottom: 4rem;
-    border-bottom: 1px solid #DEDEDE;
   }
 }
 .cp-header.js-fixed-header {
@@ -111,12 +111,6 @@
 }
 .cp-header .bottom-sec {
   border-top: 1px solid #DEDEDE;
-  border-bottom: 1px solid #DEDEDE;
-}
-@media only screen and (max-width: 767px) {
-  .cp-header .bottom-sec {
-    border-top: 0;
-  }
 }
 .cp-header .bottom-sec .container {
   display: flex;
