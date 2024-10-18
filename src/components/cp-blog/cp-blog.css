@@ -26,14 +26,15 @@
   display: block;
 }
 .cp-blog .img-wrap img {
+  height: 100%;
   border-radius: 1.6rem;
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
-  object-fit: contain;
+  object-fit: cover;
 }
 @media only screen and (max-width: 767px) {
   .cp-blog .img-wrap {
-    max-height: 14.4rem;
+    height: 14.4rem;
     border-radius: 1.2rem;
     -webkit-border-radius: 1.2rem;
     -moz-border-radius: 1.2rem;

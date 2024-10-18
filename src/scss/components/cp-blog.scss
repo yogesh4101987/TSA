@@ -13,11 +13,12 @@
         height: 16.8rem;
         display: block;    
         img {
+            height: 100%;
             @include border-radius(1.6rem);
-            object-fit: contain;
+            object-fit: cover;
         }
         @media only screen and (max-width: $media-mobile) {
-            max-height: 14.4rem;
+            height: 14.4rem;
             @include border-radius(1.2rem);
             img{
                 @include border-radius(1.2rem);
