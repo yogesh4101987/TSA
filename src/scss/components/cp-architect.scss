@@ -27,7 +27,7 @@
   .service-btn {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 9rem;
     transform: translateY(-50%);
   }
 
@@ -61,6 +61,9 @@
     }
     .arch-right {
       width: 100%;
+
+
+      
     }
   }
 }
@@ -119,9 +122,14 @@
         align-items: center;
         margin-right: 1rem;
 
-        .location-icon img {
+        .location-icon  {
+          position: relative;
           width: 1.6rem;
           height: 1.6rem;
+          .icon{
+            font-size: 2.8rem;
+            color: $clr-root;
+          }
         }
 
         .location {
@@ -154,7 +162,9 @@
           margin-right: 0.25rem;
 
           .icon{
-
+            font-size: 2.8rem;
+            color: $clr-root;
+            
           }
         }
 
@@ -162,6 +172,7 @@
           color: $clr-root;
           font-size: 1.2rem;
           line-height: 1.6rem;
+
         }
       }
     }
@@ -172,10 +183,14 @@
       border: 1px solid $clr-root;
       border-radius: 0.4rem;
       padding: 0.5rem;
-
       .icon {
-        color: $clr-root;
+        color: $clr-root;;
+        font-size: 2.8rem;
+        z-index: 10;
+        border: 1px solid white;
       }
+      
     }
+   
   }
 }

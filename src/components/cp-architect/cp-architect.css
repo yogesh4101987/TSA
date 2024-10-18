@@ -30,7 +30,7 @@
 .cp-architect .service-btn {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 9rem;
   transform: translateY(-50%);
 }
 .cp-architect .arch-right {
@@ -115,9 +115,14 @@
   align-items: center;
   margin-right: 1rem;
 }
-.cp-architect-card .card-details .detail-left .location-details .location-icon img {
+.cp-architect-card .card-details .detail-left .location-details .location-icon {
+  position: relative;
   width: 1.6rem;
   height: 1.6rem;
+}
+.cp-architect-card .card-details .detail-left .location-details .location-icon .icon {
+  font-size: 2.8rem;
+  color: #FFFFFF;
 }
 .cp-architect-card .card-details .detail-left .location-details .location {
   margin-left: 0.5rem;
@@ -145,6 +150,10 @@
   height: 0.8rem;
   margin-right: 0.25rem;
 }
+.cp-architect-card .card-details .detail-left .rating-details .rating-icon .icon {
+  font-size: 2.8rem;
+  color: #FFFFFF;
+}
 .cp-architect-card .card-details .detail-left .rating-details .rating {
   color: #FFFFFF;
   font-size: 1.2rem;
@@ -159,6 +168,9 @@
 }
 .cp-architect-card .card-details .detail-right .icon {
   color: #FFFFFF;
+  font-size: 2.8rem;
+  z-index: 10;
+  border: 1px solid white;
 }
 
 /*# sourceMappingURL=cp-architect.css.map */

@@ -13,7 +13,7 @@ $(window).resize(function () {
 });
 
 function homeTestimonialSlider() {
-  var swiper = new Swiper(".jsArchitect", {
+  var swiper = new Swiper(".js-architect", {
     slidesPerView: "auto",
     loop: false,
     navigation: {
