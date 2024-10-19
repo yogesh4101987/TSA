@@ -1,0 +1,25 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-img-detail{
+    border-radius: 1.6rem;
+    overflow: hidden;
+    .detail-wrap{
+        background: $clr-root;
+        padding: 1.6rem;
+        .detail-tile{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $clr-base;
+            font-family: $font-semiBold;
+            margin-bottom: .8rem;
+        }
+        .detail-desc{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $clr-para;
+            font-family: $font-regular;
+            margin-bottom: .8rem;
+        }
+    }
+}

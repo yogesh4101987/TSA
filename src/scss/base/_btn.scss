@@ -39,13 +39,15 @@
         position: relative;
         &::after{
             content: '';
-            width: 9.1rem;
+            width: 100%;
             height: .1rem;
             background-color: $clr-primary;
             position: absolute;
-            left: 0;
-            right: 0;
+            left: 0;           
             bottom: 0;
+            @media only screen and (max-width: $media-sm) {
+                width: 100%;
+            }
         }
         @media only screen and (max-width: $media-sm) {
             font-size: 1.4rem;
