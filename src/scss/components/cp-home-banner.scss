@@ -1,2 +1,125 @@
 @import "../config/variables";
 @import "../config/mixin";
+
+.cp-home-banner{
+    position: relative;
+    background: #F3F4F6 url(../../components/cp-home-banner/images/banner-img.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 5.6rem 0;
+    margin-bottom: 4rem;
+    @media only screen and (max-width: $media-mobile) {
+        background: #F3F4F6 ;
+        padding: 2.4rem 0;
+    }
+
+    .sec-title {
+        font-size: 4rem;
+        line-height: 5.2rem;
+        font-family: $font-semiBold;
+        color: $clr-base;
+        margin-bottom: 3.2rem;
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    .container{
+        position: relative;
+    }
+    .feature-list{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+        @media only screen and (max-width: $media-mobile) {
+            width: 100%;
+            gap: 1.2rem;
+        }
+        .feature-item{
+            width: 31%;
+            min-height: 11rem;
+            @media only screen and (max-width: $media-mobile) {
+                width: 48%;
+                min-height: 9.2rem;
+            }
+            &.typ-2{
+                min-height: 15.6rem;
+                width: 48%;
+                @media only screen and (max-width: $media-mobile) {
+                    min-height: 13rem;
+                }
+                .feature-card{
+                    .f-img{
+                        max-width: 14.3rem;
+                        max-height: 13.6rem;
+                        @media only screen and (max-width: $media-mobile) {
+                            max-width: 8rem;
+                            max-height: 8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .feature-card{
+        border: 1px solid $clr-border;
+        background: $clr-root;
+        padding: 1.2rem;
+        @include border-radius(1.6rem);
+        @include transition(all, 2s, linear);
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        &:hover,
+        &.active{
+            box-shadow: 0px 8px 24px 0px #00000014;
+            border: 2px solid $clr-border
+        }
+        .f-title{
+            font-family: $font-semiBold;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+            text-transform: uppercase;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+        .f-desc{
+            font-family: $font-regular;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-para;
+            margin-bottom: 0.6rem;
+            max-width: 65%;
+        }
+        .f-offer{
+            background: $clr-secondary;
+            padding: .2rem 0.8rem;
+            color: $clr-root;
+            font-family: $font-medium;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            @include border-radius(2.6rem);
+        }
+        .f-img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 9.4rem;
+            max-height: 9.4rem;
+            @media only screen and (max-width: $media-mobile) {
+                max-width: 8rem;
+                max-height: 8rem;
+            }
+        }
+    }
+}
