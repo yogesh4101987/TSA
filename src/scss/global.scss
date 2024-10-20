@@ -16,8 +16,5 @@
 @import "./base/base-setup";
 @import "./base/bs-sec"; 
 @import "./base/btn"; 
-/* component */
 
-// @import "component/cp-header";
-// @import "component/cp-footer";
-@import "./vendor-override/swiperOverride";
+@import "./vendor-override/swiperOverride.scss"
