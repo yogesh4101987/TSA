@@ -29,7 +29,6 @@
         margin-bottom: 3.2rem;
         @media only screen and (max-width: $media-sm) {
             margin-bottom: 1.6rem;
-            padding-right: 5.5rem;
         }
     }
     .sec-title {
@@ -53,5 +52,11 @@
         color: $clr-para;    
     }
     .sec-cont {
+    }
+    &.typ-no-top-padding{
+        padding-top: 0;
+    }
+    &.typ-build-cal{
+        padding-bottom: 2.4rem;
     }
 }
