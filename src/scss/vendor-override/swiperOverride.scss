@@ -35,28 +35,37 @@
     margin: 0 2px;
   }
 
-  .swiper-button-next, .swiper-button-prev{
-    color: $clr-secondary;
-    top: unset;
-    bottom: 0;
-    cursor: pointer;
-    z-index: 1;
-    &.swiper-button-disabled{
-      color: #B3B3B3;
-      opacity: 0.5;
+  .swiper-nav{
+     min-width: 16rem;
+    .swiper-button-next, 
+    .swiper-button-prev{
+      color: $clr-base;     
+      cursor: pointer;
+      z-index: 1;
+      padding:3rem;
+      border: 1px solid $clr-base;
+      border-radius:50%;
+      &.swiper-button-disabled{
+        color: #B3B3B3;
+        opacity: 0.5;
+      }
+      &:after{
+        font-size: 3.5rem;
+        font-weight: normal; 
+        font-family: 'icomoon'; 
+      }
+    }
+    .swiper-button-prev:after{     
+      content:'\e91e';
+    }
+
+    .swiper-button-next:after{
+      content:'\e91d';
     }
   }
-  .swiper-button-prev:after, .swiper-button-next:after{
-    font-size: 3.5rem;
-    font-weight: bold;    
-  }
-  .swiper-button-next{
-    right: auto;
-    left: 1.5rem;
-  }
-  .swiper-button-prev{
-    left: -1.5rem;
-  }
+ 
+
+  
 
   &.typ-blog{
       @media only screen and (max-width: $media-mobile) {
@@ -82,8 +91,7 @@
       }
   }
 
-  &.typ-architect {
-   
+  &.typ-architect {   
     @media only screen and (max-width: $media-mobile) {
       padding-left: 1.6rem;
     }
@@ -113,42 +121,12 @@
     }
     .swiper-nav{
       position: absolute;
-      bottom: 0;
-      right: 10rem;      
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-      padding:3rem;
-      border: 1px solid black;
-      border-radius:50%;
+      bottom: 40px;
+      right: 9%; 
       @media only screen and (max-width: $media-mobile) {
         display: none;
-      }
+      }     
     }
-    
-      .swiper-button-next{
-        left: 3.5rem;
-      }
-      .swiper-button-prev{
-        left: -3.5rem;
-      } 
-
-      .swiper-button-prev:after{
-        font-size: 3.5rem;
-        font-weight: normal; 
-        font-family: 'icomoon'; 
-        content:'\e91e';
-        color: black;
-      }
-
-       .swiper-button-next:after{
-        font-size: 3.5rem;
-        font-weight: normal; 
-        font-family: 'icomoon'; 
-        color: black;
-        content:'\e91d';
-
-      }
   }
 }
 
