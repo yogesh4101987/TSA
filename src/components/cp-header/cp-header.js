@@ -21,5 +21,6 @@ function hamburgerMenu(){
     $(".open-menu").click(function () {
         $(this).toggleClass("active");
         $(".nav-list").toggleClass("active")
+        $("body").toggleClass("cm-overflow-hidden")
       });
 }
