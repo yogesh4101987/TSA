@@ -1,62 +1,72 @@
 //bs-sec
 .bs-sec {
-    padding: 4rem 0rem;
+  padding: 4rem 0rem;
+  position: relative;
+  .top-padd{
+    margin-top: 4rem;
+  }
+  &.typ-gray-bg{
+    background: #ecf2fb;
+    @include border-radius(4.8rem 4.8rem 0 0);
+    @media only screen and (max-width: $media-mobile) {
+      @include border-radius(2.4rem 2.4rem 0 0);
+    }
+  }
+  &.typ-prodcut {
     position: relative;
-    .top-padd{
-        margin-top: 4rem;
+    padding-top: 0rem;
+    .cont-wrap {
+      position: absolute;
+      top: 50%;
+      vertical-align: middle;
+      transform: translateY(-50%);
     }
-    &.typ-gray-bg{
-        background:#ECF2FB;
-        @include border-radius(4.8rem 4.8rem 0 0);
-        @media only screen and (max-width: $media-mobile) {
-            @include border-radius(2.4rem 2.4rem 0 0);
-        }
+  }
+  @media only screen and (max-width: $media-sm) {
+    padding: 2.8rem 0rem;
+  }
+  .sec-head {
+    margin-bottom: 3.2rem;
+    @media only screen and (max-width: $media-sm) {
+      margin-bottom: 1.6rem;
     }
-    &.typ-prodcut{
-        position: relative;
-        padding-top: 0rem;
-        .cont-wrap{
-            position: absolute;
-            top: 50%;
-            vertical-align: middle;
-            transform: translateY(-50%);
-        }
+  }
+  .sec-title {
+    font-size: 4rem;
+    line-height: 5.2rem;
+    font-family: $font-semiBold;
+    color: $clr-base;
+    &.typ-white {
+      color: $clr-root;
+      margin-bottom: 2.4rem;
     }
     @media only screen and (max-width: $media-sm) {
-        padding: 2.8rem 0rem;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
     }
-    .sec-head {
-        margin-bottom: 3.2rem;
-        @media only screen and (max-width: $media-sm) {
-            margin-bottom: 1.6rem;
-        }
+  }
+  .sec-desc {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: $font-regular;
+    color: $clr-para;
+  }
+  .sec-cont {
+  }
+  &.typ-no-top-padding {
+    padding-top: 0;
+  }
+  &.typ-build-cal {
+    padding-bottom: 2.4rem;
+  }
+
+  &.typ-tataicon {
+    padding: 8rem 0;
+    @media only screen and (max-width: $media-sm) {
+      padding: 4.8rem 0;
     }
     .sec-title {
-        font-size: 4rem;
-        line-height: 5.2rem;
-        font-family: $font-semiBold;
-        color: $clr-base;
-        &.typ-white{
-            color: $clr-root;
-            margin-bottom: 2.4rem;
-        }
-        @media only screen and (max-width: $media-sm) {
-            font-size: 2.4rem;
-            line-height: 3.2rem;
-        }
+      text-align: center;
     }
-    .sec-desc {
-        font-size: 1.6rem;
-        line-height: 2.4rem;   
-        font-family: $font-regular;
-        color: $clr-para;    
-    }
-    .sec-cont {
-    }
-    &.typ-no-top-padding{
-        padding-top: 0;
-    }
-    &.typ-build-cal{
-        padding-bottom: 2.4rem;
-    }
+  }
 }

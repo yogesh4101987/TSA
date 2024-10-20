@@ -1,0 +1,76 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-icon-details {
+  text-align: center;
+  position: relative;
+}
+.cp-icon-details::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 16rem;
+  background-color: #DEDEDE;
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .cp-icon-details::after {
+    height: 7rem;
+  }
+}
+.cp-icon-details .icon-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 767px) {
+  .cp-icon-details .icon-wrap {
+    margin-bottom: 1.2rem;
+  }
+}
+.cp-icon-details .icon-wrap .icon {
+  padding: 1.2rem;
+  font-size: 2.4rem;
+  background-color: #D2042D;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 767px) {
+  .cp-icon-details .icon-wrap .icon {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+.cp-icon-details .sub-title {
+  color: #666666;
+  font-size: 2rem;
+  font-family: "Poppins Medium";
+  line-height: 2.2rem;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 767px) {
+  .cp-icon-details .sub-title {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+.cp-icon-details .title {
+  font-family: "Poppins Semibold";
+  font-size: 3.6rem;
+  color: #333333;
+  line-height: 4.8rem;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 767px) {
+  .cp-icon-details .title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+
+/*# sourceMappingURL=cp-icon-details.css.map */
