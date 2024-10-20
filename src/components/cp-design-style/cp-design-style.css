@@ -1,0 +1,20 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-design-style .comp-head {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.cp-design-style .comp-head .title {
+  font-family: "Poppins Medium";
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #333333;
+  margin-bottom: 1.6rem;
+}
+
+/*# sourceMappingURL=cp-design-style.css.map */

@@ -1,0 +1,17 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-design-style{
+    .comp-head{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .title{
+            font-family: $font-medium;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            color: $clr-base;
+            margin-bottom: 1.6rem;
+        }
+    }
+}
