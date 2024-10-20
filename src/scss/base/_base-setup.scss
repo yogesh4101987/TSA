@@ -108,8 +108,8 @@ p {
 
   @media only screen and (max-width: $media-mobile) {
     width: 100%;
-    padding: 0rem 2.4rem;
-    max-width: auto;
+    padding: 0rem 1.6rem;
+    width: auto;
   }
 }
 
@@ -146,3 +146,4 @@ p {
 .hide {
   display: none !important;
 }
+
