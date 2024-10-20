@@ -839,7 +839,6 @@ p {
 @media only screen and (max-width: 991px) {
   .bs-sec .sec-head {
     margin-bottom: 1.6rem;
-    padding-right: 5.5rem;
   }
 }
 .bs-sec .sec-title {
@@ -864,6 +863,13 @@ p {
   font-family: "Poppins Regular";
   color: #666666;
 }
+.bs-sec.typ-no-top-padding {
+  padding-top: 0;
+}
+.bs-sec.typ-build-cal {
+  padding-bottom: 2.4rem;
+}
+
 .btn {
   display: inline-block;
   font-family: "Poppins Medium";
