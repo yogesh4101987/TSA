@@ -70,9 +70,14 @@
 .cp-architect-card {
   position: relative;
   width: 29.6rem;
-  height: 26rem;
+  min-height: 26rem;
   border-radius: 1.6rem;
   overflow: hidden;
+}
+@media only screen and (max-width: 767px) {
+  .cp-architect-card {
+    min-height: 29.6rem;
+  }
 }
 .cp-architect-card .img-wrap .img {
   width: 100%;
@@ -98,33 +103,30 @@
 }
 .cp-architect-card .card-title {
   font-size: 1.6rem;
+  line-height: 2.4rem;
   font-family: "Poppins Medium";
   margin-bottom: 0.8rem;
   color: #FFFFFF;
+  text-transform: capitalize;
 }
-.cp-architect-card .card-details {
+.cp-architect-card .bottom-sec {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.cp-architect-card .card-details .detail-left {
+.cp-architect-card .bottom-sec .location-list {
+  display: flex;
+}
+.cp-architect-card .bottom-sec .location-list .location-item {
   display: flex;
   align-items: center;
 }
-.cp-architect-card .card-details .detail-left .location-details {
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
-}
-.cp-architect-card .card-details .detail-left .location-details .location-icon {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-.cp-architect-card .card-details .detail-left .location-details .location-icon .icon {
-  font-size: 1.6rem;
+.cp-architect-card .bottom-sec .location-list .location-item .icon {
+  font-size: 1.2rem;
   color: #FFFFFF;
 }
-.cp-architect-card .card-details .detail-left .location-details .location {
+.cp-architect-card .bottom-sec .location-list .location-item .details {
+  position: relative;
   margin-left: 0.5rem;
   font-size: 1.2rem;
   color: #FFFFFF;
@@ -132,61 +134,38 @@
   line-height: 1.6rem;
   margin-right: 1.2rem;
 }
-.cp-architect-card .card-details .detail-left .seprate {
+.cp-architect-card .bottom-sec .location-list .location-item .details::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 1px;
   height: 1.2rem;
-  background-color: #ccc;
-  margin-right: 1.2rem;
+  background-color: #FFFFFF;
+  margin-right: -1.2rem;
 }
-.cp-architect-card .card-details .detail-left .rating-details {
-  display: flex;
-  align-items: center;
+.cp-architect-card .bottom-sec .location-list .location-item.typ-rating {
   padding: 0.2rem 0.8rem;
   background-color: #D2042D;
   border-radius: 2.6rem;
+  margin-left: 1.2rem;
 }
-.cp-architect-card .card-details .detail-left .rating-details .rating-icon {
-  width: 0.8rem;
-  height: 0.8rem;
-  margin-right: 0.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.cp-architect-card .bottom-sec .location-list .location-item.typ-rating .details {
+  margin: 0;
+  margin-left: 0.2rem;
 }
-.cp-architect-card .card-details .detail-left .rating-details .rating-icon .icon {
-  font-size: 1rem;
-  color: #FFFFFF;
+.cp-architect-card .bottom-sec .location-list .location-item.typ-rating .details::after {
+  display: none;
 }
-.cp-architect-card .card-details .detail-left .rating-details .rating {
-  color: #FFFFFF;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-}
-.cp-architect-card .card-details .detail-right {
+.cp-architect-card .detail-right {
   width: 2.4rem;
   height: 2.4rem;
-  border: 1px solid #FFFFFF;
   border-radius: 0.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid #FFFFFF;
 }
-.cp-architect-card .card-details .detail-right .icon {
+.cp-architect-card .detail-right .icon {
   color: #FFFFFF;
-  font-size: 1.8rem;
-}
-
-.architect-container {
-  margin: 0 0 0 auto;
-  padding: 0px;
-  width: 124rem;
-}
-@media only screen and (max-width: 767px) {
-  .architect-container {
-    width: 100%;
-    padding: 0rem 1.6rem;
-    width: auto;
-  }
+  font-size: 2.4rem;
 }
 
 /*# sourceMappingURL=cp-architect.css.map */

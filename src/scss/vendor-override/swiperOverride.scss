@@ -36,13 +36,13 @@
   }
 
   .swiper-nav{
-     min-width: 16rem;
+     min-width: 13rem;
     .swiper-button-next, 
     .swiper-button-prev{
       color: $clr-base;     
       cursor: pointer;
       z-index: 1;
-      padding:3rem;
+      padding:2.4rem;
       border: 1px solid $clr-base;
       border-radius:50%;
       &.swiper-button-disabled{
@@ -50,7 +50,7 @@
         opacity: 0.5;
       }
       &:after{
-        font-size: 3.5rem;
+        font-size: 2.4rem;
         font-weight: normal; 
         font-family: 'icomoon'; 
       }
@@ -127,6 +127,7 @@
         display: none;
       }     
     }
+
   }
 }
 

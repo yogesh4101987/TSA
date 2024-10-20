@@ -977,14 +977,14 @@ p {
   margin: 0 2px;
 }
 .bs-swiper .swiper-nav {
-  min-width: 16rem;
+  min-width: 13rem;
 }
 .bs-swiper .swiper-nav .swiper-button-next,
 .bs-swiper .swiper-nav .swiper-button-prev {
   color: #333333;
   cursor: pointer;
   z-index: 1;
-  padding: 3rem;
+  padding: 2.4rem;
   border: 1px solid #333333;
   border-radius: 50%;
 }
@@ -995,7 +995,7 @@ p {
 }
 .bs-swiper .swiper-nav .swiper-button-next:after,
 .bs-swiper .swiper-nav .swiper-button-prev:after {
-  font-size: 3.5rem;
+  font-size: 2.4rem;
   font-weight: normal;
   font-family: "icomoon";
 }

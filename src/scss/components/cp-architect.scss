@@ -13,7 +13,7 @@
     padding-left: 10rem;
 
     @media only screen and (max-width: $media-mobile) {
-      padding: 0 1.6rem; 
+      padding: 0 1.6rem;
     }
     .title {
       font-family: $font-semiBold;
@@ -42,7 +42,7 @@
   .arch-right {
     width: 69%;
     overflow: hidden;
-}
+  }
 
   @media only screen and (max-width: $media-mobile) {
     flex-direction: column;
@@ -55,11 +55,11 @@
         font-size: 2.4rem;
         line-height: 3.2rem;
       }
-      .desc{
+      .desc {
         margin-bottom: 0rem;
       }
     }
-    
+
     .arch-right {
       width: 100%;
     }
@@ -70,9 +70,14 @@
 .cp-architect-card {
   position: relative;
   width: 29.6rem;
-  height: 26rem;
+  min-height: 26rem;
   border-radius: 1.6rem;
   overflow: hidden;
+
+
+  @media only screen and (max-width: $media-mobile) {
+    min-height: 29.6rem;
+  }
 
   .img-wrap {
     .img {
@@ -101,103 +106,80 @@
   }
   .card-title {
     font-size: 1.6rem;
+    line-height: 2.4rem;
     font-family: $font-medium;
     margin-bottom: 0.8rem;
     color: $clr-root;
+    text-transform: capitalize;
   }
-  .card-details {
+  .bottom-sec {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .detail-left {
+    .location-list {
       display: flex;
-      align-items: center;
+    
 
-      .location-details {
-        display: flex;
-        align-items: center;
-        margin-right: 1rem;
-
-        .location-icon  {
-          width: 1.6rem;
-          height: 1.6rem;
-          .icon{
-            font-size: 1.6rem;
-            color: $clr-root;
-          }
+      .location-item{
+       display: flex;
+       align-items: center;
+        .icon {
+          font-size: 1.2rem;
+          color: $clr-root;
         }
-
-        .location {
+        .details {
+          position: relative;
           margin-left: 0.5rem;
           font-size: 1.2rem;
           color: $clr-root;
           font-family: $font-medium;
           line-height: 1.6rem;
           margin-right: 1.2rem;
-        }
-      }
 
-      .seprate {
-        width: 1px;
-        height: 1.2rem;
-        background-color: #ccc;
-        margin-right: 1.2rem;
-      }
-
-      .rating-details {
-        display: flex;
-        align-items: center;
-        padding: 0.2rem 0.8rem;
-        background-color: $clr-secondary;
-        border-radius: 2.6rem;
-
-        .rating-icon {
-          width: 0.8rem;
-          height: 0.8rem;
-          margin-right: 0.25rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          .icon{
-            font-size: 1rem;
-            color: $clr-root;
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 1px;
+            height: 1.2rem;
+            background-color: $clr-root;
+            margin-right: -1.2rem;
           }
         }
 
-        .rating {
-          color: $clr-root;
-          font-size: 1.2rem;
-          line-height: 1.6rem;
+
+        &.typ-rating{
+          padding:0.2rem 0.8rem ;
+          background-color: $clr-secondary;
+          border-radius: 2.6rem;
+          margin-left: 1.2rem;
+
+          .details{
+            margin: 0;
+            margin-left:0.2rem ;
+            &::after{
+              display: none;
+            }
+          }
+          
         }
       }
     }
 
-    .detail-right {
-      width: 2.4rem;
-      height: 2.4rem;
-      border: 1px solid $clr-root;
-      border-radius: 0.4rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .icon {
-        color: $clr-root;
-        font-size: 1.8rem;
-      }
-    }
+  
+
+  
   }
-}
 
-.architect-container {
-  margin: 0 0 0 auto;
-  padding: 0px;
-  width: 124rem;
-
-  @media only screen and (max-width: $media-mobile) {
-    width: 100%;
-    padding: 0rem 1.6rem;
-    width: auto;
+  .detail-right {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid $clr-root;
+    .icon {
+      color: $clr-root;
+      font-size: 2.4rem;
+    }
   }
 }
