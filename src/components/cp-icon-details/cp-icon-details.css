@@ -51,7 +51,7 @@
   font-size: 2rem;
   font-family: "Poppins Medium";
   line-height: 2.2rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 767px) {
   .cp-icon-details .sub-title {
@@ -59,14 +59,15 @@
     line-height: 1.6rem;
   }
 }
-.cp-icon-details .icon-title {
+.cp-icon-details .title {
   font-family: "Poppins Semibold";
   font-size: 3.6rem;
   color: #333333;
   line-height: 4.8rem;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
-  .cp-icon-details .icon-title {
+  .cp-icon-details .title {
     font-size: 2rem;
     line-height: 2.8rem;
   }

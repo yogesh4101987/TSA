@@ -806,7 +806,7 @@ p {
   margin-top: 4rem;
 }
 .bs-sec.typ-gray-bg {
-  background: #ECF2FB;
+  background: #ecf2fb;
   border-radius: 4.8rem 4.8rem 0 0;
   -webkit-border-radius: 4.8rem 4.8rem 0 0;
   -moz-border-radius: 4.8rem 4.8rem 0 0;
@@ -869,7 +869,7 @@ p {
 .bs-sec.typ-build-cal {
   padding-bottom: 2.4rem;
 }
-.bs-sec.tataicon .sec-head {
+.bs-sec.typ-tataicon .sec-title {
   text-align: center;
 }
 
