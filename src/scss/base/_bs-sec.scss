@@ -10,6 +10,7 @@
         @include border-radius(4.8rem 4.8rem 0 0);
         @media only screen and (max-width: $media-mobile) {
             @include border-radius(2.4rem 2.4rem 0 0);
+            overflow-x: hidden;
         }
     }
     &.typ-prodcut{

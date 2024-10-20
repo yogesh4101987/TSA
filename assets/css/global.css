@@ -816,6 +816,7 @@ p {
     border-radius: 2.4rem 2.4rem 0 0;
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
     -moz-border-radius: 2.4rem 2.4rem 0 0;
+    overflow-x: hidden;
   }
 }
 .bs-sec.typ-prodcut {
