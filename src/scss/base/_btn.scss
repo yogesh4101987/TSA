@@ -54,6 +54,10 @@
             line-height: 1.8rem;
         }
     }
+    &:hover{
+        background-color: $clr-root;
+        color: $clr-primary;
+    }
     &.btn-secondary {
         background: transparent;
         color: $clr-primary;
@@ -63,4 +67,5 @@
         font-family: $font-bold;
         border-radius: 1px;
     }
+    
 }

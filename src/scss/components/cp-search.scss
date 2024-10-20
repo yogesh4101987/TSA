@@ -1,0 +1,27 @@
+@import "../config/variables";
+
+
+.cp-search{
+    .search-wrap{
+        border-radius: 1.2rem;
+        border: 1px solid #DEDEDE;
+        width: 41.6rem;
+        padding: 1rem;
+        position: relative;
+        @media only screen and (max-width: $media-mobile) {
+            display: none;
+        }
+    }
+    .search-input{
+        font-size: 1.6rem;
+        font-family:$font-regular;
+        width: 100%;
+        max-width: 34.4rem;
+    }
+    .search-icon{
+        position: absolute;
+        font-size: 2.4rem;
+        right: 12px;
+        cursor: pointer;
+    }
+}

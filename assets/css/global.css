@@ -828,6 +828,20 @@ p {
   vertical-align: middle;
   transform: translateY(-50%);
 }
+.bs-sec.typ-gray-bg {
+  background: #ECF2FB;
+  border-radius: 4.8rem 4.8rem 0 0;
+  -webkit-border-radius: 4.8rem 4.8rem 0 0;
+  -moz-border-radius: 4.8rem 4.8rem 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .bs-sec.typ-gray-bg {
+    border-radius: 2.4rem 2.4rem 0 0;
+    -webkit-border-radius: 2.4rem 2.4rem 0 0;
+    -moz-border-radius: 2.4rem 2.4rem 0 0;
+    overflow-x: hidden;
+  }
+}
 @media only screen and (max-width: 991px) {
   .bs-sec {
     padding: 2.8rem 0rem;
@@ -943,6 +957,10 @@ p {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
+}
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #3D7EDB;
 }
 .btn.btn-secondary {
   background: transparent;
