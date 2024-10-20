@@ -869,6 +869,9 @@ p {
 .bs-sec.typ-build-cal {
   padding-bottom: 2.4rem;
 }
+.bs-sec.tataicon .sec-head {
+  text-align: center;
+}
 
 .btn {
   display: inline-block;
