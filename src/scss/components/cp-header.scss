@@ -111,6 +111,7 @@
             display: none;
             left: -100%;
             transition: all ease 0.7s;
+            position: fixed;
 
         }
         &.active{

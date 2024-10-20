@@ -123,8 +123,8 @@
   .cp-header .bottom-sec .nav-list {
     display: none;
     left: -100%;
-    position: fixed;
     transition: all ease 0.7s;
+    position: fixed;
   }
 }
 .cp-header .bottom-sec .nav-list.active {
