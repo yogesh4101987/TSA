@@ -1,4 +1,55 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.bs-tab{}
+.bs-tab{
+    .tab-list{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.8rem;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .tab-item{
+            .title{
+                border: 1px solid #DEDEDE;
+                font-family: $font-regular;
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                color: $clr-para;
+                background: $clr-root;
+                cursor: pointer;
+                text-transform: uppercase;
+                @include border-radius(50px);
+                @include transition(all, 2s, ease);
+                padding: 0.6rem 1.6rem;
+            }
+            &:hover,
+            &.active{
+                .title{
+                    border: 1px solid #DEDEDE;
+                    font-family: $font-semiBold;
+                    color: $clr-root;
+                    background: $clr-primary;
+                }
+            }
+        }        
+    }
+    .tab-container{
+        padding-top: 2.4rem;
+        @media only screen and (max-width: $media-sm) {
+          padding-top: 1.6rem;
+        }
+        .tab-content{
+            @include transition(all, 2s, ease);
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+        .content{
+            font-size: 3rem;
+        }
+    }
+}
