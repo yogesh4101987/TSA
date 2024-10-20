@@ -6,20 +6,8 @@
         display: flex;
         justify-content: space-between;
         margin: 0 -1rem;
-        @media only screen and (max-width: $media-sm) {
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 0px;
-    }
     }
     .stage-item{
         margin: 0 1rem;
-        @media only screen and (max-width: $media-sm) {
-            margin: 0px;
-            margin-bottom: 1.2rem;
-            &:last-child{
-                margin: 0px;
-            }
-        }
     }
 }

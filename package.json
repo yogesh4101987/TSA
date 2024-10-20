@@ -11,7 +11,6 @@
   "description": "",
   "devDependencies": {
     "grunt": "^1.6.1",
-    "grunt-cli": "^1.5.0",
     "grunt-contrib-connect": "^5.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-imagemin": "^4.0.0",
@@ -19,8 +18,5 @@
     "grunt-contrib-uglify": "^5.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "load-grunt-tasks": "^5.1.0"
-  },
-  "dependencies": {
-    "liftup": "^3.0.1"
   }
 }
