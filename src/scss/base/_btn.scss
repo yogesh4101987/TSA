@@ -67,5 +67,14 @@
         font-family: $font-bold;
         border-radius: 1px;
     }
-    
+    &.btn-icon{
+        border: 1px solid $clr-root;
+        display: flex;
+        align-items: center;        
+        .icon{
+            margin-left: 0.5rem;
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+    }
 }

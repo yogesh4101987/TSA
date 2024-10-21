@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function stickyHeader(){
-    var header = $('.cp-header');
+  var header = $('.cp-header');
   var offset = header.offset().top;
 
   $(window).scroll(function() {

@@ -60,7 +60,7 @@
     padding: 1.6rem;
   }
 }
-.cp-design-card .content-wrap .d-name {
+.cp-design-card .content-wrap .deg-name {
   font-family: "Poppins Semibold";
   font-size: 2rem;
   line-height: 2.9rem;
@@ -69,7 +69,7 @@
   border-bottom: 1px solid #DEDEDE;
 }
 @media only screen and (max-width: 767px) {
-  .cp-design-card .content-wrap .d-name {
+  .cp-design-card .content-wrap .deg-name {
     line-height: 3rem;
   }
 }
@@ -100,14 +100,14 @@
 .cp-design-card .content-wrap .detail-list .detail-item:nth-child(3)::after, .cp-design-card .content-wrap .detail-list .detail-item:last-child::after {
   display: none;
 }
-.cp-design-card .content-wrap .d-title {
+.cp-design-card .content-wrap .detail-title {
   font-family: "Poppins Regular";
   font-size: 1.4rem;
   line-height: 2rem;
   color: #D2042D;
   margin-bottom: 0.4rem;
 }
-.cp-design-card .content-wrap .d-desc {
+.cp-design-card .content-wrap .detail-desc {
   font-family: "Poppins Semibold";
   font-size: 1.6rem;
   line-height: 2.4rem;
