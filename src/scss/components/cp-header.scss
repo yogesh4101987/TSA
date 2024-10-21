@@ -6,7 +6,7 @@
 .cp-header{
     padding: 1.6rem 0 0;
     border-bottom: 1px solid #DEDEDE;
-
+    
     @media only screen and (max-width: $media-mobile) {
         padding-bottom: 4rem;
 
@@ -19,6 +19,7 @@
         //box-shadow: 0 4px 2px -2px gray;
         background-color: $clr-root;
         z-index: 8;
+        
     }
     .top-sec{
         display: flex;
