@@ -35,7 +35,7 @@
         @media only screen and (max-width: $media-mobile) {
             padding: 1.6rem;
         }
-        .d-name{
+        .deg-name{
             font-family: $font-semiBold;
             font-size: 2rem;
             line-height: 2.9rem;
@@ -75,14 +75,14 @@
                 }                        
             }
         }
-        .d-title{
+        .detail-title{
             font-family: $font-regular;
             font-size: 1.4rem;
             line-height: 2rem;
             color: $clr-secondary;
             margin-bottom: 0.4rem;
         }
-        .d-desc{
+        .detail-desc{
             font-family: $font-semiBold;
             font-size: 1.6rem;
             line-height: 2.4rem;

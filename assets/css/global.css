@@ -971,65 +971,15 @@ p {
   font-family: "Poppins Bold";
   border-radius: 1px;
 }
-
-/* colors */
-/*font family*/
-/* breakpoints */
-/*transform*/
-/*opacity*/
-/*opacity- end*/
-.bs-tab .tab-list {
+.btn.btn-icon {
+  border: 1px solid #FFFFFF;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  gap: 0.8rem;
-  overflow-x: auto;
 }
-.bs-tab .tab-list::-webkit-scrollbar {
-  display: none;
-}
-.bs-tab .tab-list .tab-item .title {
-  border: 1px solid #DEDEDE;
-  font-family: "Poppins Regular";
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  color: #666666;
-  background: #FFFFFF;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  transition: all 2s ease;
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  padding: 0.6rem 1.6rem;
-}
-.bs-tab .tab-list .tab-item:hover .title, .bs-tab .tab-list .tab-item.active .title {
-  border: 1px solid #DEDEDE;
-  font-family: "Poppins Semibold";
-  color: #FFFFFF;
-  background: #3D7EDB;
-}
-.bs-tab .tab-container {
-  padding-top: 2.4rem;
-}
-@media only screen and (max-width: 991px) {
-  .bs-tab .tab-container {
-    padding-top: 1.6rem;
-  }
-}
-.bs-tab .tab-container .tab-content {
-  transition: all 2s ease;
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  display: none;
-}
-.bs-tab .tab-container .tab-content.active {
-  display: block;
-}
-.bs-tab .tab-container .content {
-  font-size: 3rem;
+.btn.btn-icon .icon {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 /* colors */
