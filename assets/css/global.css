@@ -1083,5 +1083,62 @@ p {
     display: none;
   }
 }
+.bs-swiper.typ-brand {
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-brand {
+    padding-bottom: 16rem;
+  }
+}
+.bs-swiper.typ-brand .swiper-slide {
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-brand .swiper-slide {
+    width: 37.5rem !important;
+    height: 10.6rem !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.bs-swiper.typ-brand .swiper-pagination-bullet {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #808080;
+  border-radius: 50%;
+  margin: 0 8px;
+  transform: none;
+  transition: none;
+}
+.bs-swiper.typ-brand .swiper-pagination-bullet::after {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 50%;
+  top: -4px;
+  left: -4px;
+  content: "";
+  position: absolute;
+}
+.bs-swiper.typ-brand .swiper-pagination-bullet-active-main {
+  background-color: #D2042D;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+}
+.bs-swiper.typ-brand .swiper-pagination-bullet-active-main::after {
+  border: 1px solid #D2042D;
+}
+.bs-swiper.typ-brand .swiper-pagination-bullets-dynamic {
+  overflow: visible;
+}
+.bs-swiper.typ-brand .swiper-pagination-horizontal.swiper-pagination-bullets {
+  bottom: 12px;
+}
+.bs-swiper.typ-brand .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 8px;
+}
 
 /*# sourceMappingURL=global.css.map */
