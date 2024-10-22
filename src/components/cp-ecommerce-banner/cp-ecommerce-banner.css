@@ -87,6 +87,11 @@
   color: #FFFFFF;
   max-width: 28rem;
   margin-bottom: 2.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media only screen and (max-width: 767px) {
   .cp-ecommerce-banner .content-wrap .desc {
