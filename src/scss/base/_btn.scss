@@ -86,4 +86,14 @@
       line-height: 1.6rem;
     }
   }
+    &.btn-icon{
+        border: 1px solid $clr-root;
+        display: flex;
+        align-items: center;        
+        .icon{
+            margin-left: 0.5rem;
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+    }
 }

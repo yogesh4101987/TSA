@@ -894,6 +894,10 @@ p {
 .bs-sec.typ-tataicon .sec-title {
   text-align: center;
 }
+.bs-sec.typ-first-sec {
+  margin-top: 11rem;
+  padding-top: 0;
+}
 
 .btn {
   display: inline-block;
@@ -971,23 +975,15 @@ p {
   font-family: "Poppins Bold";
   border-radius: 1px;
 }
-.btn.btn-ecom-banner {
-  min-width: 0;
-  padding: 1.2rem 1.6rem;
-  background-color: #FFFFFF;
-  color: #333333;
-  border: none;
-  border-radius: 0.8rem;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  font-family: "Poppins Medium";
+.btn.btn-icon {
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
 }
-@media only screen and (max-width: 767px) {
-  .btn.btn-ecom-banner {
-    padding: 0.8rem 1rem;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
+.btn.btn-icon .icon {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 /* colors */
@@ -1037,7 +1033,7 @@ p {
 }
 .bs-swiper .swiper-nav .swiper-button-next.swiper-button-disabled,
 .bs-swiper .swiper-nav .swiper-button-prev.swiper-button-disabled {
-  color: #b3b3b3;
+  color: #B3B3B3;
   opacity: 0.5;
 }
 .bs-swiper .swiper-nav .swiper-button-next:after,
@@ -1119,54 +1115,20 @@ p {
     display: none;
   }
 }
-.bs-swiper.typ-ecomm-banner .swiper-wrapper {
-  position: relative;
-  padding-bottom: 4rem;
-}
 @media only screen and (max-width: 767px) {
-  .bs-swiper.typ-ecomm-banner .swiper-wrapper {
-    padding-bottom: 3.2rem;
+  .bs-swiper.typ-home-style {
+    margin-right: -2rem;
   }
 }
-.bs-swiper.typ-ecomm-banner .swiper-slide {
-  width: 100% !important;
-  max-height: 36rem;
+.bs-swiper.typ-home-style .swiper-slide {
+  width: auto !important;
+  margin-right: 2rem;
+  min-width: 29.5rem;
 }
-.bs-swiper.typ-ecomm-banner .swiper-pagination {
-  min-height: 1.6rem;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.bs-swiper.typ-ecomm-banner .swiper-pagination-bullet {
-  width: 0.8rem;
-  height: 0.8rem;
-  background-color: #333333;
-}
-.bs-swiper.typ-ecomm-banner .swiper-pagination-bullet-active {
-  background-color: #D2042D;
-  outline: 2px solid #FFFFFF;
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 50%;
-  position: relative;
-}
-.bs-swiper.typ-ecomm-banner .swiper-pagination-bullet-active::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1.6rem;
-  height: 1.6rem;
-  background-color: #D2042D;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-.bs-swiper.typ-ecomm-banner .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.bs-swiper.typ-ecomm-banner .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 6px;
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-home-style .swiper-slide {
+    margin-right: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
