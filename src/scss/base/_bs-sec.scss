@@ -77,4 +77,12 @@
       text-align: center;
     }
   }
+  &.typ-dealer{
+    .sec-head{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+   
+  }
 }
