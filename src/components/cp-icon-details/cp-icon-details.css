@@ -5,8 +5,11 @@
 /*opacity*/
 /*opacity- end*/
 .cp-icon-details {
-  text-align: center;
   position: relative;
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .cp-icon-details::after {
   content: "";
