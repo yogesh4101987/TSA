@@ -1,7 +1,6 @@
 $(document).ready(function() {
-    stickyHeader();
+    // stickyHeader();
     hamburgerMenu();
-
 });
 
 function stickyHeader(){
@@ -18,9 +17,9 @@ function stickyHeader(){
 }
 
 function hamburgerMenu(){
-    $(".open-menu").click(function () {
-        $(this).toggleClass("active");
-        $(".nav-list").toggleClass("active")
-        $("body").toggleClass("cm-overflow-hidden")
-      });
+  $(".open-menu").click(function () {
+    $(this).toggleClass("active");
+    $(".nav-list").toggleClass("active")
+    $("body").toggleClass("cm-overflow-hidden")
+  });
 }
