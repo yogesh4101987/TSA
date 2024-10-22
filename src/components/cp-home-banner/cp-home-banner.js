@@ -4,12 +4,17 @@ $(document).ready(function() {
     if ($(window).width() < 768) {
         homeBannerFeatureMobile();
     } 
+    else{
+        destroyIsotope();
+    }
 });
 
 $(window).resize(function() {
     if ($(window).width() < 768) {
         homeBannerFeatureMobile();
-    } 
+    } else{
+        destroyIsotope();
+    }
 });
 
 function homeBannerFeatureMobile() {
@@ -21,4 +26,11 @@ function homeBannerFeatureMobile() {
             gutter: 6 
         }
     });
+}
+
+function destroyIsotope() {
+    var $grid = $('.feature').data('isotope'); 
+    if ($grid) {
+        $grid.destroy(); // Destroy Isotope instance if present
+    }
 }
