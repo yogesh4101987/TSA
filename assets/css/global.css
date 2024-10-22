@@ -898,6 +898,10 @@ p {
   margin-top: 11rem;
   padding-top: 0;
 }
+.bs-sec.typ-eCommerce-banner {
+  padding: 0;
+  background-color: #F3F4F6;
+}
 
 .btn {
   display: inline-block;
