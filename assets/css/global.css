@@ -987,8 +987,13 @@ p {
 }
 .btn.btn-icon .icon {
   margin-left: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 2rem;
+}
+.btn.btn-white {
+  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  color: #3D7EDB;
 }
 
 /* colors */
