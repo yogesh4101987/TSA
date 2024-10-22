@@ -894,6 +894,15 @@ p {
 .bs-sec.typ-tataicon .sec-title {
   text-align: center;
 }
+.bs-sec.typ-calculate .sec-head {
+  padding: 2.4rem 2.4rem 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-calculate .container {
+    margin: 0;
+    padding: 0;
+  }
+}
 
 .btn {
   display: inline-block;
