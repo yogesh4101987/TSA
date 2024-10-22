@@ -1,0 +1,52 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-ecommerce-banner{
+  border: 1px solid red;
+  position: relative;
+  max-width: 100%;
+  height: 36rem;
+   .img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+  .banner-desc{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5rem 0 5rem 10rem ;
+    border: 1px solid black;
+    z-index: 11;
+
+    .icon{
+        min-height: 3.2rem;
+        border: 1px solid red;
+        font-size: 2.2rem;
+    }
+    .title{
+        max-width: 50rem;
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+        font-family: $font-semiBold;
+        color: $clr-root;
+    }
+    .desc{
+        max-width: 30rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-family: $font-regular;
+        color: $clr-root;
+        margin-bottom: 2.4rem;
+    }
+    .shop-banner{
+      background-color: $clr-root;
+      color: $clr-base;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      font-family: $font-medium;
+      padding: 1.2rem 1.6rem;
+    }
+  }
+}

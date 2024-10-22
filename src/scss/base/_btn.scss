@@ -67,5 +67,14 @@
         font-family: $font-bold;
         border-radius: 1px;
     }
+
+    &.btn-ecom-banner{
+        min-width: 0;
+        padding: 1.2rem 1.6rem;
+        background-color: $clr-root;
+        color: $clr-base;
+        border: none;
+        border-radius: 0.8rem;
+    }
     
 }
