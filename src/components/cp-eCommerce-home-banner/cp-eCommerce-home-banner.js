@@ -1,7 +1,7 @@
 var winWidth = $(window).width();
 
 $(document).ready(function() {    
-    if ($(window).width() < 768) {
+    if ($(window).width() <= 768) {
         bannerFeatureMobile();
     } 
     else{
@@ -10,7 +10,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    if ($(window).width() < 768) {
+    if ($(window).width() <= 768) {
         bannerFeatureMobile();
     } else{
         destroyIsotope();

@@ -16,7 +16,7 @@
   color: #333333;
   margin-bottom: 2rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .banner-title {
     font-size: 2.4rem;
     line-height: 3.2rem;
@@ -101,7 +101,7 @@
   width: 100%;
   height: 100%;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature-card {
     padding: 1rem;
   }
@@ -110,7 +110,7 @@
   max-width: 14.3rem;
   max-height: 13.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature-card.typ-resized .f-img {
     max-width: 8rem;
     max-height: 8rem;
@@ -130,7 +130,7 @@
   z-index: 1;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature-card .f-title {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -164,7 +164,7 @@
   max-width: 10rem;
   max-height: 10rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature-card .f-img {
     max-width: 8rem;
     max-height: 8rem;
