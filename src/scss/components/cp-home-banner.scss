@@ -8,10 +8,8 @@
     background-repeat: no-repeat;
     background-size: auto;
     padding: 5.6rem 0;
-    margin-bottom: 4rem;
     @media only screen and (max-width: $media-mobile) {
         background: #F3F4F6 ;
-        padding: 2.4rem 0;
     }
 
     .banner-title {
@@ -30,58 +28,62 @@
     .container{
         position: relative;
     }
-    .feature-list{
+
+    .feature {
         width: 50%;
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         gap: 2rem;
-        @media only screen and (max-width: $media-mobile) {
-            width: 100%; 
-            gap: 1.2rem;          
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            gap: 1.2rem;
         }
-        .feature-item{
-            width: 31%;
-            height: 11rem;
-            @media only screen and (max-width: $media-mobile) {
+        
+        
+        .feature-item {
+            width: 31%; /* Adjust width to account for 20px gutter */
+            height: 11rem;    
+            display: flex;  
+            margin: 0 ; 
+            &:nth-child(2) { order: 9; } //PLANS
+            &:nth-child(3) { order: 8; } //SHOP
+            &:nth-child(4) { order: 1; } //REBARS
+            &:nth-child(5) { order: 4; } //ARCHITECTS
+            &:nth-child(6) { order: 2; } //CALCULATOR
+            &:nth-child(7) { order: 6; } //BUDGET
+            &:nth-child(8) { order: 5; } //INSPIRATION
+            &:nth-child(9) { order: 7; } //CAUTION
+            @media only screen and (max-width: 768px) {
+                width:  48%;
                 height: 9.2rem;
+                // display: block;
+                order: initial; 
+                margin-bottom: 1.2rem;
             }
-            &.typ-2{
+            &.typ-resize {
                 height: 15.6rem;
-                width: 48%;
-                @media only screen and (max-width: $media-mobile) {
+                width: 48%; /* Larger items for bigger screens */
+                
+                @media only screen and (max-width: 768px) {
                     height: 13rem;
-                    width: 48%;
+                    width:  48%; /* Adjust width and gutter for mobile */
                 }
             }
-            @media only screen and (max-width: $media-mobile) {
-                width: 48%;
-                &:nth-child(1) {
-                    order: 3;
-                } 
-                &:nth-child(2) {
-                    order: 6;
-                } 
-                &:nth-child(3) {
-                    order: 1;
-                } 
-                &:nth-child(4) {
-                    order: 4;
-                } 
-                &:nth-child(5) {
-                    order: 7;
-                } 
-                &:nth-child(6) {
-                    order: 5;
-                } 
-                &:nth-child(7) {
-                    order: 8;
-                } 
-                &:nth-child(8) {
-                    order: 2;
-                }
+        }       
+        .grid-sizer{
+            width: 31%;
+            height: 11rem;    
+            display: none;
+            order: 0; 
+            @media only screen and (max-width: 768px) {
+                display: block; 
+                width:  48%;
+                height: 9.2rem;              
             }
         }
     }
+    
     .feature-card{
         border: 1px solid $clr-border;
         background: $clr-root;
@@ -92,7 +94,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        &.typ-2{
+        &.typ-resized{
             .f-img{
                 max-width: 14.3rem;
                 max-height: 13.6rem;

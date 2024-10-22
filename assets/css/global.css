@@ -899,6 +899,10 @@ p {
   justify-content: space-between;
   align-items: flex-end;
 }
+.bs-sec.typ-first-sec {
+  margin-top: 11rem;
+  padding-top: 0;
+}
 
 .btn {
   display: inline-block;
