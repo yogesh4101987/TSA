@@ -1,23 +1,17 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-home-banner{
+.cp-eCommerce-home-banner{
     position: relative;
-    background: #F3F4F6 url(../../components/cp-home-banner/images/banner-img.png);
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: auto;
+    background: #F3F4F6 ;
     padding: 5.6rem 0;
-    @media only screen and (max-width: $media-mobile) {
-        background: #F3F4F6 ;
-    }
 
     .banner-title {
         font-size: 4rem;
         line-height: 5.2rem;
         font-family: $font-semiBold;
         color: $clr-base;
-        margin-bottom: 3.2rem;
+        margin-bottom: 2rem;
         @media only screen and (max-width: $media-mobile) {
             font-size: 2.4rem;
             line-height: 3.2rem;
@@ -30,30 +24,25 @@
     }
 
     .feature {
-        width: 50%;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         gap: 2rem;
         @media only screen and (max-width: 768px) {
-            width: 100%;
             gap: 1.2rem;
         }
         
         
         .feature-item {
-            width: 31%; /* Adjust width to account for 20px gutter */
-            height: 11rem;    
+            width: 25%; /* Adjust width to account for 20px gutter */
+            height: 14rem;    
             display: flex;  
             margin: 0 ; 
-            &:nth-child(2) { order: 9; } //PLANS
-            &:nth-child(3) { order: 8; } //SHOP
-            &:nth-child(4) { order: 1; } //REBARS
-            &:nth-child(5) { order: 4; } //ARCHITECTS
-            &:nth-child(6) { order: 2; } //CALCULATOR
-            &:nth-child(7) { order: 6; } //BUDGET
-            &:nth-child(8) { order: 5; } //INSPIRATION
-            &:nth-child(9) { order: 7; } //CAUTION
+            &:nth-child(2) { order: 1; } //STRUCTURE
+            &:nth-child(3) { order: 4; } //ROOFING
+            &:nth-child(4) { order: 2; } //Hand Tools
+            &:nth-child(5) { order: 5; } //FENCING
+            &:nth-child(6) { order: 3; } //DOORS
+            &:nth-child(7) { order: 6; } //GARDENING
             @media only screen and (max-width: 768px) {
                 width:  48%;
                 height: 9.2rem;
@@ -61,13 +50,9 @@
                 order: initial; 
                 margin-bottom: 1.2rem;
             }
-            &.typ-resize {
-                height: 15.6rem;
-                width: 48%; /* Larger items for bigger screens */
-                
+            &.typ-resize {                
                 @media only screen and (max-width: 768px) {
                     height: 13rem;
-                    width:  48%; /* Adjust width and gutter for mobile */
                 }
             }
         }       
@@ -117,6 +102,9 @@
             font-size: 1.4rem;
             line-height: 2rem;
             color: $clr-base;
+            max-width: 75%;
+            position: relative;
+            z-index: 1;
             text-transform: uppercase;
             @media only screen and (max-width: $media-mobile) {
                 font-size: 1.6rem;
@@ -130,6 +118,8 @@
             color: $clr-para;
             margin-bottom: 0.6rem;
             max-width: 65%;
+            z-index: 1;
+            position: relative;
         }
         .f-offer{
             background: $clr-secondary;
@@ -144,11 +134,14 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            max-width: 9.4rem;
-            max-height: 9.4rem;
+            max-width: 10rem;
+            max-height: 10rem;
             @media only screen and (max-width: $media-mobile) {
                 max-width: 8rem;
                 max-height: 8rem;
+            }
+            img{
+                object-fit: contain;
             }
         }
     }
