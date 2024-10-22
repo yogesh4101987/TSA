@@ -700,7 +700,7 @@ p {
   color: #666666;
   text-transform: initial;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   p {
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -750,20 +750,21 @@ p {
 .container {
   margin: 0px auto;
   padding: 0px;
-  width: 124rem;
+  max-width: 124rem;
+  width: 100%;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
   .container {
     width: 100%;
     padding: 0rem 1.6rem;
-    width: auto;
+    max-width: auto;
   }
 }
 
 .cm-mobile {
   display: none !important;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cm-mobile {
     display: block !important;
   }
@@ -772,7 +773,7 @@ p {
 .cm-desktop {
   display: block !important;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cm-desktop {
     display: none !important;
   }
@@ -811,7 +812,7 @@ p {
   -webkit-border-radius: 4.8rem 4.8rem 0 0;
   -moz-border-radius: 4.8rem 4.8rem 0 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-sec.typ-gray-bg {
     border-radius: 2.4rem 2.4rem 0 0;
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
@@ -834,7 +835,7 @@ p {
   -webkit-border-radius: 4.8rem 4.8rem 0 0;
   -moz-border-radius: 4.8rem 4.8rem 0 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-sec.typ-gray-bg {
     border-radius: 2.4rem 2.4rem 0 0;
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
@@ -897,6 +898,10 @@ p {
 .bs-sec.typ-first-sec {
   margin-top: 11rem;
   padding-top: 0;
+}
+.bs-sec.typ-eCommerce-banner {
+  padding: 0;
+  background-color: #F3F4F6;
 }
 
 .btn {
@@ -1048,7 +1053,7 @@ p {
 .bs-swiper .swiper-nav .swiper-button-next:after {
   content: "\e91d";
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-blog {
     margin-right: -1.6rem;
   }
@@ -1057,7 +1062,7 @@ p {
   width: auto !important;
   margin-right: 1.8rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-home-testimonial {
     margin-right: -2rem;
   }
@@ -1067,12 +1072,12 @@ p {
   margin-right: 2rem;
   min-width: 29.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-home-testimonial .swiper-slide {
     margin-right: 1.2rem;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-architect {
     padding-left: 1.6rem;
   }
@@ -1082,7 +1087,7 @@ p {
   height: 100%;
   padding-left: 10rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-architect .swiper {
     padding-left: 1.6rem;
   }
@@ -1090,7 +1095,7 @@ p {
 .bs-swiper.typ-architect .swiper-wrapper {
   padding-bottom: 9.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-architect .swiper-wrapper {
     padding-bottom: 0;
   }
@@ -1100,7 +1105,7 @@ p {
   margin-right: 2rem;
   min-width: 29.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-architect .swiper-slide {
     margin-right: 1.2rem;
   }
@@ -1110,12 +1115,12 @@ p {
   bottom: 40px;
   right: 9%;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-architect .swiper-nav {
     display: none;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-home-style {
     margin-right: -2rem;
   }
@@ -1125,7 +1130,7 @@ p {
   margin-right: 2rem;
   min-width: 29.5rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-home-style .swiper-slide {
     margin-right: 1.2rem;
   }
