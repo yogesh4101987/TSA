@@ -10,22 +10,17 @@
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-}
-@media only screen and (max-width: 767px) {
-  .cp-header {
-    padding-bottom: 4rem;
-  }
-}
-.cp-header.js-fixed-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #FFFFFF;
   z-index: 8;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
+}
+@media only screen and (max-width: 767px) {
+  .cp-header {
+    padding-bottom: 4rem;
+  }
 }
 .cp-header .top-sec {
   display: flex;

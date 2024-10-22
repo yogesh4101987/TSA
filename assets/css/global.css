@@ -894,6 +894,10 @@ p {
 .bs-sec.typ-tataicon .sec-title {
   text-align: center;
 }
+.bs-sec.typ-first-sec {
+  margin-top: 11rem;
+  padding-top: 0;
+}
 
 .btn {
   display: inline-block;
