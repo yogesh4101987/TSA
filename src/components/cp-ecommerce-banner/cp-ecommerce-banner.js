@@ -16,6 +16,7 @@ function ecomHomeBannerSlider() {
     var swiper = new Swiper(".js-banner", {
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       });
 }
