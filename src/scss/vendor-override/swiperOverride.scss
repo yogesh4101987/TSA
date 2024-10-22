@@ -8,32 +8,50 @@
     bottom: 0;
   }
 
-  .swiper-pagination-bullet {
-    width: 0.4rem;
-    height: 0.4rem;
-    opacity: 1;
-    margin: 0 0.5rem;
+  .swiper-pagination-bullet{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #808080;
     border-radius: 50%;
-    transition: all 0.5s ease !important;
-    background-color: $clr-root;
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: $clr-root;
-    width: 2rem;
-    border-radius: 0.3rem;
+    margin: 0 8px;
+    transform: none;
+    transition: none;
     opacity: 1;
+    &::after{
+      width: 1.6rem;
+      height: 1.6rem;
+      border: 1px solid transparent;
+      background: transparent;
+      border-radius: 50%;
+      top:-4px;
+      left: -4px;
+      content: '';
+      position: absolute;
+    }
   }
+  .swiper-pagination-bullet-active-main{
+    background-color: #D2042D;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    &::after{
+      border: 1px solid #D2042D;
+    }
+  }
+  .swiper-pagination-bullets-dynamic{
+    overflow:visible;
+  }
+  .swiper-pagination-horizontal.swiper-pagination-bullets{
+    bottom: 12px;
+    .swiper-pagination-bullet{
+      margin: 0 8px;
+    }
+  }
+  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+    transform: none;
+  }
+ 
 
-  .swiper-pagination-bullet-active-next,
-  .swiper-pagination-bullet-active-next-next,
-  .swiper-pagination-bullet-active-prev {
-    background: $clr-root;
-  }
-  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
-    margin: 0 2px;
-  }
 
   .swiper-nav{
      min-width: 13rem;
@@ -143,42 +161,18 @@
         flex-wrap: wrap;
       }
     }
-    .swiper-pagination-bullet{
-      width: 0.8rem;
-      height: 0.8rem;
-      background-color: #808080;
-      border-radius: 50%;
-      margin: 0 8px;
-      transform: none;
-      transition: none;
-      &::after{
-        width: 1.6rem;
-        height: 1.6rem;
-        border: 1px solid transparent;
-        background: transparent;
-        border-radius: 50%;
-        top:-4px;
-        left: -4px;
-        content: '';
-        position: absolute;
-      }
+    
+  }
+  &.typ-home-style{
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -2rem;
     }
-    .swiper-pagination-bullet-active-main{
-      background-color: #D2042D;
-      width: 0.8rem;
-      height: 0.8rem;
-      border-radius: 50%;
-      &::after{
-        border: 1px solid #D2042D;
-      }
-    }
-    .swiper-pagination-bullets-dynamic{
-      overflow:visible;
-    }
-    .swiper-pagination-horizontal.swiper-pagination-bullets{
-      bottom: 12px;
-      .swiper-pagination-bullet{
-        margin: 0 8px;
+    .swiper-slide{
+      width: auto !important;
+      margin-right: 2rem;
+      min-width: 29.5rem;
+      @media only screen and (max-width: $media-mobile) {
+          margin-right: 1.2rem;
       }
     }
   }

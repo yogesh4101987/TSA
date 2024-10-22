@@ -828,6 +828,20 @@ p {
   vertical-align: middle;
   transform: translateY(-50%);
 }
+.bs-sec.typ-gray-bg {
+  background: #ECF2FB;
+  border-radius: 4.8rem 4.8rem 0 0;
+  -webkit-border-radius: 4.8rem 4.8rem 0 0;
+  -moz-border-radius: 4.8rem 4.8rem 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .bs-sec.typ-gray-bg {
+    border-radius: 2.4rem 2.4rem 0 0;
+    -webkit-border-radius: 2.4rem 2.4rem 0 0;
+    -moz-border-radius: 2.4rem 2.4rem 0 0;
+    overflow-x: hidden;
+  }
+}
 @media only screen and (max-width: 991px) {
   .bs-sec {
     padding: 2.8rem 0rem;
@@ -944,6 +958,10 @@ p {
     line-height: 1.8rem;
   }
 }
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #3D7EDB;
+}
 .btn.btn-secondary {
   background: transparent;
   color: #3D7EDB;
@@ -952,6 +970,16 @@ p {
   line-height: 1.6rem;
   font-family: "Poppins Bold";
   border-radius: 1px;
+}
+.btn.btn-icon {
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.btn.btn-icon .icon {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 /* colors */
@@ -964,28 +992,46 @@ p {
   bottom: 0;
 }
 .bs-swiper .swiper-pagination-bullet {
-  width: 0.4rem;
-  height: 0.4rem;
-  opacity: 1;
-  margin: 0 0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #808080;
   border-radius: 50%;
-  transition: all 0.5s ease !important;
-  background-color: #FFFFFF;
-}
-.bs-swiper .swiper-pagination-bullet-active {
-  background-color: #FFFFFF;
-  width: 2rem;
-  border-radius: 0.3rem;
+  margin: 0 8px;
+  transform: none;
+  transition: none;
   opacity: 1;
 }
-.bs-swiper .swiper-pagination-bullet-active-next,
-.bs-swiper .swiper-pagination-bullet-active-next-next,
-.bs-swiper .swiper-pagination-bullet-active-prev {
-  background: #FFFFFF;
+.bs-swiper .swiper-pagination-bullet::after {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 50%;
+  top: -4px;
+  left: -4px;
+  content: "";
+  position: absolute;
 }
-.bs-swiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.bs-swiper .swiper-pagination-bullet-active-main {
+  background-color: #D2042D;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+}
+.bs-swiper .swiper-pagination-bullet-active-main::after {
+  border: 1px solid #D2042D;
+}
+.bs-swiper .swiper-pagination-bullets-dynamic {
+  overflow: visible;
+}
+.bs-swiper .swiper-pagination-horizontal.swiper-pagination-bullets {
+  bottom: 12px;
+}
 .bs-swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 2px;
+  margin: 0 8px;
+}
+.bs-swiper .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transform: none;
 }
 .bs-swiper .swiper-nav {
   min-width: 13rem;
@@ -1102,43 +1148,20 @@ p {
     flex-wrap: wrap;
   }
 }
-.bs-swiper.typ-brand .swiper-pagination-bullet {
-  width: 0.8rem;
-  height: 0.8rem;
-  background-color: #808080;
-  border-radius: 50%;
-  margin: 0 8px;
-  transform: none;
-  transition: none;
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-home-style {
+    margin-right: -2rem;
+  }
 }
-.bs-swiper.typ-brand .swiper-pagination-bullet::after {
-  width: 1.6rem;
-  height: 1.6rem;
-  border: 1px solid transparent;
-  background: transparent;
-  border-radius: 50%;
-  top: -4px;
-  left: -4px;
-  content: "";
-  position: absolute;
+.bs-swiper.typ-home-style .swiper-slide {
+  width: auto !important;
+  margin-right: 2rem;
+  min-width: 29.5rem;
 }
-.bs-swiper.typ-brand .swiper-pagination-bullet-active-main {
-  background-color: #D2042D;
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 50%;
-}
-.bs-swiper.typ-brand .swiper-pagination-bullet-active-main::after {
-  border: 1px solid #D2042D;
-}
-.bs-swiper.typ-brand .swiper-pagination-bullets-dynamic {
-  overflow: visible;
-}
-.bs-swiper.typ-brand .swiper-pagination-horizontal.swiper-pagination-bullets {
-  bottom: 12px;
-}
-.bs-swiper.typ-brand .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 8px;
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-home-style .swiper-slide {
+    margin-right: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
