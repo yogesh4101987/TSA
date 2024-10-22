@@ -5,28 +5,49 @@
 /*opacity*/
 /*opacity- end*/
 .cp-ecommerce-banner {
-  border: 1px solid red;
   position: relative;
   max-width: 100%;
   height: 36rem;
+  border-radius: 1.6rem;
+}
+@media only screen and (max-width: 767px) {
+  .cp-ecommerce-banner {
+    height: 20.6rem;
+    border-radius: 1.2rem;
+  }
 }
 .cp-ecommerce-banner .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 1.6rem;
+}
+@media only screen and (max-width: 767px) {
+  .cp-ecommerce-banner .img {
+    border-radius: 1.2rem;
+  }
 }
 .cp-ecommerce-banner .banner-desc {
   position: absolute;
-  left: 0;
-  top: 0;
-  padding: 5rem 0 5rem 10rem;
-  border: 1px solid black;
-  z-index: 11;
+  left: 10rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+@media only screen and (max-width: 767px) {
+  .cp-ecommerce-banner .banner-desc {
+    left: 1.6rem;
+  }
 }
 .cp-ecommerce-banner .banner-desc .icon {
   min-height: 3.2rem;
   border: 1px solid red;
   font-size: 2.2rem;
+}
+@media only screen and (max-width: 767px) {
+  .cp-ecommerce-banner .banner-desc .icon {
+    left: 5rem;
+  }
 }
 .cp-ecommerce-banner .banner-desc .title {
   max-width: 50rem;
@@ -34,6 +55,15 @@
   line-height: 4.8rem;
   font-family: "Poppins Semibold";
   color: #FFFFFF;
+  margin-bottom: 0.4rem;
+}
+@media only screen and (max-width: 767px) {
+  .cp-ecommerce-banner .banner-desc .title {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    max-width: 20rem;
+    margin-bottom: 0.2rem;
+  }
 }
 .cp-ecommerce-banner .banner-desc .desc {
   max-width: 30rem;
@@ -43,6 +73,13 @@
   color: #FFFFFF;
   margin-bottom: 2.4rem;
 }
+@media only screen and (max-width: 767px) {
+  .cp-ecommerce-banner .banner-desc .desc {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    max-width: 25rem;
+  }
+}
 .cp-ecommerce-banner .banner-desc .shop-banner {
   background-color: #FFFFFF;
   color: #333333;
@@ -50,6 +87,13 @@
   line-height: 2.4rem;
   font-family: "Poppins Medium";
   padding: 1.2rem 1.6rem;
+}
+@media only screen and (max-width: 767px) {
+  .cp-ecommerce-banner .banner-desc .shop-banner {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 0.8rem 1rem;
+  }
 }
 
 /*# sourceMappingURL=cp-ecommerce-banner.css.map */

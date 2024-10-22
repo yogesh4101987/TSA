@@ -978,6 +978,16 @@ p {
   color: #333333;
   border: none;
   border-radius: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 767px) {
+  .btn.btn-ecom-banner {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
 }
 
 /* colors */
@@ -1113,10 +1123,14 @@ p {
   position: relative;
   padding-bottom: 4rem;
 }
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-ecomm-banner .swiper-wrapper {
+    padding-bottom: 3.2rem;
+  }
+}
 .bs-swiper.typ-ecomm-banner .swiper-slide {
   width: 100% !important;
   max-height: 36rem;
-  border: 1px solid red;
 }
 .bs-swiper.typ-ecomm-banner .swiper-pagination {
   min-height: 1.6rem;
