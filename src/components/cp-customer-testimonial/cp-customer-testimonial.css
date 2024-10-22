@@ -12,9 +12,15 @@
   top: -7rem;
   right: 0;
 }
+@media only screen and (max-width: 1023px) {
+  .customer-testimonial .view-btn {
+    right: 2rem;
+  }
+}
 @media only screen and (max-width: 767px) {
   .customer-testimonial .view-btn {
     top: -3.5rem;
+    right: 0;
   }
 }
 
