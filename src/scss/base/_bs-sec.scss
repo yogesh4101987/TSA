@@ -116,4 +116,8 @@
       @include border-radius(2.4rem 2.4rem 0 0);
     }
   }
+  &.typ-eCommerce-banner{
+    padding: 0;
+    background-color: #F3F4F6;
+  }
 }

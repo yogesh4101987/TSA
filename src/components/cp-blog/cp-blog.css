@@ -12,7 +12,7 @@
   border: 1px solid #DEDEDE;
   background-color: #FFFFFF;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-blog {
     border-radius: 1.2rem;
     -webkit-border-radius: 1.2rem;
@@ -33,7 +33,7 @@
   -moz-border-radius: 1.6rem;
   object-fit: cover;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-blog .img-wrap {
     height: 14.4rem;
     border-radius: 1.2rem;
@@ -49,7 +49,7 @@
 .cp-blog .content-wrap {
   padding: 1.8rem 1.6rem 1.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-blog .content-wrap {
     padding: 1.6rem;
   }
@@ -60,7 +60,7 @@
   align-items: flex-start;
   margin-bottom: 1.8rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-blog .content-wrap .tag-list {
     margin-bottom: 1.6rem;
   }
