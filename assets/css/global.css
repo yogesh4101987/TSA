@@ -1136,11 +1136,10 @@ p {
     display: none;
   }
 }
-
 .bs-swiper.typ-brand {
   padding-bottom: 4rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-brand {
     padding-bottom: 16rem;
   }
@@ -1148,7 +1147,7 @@ p {
 .bs-swiper.typ-brand .swiper-slide {
   display: flex;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .bs-swiper.typ-brand .swiper-slide {
     width: 37.5rem !important;
     height: 10.6rem !important;
@@ -1156,10 +1155,7 @@ p {
     flex-wrap: wrap;
   }
 }
-@media only screen and (max-width: 767px) {
-
 @media only screen and (max-width: 768px) {
-
   .bs-swiper.typ-home-style {
     margin-right: -2rem;
   }

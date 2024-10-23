@@ -7,7 +7,7 @@
 .cp-brand {
   display: flex;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-brand {
     flex-wrap: wrap;
   }
@@ -25,7 +25,7 @@
   margin-right: 2rem;
   padding: 3rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-brand .brand-list-item {
     width: 10.6rem;
     height: 10.6rem;
@@ -38,7 +38,7 @@
   width: 14rem;
   height: 10rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-brand .brand-list-item img {
     width: 8.8rem;
     height: 6.3rem;
