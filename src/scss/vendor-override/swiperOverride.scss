@@ -31,12 +31,12 @@
     }
   }
   .swiper-pagination-bullet-active{
-    background-color: #D2042D;
+    background-color: $clr-secondary;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
     &::after{
-      border: 1px solid #D2042D;
+      border: 1px solid $clr-secondary;
     }
   }
  
