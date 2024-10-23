@@ -49,18 +49,18 @@
     max-width: 22.4rem;
   }
 }
-.cp-ecommerce-banner .content-wrap .logo {
+.cp-ecommerce-banner .content-wrap .banner-logo {
   width: 16rem;
   height: 3.2rem;
   margin-bottom: 0.4rem;
 }
-.cp-ecommerce-banner .content-wrap .logo img {
+.cp-ecommerce-banner .content-wrap .banner-logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 @media only screen and (max-width: 767px) {
-  .cp-ecommerce-banner .content-wrap .logo {
+  .cp-ecommerce-banner .content-wrap .banner-logo {
     margin-bottom: 1rem;
     width: 8.5rem;
     height: 1.6rem;
