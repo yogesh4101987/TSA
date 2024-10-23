@@ -13,13 +13,13 @@ function brandLogo() {
       slidesPerView:"auto",
       //slidesPerGroup:6,
       loop: false,
-        autoplay: {
-          delay: 3000,
+         autoplay: {
+           delay: 3000,
+         },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-      },
       
     });
   }

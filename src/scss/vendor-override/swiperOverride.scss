@@ -5,7 +5,7 @@
   .swiper-pagination-custom, 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: 0;
+    bottom: 1px;
   }
 
   .swiper-pagination-bullet{
@@ -17,6 +17,7 @@
     transform: none;
     transition: none;
     opacity: 1;
+    position: relative;
     &::after{
       width: 1.6rem;
       height: 1.6rem;
@@ -29,7 +30,7 @@
       position: absolute;
     }
   }
-  .swiper-pagination-bullet-active-main{
+  .swiper-pagination-bullet-active{
     background-color: #D2042D;
     width: 0.8rem;
     height: 0.8rem;
@@ -38,18 +39,7 @@
       border: 1px solid #D2042D;
     }
   }
-  .swiper-pagination-bullets-dynamic{
-    overflow:visible;
-  }
-  .swiper-pagination-horizontal.swiper-pagination-bullets{
-    bottom: 12px;
-    .swiper-pagination-bullet{
-      margin: 0 8px;
-    }
-  }
-  .swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
-    transform: none;
-  }
+ 
  
 
 
