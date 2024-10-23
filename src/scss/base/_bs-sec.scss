@@ -81,8 +81,11 @@
     }
   }
   &.typ-first-sec{
-    margin-top: 11rem;
+    margin-top: 15rem;
     padding-top: 0;
+    @media only screen and (max-width: $media-sm) {
+      margin-top: 13rem;
+    }
   }
   &.typ-eCommerce-banner{
     padding: 0;

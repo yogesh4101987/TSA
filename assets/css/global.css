@@ -899,8 +899,13 @@ p {
   text-align: center;
 }
 .bs-sec.typ-first-sec {
-  margin-top: 11rem;
+  margin-top: 15rem;
   padding-top: 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-first-sec {
+    margin-top: 13rem;
+  }
 }
 .bs-sec.typ-eCommerce-banner {
   padding: 0;
