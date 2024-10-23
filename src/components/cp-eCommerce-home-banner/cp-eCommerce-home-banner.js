@@ -1,8 +1,8 @@
 var winWidth = $(window).width();
 
 $(document).ready(function() {    
-    if ($(window).width() < 768) {
-        homeBannerFeatureMobile();
+    if ($(window).width() <= 768) {
+        bannerFeatureMobile();
     } 
     else{
         destroyIsotope();
@@ -10,17 +10,16 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    if ($(window).width() < 768) {
-        homeBannerFeatureMobile();
+    if ($(window).width() <= 768) {
+        bannerFeatureMobile();
     } else{
         destroyIsotope();
     }
 });
 
-function homeBannerFeatureMobile() {
+function bannerFeatureMobile() {
     var $grid = $('.feature').isotope({
         itemSelector: '.feature-item',
-        // layoutMode: 'masonry',
         masonry: {
             columnWidth: '.grid-sizer',  
             gutter: 6 
