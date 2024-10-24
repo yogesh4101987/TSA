@@ -13,6 +13,7 @@ $(window).resize(function () {
 function topDealSlider() {
   var swiper = new Swiper(".js-top-deals", {
     slidesPerView: "auto",
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next.button-next",
       prevEl: ".swiper-button-prev.button-prev",
@@ -23,6 +24,7 @@ function topDealSlider() {
 function bestSellingSlider() {
   var swiper = new Swiper(".js-best-selling", {
     slidesPerView: "auto",
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next.best-selling-next",
       prevEl: ".swiper-button-prev.best-selling-prev",

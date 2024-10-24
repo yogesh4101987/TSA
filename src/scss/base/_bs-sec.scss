@@ -143,6 +143,7 @@
 
   &.typ-quick-buy{
     position: relative;
+    padding: 0;
     .sec-title {
       font-size: 2.4rem;
       line-height: 3.2rem;
@@ -164,8 +165,9 @@
       width: 100%;
       position: absolute;
       top: 50%;
+      left: 50%;
       vertical-align: middle;
-      transform: translateY(-50%);
+      transform: translate(-50%, -50%);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -177,6 +179,7 @@
     }
     .btn-wrap{
       width: 30%;
+      text-align: right;
     }
     .btn{
       @media only screen and (max-width: $media-sm) {

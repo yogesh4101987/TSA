@@ -1,10 +1,8 @@
 
 var winWidth = $(window).width();
 
-$(document).ready(function () {
- 
-    dealerSlider();
-  
+$(document).ready(function () { 
+    dealerSlider();  
 });
 
 $(window).resize(function () {

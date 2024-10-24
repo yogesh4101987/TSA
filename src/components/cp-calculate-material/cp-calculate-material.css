@@ -13,7 +13,7 @@
   border: 1px solid #dedede;
   border-radius: 16px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .cp-calculate-material .lhs {
     width: 100%;
     border: 0;
@@ -22,7 +22,7 @@
 .cp-calculate-material .rhs {
   width: 50%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .cp-calculate-material .rhs {
     display: none;
   }
