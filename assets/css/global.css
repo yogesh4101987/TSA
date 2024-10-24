@@ -707,6 +707,11 @@ p {
   }
 }
 
+.js-home-bg .bg-img,
+.js-bg .bg-img {
+  display: none;
+}
+
 .cm-not-in-page {
   position: absolute;
   left: -99999px;
