@@ -13,11 +13,12 @@
     content: "";
     position: absolute;
     right: -0.6rem;
-    top: 0;
+    top: 50%;
     width: 1px;
     height: 16rem;
     background-color: $clr-border;
     display: block;
+    @include transform(translateY(-50%));
     @media only screen and (max-width: $media-mobile) {
       height: 7rem;
     }

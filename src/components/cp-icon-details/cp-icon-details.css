@@ -16,11 +16,16 @@
   content: "";
   position: absolute;
   right: -0.6rem;
-  top: 0;
+  top: 50%;
   width: 1px;
   height: 16rem;
   background-color: #DEDEDE;
   display: block;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 @media only screen and (max-width: 768px) {
   .cp-icon-details::after {
