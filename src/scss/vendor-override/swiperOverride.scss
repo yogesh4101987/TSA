@@ -185,25 +185,6 @@
       }
     }
     .swiper-pagination-bullet-active {
-      // background-color: tranparent;
-      // outline: 2px solid  $clr-root;
-      // width: 0.8rem;
-      // height: 0.8rem;
-      // border-radius: 50%;
-      // position: relative;
-      // &::before{
-      //   content: '';
-      //   position: absolute;
-      //   top: 50%;
-      //   left: 50%;
-      //   width: 1.6rem;
-      //   height: 1.6rem;
-      //   background-color:$clr-secondary;
-      //   border-radius: 50%;
-      //   transform: translate(-50%,-50%);
-      //   z-index: -1;
-      // }
-
       background-color: $clr-secondary;
       width: 0.8rem;
       height: 0.8rem;
@@ -251,6 +232,22 @@
     }
   }
 
+  &.typ-dealer{
+    padding-bottom: 8rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -2rem;
+    }
+    .swiper-slide{
+      width: 40rem;
+      margin-right: 2rem;
+      @media only screen and (max-width: $media-mobile) {
+        width: 29.6rem;
+        margin-right: 1.2rem;
+
+      }
+    }
+  }
+  
   &.typ-best-selling,
   &.typ-top-deals{ 
     padding-bottom:7.6rem;
