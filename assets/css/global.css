@@ -898,6 +898,15 @@ p {
 .bs-sec.typ-tataicon .sec-title {
   text-align: center;
 }
+.bs-sec.typ-calculate .sec-head {
+  padding: 2.4rem 2.4rem 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-calculate .container {
+    margin: 0;
+    padding: 0;
+  }
+}
 .bs-sec.typ-first-sec {
   margin-top: 15rem;
   padding-top: 0;
@@ -1066,31 +1075,38 @@ p {
 .bs-swiper .swiper-pagination-custom,
 .bs-swiper .swiper-horizontal > .swiper-pagination-bullets,
 .bs-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 0;
+  bottom: 1px;
 }
 .bs-swiper .swiper-pagination-bullet {
-  width: 0.4rem;
-  height: 0.4rem;
-  opacity: 1;
-  margin: 0 0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #808080;
   border-radius: 50%;
-  transition: all 0.5s ease !important;
-  background-color: #FFFFFF;
+  margin: 0 8px;
+  transform: none;
+  transition: none;
+  opacity: 1;
+  position: relative;
+}
+.bs-swiper .swiper-pagination-bullet::after {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 50%;
+  top: -4px;
+  left: -4px;
+  content: "";
+  position: absolute;
 }
 .bs-swiper .swiper-pagination-bullet-active {
-  background-color: #FFFFFF;
-  width: 2rem;
-  border-radius: 0.3rem;
-  opacity: 1;
+  background-color: #D2042D;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
 }
-.bs-swiper .swiper-pagination-bullet-active-next,
-.bs-swiper .swiper-pagination-bullet-active-next-next,
-.bs-swiper .swiper-pagination-bullet-active-prev {
-  background: #FFFFFF;
-}
-.bs-swiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.bs-swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 2px;
+.bs-swiper .swiper-pagination-bullet-active::after {
+  border: 1px solid #D2042D;
 }
 .bs-swiper .swiper-nav {
   min-width: 13rem;
@@ -1210,6 +1226,25 @@ p {
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-architect .swiper-nav {
     display: none;
+  }
+}
+.bs-swiper.typ-brand {
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-brand {
+    padding-bottom: 16rem;
+  }
+}
+.bs-swiper.typ-brand .swiper-slide {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-brand .swiper-slide {
+    width: 37.5rem !important;
+    height: 10.6rem !important;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 768px) {

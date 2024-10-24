@@ -80,6 +80,17 @@
       text-align: center;
     }
   }
+  &.typ-calculate{
+    .sec-head{
+      padding: 2.4rem  2.4rem 0;
+    }
+    .container{
+      @media only screen and (max-width: $media-sm) {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
   &.typ-first-sec{
     margin-top: 15rem;
     padding-top: 0;
