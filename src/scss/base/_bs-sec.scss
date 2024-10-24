@@ -5,31 +5,6 @@
   .top-padd{
     margin-top: 4rem;
   }
-  &.typ-gray-bg{
-    background: #ecf2fb;
-    @include border-radius(4.8rem 4.8rem 0 0);
-    @media only screen and (max-width: $media-mobile) {
-      @include border-radius(2.4rem 2.4rem 0 0);
-    }
-  }
-  &.typ-prodcut {
-    position: relative;
-    padding-top: 0rem;
-    .cont-wrap {
-      position: absolute;
-      top: 50%;
-      vertical-align: middle;
-      transform: translateY(-50%);
-    }
-  }
-  &.typ-gray-bg{
-    background:#ECF2FB;
-    @include border-radius(4.8rem 4.8rem 0 0);
-    @media only screen and (max-width: $media-mobile) {
-      @include border-radius(2.4rem 2.4rem 0 0);
-      overflow-x: hidden;
-    }
-  }
   @media only screen and (max-width: $media-sm) {
     padding: 2.8rem 0rem;
   }
@@ -64,6 +39,24 @@
   }
   .sec-cont {
   }
+  &.typ-prodcut {
+    position: relative;
+    padding-top: 0rem;
+    .cont-wrap {
+      position: absolute;
+      top: 50%;
+      vertical-align: middle;
+      transform: translateY(-50%);
+    }
+  }
+  &.typ-gray-bg{
+    background:#ECF2FB;
+    @include border-radius(4.8rem 4.8rem 0 0);
+    @media only screen and (max-width: $media-mobile) {
+      @include border-radius(2.4rem 2.4rem 0 0);
+      overflow-x: hidden;
+    }
+  } 
   &.typ-no-top-padding {
     padding-top: 0;
   }
@@ -103,6 +96,11 @@
   &.typ-commerce-blog{
     position: relative;
     overflow: hidden;
+    background: #F3F4F6;
+    @include border-radius(4.8rem 4.8rem 0 0);
+    @media only screen and (max-width: $media-mobile) {
+      @include border-radius(2.4rem 2.4rem 0 0);
+    }
     &::before{
       content: '';
       width: 100%;
@@ -123,12 +121,7 @@
     .sec-title,
     .sec-desc {
       color: $clr-root;
-    }
-    background: #F3F4F6;
-    @include border-radius(4.8rem 4.8rem 0 0);
-    @media only screen and (max-width: $media-mobile) {
-      @include border-radius(2.4rem 2.4rem 0 0);
-    }
+    } 
   }
   &.typ-eCommerce-banner{
     padding: 0;

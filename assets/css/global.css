@@ -806,43 +806,6 @@ p {
 .bs-sec .top-padd {
   margin-top: 4rem;
 }
-.bs-sec.typ-gray-bg {
-  background: #ecf2fb;
-  border-radius: 4.8rem 4.8rem 0 0;
-  -webkit-border-radius: 4.8rem 4.8rem 0 0;
-  -moz-border-radius: 4.8rem 4.8rem 0 0;
-}
-@media only screen and (max-width: 768px) {
-  .bs-sec.typ-gray-bg {
-    border-radius: 2.4rem 2.4rem 0 0;
-    -webkit-border-radius: 2.4rem 2.4rem 0 0;
-    -moz-border-radius: 2.4rem 2.4rem 0 0;
-  }
-}
-.bs-sec.typ-prodcut {
-  position: relative;
-  padding-top: 0rem;
-}
-.bs-sec.typ-prodcut .cont-wrap {
-  position: absolute;
-  top: 50%;
-  vertical-align: middle;
-  transform: translateY(-50%);
-}
-.bs-sec.typ-gray-bg {
-  background: #ECF2FB;
-  border-radius: 4.8rem 4.8rem 0 0;
-  -webkit-border-radius: 4.8rem 4.8rem 0 0;
-  -moz-border-radius: 4.8rem 4.8rem 0 0;
-}
-@media only screen and (max-width: 768px) {
-  .bs-sec.typ-gray-bg {
-    border-radius: 2.4rem 2.4rem 0 0;
-    -webkit-border-radius: 2.4rem 2.4rem 0 0;
-    -moz-border-radius: 2.4rem 2.4rem 0 0;
-    overflow-x: hidden;
-  }
-}
 @media only screen and (max-width: 991px) {
   .bs-sec {
     padding: 2.8rem 0rem;
@@ -880,6 +843,30 @@ p {
 }
 .bs-sec .sec-desc.typ-white {
   color: #FFFFFF;
+}
+.bs-sec.typ-prodcut {
+  position: relative;
+  padding-top: 0rem;
+}
+.bs-sec.typ-prodcut .cont-wrap {
+  position: absolute;
+  top: 50%;
+  vertical-align: middle;
+  transform: translateY(-50%);
+}
+.bs-sec.typ-gray-bg {
+  background: #ECF2FB;
+  border-radius: 4.8rem 4.8rem 0 0;
+  -webkit-border-radius: 4.8rem 4.8rem 0 0;
+  -moz-border-radius: 4.8rem 4.8rem 0 0;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-gray-bg {
+    border-radius: 2.4rem 2.4rem 0 0;
+    -webkit-border-radius: 2.4rem 2.4rem 0 0;
+    -moz-border-radius: 2.4rem 2.4rem 0 0;
+    overflow-x: hidden;
+  }
 }
 .bs-sec.typ-no-top-padding {
   padding-top: 0;
@@ -924,6 +911,13 @@ p {
   -webkit-border-radius: 4.8rem 4.8rem 0 0;
   -moz-border-radius: 4.8rem 4.8rem 0 0;
 }
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-commerce-blog {
+    border-radius: 2.4rem 2.4rem 0 0;
+    -webkit-border-radius: 2.4rem 2.4rem 0 0;
+    -moz-border-radius: 2.4rem 2.4rem 0 0;
+  }
+}
 .bs-sec.typ-commerce-blog::before {
   content: "";
   width: 100%;
@@ -946,13 +940,6 @@ p {
 .bs-sec.typ-commerce-blog .sec-title,
 .bs-sec.typ-commerce-blog .sec-desc {
   color: #FFFFFF;
-}
-@media only screen and (max-width: 768px) {
-  .bs-sec.typ-commerce-blog {
-    border-radius: 2.4rem 2.4rem 0 0;
-    -webkit-border-radius: 2.4rem 2.4rem 0 0;
-    -moz-border-radius: 2.4rem 2.4rem 0 0;
-  }
 }
 .bs-sec.typ-eCommerce-banner {
   padding: 0;
