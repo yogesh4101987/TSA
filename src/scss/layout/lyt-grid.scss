@@ -30,8 +30,8 @@
     align-items: center;
     justify-content: space-around;  
     padding-bottom: 4.8rem;
-    border-bottom: 1px solid $clr-border;  
-    gap: 0;    
+    border-bottom: 1px solid $clr-border;
+    gap: 1.2rem;
     @media only screen and (max-width: $media-mobile) {
       flex-direction: row;
       padding-bottom: 2.4rem;

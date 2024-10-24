@@ -37,7 +37,7 @@
   justify-content: space-around;
   padding-bottom: 4.8rem;
   border-bottom: 1px solid #DEDEDE;
-  gap: 0;
+  gap: 1.2rem;
 }
 @media only screen and (max-width: 768px) {
   .lyt-grid.typ-explore {
