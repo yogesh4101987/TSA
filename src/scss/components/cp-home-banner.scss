@@ -94,6 +94,9 @@
         display: block;
         width: 100%;
         height: 100%;
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1rem;
+        }
         &.typ-resized{
             .f-img{
                 max-width: 14.3rem;

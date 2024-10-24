@@ -15,7 +15,7 @@
   width: 30%;
   padding-left: 10rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-architect .arch-left {
     padding: 0 1.6rem;
   }
@@ -33,7 +33,7 @@
   line-height: 2.4rem;
   margin-bottom: 1.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-architect .arch-left .service-btn {
     position: absolute;
     left: 50%;
@@ -45,7 +45,7 @@
   width: 69%;
   overflow: hidden;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-architect {
     flex-direction: column;
     gap: 1.6rem;
@@ -74,7 +74,7 @@
   border-radius: 1.6rem;
   overflow: hidden;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-architect-card {
     min-height: 29.6rem;
   }

@@ -4,7 +4,7 @@
 .cp-dealer-card{
     border: 1px solid #dedede;
     border-radius: 16px;
-    padding: 2.4rem;
+    padding: 2.2rem;
     transition: box-shadow 2s;
 
     @media only screen and (max-width: $media-mobile) {
@@ -16,7 +16,7 @@
     }
     .top-band{
         display: flex;
-        margin-bottom: 1.6rem;
+        margin-bottom: 1.5rem;
         flex-wrap: wrap;
         .band-tag{
             background: #D8E5F8;
@@ -27,7 +27,7 @@
             font-family: $font-medium;
             padding: 0.4rem;
             margin-right: 0.8rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.9rem;
         }
     }
     .dealer-info{
@@ -40,7 +40,7 @@
             display: flex;
             flex-wrap: wrap;
             max-width: 28rem;
-            margin-top: 0.8rem;
+            margin-top: 0.5rem;
             .location-text{
                 font-size: 1.2rem;
                 font-family: $font-regular;
@@ -66,7 +66,7 @@
                 font-size: 1.2rem;
                 font-family: $font-regular;
                 color: #808080;
-                margin-top: 1.6rem;
+                margin-top: 1.2rem;
                 &:nth-child(1){
                     background: #D2042D;
                     font-size: 1.2rem;

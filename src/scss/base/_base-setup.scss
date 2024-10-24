@@ -104,12 +104,13 @@ p {
 .container {
   margin: 0px auto;
   padding: 0px;
-  width: 124rem;
+  max-width: 124rem;
+  width: 100%;
 
-  @media only screen and (max-width: $media-mobile) {
+  @media only screen and (max-width: $media-tab) {
     width: 100%;
     padding: 0rem 1.6rem;
-    width: auto;
+    max-width: auto;
   }
 }
 

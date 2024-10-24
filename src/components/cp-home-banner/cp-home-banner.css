@@ -12,7 +12,7 @@
   background-size: auto;
   padding: 5.6rem 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-home-banner {
     background: #F3F4F6;
   }
@@ -24,7 +24,7 @@
   color: #333333;
   margin-bottom: 3.2rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-home-banner .banner-title {
     font-size: 2.4rem;
     line-height: 3.2rem;
@@ -123,11 +123,16 @@
   width: 100%;
   height: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .cp-home-banner .feature-card {
+    padding: 1rem;
+  }
+}
 .cp-home-banner .feature-card.typ-resized .f-img {
   max-width: 14.3rem;
   max-height: 13.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-home-banner .feature-card.typ-resized .f-img {
     max-width: 8rem;
     max-height: 8rem;
@@ -144,7 +149,7 @@
   color: #333333;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-home-banner .feature-card .f-title {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -176,7 +181,7 @@
   max-width: 9.4rem;
   max-height: 9.4rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-home-banner .feature-card .f-img {
     max-width: 8rem;
     max-height: 8rem;
