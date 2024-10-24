@@ -14,685 +14,1237 @@
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
+    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
+    <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
     <link rel="stylesheet" href="/components/cp-blog/cp-blog.css" />
     <link rel="stylesheet" href="/components/cp-video/cp-video.css" />
     <link rel="stylesheet" href="/components/cp-toast/cp-toast.css" />
     <link rel="stylesheet" href="/components/cp-img-detail/cp-img-detail.css" />
-    <link
-      rel="stylesheet"
-      href="/components/cp-customer-testimonial/cp-customer-testimonial.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/components/cp-home-banner/cp-home-banner.css"
-    />
+    <link rel="stylesheet" href="/components/cp-customer-testimonial/cp-customer-testimonial.css" />
+    <link rel="stylesheet" href="/components/cp-home-banner/cp-home-banner.css" />
     <link rel="stylesheet" href="/components/cp-architect/cp-architect.css" />
+    <link rel="stylesheet" href="/components/cp-icon-details/cp-icon-details.css" />
+    <link rel="stylesheet" href="/components/cp-design-style/cp-design-style.css" />
+    <link rel="stylesheet" href="/components/cp-design-card/cp-design-card.css" />
+    <link rel="stylesheet" href="/components/cp-notify/cp-notify.css" />
   </head>
 
   <body>
     <!-- Header Start -->
     <header>
-      <div class="cp-header">
-        <div class="container">
-          <h2>Header</h2>
+        <div class="cp-header">
+                <div class="container">
+                    <div class="top-sec">
+                        <div class="hamburger-menu">
+                            <div class="open-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    <div class="lhs">                    
+                        <div class="logo-wrap">
+						<picture>
+							<source media="(max-width:768px)" srcset="/images/TSA-logo.png">
+							<source media="(max-width:991px)" srcset="/images/TSA-logo.png">
+							<img src="/images/TSA-logo.png" alt="logo tsa" />
+						</picture>
+                        </div>
+                        <div class="cp-search">
+                            <div class="search-wrap">
+                                <input type="text"class="search-input" placeholder="Search">
+                                <span class="search-icon icon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rhs">
+                        <div class="location-wrap">
+                            <span class="icon-location map-icon"></span>
+                            <input type="text" class="location-text" placeholder="302020, Jaipur, Rajasthan" />
+                            <a href="#" class="update-location">Update location</a>
+                            <span class="icon-edit icon"></span>
+                        </div>
+                        <button class="btn btn-order">Place order on call</button>
+                    </div>
+                </div>
+                </div>
+                <div class="bottom-sec">
+                    <div class="container">                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Shop products</a>
+                                <ul class="sub-nav-menu">
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home building guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Design & calculators</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Service providers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Help centre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQs</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-link-wrap">
+                        <ul class="quick-link-list">
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-search quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-cart quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-profile quick-link-item"></a>
+                            </li>
+                            <li class="quick-link-icon-item">
+                                <a href="#" class="icon-language quick-link-item"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                </div>
+            
         </div>
       </div>
     </header>
     <!-- Header end -->
     <main class="main">
-      <!-- Banner start -->
-      <div class="cp-home-banner">
-        <div class="container">
-          <h2 class="sec-title">What are you looking for?</h2>
-          <ul class="feature-list">
-            <li class="feature-item typ-2">
-              <a href="#" class="feature-card">
-                <h2 class="f-title">REBARS</h2>
-                <p class="f-desc">sariya</p>
-                <span class="f-offer">Get 10% OFF</span>
-                <div class="f-img">
-                  <img
-                    src="../components/cp-home-banner/images/feature-1.png"
-                    alt="feature-1"
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="feature-item typ-2">
-              <a href="#" class="feature-card">
-                <h2 class="f-title">CALCULATOR</h2>
-                <p class="f-desc">cost estimator</p>
-                <div class="f-img">
-                  <img
-                    src="../components/cp-home-banner/images/feature-2.png"
-                    alt="feature-2"
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="feature-item">
-              <a href="#" class="feature-card">
-                <h2 class="f-title">PLANS</h2>
-                <p class="f-desc">layouts & 3D views</p>
-                <div class="f-img">
-                  <img
-                    src="../components/cp-home-banner/images/feature-3.png"
-                    alt="feature-3"
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="feature-item">
-              <a href="#" class="feature-card">
-                <h2 class="f-title">ARCHITECTS</h2>
-                <p class="f-desc">search</p>
-                <div class="f-img">
-                  <img
-                    src="../components/cp-home-banner/images/feature-4.png"
-                    alt="feature-4"
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="feature-item">
-              <a href="#" class="feature-card">
-                <h2 class="f-title">INSPIRATION</h2>
-                <p class="f-desc">design styles</p>
-                <div class="f-img">
-                  <img
-                    src="../components/cp-home-banner/images/feature-5.png"
-                    alt="feature-5"
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="feature-item">
-              <a href="#" class="feature-card">
-                <h2 class="f-title">BUDGET</h2>
-                <p class="f-desc">tracker</p>
-                <div class="f-img">
-                  <img
-                    src="../components/cp-home-banner/images/feature-6.png"
-                    alt="feature-6"
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="feature-item">
-              <a href="#" class="feature-card">
-                <h2 class="f-title">CAUTION</h2>
-                <p class="f-desc">scam alert</p>
-                <div class="f-img">
-                  <img
-                    src="../components/cp-home-banner/images/feature-7.png"
-                    alt="feature-7.png"
-                  />
-                </div>
-              </a>
-            </li>
-            <li class="feature-item">
-              <a href="#" class="feature-card">
-                <h2 class="f-title">SHOP</h2>
-                <p class="f-desc">products</p>
-                <div class="f-img">
-                  <img
-                    src="../components/cp-home-banner/images/feature-8.png"
-                    alt="feature-8.png"
-                  />
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- Banner end -->
-      <!--  Home Building start-->
-      <section class="bs-sec typ-gray-bg">
-        <div class="container">
-          <div class="sec-head">
-            <h2 class="sec-title">Select your home building stage</h2>
-          </div>
-          <div class="sec-cont">
-            <div class="lyt-stage">
-              <ul class="stage-list">
-                <li class="stage-item">
-                  <div class="cp-img-detail">
-                    <div class="img-wrap">
-                      <img
-                        src="../components/cp-img-detail/images/stage-1.png"
-                        alt="Planning"
-                      />
-                    </div>
-                    <div class="detail-wrap">
-                      <h3 class="detail-tile">Planning</h3>
-                      <p class="detail-desc">
-                        Selecting your plot, hiring an architect and getting
-                        approvals
-                      </p>
-                      <a href="#" class="btn btn-link">Know more</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="stage-item">
-                  <div class="cp-img-detail">
-                    <div class="img-wrap">
-                      <img
-                        src="../components/cp-img-detail/images/stage-2.png"
-                        alt="Planning"
-                      />
-                    </div>
-                    <div class="detail-wrap">
-                      <h3 class="detail-tile">Planning</h3>
-                      <p class="detail-desc">
-                        Selecting your plot, hiring an architect and getting
-                        approvals
-                      </p>
-                      <a href="#" class="btn btn-link">Know more</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="stage-item">
-                  <div class="cp-img-detail">
-                    <div class="img-wrap">
-                      <img
-                        src="../components/cp-img-detail/images/stage-3.png"
-                        alt="Planning"
-                      />
-                    </div>
-                    <div class="detail-wrap">
-                      <h3 class="detail-tile">Planning</h3>
-                      <p class="detail-desc">
-                        Selecting your plot, hiring an architect and getting
-                        approvals
-                      </p>
-                      <a href="#" class="btn btn-link">Know more</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  Home Building end-->
-      <!--  Product Banner start-->
-      <section class="bs-sec typ-prodcut">
-        <div class="sec-cont">
-          <div class="img-wrap">
-            <img src="images/prodcut-banner.png" alt="prodcut banner " />
-          </div>
-          <div class="container">
-            <div class="cont-wrap">
-              <h2 class="sec-title typ-white">
-                Shop all <span class="cm-line-break">steel products</span>
-              </h2>
-              <a href="#" class="btn btn-default"> Explore more</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Product Banner end -->
-      <section class="bs-sec typ-build-cal">
-        <div class="container">
-          <div class="sec-head">
-            <h2 class="sec-title">Building cost calculator</h2>
-          </div>
-          <div class="sec-cont">
-            <img src="/images/Flat_type.png" alt="Flat_type" />
-          </div>
-        </div>
-      </section>
-      <!-- Blog and Article start -->
-      <section class="bs-sec typ-no-top-padding">
-        <div class="sec-cont">
-          <div class="container">
-            <div class="lyt-grid typ-col-2">
-              <div class="grid-col">
-                <div class="bs-swiper swiper typ-blog js-blog">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="cp-blog">
-                        <a href="#" class="img-wrap">
-                          <img
-                            src="../components/cp-blog/images/blog-img.png"
-                            alt="blog-img"
-                          />
-                        </a>
-                        <div class="content-wrap">
-                          <ul class="tag-list">
-                            <li class="tag-item">
-                              <span class="tag">Construction</span>
-                              <span class="tag">Constructor</span>
-                            </li>
-                            <li class="tag-item">
-                              <span
-                                class="icon js-add-favorite icon-unfill-like"
-                              ></span>
-                            </li>
-                          </ul>
-                          <h3 class="c-title">
-                            Government schemes for first time home builders
-                          </h3>
-                          <div class="post-date">
-                            <span class="post-detail">Mon, 26 Aug 2024</span>
-                            <span class="post-detail">5 mins read</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="cp-blog">
-                        <a href="#" class="img-wrap">
-                          <img
-                            src="../components/cp-blog/images/blog-img.png"
-                            alt="blog-img"
-                          />
-                        </a>
-                        <div class="content-wrap">
-                          <ul class="tag-list">
-                            <li class="tag-item">
-                              <span class="tag">Construction</span>
-                              <span class="tag">Constructor</span>
-                            </li>
-                            <li class="tag-item">
-                              <span
-                                class="icon js-add-favorite icon-unfill-like"
-                              ></span>
-                            </li>
-                          </ul>
-                          <h3 class="c-title">
-                            Government schemes for first time home builders 2
-                          </h3>
-                          <div class="post-date">
-                            <span class="post-detail">Mon, 26 Aug 2024</span>
-                            <span class="post-detail">5 mins read</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-col">
-                <div class="cp-video">
-                  <div class="img-wrap">
-                    <img
-                      src="../components/cp-video/images/video-img.png"
-                      alt="video-img"
-                    />
-                  </div>
-                  <button class="icon-wrap">
-                    <img
-                      class="play-icon"
-                      src="../components/cp-video/images/play-icon.svg"
-                    />
-                  </button>
-                  <div class="content-wrap">
-                    <ul class="tag-list">
-                      <li class="tag-item">
-                        <span class="tag">Home loan</span>
-                      </li>
-                    </ul>
-                    <h3 class="title">Home loans - All you need to know</h3>
-                    <div class="post-date">
-                      <span class="post-detail">Mon, 26 Aug 2024</span>
-                      <span class="post-detail">5 mins read</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cp-toast">
-              <p class="msg">Added to Favorite</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Blog and Article end -->
-      <!-- Track costs & buy premium quality products start -->
-      <section class="bs-sec typ-gray-bg">
-        <div class="container">
-          <div class="sec-head">
-            <h2 class="sec-title">
-              Track costs & buy premium quality products
-            </h2>
-          </div>
-          <div class="sec-cont">
-            <img src="/images/Budget_Tracker.png" alt="Budget_Tracker" />
-          </div>
-        </div>
-      </section>
-      <!-- Track costs & buy premium quality products end -->
-      <!-- Architects section starts   -->
-      <section class="bs-sec typ-gray-bg">
-        <div class="sec-cont">
-          <div class="cp-architect">
-            <div class="arch-left">
-              <h2 class="title">Top architects in your area</h2>
-              <p class="desc">
-                Find more service providers such as dealers, fabricators,
-                contractors & more
-              </p>
-              <a class="btn service-btn">View all service providers</a>
-            </div>
-            <div class="arch-right">
-              <div class="bs-swiper swiper typ-architect js-architect">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="cp-architect-card">
-                      <div class="img-wrap">
-                        <img
-                          src="../components/cp-architect/images/istockphoto-1.png"
-                          alt="arch-img"
-                          class="img"
-                        />
-                      </div>
-                      <div class="detail-wrap">
-                        <h3 class="card-title">Sanjay Puri & Associates</h3>
-                        <div class="bottom-sec">
-                          <ul class="location-list">
-                            <li class="location-item">
-                              <span class="icon icon-location"></span>
-                              <span class="details">Bandra</span>
-                            </li>
-                            <li class="location-item typ-rating">
-                              <span class="icon icon-star"></span>
-                              <span class="details">4.5</span>
-                            </li>
-                          </ul>
-                          <a class="detail-right">
-                            <span class="icon icon-arrow"></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+		<!-- Banner start -->
+		<section class="bs-sec typ-first-sec">			
+			<div class="sec-cont">
+				<div class="cp-home-banner">
+					<div class="container">
+						<h2	class="banner-title">What are you looking for?</h2>
+						<div class="feature">
+							<div class="grid-sizer"></div>
+							<div class="feature-item">
+								<a href="#" class="feature-card">
+									<h2 class="f-title">PLANS</h2>
+									<p class="f-desc">layouts & 3D views</p>
+									<div class="f-img">
+										<picture>
+											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-3.png">
+											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-3.png">
+											<img src="../components/cp-home-banner/images/feature-3.png" alt="feature" />
+										</picture>
+									</div>
+								</a>
+							</div>
+							<div class="feature-item">
+								<a href="#" class="feature-card">
+									<h2 class="f-title">SHOP</h2>
+									<p class="f-desc">products</p>
+									<div class="f-img">
+										<picture>
+											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-8.png">
+											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-8.png">
+											<img src="../components/cp-home-banner/images/feature-8.png" alt="feature" />
+										</picture>
+									</div>
+								</a>
+							</div>
+							<div class="feature-item typ-resize">
+								<a href="#" class="feature-card typ-resized">
+									<h2 class="f-title">REBARS</h2>
+									<p class="f-desc">sariya</p>
+									<span class="f-offer">Get 10% OFF</span>
+									<div class="f-img">
+										<picture>
+											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-1.png">
+											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-1.png">
+											<img src="../components/cp-home-banner/images/feature-1.png" alt="feature" />
+										</picture>
+									</div>
+								</a>
+							</div>
+							<div class="feature-item">
+								<a href="#" class="feature-card">
+									<h2 class="f-title">ARCHITECTS</h2>
+									<p class="f-desc">search</p>
+									<div class="f-img">
+										<picture>
+											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-4.png">
+											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-4.png">
+											<img src="../components/cp-home-banner/images/feature-4.png" alt="feature" />
+										</picture>
+									</div>
+								</a>
+							</div>
+							<div class="feature-item typ-resize">
+								<a href="#" class="feature-card typ-resized">
+									<h2 class="f-title">CALCULATOR</h2>
+									<p class="f-desc">cost estimator</p>
+									<div class="f-img">
+										<picture>
+											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-2.png">
+											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-2.png">
+											<img src="../components/cp-home-banner/images/feature-2.png" alt="feature" />
+										</picture>
+									</div>
+								</a>
+							</div>
+							
+							<div class="feature-item">
+								<a href="#" class="feature-card">
+									<h2 class="f-title">BUDGET</h2>
+									<p class="f-desc">tracker</p>
+									<div class="f-img">
+										<picture>
+											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-6.png">
+											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-6.png">
+											<img src="../components/cp-home-banner/images/feature-6.png" alt="feature" />
+										</picture>
+									</div>
+								</a>
+							</div>
+								
+							<div class="feature-item">
+								<a href="#" class="feature-card">
+									<h2 class="f-title">INSPIRATION</h2>
+									<p class="f-desc">design styles</p>
+									<div class="f-img">
+										<picture>
+											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-5.png">
+											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-5.png">
+											<img src="../components/cp-home-banner/images/feature-5.png" alt="feature" />
+										</picture>
+									</div>
+								</a>
+							</div>
+							<div class="feature-item">
+								<a href="#" class="feature-card">
+									<h2 class="f-title">CAUTION</h2>
+									<p class="f-desc">scam alert</p>
+									<div class="f-img">
+										<picture>
+											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-7.png">
+											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-7.png">
+											<img src="../components/cp-home-banner/images/feature-7.png" alt="feature" />
+										</picture>
+									</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Banner end -->
+		<!--  Home Building start-->
+		<section class="bs-sec typ-gray-bg">
+			<div class="container">
+			<div class="sec-head">
+				<h2 class="sec-title">Select your home building stage</h2>
+			</div>
+			<div class="sec-cont">
+				<div class="lyt-stage">
+				<ul class="stage-list">
+					<li class="stage-item">
+					<div class="cp-img-detail">
+						<div class="img-wrap">
+						<img
+							src="../components/cp-img-detail/images/stage-1.png"
+							alt="Planning"
+						/>
+						</div>
+						<div class="detail-wrap">
+						<h3 class="detail-tile">Planning</h3>
+						<p class="detail-desc">
+							Selecting your plot, hiring an architect and getting
+							approvals
+						</p>
+						<a href="#" class="btn btn-link">Know more</a>
+						</div>
+					</div>
+					</li>
+					<li class="stage-item">
+					<div class="cp-img-detail">
+						<div class="img-wrap">
+						<img
+							src="../components/cp-img-detail/images/stage-2.png"
+							alt="Planning"
+						/>
+						</div>
+						<div class="detail-wrap">
+						<h3 class="detail-tile">Planning</h3>
+						<p class="detail-desc">
+							Selecting your plot, hiring an architect and getting
+							approvals
+						</p>
+						<a href="#" class="btn btn-link">Know more</a>
+						</div>
+					</div>
+					</li>
+					<li class="stage-item">
+					<div class="cp-img-detail">
+						<div class="img-wrap">
+						<img
+							src="../components/cp-img-detail/images/stage-3.png"
+							alt="Planning"
+						/>
+						</div>
+						<div class="detail-wrap">
+						<h3 class="detail-tile">Planning</h3>
+						<p class="detail-desc">
+							Selecting your plot, hiring an architect and getting
+							approvals
+						</p>
+						<a href="#" class="btn btn-link">Know more</a>
+						</div>
+					</div>
+					</li>
+				</ul>
+				</div>
+			</div>
+			</div>
+		</section>
+		<!--  Home Building end-->
+		<!--  Product Banner start-->
+		<section class="bs-sec typ-prodcut">
+			<div class="sec-cont">
+			<div class="img-wrap">
+				<picture>
+					<source media="(max-width:768px)" srcset="images/product-banner-mob.png">
+					<source media="(max-width:991px)" srcset="images/product-banner-mob.png">
+					<img src="images/prodcut-banner.png" alt="product banner" />
+				</picture>
+			</div>
+			<div class="container">
+				<div class="cont-wrap">
+				<h2 class="sec-title typ-white">
+					Shop all <span class="cm-line-break">steel products</span>
+				</h2>
+				<a href="#" class="btn btn-default"> Explore more</a>
+				</div>
+			</div>
+			</div>
+		</section>
+		<!-- Product Banner end -->
+		<section class="bs-sec typ-build-cal">
+			<div class="container">
+			<div class="sec-head">
+				<h2 class="sec-title">Building cost calculator</h2>
+			</div>
+			<div class="sec-cont">
+				<picture>
+					<source media="(max-width:768px)" srcset="/images/Flat_type.png">
+					<source media="(max-width:991px)" srcset="/images/Flat_type.png">
+					<img src="/images/Flat_type.png" alt="Flat_type" />
+				</picture>
+			</div>
+			</div>
+		</section>
+		<!-- Blog and Article start -->
+		<section class="bs-sec typ-no-top-padding">
+			<div class="sec-cont">
+				<div class="container">
+					<div class="lyt-grid typ-col-2">
+						<div class="grid-col">
+							<div class="bs-swiper swiper typ-blog js-blog">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="cp-blog">
+											<a href="#" class="img-wrap">
+												<picture>
+													<source media="(max-width:768px)" srcset="../components/cp-blog/images/blog-img.png">
+													<source media="(max-width:991px)" srcset="../components/cp-blog/images/blog-img.png">
+													<img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+												</picture>
+											</a>
+											<div class="content-wrap">
+											<ul class="tag-list">
+												<li class="tag-item">
+												<span class="tag">Construction</span>
+												<span class="tag">Constructor</span>
+												</li>
+												<li class="tag-item">
+												<span
+													class="icon js-add-favorite icon-unfill-like"
+												></span>
+												</li>
+											</ul>
+											<h3 class="c-title">
+												Government schemes for first time home builders
+											</h3>
+											<div class="post-date">
+												<span class="post-detail">Mon, 26 Aug 2024</span>
+												<span class="post-detail">5 mins read</span>
+											</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="cp-blog">
+											<a href="#" class="img-wrap">
+												<picture>
+													<source media="(max-width:768px)" srcset="../components/cp-blog/images/blog-img.png">
+													<source media="(max-width:991px)" srcset="../components/cp-blog/images/blog-img.png">
+													<img src="../components/cp-blog/images/blog-img.png" alt="blog img" />
+												</picture>
+											</a>
+											<div class="content-wrap">
+											<ul class="tag-list">
+												<li class="tag-item">
+												<span class="tag">Construction</span>
+												<span class="tag">Constructor</span>
+												</li>
+												<li class="tag-item">
+												<span
+													class="icon js-add-favorite icon-unfill-like"
+												></span>
+												</li>
+											</ul>
+											<h3 class="c-title">
+												Government schemes for first time home builders 2
+											</h3>
+											<div class="post-date">
+												<span class="post-detail">Mon, 26 Aug 2024</span>
+												<span class="post-detail">5 mins read</span>
+											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid-col">
+							<div class="cp-video">
+								<div class="img-wrap">
+									<picture>
+										<source media="(max-width:768px)" srcset="../components/cp-video/images/video-img.png">
+										<source media="(max-width:991px)" srcset="../components/cp-video/images/video-img.png">
+										<img src="../components/cp-video/images/video-img.png" alt="video img" />
+									</picture>
+								</div>
+								<button class="icon-wrap">
+									<picture>
+										<source media="(max-width:768px)" srcset="../components/cp-video/images/play-icon.svg">
+										<source media="(max-width:991px)" srcset="../components/cp-video/images/play-icon.svg">
+										<img class="play-icon" src="../components/cp-video/images/play-icon.svg" alt="play img" />
+									</picture>
+								</button>
+								<div class="content-wrap">
+									<ul class="tag-list">
+										<li class="tag-item">
+											<span class="tag">Home loan</span>
+										</li>
+									</ul>
+									<h3 class="title">Home loans - All you need to know</h3>
+									<div class="post-date">
+										<span class="post-detail">Mon, 26 Aug 2024</span>
+										<span class="post-detail">5 mins read</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cp-toast">
+						<p class="msg">Added to Favorite</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Blog and Article end -->
+		<!-- Track costs & buy premium quality products start -->
+		<section class="bs-sec typ-gray-bg">
+			<div class="container">
+			<div class="sec-head">
+				<h2 class="sec-title">
+				Track costs & buy premium quality products
+				</h2>
+			</div>
+			<div class="sec-cont">
+				<picture>
+					<source media="(max-width:768px)" srcset="/images/Budget_Tracker.png">
+					<source media="(max-width:991px)" srcset="/images/Budget_Tracker.png">
+					<img class="play-icon" src="/images/Budget_Tracker.png" alt="Budget_Tracker" />
+				</picture>
+			</div>
+			</div>
+		</section>
+		<!-- Track costs & buy premium quality products end -->
+		<!-- start : why tata steel -->
+		<section class="bs-sec typ-tataicon">
+			<div class="container">
+			<div class="sec-head">
+				<h2 class="sec-title">Why TATA Steel Aashiyana?</h2>
+			</div>
+			<div class="sec-cont">
+				<ul class="lyt-grid typ-col-3">
+				<li class="grid-col">
+					<div class="cp-icon-details">
+					<div class="detail-icon">
+						<div class="icon-wrap">
+						<span class="icon icon-star"></span>
+						</div>
+					</div>
+					<h4 class="sub-title">INDUSTRY</h4>
+					<h3 class="title">Experts</h3>
+					</div>
+				</li>
+				<li class="grid-col">
+					<div class="cp-icon-details">
+					<div class="icon-wrap">
+						<span class="icon icon-star"></span>
+					</div>
+					<h4 class="sub-title">LEGACY OF</h4>
+					<h3 class="title">Excellence</h3>
+					</div>
+				</li>
+				<li class="grid-col ">
+					<div class="cp-icon-details">
+					<div class="icon-wrap">
+						<span class="icon icon-check"></span>
+					</div>
+					<h4 class="sub-title">PREMIUM</h4>
+					<h3 class="title">Quality</h3>
+					</div>
+				</li>
+				</ul>
+			</div>
+			</div>
+		</section>
+		<!-- end : why tata steel -->
+		<!-- Explore plans and designs for your home start -->
+		<section class="bs-sec">
+			<div class="container">
+				<div class="sec-head">
+					<h2 class="sec-title">Explore plans and designs for your home</h2>
+				</div>
+				<div class="sec-cont">
+					<div class="cp-design-style">
+						<div class="comp-head">
+							<h3 class="title">Architectural plans for you</h3>
+							<a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-link view-btn">View all</a>
+						</div>
+						<div class="bs-tab">
+							<ul class="tab-list">
+								<li class="tab-item active" data-target="#tab1">
+									<h3 class="title">MODERN</h3>
+								</li>
+								<li class="tab-item" data-target="#tab2">
+									<h3 class="title">EUROPEAN</h3>
+								</li>
+								<li class="tab-item" data-target="#tab3">
+									<h3 class="title">GOAN</h3>
+								</li>
+								<li class="tab-item" data-target="#tab4">
+									<h3 class="title">SCANDENAVIAN</h3>
+								</li>
+								<li class="tab-item" data-target="#tab5">
+									<h3 class="title">PAHADI</h3>
+								</li>
+							</ul>
+							<div class="tab-container">
+								<div class="tab-content active" id="tab1">
+									<div class="bs-swiper swiper typ-home-style js-home-style" >
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<picture>
+															<source media="(max-width:768px)" srcset="../components/cp-design-card/images/style-1.png">
+															<source media="(max-width:991px)" srcset="../components/cp-design-card/images/style-1.png">
+															<img src="../components/cp-design-card/images/style-1.png" alt="style-img" />
+														</picture>
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Prasinos</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<picture>
+															<source media="(max-width:768px)" srcset="../components/cp-design-card/images/style-2.png">
+															<source media="(max-width:991px)" srcset="../components/cp-design-card/images/style-2.png">
+															<img src="../components/cp-design-card/images/style-2.png" alt="style-img" />
+														</picture>
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Natachandra</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<picture>
+															<source media="(max-width:768px)" srcset="../components/cp-design-card/images/style-3.png">
+															<source media="(max-width:991px)" srcset="../components/cp-design-card/images/style-3.png">
+															<img src="../components/cp-design-card/images/style-3.png" alt="style-img" />
+														</picture>
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Arcadia</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<picture>
+															<source media="(max-width:768px)" srcset="../components/cp-design-card/images/style-2.png">
+															<source media="(max-width:991px)" srcset="../components/cp-design-card/images/style-2.png">
+															<img src="../components/cp-design-card/images/style-2.png" alt="style-img" />
+														</picture>
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Hasta - Hand of god</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content" id="tab2">
+									<h3 class="content">tab-content 2</h3>
+								</div>
+								<div class="tab-content" id="tab3">
+									<div class="bs-swiper swiper typ-home-style js-home-style" >
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<img src="../components/cp-design-card/images/style-1.png" alt="style-img" />
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Prasinos</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<picture>
+															<source media="(max-width:768px)" srcset="../components/cp-design-card/images/style-2.png">
+															<source media="(max-width:991px)" srcset="../components/cp-design-card/images/style-2.png">
+															<img src="../components/cp-design-card/images/style-2.png" alt="style-img" />
+														</picture>
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Natachandra</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<picture>
+															<source media="(max-width:768px)" srcset="../components/cp-design-card/images/style-3.png">
+															<source media="(max-width:991px)" srcset="../components/cp-design-card/images/style-3.png">
+															<img src="../components/cp-design-card/images/style-3.png" alt="style-img" />
+														</picture>
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Arcadia</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<picture>
+															<source media="(max-width:768px)" srcset="../components/cp-design-card/images/style-4.png">
+															<source media="(max-width:991px)" srcset="../components/cp-design-card/images/style-4.png">
+															<img src="../components/cp-design-card/images/style-4.png" alt="style-img" />
+														</picture>
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Hasta - Hand of god</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<picture>
+															<source media="(max-width:768px)" srcset="../components/cp-design-card/images/style-1.png">
+															<source media="(max-width:991px)" srcset="../components/cp-design-card/images/style-1.png">
+															<img src="../components/cp-design-card/images/style-1.png" alt="style-img" />
+														</picture>
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Prasinos</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="cp-design-card">
+													<div class="img-wrap">
+														<picture>
+															<source media="(max-width:768px)" srcset="../components/cp-design-card/images/style-2.png">
+															<source media="(max-width:991px)" srcset="../components/cp-design-card/images/style-2.png">
+															<img src="../components/cp-design-card/images/style-2.png" alt="style-img" />
+														</picture>
+													</div>
+													<div class="content-wrap">
+														<h3 class="desg-name">Natachandra</h3>
+														<ul class="detail-list">
+															<li class="detail-item">
+																<h4 class="detail-title">Area</h4>
+																<p class="detail-desc">3150 Sq. ft.</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Floors</h4>
+																<p class="detail-desc">2</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Type</h4>
+																<p class="detail-desc">5 BHK</p>
+															</li>
+															<li class="detail-item">
+																<h4 class="detail-title">Est. budget</h4>
+																<p class="detail-desc">32.5 lacs</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content" id="tab4">
+									<h3 class="content">tab-content 4</h3>
+								</div>
+								<div class="tab-content" id="tab5">
+									<h3 class="content">tab-content 5</h3>
+								</div>
+							</div>
+						</div>						  
+					</div>
+					<div class="cp-notify">
+						<div class="cont-wrap">
+							<h3 class="notify-title">Discover your design style</h3>
+							<p class="notify-desc">Answer a few simple questions</p>
+						</div>
+						<div class="btn-wrap">
+							<button class="btn btn-icon notify-btn">Start quiz <span class="icon icon-arrow"></span></button>
+						</div>
+						<span class="notify-icon icon-Question"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Explore plans and designs for your home end -->
+		<!-- Architects section starts   -->
+		<section class="bs-sec typ-gray-bg">
+			<div class="sec-cont">
+			<div class="cp-architect">
+				<div class="arch-left">
+				<h2 class="title">Top architects in your area</h2>
+				<p class="desc">
+					Find more service providers such as dealers, fabricators,
+					contractors & more
+				</p>
+				<a class="btn service-btn">View all service providers</a>
+				</div>
+				<div class="arch-right">
+				<div class="bs-swiper swiper typ-architect js-architect">
+					<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="cp-architect-card">
+						<div class="img-wrap">
+							<picture>
+								<source media="(max-width:768px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<source media="(max-width:991px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<img src="../components/cp-architect/images/istockphoto-1.png" alt="arch-img" class="img"/>
+							</picture>
+						</div>
+						<div class="detail-wrap">
+							<h3 class="cardetail-title">Sanjay Puri & Associates</h3>
+							<div class="bottom-sec">
+							<ul class="location-list">
+								<li class="location-item">
+								<span class="icon icon-location"></span>
+								<span class="details">Bandra</span>
+								</li>
+								<li class="location-item typ-rating">
+								<span class="icon icon-star"></span>
+								<span class="details">4.5</span>
+								</li>
+							</ul>
+							<a class="detail-right">
+								<span class="icon icon-arrow"></span>
+							</a>
+							</div>
+						</div>
+						</div>
+					</div>
 
-                  <div class="swiper-slide">
-                    <div class="cp-architect-card">
-                      <div class="img-wrap">
-                        <img
-                          src="../components/cp-architect/images/istockphoto-1.png"
-                          alt="arch-img"
-                          class="img"
-                        />
-                      </div>
-                      <div class="detail-wrap">
-                        <h3 class="card-title">Sanjay Puri & Associates</h3>
-                        <div class="bottom-sec">
-                          <ul class="location-list">
-                            <li class="location-item">
-                              <span class="icon icon-location"></span>
-                              <span class="details">Bandra</span>
-                            </li>
-                            <li class="location-item typ-rating">
-                              <span class="icon icon-star"></span>
-                              <span class="details">4.5</span>
-                            </li>
-                          </ul>
-                          <div class="detail-right">
-                            <span class="icon icon-arrow"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="cp-architect-card">
-                      <div class="img-wrap">
-                        <img
-                          src="../components/cp-architect/images/istockphoto-1.png"
-                          alt="arch-img"
-                          class="img"
-                        />
-                      </div>
-                      <div class="detail-wrap">
-                        <h3 class="card-title">Sanjay Puri & Associates</h3>
-                        <div class="bottom-sec">
-                          <ul class="location-list">
-                            <li class="location-item">
-                              <span class="icon icon-location"></span>
-                              <span class="details">Bandra</span>
-                            </li>
-                            <li class="location-item typ-rating">
-                              <span class="icon icon-star"></span>
-                              <span class="details">4.5</span>
-                            </li>
-                          </ul>
-                          <div class="detail-right">
-                            <span class="icon icon-arrow"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="cp-architect-card">
-                      <div class="img-wrap">
-                        <img
-                          src="../components/cp-architect/images/istockphoto-1.png"
-                          alt="arch-img"
-                          class="img"
-                        />
-                      </div>
-                      <div class="detail-wrap">
-                        <h3 class="card-title">Sanjay Puri & Associates</h3>
-                        <div class="bottom-sec">
-                          <ul class="location-list">
-                            <li class="location-item">
-                              <span class="icon icon-location"></span>
-                              <span class="details">Bandra</span>
-                            </li>
-                            <li class="location-item typ-rating">
-                              <span class="icon icon-star"></span>
-                              <span class="details">4.5</span>
-                            </li>
-                          </ul>
-                          <div class="detail-right">
-                            <span class="icon icon-arrow"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="cp-architect-card">
-                      <div class="img-wrap">
-                        <img
-                          src="../components/cp-architect/images/istockphoto-1.png"
-                          alt="arch-img"
-                          class="img"
-                        />
-                      </div>
-                      <div class="detail-wrap">
-                        <h3 class="card-title">Sanjay Puri & Associates</h3>
-                        <div class="bottom-sec">
-                          <ul class="location-list">
-                            <li class="location-item">
-                              <span class="icon icon-location"></span>
-                              <span class="details">Bandra</span>
-                            </li>
-                            <li class="location-item typ-rating">
-                              <span class="icon icon-star"></span>
-                              <span class="details">4.5</span>
-                            </li>
-                          </ul>
-                          <div class="detail-right">
-                            <span class="icon icon-arrow"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-nav">
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Architect section ends -->
-      <!-- Manage your home construction start -->
-      <section class="bs-sec">
-        <div class="container">
-          <div class="sec-head">
-            <h2 class="sec-title">Manage your home construction</h2>
-            <p class="sec-desc">Personalized project tracker</p>
-          </div>
-          <div class="sec-cont">
-            <img src="/images/Timeline_Cards.png" alt="Timeline_Cards" />
-          </div>
-        </div>
-      </section>
-      <!-- Manage your home construction end -->
-      <!-- customer testimonial start -->
-      <section class="bs-sec typ-gray-bg">
-        <div class="container">
-          <div class="sec-head">
-            <h2 class="sec-title">What our customers are saying</h2>
-          </div>
-          <div class="sec-cont">
-            <div class="customer-testimonial">
-              <a href="#" class="btn btn-link view-btn"> View All</a>
-              <div
-                class="bs-swiper swiper typ-home-testimonial js-home-testimonial"
-              >
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="cp-customer-testimonial">
-                      <div class="video-wrap">
-                        <img
-                          src="../components/cp-customer-testimonial/images/client-img.png"
-                          alt="client-img"
-                        />
-                        <span class="icon icon-play"></span>
-                      </div>
-                      <div class="content-wrap">
-                        <h3 class="c-title">
-                          Building my dream home with Tata Steel Ashiyana was an
-                          experience
-                        </h3>
-                        <div class="client-details">
-                          <div class="img-wrap">
-                            <img
-                              src="../components/cp-customer-testimonial/images/user.png"
-                              alt="user"
-                            />
-                          </div>
-                          <div class="details-wrap">
-                            <h2 class="client-name">Nilam Naik</h2>
-                            <p class="client-location">Bandra, Mumbai</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="cp-customer-testimonial typ-content">
-                      <div class="content-wrap">
-                        <h3 class="c-title">
-                          The decision to buy from Tata Steel Aashiyana was
-                          good, as I got the best quality material at the best
-                          prices.<br /><br />
-                          The team also assisted me during the whole...
-                        </h3>
-                        <a
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="btn btn-link"
-                          >Read More</a
-                        >
-                        <div class="client-details">
-                          <div class="img-wrap">
-                            <img
-                              src="../components/cp-customer-testimonial/images/user.png"
-                              alt="user"
-                            />
-                          </div>
-                          <div class="details-wrap">
-                            <h2 class="client-name">Nilam Naik</h2>
-                            <p class="client-location">Bandra, Mumbai</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="cp-customer-testimonial">
-                      <div class="video-wrap">
-                        <img
-                          src="../components/cp-customer-testimonial/images/client-img.png"
-                          alt="client-img"
-                        />
-                        <span class="icon icon-play"></span>
-                      </div>
-                      <div class="content-wrap">
-                        <h3 class="c-title">
-                          Building my dream home with Tata Steel Ashiyana was an
-                          experience
-                        </h3>
-                        <div class="client-details">
-                          <div class="img-wrap">
-                            <img
-                              src="../components/cp-customer-testimonial/images/user.png"
-                              alt="user"
-                            />
-                          </div>
-                          <div class="details-wrap">
-                            <h2 class="client-name">Nilam Naik</h2>
-                            <p class="client-location">Bandra, Mumbai</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="cp-customer-testimonial typ-content">
-                      <div class="content-wrap">
-                        <h3 class="c-title">
-                          The decision to buy from Tata Steel Aashiyana was
-                          good, as I got the best quality material at the best
-                          prices.<br /><br />
-                          The team also assisted me during the whole...
-                        </h3>
-                        <a
-                          href="#"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="btn btn-link"
-                          >Read More</a
-                        >
-                        <div class="client-details">
-                          <div class="img-wrap">
-                            <img
-                              src="../components/cp-customer-testimonial/images/user.png"
-                              alt="user"
-                            />
-                          </div>
-                          <div class="details-wrap">
-                            <h2 class="client-name">Nilam Naik</h2>
-                            <p class="client-location">Bandra, Mumbai</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- customer testimonial end -->
+					<div class="swiper-slide">
+						<div class="cp-architect-card">
+						<div class="img-wrap">
+							<picture>
+								<source media="(max-width:768px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<source media="(max-width:991px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<img src="../components/cp-architect/images/istockphoto-1.png" alt="arch-img" class="img"/>
+							</picture>
+						</div>
+						<div class="detail-wrap">
+							<h3 class="cardetail-title">Sanjay Puri & Associates</h3>
+							<div class="bottom-sec">
+							<ul class="location-list">
+								<li class="location-item">
+								<span class="icon icon-location"></span>
+								<span class="details">Bandra</span>
+								</li>
+								<li class="location-item typ-rating">
+								<span class="icon icon-star"></span>
+								<span class="details">4.5</span>
+								</li>
+							</ul>
+							<div class="detail-right">
+								<span class="icon icon-arrow"></span>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cp-architect-card">
+						<div class="img-wrap">
+							<picture>
+								<source media="(max-width:768px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<source media="(max-width:991px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<img src="../components/cp-architect/images/istockphoto-1.png" alt="arch-img" class="img"/>
+							</picture>
+						</div>
+						<div class="detail-wrap">
+							<h3 class="cardetail-title">Sanjay Puri & Associates</h3>
+							<div class="bottom-sec">
+							<ul class="location-list">
+								<li class="location-item">
+								<span class="icon icon-location"></span>
+								<span class="details">Bandra</span>
+								</li>
+								<li class="location-item typ-rating">
+								<span class="icon icon-star"></span>
+								<span class="details">4.5</span>
+								</li>
+							</ul>
+							<div class="detail-right">
+								<span class="icon icon-arrow"></span>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cp-architect-card">
+						<div class="img-wrap">
+							<picture>
+								<source media="(max-width:768px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<source media="(max-width:991px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<img src="../components/cp-architect/images/istockphoto-1.png" alt="arch-img" class="img"/>
+							</picture>
+						</div>
+						<div class="detail-wrap">
+							<h3 class="cardetail-title">Sanjay Puri & Associates</h3>
+							<div class="bottom-sec">
+							<ul class="location-list">
+								<li class="location-item">
+								<span class="icon icon-location"></span>
+								<span class="details">Bandra</span>
+								</li>
+								<li class="location-item typ-rating">
+								<span class="icon icon-star"></span>
+								<span class="details">4.5</span>
+								</li>
+							</ul>
+							<div class="detail-right">
+								<span class="icon icon-arrow"></span>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cp-architect-card">
+						<div class="img-wrap">
+							<picture>
+								<source media="(max-width:768px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<source media="(max-width:991px)" srcset="../components/cp-architect/images/istockphoto-1.png">
+								<img src="../components/cp-architect/images/istockphoto-1.png" alt="arch-img" class="img"/>
+							</picture>
+						</div>
+						<div class="detail-wrap">
+							<h3 class="cardetail-title">Sanjay Puri & Associates</h3>
+							<div class="bottom-sec">
+							<ul class="location-list">
+								<li class="location-item">
+								<span class="icon icon-location"></span>
+								<span class="details">Bandra</span>
+								</li>
+								<li class="location-item typ-rating">
+								<span class="icon icon-star"></span>
+								<span class="details">4.5</span>
+								</li>
+							</ul>
+							<div class="detail-right">
+								<span class="icon icon-arrow"></span>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+					<div class="swiper-nav">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<!-- Architect section ends -->
+		<!-- Manage your home construction start -->
+		<section class="bs-sec">
+			<div class="container">
+			<div class="sec-head">
+				<h2 class="sec-title">Manage your home construction</h2>
+				<p class="sec-desc">Personalized project tracker</p>
+			</div>
+			<div class="sec-cont">
+				<picture>
+					<source media="(max-width:768px)" srcset="/images/Timeline_Cards.png">
+					<source media="(max-width:991px)" srcset="/images/Timeline_Cards.png">
+					<img src="/images/Timeline_Cards.png" alt="Timeline_Cards"/>
+				</picture>
+			</div>
+			</div>
+		</section>
+		<!-- Manage your home construction end -->
+		<!-- customer testimonial start -->
+		<section class="bs-sec typ-gray-bg">
+			<div class="container">
+			<div class="sec-head">
+				<h2 class="sec-title">What our customers are saying</h2>
+			</div>
+			<div class="sec-cont">
+				<div class="customer-testimonial">
+				<a href="#" class="btn btn-link view-btn"> View All</a>
+				<div
+					class="bs-swiper swiper typ-home-testimonial js-home-testimonial"
+				>
+					<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="cp-customer-testimonial">
+						<div class="video-wrap">
+							<picture>
+								<source media="(max-width:768px)" srcset="components/cp-customer-testimonial/images/client-img.png">
+								<source media="(max-width:991px)" srcset="components/cp-customer-testimonial/images/client-img.png">
+								<img src="components/cp-customer-testimonial/images/client-img.png" alt="client-img" />
+							</picture>
+							<span class="icon icon-play"></span>
+						</div>
+						<div class="content-wrap">
+							<h3 class="c-title">
+							Building my dream home with Tata Steel Ashiyana was an
+							experience
+							</h3>
+							<div class="client-details">
+							<div class="img-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-customer-testimonial/images/user.png">
+									<source media="(max-width:991px)" srcset="../components/cp-customer-testimonial/images/user.png">
+									<img src="../components/cp-customer-testimonial/images/user.png" alt="user" />
+								</picture>
+							</div>
+							<div class="details-wrap">
+								<h2 class="client-name">Nilam Naik</h2>
+								<p class="client-location">Bandra, Mumbai</p>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cp-customer-testimonial typ-content">
+						<div class="content-wrap">
+							<h3 class="c-title">
+							The decision to buy from Tata Steel Aashiyana was
+							good, as I got the best quality material at the best
+							prices.<br /><br />
+							The team also assisted me during the whole...
+							</h3>
+							<a
+							href="#"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-link"
+							>Read More</a
+							>
+							<div class="client-details">
+							<div class="img-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-customer-testimonial/images/user.png">
+									<source media="(max-width:991px)" srcset="../components/cp-customer-testimonial/images/user.png">
+									<img src="../components/cp-customer-testimonial/images/user.png" alt="user" />
+								</picture>
+							</div>
+							<div class="details-wrap">
+								<h2 class="client-name">Nilam Naik</h2>
+								<p class="client-location">Bandra, Mumbai</p>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cp-customer-testimonial">
+						<div class="video-wrap">
+							<picture>
+								<source media="(max-width:768px)" srcset="components/cp-customer-testimonial/images/client-img.png">
+								<source media="(max-width:991px)" srcset="components/cp-customer-testimonial/images/client-img.png">
+								<img src="components/cp-customer-testimonial/images/client-img.png" alt="client-img" />
+							</picture>
+							<span class="icon icon-play"></span>
+						</div>
+						<div class="content-wrap">
+							<h3 class="c-title">
+							Building my dream home with Tata Steel Ashiyana was an
+							experience
+							</h3>
+							<div class="client-details">
+							<div class="img-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-customer-testimonial/images/user.png">
+									<source media="(max-width:991px)" srcset="../components/cp-customer-testimonial/images/user.png">
+									<img src="../components/cp-customer-testimonial/images/user.png" alt="user" />
+								</picture>
+							</div>
+							<div class="details-wrap">
+								<h2 class="client-name">Nilam Naik</h2>
+								<p class="client-location">Bandra, Mumbai</p>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cp-customer-testimonial typ-content">
+						<div class="content-wrap">
+							<h3 class="c-title">
+							The decision to buy from Tata Steel Aashiyana was
+							good, as I got the best quality material at the best
+							prices.<br /><br />
+							The team also assisted me during the whole...
+							</h3>
+							<a
+							href="#"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-link"
+							>Read More</a
+							>
+							<div class="client-details">
+							<div class="img-wrap">
+								<picture>
+									<source media="(max-width:768px)" srcset="../components/cp-customer-testimonial/images/user.png">
+									<source media="(max-width:991px)" srcset="../components/cp-customer-testimonial/images/user.png">
+									<img src="../components/cp-customer-testimonial/images/user.png" alt="user" />
+								</picture>
+							</div>
+							<div class="details-wrap">
+								<h2 class="client-name">Nilam Naik</h2>
+								<p class="client-location">Bandra, Mumbai</p>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<!-- customer testimonial end -->
     </main>
     <!-- Footer Start -->
     <footer>
       <div class="cp-footer">
-        <img src="/images/footer.png" alt="footer" />
+		<picture>
+			<source media="(max-width:768px)" srcset="/images/footer.png">
+			<source media="(max-width:991px)" srcset="/images/footer.png">
+			<img src="/images/footer.png" alt="Footer" />
+		</picture>
       </div>
     </footer>
     <!-- Footer end -->
@@ -700,12 +1252,16 @@
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.1.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
+	<script src="/js/vendor/isotope.pkgd.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
+    <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
+    <script src="/components/cp-home-banner/cp-home-banner.js"></script>
     <script src="/components/cp-blog/cp-blog.js"></script>
     <script src="/components/cp-customer-testimonial/cp-customer-testimonial.js"></script>
     <script src="/components/cp-architect/cp-architect.js"></script>
+    <script src="/components/cp-design-card/cp-design-card.js"></script>
     <!-- endbuild -->
   </body>
 </html>

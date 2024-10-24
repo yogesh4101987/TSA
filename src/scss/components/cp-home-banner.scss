@@ -8,13 +8,11 @@
     background-repeat: no-repeat;
     background-size: auto;
     padding: 5.6rem 0;
-    margin-bottom: 4rem;
     @media only screen and (max-width: $media-mobile) {
         background: #F3F4F6 ;
-        padding: 2.4rem 0;
     }
 
-    .sec-title {
+    .banner-title {
         font-size: 4rem;
         line-height: 5.2rem;
         font-family: $font-semiBold;
@@ -30,43 +28,62 @@
     .container{
         position: relative;
     }
-    .feature-list{
+
+    .feature {
         width: 50%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 2rem;
-        @media only screen and (max-width: $media-mobile) {
+        @media only screen and (max-width: 768px) {
             width: 100%;
             gap: 1.2rem;
         }
-        .feature-item{
-            width: 31%;
-            min-height: 11rem;
-            @media only screen and (max-width: $media-mobile) {
-                width: 48%;
-                min-height: 9.2rem;
+        
+        
+        .feature-item {
+            width: 31%; /* Adjust width to account for 20px gutter */
+            height: 11rem;    
+            display: flex;  
+            margin: 0 ; 
+            &:nth-child(2) { order: 9; } //PLANS
+            &:nth-child(3) { order: 8; } //SHOP
+            &:nth-child(4) { order: 1; } //REBARS
+            &:nth-child(5) { order: 4; } //ARCHITECTS
+            &:nth-child(6) { order: 2; } //CALCULATOR
+            &:nth-child(7) { order: 6; } //BUDGET
+            &:nth-child(8) { order: 5; } //INSPIRATION
+            &:nth-child(9) { order: 7; } //CAUTION
+            @media only screen and (max-width: 768px) {
+                width:  48%;
+                height: 9.2rem;
+                // display: block;
+                order: initial; 
+                margin-bottom: 1.2rem;
             }
-            &.typ-2{
-                min-height: 15.6rem;
-                width: 48%;
-                @media only screen and (max-width: $media-mobile) {
-                    min-height: 13rem;
+            &.typ-resize {
+                height: 15.6rem;
+                width: 48%; /* Larger items for bigger screens */
+                
+                @media only screen and (max-width: 768px) {
+                    height: 13rem;
+                    width:  48%; /* Adjust width and gutter for mobile */
                 }
-                .feature-card{
-                    .f-img{
-                        max-width: 14.3rem;
-                        max-height: 13.6rem;
-                        @media only screen and (max-width: $media-mobile) {
-                            max-width: 8rem;
-                            max-height: 8rem;
-                        }
-                    }
-                }
+            }
+        }       
+        .grid-sizer{
+            width: 31%;
+            height: 11rem;    
+            display: none;
+            order: 0; 
+            @media only screen and (max-width: 768px) {
+                display: block; 
+                width:  48%;
+                height: 9.2rem;              
             }
         }
     }
-
+    
     .feature-card{
         border: 1px solid $clr-border;
         background: $clr-root;
@@ -77,6 +94,16 @@
         display: block;
         width: 100%;
         height: 100%;
+        &.typ-resized{
+            .f-img{
+                max-width: 14.3rem;
+                max-height: 13.6rem;
+                @media only screen and (max-width: $media-mobile) {
+                    max-width: 8rem;
+                    max-height: 8rem;
+                }
+            }            
+        }
         &:hover,
         &.active{
             box-shadow: 0px 8px 24px 0px #00000014;

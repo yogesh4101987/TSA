@@ -806,7 +806,7 @@ p {
   margin-top: 4rem;
 }
 .bs-sec.typ-gray-bg {
-  background: #ECF2FB;
+  background: #ecf2fb;
   border-radius: 4.8rem 4.8rem 0 0;
   -webkit-border-radius: 4.8rem 4.8rem 0 0;
   -moz-border-radius: 4.8rem 4.8rem 0 0;
@@ -827,6 +827,20 @@ p {
   top: 50%;
   vertical-align: middle;
   transform: translateY(-50%);
+}
+.bs-sec.typ-gray-bg {
+  background: #ECF2FB;
+  border-radius: 4.8rem 4.8rem 0 0;
+  -webkit-border-radius: 4.8rem 4.8rem 0 0;
+  -moz-border-radius: 4.8rem 4.8rem 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .bs-sec.typ-gray-bg {
+    border-radius: 2.4rem 2.4rem 0 0;
+    -webkit-border-radius: 2.4rem 2.4rem 0 0;
+    -moz-border-radius: 2.4rem 2.4rem 0 0;
+    overflow-x: hidden;
+  }
 }
 @media only screen and (max-width: 991px) {
   .bs-sec {
@@ -868,6 +882,21 @@ p {
 }
 .bs-sec.typ-build-cal {
   padding-bottom: 2.4rem;
+}
+.bs-sec.typ-tataicon {
+  padding: 8rem 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-tataicon {
+    padding: 4.8rem 0;
+  }
+}
+.bs-sec.typ-tataicon .sec-title {
+  text-align: center;
+}
+.bs-sec.typ-first-sec {
+  margin-top: 11rem;
+  padding-top: 0;
 }
 
 .btn {
@@ -933,6 +962,10 @@ p {
     line-height: 1.8rem;
   }
 }
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #3D7EDB;
+}
 .btn.btn-secondary {
   background: transparent;
   color: #3D7EDB;
@@ -941,6 +974,16 @@ p {
   line-height: 1.6rem;
   font-family: "Poppins Bold";
   border-radius: 1px;
+}
+.btn.btn-icon {
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.btn.btn-icon .icon {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 /* colors */
@@ -1055,6 +1098,21 @@ p {
 @media only screen and (max-width: 767px) {
   .bs-swiper.typ-architect .swiper-nav {
     display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-home-style {
+    margin-right: -2rem;
+  }
+}
+.bs-swiper.typ-home-style .swiper-slide {
+  width: auto !important;
+  margin-right: 2rem;
+  min-width: 29.5rem;
+}
+@media only screen and (max-width: 767px) {
+  .bs-swiper.typ-home-style .swiper-slide {
+    margin-right: 1.2rem;
   }
 }
 
