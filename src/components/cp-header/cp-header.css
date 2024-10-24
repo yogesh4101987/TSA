@@ -17,7 +17,7 @@
   background-color: #FFFFFF;
   z-index: 8;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header {
     padding-bottom: 4rem;
   }
@@ -27,7 +27,7 @@
   justify-content: space-between;
   padding-bottom: 1.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .top-sec {
     justify-content: flex-start;
     position: relative;
@@ -49,7 +49,7 @@
   align-items: center;
   padding-left: 14rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs {
     position: absolute;
     bottom: -33px;
@@ -58,7 +58,7 @@
     z-index: 1;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs .location-wrap {
     width: 100%;
   }
@@ -71,7 +71,7 @@
   color: #333333;
   font-family: "Poppins Regular";
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs .location-text {
     width: 90%;
   }
@@ -83,7 +83,7 @@
   text-decoration: underline;
   padding-right: 2.4rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs .update-location {
     display: none;
   }
@@ -91,7 +91,7 @@
 .cp-header .top-sec .rhs .icon {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs .icon {
     font-size: 2.4rem;
     color: #999;
@@ -105,7 +105,7 @@
   font-size: 1.4rem;
   padding: 0.7rem 1.5rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs .btn-order {
     display: none;
   }
@@ -120,7 +120,7 @@
 .cp-header .bottom-sec .nav-list {
   display: flex;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .nav-list {
     display: none;
     left: -100%;
@@ -144,7 +144,7 @@
   position: relative;
   padding: 1.8rem 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .nav-list .nav-item {
     margin-bottom: 2rem;
   }
@@ -161,7 +161,7 @@
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .nav-list .nav-item .nav-link {
     padding: 0;
   }
@@ -175,7 +175,7 @@
   right: 0;
   top: 0px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .nav-list .nav-item .nav-link::after {
     display: none;
   }
@@ -207,7 +207,7 @@
   display: flex;
   padding-left: 15.2rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .quick-link-list {
     position: absolute;
     top: 27px;
@@ -218,7 +218,7 @@
   position: relative;
   padding: 1.8rem 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .quick-link-list .quick-link-icon-item {
     padding: 0;
   }
@@ -226,7 +226,7 @@
 .cp-header .bottom-sec .quick-link-list .quick-link-icon-item:first-child {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .quick-link-list .quick-link-icon-item:first-child {
     display: block;
   }
@@ -240,7 +240,7 @@
   left: 0;
   top: 17px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .quick-link-list .quick-link-icon-item:last-child .quick-link-item::after {
     top: 0;
   }
@@ -250,7 +250,7 @@
   color: #999;
   padding: 0 1.3rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .quick-link-list .quick-link-item {
     padding: 0 0.8rem;
   }
@@ -258,7 +258,7 @@
 .cp-header .hamburger-menu {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-header .hamburger-menu {
     display: block;
   }
