@@ -14,7 +14,7 @@ $(window).resize(function () {
 function dealerSlider() {
   var swiper = new Swiper(".js-dealerSlider", {
     slidesPerView: "auto",
-    loop: false,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

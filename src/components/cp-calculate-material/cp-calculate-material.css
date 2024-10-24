@@ -12,6 +12,7 @@
   width: 48%;
   border: 1px solid #dedede;
   border-radius: 16px;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1023px) {
   .cp-calculate-material .lhs {
