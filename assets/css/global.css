@@ -423,6 +423,26 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-correct:before {
+  content: "\e938";
+}
+
+.icon-crown:before {
+  content: "\e939";
+}
+
+.icon-card_membership:before {
+  content: "\e916";
+}
+
+.icon-distance:before {
+  content: "\e917";
+}
+
+.icon-memory:before {
+  content: "\e937";
+}
+
 .icon-cart:before {
   content: "\e900";
 }
