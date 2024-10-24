@@ -799,17 +799,23 @@ p {
   display: none !important;
 }
 
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+/* colors */
+/*font family*/
+/* breakpoints */
 .bs-sec {
   padding: 4rem 0rem;
   position: relative;
-}
-.bs-sec .top-padd {
-  margin-top: 4rem;
 }
 @media only screen and (max-width: 991px) {
   .bs-sec {
     padding: 2.8rem 0rem;
   }
+}
+.bs-sec .top-padd {
+  margin-top: 4rem;
 }
 .bs-sec .sec-head {
   margin-bottom: 3.2rem;
@@ -884,6 +890,11 @@ p {
 }
 .bs-sec.typ-tataicon .sec-title {
   text-align: center;
+}
+.bs-sec.typ-dealer .sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .bs-sec.typ-calculate .sec-head {
   padding: 2.4rem 2.4rem 0;
@@ -1328,6 +1339,19 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-home-style .swiper-slide {
+    margin-right: 1.2rem;
+  }
+}
+.bs-swiper.typ-dealer {
+  padding-bottom: 8rem;
+}
+.bs-swiper.typ-dealer .swiper-slide {
+  width: 40rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-dealer .swiper-slide {
+    width: 29.6rem;
     margin-right: 1.2rem;
   }
 }
