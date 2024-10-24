@@ -2,17 +2,20 @@ var winWidth = $(window).width();
 
 $(document).ready(function() {    
     if ($(window).width() < 768) {
+        $('.grid-sizer').show();
         homeBannerFeatureMobile();
-    } 
-    else{
+    } else{
+        $('.grid-sizer').hide();
         destroyIsotope();
     }
 });
 
 $(window).resize(function() {
     if ($(window).width() < 768) {
+        $('.grid-sizer').show();
         homeBannerFeatureMobile();
     } else{
+        $('.grid-sizer').hide();
         destroyIsotope();
     }
 });

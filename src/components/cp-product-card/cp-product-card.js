@@ -2,12 +2,12 @@ var winWidth = $(window).width();
 
 $(document).ready(function () { 
   topDealSlider();  
+  bestSellingSlider();
 });
 
-$(window).resize(function () {
-  if ($(window).width() < 769) {
-    topDealSlider();
-  }
+$(window).resize(function () {  
+  topDealSlider();
+  bestSellingSlider();
 });
 
 function topDealSlider() {
@@ -16,6 +16,16 @@ function topDealSlider() {
     navigation: {
       nextEl: ".swiper-button-next.button-next",
       prevEl: ".swiper-button-prev.button-prev",
+    },
+  });
+}
+
+function bestSellingSlider() {
+  var swiper = new Swiper(".js-best-selling", {
+    slidesPerView: "auto",
+    navigation: {
+      nextEl: ".swiper-button-next.best-selling-next",
+      prevEl: ".swiper-button-prev.best-selling-prev",
     },
   });
 }

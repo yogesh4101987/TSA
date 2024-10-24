@@ -7,8 +7,12 @@
         position: absolute;
         top: -7rem;
         right: 0;
+        @media only screen and (max-width: $media-tab) {
+            right: 2rem;
+        }
         @media only screen and (max-width: $media-mobile) {
             top: -3.5rem;
+            right: 0;
         }
     }    
 }
