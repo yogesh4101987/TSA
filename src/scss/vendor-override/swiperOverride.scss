@@ -5,35 +5,43 @@
   .swiper-pagination-custom, 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: 0;
+    bottom: 1px;
   }
 
-  .swiper-pagination-bullet {
-    width: 0.4rem;
-    height: 0.4rem;
-    opacity: 1;
-    margin: 0 0.5rem;
+  .swiper-pagination-bullet{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #808080;
     border-radius: 50%;
-    transition: all 0.5s ease !important;
-    background-color: $clr-root;
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: $clr-root;
-    width: 2rem;
-    border-radius: 0.3rem;
+    margin: 0 8px;
+    transform: none;
+    transition: none;
     opacity: 1;
+    position: relative;
+    &::after{
+      width: 1.6rem;
+      height: 1.6rem;
+      border: 1px solid transparent;
+      background: transparent;
+      border-radius: 50%;
+      top:-4px;
+      left: -4px;
+      content: '';
+      position: absolute;
+    }
   }
+  .swiper-pagination-bullet-active{
+    background-color: $clr-secondary;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    &::after{
+      border: 1px solid $clr-secondary;
+    }
+  }
+ 
+ 
 
-  .swiper-pagination-bullet-active-next,
-  .swiper-pagination-bullet-active-next-next,
-  .swiper-pagination-bullet-active-prev {
-    background: $clr-root;
-  }
-  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
-    margin: 0 2px;
-  }
 
   .swiper-nav{
     min-width: 13rem;
@@ -131,7 +139,22 @@
     }
 
   }
-
+  &.typ-brand{
+    padding-bottom: 4rem;
+    @media only screen and (max-width: $media-mobile) {
+      padding-bottom: 16rem;
+    }
+    .swiper-slide{
+      display: flex ;
+      @media only screen and (max-width: $media-mobile) {
+        width: 37.5rem !important;
+        height: 10.6rem !important;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    
+  }
   &.typ-home-style{
     @media only screen and (max-width: $media-mobile) {
       margin-right: -2rem;
