@@ -28,7 +28,7 @@
         justify-content: space-between;
         gap: 2rem;
         @media only screen and (max-width: 768px) {
-            gap: 1.2rem;
+            gap: 0rem;
         }
         
         
@@ -44,7 +44,7 @@
             &:nth-child(6) { order: 3; } //DOORS
             &:nth-child(7) { order: 6; } //GARDENING
             @media only screen and (max-width: 768px) {
-                width:  48%;
+                width:  49%;
                 height: 9.2rem;
                 // display: block;
                 order: initial; 
@@ -63,7 +63,7 @@
             order: 0; 
             @media only screen and (max-width: 768px) {
                 display: block; 
-                width:  48%;
+                width:  49%;
                 height: 9.2rem;              
             }
         }

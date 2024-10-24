@@ -33,7 +33,7 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature {
-    gap: 1.2rem;
+    gap: 0rem;
   }
 }
 .cp-eCommerce-home-banner .feature .feature-item {
@@ -62,7 +62,7 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature .feature-item {
-    width: 48%;
+    width: 49%;
     height: 9.2rem;
     order: initial;
     margin-bottom: 1.2rem;
@@ -82,7 +82,7 @@
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature .grid-sizer {
     display: block;
-    width: 48%;
+    width: 49%;
     height: 9.2rem;
   }
 }

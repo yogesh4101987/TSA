@@ -109,9 +109,11 @@
     position: relative;
     overflow: hidden;
     background: #F3F4F6;
+    margin-top: 8rem;
     @include border-radius(4.8rem 4.8rem 0 0);
     @media only screen and (max-width: $media-mobile) {
       @include border-radius(2.4rem 2.4rem 0 0);
+      margin-top: 4.8rem;
     }
     &::before{
       content: '';
@@ -179,14 +181,17 @@
     }
     .btn-wrap{
       width: 30%;
-      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
     .btn{
+      min-width: 10.2rem;
+      padding: 0.7rem 1rem;
       @media only screen and (max-width: $media-sm) {
         font-size: 1.2rem;
         line-height: 1.6rem;
-        min-width: 8rem;
-        padding: 0.7rem 1rem;
+        min-width: 8rem;        
       }
     }
   }
