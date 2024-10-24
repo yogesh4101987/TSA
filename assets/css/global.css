@@ -1003,41 +1003,49 @@ p {
 .bs-swiper .swiper-pagination-custom,
 .bs-swiper .swiper-horizontal > .swiper-pagination-bullets,
 .bs-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 0;
+  bottom: 1px;
 }
 .bs-swiper .swiper-pagination-bullet {
-  width: 0.4rem;
-  height: 0.4rem;
-  opacity: 1;
-  margin: 0 0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #808080;
   border-radius: 50%;
-  transition: all 0.5s ease !important;
-  background-color: #FFFFFF;
+  margin: 0 8px;
+  transform: none;
+  transition: none;
+  opacity: 1;
+  position: relative;
+}
+.bs-swiper .swiper-pagination-bullet::after {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 50%;
+  top: -4px;
+  left: -4px;
+  content: "";
+  position: absolute;
 }
 .bs-swiper .swiper-pagination-bullet-active {
-  background-color: #FFFFFF;
-  width: 2rem;
-  border-radius: 0.3rem;
-  opacity: 1;
+  background-color: #D2042D;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
 }
-.bs-swiper .swiper-pagination-bullet-active-next,
-.bs-swiper .swiper-pagination-bullet-active-next-next,
-.bs-swiper .swiper-pagination-bullet-active-prev {
-  background: #FFFFFF;
-}
-.bs-swiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.bs-swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 2px;
+.bs-swiper .swiper-pagination-bullet-active::after {
+  border: 1px solid #D2042D;
 }
 .bs-swiper .swiper-nav {
   min-width: 13rem;
 }
 .bs-swiper .swiper-nav .swiper-button-next,
 .bs-swiper .swiper-nav .swiper-button-prev {
+  display: inline-block;
   color: #333333;
   cursor: pointer;
   z-index: 1;
-  padding: 2.4rem;
+  padding: 2.3rem;
   border: 1px solid #333333;
   border-radius: 50%;
 }
@@ -1051,6 +1059,14 @@ p {
   font-size: 2.4rem;
   font-weight: normal;
   font-family: "icomoon";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .bs-swiper .swiper-nav .swiper-button-prev:after {
   content: "\e91e";
@@ -1125,6 +1141,25 @@ p {
     display: none;
   }
 }
+.bs-swiper.typ-brand {
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-brand {
+    padding-bottom: 16rem;
+  }
+}
+.bs-swiper.typ-brand .swiper-slide {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-brand .swiper-slide {
+    width: 37.5rem !important;
+    height: 10.6rem !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-home-style {
     margin-right: -2rem;
@@ -1140,6 +1175,7 @@ p {
     margin-right: 1.2rem;
   }
 }
+
 .bs-swiper.typ-dealer {
   padding-bottom: 8rem;
 }
@@ -1159,4 +1195,38 @@ p {
   right: 0;
 }
 
-/*# sourceMappingURL=global.css.map */
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-best-selling, .bs-swiper.typ-top-deals {
+    margin-right: -2rem;
+  }
+}
+.bs-swiper.typ-best-selling .swiper-wrapper, .bs-swiper.typ-top-deals .swiper-wrapper {
+  padding-bottom: 9.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-best-selling .swiper-wrapper, .bs-swiper.typ-top-deals .swiper-wrapper {
+    padding-bottom: 0;
+  }
+}
+.bs-swiper.typ-best-selling .swiper-slide, .bs-swiper.typ-top-deals .swiper-slide {
+  width: auto !important;
+  margin-right: 2rem;
+  min-width: 29.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-best-selling .swiper-slide, .bs-swiper.typ-top-deals .swiper-slide {
+    margin-right: 1.2rem;
+    min-width: 20rem;
+  }
+}
+.bs-swiper.typ-best-selling .swiper-nav, .bs-swiper.typ-top-deals .swiper-nav {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-best-selling .swiper-nav, .bs-swiper.typ-top-deals .swiper-nav {
+    display: none;
+  }
+}
+
