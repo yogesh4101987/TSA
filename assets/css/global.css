@@ -807,12 +807,14 @@ p {
 }
 .bs-sec.typ-gray-bg {
   background: #ecf2fb;
+}
+.bs-sec.typ-curve {
   border-radius: 4.8rem 4.8rem 0 0;
   -webkit-border-radius: 4.8rem 4.8rem 0 0;
   -moz-border-radius: 4.8rem 4.8rem 0 0;
 }
 @media only screen and (max-width: 767px) {
-  .bs-sec.typ-gray-bg {
+  .bs-sec.typ-curve {
     border-radius: 2.4rem 2.4rem 0 0;
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
     -moz-border-radius: 2.4rem 2.4rem 0 0;
