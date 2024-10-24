@@ -10,15 +10,15 @@
   justify-content: space-between;
   position: relative;
   gap: 2rem;
-}
-.cp-architect .arch-left {
-  width: 30%;
   padding-left: 10rem;
 }
 @media only screen and (max-width: 767px) {
-  .cp-architect .arch-left {
-    padding: 0 1.6rem;
+  .cp-architect {
+    padding: 0 0 0 1.6rem;
   }
+}
+.cp-architect .arch-left {
+  width: 22%;
 }
 .cp-architect .arch-left .title {
   font-family: "Poppins Semibold";
@@ -42,7 +42,7 @@
   }
 }
 .cp-architect .arch-right {
-  width: 69%;
+  width: 76%;
   overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
