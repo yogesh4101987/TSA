@@ -1,4 +1,4 @@
-@import '../config/variables';
+@import "../config/variables";
 
 .bs-swiper {
   padding-bottom:7.6rem;
@@ -68,12 +68,12 @@
       margin: 0;
       top: 0;
       border: 1px solid $clr-base;
-      border-radius:50%;
-      &.swiper-button-disabled{
-        color: #B3B3B3;
+      border-radius: 50%;
+      &.swiper-button-disabled {
+        color: #b3b3b3;
         opacity: 0.5;
       }
-      &:after{
+      &:after {
         font-size: 2.4rem;
         font-weight: normal; 
         font-family: 'icomoon'; 
@@ -83,8 +83,8 @@
         @include transform(translate(-50%, -50%));
       }
     }
-    .swiper-button-prev:after{     
-      content:'\e91e';
+    .swiper-button-prev:after {
+      content: "\e91e";
     }
     .swiper-button-next:after{
       content:'\e91d';
@@ -144,9 +144,82 @@
       right: 9%; 
       @media only screen and (max-width: $media-mobile) {
         display: none;
-      }     
+      }
+    }
+  }
+
+  &.typ-ecomm-banner {
+    .swiper-wrapper {
+      position: relative;
+      padding-bottom: 4rem;
+      @media only screen and (max-width: $media-mobile) {
+        padding-bottom: 3.2rem;
+      }
+    }
+    .swiper-slide {
+      width: 100% !important;
+      max-height: 36rem;
     }
 
+    .swiper-pagination {
+      min-height: 1.6rem;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .swiper-pagination-bullet {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: #808080;
+
+      &::before{
+        content: '';
+        position: absolute;
+        opacity: 1;       
+        width: 1.6rem ;
+        height: 1.6rem ;
+        background: transparent;
+        border-radius: 50%;
+        transform: translate(-50%,-25%);
+      }
+    }
+    .swiper-pagination-bullet-active {
+      // background-color: tranparent;
+      // outline: 2px solid  $clr-root;
+      // width: 0.8rem;
+      // height: 0.8rem;
+      // border-radius: 50%;
+      // position: relative;
+      // &::before{
+      //   content: '';
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   width: 1.6rem;
+      //   height: 1.6rem;
+      //   background-color:$clr-secondary;
+      //   border-radius: 50%;
+      //   transform: translate(-50%,-50%);
+      //   z-index: -1;
+      // }
+
+      background-color: $clr-secondary;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      opacity: 1;
+      &::before{
+        border: 1px solid $clr-secondary;
+        z-index: 1;
+      }
+    }
+   
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      margin: 0 6px;
+    }
   }
   &.typ-brand{
     padding-bottom: 4rem;
@@ -196,4 +269,3 @@
     }
   }
 }
-
