@@ -85,4 +85,9 @@
         background: $clr-root;
         color: $clr-primary;
     }
+    &.btn-outline{
+        background: transparent;
+        color: $clr-base;
+        border: 1px solid $clr-base;
+    }
 }

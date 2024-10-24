@@ -1119,6 +1119,11 @@ p {
   background: #FFFFFF;
   color: #3D7EDB;
 }
+.btn.btn-outline {
+  background: transparent;
+  color: #333333;
+  border: 1px solid #333333;
+}
 
 /* colors */
 /*font family*/

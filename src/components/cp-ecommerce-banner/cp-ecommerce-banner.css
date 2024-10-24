@@ -115,5 +115,24 @@
     padding: 0.8rem 1rem;
   }
 }
+.cp-ecommerce-banner .content-wrap .btn-ecom-banner {
+  min-width: 11.2rem;
+  padding: 1.2rem 1.6rem;
+  background-color: #FFFFFF;
+  color: #333333;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 768px) {
+  .cp-ecommerce-banner .content-wrap .btn-ecom-banner {
+    min-width: 8rem;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
 
 /*# sourceMappingURL=cp-ecommerce-banner.css.map */

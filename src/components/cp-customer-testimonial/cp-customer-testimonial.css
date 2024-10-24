@@ -33,6 +33,7 @@
   border: 1px solid #DEDEDE;
   background: #FFFFFF;
   position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .cp-customer-testimonial {
