@@ -57,5 +57,8 @@
 .bs-tab .tab-container .content {
   font-size: 3rem;
 }
+.bs-tab.typ-calculate .tab-list {
+  padding: 0 2.4rem 0;
+}
 
 /*# sourceMappingURL=cp-tab.css.map */
