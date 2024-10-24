@@ -12,7 +12,7 @@
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-ecommerce-banner {
     height: 20.6rem;
     border-radius: 1.2rem;
@@ -28,7 +28,7 @@
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-ecommerce-banner img {
     border-radius: 1.2rem;
     -webkit-border-radius: 1.2rem;
@@ -43,7 +43,7 @@
   z-index: 1;
   max-width: 50rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-ecommerce-banner .content-wrap {
     left: 1.6rem;
     max-width: 22.4rem;
@@ -59,7 +59,7 @@
   height: 100%;
   object-fit: cover;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-ecommerce-banner .content-wrap .banner-logo {
     margin-bottom: 1rem;
     width: 8.5rem;
@@ -73,7 +73,7 @@
   color: #FFFFFF;
   margin-bottom: 0.4rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-ecommerce-banner .content-wrap .title {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -93,7 +93,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-ecommerce-banner .content-wrap .desc {
     font-size: 1.4rem;
     line-height: 2rem;
@@ -108,7 +108,7 @@
   font-family: "Poppins Medium";
   padding: 1.2rem 1.6rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-ecommerce-banner .content-wrap .shop-banner {
     font-size: 1.2rem;
     line-height: 1.6rem;

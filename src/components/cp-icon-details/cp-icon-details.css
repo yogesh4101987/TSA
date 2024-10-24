@@ -5,20 +5,29 @@
 /*opacity*/
 /*opacity- end*/
 .cp-icon-details {
-  text-align: center;
   position: relative;
+  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .cp-icon-details::after {
   content: "";
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -0.6rem;
+  top: 50%;
   width: 1px;
   height: 16rem;
   background-color: #DEDEDE;
   display: block;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-icon-details::after {
     height: 7rem;
   }
@@ -28,7 +37,7 @@
   justify-content: center;
   margin-bottom: 2.4rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-icon-details .icon-wrap {
     margin-bottom: 1.2rem;
   }
@@ -40,7 +49,7 @@
   color: #FFFFFF;
   border-radius: 50%;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-icon-details .icon-wrap .icon {
     padding: 0.5rem;
     font-size: 1rem;
@@ -53,7 +62,7 @@
   line-height: 2.2rem;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-icon-details .sub-title {
     font-size: 1.2rem;
     line-height: 1.6rem;
@@ -66,7 +75,7 @@
   line-height: 4.8rem;
   text-transform: capitalize;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .cp-icon-details .title {
     font-size: 2rem;
     line-height: 2.8rem;
