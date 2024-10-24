@@ -5,18 +5,27 @@
 /*opacity*/
 /*opacity- end*/
 .cp-icon-details {
-  text-align: center;
   position: relative;
+  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .cp-icon-details::after {
   content: "";
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -0.6rem;
+  top: 50%;
   width: 1px;
   height: 16rem;
   background-color: #DEDEDE;
   display: block;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 @media only screen and (max-width: 768px) {
   .cp-icon-details::after {
