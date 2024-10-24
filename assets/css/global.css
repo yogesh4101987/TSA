@@ -1381,6 +1381,7 @@ p {
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-dealer {
     margin-right: -2rem;
+    padding-bottom: 0;
   }
 }
 .bs-swiper.typ-dealer .swiper-slide {
