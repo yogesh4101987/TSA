@@ -14,7 +14,7 @@
   max-width: 27.5rem;
   text-align: center;
   position: fixed;
-  bottom: 5rem;
+  bottom: 15%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -34,6 +34,13 @@
     font-size: 1.4rem;
     line-height: 2rem;
   }
+}
+.cp-toast.typ-error {
+  border: 1px dashed #F58F66;
+  background: #FCDACC;
+}
+.cp-toast.typ-error .msg {
+  color: #F58F66;
 }
 
 /*# sourceMappingURL=cp-toast.css.map */

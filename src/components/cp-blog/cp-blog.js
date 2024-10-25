@@ -14,17 +14,13 @@ function addedFavorite() {
 
     $(document).on('click', '.js-add-favorite', function() {
         const $icon = $(this);
-
-        // Add active and icon-heart-fill classes, remove icon-unfill-like
-        $icon.addClass('active icon-heart-fill').removeClass('icon-unfill-like');
-
-        // Show toast notification if icon-heart-fill is added
-        if ($icon.hasClass('active')) {
-            $('.cp-toast').show().delay(5000).fadeOut();
-        }
+        const isActive = $icon.toggleClass('active icon-heart-fill').hasClass('active');
+        $icon.toggleClass('icon-unfill-like', !isActive);
+        const toastMessage = isActive ? 'Added to Favorite' : 'Removed from Favorite';
+        $('.cp-toast').toggleClass('typ-error', !isActive);
+        $('.cp-toast').text(toastMessage).show().delay(3000).fadeOut();
     }); 
 }
-
 
 function blogSlider() {
     var swiper = new Swiper(".js-blog", {
