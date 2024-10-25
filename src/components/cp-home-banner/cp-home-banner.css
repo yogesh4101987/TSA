@@ -6,16 +6,7 @@
 /*opacity- end*/
 .cp-home-banner {
   position: relative;
-  background: #F3F4F6 url(../../components/cp-home-banner/images/banner-img.png);
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: auto;
   padding: 5.6rem 0;
-}
-@media only screen and (max-width: 768px) {
-  .cp-home-banner {
-    background: #F3F4F6;
-  }
 }
 .cp-home-banner .banner-title {
   font-size: 4rem;

@@ -7,14 +7,14 @@
   justify-content: space-between;
   position: relative;
   gap: 2rem;
+  padding-left: 10rem;
+  @media only screen and (max-width: $media-mobile) {
+    padding: 0 0 0 1.6rem;
+  }
 
   .arch-left {
-    width: 30%;
-    padding-left: 10rem;
+    width: 22%;
 
-    @media only screen and (max-width: $media-mobile) {
-      padding: 0 1.6rem;
-    }
     .title {
       font-family: $font-semiBold;
       font-size: 4rem;
@@ -40,7 +40,7 @@
     }
   }
   .arch-right {
-    width: 69%;
+    width: 76%;
     overflow: hidden;
   }
 
@@ -74,7 +74,6 @@
   border-radius: 1.6rem;
   overflow: hidden;
 
-
   @media only screen and (max-width: $media-mobile) {
     min-height: 29.6rem;
   }
@@ -84,6 +83,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      min-height: 26rem;
+      @media only screen and (max-width: $media-mobile) {
+        min-height: 29.6rem;
+      }
     }
 
     &::after {
@@ -166,10 +169,6 @@
         }
       }
     }
-
-  
-
-  
   }
 
   .detail-right {

@@ -60,7 +60,7 @@
     padding: 1.6rem;
   }
 }
-.cp-design-card .content-wrap .deg-name {
+.cp-design-card .content-wrap .desg-name {
   font-family: "Poppins Semibold";
   font-size: 2rem;
   line-height: 2.9rem;
@@ -69,7 +69,7 @@
   border-bottom: 1px solid #DEDEDE;
 }
 @media only screen and (max-width: 768px) {
-  .cp-design-card .content-wrap .deg-name {
+  .cp-design-card .content-wrap .desg-name {
     line-height: 3rem;
   }
 }
