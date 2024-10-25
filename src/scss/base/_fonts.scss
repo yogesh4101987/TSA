@@ -103,8 +103,13 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-.icon-card_membership:before {
+.icon-correct:before {
+    content: "\e938";
+  }
+  .icon-crown:before {
+    content: "\e939";
+  }
+  .icon-card_membership:before {
     content: "\e916";
   }
   .icon-distance:before {
