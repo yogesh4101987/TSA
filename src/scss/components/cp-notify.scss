@@ -12,6 +12,7 @@
     justify-content: flex-start;
     overflow: hidden;
     @media only screen and (max-width: $media-mobile) {
+        margin-top: 1.6rem;
         flex-wrap: wrap;
         flex-direction: row;
         padding: 1.6rem;

@@ -19,9 +19,12 @@
     border: 1px solid $clr-primary;
     min-width: 15rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    // @media only screen and (max-width: $media-sm) {
-    //     min-width: 21rem;
-    // }
+    @media only screen and (max-width: $media-sm) {
+        min-width: 12.4rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 0.9rem 1.2rem;
+    }
     &.btn-disable {
         cursor: none;
         opacity: 0.5;

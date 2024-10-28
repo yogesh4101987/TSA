@@ -10,6 +10,7 @@
   -moz-border-radius: 1.6rem;
   border: 1px solid #DEDEDE;
   background: #FFFFFF;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .cp-useful-card {
@@ -23,6 +24,7 @@
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
   height: 16.8rem;
+  overflow: hidden;
   display: block;
 }
 .cp-useful-card .img-wrap img {
@@ -63,7 +65,7 @@
 .cp-useful-card .content-wrap .desc {
   font-family: "Poppins Regular";
   font-size: 1.6rem;
-  line-height: 2.3rem;
+  line-height: 2.4rem;
   color: #666666;
   margin-bottom: 0.8rem;
   overflow: hidden;

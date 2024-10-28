@@ -6,7 +6,7 @@
   padding: 4rem 0rem;
   position: relative;
   @media only screen and (max-width: $media-sm) {
-    padding: 2.8rem 0rem;
+    padding: 2.4rem 0rem;
   }
 
   .top-padd{
@@ -47,16 +47,18 @@
   .sec-cont {
   }
   &.typ-gray-bg{
-    background: #ecf2fb;   
-    padding: 5.8rem 0;
-    @media only screen and (max-width: $media-mobile) {
-      padding: 2.4rem 0;
-    }
+    background: #ecf2fb;
   }
   &.typ-curve{
     @include border-radius(4.8rem 4.8rem 0 0);
     @media only screen and (max-width: $media-mobile) {
       @include border-radius(2.4rem 2.4rem 0 0);
+    }
+  }
+  &.typ-inner-spacing{
+    padding: 5.8rem 0;
+    @media only screen and (max-width: $media-mobile) {
+      padding: 2.4rem 0;
     }
   }
   &.typ-product {
@@ -84,6 +86,9 @@
     padding: 8rem 0;
     @media only screen and (max-width: $media-sm) {
       padding: 4.8rem 0;
+    }
+    .sec-head{
+      margin-bottom: 4.8rem;
     }
     .sec-title {
       text-align: center;

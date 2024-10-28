@@ -5,6 +5,7 @@
     @include border-radius(1.6rem);
     border: 1px solid $clr-border;
     background: $clr-root;
+    overflow: hidden;
     @media only screen and (max-width: $media-mobile) {
         @include border-radius(1.2rem);
     }
@@ -12,6 +13,7 @@
     .img-wrap{
         @include border-radius(1.6rem);
         height: 16.8rem;
+        overflow: hidden;
         display: block;    
         img {
             height: 100%;
@@ -43,7 +45,7 @@
         .desc{
             font-family: $font-regular;
             font-size: 1.6rem;
-            line-height: 2.3rem;
+            line-height: 2.4rem;
             color: $clr-para;
             margin-bottom: 0.8rem;
             overflow: hidden;

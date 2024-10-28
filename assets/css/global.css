@@ -697,6 +697,7 @@ body {
   scroll-behavior: smooth;
   scrollbar-gutter: initial;
   position: relative;
+  overflow-x: hidden;
   /* Track */
   /* Handle */
   /* Handle on hover */
@@ -856,7 +857,7 @@ p {
 }
 @media only screen and (max-width: 991px) {
   .bs-sec {
-    padding: 2.8rem 0rem;
+    padding: 2.4rem 0rem;
   }
 }
 .bs-sec .top-padd {
@@ -902,12 +903,6 @@ p {
 }
 .bs-sec.typ-gray-bg {
   background: #ecf2fb;
-  padding: 5.8rem 0;
-}
-@media only screen and (max-width: 768px) {
-  .bs-sec.typ-gray-bg {
-    padding: 2.4rem 0;
-  }
 }
 .bs-sec.typ-curve {
   border-radius: 4.8rem 4.8rem 0 0;
@@ -919,6 +914,14 @@ p {
     border-radius: 2.4rem 2.4rem 0 0;
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
     -moz-border-radius: 2.4rem 2.4rem 0 0;
+  }
+}
+.bs-sec.typ-inner-spacing {
+  padding: 5.8rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-inner-spacing {
+    padding: 2.4rem 0;
   }
 }
 .bs-sec.typ-product {
@@ -950,6 +953,9 @@ p {
   .bs-sec.typ-tataicon {
     padding: 4.8rem 0;
   }
+}
+.bs-sec.typ-tataicon .sec-head {
+  margin-bottom: 4.8rem;
 }
 .bs-sec.typ-tataicon .sec-title {
   text-align: center;
@@ -1098,6 +1104,14 @@ p {
   border: 1px solid #3D7EDB;
   min-width: 15rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media only screen and (max-width: 991px) {
+  .btn {
+    min-width: 12.4rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 0.9rem 1.2rem;
+  }
 }
 .btn.btn-disable {
   cursor: none;
@@ -1416,7 +1430,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-dealer {
-    margin-right: -2rem;
+    margin-right: -1.6rem;
     padding-bottom: 0;
   }
 }
@@ -1436,7 +1450,7 @@ p {
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-best-selling, .bs-swiper.typ-top-deals {
     padding-bottom: 0;
-    margin-right: -2rem;
+    margin-right: -1.6rem;
   }
 }
 .bs-swiper.typ-best-selling .swiper-slide, .bs-swiper.typ-top-deals .swiper-slide {

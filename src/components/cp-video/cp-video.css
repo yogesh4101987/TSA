@@ -14,12 +14,15 @@
   border-radius: 1.6rem;
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
-  max-height: 33.2rem;
+  height: 33.2rem;
   overflow: hidden;
+}
+.cp-video .img-wrap img {
+  height: 100%;
 }
 @media only screen and (max-width: 768px) {
   .cp-video .img-wrap {
-    max-height: 19.2rem;
+    height: 19.2rem;
   }
 }
 .cp-video .content-wrap {
@@ -116,6 +119,12 @@
   line-height: 2.4rem;
   padding: 0 1rem;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .cp-video .post-date .post-detail {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
 }
 .cp-video .post-date .post-detail::before {
   content: "";

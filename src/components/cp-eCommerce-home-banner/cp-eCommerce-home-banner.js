@@ -22,7 +22,7 @@ function bannerFeatureMobile() {
         itemSelector: '.feature-item',
         masonry: {
             columnWidth: '.grid-sizer',  
-            gutter: 6 
+            gutter: 12
         }
     });
 }

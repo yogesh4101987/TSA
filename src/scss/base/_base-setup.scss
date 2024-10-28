@@ -17,6 +17,7 @@ body {
   scroll-behavior: smooth;
   scrollbar-gutter: initial;
   position: relative;
+  overflow-x: hidden;
   &::-webkit-scrollbar {
     width: .8rem;
   }
