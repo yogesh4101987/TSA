@@ -68,6 +68,11 @@
 .cp-icon-details .icon.icon-correct, .cp-icon-details .icon.icon-crown {
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-icon-details .icon.icon-correct, .cp-icon-details .icon.icon-crown {
+    font-size: 0.8rem;
+  }
+}
 .cp-icon-details .sub-title {
   color: #666666;
   font-size: 2rem;

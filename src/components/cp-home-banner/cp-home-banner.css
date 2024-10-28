@@ -8,6 +8,11 @@
   position: relative;
   padding: 5.6rem 0;
 }
+@media only screen and (max-width: 768px) {
+  .cp-home-banner {
+    padding: 2.4rem 0;
+  }
+}
 .cp-home-banner .banner-title {
   font-size: 4rem;
   line-height: 5.2rem;

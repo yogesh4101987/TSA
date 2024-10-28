@@ -12,9 +12,12 @@
             font-family: $font-medium;
             font-size: 2.4rem;
             line-height: 3.2rem;
-            color: $clr-base;
-            
+            color: $clr-base;            
             max-width: 70%;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
         }
     }
     .view-btn{

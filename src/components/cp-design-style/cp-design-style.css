@@ -18,6 +18,12 @@
   color: #333333;
   max-width: 70%;
 }
+@media only screen and (max-width: 991px) {
+  .cp-design-style .comp-head .title {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
 .cp-design-style .view-btn {
   position: absolute;
   bottom: -2.5rem;
