@@ -423,6 +423,26 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-aashiyan:before {
+  content: "\e93a";
+}
+
+.icon-calculator:before {
+  content: "\e93b";
+}
+
+.icon-shop-product:before {
+  content: "\e93c";
+}
+
+.icon-home-guide:before {
+  content: "\e93d";
+}
+
+.icon-service:before {
+  content: "\e93e";
+}
+
 .icon-correct:before {
   content: "\e938";
 }
@@ -860,6 +880,11 @@ p {
   color: #FFFFFF;
   margin-bottom: 2.4rem;
 }
+@media only screen and (max-width: 768px) {
+  .bs-sec .sec-title.typ-white {
+    margin-bottom: 1.2rem;
+  }
+}
 @media only screen and (max-width: 991px) {
   .bs-sec .sec-title {
     font-size: 2.4rem;
@@ -875,18 +900,14 @@ p {
 .bs-sec .sec-desc.typ-white {
   color: #FFFFFF;
 }
-.bs-sec.typ-prodcut {
-  position: relative;
-  padding: 0rem;
-}
-.bs-sec.typ-prodcut .cont-wrap {
-  position: absolute;
-  top: 50%;
-  vertical-align: middle;
-  transform: translateY(-50%);
-}
 .bs-sec.typ-gray-bg {
   background: #ecf2fb;
+  padding: 5.8rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-gray-bg {
+    padding: 2.4rem 0;
+  }
 }
 .bs-sec.typ-curve {
   border-radius: 4.8rem 4.8rem 0 0;
@@ -899,6 +920,22 @@ p {
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
     -moz-border-radius: 2.4rem 2.4rem 0 0;
   }
+}
+.bs-sec.typ-product {
+  position: relative;
+  padding: 0rem;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-product {
+    margin-bottom: 2.4rem;
+  }
+}
+.bs-sec.typ-product .cont-wrap {
+  position: absolute;
+  top: 50%;
+  vertical-align: middle;
+  transform: translateY(-50%);
 }
 .bs-sec.typ-no-top-padding {
   padding-top: 0;
@@ -1061,11 +1098,6 @@ p {
   border: 1px solid #3D7EDB;
   min-width: 15rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-@media only screen and (max-width: 991px) {
-  .btn {
-    min-width: 21rem;
-  }
 }
 .btn.btn-disable {
   cursor: none;
@@ -1245,6 +1277,11 @@ p {
 .bs-swiper.typ-blog .swiper-slide {
   width: auto !important;
   margin-right: 1.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-blog .swiper-slide {
+    margin-right: 1.2rem;
+  }
 }
 .bs-swiper.typ-home-testimonial {
   padding-bottom: 0;

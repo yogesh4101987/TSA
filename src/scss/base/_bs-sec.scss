@@ -26,6 +26,9 @@
     &.typ-white {
       color: $clr-root;
       margin-bottom: 2.4rem;
+      @media only screen and (max-width: $media-mobile) {
+        margin-bottom: 1.2rem;
+      }
     }
     @media only screen and (max-width: $media-sm) {
       font-size: 2.4rem;
@@ -43,23 +46,31 @@
   }
   .sec-cont {
   }
-  &.typ-prodcut {
-    position: relative;
-    padding: 0rem;
-    .cont-wrap {
-      position: absolute;
-      top: 50%;
-      vertical-align: middle;
-      transform: translateY(-50%);
-    }
-  }
   &.typ-gray-bg{
     background: #ecf2fb;   
+    padding: 5.8rem 0;
+    @media only screen and (max-width: $media-mobile) {
+      padding: 2.4rem 0;
+    }
   }
   &.typ-curve{
     @include border-radius(4.8rem 4.8rem 0 0);
     @media only screen and (max-width: $media-mobile) {
       @include border-radius(2.4rem 2.4rem 0 0);
+    }
+  }
+  &.typ-product {
+    position: relative;
+    padding: 0rem;
+    margin-bottom: 4rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-bottom: 2.4rem;
+    }
+    .cont-wrap {
+      position: absolute;
+      top: 50%;
+      vertical-align: middle;
+      transform: translateY(-50%);
     }
   }
   &.typ-no-top-padding {

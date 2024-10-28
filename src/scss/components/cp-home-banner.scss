@@ -4,8 +4,10 @@
 .cp-home-banner{
     position: relative;
     padding: 5.6rem 0;
+    margin-bottom: 4rem;
     @media only screen and (max-width: 768px) {
         padding: 2.4rem 0;
+        margin-bottom: 2.4rem;
     }
 
     .banner-title {
@@ -65,6 +67,16 @@
                     height: 13rem;
                     width:  48%; /* Adjust width and gutter for mobile */
                 }
+                .feature-card{
+                    .f-img{
+                        max-width: 14.3rem;
+                        max-height: 13.6rem;
+                        @media only screen and (max-width: $media-mobile) {
+                            max-width: 8rem;
+                            max-height: 8rem;
+                        }
+                    }            
+                }
             }
         }       
         .grid-sizer{
@@ -90,19 +102,16 @@
         display: block;
         width: 100%;
         height: 100%;
-        @media only screen and (max-width: $media-mobile) {
-            padding: 1rem;
-        }
-        &.typ-resized{
-            .f-img{
-                max-width: 14.3rem;
-                max-height: 13.6rem;
-                @media only screen and (max-width: $media-mobile) {
-                    max-width: 8rem;
-                    max-height: 8rem;
-                }
-            }            
-        }
+        // &.typ-resized{
+        //     .f-img{
+        //         max-width: 14.3rem;
+        //         max-height: 13.6rem;
+        //         @media only screen and (max-width: $media-mobile) {
+        //             max-width: 8rem;
+        //             max-height: 8rem;
+        //         }
+        //     }            
+        // }
         &:hover,
         &.active{
             box-shadow: 0px 8px 24px 0px #00000014;

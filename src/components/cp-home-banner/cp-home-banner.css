@@ -7,10 +7,12 @@
 .cp-home-banner {
   position: relative;
   padding: 5.6rem 0;
+  margin-bottom: 4rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-home-banner {
     padding: 2.4rem 0;
+    margin-bottom: 2.4rem;
   }
 }
 .cp-home-banner .banner-title {
@@ -91,6 +93,16 @@
     width: 48%; /* Adjust width and gutter for mobile */
   }
 }
+.cp-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+  max-width: 14.3rem;
+  max-height: 13.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+    max-width: 8rem;
+    max-height: 8rem;
+  }
+}
 .cp-home-banner .feature .grid-sizer {
   width: 31%;
   height: 11rem;
@@ -118,21 +130,6 @@
   display: block;
   width: 100%;
   height: 100%;
-}
-@media only screen and (max-width: 768px) {
-  .cp-home-banner .feature-card {
-    padding: 1rem;
-  }
-}
-.cp-home-banner .feature-card.typ-resized .f-img {
-  max-width: 14.3rem;
-  max-height: 13.6rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-home-banner .feature-card.typ-resized .f-img {
-    max-width: 8rem;
-    max-height: 8rem;
-  }
 }
 .cp-home-banner .feature-card:hover, .cp-home-banner .feature-card.active {
   box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.0784313725);
