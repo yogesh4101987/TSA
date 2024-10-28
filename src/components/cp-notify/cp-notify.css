@@ -26,6 +26,8 @@
 }
 .cp-notify .cont-wrap {
   flex-grow: 3;
+  position: relative;
+  z-index: 2;
 }
 .cp-notify .btn-wrap {
   flex-grow: 1;

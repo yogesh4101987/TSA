@@ -74,6 +74,9 @@
       .swiper-slide{
           width: auto !important;
           margin-right: 1.8rem;
+          @media only screen and (max-width: $media-mobile) {
+            margin-right: 1.2rem;
+        }
       }
   }
 
