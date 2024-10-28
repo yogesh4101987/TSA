@@ -102,7 +102,21 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-aashiyan:before {
+  content: "\e93a";
+}
+.icon-calculator:before {
+  content: "\e93b";
+}
+.icon-shop-product:before {
+  content: "\e93c";
+}
+.icon-home-guide:before {
+  content: "\e93d";
+}
+.icon-service:before {
+  content: "\e93e";
+}
 .icon-correct:before {
     content: "\e938";
   }
