@@ -30,7 +30,7 @@ function homeBannerFeatureMobile() {
         // layoutMode: 'masonry',
         masonry: {
             columnWidth: '.grid-sizer',  
-            gutter: 6 
+            gutter: 12 
         }
     });
 }
