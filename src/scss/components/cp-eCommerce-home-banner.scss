@@ -6,7 +6,7 @@
     background: #F3F4F6 ;
     padding: 5.6rem 0;
     @media only screen and (max-width: 768px) {
-        padding: 2.4rem 0;
+        padding: 2.4rem 0 1.2rem;
     }
     .banner-title {
         font-size: 4rem;
@@ -46,7 +46,7 @@
             &:nth-child(6) { order: 3; } //DOORS
             &:nth-child(7) { order: 6; } //GARDENING
             @media only screen and (max-width: 768px) {
-                width:  49%;
+                width:  48%;
                 height: 9.2rem;
                 // display: block;
                 order: initial; 
@@ -55,6 +55,16 @@
             &.typ-resize {                
                 @media only screen and (max-width: 768px) {
                     height: 13rem;
+                }
+                .feature-card{
+                    .f-img{
+                        max-width: 14.3rem;
+                        max-height: 13.6rem;
+                        @media only screen and (max-width: $media-mobile) {
+                            max-width: 8rem;
+                            max-height: 8rem;
+                        }
+                    }            
                 }
             }
         }       
@@ -65,7 +75,7 @@
             order: 0; 
             @media only screen and (max-width: 768px) {
                 display: block; 
-                width:  49%;
+                width:  48%;
                 height: 9.2rem;              
             }
         }
@@ -84,16 +94,16 @@
         @media only screen and (max-width: $media-mobile) {
             padding: 1rem;
         }
-        &.typ-resized{
-            .f-img{
-                max-width: 14.3rem;
-                max-height: 13.6rem;
-                @media only screen and (max-width: $media-mobile) {
-                    max-width: 8rem;
-                    max-height: 8rem;
-                }
-            }            
-        }
+        // &.typ-resized{
+        //     .f-img{
+        //         max-width: 14.3rem;
+        //         max-height: 13.6rem;
+        //         @media only screen and (max-width: $media-mobile) {
+        //             max-width: 8rem;
+        //             max-height: 8rem;
+        //         }
+        //     }            
+        // }
         &:hover,
         &.active{
             box-shadow: 0px 8px 24px 0px #00000014;

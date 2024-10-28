@@ -1081,6 +1081,14 @@ p {
     min-width: 8rem;
   }
 }
+.bs-sec.typ-eBanner {
+  padding: 8rem 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-eBanner {
+    padding: 4.8rem 0;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -1412,7 +1420,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-home-style {
-    margin-right: -2rem;
+    margin-right: -1.6rem;
   }
 }
 .bs-swiper.typ-home-style .swiper-slide {

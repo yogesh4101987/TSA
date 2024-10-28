@@ -11,7 +11,7 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner {
-    padding: 2.4rem 0;
+    padding: 2.4rem 0 1.2rem;
   }
 }
 .cp-eCommerce-home-banner .banner-title {
@@ -67,7 +67,7 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature .feature-item {
-    width: 49%;
+    width: 48%;
     height: 9.2rem;
     order: initial;
     margin-bottom: 1.2rem;
@@ -76,6 +76,16 @@
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature .feature-item.typ-resize {
     height: 13rem;
+  }
+}
+.cp-eCommerce-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+  max-width: 14.3rem;
+  max-height: 13.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+    max-width: 8rem;
+    max-height: 8rem;
   }
 }
 .cp-eCommerce-home-banner .feature .grid-sizer {
@@ -87,7 +97,7 @@
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature .grid-sizer {
     display: block;
-    width: 49%;
+    width: 48%;
     height: 9.2rem;
   }
 }
@@ -109,16 +119,6 @@
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature-card {
     padding: 1rem;
-  }
-}
-.cp-eCommerce-home-banner .feature-card.typ-resized .f-img {
-  max-width: 14.3rem;
-  max-height: 13.6rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-eCommerce-home-banner .feature-card.typ-resized .f-img {
-    max-width: 8rem;
-    max-height: 8rem;
   }
 }
 .cp-eCommerce-home-banner .feature-card:hover, .cp-eCommerce-home-banner .feature-card.active {

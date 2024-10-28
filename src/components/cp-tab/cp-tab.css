@@ -4,17 +4,17 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
-.bs-tab .tab-list {
+.cp-tab .tab-list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 0.8rem;
   overflow-x: auto;
 }
-.bs-tab .tab-list::-webkit-scrollbar {
+.cp-tab .tab-list::-webkit-scrollbar {
   display: none;
 }
-.bs-tab .tab-list .tab-item .title {
+.cp-tab .tab-list .tab-item .title {
   border: 1px solid #DEDEDE;
   font-family: "Poppins Regular";
   font-size: 1.4rem;
@@ -31,33 +31,33 @@
   -moz-transition: all 2s ease;
   padding: 0.6rem 1.6rem;
 }
-.bs-tab .tab-list .tab-item:hover .title, .bs-tab .tab-list .tab-item.active .title {
+.cp-tab .tab-list .tab-item:hover .title, .cp-tab .tab-list .tab-item.active .title {
   border: 1px solid #DEDEDE;
   font-family: "Poppins Semibold";
   color: #FFFFFF;
   background: #3D7EDB;
 }
-.bs-tab .tab-container {
+.cp-tab .tab-container {
   padding-top: 2.4rem;
 }
 @media only screen and (max-width: 991px) {
-  .bs-tab .tab-container {
+  .cp-tab .tab-container {
     padding-top: 1.6rem;
   }
 }
-.bs-tab .tab-container .tab-content {
+.cp-tab .tab-container .tab-content {
   transition: all 2s ease;
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   display: none;
 }
-.bs-tab .tab-container .tab-content.active {
+.cp-tab .tab-container .tab-content.active {
   display: block;
 }
-.bs-tab .tab-container .content {
+.cp-tab .tab-container .content {
   font-size: 3rem;
 }
-.bs-tab.typ-calculate .tab-list {
+.cp-tab.typ-calculate .tab-list {
   padding: 0 2.4rem 0;
 }
 
