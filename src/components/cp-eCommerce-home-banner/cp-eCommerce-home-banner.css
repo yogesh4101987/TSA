@@ -9,6 +9,11 @@
   background: #F3F4F6;
   padding: 5.6rem 0;
 }
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner {
+    padding: 2.4rem 0;
+  }
+}
 .cp-eCommerce-home-banner .banner-title {
   font-size: 4rem;
   line-height: 5.2rem;

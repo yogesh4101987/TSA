@@ -877,7 +877,7 @@ p {
 }
 .bs-sec.typ-prodcut {
   position: relative;
-  padding-top: 0rem;
+  padding: 0rem;
 }
 .bs-sec.typ-prodcut .cont-wrap {
   position: absolute;
