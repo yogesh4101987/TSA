@@ -18,6 +18,8 @@
     }
     .cont-wrap{
         flex-grow: 3;
+        position: relative;
+        z-index: 2;
     }
     .btn-wrap{
         flex-grow: 1;
