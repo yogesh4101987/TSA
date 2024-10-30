@@ -161,6 +161,17 @@
         background: $clr-root;
         .feature-item {
             overflow: hidden;
+            @media only screen and (max-width: $media-mobile){
+                height: 9.2rem;
+            }
+            
+            .feature-card{
+                border: 0;
+                .f-title{
+
+                    line-height: 2rem;
+                }
+            }
             .f-img{
                 z-index: 2;
                 &:after{
@@ -170,7 +181,7 @@
                     border-radius: 50%;
                     position: absolute;
                     right: -10px;
-                    bottom: -6px;
+                    bottom: -31px;
                     content: '';
                     opacity: 0.3;
                     z-index: -1;
@@ -192,6 +203,7 @@
                 }
             }
             &:nth-child(4){
+                
                 .feature-card{
                     background: #FAE6EA;
 
@@ -203,6 +215,7 @@
                 }
             }
             &:nth-child(5){
+                
                 .feature-card{
                     background: #ECF2FB;
 
@@ -215,17 +228,7 @@
                 }
             }
             &:nth-child(6){
-                .feature-card{
-                    background: #F3F4F6;
-
-                .f-img{
-                    &::after{
-                        background: #CCCCCC;
-                    }
-                }
-                }
-            }
-            &:nth-child(7){
+               
                 .feature-card{
                     background: #FDECE5;
 
@@ -238,7 +241,32 @@
                 }
                 }
             }
+            &:nth-child(7){
+                
+                .feature-card{
+                    background: #F3F4F6;
 
+                .f-img{
+                    &::after{
+                        background: #CCCCCC;
+                    }
+                }
+                }
+            }
+            &.typ-resize{
+                .feature-card{
+                    .f-img{
+                        max-width: 9rem;
+                        max-height: 9rem;
+                        &::after{
+                            bottom: -6px;
+                        }
+                    }
+                }
+               
+                
+            }
+            
         }
     }
 }
