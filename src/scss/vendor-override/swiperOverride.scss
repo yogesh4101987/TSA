@@ -259,4 +259,13 @@
       }
     }
   }
+  &.typ-trade-hand-tool{
+    padding: 1.6rem 0;
+    right: -14px;
+    .swiper-slide{
+      width: 10.6rem;
+    height: 9.6rem;
+    margin-right: 0.6rem;
+    }
+  }
 }

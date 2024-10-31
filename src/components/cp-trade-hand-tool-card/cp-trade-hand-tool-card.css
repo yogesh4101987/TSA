@@ -1,0 +1,26 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-trade-hand-tool-card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #dedede;
+  height: 9.6rem;
+}
+.cp-trade-hand-tool-card .img-wrap {
+  width: 9.6rem;
+  height: 4.8rem;
+}
+.cp-trade-hand-tool-card .title {
+  font-size: 1.4rem;
+  color: #3D7EDB;
+  font-family: "Poppins Semibold";
+  padding-top: 0.8rem;
+}
+
+/*# sourceMappingURL=cp-trade-hand-tool-card.css.map */
