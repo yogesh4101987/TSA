@@ -829,6 +829,10 @@ p {
   font-family: "Poppins Bold";
 }
 
+.cm-semi-bold {
+  font-family: "Poppins Semibold";
+}
+
 .cm-medium {
   font-family: "Poppins Medium";
 }
@@ -1477,6 +1481,24 @@ p {
   .bs-swiper.typ-best-selling .swiper-slide, .bs-swiper.typ-top-deals .swiper-slide {
     margin-right: 1.2rem;
     min-width: 20rem;
+  }
+}
+.bs-swiper.typ-review-product, .bs-swiper.typ-selling-product {
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-review-product, .bs-swiper.typ-selling-product {
+    margin-right: -1.6rem;
+  }
+}
+.bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
+  width: auto !important;
+  margin-right: 2rem;
+  min-width: 34.3rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
+    margin-right: 1.2rem;
   }
 }
 
