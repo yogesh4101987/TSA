@@ -98,4 +98,10 @@
             gap: 0.8rem;
         }
     }
+
+    &.typ-call-query{
+        .notify-title{
+            max-width: 80%;
+        }
+    }
 }

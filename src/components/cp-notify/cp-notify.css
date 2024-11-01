@@ -126,5 +126,8 @@
   align-items: center;
   gap: 0.8rem;
 }
+.cp-notify.typ-call-query .notify-title {
+  max-width: 80%;
+}
 
 /*# sourceMappingURL=cp-notify.css.map */
