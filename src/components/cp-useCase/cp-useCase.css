@@ -43,7 +43,7 @@
   color: #FFFFFF;
   text-transform: capitalize;
   font-family: "Poppins Medium";
-  z-index: 11;
+  z-index: 1;
 }
 @media only screen and (max-width: 768px) {
   .cp-useCase .title {
@@ -60,7 +60,7 @@
   top: 1.2rem;
   width: 2.4rem;
   height: 2.4rem;
-  z-index: 11;
+  z-index: 1;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   display: flex;

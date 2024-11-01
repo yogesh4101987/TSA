@@ -37,7 +37,7 @@
     color: $clr-root;
     text-transform: capitalize;
     font-family: $font-medium;
-    z-index: 11;
+    z-index: 1;
     @media only screen and (max-width: $media-mobile) {
       font-size: 1.6rem;
       line-height: 2.4rem;
@@ -52,7 +52,7 @@
     top: 1.2rem;
     width: 2.4rem;
     height: 2.4rem;
-    z-index: 11;
+    z-index: 1;
     color: $clr-root;
     border: 1px solid $clr-root;
     display: flex;
