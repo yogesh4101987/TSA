@@ -11,6 +11,7 @@
   border-radius: 12px;
   border: 1px solid #dedede;
   height: 9.6rem;
+  overflow: hidden;
 }
 .cp-trade-hand-tool-card .img-wrap {
   width: 9.6rem;

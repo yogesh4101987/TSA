@@ -14,7 +14,7 @@ $(window).resize(function () {
 function tradeHandSlider() {
   var swiper = new Swiper(".js-tradeHandSlider", {
     slidesPerView: "auto",
-    loop: true,
+    loop: false,
    
   });
 }
