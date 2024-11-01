@@ -1,7 +1,7 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-usecase {
+.cp-useCase {
   position: relative;
   @media only screen and (max-width: $media-mobile) {
     width: 100%;
@@ -9,9 +9,10 @@
   }
 
   .img-wrap {
-
-
-
+    border-radius: 1.2rem;
+    width: 100%;
+    height: 11.2rem;
+    overflow: hidden;
 
     &::after {
       content: "";
@@ -26,39 +27,29 @@
     }
     @media only screen and (max-width: $media-mobile) {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-   
-  
-    .img {
-      @media only screen and (max-width: $media-mobile) {
-        border-radius: 1.2rem;
-        width: 100%;
-        height: 11.2rem;
-      }
+      height: 11.2rem;
     }
   }
-  .product-title {
+  .title {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 1.2rem;
+    left: 1.2rem;
     color: $clr-root;
-    padding: 1.2rem;
     text-transform: capitalize;
     font-family: $font-medium;
     z-index: 11;
     @media only screen and (max-width: $media-mobile) {
       font-size: 1.6rem;
       line-height: 2.4rem;
+      bottom: 1.2rem;
+      left: 1.2rem;
     }
   }
   .icon {
     position: absolute;
     border-radius: .6rem;
-    margin: 1.2rem;
-    right: 0;
-    top: 0;
+    right: 1.2rem;
+    top: 1.2rem;
     width: 2.4rem;
     height: 2.4rem;
     z-index: 11;
@@ -67,12 +58,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    font-family: $font-semiBold;
+    font-size: 1.6rem;
+    font-weight: bold;
     @media only screen and (max-width: $media-mobile) {
       width: 2.4rem;
       height: 2.4rem;
-
     }
   }
 }
