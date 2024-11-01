@@ -6,7 +6,7 @@ display: flex;
 align-items: center;
 text-align: center;
 border-radius: 12px;
-border: 1px solid #dedede;
+border: 2px solid #dedede;
 height: 9.6rem;
 overflow: hidden;
 .img-wrap{
@@ -18,5 +18,8 @@ overflow: hidden;
     color: #3D7EDB;
     font-family: $font-semiBold;
     padding-top: 0.8rem;
+}
+&:hover{
+    border-color: #3D7EDB;
 }
 }
