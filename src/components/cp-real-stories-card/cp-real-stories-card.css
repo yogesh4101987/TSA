@@ -11,6 +11,7 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.75%);
   width: 100%;
   height: 295px;
+  z-index: 1;
 }
 .cp-real-stories-card .cont-sec .stories-title {
   font-size: 1.6rem;
@@ -27,6 +28,19 @@
   position: absolute;
   left: 24px;
   bottom: 24px;
+}
+.cp-real-stories-card .img-wrap {
+  position: relative;
+}
+.cp-real-stories-card .play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  font-size: 6rem;
+  z-index: 3;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=cp-real-stories-card.css.map */

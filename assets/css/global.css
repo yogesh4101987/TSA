@@ -1479,11 +1479,17 @@ p {
     min-width: 20rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-real-stories {
+    margin-right: -1.6rem;
+  }
+}
 .bs-swiper.typ-real-stories .swiper-slide {
   width: 29.7rem;
   height: 52.8rem;
   border-radius: 12px;
   overflow: hidden;
+  margin-right: 1.2rem;
 }
 
 /*# sourceMappingURL=global.css.map */
