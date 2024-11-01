@@ -1,0 +1,32 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-real-stories-card .cont-sec {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.75%);
+  width: 100%;
+  height: 295px;
+}
+.cp-real-stories-card .cont-sec .stories-title {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  font-family: "Poppins Medium";
+  position: absolute;
+  left: 24px;
+  bottom: 64px;
+}
+.cp-real-stories-card .cont-sec .stories-desc {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  font-family: "Poppins Regular";
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+}
+
+/*# sourceMappingURL=cp-real-stories-card.css.map */

@@ -1,0 +1,29 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-real-stories-card{
+      .cont-sec{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 86.75%);
+        width: 100%;
+        height: 295px;
+        .stories-title{
+            font-size: 1.6rem;
+            color:$clr-root;
+            font-family: $font-medium;
+            position: absolute;
+            left: 24px;
+            bottom: 64px;
+        }
+        .stories-desc{
+            font-size: 1.2rem;
+            color:$clr-root;
+            font-family: $font-regular;
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+        }
+      }
+}
