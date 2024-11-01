@@ -1,0 +1,29 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-breadcrum {
+  padding-top: 1.2rem;
+  padding-bottom: 0.8rem;
+}
+.cp-breadcrum li + li::before {
+  content: "/";
+  font-size: 1.2rem;
+  padding-inline: 0.4rem;
+}
+.cp-breadcrum li.breadcrum-items {
+  display: inline;
+}
+.cp-breadcrum li.breadcrum-items a {
+  font-family: "Poppins Regular";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #666666;
+}
+.cp-breadcrum li.breadcrum-items .active {
+  color: #333333;
+}
+
+/*# sourceMappingURL=cp-breadcrum.css.map */
