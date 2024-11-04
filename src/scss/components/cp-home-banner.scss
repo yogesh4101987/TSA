@@ -43,7 +43,7 @@
             width: 31%; /* Adjust width to account for 20px gutter */
             height: 11rem;    
             display: flex;  
-            margin: 0 ; 
+            margin: 0 ;            
             &:nth-child(2) { order: 9; } //PLANS
             &:nth-child(3) { order: 8; } //SHOP
             &:nth-child(4) { order: 1; } //REBARS
@@ -67,7 +67,9 @@
                     height: 13rem;
                     width:  48%; /* Adjust width and gutter for mobile */
                 }
+                .cmp-teaser,
                 .feature-card{
+                    &__image,
                     .f-img{
                         max-width: 14.3rem;
                         max-height: 13.6rem;
@@ -91,7 +93,7 @@
             }
         }
     }
-    
+    .cmp-teaser,
     .feature-card{
         border: 1px solid $clr-border;
         background: $clr-root;
@@ -102,21 +104,12 @@
         display: block;
         width: 100%;
         height: 100%;
-        // &.typ-resized{
-        //     .f-img{
-        //         max-width: 14.3rem;
-        //         max-height: 13.6rem;
-        //         @media only screen and (max-width: $media-mobile) {
-        //             max-width: 8rem;
-        //             max-height: 8rem;
-        //         }
-        //     }            
-        // }
         &:hover,
         &.active{
             box-shadow: 0px 8px 24px 0px #00000014;
             border: 2px solid $clr-border
         }
+        &__pretitle,
         .f-title{
             font-family: $font-semiBold;
             font-size: 1.4rem;
@@ -128,6 +121,7 @@
                 line-height: 2.4rem;
             }
         }
+        &__title,
         .f-desc{
             font-family: $font-regular;
             font-size: 1.2rem;
@@ -136,6 +130,7 @@
             margin-bottom: 0.6rem;
             max-width: 65%;
         }
+        &__desc,
         .f-offer{
             background: $clr-secondary;
             padding: .2rem 0.8rem;
@@ -145,6 +140,7 @@
             line-height: 1.2rem;
             @include border-radius(2.6rem);
         }
+        &__image,
         .f-img{
             position: absolute;
             bottom: 0;
