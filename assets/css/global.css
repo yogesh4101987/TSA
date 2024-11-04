@@ -1135,6 +1135,16 @@ p {
     height: 3.2rem;
   }
 }
+.bs-sec.typ-agrico-breadcrum {
+  padding: 0;
+}
+.bs-sec.typ-agrico-search {
+  padding: 0;
+  margin: 1.6rem 0;
+}
+.bs-sec.typ-agrico-swiper {
+  padding-top: 0;
+}
 
 .btn {
   display: inline-block;
