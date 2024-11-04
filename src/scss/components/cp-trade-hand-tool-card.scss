@@ -15,11 +15,15 @@ overflow: hidden;
 }
 .title{
     font-size: 1.4rem;
-    color: #3D7EDB;
+   color: $clr-base;
     font-family: $font-semiBold;
     padding-top: 0.8rem;
 }
 &:hover{
     border-color: #3D7EDB;
+    .title{
+        color: #3D7EDB;
+    }
+   
 }
 }

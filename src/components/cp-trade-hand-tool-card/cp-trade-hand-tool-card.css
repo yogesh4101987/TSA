@@ -19,12 +19,15 @@
 }
 .cp-trade-hand-tool-card .title {
   font-size: 1.4rem;
-  color: #3D7EDB;
+  color: #333333;
   font-family: "Poppins Semibold";
   padding-top: 0.8rem;
 }
 .cp-trade-hand-tool-card:hover {
   border-color: #3D7EDB;
+}
+.cp-trade-hand-tool-card:hover .title {
+  color: #3D7EDB;
 }
 
 /*# sourceMappingURL=cp-trade-hand-tool-card.css.map */
