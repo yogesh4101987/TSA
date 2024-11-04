@@ -1121,7 +1121,7 @@ p {
   color: #FFFFFF;
   text-transform: capitalize;
   padding: 0.8rem 1.2rem;
-  border: 2px dashed #FFFFFF;
+  border: 1px dashed #FFFFFF;
   border-radius: 4px;
   display: flex;
   align-items: center;
