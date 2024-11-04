@@ -423,6 +423,14 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-brochure:before {
+  content: "\e927";
+}
+
+.icon-fill-play:before {
+  content: "\e93f";
+}
+
 .icon-aashiyan:before {
   content: "\e93a";
 }
@@ -609,10 +617,6 @@ th {
 
 .icon-like:before {
   content: "\e926";
-}
-
-.icon-book:before {
-  content: "\e927";
 }
 
 .icon-flag:before {

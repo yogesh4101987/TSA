@@ -98,4 +98,14 @@
             gap: 0.8rem;
         }
     }
+    &.typ-download-brochure{
+        .notify-icon {
+        @media only screen and (max-width: $media-mobile) {
+            @include transform(none);
+            top: -0rem;
+            right: -0.2rem;
+            font-size: 8.6rem;
+        }
+      }
+    }
 }

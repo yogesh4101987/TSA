@@ -126,5 +126,17 @@
   align-items: center;
   gap: 0.8rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-notify.typ-download-brochure .notify-icon {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    top: 0rem;
+    right: -0.2rem;
+    font-size: 8.6rem;
+  }
+}
 
 /*# sourceMappingURL=cp-notify.css.map */
