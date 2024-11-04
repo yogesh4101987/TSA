@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="/components/cp-agrico-banner/cp-agrico-banner.css"
     />
+    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
 
     <link
       rel="stylesheet"
@@ -129,36 +130,47 @@
       <!-- starts Agrico Banner   -->
       <section class="bs-sec typ-first-sec">
         <!-- agrico quick banner starts -->
-        <div class="sec-cont cp-agrico-quick-banner">
-          <div class="img-wrap">
-            <picture>
-              <source
-                media="(max-width:768px)"
-                srcset="/images/sleekbanner_mobile.jpg"
-              />
-              <source
-                media="(max-width:991px)"
-                srcset="/images/sleekbanner_mobile.jpg"
-              />
-              <img
-                src="/images/Sleekbanner_desktop.jpg"
-                alt="Sleek banner_desktop"
-              />
-            </picture>
-          </div>
-          <div class="container wrapper">
-            <h2 class="title typ-white">10% off on all Agrico products.</h2>
-            <p class="coupon">AGRICO10</p>
+        <div class="bs-sec typ-caupon-code">
+          <div class="sec-cont">
+            <div class="img-wrap">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="/images/sleekbanner_mobile.jpg"
+                />
+                <source
+                  media="(max-width:991px)"
+                  srcset="/images/sleekbanner_mobile.jpg"
+                />
+                <img
+                  src="/images/Sleekbanner_desktop.jpg"
+                  alt="Sleek banner_desktop"
+                />
+              </picture>
+            </div>
+            <div class="container wrapper">
+              <div class="cont-wrap">
+                <h2 class="sec-title typ-white">10% off on all Agrico products.</h2>
+              </div>
+              <div class="btn-wrap">
+                <p class="coupon"> AGRICO10</p>
+              </div>
+            </div>
           </div>
         </div>
+
         <!-- agrico quick banner ends -->
+        <!-- breadcrums starts-->
         <div class="container">
-          <!-- breadcrums starts-->
           <ul class="cp-breadcrum">
-            <li class="breadcrum-items"><a href="#">Home</a></li>
-            <li class="breadcrum-items"><a href="#">Product</a></li>
-            <li class="breadcrum-items active">
-              <a href="#" class="active">Agrico</a>
+            <li class="breadcrum-items">
+              <a href="#" class="breadcrum-link">Home</a>
+            </li>
+            <li class="breadcrum-items">
+              <a href="#" class="breadcrum-link">Product</a>
+            </li>
+            <li class="breadcrum-items">
+              <a href="#" class="breadcrum-link active">Agrico</a>
             </li>
           </ul>
           <!-- breadcrums ends -->
@@ -172,13 +184,15 @@
               </div>
               <span class="logo-title">Agrico</span>
             </div>
-            <div class="right-wrapper">
-              <input
-                type="text"
-                placeholder="Search for Agrico products"
-                class="search-input"
-              />
-              <span class="icon icon-search"></span>
+            <div class="cp-search typ-agrico-home">
+              <div class="search-wrap">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Search for Agrico products"
+                />
+                <span class="search-icon icon-search"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -186,7 +200,7 @@
         <div class="bs-swiper swiper typ-ecomm-banner js-banner">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="cp-agrico-banner">
+              <a href="#" class="cp-agrico-banner">
                 <div class="img-wrap">
                   <picture>
                     <source
@@ -209,18 +223,18 @@
                 </div>
 
                 <div class="content-wrap">
-                    <div class="banner-logo">
-                      <img
-                        src="/components/cp-agrico-banner/images/tataAgrico_logo_mobile.png"
-                        alt="bank logo"
-                      />
-                    </div>
-                    <h2 class="title">Do you have the power of Vishwakarma?</h2>
+                  <div class="banner-logo">
+                    <img
+                      src="/components/cp-agrico-banner/images/tataAgrico_logo_mobile.png"
+                      alt="bank logo"
+                    />
+                  </div>
+                  <h2 class="title">Do you have the power of Vishwakarma?</h2>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="cp-agrico-banner">
+              <a href="#"  class="cp-agrico-banner">
                 <div class="img-wrap">
                   <picture>
                     <source
@@ -250,11 +264,10 @@
                   />
                 </div>
                 <h2 class="title">Do you have the power of Vishwakarma?</h2>
-              </div>
-              <!-- </div> -->
+              </a>
             </div>
             <div class="swiper-slide">
-              <div class="cp-agrico-banner">
+              <a href="#" class="cp-agrico-banner">
                 <div class="img-wrap">
                   <picture>
                     <source
@@ -284,8 +297,7 @@
                   />
                 </div>
                 <h2 class="title">Do you have the power of Vishwakarma?</h2>
-              </div>
-              <!-- </div> -->
+              </a>
             </div>
           </div>
           <div class="swiper-pagination"></div>

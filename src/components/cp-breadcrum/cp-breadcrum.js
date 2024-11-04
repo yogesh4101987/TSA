@@ -4,9 +4,9 @@ $(document).ready(function () {
   });
 
 function breadcrum (){
-    $('.cp-breadcrum li a').click(function(e) {
+    $('.cp-breadcrum li a.breadcrum-link').click(function(e) {
         e.preventDefault();
-        $('.cp-breadcrum li a').removeClass('active'); 
+        $('.cp-breadcrum li a.breadcrum-link').removeClass('active'); 
         $(this).addClass('active'); 
       });
   

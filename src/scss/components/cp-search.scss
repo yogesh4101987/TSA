@@ -4,7 +4,7 @@
 .cp-search{
     .search-wrap{
         border-radius: 1.2rem;
-        border: 1px solid #DEDEDE;
+        border: 1px solid #dedede;
         width: 41.6rem;
         padding: 1rem;
         position: relative;
@@ -24,4 +24,15 @@
         right: 12px;
         cursor: pointer;
     }
+
+  &.typ-agrico-home {
+    .search-wrap {
+        height: 4.8rem;
+      @media only screen and (max-width: $media-mobile) {
+        display: block;
+        width: 100%;
+        min-width: 34.3rem;
+      }
+    }
+  }
 }
