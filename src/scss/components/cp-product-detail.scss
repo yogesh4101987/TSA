@@ -1,0 +1,15 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-product-detail{
+.key-feature-title{
+   color: $clr-base;
+   line-height: 2.8rem;
+@media only screen and (max-width: $media-mobile) {
+    font-size: 2rem;
+    font-family: $font-bold;
+
+}
+
+}
+}
