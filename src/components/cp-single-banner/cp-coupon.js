@@ -1,6 +1,9 @@
 $(document).ready(function () {
   copyCoupon();
-  backgroundImage();
+  if ($('.js-bg').length != 0) {
+    bgImg();
+  };
+ 
 });
 
 function copyCoupon() {
@@ -10,16 +13,26 @@ function copyCoupon() {
   });
 }
 
-function backgroundImage() {
-  $('.js-coupon').each(function () {
-    const imgSrc = $(this).find(".bg-img").attr("src");
-    
-        $(this).css({
-            'background': 'url(' + imgSrc + ')',
-            'background-repeat': 'no-repeat',
-            'background-cover':'auto',
-            'background-size':'100% 100%'
-        })
-   
-  });
+
+// function bgImgFunction() {
+//   $('.js-bg').each(function() {
+//       var imgSrc = $(this).find('.bg-img').attr('src');    
+//       $(this).css({
+//           'background': '#F3F4F6 url(' + imgSrc + ')',
+//           'background-position':' top right',
+//           'background-repeat': 'no-repeat',  
+//           'background-size': 'auto',
+//           'background-size':'100% 100%'       
+//       });
+//   });   
+// }
+
+function bgImg() {
+  $('.js-bg').each(function() {
+      var imgSrc = $(this).find('.bg-img img').attr('src');
+      $(this).css({
+          'background-image': 'url(' + imgSrc + ')',
+          'background-size': 'cover'
+      });
+  })
 }
