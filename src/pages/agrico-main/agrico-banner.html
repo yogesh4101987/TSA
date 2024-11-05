@@ -23,6 +23,10 @@
     />
     <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
     <link rel="stylesheet" href="/components/cp-breadcrum/cp-breadcrum.css" />
+    <link
+      rel="stylesheet"
+      href="/components/cp-single-banner/cp-single-banner.css"
+    />
   </head>
   <body>
     <!-- Header Start -->
@@ -130,9 +134,19 @@
       <!-- starts Agrico Banner   -->
 
       <!-- agrico quick banner starts -->
-      <section class="bs-sec typ-first-sec typ-caupon-code">
+      <section class="bs-sec typ-first-sec">
         <div class="sec-cont">
-          <div class="img-wrap">
+          <div class="cp-single-banner js-coupon">
+            <div class="container">
+              <div class="wrapper">
+                <div class="cont-wrap">
+                  <h2 class="sec-title">10% off on all Agrico products.</h2>
+                </div>
+                <div class="btn-wrap">
+                  <button class="coupon">AGRICO10</button>
+                </div>
+              </div>
+            </div>
             <picture>
               <source
                 media="(max-width:768px)"
@@ -145,24 +159,14 @@
               <img
                 src="/images/Sleekbanner_desktop.jpg"
                 alt="Sleek banner_desktop"
+                class="bg-img"
               />
             </picture>
           </div>
-          <div class="container wrapper">
-            <div class="cont-wrap">
-              <h2 class="sec-title typ-white">
-                10% off on all Agrico products.
-              </h2>
-            </div>
-            <div class="btn-wrap">
-              <p class="coupon">AGRICO10</p>
-            </div>
-          </div>
         </div>
-      </section>
-      <!-- agrico quick banner ends -->
-      <!-- breadcrums starts-->
-      <section class="bs-sec typ-agrico-breadcrum">
+        <!-- agrico quick banner ends -->
+        <!-- breadcrums starts-->
+        <!-- <section class="bs-sec typ-agrico-breadcrum"> -->
         <div class="container">
           <div class="sec-cont">
             <ul class="cp-breadcrum">
@@ -178,11 +182,11 @@
             </ul>
           </div>
         </div>
-      </section>
-      <!-- breadcrums ends -->
+        <!-- </section> -->
+        <!-- breadcrums ends -->
 
-      <!-- logo and  search component starts -->
-      <section class="bs-sec typ-agrico-search">
+        <!-- logo and  search component starts -->
+        <!-- <section class="bs-sec typ-agrico-search"> -->
         <div class="container">
           <div class="sec-cont">
             <div class="cp-agrico-search">
@@ -208,9 +212,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <!--  starts starts Agrico Banner  -->
-      <section class="bs-sec typ-agrico-swiper">
+        <!-- </section> -->
+        <!--  starts starts Agrico Banner  -->
+        <!-- <section class="bs-sec typ-agrico-swiper"> -->
         <div class="sec-cont">
           <div class="bs-swiper swiper typ-ecomm-banner js-banner">
             <div class="swiper-wrapper">
@@ -330,5 +334,6 @@
     <script src="/js/global.js"></script>
     <script src="/components/cp-ecommerce-banner/cp-ecommerce-banner.js"></script>
     <script src="/components/cp-breadcrum/cp-breadcrum.js"></script>
+    <script src="/components/cp-single-banner/cp-coupon.js"></script>
   </body>
 </html>
