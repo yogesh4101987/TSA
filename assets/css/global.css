@@ -1104,6 +1104,11 @@ p {
     padding: 4.8rem 0;
   }
 }
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-stories .sec-desc {
+    padding-top: 1rem;
+  }
+}
 
 .btn {
   display: inline-block;

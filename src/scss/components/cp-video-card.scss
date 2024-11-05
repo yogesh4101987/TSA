@@ -1,7 +1,7 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-real-stories-card{
+.cp-video-card{
       .cont-sec{
         position: absolute;
         left: 0;
@@ -10,7 +10,7 @@
         width: 100%;
         height: 295px;
         z-index: 1;
-        .stories-title{
+        .video-title{
             font-size: 1.6rem;
             color:$clr-root;
             font-family: $font-medium;
@@ -18,7 +18,7 @@
             left: 24px;
             bottom: 64px;
         }
-        .stories-desc{
+        .video-desc{
             font-size: 1.2rem;
             color:$clr-root;
             font-family: $font-regular;
