@@ -165,8 +165,7 @@
     background-color: #f3f4f6;
   }
 
-  &.typ-quick-buy,
-  &.typ-caupon-code {
+  &.typ-quick-buy {
     position: relative;
     padding: 0;
     .sec-title {
@@ -223,57 +222,5 @@
     @media only screen and (max-width: $media-sm) {
       padding: 4.8rem 0;
     }
-  }
-
-  &.typ-caupon-code {
-    .img-wrap {
-      @media only screen and (max-width: $media-sm) {
-        height: 5rem;
-        overflow: hidden;
-      }
-    }
-    .sec-title {
-      font-size: 2.4rem;
-      line-height: 3.2rem;
-      margin-bottom: 0.4rem;
-      @media only screen and (max-width: $media-sm) {
-        font-size: 1.4rem;
-        line-height: 2rem;
-        margin-bottom: 0.2rem;
-      }
-    }
-    .btn-wrap {
-      .coupon {
-        font-family: $font-semiBold;
-        font-size: 1.4rem;
-        line-height: 1.6rem;
-        color: $clr-root;
-        text-transform: capitalize;
-        padding: 0.8rem 1.2rem;
-        border: 1px dashed $clr-root;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        @media only screen and (max-width: $media-sm) {
-          font-size: 1.2rem;
-          line-height: 1.6rem;
-          width: 8.3rem;
-          height: 3.2rem;
-        }
-      }
-    }
-  }
-
-  &.typ-agrico-breadcrum{
-    padding: 0;
-  }
-  &.typ-agrico-search{
-    padding: 0;
-    margin:1.6rem 0;
-  }
-  &.typ-agrico-swiper{
-    padding-top: 0;
-  }
+  } 
 }
