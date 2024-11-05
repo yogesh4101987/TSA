@@ -4,6 +4,8 @@ $(document).ready(function () {
   bestSellingSlider();
   reviewProductSlider();
   addedFavorite();
+  initializeInnerSliders();
+  vegetablePatchSlider();  
 });
 
 $(window).resize(function () {  
@@ -42,6 +44,31 @@ function reviewProductSlider() {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+  });
+}
+
+function initializeInnerSliders() {
+  const innerCardSlider = new Swiper('.js-inner-card-slider', { 
+    pagination: {
+      el: ('.child-pagination'), 
+      clickable: true,
+    },
+    slidesPerView: 1,
+  });
+}
+
+function vegetablePatchSlider() {
+  // Initialize the outer swiper
+  var outerSwiper = new Swiper('.js-vegetable-patch', {
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.main-pagination',
+      type: 'custom',  // Use custom pagination
+      renderCustom: function (outerSwiper, current, total) {
+        return current + ' of ' + total;  // Custom format "1 of 5"
+      }
+      // type: 'fraction'
     },
   });
 }

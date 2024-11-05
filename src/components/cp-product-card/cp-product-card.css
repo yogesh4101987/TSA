@@ -15,6 +15,7 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .cp-product-card {
@@ -27,7 +28,7 @@
   padding: 1.2rem 0.8rem;
   width: 40%;
   max-width: 13.4rem;
-  max-height: 23.6rem;
+  height: 23.6rem;
   margin: auto;
   display: block;
 }
@@ -51,6 +52,7 @@
   line-height: 1.6rem;
   color: #3D7EDB;
   text-align: center;
+  z-index: 2;
   border-radius: 1.2rem;
   -webkit-border-radius: 1.2rem;
   -moz-border-radius: 1.2rem;
@@ -201,7 +203,7 @@
   gap: 0.8rem;
 }
 .cp-product-card .action-wrap .btn {
-  min-width: 13.3rem;
+  min-width: 80%;
 }
 .cp-product-card .action-wrap .btn-icon {
   position: relative;
@@ -227,6 +229,65 @@
 }
 .cp-product-card .action-wrap .btn-icon.active {
   color: #D2042D;
+}
+.cp-product-card.typ-2 {
+  max-width: 29.6rem;
+  flex-direction: column;
+}
+.cp-product-card.typ-2 .img-wrap,
+.cp-product-card.typ-2 .content-wrap {
+  width: 100%;
+  max-width: 100%;
+}
+.cp-product-card.typ-2 .img-wrap {
+  height: 19.6rem;
+  border-bottom: 1px solid #DEDEDE;
+}
+.cp-product-card.typ-2 .content-wrap {
+  padding: 0.8rem 1.2rem 1.6rem;
+  border: none;
+}
+.cp-product-card.typ-2 .prod-title {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+.cp-product-card.typ-2 .review-list {
+  margin-bottom: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+}
+.cp-product-card.typ-2 .review-list .review-item {
+  position: relative;
+}
+.cp-product-card.typ-2 .review-list .review-item::before {
+  content: "";
+  width: 1px;
+  height: 1.6rem;
+  background: #666666;
+  position: absolute;
+  top: -0.2rem;
+  right: -0.6rem;
+}
+.cp-product-card.typ-2 .review-list .review-item:last-child::before {
+  display: none;
+}
+.cp-product-card.typ-2 .cm-medium {
+  color: #5A245A;
+}
+.cp-product-card.typ-2 .price-wrap .text {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.cp-product-card.typ-2 .price-wrap .discounted-price {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.6rem;
+}
+.cp-product-card.typ-2 .price-wrap .discounted-price .amt {
+  font-size: 2rem;
+  line-height: 2.8rem;
 }
 
 /*# sourceMappingURL=cp-product-card.css.map */
