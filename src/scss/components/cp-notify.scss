@@ -38,6 +38,13 @@
             top: -1.6rem;
             right: -1.8rem;
         }
+        &.icon-search{
+            @media only screen and (max-width: $media-mobile) {
+                @include transform(none);
+                top: -1rem;
+                right: -1.5rem;
+            }
+        }
     }
     .notify-title{
         font-family: $font-semiBold;
@@ -49,6 +56,12 @@
             font-size: 2.4rem;
             line-height: 3.2rem;
             margin-bottom: 0.8rem;
+        }
+
+        &.typ-title-size{
+            @media only screen and (max-width: $media-mobile) {
+                max-width: 80%;
+            }    
         }
     }
     .notify-desc{
@@ -99,9 +112,4 @@
         }
     }
 
-    &.typ-call-query{
-        .notify-title{
-            max-width: 80%;
-        }
-    }
 }
