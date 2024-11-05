@@ -1157,5 +1157,17 @@ p {
     min-width: 20rem;
   }
 }
+.bs-swiper.type-big-img-slider {
+  border: 1px solid #dedede;
+  border-radius: 12px;
+  width: 343px;
+}
+.bs-swiper.type-big-img-slider .swiper-wrapper {
+  height: 240px;
+}
+.bs-swiper.type-big-img-slider .swiper-slide {
+  width: 310px !important;
+  height: 155px;
+}
 
 /*# sourceMappingURL=global.css.map */

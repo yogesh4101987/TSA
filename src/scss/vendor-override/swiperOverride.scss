@@ -259,4 +259,17 @@
       }
     }
   }
+  &.type-big-img-slider{ 
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    width: 343px;
+    .swiper-wrapper{
+      height: 240px;
+     
+    }
+    .swiper-slide{
+      width: 310px !important;
+      height: 155px;
+    }
+  }
 }

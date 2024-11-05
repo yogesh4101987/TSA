@@ -13,27 +13,113 @@
     <link rel="stylesheet" href="/css/vendor.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
 
-    <link rel="stylesheet" href="/components/cp-product-detail/cp-product-detail.css" />
+    <link rel="stylesheet" href="/components/cp-prod-thumb-slider/cp-prod-thumb-slider.css" />
+    <link rel="stylesheet" href="/components/cp-feature/cp-feature.css" />
+    <link rel="stylesheet" href="/components/cp-other-info/cp-other-info.css" />
+
+
   </head>
   <body>
     <main>
         <!-- agrico product detail page start  -->
-        <section class="bs-sec">			
+        <section class="bs-sec">	
          <div class="container">
-            <div class="cp-product-detail">
-                <div class="sec-cont">
-                    <h3 class="key-feature-title">Key features</h3>
-                    <ul class="key-feature-list">
-                    <li>A drill bit tip to enable it to drill its own hole</li>
-                    <li>High-quality material for strength and durability</li>
-                    <li>Flange head design for secure fastening</li>
+            
+              <div class="cp-prod-thumb-slider">
+              <div class="bs-swiper swiper js-pro-slider type-big-img-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/image container.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/image container.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/image container.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/image container.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div> 
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/image container.png" />
+                  </>
+                  
+               
+                </div>
+              </div>
+
+                
+              </div>
+              <div thumbsSlider="" class=" bs-swiper swiper js-thumb-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                  </div>
+                 
+                </div>
+              </div>
+                <div class="cp-feature">
+                    <h3 class="feature-title">Key features</h3>
+                    <ul class="feature-list">
+                      <li class="feature-item">A drill bit tip to enable it to drill its own hole</li>
+                      <li class="feature-item">High-quality material for strength and durability</li>
+                      <li class="feature-item">Flange head design for secure fastening</li>
                     </ul>
                 </div>
-            </div>
+                <div class="cp-other-info">
+                  <ul class="other-info-list">
+                    <li class="other-info-item">Details</li>
+                    <li class="other-info-item">Questions & answers
+
+                      <span class="sub-item">20 questions</span>
+                    </li>
+                    <li class="other-info-item">Customer reviews
+                      <ul class="sub-item-list">
+                        <li class="sub-item">
+                          <span class="icon-star icon "></span>
+                          <span class="icon-star icon"></span>
+                          <span class="icon-star icon"></span>
+                          <span class="icon-star icon"></span>
+                          <span class="icon-star icon"></span>
+                        </li>                        
+                        <li class="sub-item"> 50 Ratings , 40 Reviews</li>
+                      </ul>                      
+                    </li>
+                    <li class="other-info-item">Policy details
+                      <span class="sub-item">Shipment, returns, cancellation etc.</span>
+                    </li>
+                  </ul>
+                </div>
+            
             
          </div>
         </section>
         <!--  agrico product detail page end  -->
     </main>
+     <!-- build:js assets/js/vendor.js -->
+     <script src="/js/vendor/jquery-3.1.1.min.js"></script>
+     <script src="/js/vendor/swiper-bundle.min.js"></script>
+   <script src="/js/vendor/isotope.pkgd.min.js"></script>
+     <!-- endbuild -->
+     <!-- build:js assets/js/custom.min.js -->
+     <script src="/js/global.js"></script>
+     <script src="../../components/cp-prod-thumb-slider/cp-prod-thumb-slider.js"></script>
+
+     <!-- endbuild -->
   </body>
 </html>
