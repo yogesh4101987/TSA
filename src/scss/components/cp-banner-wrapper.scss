@@ -1,20 +1,13 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-ecommerce-banner {
+.cp-banner-wrapper {
   position: relative;
   max-width: 100%;
-  height: 36rem;
-  @include border-radius(1.6rem);
+  height: 20rem;
   overflow: hidden;
   @media only screen and (max-width: $media-mobile) {
-    height: 20.6rem;
-    @include border-radius(1.2rem);
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;   
+    height: 19.2rem;
   }
 
   .content-wrap {
@@ -33,11 +26,7 @@
       width: 16rem;
       height: 3.2rem;
       margin-bottom: 0.4rem;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+
       @media only screen and (max-width: $media-mobile) {
         margin-bottom: 1rem;
         width: 8.5rem;
@@ -90,7 +79,7 @@
       }
     }
 
-    .btn-ecom-banner {
+    .btn-banner {
       min-width: 11.2rem;
       padding: 1.2rem 1.6rem;
       background-color: $clr-root;
@@ -100,7 +89,7 @@
       font-size: 1.6rem;
       line-height: 2.4rem;
       font-family: $font-medium;
-  
+
       @media only screen and (max-width: $media-mobile) {
         min-width: 8rem;
         padding: 0.8rem 1rem;
@@ -108,5 +97,41 @@
         line-height: 1.6rem;
       }
     }
-  }  
+  }
+
+  .company-logo {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    height: 2.4rem;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    @media only screen and (max-width: $media-mobile) {
+      height: 2.4rem;
+    }
+  }
+
+  &.typ-patch-banner {
+    border-radius: 0;
+    .content-wrap {
+     .title{
+        text-transform: uppercase;
+        font-size: 3.3rem;
+        line-height: 4rem;
+     }
+     .desc{
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        -webkit-line-clamp: 3;
+        color: darkgreen;
+
+     }
+    }
+
+   
+  }
 }
