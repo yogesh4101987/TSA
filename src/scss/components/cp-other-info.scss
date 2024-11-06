@@ -2,6 +2,7 @@
 @import "../config/variables";
 @import "../config/mixin";
 
+
 .cp-other-info{
     .other-info-list{
         .other-info-item{
@@ -56,6 +57,10 @@
             }
         }
         }
+    }
+    .act-wrap{
+        position: sticky;
+        bottom: 20px;
     }
 }
 
