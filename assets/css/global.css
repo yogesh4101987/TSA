@@ -877,6 +877,20 @@ p {
   color: #333333;
   border: 1px solid #333333;
 }
+.btn.typ-add-cart {
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .btn.typ-add-cart.fixedBtn {
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    margin: 0 auto;
+    z-index: 2;
+  }
+}
 
 /* colors */
 /*font family*/
