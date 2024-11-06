@@ -117,14 +117,16 @@
     border-radius: 0;
     .content-wrap {
      .title{
+        font-family: $font-bold;
         text-transform: uppercase;
-        font-size: 3.3rem;
+        font-size: 3rem;
         line-height: 4rem;
      }
      .desc{
+        font-family: $font-extraBold;
         text-transform: uppercase;
         margin-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 2.5rem;
         -webkit-line-clamp: 3;
         color: darkgreen;
