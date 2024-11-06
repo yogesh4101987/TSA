@@ -1204,13 +1204,12 @@ p {
   }
 }
 .bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
-  width: auto !important;
+  width: 34.3rem !important;
   margin-right: 2rem;
-  min-width: 34.3rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
-    margin-right: 1.2rem;
+    margin-right: 1.6rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1254,6 +1253,7 @@ p {
 }
 .bs-swiper.typ-inner-card-slider .swiper-slide {
   width: 29.6rem !important;
+  border-bottom: 1px solid #DEDEDE;
   margin-right: 0;
 }
 .bs-swiper.typ-drawer-card-slider {

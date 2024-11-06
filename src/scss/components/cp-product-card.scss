@@ -2,25 +2,26 @@
 @import "../config/mixin";
 
 .cp-product-card{
-    max-width: 34.3rem;
+    // max-width: 34.3rem;
     // height: 33.4rem;
     @include border-radius(1.6rem);
     border: 1px solid $clr-border;
     background: $clr-root;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     overflow: hidden;
     @media only screen and (max-width: $media-mobile) {
         @include border-radius(1.2rem);
     }
+    .lhs{
+        width: 39.3%;
+    }
     .img-wrap{
-        padding: 1.2rem 0.8rem;
-        width: 40%;
-        max-width: 13.4rem;
+        max-width: 11.8rem;
         height: 23.6rem;
-        margin: auto;
+        margin: 0 auto;
         display: block; 
         
         img {
@@ -28,10 +29,12 @@
             object-fit: cover;
         }   
     }   
-    .content-wrap{
+    .rhs{
         border-left: 1px solid $clr-border;  
         padding: 1.6rem 1.2rem; 
-        width: 60%;            
+        width: 62.7%;
+        @media only screen and (max-width: $media-mobile) {
+        }       
     }
     .product-tag{
         position: absolute;
@@ -61,11 +64,11 @@
         color: $clr-base;
         margin-bottom: 0.6rem;
     }
+    .cm-medium {
+        color: #5A245A;
+    }
     .review-list{
         margin-bottom: 1.2rem;
-        display: flex;
-        flex-direction: column;
-        gap:0.2rem;
         .review-item{
             display: flex;
             justify-content: flex-start;
@@ -95,9 +98,6 @@
             font-size: 1rem;
             line-height: 1.2rem;
             color: $clr-para;
-            .highlight{
-                color: #5A245A;
-            }
         }
     }
     .price-wrap{
@@ -129,7 +129,6 @@
             color: $clr-para;
             margin-right: 0.6rem;
             display: inline-block;
-            text-decoration: line-through;
         }
         .off-price{
             font-family: $font-medium;
@@ -137,7 +136,7 @@
             line-height: 1.2rem;
             color: $clr-root;
             background: $clr-secondary;
-            padding: 0.05rem 0.5rem;
+            padding: 0.2rem 0.5rem;
             text-align: center;
             @include border-radius(2.4rem);
             max-width: 4.8rem;
@@ -149,7 +148,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
         margin-bottom: 1.2rem;
-        gap: 0.2rem;
+        gap: 0.5rem;
         .tags{
             padding: 0.2rem 0.8rem;
             font-family: $font-medium;
@@ -165,7 +164,6 @@
                 background: transparent;
                 width: 100%;
                 text-align: left;
-                line-height: 2rem;
             }
         }
     }
@@ -197,10 +195,7 @@
         align-items: center;
         gap: 0.8rem;
         .btn{
-            min-width: 80%;
-            @media only screen and (max-width: $media-mobile) {
-                min-width: 72%;
-            }  
+            min-width: 13.3rem;
         }
         .btn-icon{
             position: relative;
@@ -223,18 +218,19 @@
         }
     }
     &.typ-2{
-        max-width: 29.6rem;
+        // max-width: 29.6rem;
         flex-direction: column;
-        .img-wrap,
-        .content-wrap{
+        .lhs,
+        .rhs{
             width: 100%;
             max-width: 100%;
         }
         .img-wrap{
-            height: 19.6rem;
-            border-bottom: 1px solid $clr-border;  
+            max-width: 26.4rem;
+            height: 13.2rem;
+            margin: 4rem auto 2.4rem;
         }
-        .content-wrap{
+        .rhs{
             padding: 0.8rem 1.2rem 1.6rem;
             border: none;
         }
@@ -243,7 +239,7 @@
             line-height: 2.8rem;
         }
         .review-list {
-            margin-bottom: 1.4rem;
+            margin-bottom: 1.3rem;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -265,10 +261,7 @@
                     }
                 }                
             }
-        }
-        .cm-medium {
-            color: #5A245A;
-        }
+        }        
         .price-wrap {
             .text{
                 font-size: 1.2rem;
@@ -284,8 +277,10 @@
                 }
             }
         }
-    }
-    &.typ-plp{
-
+        .action-wrap {
+            .btn{
+                min-width: 21.6rem;
+            }
+        }
     }
 }
