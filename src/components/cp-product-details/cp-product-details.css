@@ -1,0 +1,45 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-product-details .img-box {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+.cp-product-details .img-box .product-tag {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  background: #D8E5F8;
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #3D7EDB;
+  text-align: center;
+  z-index: 2;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+}
+.cp-product-details .img-box .img-wrap {
+  margin: 4.2rem 6rem;
+  max-width: 43.6rem;
+  height: 25.8rem;
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-details .img-box .img-wrap {
+    margin: 4.2rem 1.6rem;
+    max-width: 31rem;
+    height: 15.5rem;
+  }
+}
+.cp-product-details .img-box .img-wrap img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=cp-product-details.css.map */

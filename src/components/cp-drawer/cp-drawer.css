@@ -1,0 +1,49 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-drawer {
+  width: 50.5rem;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -9999px;
+  z-index: 5;
+  background: #FFFFFF;
+  padding: 5.2rem 1.2rem 1.6rem 1.6rem;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  border-radius: 2.4rem 0 0 2.4rem;
+  -webkit-border-radius: 2.4rem 0 0 2.4rem;
+  -moz-border-radius: 2.4rem 0 0 2.4rem;
+}
+.cp-drawer.active {
+  right: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-drawer {
+    width: 100%;
+    height: 90vh;
+    top: auto;
+    right: 0;
+    bottom: -99999px;
+    border-radius: 2.4rem 2.4rem 0 0;
+    -webkit-border-radius: 2.4rem 2.4rem 0 0;
+    -moz-border-radius: 2.4rem 2.4rem 0 0;
+  }
+  .cp-drawer.active {
+    bottom: 0;
+  }
+}
+.cp-drawer .icon.icon-close {
+  font-size: 2.2rem;
+  color: #999999;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+}
+
+/*# sourceMappingURL=cp-drawer.css.map */
