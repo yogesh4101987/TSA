@@ -93,11 +93,17 @@
     width: 48%; /* Adjust width and gutter for mobile */
   }
 }
+.cp-home-banner .feature .feature-item.typ-resize .cmp-teaser__image,
+.cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .f-img,
+.cp-home-banner .feature .feature-item.typ-resize .feature-card__image,
 .cp-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
   max-width: 14.3rem;
   max-height: 13.6rem;
 }
 @media only screen and (max-width: 768px) {
+  .cp-home-banner .feature .feature-item.typ-resize .cmp-teaser__image,
+  .cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .f-img,
+  .cp-home-banner .feature .feature-item.typ-resize .feature-card__image,
   .cp-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
     max-width: 8rem;
     max-height: 8rem;
@@ -116,6 +122,7 @@
     height: 9.2rem;
   }
 }
+.cp-home-banner .cmp-teaser,
 .cp-home-banner .feature-card {
   border: 1px solid #DEDEDE;
   background: #FFFFFF;
@@ -131,10 +138,15 @@
   width: 100%;
   height: 100%;
 }
-.cp-home-banner .feature-card:hover, .cp-home-banner .feature-card.active {
+.cp-home-banner .cmp-teaser:hover, .cp-home-banner .cmp-teaser.active,
+.cp-home-banner .feature-card:hover,
+.cp-home-banner .feature-card.active {
   box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.0784313725);
   border: 2px solid #DEDEDE;
 }
+.cp-home-banner .cmp-teaser__pretitle,
+.cp-home-banner .cmp-teaser .f-title,
+.cp-home-banner .feature-card__pretitle,
 .cp-home-banner .feature-card .f-title {
   font-family: "Poppins Semibold";
   font-size: 1.4rem;
@@ -143,11 +155,17 @@
   text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
+  .cp-home-banner .cmp-teaser__pretitle,
+  .cp-home-banner .cmp-teaser .f-title,
+  .cp-home-banner .feature-card__pretitle,
   .cp-home-banner .feature-card .f-title {
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
 }
+.cp-home-banner .cmp-teaser__title,
+.cp-home-banner .cmp-teaser .f-desc,
+.cp-home-banner .feature-card__title,
 .cp-home-banner .feature-card .f-desc {
   font-family: "Poppins Regular";
   font-size: 1.2rem;
@@ -156,6 +174,9 @@
   margin-bottom: 0.6rem;
   max-width: 65%;
 }
+.cp-home-banner .cmp-teaser__desc,
+.cp-home-banner .cmp-teaser .f-offer,
+.cp-home-banner .feature-card__desc,
 .cp-home-banner .feature-card .f-offer {
   background: #D2042D;
   padding: 0.2rem 0.8rem;
@@ -167,6 +188,9 @@
   -webkit-border-radius: 2.6rem;
   -moz-border-radius: 2.6rem;
 }
+.cp-home-banner .cmp-teaser__image,
+.cp-home-banner .cmp-teaser .f-img,
+.cp-home-banner .feature-card__image,
 .cp-home-banner .feature-card .f-img {
   position: absolute;
   bottom: 0;
@@ -175,6 +199,9 @@
   max-height: 9.4rem;
 }
 @media only screen and (max-width: 768px) {
+  .cp-home-banner .cmp-teaser__image,
+  .cp-home-banner .cmp-teaser .f-img,
+  .cp-home-banner .feature-card__image,
   .cp-home-banner .feature-card .f-img {
     max-width: 8rem;
     max-height: 8rem;

@@ -47,7 +47,7 @@ function destroyIsotope() {
 
 function bgHomeImg() {
     $('.js-home-bg').each(function() {
-        var imgSrc = $(this).find('.bg-img').attr('src');
+        var imgSrc = $(this).find('.bg-img img').attr('src');
         if ($(window).width() < 768) {
             $(this).css({
                 'background': '#F3F4F6',   
