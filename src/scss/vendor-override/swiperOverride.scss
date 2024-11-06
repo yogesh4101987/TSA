@@ -268,8 +268,28 @@
      
     }
     .swiper-slide{
-      width: 310px !important;
-      height: 155px;
+     
+      display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    max-width: 310px;
+    max-height: 155px;
+    object-fit: contain
+  }
+    }
+  }
+  &.type-thumb{
+    margin-top: 1.2rem;
+    .swiper-slide{
+      width: 4.7rem !important;
+      height: 4.7rem;
+      border-radius: 8px;
+      border: 1px solid #dedede;
+      overflow: hidden;
+      &:hover{
+        border-color:$clr-primary;
+      }
     }
   }
 }
