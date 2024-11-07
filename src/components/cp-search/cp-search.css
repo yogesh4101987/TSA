@@ -1,10 +1,13 @@
 /* colors */
 /*font family*/
 /* breakpoints */
+.cp-search {
+  width: 41.6rem;
+}
 .cp-search .search-wrap {
   border-radius: 1.2rem;
-  border: 1px solid #dedede;
-  width: 41.6rem;
+  border: 1px solid #DEDEDE;
+  width: 100%;
   padding: 1rem;
   position: relative;
 }
@@ -33,6 +36,20 @@
     display: block;
     width: 100%;
     min-width: 34.3rem;
+  }
+}
+.cp-search.type-trade-hand-tool {
+  width: 50.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-search.type-trade-hand-tool {
+    width: 34.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-search.type-trade-hand-tool .search-wrap {
+    display: block;
+    max-width: 34.3rem;
   }
 }
 

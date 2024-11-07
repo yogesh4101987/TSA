@@ -2,10 +2,11 @@
 
 
 .cp-search{
+    width: 41.6rem;
     .search-wrap{
         border-radius: 1.2rem;
-        border: 1px solid #dedede;
-        width: 41.6rem;
+        border: 1px solid #DEDEDE;
+        width: 100%;
         padding: 1rem;
         position: relative;
         @media only screen and (max-width: $media-mobile) {
@@ -35,4 +36,18 @@
       }
     }
   }
+    &.type-trade-hand-tool{
+        width: 50.4rem;
+        @media only screen and (max-width: $media-mobile) {
+            width: 34.3rem;
+        }
+        .search-wrap{
+            
+            @media only screen and (max-width: $media-mobile) {
+                display: block;
+                max-width: 34.3rem;
+            }
+        }
+        
+    }
 }
