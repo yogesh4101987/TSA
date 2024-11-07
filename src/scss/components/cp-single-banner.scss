@@ -5,7 +5,7 @@
   position: relative;
   padding: 0;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   @media only screen and (max-width: $media-sm) {
@@ -16,8 +16,9 @@
   }
 
   .sec-title {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-family: $font-semiBold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     color: $clr-root;
     @media only screen and (max-width: $media-sm) {
       font-size: 1.4rem;
@@ -34,11 +35,6 @@
 
   .wrapper {
     width: 100%;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // vertical-align: middle;
-    // transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,8 +52,8 @@
     align-items: center;
     .coupon {
       font-family: $font-semiBold;
-      font-size: 1.4rem;
-      line-height: 1.6rem;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
       color: $clr-root;
       text-transform: capitalize;
       padding: 0.8rem 1.2rem;
