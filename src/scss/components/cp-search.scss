@@ -2,10 +2,11 @@
 
 
 .cp-search{
+    width: 41.6rem;
     .search-wrap{
         border-radius: 1.2rem;
         border: 1px solid #DEDEDE;
-        width: 41.6rem;
+        width: 100%;
         padding: 1rem;
         position: relative;
         @media only screen and (max-width: $media-mobile) {
@@ -23,5 +24,30 @@
         font-size: 2.4rem;
         right: 12px;
         cursor: pointer;
+    }
+
+  &.typ-agrico-home {
+    .search-wrap {
+        height: 4.8rem;
+      @media only screen and (max-width: $media-mobile) {
+        display: block;
+        width: 100%;
+        min-width: 34.3rem;
+      }
+    }
+  }
+    &.type-trade-hand-tool{
+        width: 50.4rem;
+        @media only screen and (max-width: $media-mobile) {
+            width: 34.3rem;
+        }
+        .search-wrap{
+            
+            @media only screen and (max-width: $media-mobile) {
+                display: block;
+                max-width: 34.3rem;
+            }
+        }
+        
     }
 }

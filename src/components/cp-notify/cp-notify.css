@@ -57,6 +57,17 @@
     right: -1.8rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .cp-notify .notify-icon.icon-search {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    top: -1rem;
+    right: -1.5rem;
+  }
+}
 .cp-notify .notify-title {
   font-family: "Poppins Semibold";
   font-size: 3.6rem;
@@ -69,6 +80,11 @@
     font-size: 2.4rem;
     line-height: 3.2rem;
     margin-bottom: 0.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-notify .notify-title.typ-title-size {
+    max-width: 80%;
   }
 }
 .cp-notify .notify-desc {
@@ -119,6 +135,21 @@
 @media only screen and (max-width: 768px) {
   .cp-notify.typ-need-expert .notify-icon {
     font-size: 9.6rem;
+  }
+}
+.cp-notify.typ-need-expert .notify-icon.icon-brochure {
+  font-size: 8.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-notify.typ-need-expert .notify-icon.icon-brochure {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    top: 0rem;
+    right: -0.2rem;
+    font-size: 8.6rem;
   }
 }
 .cp-notify.typ-need-expert .btn-wrap {

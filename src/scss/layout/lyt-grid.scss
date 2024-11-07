@@ -26,9 +26,9 @@
       }
     }
   }
-  &.typ-explore{
+  &.typ-explore {
     align-items: center;
-    justify-content: space-around;  
+    justify-content: space-around;
     padding-bottom: 4.8rem;
     border-bottom: 1px solid $clr-border;
     gap: 1.2rem;
@@ -36,13 +36,14 @@
       flex-direction: row;
       padding-bottom: 2.4rem;
     }
-    .grid-col {   
-      width: 33%;    
+    .grid-col {
+      width: 33%;
       &:last-child {
-        .cp-icon-details::after{
+        .cp-icon-details::after {
           display: none;
         }
       }
     }
   }
+  
 }
