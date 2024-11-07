@@ -6,51 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="/images/favicon.png" />
 
-    <title>Home E-Commerce</title>
+    <title>Home</title>
     <meta name="description" content="description goes here" />
-    <link rel="stylesheet" href="/css/fonts.css" />
+
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/vendor.css" />
     <link rel="stylesheet" href="/css/home.css" />
-
+    <link
+      rel="stylesheet"
+      href="/components/cp-ecommerce-banner/cp-ecommerce-banner.css"
+    />
     <link rel="stylesheet" href="/components/cp-notify/cp-notify.css" />
   </head>
 
   <body>
     <main class="main">
-      <!-- Need help expert start -->
+      <!-- Agrico brouchre starts -->
       <section class="bs-sec">
         <div class="container">
           <div class="sec-cont">
             <div class="cp-notify typ-need-expert">
               <div class="cont-wrap">
-                <h3 class="notify-title typ-title-size">
-                  Cant find what you are looking for?
-                </h3>
-                <p class="notify-desc">Let us help you search products.</p>
+                <h3 class="notify-title">Explore our product brochure</h3>
+                <p class="notify-desc">
+                  Download our brochure for detailed information on all the
+                  products.
+                </p>
               </div>
               <div class="btn-wrap">
-                <button class="btn btn-icon notify-btn">
-                  Send query <span class="icon icon-arrow"></span>
-                </button>
-                <button class="btn btn-icon btn-white notify-btn">
-                  Schedule a call <span class="icon icon-call"></span>
-                </button>
+                <a href="#" download target = "_blank" class="btn btn-icon notify-btn"
+                  >Download brochure <span class="icon icon-download"></span
+                ></a>
               </div>
-              <span class="notify-icon icon-search"></span>
+              <span class="notify-icon icon-brochure"></span>
             </div>
           </div>
         </div>
       </section>
-      <!-- Need help expert end -->
+      <!-- Agrico brouchre end -->
     </main>
 
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.1.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
-    <script src="/js/vendor/isotope.pkgd.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
-    <script src="/js/global.js"></script>
+    <script src="/components/cp-header/cp-header.js"></script>
+    <script src="/components/cp-blog/cp-blog.js"></script>
+    <script src="/components/cp-customer-testimonial/cp-customer-testimonial.js"></script>
+    <script src="/components/cp-architect/cp-architect.js"></script>
+    <!-- endbuild -->
+
+    <script src="/components/cp-ecommerce-banner/cp-ecommerce-banner.js"></script>
+    <script src="/components/cp-notify/cp-download-brochure.js"></script>
   </body>
 </html>

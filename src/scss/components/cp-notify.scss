@@ -46,6 +46,7 @@
             }
         }
     }
+
     .notify-title{
         font-family: $font-semiBold;
         font-size: 3.6rem;
@@ -104,6 +105,15 @@
             @media only screen and (max-width: $media-mobile) {
                 font-size: 9.6rem;
             }
+            &.icon-brochure{
+                font-size: 8.6rem;
+                @media only screen and (max-width: $media-mobile) {
+                    @include transform(none);
+                    top: -0rem;
+                    right: -0.2rem;
+                    font-size: 8.6rem;
+                } 
+            }
         }
         .btn-wrap{
             display: flex;
@@ -111,5 +121,4 @@
             gap: 0.8rem;
         }
     }
-
 }
