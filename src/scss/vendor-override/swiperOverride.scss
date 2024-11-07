@@ -13,6 +13,17 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal{
     bottom: 1px;
   }
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: $font-medium;
+    color: $clr-root;
+    top: 0; 
+    left: auto;
+    right: 1.6rem;
+    width: auto;
+  }
 
   .swiper-pagination-bullet{
     width: 0.8rem;
@@ -241,7 +252,6 @@
       }
     }
   }
-  
   &.typ-best-selling,
   &.typ-top-deals{ 
     padding-bottom:7.6rem;
@@ -259,6 +269,7 @@
       }
     }
   }
+
   &.typ-trade-hand-tool{
     display: none;
     @media only screen and (max-width: $media-mobile){
@@ -272,5 +283,78 @@
     height: 9.6rem;
     display: flex;
     }
+
+
+  &.typ-patch-banner{
+    padding-bottom:4rem;
+    @media only screen and (max-width: $media-mobile) {
+      padding-bottom:3.2rem;
+     
+    }
+    .swiper-slide{
+      // width: auto !important;
+      height: 25rem;
+      width: 100%;
+      @media only screen and (max-width: $media-mobile) {
+       height: 19.2rem;
+      }
+    }
+  }
+  &.typ-review-product,
+  &.typ-selling-product{
+    padding-bottom: 4rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+    }
+    .swiper-slide{
+      width: 34.3rem !important;
+      margin-right: 2rem;
+      @media only screen and (max-width: $media-mobile) {
+        margin-right: 1.6rem;
+      }
+    }
+  }
+  &.typ-vegetable-patch{
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+    }
+    .swiper-head{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 0.8rem;
+      position: relative;
+      width: 100%;
+      .swiper-title{
+        font-family: $font-medium;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #F3F4F6;
+      }
+    }    
+    .swiper-slide{
+      width: 29.6rem !important;
+      margin-right: 2rem;
+      @media only screen and (max-width: $media-mobile) {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+  &.typ-inner-card-slider{
+    width: 29.6rem;
+    padding-bottom: 2.2rem;
+    .swiper-pagination-bullet::after{
+      border: 0;
+    }
+    .child-pagination{
+      width: 29.6rem
+    }
+    .swiper-slide{
+      width: 29.6rem !important;
+      border-bottom: 1px solid $clr-border;
+      margin-right: 0;
+    }    
+
   }
 }

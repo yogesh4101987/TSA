@@ -507,6 +507,10 @@ p {
   font-family: "Poppins Bold";
 }
 
+.cm-semi-bold {
+  font-family: "Poppins Semibold";
+}
+
 .cm-medium {
   font-family: "Poppins Medium";
 }
@@ -668,7 +672,7 @@ p {
     margin-top: 13rem;
   }
 }
-.bs-sec.typ-commerce-blog {
+.bs-sec.typ-commerce-blog, .bs-sec.typ-vegetable-patch {
   position: relative;
   overflow: hidden;
   background: #F3F4F6;
@@ -678,14 +682,14 @@ p {
   -moz-border-radius: 4.8rem 4.8rem 0 0;
 }
 @media only screen and (max-width: 768px) {
-  .bs-sec.typ-commerce-blog {
+  .bs-sec.typ-commerce-blog, .bs-sec.typ-vegetable-patch {
     border-radius: 2.4rem 2.4rem 0 0;
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
     -moz-border-radius: 2.4rem 2.4rem 0 0;
     margin-top: 4.8rem;
   }
 }
-.bs-sec.typ-commerce-blog::before {
+.bs-sec.typ-commerce-blog::before, .bs-sec.typ-vegetable-patch::before {
   content: "";
   width: 100%;
   height: 29.6rem;
@@ -696,16 +700,17 @@ p {
   right: 0;
 }
 @media only screen and (max-width: 768px) {
-  .bs-sec.typ-commerce-blog::before {
+  .bs-sec.typ-commerce-blog::before, .bs-sec.typ-vegetable-patch::before {
     height: 24.4rem;
   }
 }
-.bs-sec.typ-commerce-blog .sec-head {
+.bs-sec.typ-commerce-blog .sec-head, .bs-sec.typ-vegetable-patch .sec-head {
   z-index: 1;
   position: relative;
 }
 .bs-sec.typ-commerce-blog .sec-title,
-.bs-sec.typ-commerce-blog .sec-desc {
+.bs-sec.typ-commerce-blog .sec-desc, .bs-sec.typ-vegetable-patch .sec-title,
+.bs-sec.typ-vegetable-patch .sec-desc {
   color: #FFFFFF;
 }
 .bs-sec.typ-eCommerce-banner {
@@ -764,6 +769,16 @@ p {
     font-size: 1.2rem;
     line-height: 1.6rem;
     min-width: 8rem;
+  }
+}
+.bs-sec.typ-quick-buy .img-wrap {
+  min-height: 12rem;
+  height: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-quick-buy .img-wrap {
+    max-height: 9rem;
+    min-height: auto;
   }
 }
 .bs-sec.typ-eBanner {
@@ -877,6 +892,11 @@ p {
   font-size: 1.8rem;
   line-height: 2rem;
 }
+@media only screen and (max-width: 991px) {
+  .btn.btn-icon .icon {
+    font-size: 1.6rem;
+  }
+}
 .btn.btn-white {
   border: 1px solid #FFFFFF;
   background: #FFFFFF;
@@ -905,6 +925,17 @@ p {
 .bs-swiper .swiper-horizontal > .swiper-pagination-bullets,
 .bs-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 1px;
+}
+.bs-swiper .swiper-pagination-custom,
+.bs-swiper .swiper-pagination-fraction {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: "Poppins Medium";
+  color: #FFFFFF;
+  top: 0;
+  left: auto;
+  right: 1.6rem;
+  width: auto;
 }
 .bs-swiper .swiper-pagination-bullet {
   width: 0.8rem;
@@ -1167,6 +1198,7 @@ p {
     min-width: 20rem;
   }
 }
+
 .bs-swiper.typ-trade-hand-tool {
   display: none;
 }
@@ -1181,6 +1213,85 @@ p {
   width: 10.6rem;
   height: 9.6rem;
   display: flex;
+
+.bs-swiper.typ-patch-banner {
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-patch-banner {
+    padding-bottom: 3.2rem;
+  }
+}
+.bs-swiper.typ-patch-banner .swiper-slide {
+  height: 25rem;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-patch-banner .swiper-slide {
+    height: 19.2rem;
+  }
+}
+.bs-swiper.typ-review-product, .bs-swiper.typ-selling-product {
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-review-product, .bs-swiper.typ-selling-product {
+    margin-right: -1.6rem;
+  }
+}
+.bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
+  width: 34.3rem !important;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
+    margin-right: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-vegetable-patch {
+    margin-right: -1.6rem;
+  }
+}
+.bs-swiper.typ-vegetable-patch .swiper-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+  width: 100%;
+}
+.bs-swiper.typ-vegetable-patch .swiper-head .swiper-title {
+  font-family: "Poppins Medium";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #F3F4F6;
+}
+.bs-swiper.typ-vegetable-patch .swiper-slide {
+  width: 29.6rem !important;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-vegetable-patch .swiper-slide {
+    margin-right: 1.2rem;
+  }
+}
+.bs-swiper.typ-inner-card-slider {
+  width: 29.6rem;
+  padding-bottom: 2.2rem;
+}
+.bs-swiper.typ-inner-card-slider .swiper-pagination-bullet::after {
+  border: 0;
+}
+.bs-swiper.typ-inner-card-slider .child-pagination {
+  width: 29.6rem;
+}
+.bs-swiper.typ-inner-card-slider .swiper-slide {
+  width: 29.6rem !important;
+  border-bottom: 1px solid #DEDEDE;
+  margin-right: 0;
+
 }
 
 /*# sourceMappingURL=global.css.map */
