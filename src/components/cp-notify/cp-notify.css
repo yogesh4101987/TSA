@@ -137,6 +137,21 @@
     font-size: 9.6rem;
   }
 }
+.cp-notify.typ-need-expert .notify-icon.icon-brochure {
+  font-size: 8.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-notify.typ-need-expert .notify-icon.icon-brochure {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    top: 0rem;
+    right: -0.2rem;
+    font-size: 8.6rem;
+  }
+}
 .cp-notify.typ-need-expert .btn-wrap {
   display: flex;
   align-items: center;

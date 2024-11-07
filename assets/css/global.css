@@ -789,8 +789,18 @@ p {
     padding: 4.8rem 0;
   }
 }
+.bs-sec.type-trade-hand-tool .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 @media only screen and (max-width: 991px) {
-  .bs-sec.typ-stories .sec-desc {
+  .bs-sec.type-trade-hand-tool .container {
+    display: block;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.type-trade-hand-tool.typ-stories .sec-desc {
     padding-top: 1rem;
   }
 }
@@ -1193,58 +1203,76 @@ p {
     min-width: 20rem;
   }
 }
+.bs-swiper.typ-trade-hand-tool {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-real-stories {
+  .bs-swiper.typ-trade-hand-tool {
+    padding: 1.6rem 0;
+    margin-right: -1.6rem;
+    display: block;
+  }
+}
+.bs-swiper.typ-trade-hand-tool .swiper-slide {
+  width: 10.6rem;
+  height: 9.6rem;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-trade-hand-tool.typ-real-stories {
     margin-right: -1.6rem;
   }
 }
-.bs-swiper.typ-real-stories .swiper-slide {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories .swiper-slide {
   width: 29.7rem;
   height: 52.8rem;
   border-radius: 12px;
   overflow: hidden;
   margin-right: 1.2rem;
 }
+
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-patch-banner {
 .bs-swiper.typ-patch-banner {
   padding-bottom: 4rem;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-patch-banner {
+  .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-patch-banner {
     padding-bottom: 3.2rem;
   }
 }
-.bs-swiper.typ-patch-banner .swiper-slide {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-patch-banner .swiper-slide {
   height: 25rem;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-patch-banner .swiper-slide {
+  .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-patch-banner .swiper-slide {
     height: 19.2rem;
   }
 }
-.bs-swiper.typ-review-product, .bs-swiper.typ-selling-product {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-review-product, .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-selling-product {
   padding-bottom: 4rem;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-review-product, .bs-swiper.typ-selling-product {
+  .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-review-product, .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-selling-product {
     margin-right: -1.6rem;
   }
 }
-.bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-review-product .swiper-slide, .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-selling-product .swiper-slide {
   width: 34.3rem !important;
   margin-right: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
+  .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-review-product .swiper-slide, .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-selling-product .swiper-slide {
     margin-right: 1.6rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-vegetable-patch {
+  .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-vegetable-patch {
     margin-right: -1.6rem;
   }
 }
-.bs-swiper.typ-vegetable-patch .swiper-head {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-vegetable-patch .swiper-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1253,32 +1281,32 @@ p {
   position: relative;
   width: 100%;
 }
-.bs-swiper.typ-vegetable-patch .swiper-head .swiper-title {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-vegetable-patch .swiper-head .swiper-title {
   font-family: "Poppins Medium";
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #F3F4F6;
 }
-.bs-swiper.typ-vegetable-patch .swiper-slide {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-vegetable-patch .swiper-slide {
   width: 29.6rem !important;
   margin-right: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-vegetable-patch .swiper-slide {
+  .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-vegetable-patch .swiper-slide {
     margin-right: 1.2rem;
   }
 }
-.bs-swiper.typ-inner-card-slider {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-inner-card-slider {
   width: 29.6rem;
   padding-bottom: 2.2rem;
 }
-.bs-swiper.typ-inner-card-slider .swiper-pagination-bullet::after {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-inner-card-slider .swiper-pagination-bullet::after {
   border: 0;
 }
-.bs-swiper.typ-inner-card-slider .child-pagination {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-inner-card-slider .child-pagination {
   width: 29.6rem;
 }
-.bs-swiper.typ-inner-card-slider .swiper-slide {
+.bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-inner-card-slider .swiper-slide {
   width: 29.6rem !important;
   border-bottom: 1px solid #DEDEDE;
   margin-right: 0;
