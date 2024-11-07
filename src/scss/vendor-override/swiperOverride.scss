@@ -252,6 +252,22 @@
       }
     }
   }
+
+  &.typ-agrico-banner{
+    padding-bottom: 4rem;
+    @media only screen and (max-width: $media-mobile) {
+      padding-bottom: 3.2rem;
+    }
+    .swiper-slide{
+      width: auto;
+      height: 25rem;
+     
+      @media only screen and (max-width: $media-mobile) {
+        height: 19.2rem;
+      }
+    }
+  }
+  
   &.typ-best-selling,
   &.typ-top-deals{ 
     padding-bottom:7.6rem;
@@ -284,6 +300,7 @@
     height: 9.6rem;
     display: flex;
     }
+  }
   &.typ-real-stories{
     @media only screen and (max-width: $media-mobile){
       margin-right: -1.6rem;
@@ -372,5 +389,5 @@
 
   }
   }
-}
-}
+
+

@@ -28,6 +28,16 @@
   right: 12px;
   cursor: pointer;
 }
+.cp-search.typ-agrico-home .search-wrap {
+  height: 4.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-search.typ-agrico-home .search-wrap {
+    display: block;
+    width: 100%;
+    min-width: 34.3rem;
+  }
+}
 .cp-search.type-trade-hand-tool {
   width: 50.4rem;
 }
