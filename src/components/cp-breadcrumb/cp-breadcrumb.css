@@ -4,24 +4,24 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
-.cp-breadcrum {
+.cp-breadcrumb {
   padding-top: 1.2rem;
   padding-bottom: 0.8rem;
   display: flex;
 }
-.cp-breadcrum li + li::before {
+.cp-breadcrumb li + li::before {
   content: "/";
   font-size: 1.2rem;
   padding-inline: 0.4rem;
 }
-.cp-breadcrum li.breadcrum-items a.breadcrum-link {
+.cp-breadcrumb .breadcrumb-items .breadcrumb-link {
   font-family: "Poppins Regular";
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: #666666;
 }
-.cp-breadcrum li.breadcrum-items a.active {
+.cp-breadcrumb .breadcrumb-items .breadcrumb-link.active {
   color: #333333;
 }
 
-/*# sourceMappingURL=cp-breadcrum.css.map */
+/*# sourceMappingURL=cp-breadcrumb.css.map */
