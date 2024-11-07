@@ -1259,9 +1259,6 @@ p {
 .bs-swiper.typ-drawer-card-slider {
   width: 34.4rem;
   padding-bottom: 2.2rem;
-  border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  -moz-border-radius: 1.2rem;
 }
 .bs-swiper.typ-drawer-card-slider .swiper-pagination-bullet::after {
   border: 0;
@@ -1273,6 +1270,9 @@ p {
   width: 34.4rem !important;
   margin-right: 0;
   border: 1px solid #DEDEDE;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
 }
 
 /*# sourceMappingURL=global.css.map */

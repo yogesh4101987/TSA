@@ -3,12 +3,12 @@
 
 .lyt-plp {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1.9rem;
   @media only screen and (max-width: $media-mobile) {
     gap: 1.2rem;
-    flex-direction: column;
   }
   .grid-col {
     width: 25%;

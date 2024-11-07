@@ -328,8 +328,6 @@
   &.typ-drawer-card-slider{
     width: 34.4rem;
     padding-bottom: 2.2rem;
-   
-    @include border-radius(1.2rem);
     .swiper-pagination-bullet::after{
       border: 0;
     }
@@ -340,6 +338,7 @@
       width: 34.4rem !important;
       margin-right: 0;     
       border: 1px solid $clr-border; 
+      @include border-radius(1.2rem);
     }   
   }
 }

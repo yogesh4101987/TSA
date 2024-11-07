@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function drawerInnerSliders() {
-    const innerCardSlider = new Swiper('.js-drawer-card-slider', { 
+    const drawerInnerSliders = new Swiper('.js-drawer-card-slider', { 
         pagination: {
             el: ('.drawer-pagination'), 
             clickable: true,
