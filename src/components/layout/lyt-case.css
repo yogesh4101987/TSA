@@ -23,7 +23,7 @@
   }
 }
 .lyt-case .grid-col:first-child {
-  flex: 2 1 48%;
+  flex: 2 1 47.612%;
 }
 @media only screen and (max-width: 768px) {
   .lyt-case .grid-col:first-child {

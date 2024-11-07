@@ -6,6 +6,7 @@
 /*opacity- end*/
 .cp-product-tile {
   position: relative;
+  height: 19.9rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-product-tile {
@@ -16,7 +17,7 @@
 .cp-product-tile .img-wrap {
   border-radius: 1.2rem;
   width: 100%;
-  height: 11.2rem;
+  height: 19.9rem;
   overflow: hidden;
 }
 .cp-product-tile .img-wrap::after {
@@ -37,9 +38,11 @@
   }
 }
 .cp-product-tile .title {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   position: absolute;
-  bottom: 1.2rem;
-  left: 1.2rem;
+  bottom: 2.4rem;
+  left: 2.4rem;
   color: #FFFFFF;
   text-transform: capitalize;
   font-family: "Poppins Medium";
@@ -56,10 +59,10 @@
 .cp-product-tile .icon {
   position: absolute;
   border-radius: 0.6rem;
-  right: 1.2rem;
-  top: 1.2rem;
-  width: 2.4rem;
-  height: 2.4rem;
+  right: 1.6rem;
+  top: 1.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
   z-index: 1;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
@@ -73,6 +76,8 @@
   .cp-product-tile .icon {
     width: 2.4rem;
     height: 2.4rem;
+    right: 1.2rem;
+    top: 1.2rem;
   }
 }
 
