@@ -127,7 +127,8 @@
     }
   }
   &.typ-commerce-blog,
-  &.typ-vegetable-patch {
+  &.typ-vegetable-patch,
+  &.typ-similar-prod {
     position: relative;
     overflow: hidden;
     background: #f3f4f6;
@@ -159,7 +160,9 @@
       color: $clr-root;
     }
   }
-
+  &.typ-similar-prod{
+    margin-top: 0;
+  }
   &.typ-eCommerce-banner {
     padding: 0;
     background-color: #f3f4f6;
@@ -244,7 +247,8 @@
     }
   }
 
-  &.type-trade-hand-tool{
+  &.typ-trade-hand-tool{
+    padding: 0;
     .container{
       display: flex;
       justify-content: space-between;
