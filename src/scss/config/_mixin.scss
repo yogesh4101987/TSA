@@ -19,7 +19,6 @@
     -moz-border-radius: $radius;
 }
 
-
 /*transform*/
 
 @mixin transform($prop) {
@@ -30,17 +29,13 @@
     transform: $prop;
 }
 
-
 /*opacity*/
-
 @mixin opacity($value) {
     $IEValue: $value*100;
     opacity: $value;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
     filter: alpha(opacity=$IEValue);
 }
-
-
 /*opacity- end*/
 
 //View port calculator
