@@ -1218,6 +1218,7 @@ p {
   height: 9.6rem;
   display: flex;
 }
+
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-trade-hand-tool.typ-real-stories {
     margin-right: -1.6rem;
@@ -1230,7 +1231,9 @@ p {
   overflow: hidden;
   margin-right: 1.2rem;
 }
+
 .bs-swiper.typ-trade-hand-tool.typ-real-stories.typ-patch-banner {
+.bs-swiper.typ-patch-banner {
   padding-bottom: 4rem;
 }
 @media only screen and (max-width: 768px) {
