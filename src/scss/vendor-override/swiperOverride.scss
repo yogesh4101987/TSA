@@ -270,6 +270,7 @@
     }
   }
 
+
   &.typ-trade-hand-tool{
     display: none;
     @media only screen and (max-width: $media-mobile){
@@ -282,6 +283,18 @@
       width: 10.6rem;
     height: 9.6rem;
     display: flex;
+    }
+  &.typ-real-stories{
+    @media only screen and (max-width: $media-mobile){
+      margin-right: -1.6rem;
+    }
+    .swiper-slide{
+      width: 29.7rem;
+      height: 52.8rem;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-right: 1.2rem;
+
     }
 
 
@@ -357,4 +370,6 @@
     }    
 
   }
+  }
+}
 }
