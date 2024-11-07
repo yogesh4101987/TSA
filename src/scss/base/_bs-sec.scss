@@ -126,8 +126,8 @@
       margin-top: 13rem;
     }
   }
-
-  &.typ-commerce-blog {
+  &.typ-commerce-blog,
+  &.typ-vegetable-patch {
     position: relative;
     overflow: hidden;
     background: #f3f4f6;
@@ -214,6 +214,14 @@
         font-size: 1.2rem;
         line-height: 1.6rem;
         min-width: 8rem;
+      }
+    }
+    .img-wrap{
+      min-height: 12rem;
+      height: 100%;
+      @media only screen and (max-width: $media-sm) {
+        max-height: 9rem;
+        min-height: auto;
       }
     }
   }
