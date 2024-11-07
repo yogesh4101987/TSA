@@ -353,332 +353,6 @@ th {
   padding: 0;
 }
 
-@font-face {
-  font-family: "Poppins ExtraBold";
-  src: url("/fonts/Poppins-ExtraBold.eot");
-  src: url("/fonts/Poppins-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Poppins-ExtraBold.woff2") format("woff2"), url("/fonts/Poppins-ExtraBold.woff") format("woff"), url("/fonts/Poppins-ExtraBold.ttf") format("truetype"), url("/fonts/Poppins-ExtraBold.svg#Poppins-ExtraBold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins Bold";
-  src: url("/fonts/Poppins-Bold.eot");
-  src: url("/fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Poppins-Bold.woff2") format("woff2"), url("/fonts/Poppins-Bold.woff") format("woff"), url("/fonts/Poppins-Bold.ttf") format("truetype"), url("/fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins Light";
-  src: url("/fonts/Poppins-Light.eot");
-  src: url("/fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Poppins-Light.woff2") format("woff2"), url("/fonts/Poppins-Light.woff") format("woff"), url("/fonts/Poppins-Light.ttf") format("truetype"), url("/fonts/Poppins-Light.svg#Poppins-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins Medium";
-  src: url("/fonts/Poppins-Medium.eot");
-  src: url("/fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Poppins-Medium.woff2") format("woff2"), url("/fonts/Poppins-Medium.woff") format("woff"), url("/fonts/Poppins-Medium.ttf") format("truetype"), url("/fonts/Poppins-Medium.svg#Poppins-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins Regular";
-  src: url("/fonts/Poppins-Regular.eot");
-  src: url("/fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Poppins-Regular.woff2") format("woff2"), url("/fonts/Poppins-Regular.woff") format("woff"), url("/fonts/Poppins-Regular.ttf") format("truetype"), url("/fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins SemiBold";
-  src: url("/fonts/Poppins-SemiBold.eot");
-  src: url("/fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Poppins-SemiBold.woff2") format("woff2"), url("/fonts/Poppins-SemiBold.woff") format("woff"), url("/fonts/Poppins-SemiBold.ttf") format("truetype"), url("/fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "icomoon";
-  src: url("/fonts/icomoon.eot?ewurrz");
-  src: url("/fonts/icomoon.eot?ewurrz#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?ewurrz") format("truetype"), url("/fonts/icomoon.woff?ewurrz") format("woff"), url("/fonts/icomoon.svg?ewurrz#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=icon-], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-brochure:before {
-  content: "\e927";
-}
-
-.icon-fill-play:before {
-  content: "\e93f";
-}
-
-.icon-aashiyan:before {
-  content: "\e93a";
-}
-
-.icon-calculator:before {
-  content: "\e93b";
-}
-
-.icon-shop-product:before {
-  content: "\e93c";
-}
-
-.icon-home-guide:before {
-  content: "\e93d";
-}
-
-.icon-service:before {
-  content: "\e93e";
-}
-
-.icon-correct:before {
-  content: "\e938";
-}
-
-.icon-crown:before {
-  content: "\e939";
-}
-
-.icon-card_membership:before {
-  content: "\e916";
-}
-
-.icon-distance:before {
-  content: "\e917";
-}
-
-.icon-memory:before {
-  content: "\e937";
-}
-
-.icon-cart:before {
-  content: "\e900";
-}
-
-.icon-profile:before {
-  content: "\e901";
-}
-
-.icon-bar:before {
-  content: "\e902";
-}
-
-.icon-edit:before {
-  content: "\e903";
-}
-
-.icon-location:before {
-  content: "\e904";
-}
-
-.icon-bookmark:before {
-  content: "\e905";
-}
-
-.icon-unfill-like:before {
-  content: "\e906";
-}
-
-.icon-Left-arrow:before {
-  content: "\e907";
-}
-
-.icon-right-arrow:before {
-  content: "\e908";
-}
-
-.icon-location-fill-:before {
-  content: "\e909";
-}
-
-.icon-star:before {
-  content: "\e90a";
-}
-
-.icon-truck:before {
-  content: "\e90c";
-}
-
-.icon-location-2:before {
-  content: "\e90d";
-}
-
-.icon-down-arrow:before {
-  content: "\e90e";
-}
-
-.icon-cart-1:before {
-  content: "\e90f";
-}
-
-.icon-profile-1:before {
-  content: "\e910";
-}
-
-.icon-edit-1:before {
-  content: "\e911";
-}
-
-.icon-play:before {
-  content: "\e90b";
-}
-
-.icon-call:before {
-  content: "\e918";
-}
-
-.icon-message:before {
-  content: "\e919";
-}
-
-.icon-check:before {
-  content: "\e91a";
-}
-
-.icon-arrow:before {
-  content: "\e91b";
-}
-
-.icon-calender:before {
-  content: "\e91c";
-}
-
-.icon-left-arrow1:before {
-  content: "\e91d";
-}
-
-.icon-right-arrow1:before {
-  content: "\e91e";
-}
-
-.icon-close:before {
-  content: "\e91f";
-}
-
-.icon-language:before {
-  content: "\e912";
-}
-
-.icon-massage-box:before {
-  content: "\e913";
-}
-
-.icon-info:before {
-  content: "\e914";
-}
-
-.icon-shop:before {
-  content: "\e915";
-}
-
-.icon-store:before {
-  content: "\e920";
-}
-
-.icon-plus:before {
-  content: "\e921";
-}
-
-.icon-minus:before {
-  content: "\e922";
-}
-
-.icon-down-arrow1:before {
-  content: "\e923";
-}
-
-.icon-download:before {
-  content: "\e924";
-}
-
-.icon-dislike:before {
-  content: "\e925";
-}
-
-.icon-like:before {
-  content: "\e926";
-}
-
-.icon-flag:before {
-  content: "\e928";
-}
-
-.icon-notification:before {
-  content: "\e929";
-}
-
-.icon-up-arrow:before {
-  content: "\e92a";
-}
-
-.icon-heart-fill:before {
-  content: "\e92b";
-}
-
-.icon-close-fill:before {
-  content: "\e92c";
-}
-
-.icon-close1:before {
-  content: "\e92d";
-}
-
-.icon-tick:before {
-  content: "\e92e";
-}
-
-.icon-info1:before {
-  content: "\e92f";
-}
-
-.icon-info2:before {
-  content: "\e930";
-}
-
-.icon-share:before {
-  content: "\e931";
-}
-
-.icon-delate:before {
-  content: "\e932";
-}
-
-.icon-calender2:before {
-  content: "\e933";
-}
-
-.icon-bell:before {
-  content: "\e934";
-}
-
-.icon-Question:before {
-  content: "\e935";
-}
-
-.icon-search:before {
-  content: "\e936";
-}
-
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -831,6 +505,10 @@ p {
 
 .cm-bold {
   font-family: "Poppins Bold";
+}
+
+.cm-semi-bold {
+  font-family: "Poppins Semibold";
 }
 
 .cm-medium {
@@ -994,7 +672,7 @@ p {
     margin-top: 13rem;
   }
 }
-.bs-sec.typ-commerce-blog {
+.bs-sec.typ-commerce-blog, .bs-sec.typ-vegetable-patch {
   position: relative;
   overflow: hidden;
   background: #F3F4F6;
@@ -1004,14 +682,14 @@ p {
   -moz-border-radius: 4.8rem 4.8rem 0 0;
 }
 @media only screen and (max-width: 768px) {
-  .bs-sec.typ-commerce-blog {
+  .bs-sec.typ-commerce-blog, .bs-sec.typ-vegetable-patch {
     border-radius: 2.4rem 2.4rem 0 0;
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
     -moz-border-radius: 2.4rem 2.4rem 0 0;
     margin-top: 4.8rem;
   }
 }
-.bs-sec.typ-commerce-blog::before {
+.bs-sec.typ-commerce-blog::before, .bs-sec.typ-vegetable-patch::before {
   content: "";
   width: 100%;
   height: 29.6rem;
@@ -1022,16 +700,17 @@ p {
   right: 0;
 }
 @media only screen and (max-width: 768px) {
-  .bs-sec.typ-commerce-blog::before {
+  .bs-sec.typ-commerce-blog::before, .bs-sec.typ-vegetable-patch::before {
     height: 24.4rem;
   }
 }
-.bs-sec.typ-commerce-blog .sec-head {
+.bs-sec.typ-commerce-blog .sec-head, .bs-sec.typ-vegetable-patch .sec-head {
   z-index: 1;
   position: relative;
 }
 .bs-sec.typ-commerce-blog .sec-title,
-.bs-sec.typ-commerce-blog .sec-desc {
+.bs-sec.typ-commerce-blog .sec-desc, .bs-sec.typ-vegetable-patch .sec-title,
+.bs-sec.typ-vegetable-patch .sec-desc {
   color: #FFFFFF;
 }
 .bs-sec.typ-eCommerce-banner {
@@ -1090,6 +769,16 @@ p {
     font-size: 1.2rem;
     line-height: 1.6rem;
     min-width: 8rem;
+  }
+}
+.bs-sec.typ-quick-buy .img-wrap {
+  min-height: 12rem;
+  height: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-quick-buy .img-wrap {
+    max-height: 9rem;
+    min-height: auto;
   }
 }
 .bs-sec.typ-eBanner {
@@ -1221,6 +910,17 @@ p {
 .bs-swiper .swiper-horizontal > .swiper-pagination-bullets,
 .bs-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 1px;
+}
+.bs-swiper .swiper-pagination-custom,
+.bs-swiper .swiper-pagination-fraction {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: "Poppins Medium";
+  color: #FFFFFF;
+  top: 0;
+  left: auto;
+  right: 1.6rem;
+  width: auto;
 }
 .bs-swiper .swiper-pagination-bullet {
   width: 0.8rem;
@@ -1482,6 +1182,67 @@ p {
     margin-right: 1.2rem;
     min-width: 20rem;
   }
+}
+.bs-swiper.typ-review-product, .bs-swiper.typ-selling-product {
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-review-product, .bs-swiper.typ-selling-product {
+    margin-right: -1.6rem;
+  }
+}
+.bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
+  width: 34.3rem !important;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-review-product .swiper-slide, .bs-swiper.typ-selling-product .swiper-slide {
+    margin-right: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-vegetable-patch {
+    margin-right: -1.6rem;
+  }
+}
+.bs-swiper.typ-vegetable-patch .swiper-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+  width: 100%;
+}
+.bs-swiper.typ-vegetable-patch .swiper-head .swiper-title {
+  font-family: "Poppins Medium";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #F3F4F6;
+}
+.bs-swiper.typ-vegetable-patch .swiper-slide {
+  width: 29.6rem !important;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-vegetable-patch .swiper-slide {
+    margin-right: 1.2rem;
+  }
+}
+.bs-swiper.typ-inner-card-slider {
+  width: 29.6rem;
+  padding-bottom: 2.2rem;
+}
+.bs-swiper.typ-inner-card-slider .swiper-pagination-bullet::after {
+  border: 0;
+}
+.bs-swiper.typ-inner-card-slider .child-pagination {
+  width: 29.6rem;
+}
+.bs-swiper.typ-inner-card-slider .swiper-slide {
+  width: 29.6rem !important;
+  border-bottom: 1px solid #DEDEDE;
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=global.css.map */
