@@ -1,0 +1,64 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-tab .tab-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+  overflow-x: auto;
+}
+.cp-tab .tab-list::-webkit-scrollbar {
+  display: none;
+}
+.cp-tab .tab-list .tab-item .title {
+  border: 1px solid #DEDEDE;
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #666666;
+  background: #FFFFFF;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  padding: 0.6rem 1.6rem;
+}
+.cp-tab .tab-list .tab-item:hover .title, .cp-tab .tab-list .tab-item.active .title {
+  border: 1px solid #DEDEDE;
+  font-family: "Poppins Semibold";
+  color: #FFFFFF;
+  background: #3D7EDB;
+}
+.cp-tab .tab-container {
+  padding-top: 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-tab .tab-container {
+    padding-top: 1.6rem;
+  }
+}
+.cp-tab .tab-container .tab-content {
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  display: none;
+}
+.cp-tab .tab-container .tab-content.active {
+  display: block;
+}
+.cp-tab .tab-container .content {
+  font-size: 3rem;
+}
+.cp-tab.typ-calculate .tab-list {
+  padding: 0 2.4rem 0;
+}
+
+/*# sourceMappingURL=cp-tab.css.map */

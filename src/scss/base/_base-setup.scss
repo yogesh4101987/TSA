@@ -17,12 +17,13 @@ body {
   scroll-behavior: smooth;
   scrollbar-gutter: initial;
   position: relative;
+  overflow-x: hidden;
   &::-webkit-scrollbar {
     width: .8rem;
   }
   /* Track */
   &::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: rgba(0, 0 ,0, 0.2);
   }
   /* Handle */
   &::-webkit-scrollbar-thumb {
@@ -60,6 +61,13 @@ p {
     line-height: 1.8rem;
   }
 }
+.js-home-bg,
+.js-bg {
+  .bg-img {
+    display: none;
+  }
+}
+
 
 .cm-not-in-page {
   position: absolute;
@@ -104,11 +112,12 @@ p {
 .container {
   margin: 0px auto;
   padding: 0px;
-  width: 124rem;
+  max-width: 124rem;
+  width: 100%;
 
-  @media only screen and (max-width: $media-mobile) {
+  @media only screen and (max-width: $media-tab) {
     width: 100%;
-    padding: 0rem 2.4rem;
+    padding: 0rem 1.6rem;
     max-width: auto;
   }
 }

@@ -1,0 +1,182 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-eCommerce-home-banner {
+  position: relative;
+  background: #F3F4F6;
+  padding: 5.6rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner {
+    padding: 2.4rem 0 1.2rem;
+  }
+}
+.cp-eCommerce-home-banner .banner-title {
+  font-size: 4rem;
+  line-height: 5.2rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .banner-title {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.6rem;
+  }
+}
+.cp-eCommerce-home-banner .container {
+  position: relative;
+}
+.cp-eCommerce-home-banner .feature {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .feature {
+    gap: 0rem;
+  }
+}
+.cp-eCommerce-home-banner .feature .feature-item {
+  width: 25%; /* Adjust width to account for 20px gutter */
+  height: 14rem;
+  display: flex;
+  margin: 0;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(2) {
+  order: 1;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(3) {
+  order: 4;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(4) {
+  order: 2;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(5) {
+  order: 5;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(6) {
+  order: 3;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(7) {
+  order: 6;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .feature .feature-item {
+    width: 48%;
+    height: 9.2rem;
+    order: initial;
+    margin-bottom: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .feature .feature-item.typ-resize {
+    height: 13rem;
+  }
+}
+.cp-eCommerce-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+  max-width: 14.3rem;
+  max-height: 13.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+    max-width: 8rem;
+    max-height: 8rem;
+  }
+}
+.cp-eCommerce-home-banner .feature .grid-sizer {
+  width: 31%;
+  height: 11rem;
+  display: none;
+  order: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .feature .grid-sizer {
+    display: block;
+    width: 48%;
+    height: 9.2rem;
+  }
+}
+.cp-eCommerce-home-banner .feature-card {
+  border: 1px solid #DEDEDE;
+  background: #FFFFFF;
+  padding: 1.2rem;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  -moz-transition: all 2s linear;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .feature-card {
+    padding: 1rem;
+  }
+}
+.cp-eCommerce-home-banner .feature-card:hover, .cp-eCommerce-home-banner .feature-card.active {
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.0784313725);
+  border: 2px solid #DEDEDE;
+}
+.cp-eCommerce-home-banner .feature-card .f-title {
+  font-family: "Poppins Semibold";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  max-width: 75%;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .feature-card .f-title {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+.cp-eCommerce-home-banner .feature-card .f-desc {
+  font-family: "Poppins Regular";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #666666;
+  margin-bottom: 0.6rem;
+  max-width: 65%;
+  z-index: 1;
+  position: relative;
+}
+.cp-eCommerce-home-banner .feature-card .f-offer {
+  background: #D2042D;
+  padding: 0.2rem 0.8rem;
+  color: #FFFFFF;
+  font-family: "Poppins Medium";
+  font-size: 1rem;
+  line-height: 1.2rem;
+  border-radius: 2.6rem;
+  -webkit-border-radius: 2.6rem;
+  -moz-border-radius: 2.6rem;
+}
+.cp-eCommerce-home-banner .feature-card .f-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 10rem;
+  max-height: 10rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner .feature-card .f-img {
+    max-width: 8rem;
+    max-height: 8rem;
+  }
+}
+.cp-eCommerce-home-banner .feature-card .f-img img {
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=cp-eCommerce-home-banner.css.map */
