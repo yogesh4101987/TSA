@@ -102,6 +102,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.icon-book:before {
+  content: "\e927";
+}
+.icon-fill-play:before {
+  content: "\e93f";
+}
 .icon-aashiyan:before {
   content: "\e93a";
 }
