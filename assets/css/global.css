@@ -766,6 +766,16 @@ p {
     min-width: 8rem;
   }
 }
+.bs-sec.typ-quick-buy .img-wrap {
+  min-height: 12rem;
+  height: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-quick-buy .img-wrap {
+    max-height: 9rem;
+    min-height: auto;
+  }
+}
 .bs-sec.typ-eBanner {
   padding: 8rem 0;
 }
