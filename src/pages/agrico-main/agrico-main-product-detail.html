@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../../components/cp-prod-size/cp-prod-size.css" />
 
     <link rel="stylesheet" href="../../components/cp-counter/cp-counter.css" />
+    <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
+
 
 
   </head>
@@ -114,11 +116,32 @@
               </div>
               <!--radio button end-->
               <div class="cp-select">
-                <select>
-                  <option></option>
-                </select>
+                <div class="select-dropdown">
+                  <button href="#" role="button" data-value="" class="select-dropdown__button">
+                    <span>SELECT ITEMS </span> <i class="zmdi zmdi-chevron-down"></i>
+                  </button>
+                  <ul class="select-dropdown__list">
+                    <li >
+                      <span data-value="1" class="select-dropdown__list-item">12-14X25MM</span>
+                      <span>₹1,279</span>
+                    </li>
+                    <li>
+                      <span  data-value="2" class="select-dropdown__list-item">15-14X25MM</span>
+                      <span>₹1,279</span>
+                        
+                      </li>
+                    <li>
+                      <span data-value="3" class="select-dropdown__list-item">14-14X25MM</span>
+                      <span>₹1,279</span>
+                    </li>
+                    <li>
+                      <span data-value="4" class="select-dropdown__list-item">13-14X25MM</span>  	
+                      <span>₹1,279</span></li>
+                  </ul>
+                </div>
+              
               </div>
-              </div>
+              
               <!--Product size end--> 
 
 
@@ -170,19 +193,7 @@
            </div>
             </div>
           </div>
-          <div class="sec-cont">
-            <div class="container">
-              <div class="cp-feature">
-                <h3 class="feature-title">Key features</h3>
-               
-                <ul class="feature-list">
-                  <li class="feature-item">A drill bit tip to enable it to drill its own hole</li>
-                  <li class="feature-item">High-quality material for strength and durability</li>
-                  <li class="feature-item">Flange head design for secure fastening</li>
-                </ul>
-            </div>
-            </div>
-          </div>
+         
         </section>
         <!--  agrico product detail page end  -->
     </main>
@@ -195,7 +206,7 @@
      <script src="/js/global.js"></script>    
      <script src="../../components/cp-prod-thumb-slider/cp-prod-thumb-slider.js"></script>
      <script src="../../components/cp-counter/cp-counter.js"></script>
-
+     <script src="../../components/cp-select/cp-select.js"></script>
 
      <!-- endbuild -->
       
