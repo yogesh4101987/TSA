@@ -68,6 +68,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-brochure:before {
+  content: "\e927";
+}
+
+.icon-fill-play:before {
+  content: "\e93f";
+}
+
 .icon-aashiyan:before {
   content: "\e93a";
 }
@@ -256,10 +264,6 @@
   content: "\e926";
 }
 
-.icon-book:before {
-  content: "\e927";
-}
-
 .icon-flag:before {
   content: "\e928";
 }
@@ -319,3 +323,5 @@
 .icon-search:before {
   content: "\e936";
 }
+
+/*# sourceMappingURL=fonts.css.map */
