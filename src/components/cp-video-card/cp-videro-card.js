@@ -10,7 +10,7 @@ $(window).resize(function () {
 });
 
 function realStoriesSlider() {
-  if ($(window).width() < 769) {
+  if ($(window).width() < 768) {
     // Initialize Swiper only if it hasn't been initialized
     if (!swiper) {
       swiper = new Swiper(".js-real-stories", {
