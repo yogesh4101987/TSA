@@ -14,7 +14,7 @@
             font-family: $font-medium;
             font-size: 1.2rem;
             line-height: 1.6rem;
-            color: #3D7EDB;
+            color: $clr-primary;
             text-align: center;
             z-index: 2;
             @include border-radius(1.2rem);
@@ -36,6 +36,7 @@
         }
     }
     .cont-wrap{
+        position: relative;
         .prod-title{
             font-family: $font-semiBold;
             font-size: 2rem;
@@ -50,7 +51,7 @@
             line-height: 2rem;
             color: $clr-base;
             margin-bottom: 0.4rem;
-            max-width: 80%;
+            max-width: 70%;
         }
         .cm-medium {
             color: #5A245A;
@@ -144,8 +145,7 @@
                 @include border-radius(2.4rem);
                 max-width: 4.8rem;
             }
-        }
-        
+        }        
         .delivery-info{
             display: flex;
             justify-content: flex-start;
@@ -183,32 +183,75 @@
             }
         }
         .action-wrap{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 0.8rem;
+            padding-top: 3.2rem;           
             .btn{
-                min-width: 13.3rem;
+                min-width: 100%;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                padding: 1.1rem 1.2rem;
             }
-            .btn-icon{
-                position: relative;
+        }
+        .tag-list{
+            position: absolute;
+            top: 0;
+            right: 0;        
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 0.8rem;
+            .tag-link{
                 width: 4rem;
                 height: 4rem;
+                @include border-radius(0.8rem);
                 background: #F3F4F6;
                 font-size: 2rem;
-                @include border-radius(0.8rem);
-                color: #999999;
-                &::before{
-                    font-size: 2rem;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    @include transform(translate(-50%, -50%));
-                }
+            }
+        }
+    }
+    .add-info-list{
+        @include border-radius(1.2rem);
+        border: 1px solid $clr-border;
+        .add-info-item{
+            border-bottom: 1px solid $clr-border;
+        }
+        &:last-child{
+            .add-info-item{
+                border: none;
+            }
+        }        
+        .info-card{
+            padding: 1.6rem 2rem;
+            gap: 1rem;
+            display: flex;
+            align-items: center;
+            .icon{
+                font-size: 2.8rem;
+                line-height: 3rem;
+                color: $clr-primary;
                 &.active{
                     color: $clr-secondary;
                 }
             }
+            .info-title{
+                font-family: $font-regular;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                color: $clr-base;
+                margin-bottom: .3rem;
+            }
+            .info-desc{
+                font-family: $font-regular;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: $clr-para;
+            }
+            .info-link{
+                color: $clr-primary;
+                font-family: $font-medium;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                text-decoration: underline;
+            }           
         }
     }
 }
