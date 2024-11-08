@@ -1,0 +1,54 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-add-info-list {
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  border: 1px solid #DEDEDE;
+}
+.cp-add-info-list .add-info-item {
+  border-bottom: 1px solid #DEDEDE;
+}
+.cp-add-info-list:last-child .add-info-item {
+  border: none;
+}
+.cp-add-info-list .info-card {
+  padding: 1.6rem 2rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+.cp-add-info-list .info-card .icon {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  color: #3D7EDB;
+}
+.cp-add-info-list .info-card .icon.active {
+  color: #D2042D;
+}
+.cp-add-info-list .info-card .info-title {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 0.3rem;
+}
+.cp-add-info-list .info-card .info-desc {
+  font-family: "Poppins Regular";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #666666;
+}
+.cp-add-info-list .info-card .info-link {
+  color: #3D7EDB;
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=cp-add-info-list.css.map */
