@@ -288,7 +288,6 @@
 
 
   &.typ-trade-hand-tool{
-    display: none;
     @media only screen and (max-width: $media-mobile){
       padding: 1.6rem 0;
       margin-right: -1.6rem;
@@ -296,9 +295,14 @@
     }
    
     .swiper-slide{
+      width: 19.1rem;
+      height: 14.0rem;
+      margin-right: 2rem;
+      @media only screen and (max-width: $media-mobile){
       width: 10.6rem;
-    height: 9.6rem;
-    display: flex;
+      height: 9.6rem;
+      margin-right: 0.6rem;
+      }
     }
   }
   &.typ-real-stories{

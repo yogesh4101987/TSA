@@ -7,11 +7,24 @@ align-items: center;
 text-align: center;
 border-radius: 12px;
 border: 2px solid #dedede;
-height: 9.6rem;
+height: 14.0rem;
 overflow: hidden;
+background: $clr-root;
+flex-direction: column;
+gap: 2rem;
+@media only screen and (max-width: $media-mobile){
+    height: 9.6rem;
+
+}
 .img-wrap{
-    width: 9.6rem;
-    height: 4.8rem;
+    width: 12.7rem;
+    height: 11.1rem;
+    @media only screen and (max-width: $media-mobile){
+        width: 9.6rem;
+        height: 4.8rem;
+    
+    }
+
 }
 .title{
     font-size: 1.4rem;
