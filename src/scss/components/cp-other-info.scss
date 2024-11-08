@@ -1,0 +1,67 @@
+
+@import "../config/variables";
+@import "../config/mixin";
+
+
+.cp-other-info{
+    .other-info-list{
+        .other-info-item{
+            border-radius: 12px;
+            border: 1px solid #DEDEDE;
+            padding: 1.6rem;
+            font-size: 1.6rem;
+            color: $clr-base;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1.2rem;
+            font-family: $font-semiBold;
+            flex-direction: column;
+            position: relative;
+            @media only screen and (max-width: $media-mobile) {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            }
+            &:after{
+                content: "\e907";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                font-size: 2.4rem;
+                color: #999999;
+                font-family: 'icomoon' !important;
+                transform: translate(-50%, -50%) rotate(181deg)
+            }
+        .sub-item{
+            font-size: 1.4rem;
+            color: $clr-para;
+            font-family: $font-regular;
+            line-height: 1.6rem;
+        }
+        .sub-item-list{
+            display: flex;
+            .icon{
+                color: #FFB800;
+                position: relative;
+                &:nth-child(5){
+                    padding-right: 1rem;
+                    &::after{
+                        content: '';
+                        background-color: $clr-para;
+                        width: 1px;
+                        height: 13px;
+                        position: absolute;
+                        right: 5px;
+                        top: 1px;
+                    }
+                }
+            }
+        }
+        }
+    }
+    .act-wrap{
+        position: sticky;
+        bottom: 20px;
+    }
+}
+
+

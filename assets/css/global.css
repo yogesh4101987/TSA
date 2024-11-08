@@ -924,6 +924,21 @@ p {
   color: #333333;
   border: 1px solid #333333;
 }
+.btn.typ-add-cart {
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .btn.typ-add-cart.fixedBtn {
+    position: sticky;
+    bottom: 0; /* Stick to the bottom of the parent container */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 10; /* Ensure it's above other content */
+    background-color: #fff; /* Optional: Add a background to prevent overlap with content */
+    width: 90%; /* Adjust the width of the button */
+    padding: 15px;
+  }
+}
 
 /* colors */
 /*font family*/
@@ -1354,6 +1369,69 @@ p {
   border-radius: 1.2rem;
   -webkit-border-radius: 1.2rem;
   -moz-border-radius: 1.2rem;
+}
+.bs-swiper.type-big-img-slider {
+  border: 1px solid #dedede;
+  border-radius: 12px;
+  width: 343px;
+}
+.bs-swiper.type-big-img-slider .swiper-wrapper {
+  height: 240px;
+}
+.bs-swiper.type-big-img-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bs-swiper.type-big-img-slider .swiper-slide img {
+  max-width: 310px;
+  max-height: 155px;
+  object-fit: contain;
+}
+.bs-swiper.type-thumb {
+  margin-top: 1.2rem;
+}
+.bs-swiper.type-thumb .swiper-slide {
+  width: 4.7rem !important;
+  height: 4.7rem;
+  border-radius: 8px;
+  border: 1px solid #dedede;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.bs-swiper.type-thumb .swiper-slide:hover {
+  border-color: #3D7EDB;
+}
+
+.bs-radio {
+  margin-bottom: 1.6rem;
+}
+.bs-radio .custom-radio {
+  cursor: pointer;
+  border: 1px solid #DEDEDE;
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #666666;
+  background: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  min-width: 16.5rem;
+  padding: 0.4rem 0;
+}
+.bs-radio input[type=radio]:checked + .custom-radio {
+  border: 2px solid #3D7EDB;
+  background: #ECF2FB;
+  color: #3D7EDB;
+}
+.bs-radio input[type=radio]:checked + .custom-radio .price {
+  font-family: "Poppins Semibold";
+}
+.bs-radio input[type=radio] {
+  opacity: 0;
+  display: none;
 }
 
 /*# sourceMappingURL=global.css.map */
