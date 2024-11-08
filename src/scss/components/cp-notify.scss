@@ -84,7 +84,6 @@
             min-width: 12.3rem;
         }
     }
-    &.typ-query,
     &.typ-need-expert{
         padding: 2.4rem;
         flex-direction: column;
@@ -122,38 +121,67 @@
             gap: 0.8rem;
         }
     }
-    &.typ-query{
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #5A245A;
 
-      @media only screen and (max-width: $media-mobile) {
-        flex-direction: column;
-      }
-      .btn-wrap{
-        align-self: flex-end;
-        margin-right: 7.6rem;
-        @media only screen and (max-width: $media-mobile) {
-          align-self: flex-start;
-          margin-right: 0;
-        }
-     }
-     .notify-btn{
+    &.typ-query{
+        padding: 2.4rem;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 1.6rem;
+        margin-top: 0;
         background-color: #5A245A;
-        color: $clr-root;
-     }
-     .notify-icon{
-        font-size: 13.6rem;
-        position: absolute;
-        top: 37%;
-        right: -1.5rem;
-        color: #BDA7BD;
         @media only screen and (max-width: $media-mobile) {
-            font-size: 9.6rem;
-            top: -1.5rem;
-            right: -1rem;
+            padding: 1.6rem;
+            flex-direction: column;
+            gap: 0;
+            align-items: flex-start;
         }
-     }
+      
+        .notify-title{
+            margin-bottom: 0.8rem;
+        }
+        .notify-btn{
+            min-width: auto;
+        }
+        .notify-icon{
+            font-size: 11.6rem;
+            color: #BDA7BD;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 9.6rem;
+            }
+            &.icon-brochure{
+                font-size: 8.6rem;
+                @media only screen and (max-width: $media-mobile) {
+                    @include transform(none);
+                    font-size: 8.6rem;
+                } 
+            }
+            &.icon-search{
+                font-size: 13.6rem;
+                top: 37%;
+                right: -1.5rem;
+               
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 9.6rem;
+                    top: -1.5rem;
+                    right: -1rem;
+                } 
+            }
+        }
+        .btn-wrap{
+            flex-grow: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            z-index: 2;
+        }
+        .notify-btn{
+            background-color: #5A245A;
+            color: $clr-root;
+      
+            &:nth-child(2){
+                color: #5A245A;
+                background-color: $clr-root;
+            }
+        }
     }
 }
