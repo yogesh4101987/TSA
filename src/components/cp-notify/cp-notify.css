@@ -10,7 +10,7 @@
   border-radius: 1.6rem;
   -webkit-border-radius: 1.6rem;
   -moz-border-radius: 1.6rem;
-  background-color: #3D7EDB;
+  background-color: #5a245a;
   position: relative;
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
-  color: #6498E2;
+  color: #BDA7BD;
   font-size: 9.6rem;
 }
 @media only screen and (max-width: 768px) {
@@ -159,7 +159,6 @@
 }
 .cp-notify.typ-download-brochure {
   padding: 2.4rem;
-  background-color: #5a245a;
   justify-content: space-between;
   align-items: center;
 }
@@ -188,13 +187,6 @@
   position: absolute;
   top: 45%;
   right: 0;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 1;
-  color: #BDA7BD;
   font-size: 11.6rem;
 }
 @media only screen and (max-width: 768px) {

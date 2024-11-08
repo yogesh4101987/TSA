@@ -5,7 +5,7 @@
     margin-top: 2.4rem;
     padding: 1.6rem 2.4rem;
     @include border-radius(1.6rem);
-    background-color: $clr-primary;
+    background-color: #5a245a;
     position: relative;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
         right: 1.5rem;
         @include transform(translateY(-50%));
         z-index: 1;
-        color: #6498E2;
+        color: #BDA7BD;
         font-size: 9.6rem;
         @media only screen and (max-width: $media-mobile) {
             @include transform(none);
@@ -124,7 +124,6 @@
 
     &.typ-download-brochure{
         padding: 2.4rem;
-        background-color: #5a245a;
         justify-content: space-between;
         align-items: center;
         @media only screen and (max-width: $media-mobile) {
@@ -148,9 +147,6 @@
         position: absolute;
         top: 45%;
         right: 0;
-        @include transform(translateY(-50%));
-        z-index: 1;
-        color: #BDA7BD;
         font-size: 11.6rem;
         @media only screen and (max-width: $media-mobile) {
             top: 4.2rem;
