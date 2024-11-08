@@ -3,6 +3,9 @@ var winHeight = $(window).height();
 
 $(document).ready(function() {
     tabFunction();
+    // if ($('.js-bg').length != 0) {
+    //     bgImg();
+    // };
 });
 
 
@@ -34,4 +37,14 @@ function tabFunction() {
         $(this).addClass('active');
         $(target).addClass('active').fadeIn(200);
     });    
+}
+
+function bgImg() {
+    $('.js-bg').each(function() {
+        var imgSrc = $(this).find('.bg-img img').attr('src');
+        $(this).css({
+            'background-image': 'url(' + imgSrc + ')',
+            'background-size': 'cover'
+        });
+    })
 }

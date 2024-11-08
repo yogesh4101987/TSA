@@ -1,0 +1,28 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.lyt-plp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.9rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-plp {
+    gap: 1.2rem;
+  }
+}
+.lyt-plp .grid-col {
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-plp .grid-col {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=lyt-plp.css.map */

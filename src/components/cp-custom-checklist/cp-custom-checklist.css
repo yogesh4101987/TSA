@@ -1,16 +1,16 @@
 /* colors */
 /*font family*/
 /* breakpoints */
-.img-wrap {
+.cp-custom-checklist .img-wrap {
   width: 100%;
   max-height: 40rem;
 }
 @media only screen and (max-width: 768px) {
-  .img-wrap {
+  .cp-custom-checklist .img-wrap {
     max-height: 40rem;
   }
 }
-.img-wrap img {
+.cp-custom-checklist .img-wrap img {
   height: 100%;
   width: 100%;
 }

@@ -178,5 +178,96 @@
 .cp-eCommerce-home-banner .feature-card .f-img img {
   object-fit: contain;
 }
+.cp-eCommerce-home-banner.typ-agrico-brand {
+  background: #FFFFFF;
+  padding: 0;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item {
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner.typ-agrico-brand .feature-item {
+    height: 9.2rem;
+  }
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item .feature-card {
+  border: 0;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item .feature-card .f-title {
+  line-height: 2rem;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item .f-img {
+  z-index: 2;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item .f-img:after {
+  background: #99DAB3;
+  width: 11.3rem;
+  height: 11.3rem;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  bottom: -31px;
+  content: "";
+  opacity: 0.3;
+  z-index: -1;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(2) .feature-card {
+  background: #E5F6EC;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(3) .feature-card {
+  background: #FFF8E5;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(3) .feature-card .f-img::after {
+  background: #FFE399;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(4) .feature-card {
+  background: #FAE6EA;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(4) .feature-card .f-img::after {
+  background: #ED9BAB;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(5) .feature-card {
+  background: #ECF2FB;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(5) .feature-card .f-img::after {
+  background: #B1CBF1;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(6) .feature-card {
+  background: #FDECE5;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(6) .feature-card .f-img::after {
+  background: #F8B499;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(7) .feature-card {
+  background: #F3F4F6;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(7) .feature-card .f-img::after {
+  background: #CCCCCC;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item.typ-resize .feature-card .f-img {
+  max-width: 9rem;
+  max-height: 9rem;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item.typ-resize .feature-card .f-img::after {
+  bottom: -6px;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(2) {
+  order: 1;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(3) {
+  order: 1;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(4) {
+  order: 4;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(5) {
+  order: 3;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(6) {
+  order: 5;
+}
+.cp-eCommerce-home-banner.typ-agrico-brand .feature-item:nth-child(7) {
+  order: 6;
+}
 
 /*# sourceMappingURL=cp-eCommerce-home-banner.css.map */

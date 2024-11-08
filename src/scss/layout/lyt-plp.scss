@@ -1,0 +1,19 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.lyt-plp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.9rem;
+  @media only screen and (max-width: $media-mobile) {
+    gap: 1.2rem;
+  }
+  .grid-col {
+    width: 25%;
+    @media only screen and (max-width: $media-mobile) {
+      width: 100%;
+    }
+  }
+}

@@ -20,19 +20,16 @@
             margin-bottom: 1.6rem;
         }
     }
-
     .container{
         position: relative;
     }
-
     .feature {
         display: flex;
         justify-content: space-between;
         gap: 2rem;
         @media only screen and (max-width: 768px) {
             gap: 0rem;
-        }
-        
+        }        
         
         .feature-item {
             width: 25%; /* Adjust width to account for 20px gutter */
@@ -79,8 +76,7 @@
                 height: 9.2rem;              
             }
         }
-    }
-    
+    }    
     .feature-card{
         border: 1px solid $clr-border;
         background: $clr-root;
@@ -155,6 +151,126 @@
             img{
                 object-fit: contain;
             }
+        }
+    }
+    &.typ-agrico-brand{
+        background: $clr-root;
+        padding: 0;
+        .feature-item {
+            overflow: hidden;
+            @media only screen and (max-width: $media-mobile){
+                height: 9.2rem;
+            }
+            
+            .feature-card{
+                border: 0;
+                .f-title{
+
+                    line-height: 2rem;
+                }
+            }
+            .f-img{
+                z-index: 2;
+                &:after{
+                    background: #99DAB3;
+                    width: 11.3rem;
+                    height: 11.3rem;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: -10px;
+                    bottom: -31px;
+                    content: '';
+                    opacity: 0.3;
+                    z-index: -1;
+                }
+               }
+            &:nth-child(2){
+                .feature-card{
+                    background: #E5F6EC;
+                }
+            }
+            &:nth-child(3){
+                .feature-card{
+                    background: #FFF8E5;
+                .f-img{
+                    &::after{
+                        background: #FFE399;
+                    }
+                }
+                
+                }
+            }
+            &:nth-child(4){
+                
+                .feature-card{
+                    background: #FAE6EA;
+
+                .f-img{
+                    &::after{
+                        background: #ED9BAB;
+                    }
+                }
+                }
+            }
+            &:nth-child(5){
+                
+                .feature-card{
+                    background: #ECF2FB;
+
+                .f-img{
+                    &::after{
+                        background: #B1CBF1;
+
+                    }
+                }
+                }
+            }
+            &:nth-child(6){
+               
+                .feature-card{
+                    background: #FDECE5;
+
+                .f-img{
+                    &::after{
+                        background: #F8B499;
+
+
+                    }
+                }
+                }
+            }
+            &:nth-child(7){
+                
+                .feature-card{
+                    background: #F3F4F6;
+
+                .f-img{
+                    &::after{
+                        background: #CCCCCC;
+                    }
+                }
+                }
+            }
+            &.typ-resize{
+                .feature-card{
+                    .f-img{
+                        max-width: 9rem;
+                        max-height: 9rem;
+                        &::after{
+                            bottom: -6px;
+                        }
+                    }
+                }
+               
+                
+            }
+            &:nth-child(2) { order: 1; } //TRADE HAND TOOL
+            &:nth-child(3) { order: 1; } //DIY TOOL KITS
+            &:nth-child(4) { order: 4; } //AGRI TOOL
+            &:nth-child(5) { order: 3; } //FILLING TOOL
+            &:nth-child(6) { order: 5; } //GARDEN TOOL
+            &:nth-child(7) { order: 6; } //INDUSTRIAL & HARDWARE
+            
         }
     }
 }
