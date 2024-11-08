@@ -14,7 +14,7 @@
   overflow: hidden;
   background: #FFFFFF;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: center;
 }
 @media only screen and (max-width: 768px) {
   .cp-trade-hand-tool-card {
@@ -22,8 +22,8 @@
   }
 }
 .cp-trade-hand-tool-card .img-wrap {
-  width: 12.7rem;
-  height: 11.1rem;
+  width: 10rem;
+  height: 6.4rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-trade-hand-tool-card .img-wrap {
@@ -32,10 +32,15 @@
   }
 }
 .cp-trade-hand-tool-card .title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #333333;
   font-family: "Poppins Semibold";
   padding-top: 0.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-trade-hand-tool-card .title {
+    font-size: 1.4rem;
+  }
 }
 .cp-trade-hand-tool-card:hover {
   border-color: #3D7EDB;

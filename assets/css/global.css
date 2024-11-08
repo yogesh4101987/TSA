@@ -808,6 +808,12 @@ p {
 .bs-sec.typ-trade-hand-tool {
   padding: 0;
   background: #FFF4D7;
+  padding: 2.4rem 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-trade-hand-tool {
+    background-color: #FFFFFF;
+  }
 }
 .bs-sec.typ-trade-hand-tool .container {
   display: flex;
@@ -1240,11 +1246,15 @@ p {
     min-width: 20rem;
   }
 }
+.bs-swiper.typ-trade-hand-tool {
+  overflow: visible;
+}
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-trade-hand-tool {
     padding: 1.6rem 0;
     margin-right: -1.6rem;
     display: block;
+    overflow: hidden;
   }
 }
 .bs-swiper.typ-trade-hand-tool .swiper-slide {
