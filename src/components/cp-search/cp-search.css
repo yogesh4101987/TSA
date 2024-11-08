@@ -28,6 +28,14 @@
   right: 12px;
   cursor: pointer;
 }
+.cp-search.typ-agrico-home {
+  width: 50.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-search.typ-agrico-home {
+    width: 34.3rem;
+  }
+}
 .cp-search.typ-agrico-home .search-wrap {
   height: 4.8rem;
 }
