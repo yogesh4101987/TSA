@@ -714,6 +714,18 @@ p {
 .bs-sec.typ-similar-prod .sec-desc {
   color: #FFFFFF;
 }
+.bs-sec.typ-vegetable-patch .product-title {
+  font-family: "Poppins Medium";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #F3F4F6;
+  margin-bottom: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-vegetable-patch .product-title {
+    margin-bottom: 0.8rem;
+  }
+}
 .bs-sec.typ-similar-prod {
   margin-top: 0;
 }
@@ -828,6 +840,15 @@ p {
 @media only screen and (max-width: 991px) {
   .bs-sec.typ-stories .sec-desc {
     padding-top: 1rem;
+  }
+}
+.bs-sec.typ-no-desk-padding {
+  padding: 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-no-desk-padding {
+    padding-top: 1.6rem;
+    padding-bottom: 2.4rem;
   }
 }
 
@@ -1210,7 +1231,7 @@ p {
   }
 }
 .bs-swiper.typ-agrico-banner {
-  padding-bottom: 4rem;
+  padding-bottom: 4.8rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-agrico-banner {
@@ -1219,7 +1240,7 @@ p {
 }
 .bs-swiper.typ-agrico-banner .swiper-slide {
   width: auto;
-  height: 25rem;
+  height: 28rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-agrico-banner .swiper-slide {
@@ -1282,15 +1303,15 @@ p {
   margin-right: 1.2rem;
 }
 .bs-swiper.typ-patch-banner {
-  padding-bottom: 4rem;
+  display: none;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-patch-banner {
     padding-bottom: 3.2rem;
+    display: block;
   }
 }
 .bs-swiper.typ-patch-banner .swiper-slide {
-  height: 25rem;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
@@ -1320,24 +1341,12 @@ p {
     margin-right: -1.6rem;
   }
 }
-.bs-swiper.typ-vegetable-patch .swiper-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 0.8rem;
-  position: relative;
-  width: 100%;
-}
-.bs-swiper.typ-vegetable-patch .swiper-head .swiper-title {
-  font-family: "Poppins Medium";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: #F3F4F6;
-}
 .bs-swiper.typ-vegetable-patch .swiper-slide {
   width: 29.6rem !important;
   margin-right: 2rem;
+}
+.bs-swiper.typ-vegetable-patch .swiper-slide.swiper-slide-next .product-title {
+  color: #3D7EDB;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-vegetable-patch .swiper-slide {
