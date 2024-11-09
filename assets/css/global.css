@@ -835,6 +835,15 @@ p {
     padding-top: 1rem;
   }
 }
+.bs-sec.typ-no-desk-padding {
+  padding: 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-no-desk-padding {
+    padding-top: 1.6rem;
+    padding-bottom: 2.4rem;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -1279,15 +1288,15 @@ p {
   margin-right: 1.2rem;
 }
 .bs-swiper.typ-patch-banner {
-  padding-bottom: 4rem;
+  display: none;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-patch-banner {
     padding-bottom: 3.2rem;
+    display: block;
   }
 }
 .bs-swiper.typ-patch-banner .swiper-slide {
-  height: 25rem;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {

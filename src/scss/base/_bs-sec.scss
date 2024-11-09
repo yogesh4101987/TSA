@@ -278,4 +278,13 @@
       }
     }
   }
+
+  &.typ-patch-banner{
+    padding: 0;
+    @media only screen and (max-width: $media-sm) {
+      padding-top: 1.6rem;
+      padding-bottom: 2.4rem;
+    }
+
+  }
 }
