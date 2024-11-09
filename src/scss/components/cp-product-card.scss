@@ -128,6 +128,7 @@
             line-height: 1.6rem;
             color: $clr-para;
             margin-right: 0.6rem;
+            text-decoration: line-through;
             display: inline-block;
         }
         .off-price{
@@ -145,7 +146,7 @@
     .specification{
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;
         margin-bottom: 1.2rem;
         gap: 0.5rem;
@@ -238,6 +239,15 @@
             font-size: 2rem;
             line-height: 2.8rem;
         }
+        .specification {
+          .tags{
+            padding: 0.4rem 0.8rem;
+            color: $clr-base;
+            &.typ-more{
+                width: auto;
+            }
+          }
+        }
         .review-list {
             margin-bottom: 1.3rem;
             display: flex;
@@ -280,6 +290,9 @@
         .action-wrap {
             .btn{
                 min-width: 21.6rem;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                padding: 0.9rem 1.6rem;
             }
         }
     }

@@ -254,13 +254,13 @@
   }
 
   &.typ-agrico-banner{
-    padding-bottom: 4rem;
+    padding-bottom: 4.8rem;
     @media only screen and (max-width: $media-mobile) {
       padding-bottom: 3.2rem;
     }
     .swiper-slide{
       width: auto;
-      height: 25rem;
+      height: 28rem;
      
       @media only screen and (max-width: $media-mobile) {
         height: 19.2rem;
@@ -347,25 +347,15 @@
   &.typ-vegetable-patch{
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
-    }
-    .swiper-head{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1.2rem;
-      margin-bottom: 0.8rem;
-      position: relative;
-      width: 100%;
-      .swiper-title{
-        font-family: $font-medium;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        color: #F3F4F6;
-      }
-    }    
+    }  
     .swiper-slide{
       width: 29.6rem !important;
       margin-right: 2rem;
+      &.swiper-slide-next{
+        .product-title{
+          color: #3D7EDB;
+        }
+      }
       @media only screen and (max-width: $media-mobile) {
         margin-right: 1.2rem;
       }

@@ -197,6 +197,7 @@
                         background: #FFE399;
                     }
                 }
+                
                 }
             }
             &:nth-child(4){
@@ -263,6 +264,12 @@
                
                 
             }
+            &:nth-child(2) { order: 1; } //TRADE HAND TOOL
+            &:nth-child(3) { order: 1; } //DIY TOOL KITS
+            &:nth-child(4) { order: 4; } //AGRI TOOL
+            &:nth-child(5) { order: 3; } //FILLING TOOL
+            &:nth-child(6) { order: 5; } //GARDEN TOOL
+            &:nth-child(7) { order: 6; } //INDUSTRIAL & HARDWARE
             
         }
     }

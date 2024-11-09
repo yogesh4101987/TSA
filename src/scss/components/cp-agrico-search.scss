@@ -5,12 +5,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.6rem 0;
+  margin: 3.2rem 0;
 
   @media only screen and (max-width: $media-mobile) {
     flex-direction: column;
     gap: 1.6rem;
     align-items: flex-start;
+    margin: 1.6rem 0;
   }
   .left-wrapper {
     display: flex;
@@ -20,16 +21,18 @@
       width: 6rem;
       height: 6rem;
       padding: 0.6rem;
-      border-radius: 0.8rem;
+      border-radius: 1rem;
       border: 1px solid $clr-border;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 0.8rem;
+      margin-right: 1.2rem;
 
       @media only screen and (max-width: $media-mobile) {
         width: 4.8rem;
         height: 4.8rem;
+        margin-right: 0.8rem;
+        border-radius: 0.8rem;
       }
     }
 
