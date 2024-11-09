@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../../components/cp-counter/cp-counter.css" />
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
     <link rel="stylesheet" href="/css/pdp.css" />
+    <link rel="stylesheet" href="../../components/cp-box/cp-box.css" />
 
 
 
@@ -145,9 +146,7 @@
                   <span class="sub-item">Shipment, returns, cancellation etc.</span>
                 </li>
               </ul>
-              <div class="act-wrap ">
-                <button class="btn typ-add-cart">Add to cart</button>
-              </div>
+             
            </div>
             <!--other info end-->
             </div>
@@ -191,12 +190,17 @@
 
               <!--product counter start-->
               <div class="sec-cont">
-                <h3>Quantity</h3>
+                <div class="cp-box type-quntity">
+                <h3 class="title">Quantity</h3>
                 <div class="cp-counter">
                   <button class="btn-count no-active btn-minus" disabled>-</button>
                   <input type="text" readonly class="number-product" value="1">
                   <button class="btn-count btn-plus">+</button>
                 </div>
+                <div class="act-wrap ">
+                  <button class="btn typ-add-cart">Add to cart</button>
+                </div>
+              </div>
               </div>
               <!--product counter end-->
              
@@ -239,7 +243,7 @@
     </main>
 
     <!--model pop up start-->
-    <div id="findBike" tabindex="-1 " role="dialog " class="bs-modal type-lg fade ">
+    <div id="findBike" tabindex="-1 " role="dialog " class="bs-modal type-lg fade type-prod-thumb">
       <div class="modal-dialog ">
         <h3 class="small-title ">High Tensile Fastners</h3>
           <div class="modal-body ">

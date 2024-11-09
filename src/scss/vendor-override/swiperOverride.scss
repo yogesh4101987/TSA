@@ -309,10 +309,7 @@
     }
     &.typ-popup{
       border: 0;
-      .swiper-slide{
-        width: 51rem !important;
-        height: 32.4rem;
-      }
+     
     }
   }
   &.type-thumb{
@@ -338,6 +335,11 @@
       }
     }
     &.typ-popup{
+      .swiper-wrapper{
+        justify-content: center;
+        border-top:1px solid #dedede;
+        padding-top: 2.2rem;
+      }
       .swiper-slide{
         width: 4.8rem !important;
         height: 4.8rem;

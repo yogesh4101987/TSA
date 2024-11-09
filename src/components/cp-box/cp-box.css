@@ -1,0 +1,25 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-box {
+  display: flex;
+  justify-content: flex-start;
+}
+.cp-box .title {
+  font-size: 1.6rem;
+  font-family: "Poppins Medium";
+  color: #333333;
+  padding-bottom: 1.6rem;
+}
+.cp-box.type-quntity {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cp-box.type-quntity .title {
+  width: 100%;
+}
+
+/*# sourceMappingURL=cp-box.css.map */

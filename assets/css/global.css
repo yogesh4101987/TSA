@@ -953,7 +953,12 @@ p {
   border: 1px solid #333333;
 }
 .btn.typ-add-cart {
-  width: 100%;
+  min-width: 34.3rem;
+}
+@media only screen and (max-width: 768px) {
+  .btn.typ-add-cart {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .btn.typ-add-cart.fixedBtn {
@@ -1300,10 +1305,6 @@ p {
 .bs-swiper.type-big-img-slider.typ-popup {
   border: 0;
 }
-.bs-swiper.type-big-img-slider.typ-popup .swiper-slide {
-  width: 51rem !important;
-  height: 32.4rem;
-}
 .bs-swiper.type-thumb {
   margin-top: 1.2rem;
 }
@@ -1330,6 +1331,11 @@ p {
 }
 .bs-swiper.type-thumb .swiper-slide:hover {
   border-color: #3D7EDB;
+}
+.bs-swiper.type-thumb.typ-popup .swiper-wrapper {
+  justify-content: center;
+  border-top: 1px solid #dedede;
+  padding-top: 2.2rem;
 }
 .bs-swiper.type-thumb.typ-popup .swiper-slide {
   width: 4.8rem !important;
@@ -1557,10 +1563,10 @@ p {
 }
 .bs-modal .close-btn {
   position: absolute;
-  top: -7px;
-  right: 0;
+  top: 16px;
+  right: 16px;
   font-size: 2.4rem;
-  color: #3D7EDB;
+  color: #000000;
   padding: 0;
   z-index: 5;
 }
@@ -1611,6 +1617,9 @@ p {
     padding: 2rem 1.5rem;
     height: 100%;
   }
+}
+.bs-modal.type-prod-thumb .modal-body {
+  padding: 0;
 }
 @media only screen and (max-width: 768px) {
   .bs-modal .bs-applicant-form .title {

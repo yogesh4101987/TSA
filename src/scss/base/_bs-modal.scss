@@ -60,10 +60,10 @@
     }
     .close-btn {
         position: absolute;
-        top: -7px;
-        right: 0;
+        top: 16px;
+        right: 16px;
         font-size: 2.4rem;
-        color: $clr-primary;
+        color: #000000;
         padding: 0;
         z-index: 5;
         @media only screen and (max-width: $media-mobile) {
@@ -107,6 +107,11 @@
                 padding: 2rem 1.5rem;
                 height: 100%;
             }
+        }
+    }
+    &.type-prod-thumb{
+        .modal-body{
+            padding: 0;
         }
     }
    

@@ -97,7 +97,10 @@
         border: 1px solid $clr-base;
     }
     &.typ-add-cart{
+       min-width: 34.3rem;
+       @media only screen and (max-width: $media-mobile){
         width: 100%;
+       }
         &.fixedBtn{
             @media only screen and (max-width: $media-sm) {
                 position: sticky;
