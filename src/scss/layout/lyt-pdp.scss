@@ -1,0 +1,18 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.lyt-pdp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.9rem;
+  @media only screen and (max-width: $media-mobile) {
+    gap: 1.2rem;
+  }
+  .grid-col {
+    width: 50%;
+    @media only screen and (max-width: $media-mobile) {
+      width: 100%;
+    }
+  }
+}

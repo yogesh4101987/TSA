@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="../../components/cp-counter/cp-counter.css" />
     <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
+    <link rel="stylesheet" href="/css/pdp.css" />
 
 
 
@@ -28,30 +29,56 @@
     <main>
         <!-- agrico product detail page start  -->
         <section class="bs-sec">
-          <div class="wraper">
-            <div class="container">
-              <div class="cp-prod-thumb-slider">
+          <div class="container">
+          <div class="lyt-pdp">
+            <div class="grid-col">
+              <!--Product thumb slider start-->
+              <div class="cp-prod-thumb-slider" >
                 <span class="seller-tag">Bestseller</span>
-                <div class="bs-swiper swiper js-pro-slider type-big-img-slider">
+                <div class="bs-swiper swiper js-pro-slider type-big-img-slider" >
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="/components/cp-prod-thumb-slider/images/image container.png" />
+                    <div class="swiper-slide model-open" data-toggle="modal" data-modal-id="#findBike">
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                        <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                        <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img"  />
+                      </picture>
                     </div>
                     <div class="swiper-slide">
-                      <img src="/components/cp-prod-thumb-slider/images/image container.png" />
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                        <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                        <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                      </picture>                    
                     </div>
                     <div class="swiper-slide">
-                      <img src="/components/cp-prod-thumb-slider/images/image container.png" />
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                        <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                        <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                      </picture>                    
                     </div>
                     <div class="swiper-slide">
-                      <img src="/components/cp-prod-thumb-slider/images/image container.png" />
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                        <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                        <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                      </picture>                    
                     </div>
                     <div class="swiper-slide">
-                      <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                        <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                        <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                      </picture>                    
                     </div>
                     <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                  </div> 
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                        <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                        <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                      </picture>                 
+                     </div> 
                   </div>
                   </div>
 
@@ -80,7 +107,52 @@
     
                     </div>
               </div>
-            <!--Product size start-->
+              <!--Product thumb slider end-->
+
+              <!--key feature start-->
+              <div class="cp-feature">
+                <h3 class="feature-title">Key features</h3>
+               
+                <ul class="feature-list">
+                  <li class="feature-item">A drill bit tip to enable it to drill its own hole</li>
+                  <li class="feature-item">High-quality material for strength and durability</li>
+                  <li class="feature-item">Flange head design for secure fastening</li>
+                </ul>
+            </div>
+              <!--key feature end-->
+
+            <!--Other info start-->
+            <div class="cp-other-info">
+              <ul class="other-info-list">
+                <li class="other-info-item" >Details</li>
+                <li class="other-info-item">Questions & answers
+
+                  <span class="sub-item">20 questions</span>
+                </li>
+                <li class="other-info-item">Customer reviews
+                  <ul class="sub-item-list">
+                    <li class="sub-item">
+                      <span class="icon-star icon "></span>
+                      <span class="icon-star icon"></span>
+                      <span class="icon-star icon"></span>
+                      <span class="icon-star icon"></span>
+                      <span class="icon-star icon"></span>
+                    </li>                        
+                    <li class="sub-item"> 50 Ratings , 40 Reviews</li>
+                  </ul>                      
+                </li>
+                <li class="other-info-item">Policy details
+                  <span class="sub-item">Shipment, returns, cancellation etc.</span>
+                </li>
+              </ul>
+              <div class="act-wrap ">
+                <button class="btn typ-add-cart">Add to cart</button>
+              </div>
+           </div>
+            <!--other info end-->
+            </div>
+ 
+            <div class="grid-col">
               <div class="cp-prod-size">
                 <h3 class="title">Size</h3>
                 <!--radio button start-->
@@ -114,35 +186,7 @@
                   </label>
                 </div>
               </div>
-              <!--radio button end-->
-              <div class="cp-select">
-                <div class="select-dropdown">
-                  <button href="#" role="button" data-value="" class="select-dropdown__button">
-                    <span>SELECT ITEMS </span> <i class="zmdi zmdi-chevron-down"></i>
-                  </button>
-                  <ul class="select-dropdown__list">
-                    <li >
-                      <span data-value="1" class="select-dropdown__list-item">12-14X25MM</span>
-                      <span>₹1,279</span>
-                    </li>
-                    <li>
-                      <span  data-value="2" class="select-dropdown__list-item">15-14X25MM</span>
-                      <span>₹1,279</span>
-                        
-                      </li>
-                    <li>
-                      <span data-value="3" class="select-dropdown__list-item">14-14X25MM</span>
-                      <span>₹1,279</span>
-                    </li>
-                    <li>
-                      <span data-value="4" class="select-dropdown__list-item">13-14X25MM</span>  	
-                      <span>₹1,279</span></li>
-                  </ul>
-                </div>
-              
-              </div>
-              
-              <!--Product size end--> 
+            
 
 
               <!--product counter start-->
@@ -155,48 +199,133 @@
                 </div>
               </div>
               <!--product counter end-->
-              <div class="cp-feature">
-                <h3 class="feature-title">Key features</h3>
-               
-                <ul class="feature-list">
-                  <li class="feature-item">A drill bit tip to enable it to drill its own hole</li>
-                  <li class="feature-item">High-quality material for strength and durability</li>
-                  <li class="feature-item">Flange head design for secure fastening</li>
-                </ul>
+             
+           
             </div>
-            <div class="cp-other-info">
-              <ul class="other-info-list">
-                <li class="other-info-item">Details</li>
-                <li class="other-info-item">Questions & answers
-
-                  <span class="sub-item">20 questions</span>
-                </li>
-                <li class="other-info-item">Customer reviews
-                  <ul class="sub-item-list">
-                    <li class="sub-item">
-                      <span class="icon-star icon "></span>
-                      <span class="icon-star icon"></span>
-                      <span class="icon-star icon"></span>
-                      <span class="icon-star icon"></span>
-                      <span class="icon-star icon"></span>
-                    </li>                        
-                    <li class="sub-item"> 50 Ratings , 40 Reviews</li>
-                  </ul>                      
-                </li>
-                <li class="other-info-item">Policy details
-                  <span class="sub-item">Shipment, returns, cancellation etc.</span>
-                </li>
-              </ul>
-              <div class="act-wrap ">
-                <button class="btn typ-add-cart">Add to cart</button>
-              </div>
-           </div>
+             <!--radio button end-->
+  <div class="cp-select">
+    <div class="select-dropdown">
+      <button href="#" role="button" data-value="" class="select-dropdown__button">
+        <span>SELECT ITEMS </span> <i class="zmdi zmdi-chevron-down"></i>
+      </button>
+      <ul class="select-dropdown__list">
+        <li >
+          <span data-value="1" class="select-dropdown__list-item">12-14X25MM</span>
+          <span>₹1,279</span>
+        </li>
+        <li>
+          <span  data-value="2" class="select-dropdown__list-item">15-14X25MM</span>
+          <span>₹1,279</span>
+            
+          </li>
+        <li>
+          <span data-value="3" class="select-dropdown__list-item">14-14X25MM</span>
+          <span>₹1,279</span>
+        </li>
+        <li>
+          <span data-value="4" class="select-dropdown__list-item">13-14X25MM</span>  	
+          <span>₹1,279</span></li>
+      </ul>
+    </div>
+  
+  </div>
+  
+  <!--Product size end--> 
             </div>
           </div>
-         
+        </div>
         </section>
         <!--  agrico product detail page end  -->
     </main>
+
+    <!--model pop up start-->
+    <div id="findBike" tabindex="-1 " role="dialog " class="bs-modal type-lg fade ">
+      <div class="modal-dialog ">
+        <h3 class="small-title ">High Tensile Fastners</h3>
+          <div class="modal-body ">
+              <div class="modal-content ">
+              
+                  <button class="close-btn icon-close js-close " type="button "></button>
+                  <div class="cp-prod-thumb-slider" >
+                    <div class="bs-swiper swiper js-popup-pro-slider type-big-img-slider typ-popup" >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide model-open" data-toggle="modal" data-modal-id="#findBike">
+                          <picture>
+                            <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                            <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                            <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img"  />
+                          </picture>
+                        </div>
+                        <div class="swiper-slide">
+                          <picture>
+                            <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                            <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                            <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                          </picture>                    
+                        </div>
+                        <div class="swiper-slide">
+                          <picture>
+                            <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                            <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                            <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                          </picture>                    
+                        </div>
+                        <div class="swiper-slide">
+                          <picture>
+                            <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                            <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                            <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                          </picture>                    
+                        </div>
+                        <div class="swiper-slide">
+                          <picture>
+                            <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                            <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                            <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                          </picture>                    
+                        </div>
+                        <div class="swiper-slide">
+                          <picture>
+                            <source media="(max-width:768px)" srcset="../../components/cp-prod-thumb-slider/images/image container-mobile.png">
+                            <source media="(max-width:991px)" srcset="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png">
+                            <img src="../../components/cp-prod-thumb-slider/images/BigImage_PDP-1-desktop.png" alt="pro-big-img" />
+                          </picture>                 
+                         </div> 
+                      </div>
+                      </div>
+    
+                      <div thumbsSlider="" class=" bs-swiper type-thumb swiper  typ-popup js-popup-thumb-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/components/cp-prod-thumb-slider/images/BigImage_thumbnail_PDP 2.png" />
+                          </div>
+                        </div>
+                          
+        
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="cm-overlay "></div>
+    <!--model pop up end-->
+
      <!-- build:js assets/js/vendor.js -->
      <script src="/js/vendor/jquery-3.1.1.min.js"></script>
      <script src="/js/vendor/swiper-bundle.min.js"></script>

@@ -87,14 +87,14 @@ p {
   left: 0;
   display: none;
   transition: 0.5s ease-in-out;
-  background: rgba(247, 247, 247, 0.7);
+  background: #000000;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   touch-action: auto;
   -ms-touch-action: auto;
   &.active {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.8;
     display: block;
     z-index: 4;
     touch-action: none;

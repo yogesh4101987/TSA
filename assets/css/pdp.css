@@ -1,0 +1,27 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.lyt-pdp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.9rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-pdp {
+    gap: 1.2rem;
+  }
+}
+.lyt-pdp .grid-col {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-pdp .grid-col {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=pdp.css.map */
