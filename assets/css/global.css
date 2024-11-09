@@ -822,6 +822,8 @@ p {
 }
 .bs-sec.typ-trade-hand-tool {
   padding: 0;
+  background: #FFF4D7;
+  padding: 2.4rem 0;
 }
 .bs-sec.typ-trade-hand-tool .container {
   display: flex;
@@ -914,6 +916,15 @@ p {
     font-size: 5rem;
     top: 1.2rem;
     right: 3rem;
+  }
+}
+.bs-sec.typ-patch-banner {
+  padding: 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-patch-banner {
+    padding-top: 1.6rem;
+    padding-bottom: 2.4rem;
   }
 }
 
@@ -1333,19 +1344,27 @@ p {
   }
 }
 .bs-swiper.typ-trade-hand-tool {
-  display: none;
+  overflow: visible;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-trade-hand-tool {
     padding: 1.6rem 0;
     margin-right: -1.6rem;
     display: block;
+    overflow: hidden;
   }
 }
 .bs-swiper.typ-trade-hand-tool .swiper-slide {
-  width: 10.6rem;
-  height: 9.6rem;
-  display: flex;
+  width: 19.1rem;
+  height: 14rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-trade-hand-tool .swiper-slide {
+    width: 10.6rem;
+    height: 9.6rem;
+    margin-right: 0.6rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-real-stories {
@@ -1360,15 +1379,15 @@ p {
   margin-right: 1.2rem;
 }
 .bs-swiper.typ-patch-banner {
-  padding-bottom: 4rem;
+  display: none;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-patch-banner {
     padding-bottom: 3.2rem;
+    display: block;
   }
 }
 .bs-swiper.typ-patch-banner .swiper-slide {
-  height: 25rem;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {

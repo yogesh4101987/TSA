@@ -10,6 +10,7 @@
   width: 100%;
   padding: 1rem;
   position: relative;
+  background: #FFFFFF;
 }
 @media only screen and (max-width: 768px) {
   .cp-search .search-wrap {

@@ -288,17 +288,23 @@
 
 
   &.typ-trade-hand-tool{
-    display: none;
+    overflow: visible;
     @media only screen and (max-width: $media-mobile){
       padding: 1.6rem 0;
       margin-right: -1.6rem;
       display: block;
+      overflow: hidden;
     }
    
     .swiper-slide{
+      width: 19.1rem;
+      height: 14.0rem;
+      margin-right: 2rem;
+      @media only screen and (max-width: $media-mobile){
       width: 10.6rem;
-    height: 9.6rem;
-    display: flex;
+      height: 9.6rem;
+      margin-right: 0.6rem;
+      }
     }
   }
   &.typ-real-stories{
@@ -317,14 +323,13 @@
 
 
   &.typ-patch-banner{
-    padding-bottom:4rem;
+    display: none;
     @media only screen and (max-width: $media-mobile) {
       padding-bottom:3.2rem;
-     
+      display: block;
     }
     .swiper-slide{
       // width: auto !important;
-      height: 25rem;
       width: 100%;
       @media only screen and (max-width: $media-mobile) {
        height: 19.2rem;
