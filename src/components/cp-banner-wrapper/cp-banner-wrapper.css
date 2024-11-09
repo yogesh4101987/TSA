@@ -26,6 +26,7 @@
 }
 .cp-banner-wrapper .img-wrap img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .cp-banner-wrapper .content-wrap {
@@ -137,20 +138,24 @@
     height: 2.4rem;
   }
 }
-.cp-banner-wrapper.typ-patch-banner .content-wrap .title {
-  font-family: "Poppins Bold";
-  text-transform: uppercase;
-  font-size: 3rem;
-  line-height: 4rem;
+@media only screen and (max-width: 768px) {
+  .cp-banner-wrapper.typ-patchBanner .content-wrap .title {
+    font-family: "Poppins Bold";
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
 }
-.cp-banner-wrapper.typ-patch-banner .content-wrap .desc {
-  font-family: "Poppins ExtraBold";
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  -webkit-line-clamp: 3;
-  color: darkgreen;
+@media only screen and (max-width: 768px) {
+  .cp-banner-wrapper.typ-patchBanner .content-wrap .desc {
+    font-family: "Poppins ExtraBold";
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    -webkit-line-clamp: 3;
+    color: darkgreen;
+  }
 }
 
 /*# sourceMappingURL=cp-banner-wrapper.css.map */
