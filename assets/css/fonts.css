@@ -68,6 +68,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-percentage:before {
+  content: "\e940";
+}
+
+.icon-browse_gallery:before {
+  content: "\e941";
+}
+
 .icon-brochure:before {
   content: "\e927";
 }

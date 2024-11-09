@@ -10,30 +10,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
     @media only screen and (max-width: $media-mobile) {
         @include border-radius(1.2rem);
+        flex-direction: row;
     }
     .lhs{
-        width: 39.3%;
+        width: 100%;
+        @media only screen and (max-width: $media-mobile) {
+            width: 39.3%;
+        } 
     }
     .img-wrap{
-        max-width: 11.8rem;
-        height: 23.6rem;
-        margin: 0 auto;
-        display: block; 
+        max-width: 26.4rem;
+        height: 13.2rem;
+        margin: 4rem auto 2.4rem;
+        @media only screen and (max-width: $media-mobile) {
+            max-width: 11.8rem;
+            height: 23.6rem;
+            margin: 0 auto;
+        }
         
         img {
             height: 100%;
             object-fit: cover;
         }   
     }   
-    .rhs{
-        border-left: 1px solid $clr-border;  
+    .rhs{        
         padding: 1.6rem 1.2rem; 
-        width: 62.7%;
+        width: 100%;
+        border: none;
         @media only screen and (max-width: $media-mobile) {
+            width: 62.7%;
+            border-left: 1px solid $clr-border;  
         }       
     }
     .product-tag{
@@ -52,10 +63,14 @@
     }
     .prod-title{
         font-family: $font-semiBold;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
+        font-size: 2rem;
+        line-height: 2.8rem;
         color: $clr-base;
         margin-bottom: 0.2rem;
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
     }
     .prod-code{
         font-family: $font-regular;
@@ -68,11 +83,38 @@
         color: #5A245A;
     }
     .review-list{
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.2rem;
+        @media only screen and (max-width: $media-mobile) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 1.2rem;
+        }
         .review-item{
             display: flex;
             justify-content: flex-start;
-            align-items: center;
+            align-items: center;           
+            position: relative;
+            &::before{
+                content: '';
+                width: 1px;
+                height: 1.6rem;
+                background: $clr-para;
+                position: absolute;
+                top: -0.2rem;
+                right: -0.6rem;
+                @media only screen and (max-width: $media-mobile) {
+                    display: none;
+                }
+            }
+            &:last-child{
+                &::before{
+                    display: none;
+                }
+            }            
         }
         .review-star{
             display: flex;
@@ -151,20 +193,27 @@
         margin-bottom: 1.2rem;
         gap: 0.5rem;
         .tags{
-            padding: 0.2rem 0.8rem;
+            padding: 0.4rem 0.8rem;
+            color: $clr-base;           
             font-family: $font-medium;
             font-size: 1.2rem;
             line-height: 1.6rem;
-            text-align: center;
-            color: $clr-para;
+            text-align: center;           
             @include border-radius(0.4rem);
             background: #F3F4F6;
+            @media only screen and (max-width: $media-mobile) {
+                padding: 0.2rem 0.8rem;
+                color: $clr-para;
+            }
 
             &.typ-more{
                 padding: 0;
                 background: transparent;
-                width: 100%;
+                width: auto;
                 text-align: left;
+                @media only screen and (max-width: $media-mobile) {
+                    width: 100%;
+                }
             }
         }
     }
@@ -196,7 +245,13 @@
         align-items: center;
         gap: 0.8rem;
         .btn{
-            min-width: 13.3rem;
+            min-width: 21.6rem;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            padding: 0.9rem 1.6rem;
+            @media only screen and (max-width: $media-mobile) {
+                min-width: 13.3rem;
+            }
         }
         .btn-icon{
             position: relative;

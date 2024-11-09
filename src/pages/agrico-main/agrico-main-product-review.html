@@ -19,7 +19,7 @@
    
     <main class="main">
       <!--Recently viewed start -->
-      <section class="bs-sec">
+      <section class="bs-sec typ-review-product">
         <div class="container">
           <div class="sec-head">
             <h2 class="sec-title">Recently viewed</h2>
@@ -31,14 +31,44 @@
                   <div class="cp-product-card">
                     <div class="lhs">
                       <span class="product-tag">Bestselling</span>
-                      <div class="img-wrap">
-                        <picture>
-                          <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
-                          <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-1.png">
-                          <img src="../components/cp-product-card/images/product-1.png" alt="product_img" />
-                        </picture>
+                      <div class="bs-swiper swiper typ-product-inner-slider js-product-inner-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination child-pagination"></div>
                       </div>
-                    </div>
+                    </div>                    
                     <div class="rhs">
                       <h3 class="prod-title">Plier -C12 </h3>
                       <h4 class="prod-code">Chrome Vanadium</h4>
@@ -65,14 +95,86 @@
                       </div>
                       <div class="specification">
                         <span class="tags">6-8X19 mm</span>
+                        <span class="tags">12-14X25 mm</span>
+                        <span class="tags typ-more">+4 more</span>
+                      </div> 
+                      <div class="action-wrap">
+                        <button class="btn btn-primary">Add to cart</button>
+                        <button class="btn-icon icon icon-unfill-like js-add-favorite"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cp-product-card">
+                    <div class="lhs">                      
+                      <div class="bs-swiper swiper typ-product-inner-slider js-product-inner-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination child-pagination"></div>
+                      </div> 
+                    </div>
+                    <div class="rhs">
+                      <h3 class="prod-title">Square Shovel</h3>
+                      <h4 class="prod-code">Silver coated</h4>
+                      <ul class="review-list">
+                        <li class="review-item">
+                          <div class="review-star">
+                            <span class="icon icon-star typ-active"></span>
+                            <span class="icon icon-star typ-active"></span>
+                            <span class="icon icon-star typ-active"></span>
+                            <span class="icon icon-star typ-active"></span>
+                            <span class="icon icon-star"></span>
+                          </div>
+                          <span class="review-count">(40)</span>
+                        </li>
+                        <li class="review-item">
+                          <p class="product-buy"><span class="cm-medium">200+</span> bought in past month</p>
+                        </li>
+                      </ul>
+                      <div class="price-wrap">
+                        <p class="text">Starts from</p>
+                        <p class="discounted-price"><span class="amt">₹280</span> per piece</p>
+                        <p class="regular-price">₹375 per piece</p>
+                        <span class="off-price">30% off</span>
+                      </div>
+                      <div class="specification">
                         <span class="tags">6-8X19 mm</span>
                         <span class="tags">12-14X25 mm</span>
                         <span class="tags typ-more">+4 more</span>
-                      </div>     
-                      <div class="delivery-info">
-                        <span class="icon icon-truck"></span>                       
-                        <p class="delivery-text"><span class="highlight"> Free delivery</span> (above ₹500)</p>
-                      </div>
+                      </div> 
                       <div class="action-wrap">
                         <button class="btn btn-primary">Add to cart</button>
                         <button class="btn-icon icon icon-unfill-like js-add-favorite"></button>
@@ -84,17 +186,47 @@
                   <div class="cp-product-card">
                     <div class="lhs">
                       <span class="product-tag">Bestselling</span>
-                      <div class="img-wrap">
-                        <picture>
-                          <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-2.png">
-                          <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-2.png">
-                          <img src="../components/cp-product-card/images/product-2.png" alt="product_img" />
-                        </picture>
+                      <div class="bs-swiper swiper typ-product-inner-slider js-product-inner-slider">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                              <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                              <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                              <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                              <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                            </picture>
+                          </div>
+                        </div>
                       </div>
+                      <div class="swiper-pagination child-pagination"></div>
+                      </div> 
                     </div>
                     <div class="rhs">
-                      <h3 class="prod-title">Plier -C12 </h3>
-                      <h4 class="prod-code">Chrome Vanadium</h4>
+                      <h3 class="prod-title">Grass Cutter</h3>
+                      <h4 class="prod-code">AGW707</h4>
                       <ul class="review-list">
                         <li class="review-item">
                           <div class="review-star">
@@ -118,14 +250,9 @@
                       </div>
                       <div class="specification">
                         <span class="tags">6-8X19 mm</span>
-                        <span class="tags">6-8X19 mm</span>
                         <span class="tags">12-14X25 mm</span>
                         <span class="tags typ-more">+4 more</span>
-                      </div>     
-                      <div class="delivery-info">
-                        <span class="icon icon-truck"></span>                       
-                        <p class="delivery-text"><span class="highlight"> Free delivery</span> (above ₹500)</p>
-                      </div>
+                      </div> 
                       <div class="action-wrap">
                         <button class="btn btn-primary">Add to cart</button>
                         <button class="btn-icon icon icon-unfill-like js-add-favorite"></button>
@@ -137,17 +264,47 @@
                   <div class="cp-product-card">
                     <div class="lhs">
                       <span class="product-tag">Bestselling</span>
-                      <div class="img-wrap">
-                        <picture>
-                          <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-3.png">
-                          <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-3.png">
-                          <img src="../components/cp-product-card/images/product-3.png" alt="product_img" />
-                        </picture>
-                      </div>
+                      <div class="bs-swiper swiper typ-product-inner-slider js-product-inner-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrap">
+                              <picture>
+                                <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination child-pagination"></div>
+                      </div> 
                     </div>
                     <div class="rhs">
-                      <h3 class="prod-title">Plier -C12 </h3>
-                      <h4 class="prod-code">Chrome Vanadium</h4>
+                      <h3 class="prod-title">Cultivator</h3>
+                      <h4 class="prod-code">AGW707</h4>
                       <ul class="review-list">
                         <li class="review-item">
                           <div class="review-star">
@@ -171,120 +328,9 @@
                       </div>
                       <div class="specification">
                         <span class="tags">6-8X19 mm</span>
-                        <span class="tags">6-8X19 mm</span>
                         <span class="tags">12-14X25 mm</span>
                         <span class="tags typ-more">+4 more</span>
-                      </div>     
-                      <div class="delivery-info">
-                        <span class="icon icon-truck"></span>                       
-                        <p class="delivery-text"><span class="highlight"> Free delivery</span> (above ₹500)</p>
-                      </div>
-                      <div class="action-wrap">
-                        <button class="btn btn-primary">Add to cart</button>
-                        <button class="btn-icon icon icon-unfill-like js-add-favorite"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cp-product-card">
-                    <div class="lhs">
-                      <span class="product-tag">Bestselling</span>
-                      <div class="img-wrap">
-                        <picture>
-                          <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-4.png">
-                          <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-4.png">
-                          <img src="../components/cp-product-card/images/product-4.png" alt="product_img" />
-                        </picture>
-                      </div>
-                    </div>
-                    <div class="rhs">
-                      <h3 class="prod-title">Plier -C12 </h3>
-                      <h4 class="prod-code">Chrome Vanadium</h4>
-                      <ul class="review-list">
-                        <li class="review-item">
-                          <div class="review-star">
-                            <span class="icon icon-star typ-active"></span>
-                            <span class="icon icon-star typ-active"></span>
-                            <span class="icon icon-star typ-active"></span>
-                            <span class="icon icon-star typ-active"></span>
-                            <span class="icon icon-star"></span>
-                          </div>
-                          <span class="review-count">(40)</span>
-                        </li>
-                        <li class="review-item">
-                          <p class="product-buy"><span class="cm-medium">200+</span> bought in past month</p>
-                        </li>
-                      </ul>
-                      <div class="price-wrap">
-                        <p class="text">Starts from</p>
-                        <p class="discounted-price"><span class="amt">₹280</span> per piece</p>
-                        <p class="regular-price">₹375 per piece</p>
-                        <span class="off-price">30% off</span>
-                      </div>
-                      <div class="specification">
-                        <span class="tags">6-8X19 mm</span>
-                        <span class="tags">6-8X19 mm</span>
-                        <span class="tags">12-14X25 mm</span>
-                        <span class="tags typ-more">+4 more</span>
-                      </div>     
-                      <div class="delivery-info">
-                        <span class="icon icon-truck"></span>                       
-                        <p class="delivery-text"><span class="highlight"> Free delivery</span> (above ₹500)</p>
-                      </div>
-                      <div class="action-wrap">
-                        <button class="btn btn-primary">Add to cart</button>
-                        <button class="btn-icon icon icon-unfill-like js-add-favorite"></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cp-product-card">
-                    <div class="lhs">
-                      <span class="product-tag">Bestselling</span>
-                      <div class="img-wrap">
-                        <picture>
-                          <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-5.png">
-                          <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-5.png">
-                          <img src="../components/cp-product-card/images/product-5.png" alt="product_img" />
-                        </picture>
-                      </div>
-                    </div>
-                    <div class="rhs">
-                      <h3 class="prod-title">Plier -C12 </h3>
-                      <h4 class="prod-code">Chrome Vanadium</h4>
-                      <ul class="review-list">
-                        <li class="review-item">
-                          <div class="review-star">
-                            <span class="icon icon-star typ-active"></span>
-                            <span class="icon icon-star typ-active"></span>
-                            <span class="icon icon-star typ-active"></span>
-                            <span class="icon icon-star typ-active"></span>
-                            <span class="icon icon-star"></span>
-                          </div>
-                          <span class="review-count">(40)</span>
-                        </li>
-                        <li class="review-item">
-                          <p class="product-buy"><span class="cm-medium">200+</span> bought in past month</p>
-                        </li>
-                      </ul>
-                      <div class="price-wrap">
-                        <p class="text">Starts from</p>
-                        <p class="discounted-price"><span class="amt">₹280</span> per piece</p>
-                        <p class="regular-price">₹375 per piece</p>
-                        <span class="off-price">30% off</span>
-                      </div>
-                      <div class="specification">
-                        <span class="tags">6-8X19 mm</span>
-                        <span class="tags">6-8X19 mm</span>
-                        <span class="tags">12-14X25 mm</span>
-                        <span class="tags typ-more">+4 more</span>
-                      </div>     
-                      <div class="delivery-info">
-                        <span class="icon icon-truck"></span>                       
-                        <p class="delivery-text"><span class="highlight"> Free delivery</span> (above ₹500)</p>
-                      </div>
+                      </div> 
                       <div class="action-wrap">
                         <button class="btn btn-primary">Add to cart</button>
                         <button class="btn-icon icon icon-unfill-like js-add-favorite"></button>
