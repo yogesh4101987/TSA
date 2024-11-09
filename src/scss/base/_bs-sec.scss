@@ -160,6 +160,18 @@
       color: $clr-root;
     }
   }
+  &.typ-vegetable-patch{ 
+    .product-title{
+      font-family: $font-medium;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #F3F4F6;
+      margin-bottom: 1.2rem;
+      @media only screen and (max-width: $media-mobile) {
+        margin-bottom: 0.8rem;
+      }      
+    }
+  }
   &.typ-similar-prod{
     margin-top: 0;
   }
@@ -265,5 +277,14 @@
         padding-top:1rem;
       }
     }
+  }
+
+  &.typ-patch-banner{
+    padding: 0;
+    @media only screen and (max-width: $media-sm) {
+      padding-top: 1.6rem;
+      padding-bottom: 2.4rem;
+    }
+
   }
 }

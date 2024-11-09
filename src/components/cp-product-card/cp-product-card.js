@@ -4,13 +4,18 @@ $(document).ready(function () {
   bestSellingSlider();
   reviewProductSlider();
   addedFavorite();
+  if ($(window).width() < 769) {
+    vegetablePatchSlider();
+  }
   initializeInnerSliders();
-  vegetablePatchSlider();  
 });
 
 $(window).resize(function () {  
   bestSellingSlider();
   reviewProductSlider();
+  if ($(window).width() < 769) {
+    vegetablePatchSlider();
+  }
 });
 
 
@@ -68,7 +73,6 @@ function vegetablePatchSlider() {
       renderCustom: function (outerSwiper, current, total) {
         return current + ' of ' + total;  // Custom format "1 of 5"
       }
-      // type: 'fraction'
     },
   });
 }
