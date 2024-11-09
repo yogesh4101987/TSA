@@ -822,11 +822,6 @@ p {
   background: #FFF4D7;
   padding: 2.4rem 0;
 }
-@media only screen and (max-width: 991px) {
-  .bs-sec.typ-trade-hand-tool {
-    background-color: #FFFFFF;
-  }
-}
 .bs-sec.typ-trade-hand-tool .container {
   display: flex;
   justify-content: space-between;
@@ -842,11 +837,11 @@ p {
     padding-top: 1rem;
   }
 }
-.bs-sec.typ-no-desk-padding {
+.bs-sec.typ-patch-banner {
   padding: 0;
 }
 @media only screen and (max-width: 991px) {
-  .bs-sec.typ-no-desk-padding {
+  .bs-sec.typ-patch-banner {
     padding-top: 1.6rem;
     padding-bottom: 2.4rem;
   }
