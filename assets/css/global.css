@@ -840,7 +840,8 @@ p {
 }
 @media only screen and (max-width: 991px) {
   .bs-sec.typ-no-desk-padding {
-    padding: 2.4rem 0rem;
+    padding-top: 1.6rem;
+    padding-bottom: 2.4rem;
   }
 }
 

@@ -279,10 +279,11 @@
     }
   }
 
-  &.typ-no-desk-padding{
+  &.typ-patch-banner{
     padding: 0;
     @media only screen and (max-width: $media-sm) {
-      padding: 2.4rem 0rem;
+      padding-top: 1.6rem;
+      padding-bottom: 2.4rem;
     }
 
   }
