@@ -1,34 +1,29 @@
 var winWidth = $(window).width();
 
-$(document).ready(function () { 
-  bestSellingSlider();
-  reviewProductSlider();
+$(document).ready(function () {  
   addedFavorite();
   if ($(window).width() < 769) {
+    bestSellingSlider();
+    reviewProductSlider();
     vegetablePatchSlider();
   }
   initializeInnerSliders();
-});
-
-$(window).resize(function () {  
-  bestSellingSlider();
-  reviewProductSlider();
-  if ($(window).width() < 769) {
-    vegetablePatchSlider();
+  if ($(window).width() > 769) {
+    internalProductSlider();
   }
 });
 
+$(window).resize(function () {    
+  if ($(window).width() < 769) {
+    bestSellingSlider();
+    reviewProductSlider();
+    vegetablePatchSlider();
+  }
+  if ($(window).width() > 769) {
+    internalProductSlider();
+  }
+});
 
-function bestSellingSlider() {
-  var swiper = new Swiper(".js-selling-product", {
-    slidesPerView: "auto",
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
 function addedFavorite() {
   $('.cp-toast').hide();
 
@@ -40,6 +35,17 @@ function addedFavorite() {
       $('.cp-toast').toggleClass('typ-error', !isActive);
       $('.cp-toast').text(toastMessage).show().delay(3000).fadeOut();
   }); 
+}
+
+function bestSellingSlider() {
+  var swiper = new Swiper(".js-selling-product", {
+    slidesPerView: "auto",
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 }
 
 function reviewProductSlider() {
@@ -74,5 +80,22 @@ function vegetablePatchSlider() {
         return current + ' of ' + total;  // Custom format "1 of 5"
       }
     },
+  });
+}
+function internalProductSlider() {
+  const innerCardSlider = new Swiper('.js-product-inner-slider', { 
+    pagination: {
+      el: ('.child-pagination'), 
+      clickable: true,
+    },
+    slidesPerView: 1,
+  });
+}
+
+function vegetablePatchSlider() {
+  // Initialize the outer swiper
+  var outerSwiper = new Swiper('.js-similar-product', {
+    slidesPerView: 'auto',
+    pagination: 'false',
   });
 }
