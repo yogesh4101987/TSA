@@ -164,6 +164,11 @@
     }
   }
   &.typ-vegetable-patch{ 
+    margin-bottom: 6.4rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-bottom: 4.8rem;
+
+    }
     .product-title{
       font-family: $font-medium;
       font-size: 1.6rem;
@@ -277,6 +282,11 @@
   }
   
   &.typ-stories{
+    margin: 6.4rem 0;
+    @media only screen and (max-width: $media-mobile) {
+      margin-bottom: 4.8rem;
+
+    }
     .sec-desc{
       @media only screen and (max-width: $media-sm) {
         padding-top:1rem;
