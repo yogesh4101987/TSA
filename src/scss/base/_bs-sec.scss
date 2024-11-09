@@ -5,6 +5,7 @@
 .bs-sec {
   padding: 4rem 0rem;
   position: relative;
+  overflow: hidden;
   @media only screen and (max-width: $media-sm) {
     padding: 2.4rem 0rem;
   }
@@ -14,6 +15,8 @@
   }
   .sec-head {
     margin-bottom: 3.2rem;
+    position: relative;
+    z-index: 1;
     @media only screen and (max-width: $media-sm) {
       margin-bottom: 1.6rem;
     }
@@ -127,7 +130,8 @@
     }
   }
   &.typ-commerce-blog,
-  &.typ-vegetable-patch {
+  &.typ-vegetable-patch,
+  &.typ-similar-prod {
     position: relative;
     overflow: hidden;
     background: #f3f4f6;
@@ -159,7 +163,21 @@
       color: $clr-root;
     }
   }
-
+  &.typ-vegetable-patch{ 
+    .product-title{
+      font-family: $font-medium;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #F3F4F6;
+      margin-bottom: 1.2rem;
+      @media only screen and (max-width: $media-mobile) {
+        margin-bottom: 0.8rem;
+      }      
+    }
+  }
+  &.typ-similar-prod{
+    margin-top: 0;
+  }
   &.typ-eCommerce-banner {
     padding: 0;
     background-color: #f3f4f6;
@@ -244,7 +262,10 @@
     }
   }
 
-  &.type-trade-hand-tool{
+  &.typ-trade-hand-tool{
+    padding: 0;
+    background: #FFF4D7;
+    padding: 2.4rem 0;
     .container{
       display: flex;
       justify-content: space-between;
@@ -260,6 +281,80 @@
       @media only screen and (max-width: $media-sm) {
         padding-top:1rem;
       }
+    }
+  }
+
+  &.typ-best-selling{
+    background: #FFFBF2;
+    &::after{
+      content: "\e900";
+      font-family: 'icomoon';
+      font-size: 13.4rem;
+      color: #FFE399;
+      position: absolute;
+      top: 2.2rem;
+      right: 9rem;  
+      @media only screen and (max-width: $media-sm){
+        font-size: 5rem;
+        top: 1.2rem;
+        right: 3rem;
+      }
+    }
+    &::before{
+      content: "";
+      width: 44rem;
+      height: 44rem;
+      background: #FFF4D7;
+      @include border-radius(50%);
+      position: absolute;
+      top: -12.6rem;
+      right: -10rem;
+      @media only screen and (max-width: $media-sm){
+        width: 16rem;
+        height: 16rem;
+        top: -4.6rem;
+        right: -5.6rem;
+      }
+    }
+  }
+  &.typ-review-product{
+    background: #FFF6F2;   
+    &::before{
+      content: "";
+      width: 44rem;
+      height: 44rem;
+      background: #FDECE5;
+      @include border-radius(50%);
+      position: absolute;
+      top: -12.6rem;
+      right: -10rem;
+      @media only screen and (max-width: $media-sm){
+        width: 16rem;
+        height: 16rem;
+        top: -4.6rem;
+        right: -5.6rem;
+      }
+    }
+    &::after{
+      content: "\e941";
+      font-family: 'icomoon';
+      font-size: 13.4rem;
+      color: #FCDACC;
+      position: absolute;
+      top: 2.2rem;
+      right: 9rem;  
+      @media only screen and (max-width: $media-sm){
+        font-size: 5rem;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+  }
+  &.typ-patch-banner{
+    padding: 0;
+    @media only screen and (max-width: $media-sm) {
+      padding-top: 1.6rem;
+      padding-bottom: 2.4rem;
     }
   }
 }

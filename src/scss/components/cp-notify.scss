@@ -5,7 +5,7 @@
     margin-top: 2.4rem;
     padding: 1.6rem 2.4rem;
     @include border-radius(1.6rem);
-    background-color: $clr-primary;
+    background-color: #5a245a;
     position: relative;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
         right: 1.5rem;
         @include transform(translateY(-50%));
         z-index: 1;
-        color: #6498E2;
+        color: #BDA7BD;
         font-size: 9.6rem;
         @media only screen and (max-width: $media-mobile) {
             @include transform(none);
@@ -99,6 +99,11 @@
         }
         .notify-btn{
             min-width: auto;
+            background: transparent;
+            &.btn-white{
+                background: $clr-root;
+                color: #333333;
+            }
         }
         .notify-icon{
             font-size: 11.6rem;
@@ -121,4 +126,108 @@
             gap: 0.8rem;
         }
     }
+
+    &.typ-query{
+        padding: 2.4rem;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 1.6rem;
+        margin-top: 0;
+        background-color: #5A245A;
+        @media only screen and (max-width: $media-mobile) {
+            padding: 1.6rem;
+            flex-direction: column;
+            gap: 0;
+            align-items: flex-start;
+        }
+      
+        .notify-title{
+            margin-bottom: 0.8rem;
+        }
+        .notify-btn{
+            min-width: auto;
+        }
+        .notify-icon{
+            font-size: 11.6rem;
+            color: #BDA7BD;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 9.6rem;
+            }
+            &.icon-brochure{
+                font-size: 8.6rem;
+                @media only screen and (max-width: $media-mobile) {
+                    @include transform(none);
+                    font-size: 8.6rem;
+                } 
+            }
+            &.icon-search{
+                font-size: 13.6rem;
+                top: 37%;
+                right: -1.5rem;
+               
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 9.6rem;
+                    top: -1.5rem;
+                    right: -1rem;
+                } 
+            }
+        }
+        .btn-wrap{
+            flex-grow: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            z-index: 2;
+        }
+        .notify-btn{
+            background-color: #5A245A;
+            color: $clr-root;
+      
+            &:nth-child(2){
+                color: #5A245A;
+                background-color: $clr-root;
+            }
+        }
+    }
+    &.typ-download-brochure{
+        padding: 2.4rem;
+        justify-content: space-between;
+        align-items: center;
+        @media only screen and (max-width: $media-mobile) {
+            flex-direction: column;
+            padding: 1.6rem; 
+            align-items: flex-start;
+        }
+     .title{
+        max-width: 75%;
+     }
+     .btn-wrap{
+        flex-grow: 0;
+        z-index: 2;
+        align-self: flex-end;
+        @media only screen and (max-width: $media-mobile) { 
+            align-self: flex-start; 
+            flex-grow: 1;
+        }
+    }
+    .notify-icon {
+        position: absolute;
+        top: 45%;
+        right: 0;
+        font-size: 11.6rem;
+        @media only screen and (max-width: $media-mobile) {
+            top: 4.2rem;
+            right: 0rem;
+            font-size: 8.6rem;
+        }
+    }
+    .notify-btn{
+        background-color: $clr-root;
+        color:#5a245a;
+        padding: 0.9rem 1.6rem;
+        min-width: 19.6rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+  }
 }
