@@ -1,0 +1,55 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-accordion {
+    border-bottom: 1px solid $clr-border;
+  .question-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: $media-mobile) {
+      padding: 2rem;
+    }
+    .question-text {
+      font-family: $font-regular;
+      font-size: 1.4rem;
+      font-family: 2rem;
+    }
+    .icon{
+        font-size: 2.4rem;
+        color: $clr-primary;
+      }
+  }
+  .answer-wrap {
+    display: none;
+    padding: 0 1.5rem;
+  }
+
+  &.clicked{
+    background-color: #F3F4F6;
+    .question-wrap{
+        .question-text{
+            font-family: $font-semiBold;
+            color: $clr-base;
+        }
+    }
+    
+  }
+  
+}
+
+
+.star-review{
+    padding: 2rem;
+    .icon{
+      color:grey;
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+    .selected{
+        color: yellow;
+    }
+}
+
+

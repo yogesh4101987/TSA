@@ -1,0 +1,47 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+
+
+.cp-ask-question{
+
+   .product-brand{
+    padding:1.2rem 1.6rem;
+     display: flex;
+     align-items: flex-start;
+     gap:1.2rem;
+     background-color: #FFFBF3;;
+     border-top: 1px solid #FFE399;
+     border-bottom: 1px solid #FFE399;
+     
+   .img-wrap{
+    border-radius: 1.2rem;
+    overflow: hidden;
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid $clr-border;
+     img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+     }
+   }
+   .product-name{
+
+    .brand-name{
+        font-family: $font-regular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+    .product-name{
+        font-family: $font-semiBold;
+        font-size: 2rem;
+        line-height: 2.8rem;
+
+    }
+   }
+
+}
+
+
+}

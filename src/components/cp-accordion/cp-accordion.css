@@ -1,0 +1,54 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-accordion {
+  border-bottom: 1px solid #DEDEDE;
+}
+.cp-accordion .question-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion .question-wrap {
+    padding: 2rem;
+  }
+}
+.cp-accordion .question-wrap .question-text {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  font-family: 2rem;
+}
+.cp-accordion .question-wrap .icon {
+  font-size: 2.4rem;
+  color: #3D7EDB;
+}
+.cp-accordion .answer-wrap {
+  display: none;
+  padding: 0 1.5rem;
+}
+.cp-accordion.clicked {
+  background-color: #F3F4F6;
+}
+.cp-accordion.clicked .question-wrap .question-text {
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+
+.star-review {
+  padding: 2rem;
+}
+.star-review .icon {
+  color: grey;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.star-review .selected {
+  color: yellow;
+}
+
+/*# sourceMappingURL=cp-accordion.css.map */
