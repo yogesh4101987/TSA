@@ -91,3 +91,11 @@ function internalProductSlider() {
     slidesPerView: 1,
   });
 }
+
+function vegetablePatchSlider() {
+  // Initialize the outer swiper
+  var outerSwiper = new Swiper('.js-similar-product', {
+    slidesPerView: 'auto',
+    pagination: 'false',
+  });
+}

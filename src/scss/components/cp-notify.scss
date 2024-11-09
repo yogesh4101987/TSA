@@ -99,6 +99,11 @@
         }
         .notify-btn{
             min-width: auto;
+            background: transparent;
+            &.btn-white{
+                background: $clr-root;
+                color: #333333;
+            }
         }
         .notify-icon{
             font-size: 11.6rem;

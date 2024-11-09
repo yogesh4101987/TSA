@@ -914,8 +914,8 @@ p {
 @media only screen and (max-width: 991px) {
   .bs-sec.typ-review-product::after {
     font-size: 5rem;
-    top: 1.2rem;
-    right: 3rem;
+    top: 1rem;
+    right: 1rem;
   }
 }
 .bs-sec.typ-patch-banner {
@@ -1414,19 +1414,19 @@ p {
   }
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-vegetable-patch {
+  .bs-swiper.typ-similar-product, .bs-swiper.typ-vegetable-patch {
     margin-right: -1.6rem;
   }
 }
-.bs-swiper.typ-vegetable-patch .swiper-slide {
+.bs-swiper.typ-similar-product .swiper-slide, .bs-swiper.typ-vegetable-patch .swiper-slide {
   width: 29.6rem !important;
   margin-right: 2rem;
 }
-.bs-swiper.typ-vegetable-patch .swiper-slide.swiper-slide-next .product-title {
+.bs-swiper.typ-similar-product .swiper-slide.swiper-slide-next .product-title, .bs-swiper.typ-vegetable-patch .swiper-slide.swiper-slide-next .product-title {
   color: #3D7EDB;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-vegetable-patch .swiper-slide {
+  .bs-swiper.typ-similar-product .swiper-slide, .bs-swiper.typ-vegetable-patch .swiper-slide {
     margin-right: 1.2rem;
   }
 }
