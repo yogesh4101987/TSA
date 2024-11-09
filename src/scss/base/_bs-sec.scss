@@ -250,6 +250,12 @@
     }
   }
   &.typ-plp{
+    .sec-title,
+    .sec-head{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }    
     .count{
       @include border-radius(2.6rem);
       background: $clr-secondary;

@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="/components/cp-bottom-sticky/cp-bottom-sticky.css" />    
     <link rel="stylesheet" href="/components/cp-breadcrumb/cp-breadcrumb.css" />
     <link rel="stylesheet" href="/components/cp-agrico-search/cp-agrico-search.css"/>
-    <link rel="stylesheet" href="../components/cp-product-card/cp-product-card.css" />
     <link rel="stylesheet" href="../components/cp-toast/cp-toast.css" />
     <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
     <link rel="stylesheet" href="../components/cp-product-details/cp-product-details.css" />
@@ -251,7 +250,7 @@
         </div>
       </section>
       <!--  ends trade-hand-tool  -->
-         <!-- starts Vegetable Patch Banner  -->
+        <!-- starts Vegetable Patch Banner  -->
       <section class="bs-sec typ-patch-banner">
         <div class="sec-cont">
           <div class="bs-swiper swiper typ-patch-banner js-patch-banner">
@@ -389,16 +388,50 @@
           </div>	
           <div class="sec-cont">
             <ul class="lyt-plp">
-              <li class="grid-col">                
-                <a href="#" class="cp-product-card">
+              <li class="grid-col">
+                <div class="cp-product-card typ-2">
                   <div class="lhs">
                     <span class="product-tag">Bestselling</span>
-                    <div class="img-wrap">
-                      <picture>
-                        <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
-                        <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-1.png">
-                        <img src="../components/cp-product-card/images/product-1.png" alt="product_img" />
-                      </picture>
+                    <div class="bs-swiper swiper typ-inner-card-slider js-inner-card-slider">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-vertical-1.png">
+                              <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-vertical-1.png">
+                              <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-vertical-1.png">
+                              <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-vertical-1.png">
+                              <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-vertical-1.png">
+                              <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-vertical-1.png">
+                              <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-vertical-1.png">
+                              <source media="(max-width:991px)" srcset="../components/cp-product-card/images/product-vertical-1.png">
+                              <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                            </picture>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination child-pagination"></div>
                     </div>
                   </div>
                   <div class="rhs">
@@ -441,9 +474,9 @@
                       <button class="btn-icon icon icon-unfill-like js-add-favorite"></button>
                     </div>
                   </div>
-                </a>
+                </div>
               </li>
-              <li class="grid-col">
+              <!-- <li class="grid-col">
                 <a href="#" class="cp-product-card">
                   <div class="lhs">
                     <span class="product-tag">Bestselling</span>
@@ -654,7 +687,7 @@
                     </div>
                   </div>
                 </a>
-              </li>
+              </li> -->
             </ul>
             <div class="cp-toast">
               <p class="msg">Added to Favorite</p>

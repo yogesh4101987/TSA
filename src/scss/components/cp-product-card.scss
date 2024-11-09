@@ -251,7 +251,7 @@
             padding: 0.9rem 1.6rem;
             @media only screen and (max-width: $media-mobile) {
                 min-width: 13.3rem;
-            }
+            }           
         }
         .btn-icon{
             position: relative;
@@ -268,11 +268,15 @@
                 left: 50%;
                 @include transform(translate(-50%, -50%));
             }
+            .text{
+                color: #999999;
+            }
             &.active{
                 color: $clr-secondary;
             }
         }
-    }
+    }    
+    &.typ-grid-view,
     &.typ-2{
         // max-width: 29.6rem;
         flex-direction: column;
@@ -348,6 +352,150 @@
                 font-size: 1.4rem;
                 line-height: 2rem;
                 padding: 0.9rem 1.6rem;
+            }
+        }
+    }
+    &.typ-grid-view{
+        .cp-feature{
+            display: none;
+        }
+        .btn{            
+            &.btn-icon{
+                min-width: auto;
+                .text{
+                    display: none;
+                }
+            }
+        }
+    }
+    &.typ-list-view{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        .lhs{
+            width: 25%;
+        }
+        .rhs{
+            width: 75%;
+            padding: 1.6rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: none;
+            border-left: 1px solid $clr-border;
+        }
+        .wrap{
+            width: 32%;
+            &.typ-full{
+                width: 100%;
+            }
+        }
+        .img-wrap{
+            max-width: 26.4rem;
+            height: 13.2rem;
+            margin: 4rem auto 2.4rem;
+        }        
+        .prod-title{
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }        
+        .specification {
+            margin-bottom: 0;
+            gap: 0.4rem;
+          .tags{
+            padding: 0.4rem 0.8rem;
+            color: $clr-base;
+            &.typ-more{
+                width: auto;
+            }
+          }
+        }
+        .review-list {
+            margin-bottom: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.2rem;
+            .review-item{
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 1px;
+                    height: 1.6rem;
+                    background: $clr-para;
+                    position: absolute;
+                    top: -0.2rem;
+                    right: -0.6rem;
+                    display: none;
+                }
+                &:last-child{
+                    &::before{
+                        display: none;
+                    }
+                }                
+            }
+        }        
+        .price-wrap {
+            .text{
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                display: none;
+            }
+            .discounted-price {
+                font-size: 1.4rem;
+                line-height: 2rem;
+                margin-bottom: 0.2rem;
+                .amt{
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                }
+            }
+        }
+        .delivery-info{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.2rem;
+            .delivery-text{
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+            }
+        }
+        .action-wrap {
+            display: flex;
+            justify-items: flex-start;
+            flex-direction: column-reverse;
+            .btn-icon{
+               
+            }
+            .btn{
+                min-width: 28rem;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                padding: 0.9rem 1.6rem;
+            }
+        }
+        .cp-feature{
+            .feature-title{
+                font-family: $font-semiBold;
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+            .feature-item{
+                font-size: 1.2rem;
+                padding-bottom: 1.2rem;
+            }
+        }
+        .bs-swiper.typ-plp-slider{
+            .swiper-slide{
+                border: navajowhite;
+            }
+            .child-pagination{
+                display: none;
             }
         }
     }

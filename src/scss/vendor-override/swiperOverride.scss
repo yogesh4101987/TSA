@@ -458,4 +458,20 @@
       }
     }
   }
+
+  &.typ-plp-slider{
+    width: 29.6rem;
+    padding-bottom: 2.2rem;
+    .swiper-pagination-bullet::after{
+      border: 0;
+    }
+    .child-pagination{
+      width: 29.6rem
+    }
+    .swiper-slide{
+      width: 29.6rem !important;
+      border-bottom: 1px solid $clr-border;
+      margin-right: 0;
+    }   
+  }
 }
