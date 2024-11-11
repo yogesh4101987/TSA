@@ -5,10 +5,10 @@ $(document).ready(function() {
 });
 
 function drawerFunc() {
-    $(document).on('click', '.js-details[data-id]', function(e) {
+    $(document).on('click', '.js-drawer[data-id]', function(e) {
         e.preventDefault();
         var detailId = $(this).data('id'); 
-        var drawer = $('.cp-drawer[data-id="' + detailId + '"]'); 
+        var drawer = $('.cp-drawer[id="' + detailId + '"]'); 
         drawer.addClass('active'); 
         $('body').addClass('cm-overflow-hidden');
         $('.cm-overlay').addClass('active');
