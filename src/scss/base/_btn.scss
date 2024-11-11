@@ -76,9 +76,10 @@
     &.btn-icon{
         border: 1px solid $clr-root;
         display: flex;
-        align-items: center;        
+        align-items: center;      
+        justify-content: center;  
         .icon{
-            margin-left: 0.5rem;
+            margin: 0 0.5rem;
             font-size: 1.8rem;
             line-height: 2rem;
             @media only screen and (max-width: $media-sm) {

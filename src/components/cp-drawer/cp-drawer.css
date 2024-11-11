@@ -12,14 +12,13 @@
   right: -9999px;
   z-index: 5;
   background: #FFFFFF;
-  padding: 5.2rem 1.2rem 1.6rem 1.6rem;
+  padding: 1.6rem 1.2rem 1.6rem 1.6rem;
   transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
   border-radius: 2.4rem 0 0 2.4rem;
   -webkit-border-radius: 2.4rem 0 0 2.4rem;
   -moz-border-radius: 2.4rem 0 0 2.4rem;
-  overflow-y: auto;
   display: none;
 }
 .cp-drawer.active {
@@ -41,12 +40,26 @@
     bottom: 0;
   }
 }
-.cp-drawer .icon.icon-close {
+.cp-drawer .head-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.2rem 0;
+}
+.cp-drawer .head-sec .drawer-title {
+  font-family: "Poppins Medium";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #333333;
+}
+.cp-drawer .head-sec .icon.icon-close {
   font-size: 2.2rem;
   color: #999999;
-  position: absolute;
-  top: 1.6rem;
-  right: 1.6rem;
+}
+.cp-drawer .cont-wrap {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 /*# sourceMappingURL=cp-drawer.css.map */

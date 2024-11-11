@@ -353,17 +353,23 @@
 
 
   &.typ-trade-hand-tool{
-    display: none;
+    overflow: visible;
     @media only screen and (max-width: $media-mobile){
       padding: 1.6rem 0;
       margin-right: -1.6rem;
       display: block;
+      overflow: hidden;
     }
    
     .swiper-slide{
+      width: 19.1rem;
+      height: 14.0rem;
+      margin-right: 2rem;
+      @media only screen and (max-width: $media-mobile){
       width: 10.6rem;
-    height: 9.6rem;
-    display: flex;
+      height: 9.6rem;
+      margin-right: 0.6rem;
+      }
     }
   }
   &.typ-real-stories{
@@ -379,7 +385,6 @@
 
     }
   }
-
 
   &.typ-patch-banner{
     display: none;
@@ -402,13 +407,15 @@
       margin-right: -1.6rem;
     }
     .swiper-slide{
-      width: 34.3rem !important;
-      margin-right: 2rem;
+      width: 29.5rem !important;      
+      margin-right: 1.9rem;
       @media only screen and (max-width: $media-mobile) {
+        width: 34.3rem !important;
         margin-right: 1.6rem;
       }
     }
   }
+  &.typ-similar-product,
   &.typ-vegetable-patch{
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
@@ -439,8 +446,33 @@
       width: 29.6rem !important;
       border-bottom: 1px solid $clr-border;
       margin-right: 0;
-    }    
-
+    }   
+  }
+  &.typ-product-inner-slider{   
+    padding-bottom: 2.2rem;
+    width: 29.5rem;
+    @media only screen and (max-width: $media-mobile) {
+      padding: 0;
+      width: 13.4rem;
+    }
+    .swiper-pagination-bullet::after{
+      border: 0;
+    }
+    .child-pagination{
+      width: 29.5rem;
+      @media only screen and (max-width: $media-mobile) {
+        display: none;
+      }
+    }
+    .swiper-slide{
+      width: 29.5rem !important;
+      border-bottom: 1px solid $clr-border;
+      margin-right: 0;
+      @media only screen and (max-width: $media-mobile) {
+        width: 13.4rem !important;
+        border: 0;
+      }
+    } 
   }
   &.typ-drawer-card-slider{
     width: 34.4rem;
@@ -456,6 +488,34 @@
       margin-right: 0;     
       border: 1px solid $clr-border; 
       @include border-radius(1.2rem);
+    }   
+  }
+
+ 
+
+  &.typ-plp-slider{
+    width: 29.6rem;
+    padding-bottom: 2.2rem;
+    @media only screen and (max-width: $media-mobile) {
+      width: 11.8rem;
+    }
+    .swiper-pagination-bullet::after{
+      border: 0;
+    }
+    .child-pagination{
+      width: 29.6rem;
+      @media only screen and (max-width: $media-mobile) {
+        display: none;
+      }
+    }
+    .swiper-slide{
+      width: 29.6rem !important;
+      border-bottom: 1px solid $clr-border;
+      margin-right: 0;
+      @media only screen and (max-width: $media-mobile) {
+        width: 11.8rem !important;
+        border-bottom: none;
+      }
     }   
   }
 }

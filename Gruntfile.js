@@ -67,7 +67,7 @@ module.exports = function(grunt) {
             middlewares.unshift(function(req, res, next) {
               if (req.url.endsWith('.css')) {
                 res.setHeader('Content-Type', 'text/css');
-                console.log(`Serving ${req.url} with Content-Type: text/css`);
+                // console.log(`Serving ${req.url} with Content-Type: text/css`);
               }
               return next();
             });
