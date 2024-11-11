@@ -4,7 +4,11 @@
 .cp-product-details{
     .product-img{
         position: relative;        
-        margin-bottom: 1.6rem;        
+        margin-bottom: 3.6rem;
+        width: 43.6rem;
+        @media only screen and (max-width: $media-mobile) {
+            margin-bottom: 1.6rem;
+        }
         .product-tag{
             position: absolute;
             top: 1.2rem;
@@ -21,12 +25,10 @@
         }
         .img-wrap{
             margin: 4.2rem 6rem;
-            max-width: 43.6rem;
-            height: 25.8rem;
+            max-width: 31rem;
+            height: 15.5rem;   
             @media only screen and (max-width: $media-mobile) {
-                margin: 4.15rem 1.6rem;
-                max-width: 31rem;
-                height: 15.5rem;
+                margin: 4.15rem 1.6rem;                 
             }
             
             img {

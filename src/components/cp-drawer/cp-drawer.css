@@ -6,13 +6,13 @@
 /*opacity- end*/
 .cp-drawer {
   width: 50.5rem;
-  height: 100vh;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   top: 0;
   right: -9999px;
-  z-index: 5;
+  z-index: 9;
   background: #FFFFFF;
-  padding: 1.6rem 1.2rem 1.6rem 1.6rem;
+  padding: 2.4rem 3.2rem 2.4rem 2rem;
   transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
@@ -34,6 +34,7 @@
     top: auto;
     right: 0;
     bottom: -99999px;
+    padding: 1.6rem 1.2rem 1.6rem 1.6rem;
     border-radius: 2.4rem 2.4rem 0 0;
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
     -moz-border-radius: 2.4rem 2.4rem 0 0;
@@ -45,7 +46,7 @@
 .cp-drawer .head-sec {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 1.2rem 0;
 }
 .cp-drawer .head-sec .drawer-title {
@@ -55,8 +56,19 @@
   color: #333333;
 }
 .cp-drawer .head-sec .icon.icon-close {
+  position: absolute;
+  top: 2.4rem;
+  right: 3.2rem;
   font-size: 2.2rem;
   color: #999999;
+}
+@media only screen and (max-width: 768px) {
+  .cp-drawer .head-sec .icon.icon-close {
+    right: 1.6rem;
+  }
+}
+.cp-drawer.typ-prod-detail {
+  padding-top: 4rem;
 }
 
 /*# sourceMappingURL=cp-drawer.css.map */

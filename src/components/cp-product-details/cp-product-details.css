@@ -6,7 +6,13 @@
 /*opacity- end*/
 .cp-product-details .product-img {
   position: relative;
-  margin-bottom: 1.6rem;
+  margin-bottom: 3.6rem;
+  width: 43.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-details .product-img {
+    margin-bottom: 1.6rem;
+  }
 }
 .cp-product-details .product-img .product-tag {
   position: absolute;
@@ -26,14 +32,12 @@
 }
 .cp-product-details .product-img .img-wrap {
   margin: 4.2rem 6rem;
-  max-width: 43.6rem;
-  height: 25.8rem;
+  max-width: 31rem;
+  height: 15.5rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-product-details .product-img .img-wrap {
     margin: 4.15rem 1.6rem;
-    max-width: 31rem;
-    height: 15.5rem;
   }
 }
 .cp-product-details .product-img .img-wrap img {
