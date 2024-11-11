@@ -2,54 +2,64 @@
 @import "../config/mixin";
 
 .cp-accordion {
+  .accord-wrap {
     border-bottom: 1px solid $clr-border;
-  .question-wrap {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @media only screen and (max-width: $media-mobile) {
+    border-top: 1px solid $clr-border;
+
+    .question-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 2rem;
-    }
-    .question-text {
-      font-family: $font-regular;
-      font-size: 1.4rem;
-      font-family: 2rem;
-    }
-    .icon{
-        font-size: 2.4rem;
-        color: $clr-primary;
+      position: relative;
+
+      .question-text {
+        font-family: $font-regular;
+        font-size: 1.4rem;
+        line-height: 2rem;
       }
-  }
-  .answer-wrap {
-    display: none;
-    padding: 0 1.5rem;
-  }
 
-  &.clicked{
-    background-color: #F3F4F6;
-    .question-wrap{
-        .question-text{
-            font-family: $font-semiBold;
-            color: $clr-base;
+      &::after {
+        content: "\e921";
+        font-family: icomoon;
+        font-size: 2.4rem;
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .answer-wrap {
+      display: none;
+      padding: 0 1.5rem;
+      margin-bottom: 1rem;
+    }
+    &.clicked {
+      background-color: #fff6f2;
+      border-bottom: 1px solid #f8b499;
+      border-top: 1px solid #f8b499;
+      .question-wrap {
+        .question-text {
+          font-family: $font-semiBold;
+          color: $clr-base;
         }
+        &::after {
+          content: "\e922";
+        }
+      }
     }
-    
   }
-  
 }
 
-
-.star-review{
-    padding: 2rem;
-    .icon{
-      color:grey;
-      font-size: 3rem;
-      margin-right: 1rem;
-    }
-    .selected{
-        color: yellow;
-    }
+.star-review {
+  padding: 2rem;
+  .icon {
+    color: grey;
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  .selected {
+    color: yellow;
+  }
 }
-
-

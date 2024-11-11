@@ -60,5 +60,15 @@
     max-width: 34.3rem;
   }
 }
+.cp-search.typ-full-width {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-search.typ-full-width .search-wrap {
+    display: block;
+    width: 100%;
+    min-width: 34.3rem;
+  }
+}
 
 /*# sourceMappingURL=cp-search.css.map */

@@ -14,6 +14,9 @@
 .cp-tab .tab-list::-webkit-scrollbar {
   display: none;
 }
+.cp-tab .tab-list .tab-item {
+  flex-shrink: 0;
+}
 .cp-tab .tab-list .tab-item .title {
   border: 1px solid #DEDEDE;
   font-family: "Poppins Regular";
@@ -30,6 +33,9 @@
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   padding: 0.6rem 1.6rem;
+}
+.cp-tab .tab-list .tab-item .title.typ-capital {
+  text-transform: capitalize;
 }
 .cp-tab .tab-list .tab-item:hover .title, .cp-tab .tab-list .tab-item.active .title {
   border: 1px solid #DEDEDE;

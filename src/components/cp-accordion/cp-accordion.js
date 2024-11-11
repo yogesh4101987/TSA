@@ -1,30 +1,43 @@
 $(document).ready(function () {
-   accordion();
-   selectStar();
+  accordion();
+  selectStar();
 });
 
 function accordion() {
-  $(".question-wrap").on("click", function () {
-    if ($(this).next(".answer-wrap").hasClass("active")) {
-      $(this).next(".answer-wrap").removeClass("active").slideUp();
-      $(this).children(".icon").removeClass("icon-minus").addClass("icon-plus");
-      $(this).parent(".cp-accordion").removeClass("clicked");
-    } else {
-      $(".answer-wrap").removeClass("active").slideUp();
-      $(".question-wrap").children(".icon").removeClass("icon-minus").addClass("icon-plus");
-      $(".question-wrap").parent(".cp-accordion").removeClass("clicked");
-      $(this).next(".answer-wrap").addClass("active").slideDown();
-      $(this).children(".icon").addClass("icon-minus").removeClass("icon-plus");
-      $(this).parent(".cp-accordion").toggleClass("clicked");
-    }
+  $(".question-wrap").off().on("click", function () {
+      if ($(this).parent(".accord-wrap").hasClass("clicked")) {
+        $(this).next(".answer-wrap").slideUp();
+        $(this).parent(".accord-wrap").removeClass("clicked");
+      } else {
+        $(".answer-wrap").slideUp();
+        $(".accord-wrap").removeClass("clicked");
+        $(this).parent(".accord-wrap").addClass("clicked");
+        $(this).next(".answer-wrap").slideDown();
+      }
+    });
+}
+
+function selectStar() {
+  $(".icon").on("click", function () {
+    $(".icon").removeClass("selected");
+
+    $(this).addClass("selected").prevAll().addClass("selected");
   });
 }
 
-function selectStar(){
-  $('.icon').on('click',function(){
-    $('.icon').removeClass('selected');
-
-    $(this).addClass("selected").prevAll().addClass("selected");
-   console.log($(this),"clicked element")
-  })
-}
+// function accordion() {
+//   $(document).off().on("click", ".question-wrap", function (event) {
+//     var $this = $(this);
+//     var parentElm = $this.closest(".accord-wrap");
+//     if ($this.hasClass("clicked")) {
+//       parentElm.removeClass("clicked");
+//       parentElm.find(".answer-wrap").slideUp();
+//     } else {
+//       $(".cp-accordion").find(".accord-wrap").removeClass("clicked");
+//       $(".cp-accordion").find(".answer-wrap").slideUp();
+//       parentElm.find(".answer-wrap, .question-wrap").addClass("clicked");
+//       parentElm.addClass("clicked");
+//       parentElm.find(".answer-wrap").slideDown();
+//     }
+//   });
+// }
