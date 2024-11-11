@@ -1305,6 +1305,12 @@ p {
 .bs-swiper.type-big-img-slider.typ-popup {
   border: 0;
 }
+@media only screen and (max-width: 768px) {
+  .bs-swiper.type-big-img-slider.typ-popup {
+    width: 37.5rem;
+    height: 75%;
+  }
+}
 .bs-swiper.type-thumb {
   margin-top: 1.2rem;
 }
@@ -1614,7 +1620,11 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .bs-modal.type-lg .modal-dialog {
-    padding: 2rem 1.5rem;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.type-lg .modal-content {
     height: 100%;
   }
 }

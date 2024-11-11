@@ -7,6 +7,11 @@
 .cp-prod-thumb-slider {
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .cp-prod-thumb-slider {
+    height: 100%;
+  }
+}
 .cp-prod-thumb-slider .seller-tag {
   background: #D8E5F8;
   border-radius: 26px;

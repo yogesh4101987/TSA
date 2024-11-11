@@ -309,7 +309,10 @@
     }
     &.typ-popup{
       border: 0;
-     
+        @media only screen and (max-width: $media-mobile) {
+          width: 37.5rem;
+          height: 75%;
+        }
     }
   }
   &.type-thumb{

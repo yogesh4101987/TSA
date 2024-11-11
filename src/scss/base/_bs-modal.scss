@@ -104,7 +104,11 @@
             padding: 0;
             max-width: 82rem;
             @media only screen and (max-width: $media-mobile) {
-                padding: 2rem 1.5rem;
+                height: 100%;
+            }
+        }
+        .modal-content{
+            @media only screen and (max-width: $media-mobile) {
                 height: 100%;
             }
         }

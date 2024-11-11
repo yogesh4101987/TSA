@@ -8,6 +8,7 @@
   gap: 1.9rem;
   @media only screen and (max-width: $media-mobile) {
     gap: 1.2rem;
+    flex-wrap: wrap;
   }
   .grid-col {
     width: 50%;

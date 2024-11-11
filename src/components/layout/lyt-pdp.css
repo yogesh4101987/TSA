@@ -13,6 +13,7 @@
 @media only screen and (max-width: 768px) {
   .lyt-pdp {
     gap: 1.2rem;
+    flex-wrap: wrap;
   }
 }
 .lyt-pdp .grid-col {

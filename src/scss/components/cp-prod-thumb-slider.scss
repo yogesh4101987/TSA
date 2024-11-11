@@ -4,6 +4,9 @@
 
 .cp-prod-thumb-slider{
    position: relative;
+   @media only screen and (max-width: $media-mobile)  {
+    height: 100%;
+   }
     .seller-tag{
         background: #D8E5F8;
         border-radius: 26px;
