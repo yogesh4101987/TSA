@@ -50,6 +50,11 @@
   line-height: 1.6rem;
   text-decoration: underline;
 }
+@media only screen and (max-width: 768px) {
+  .cp-add-info-list.typ-pdp {
+    order: 4;
+  }
+}
 .cp-add-info-list.typ-pdp .info-wrap {
   position: relative;
   width: 100%;

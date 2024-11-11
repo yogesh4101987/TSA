@@ -45,6 +45,9 @@
         }           
     }
     &.typ-pdp{
+        @media only screen and (max-width: $media-mobile) {
+            order: 4;
+        }
         .info-wrap{
             position: relative;
             width: 100%;
