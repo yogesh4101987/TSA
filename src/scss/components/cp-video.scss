@@ -34,12 +34,12 @@
         left: 50%;
         @include transform (translate(-50%, -50%));
         z-index: 1;
-        max-width: 6.4rem;
-        max-height: 6.4rem;
+        font-size: 6.4rem;
+        color: $clr-root;
         padding: 0;
+        display: inline-block;
         @media only screen and (max-width: $media-mobile) {
-            max-width: 2.7rem;
-            max-height: 2.7rem;
+            font-size: 2.7rem;
         }
     }
     .tag-list{
