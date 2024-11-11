@@ -18,15 +18,14 @@
     <link rel="stylesheet" href="/components/cp-bottom-sticky/cp-bottom-sticky.css" />    
     <link rel="stylesheet" href="/components/cp-breadcrumb/cp-breadcrumb.css" />
     <link rel="stylesheet" href="/components/cp-agrico-search/cp-agrico-search.css"/>
-    <link rel="stylesheet" href="../components/cp-toast/cp-toast.css" />
-    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
-    <link rel="stylesheet" href="../components/cp-product-details/cp-product-details.css" />
-    <link rel="stylesheet" href="../components/cp-trade-hand-tool-card/cp-trade-hand-tool-card.css" />
+    <link rel="stylesheet" href="/components/cp-toast/cp-toast.css" />
+    <link rel="stylesheet" href="/components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="/components/cp-trade-hand-tool-card/cp-trade-hand-tool-card.css" />
     <link rel="stylesheet" href="/components/cp-banner-wrapper/cp-banner-wrapper.css" />
     <link rel="stylesheet" href="/components/cp-feature/cp-feature.css" />
-    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
-    <link rel="stylesheet" href="../components/cp-product-details/cp-product-details.css" />
-    <link rel="stylesheet" href="../components/cp-add-info-list/cp-add-info-list.css" />
+    <link rel="stylesheet" href="/components/cp-product-card/cp-product-card.css" />
+    <link rel="stylesheet" href="/components/cp-add-info-list/cp-add-info-list.css" />
+    <link rel="stylesheet" href="./components/cp-product-details/cp-product-details.css" />
   </head>
 
   <body>
@@ -254,7 +253,7 @@
         </div>
       </section>
       <!--  ends trade-hand-tool  -->
-        <!-- starts Vegetable Patch Banner  -->
+      <!-- starts Vegetable Patch Banner  -->
       <section class="bs-sec typ-patch-banner">
         <div class="sec-cont">
           <div class="bs-swiper swiper typ-patch-banner js-patch-banner">
@@ -495,7 +494,7 @@
                         <p class="delivery-text"><span class="highlight"> Free delivery</span> (above ₹500)</p>
                       </div>
                       <div class="action-wrap">
-                        <button class="btn btn-primary">Add to cart</button>
+                        <button class="btn btn-primary js-drawer" data-id="productDetail">Add to cart</button>
                         <button class="btn btn-icon js-plp-favorite"><span class="icon icon-unfill-like"></span> <span class="text">Add to wishlist</span></button>
                       </div>
                     </div>
@@ -808,6 +807,11 @@
                   </div>
                 </div>
               </li>
+              <li class="grid-col">
+                <div class="cp-img-banner js-bg-img">
+                  
+                </div>
+              </li>
             </ul>
             <div class="cp-toast">
               <p class="msg">Added to Favorite</p>
@@ -817,124 +821,128 @@
       </section>
       <!--Products end -->
       <!-- Product Detail start-->
-      <div class="cp-drawer">        
-        <a href="#" class="icon icon-close js-close-btn"></a>        
-        <div class="cp-product-details">
-          <div class="product-img">
-            <span class="product-tag">Bestselling</span>
-            <div class="bs-swiper swiper typ-drawer-card-slider js-drawer-card-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="img-wrap">
-                    <picture>
-                      <source media="(max-width:768px)" srcset="../components/cp-product-details/images/product-detail-img.png">
-                      <source media="(max-width:991px)" srcset="../components/cp-product-details/images/product-detail-img.png">
-                      <img src="../components/cp-product-details/images/product-detail-img.png" alt="product_img" />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img-wrap">
-                    <picture>
-                      <source media="(max-width:768px)" srcset="../components/cp-product-details/images/product-detail-img.png">
-                      <source media="(max-width:991px)" srcset="../components/cp-product-details/images/product-detail-img.png">
-                      <img src="../components/cp-product-details/images/product-detail-img.png" alt="product_img" />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img-wrap">
-                    <picture>
-                      <source media="(max-width:768px)" srcset="../components/cp-product-details/images/product-detail-img.png">
-                      <source media="(max-width:991px)" srcset="../components/cp-product-details/images/product-detail-img.png">
-                      <img src="../components/cp-product-details/images/product-detail-img.png" alt="product_img" />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img-wrap">
-                    <picture>
-                      <source media="(max-width:768px)" srcset="../components/cp-product-details/images/product-detail-img.png">
-                      <source media="(max-width:991px)" srcset="../components/cp-product-details/images/product-detail-img.png">
-                      <img src="../components/cp-product-details/images/product-detail-img.png" alt="product_img" />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination drawer-pagination"></div>
-            </div> 
-          </div>
-          <div class="cont-wrap">
-            <h3 class="prod-title">High Tensile Fastners</h3>
-            <h4 class="prod-code">Grade 10.9, IS 1364 / IS 1363 & DIN EN ISO 4014</h4>
-            <ul class="tag-list">
-              <li class="tag-item">
-                <button class="tag-link icon-share"></button>
-              </li>
-              <li class="tag-item">
-                <button class="tag-link icon-unfill-like"></button>
-              </li>
-            </ul>
-            <ul class="review-list">
-              <li class="review-item">
-                <div class="review-star">
-                  <span class="icon icon-star typ-active"></span>
-                  <span class="icon icon-star typ-active"></span>
-                  <span class="icon icon-star typ-active"></span>
-                  <span class="icon icon-star typ-active"></span>
-                  <span class="icon icon-star"></span>
-                </div>
-              </li>
-              <li class="review-item">
-                <p class="product-buy">50 ratings, 40 reviews</p>
-              </li>
-            </ul>
-            <div class="price-wrap">
-              <p class="text">Starts from</p>
-              <p class="discounted-price"><span class="amt"><span class="rupee">₹</span>280</span> per piece</p>
-              <p class="regular-price">₹375 per piece</p>
-              <span class="off-price">30% off</span>
-            </div>
-            <div class="delivery-info">
-              <span class="icon icon-up-arrow"></span>                       
-              <p class="delivery-text"><span class="highlight">1200+</span> bought in past month</p>
-            </div>
-            <ul class="add-info-list">
-              <li class="add-info-item">
-                <div class="info-card">
-                  <span class="icon icon-massage-box"></span>
-                  <div class="info-wrap">
-                    <h2 class="info-title"><span class="cm-semiBold">5% OFF </span>on selective credit cards.</h2>
-                    <a href="#" class="info-link">+ 5 more offers</a>
-                  </div>
-                </div>
-              </li>
-              <li class="add-info-item">
-                <div class="info-card">
-                  <span class="icon icon-store"></span>
-                  <div class="info-wrap">
-                    <h2 class="info-title">Sold by <span class="cm-semiBold">Tata Agrico</span></h2>
-                    <p class="info-desc">Free delivery on orders above ₹500</p>
-                  </div>
-                </div>
-              </li>
-              <li class="add-info-item">
-                <div class="info-card">
-                  <span class="icon icon-store"></span>
-                  <div class="info-wrap">
-                    <h2 class="info-title">Estimated delivery: <span class="cm-semiBold">20th Sept, 2024</span></h2>
-                    <p class="info-desc">302020, Jaipur Rajasthan.</p>
-                    <a href="#" class="info-link">Update location</a>
-                  </div>
-                </div>
-              </li>
-            </ul>            
-            <div class="action-wrap">
-              <button class="btn btn-primary">Add to cart</button>
-              <button class="btn-icon icon icon-unfill-like js-add-favorite"></button>
-            </div>
-          </div>
+      <div class="cp-drawer" id="productDetail">
+        <div class="head-sec">
+          <h2 class="drawer-title">Product Detail</h2>
+          <a href="#" class="icon icon-close js-close-btn"></a>
         </div>
+        <div class="cont-wrap">
+          <div class="cp-product-details">
+            <div class="product-img">
+              <span class="product-tag">Bestselling</span>
+              <div class="bs-swiper swiper typ-drawer-card-slider js-drawer-card-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="img-wrap">
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../components/cp-product-details/images/product-detail-img.png">
+                        <source media="(max-width:991px)" srcset="../components/cp-product-details/images/product-detail-img.png">
+                        <img src="../components/cp-product-details/images/product-detail-img.png" alt="product_img" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-wrap">
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../components/cp-product-details/images/product-detail-img.png">
+                        <source media="(max-width:991px)" srcset="../components/cp-product-details/images/product-detail-img.png">
+                        <img src="../components/cp-product-details/images/product-detail-img.png" alt="product_img" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-wrap">
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../components/cp-product-details/images/product-detail-img.png">
+                        <source media="(max-width:991px)" srcset="../components/cp-product-details/images/product-detail-img.png">
+                        <img src="../components/cp-product-details/images/product-detail-img.png" alt="product_img" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-wrap">
+                      <picture>
+                        <source media="(max-width:768px)" srcset="../components/cp-product-details/images/product-detail-img.png">
+                        <source media="(max-width:991px)" srcset="../components/cp-product-details/images/product-detail-img.png">
+                        <img src="../components/cp-product-details/images/product-detail-img.png" alt="product_img" />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination drawer-pagination"></div>
+              </div> 
+            </div>
+            <div class="cont-wrap">
+              <h3 class="prod-title">High Tensile Fastners</h3>
+              <h4 class="prod-code">Grade 10.9, IS 1364 / IS 1363 & DIN EN ISO 4014</h4>
+              <ul class="tag-list">
+                <li class="tag-item">
+                  <button class="tag-link icon-share"></button>
+                </li>
+                <li class="tag-item">
+                  <button class="tag-link icon-unfill-like"></button>
+                </li>
+              </ul>
+              <ul class="review-list">
+                <li class="review-item">
+                  <div class="review-star">
+                    <span class="icon icon-star typ-active"></span>
+                    <span class="icon icon-star typ-active"></span>
+                    <span class="icon icon-star typ-active"></span>
+                    <span class="icon icon-star typ-active"></span>
+                    <span class="icon icon-star"></span>
+                  </div>
+                </li>
+                <li class="review-item">
+                  <p class="product-buy">50 ratings, 40 reviews</p>
+                </li>
+              </ul>
+              <div class="price-wrap">
+                <p class="text">Starts from</p>
+                <p class="discounted-price"><span class="amt"><span class="rupee">₹</span>280</span> per piece</p>
+                <p class="regular-price">₹375 per piece</p>
+                <span class="off-price">30% off</span>
+              </div>
+              <div class="delivery-info">
+                <span class="icon icon-up-arrow"></span>                       
+                <p class="delivery-text"><span class="highlight">1200+</span> bought in past month</p>
+              </div>
+              <ul class="cp-add-info-list">
+                <li class="add-info-item">
+                  <div class="info-card">
+                    <span class="icon icon-massage-box"></span>
+                    <div class="info-wrap">
+                      <h2 class="info-title"><span class="cm-semi-bold">5% OFF </span>on selective credit cards.</h2>
+                      <a href="#" class="info-link">+ 5 more offers</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="add-info-item">
+                  <div class="info-card">
+                    <span class="icon icon-store"></span>
+                    <div class="info-wrap">
+                      <h2 class="info-title">Sold by <span class="cm-semi-bold">Tata Agrico</span></h2>
+                      <p class="info-desc">Free delivery on orders above ₹500</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="add-info-item">
+                  <div class="info-card">
+                    <span class="icon icon-location"></span>
+                    <div class="info-wrap">
+                      <h2 class="info-title">Estimated delivery: <span class="cm-semi-bold">20th Sept, 2024</span></h2>
+                      <p class="info-desc">302020, Jaipur Rajasthan.</p>
+                      <a href="#" class="info-link">Update location</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>            
+              <div class="action-wrap">
+                <button class="btn btn-primary">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>        
       </div>
       <!-- Product Detail end-->
     </main>

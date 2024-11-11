@@ -20,6 +20,8 @@
   -webkit-border-radius: 2.4rem 0 0 2.4rem;
   -moz-border-radius: 2.4rem 0 0 2.4rem;
   display: none;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .cp-drawer.active {
   right: 0;
@@ -55,11 +57,6 @@
 .cp-drawer .head-sec .icon.icon-close {
   font-size: 2.2rem;
   color: #999999;
-}
-.cp-drawer .cont-wrap {
-  height: 100vh;
-  overflow: hidden;
-  overflow-y: auto;
 }
 
 /*# sourceMappingURL=cp-drawer.css.map */
