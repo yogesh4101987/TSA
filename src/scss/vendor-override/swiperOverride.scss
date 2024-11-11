@@ -435,13 +435,13 @@
     .swiper-slide{
      
       display: flex;
-  align-items: center;
-  justify-content: center;
-  img{
-    max-width: 310px;
-    max-height: 155px;
-    object-fit: contain
-  }
+      align-items: center;
+      justify-content: center;
+      img{
+        max-width: 310px;
+        max-height: 155px;
+        object-fit: contain
+      }
     }
   }
   &.type-thumb{
@@ -462,16 +462,26 @@
   &.typ-plp-slider{
     width: 29.6rem;
     padding-bottom: 2.2rem;
+    @media only screen and (max-width: $media-mobile) {
+      width: 11.8rem;
+    }
     .swiper-pagination-bullet::after{
       border: 0;
     }
     .child-pagination{
-      width: 29.6rem
+      width: 29.6rem;
+      @media only screen and (max-width: $media-mobile) {
+        display: none;
+      }
     }
     .swiper-slide{
       width: 29.6rem !important;
       border-bottom: 1px solid $clr-border;
       margin-right: 0;
+      @media only screen and (max-width: $media-mobile) {
+        width: 11.8rem !important;
+        border-bottom: none;
+      }
     }   
   }
 }

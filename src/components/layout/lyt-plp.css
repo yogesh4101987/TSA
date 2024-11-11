@@ -33,6 +33,11 @@
   align-items: center;
   gap: 1rem;
 }
+@media only screen and (max-width: 768px) {
+  .lyt-list {
+    display: none;
+  }
+}
 .lyt-list .lyt-item .icon {
   display: flex;
   align-items: center;

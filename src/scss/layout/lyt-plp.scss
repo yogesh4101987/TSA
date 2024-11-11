@@ -27,6 +27,9 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  @media only screen and (max-width: $media-mobile) {
+   display: none;
+  }
   .lyt-item{   
     .icon{
       display: flex;
