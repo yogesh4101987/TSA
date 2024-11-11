@@ -13,7 +13,7 @@
 .cp-add-info-list .add-info-item {
   border-bottom: 1px solid #DEDEDE;
 }
-.cp-add-info-list:last-child .add-info-item {
+.cp-add-info-list .add-info-item:last-child {
   border: none;
 }
 .cp-add-info-list .info-card {
@@ -49,6 +49,20 @@
   font-size: 1.2rem;
   line-height: 1.6rem;
   text-decoration: underline;
+}
+.cp-add-info-list.typ-pdp .info-wrap {
+  position: relative;
+  width: 100%;
+}
+.cp-add-info-list.typ-pdp .info-wrap .info-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-add-info-list.typ-pdp .info-wrap .info-link {
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=cp-add-info-list.css.map */

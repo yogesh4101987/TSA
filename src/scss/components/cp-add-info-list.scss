@@ -5,12 +5,11 @@
     border: 1px solid $clr-border;
     .add-info-item{
         border-bottom: 1px solid $clr-border;
-    }
-    &:last-child{
-        .add-info-item{
+        &:last-child{
             border: none;
-        }
-    }        
+       }  
+    }
+          
     .info-card{
         padding: 1.6rem 2rem;
         gap: 1rem;
@@ -44,5 +43,19 @@
             line-height: 1.6rem;
             text-decoration: underline;
         }           
+    }
+    &.typ-pdp{
+        .info-wrap{
+            position: relative;
+            width: 100%;
+            .info-link{
+                position: absolute;
+                right: 0;
+                top: 0;
+                @media only screen and (max-width: $media-mobile) {
+                    position: relative;
+                }
+            }
+        }
     }
 }

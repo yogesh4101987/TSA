@@ -25,4 +25,15 @@
   }
 }
 
+.feature-wrapper {
+  width: 50%;
+  margin-top: -15rem;
+}
+@media only screen and (max-width: 768px) {
+  .feature-wrapper {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=lyt-pdp.css.map */

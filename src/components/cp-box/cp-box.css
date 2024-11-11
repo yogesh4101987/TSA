@@ -21,5 +21,12 @@
 .cp-box.type-quntity .title {
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .cp-box .act-wrap {
+    position: sticky;
+    top: 10px; /* Adjust as needed */
+    z-index: 1;
+  }
+}
 
 /*# sourceMappingURL=cp-box.css.map */

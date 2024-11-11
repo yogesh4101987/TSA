@@ -221,5 +221,15 @@
   background: #F3F4F6;
   font-size: 2rem;
 }
+.cp-product-details.typ-pdp .cont-wrap .review-list {
+  display: flex;
+}
+.cp-product-details.typ-pdp .cont-wrap .review-list .review-item {
+  padding-right: 1.2rem;
+}
+.cp-product-details.typ-pdp .cont-wrap .review-list .review-item::before {
+  top: 0rem;
+  right: 0.8rem;
+}
 
 /*# sourceMappingURL=cp-product-details.css.map */

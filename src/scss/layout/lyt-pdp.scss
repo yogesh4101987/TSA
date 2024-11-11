@@ -17,3 +17,11 @@
     }
   }
 }
+.feature-wrapper{
+  width: 50%;
+  margin-top: -15rem;
+  @media only screen and (max-width: $media-mobile) {
+    margin-top: 0;
+    width: 100%;
+  }
+}

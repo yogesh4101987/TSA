@@ -208,4 +208,18 @@
             }
         }
     }
+    &.typ-pdp{
+        .cont-wrap{
+            .review-list{
+                display: flex;
+                .review-item{
+                    padding-right: 1.2rem;
+                    &::before{
+                        top:0rem;
+                        right: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
 }
