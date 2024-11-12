@@ -70,14 +70,15 @@ function reviewStarSubmit() {
 
 
 function selectStar() {
-  $(".js-star-review").Off().on("click", ".icon", function () {
+  $(".js-star-review").off().on("click", ".icon", function () {
     var starSelected = $(this).hasClass("star-selected");
 
     if (starSelected) {
       console.log("yes");
       $(".icon").removeClass("star-selected");
       $(this).removeClass("star-selected").prevAll().removeClass("star-selected");
-    } else {
+    } 
+    else {
       console.log("no");
       $(".icon").removeClass("star-selected");
       $(this).addClass("star-selected").prevAll().addClass("star-selected");

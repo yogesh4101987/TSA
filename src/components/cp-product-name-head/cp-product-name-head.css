@@ -55,8 +55,19 @@
   line-height: 2.8rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-product-name-head.typ-review-stars {
+  .cp-product-name-head.typ-product-details, .cp-product-name-head.typ-review-stars {
     display: block;
+  }
+}
+.cp-product-name-head.typ-product-details {
+  border-radius: 1.6rem;
+}
+.cp-product-name-head.typ-product-details .product-brand {
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-name-head.typ-product-details .product-brand {
+    border-radius: 1.6rem;
   }
 }
 

@@ -49,13 +49,22 @@
     }
   }
 
- 
-
+  &.typ-product-details,
   &.typ-review-stars {
     @media only screen and (max-width: $media-mobile) {
       display: block;
     }
   }
+  &.typ-product-details{
+     border-radius: 1.6rem;
+     .product-brand {
+      align-items: center;
+      @media only screen and (max-width: $media-mobile) {
+        border-radius: 1.6rem;
+      }
+     }
+  }
+
 }
 
 .form-wrapper {
