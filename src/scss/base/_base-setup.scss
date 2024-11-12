@@ -159,3 +159,9 @@ p {
 .hide {
   display: none !important;
 }
+
+.cm-sticky{
+  position: sticky; 
+position: -webkit-sticky;
+  bottom: 10px;
+}

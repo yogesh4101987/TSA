@@ -64,19 +64,13 @@
         .select-dropdown-list-item {
             display: block;
             list-style-type: none;
-            padding: 10px 15px;
-            background: #fff;
-            border-top: 1px solid #e6e6e6;
             font-size: 14px;
             line-height: 1.4;
             cursor: pointer;
             color: #616161;
             transition: all ease-in-out .3s;
             width: 100%;
-            &:hover{
-                background: #ECF2FB;
-
-            }
+           
         }
     }
     .dropdown-item{
@@ -85,5 +79,12 @@
         font-size: 14px;
         font-family: $font-regular;
         color: $clr-para;
+        background: #fff;
+        border-top: 1px solid #e6e6e6;
+        padding: 1rem;
+        &:hover{
+            background: #ECF2FB;
+
+        }
     }
 }
