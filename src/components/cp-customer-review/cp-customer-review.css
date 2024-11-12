@@ -7,6 +7,17 @@
 .cp-customer-review {
   border-bottom: 1px solid #DEDEDE;
 }
+.cp-customer-review:first-child {
+  border-top: 1px solid #DEDEDE;
+}
+@media only screen and (max-width: 1023px) {
+  .cp-customer-review:first-child {
+    border-top: none;
+  }
+}
+.cp-customer-review .review-star {
+  margin-top: 1.6rem;
+}
 .cp-customer-review .review-star .icon {
   font-size: 1.6rem;
   width: 1.6rem;

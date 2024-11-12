@@ -3,7 +3,16 @@
 
 .cp-customer-review{
       border-bottom:1px solid $clr-border;
+
+      &:first-child{
+        border-top: 1px solid $clr-border;
+        @media only screen and (max-width: $media-tab) {
+          border-top: none;
+        }
+      }
+      
     .review-star{
+      margin-top: 1.6rem;
       .icon{
         font-size: 1.6rem;
         width: 1.6rem;
