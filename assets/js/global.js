@@ -70,3 +70,6 @@ function commonPopup() {
     });
 }
 // modalPopup js end
+
+
+
