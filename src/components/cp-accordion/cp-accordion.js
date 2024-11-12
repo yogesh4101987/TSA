@@ -4,15 +4,15 @@ $(document).ready(function () {
 });
 
 function accordion() {
-  $(".question-wrap").off().on("click", function () {
-      if ($(this).parent(".accord-wrap").hasClass("clicked")) {
-        $(this).next(".answer-wrap").slideUp();
-        $(this).parent(".accord-wrap").removeClass("clicked");
+  $(".acc-head").off().on("click", function () {
+      if ($(this).parent(".acc-item").hasClass("active")) {
+        $(this).next(".acc-cont").slideUp();
+        $(this).parent(".acc-item").removeClass("active");
       } else {
-        $(".answer-wrap").slideUp();
-        $(".accord-wrap").removeClass("clicked");
-        $(this).parent(".accord-wrap").addClass("clicked");
-        $(this).next(".answer-wrap").slideDown();
+        $(".acc-cont").slideUp();
+        $(".acc-item").removeClass("active");
+        $(this).parent(".acc-item").addClass("active");
+        $(this).next(".acc-cont").slideDown();
       }
     });
 }
