@@ -21,4 +21,11 @@ function drawerFunc() {
         $('body').removeClass('cm-overflow-hidden');
         $('.cm-overlay').removeClass('active');
     });
+
+    $(document).on('click', '.cm-overlay', function(e) {
+        e.preventDefault();
+        $('.cp-drawer').removeClass('active'); 
+        $('body').removeClass('cm-overflow-hidden');
+        $('.cm-overlay').removeClass('active');
+    });
 }

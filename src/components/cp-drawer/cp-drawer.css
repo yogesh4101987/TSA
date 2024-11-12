@@ -9,23 +9,21 @@
   height: 100%;
   position: fixed;
   top: 0;
-  right: -9999px;
+  right: -999px;
   z-index: 9;
   background: #FFFFFF;
   padding: 2.4rem 3.2rem 2.4rem 2rem;
-  transition: all 0.6s ease-in-out;
-  -webkit-transition: all 0.6s ease-in-out;
-  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
   border-radius: 2.4rem 0 0 2.4rem;
   -webkit-border-radius: 2.4rem 0 0 2.4rem;
   -moz-border-radius: 2.4rem 0 0 2.4rem;
-  display: none;
   overflow: hidden;
   overflow-y: auto;
 }
 .cp-drawer.active {
   right: 0;
-  display: block;
 }
 @media only screen and (max-width: 768px) {
   .cp-drawer {
@@ -33,7 +31,7 @@
     height: 90vh;
     top: auto;
     right: 0;
-    bottom: -99999px;
+    bottom: -999px;
     padding: 1.6rem 1.2rem 1.6rem 1.6rem;
     border-radius: 2.4rem 2.4rem 0 0;
     -webkit-border-radius: 2.4rem 2.4rem 0 0;
@@ -41,6 +39,7 @@
   }
   .cp-drawer.active {
     bottom: 0;
+    right: auto;
   }
 }
 .cp-drawer .head-sec {
