@@ -109,6 +109,7 @@
 }
 .cp-accordion.typ-policy .acc-item.active {
   background-color: #F3F4F6;
+  border-top: 1px solid #F3F4F6;
 }
 
 .star-review {

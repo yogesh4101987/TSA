@@ -33,18 +33,10 @@
     <link rel="stylesheet" href="../../components/cp-add-info-list/cp-add-info-list.css">
     <link rel="stylesheet" href="/components/cp-offers/cp-offers.css" />
     <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
-    <link
-    rel="stylesheet"
-    href="../components/cp-product-name-head/cp-product-name-head.css"
-  />
-  <link
-    rel="stylesheet"
-    href="/components/cp-specification/cp-specification.css"
-  />
-  <link
-    rel="stylesheet"
-    href="/components/cp-product-name-head/cp-product-name-head.css"
-  />
+    <link rel="stylesheet" href="../components/cp-product-name-head/cp-product-name-head.css"/>
+    <link rel="stylesheet" href="/components/cp-specification/cp-specification.css"/>
+    <link rel="stylesheet" href="/components/cp-product-name-head/cp-product-name-head.css"/>
+    <link rel="stylesheet" href="/components/cp-accordion/cp-accordion.css" />
 
   </head>
 
@@ -441,7 +433,7 @@
             <li class="sub-item"> 50 Ratings , 40 Reviews</li>
           </ul>                      
         </li>
-        <li class="other-info-item">Policy details
+        <li class="other-info-item js-drawer" data-id="policydetail">Policy details
           <span class="sub-item">Shipment, returns, cancellation etc.</span>
         </li>
       </ul>
@@ -1094,11 +1086,92 @@
   </div>
 </div>
 <!--product detail drawer end-->
+
 <!---policy detail drawer start-->
-<div class="cp-drawer" id="productdetail">
+<div class="cp-drawer" id="policydetail">
   <div class="head-sec">
-    <h2 class="drawer-title">Available offers</h2>
+    <h2 class="drawer-title">Policy Detail</h2>
     <a href="#" class="icon icon-close js-close-btn"></a>
+  </div>
+  <div class="sec-cont">
+    <div class="cp-accordion typ-policy">
+      <div class="acc-item">
+        <div class="acc-head">
+          <h3 class="title">Return and refund policy</h3>
+        </div>
+        <div class="acc-cont">
+          <p class="ans-desc">
+            In case the order has been placed through
+          </p>
+          <p class="ans-desc">
+            Pay Before Dispatch > option -The order can be cancelled
+            by the customer (through the portal or toll-free number)
+            before the order has been dispatched from the dealer's
+            outlet or before the payment has been made by customer. Any
+            cancellation request placed after that will be rejected."
+          </p>
+         
+        </div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-head">
+          <h3 class="title">Shipping policy</h3>
+        </div>
+        <div class="acc-cont">
+          <p class="ans-desc">
+            In case the order has been placed through
+          </p>
+          <p class="ans-desc">
+             Pay Before Dispatch > option -The order can be cancelled
+            by the customer (through the portal or toll-free number)
+            before the order has been dispatched from the dealer's
+            outlet or before the payment has been made by customer. Any
+            cancellation request placed after that will be rejected."
+          </p>
+         
+        </div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-head">
+          <h3 class="title">
+            What Tata Steel brands can I buy on Tata Steel Aashiyana?
+          </h3>
+        </div>
+        <div class="acc-cont">
+          <p class="ans-desc">
+            In case the order has been placed through
+          </p>
+          <p class="ans-desc">
+             Pay Before Dispatch > option -The order can be cancelled
+            by the customer (through the portal or toll-free number)
+            before the order has been dispatched from the dealer's
+            outlet or before the payment has been made by customer. Any
+            cancellation request placed after that will be rejected."
+          </p>
+         
+        </div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-head">
+          <h3 class="title">
+            Is it safe to buy building materials online?
+          </h3>
+        </div>
+        <div class="acc-cont">
+          <p class="ans-desc">
+            In case the order has been placed through
+          </p>
+          <p class="ans-desc">
+             Pay Before Dispatch > option -The order can be cancelled
+            by the customer (through the portal or toll-free number)
+            before the order has been dispatched from the dealer's
+            outlet or before the payment has been made by customer. Any
+            cancellation request placed after that will be rejected."
+          </p>
+          
+        </div>
+      </div>
+    </div>
   </div>
   </div>
 <!---policy detail drawer end-->
@@ -1117,6 +1190,7 @@
     <script src="/components/cp-counter/cp-counter.js"></script>
     <script src="/components/cp-select/cp-select.js"></script>
     <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <script src="/components/cp-accordion/cp-accordion.js"></script>
 
     <!-- endbuild -->
   </body>
