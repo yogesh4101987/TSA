@@ -1286,6 +1286,14 @@ p {
 .bs-sec.typ-pdp {
   overflow: visible;
 }
+.bs-sec.typ-question-answer .sec-desc {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-question-answer .sec-desc {
+    display: block;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -1413,6 +1421,27 @@ p {
     background-color: #fff; /* Optional: Add a background to prevent overlap with content */
     width: 90%; /* Adjust the width of the button */
     padding: 15px;
+  }
+}
+.btn.btn-ask {
+  color: #333333;
+  background-color: #FFFFFF;
+  border: 1px solid #333333;
+  width: 100%;
+}
+.btn.btn-ask.typ-btn-mob {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .btn.btn-ask.typ-btn-mob {
+    display: block;
+    margin-top: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btn.btn-ask.typ-btn-desk {
+    display: none;
   }
 }
 

@@ -16,6 +16,7 @@
   font-family: "Poppins Semibold";
   flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
   .cp-other-info .other-info-list .other-info-item {

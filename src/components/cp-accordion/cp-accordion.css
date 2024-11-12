@@ -1,0 +1,126 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-accordion .acc-item {
+  border-bottom: 1px solid #DEDEDE;
+  border-top: 1px solid #DEDEDE;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion .acc-item {
+    margin-inline: -1.6rem;
+  }
+}
+.cp-accordion .acc-item .acc-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+.cp-accordion .acc-item .acc-head .title {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion .acc-item .acc-head .title {
+    max-width: 90%;
+  }
+}
+.cp-accordion .acc-item .acc-head::after {
+  content: "\e921";
+  font-family: icomoon;
+  font-size: 2.4rem;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cp-accordion .acc-item .acc-cont {
+  display: none;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+.cp-accordion .acc-item .acc-cont .ans-des {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #333333;
+}
+.cp-accordion .acc-item .acc-cont .list-wrap {
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cp-accordion .acc-item .acc-cont .list-wrap .list-item:first-child {
+  display: flex;
+  align-items: center;
+}
+.cp-accordion .acc-item .acc-cont .list-wrap .list-item .icon {
+  font-size: 2.4rem;
+}
+.cp-accordion .acc-item .acc-cont .list-wrap .list-item .text-num {
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #333333;
+  margin-left: 4px;
+  margin-right: 8px;
+}
+.cp-accordion .acc-item .acc-cont .list-wrap .helpful {
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #333333;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion .acc-item .acc-cont .list-wrap .helpful {
+    display: none;
+  }
+}
+.cp-accordion .acc-item .acc-cont .list-wrap .helpful .count-text {
+  background-color: #d8e5f8;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+}
+.cp-accordion .acc-item.active {
+  background-color: #fff6f2;
+  border-bottom: 1px solid #f8b499;
+  border-top: 1px solid #f8b499;
+}
+.cp-accordion .acc-item.active .acc-head .title {
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+.cp-accordion .acc-item.active .acc-head::after {
+  content: "\e922";
+}
+.cp-accordion.typ-policy .acc-item .acc-head::after {
+  color: #3D7EDB;
+}
+.cp-accordion.typ-policy .acc-item.active {
+  background-color: #F3F4F6;
+}
+
+.star-review {
+  padding: 2rem;
+}
+.star-review .icon {
+  color: grey;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.star-review .selected {
+  color: yellow;
+}
+
+/*# sourceMappingURL=cp-accordion.css.map */

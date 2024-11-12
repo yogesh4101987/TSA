@@ -17,6 +17,7 @@
             font-family: $font-semiBold;
             flex-direction: column;
             position: relative;
+            cursor: pointer;
             @media only screen and (max-width: $media-mobile) {
             font-size: 1.4rem;
             line-height: 2rem;

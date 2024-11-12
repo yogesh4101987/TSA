@@ -1,0 +1,140 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-accordion {
+
+  .acc-item {
+    border-bottom: 1px solid $clr-border;
+    border-top: 1px solid $clr-border;
+    cursor: pointer;
+    @media only screen and (max-width: $media-mobile) {
+     margin-inline: -1.6rem;
+    }
+
+    .acc-head{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+
+      .title{
+      
+        font-family: $font-regular;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        @media only screen and (max-width: $media-mobile) {
+          max-width: 90%;
+         }
+      }
+
+      &::after {
+        content: "\e921";
+        font-family: icomoon;
+        font-size: 2.4rem;
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .acc-cont {
+      display: none;
+      padding: 0 1.5rem;
+      margin-bottom: 1rem;
+
+      .ans-des {
+        font-family: $font-regular;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $clr-base;
+      }
+      .list-wrap {
+        margin-top: 1.6rem;
+        margin-bottom: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .list-item {
+          &:first-child {
+            display: flex;
+            align-items: center;
+          }
+
+          .icon {
+            font-size: 2.4rem;
+          }
+          .text-num {
+            font-family: $font-medium;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: $clr-base;
+            margin-left: 4px;
+            margin-right: 8px;
+          }
+        }
+        .helpful {
+          font-family: $font-medium;
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          color: $clr-base;
+          text-transform: capitalize;
+          @media only screen and (max-width: $media-mobile) {
+            display: none;
+          }
+          .count-text {
+            background-color: #d8e5f8;
+            padding: 0.4rem 0.6rem;
+            border-radius: 0.4rem;
+            margin-left: 0.4rem;
+          }
+          .count-number {
+          }
+        }
+      }
+    }
+
+    &.active {
+      background-color: #fff6f2;
+      border-bottom: 1px solid #f8b499;
+      border-top: 1px solid #f8b499;
+      .acc-head{
+        .title{
+          font-family: $font-semiBold;
+          color: $clr-base;
+        }
+        &::after {
+          content: "\e922";
+        }
+      }
+    }
+  }
+
+  &.typ-policy{
+    .acc-item {
+      .acc-head {
+        &::after {
+         color: $clr-primary;
+        }
+      }
+      &.active {
+        background-color:#F3F4F6;
+        ;
+      }
+    }
+  }
+}
+
+.star-review {
+  padding: 2rem;
+  .icon {
+    color: grey;
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  .selected {
+    color: yellow;
+  }
+}

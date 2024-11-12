@@ -366,4 +366,11 @@
   &.typ-pdp{
     overflow: visible;
   }
+  &.typ-question-answer{
+    .sec-desc{
+      display: none;
+      @media only screen and (max-width: $media-sm) {
+       display:block ;      }
+    }
+  }
 }
