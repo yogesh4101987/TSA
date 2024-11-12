@@ -27,6 +27,11 @@
   font-size: 1.4rem;
   line-height: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-accordion .acc-item .acc-head .title {
+    max-width: 90%;
+  }
+}
 .cp-accordion .acc-item .acc-head::after {
   content: "\e921";
   font-family: icomoon;
@@ -98,6 +103,12 @@
 }
 .cp-accordion .acc-item.active .acc-head::after {
   content: "\e922";
+}
+.cp-accordion.typ-policy .acc-item .acc-head::after {
+  color: #3D7EDB;
+}
+.cp-accordion.typ-policy .acc-item.active {
+  background-color: #F3F4F6;
 }
 
 .star-review {

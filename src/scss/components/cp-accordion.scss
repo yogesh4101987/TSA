@@ -20,9 +20,13 @@
       position: relative;
 
       .title{
+      
         font-family: $font-regular;
         font-size: 1.4rem;
         line-height: 2rem;
+        @media only screen and (max-width: $media-mobile) {
+          max-width: 90%;
+         }
       }
 
       &::after {
@@ -104,6 +108,20 @@
         &::after {
           content: "\e922";
         }
+      }
+    }
+  }
+
+  &.typ-policy{
+    .acc-item {
+      .acc-head {
+        &::after {
+         color: $clr-primary;
+        }
+      }
+      &.active {
+        background-color:#F3F4F6;
+        ;
       }
     }
   }
