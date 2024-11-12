@@ -873,6 +873,8 @@ p {
   position: sticky;
   position: -webkit-sticky;
   bottom: 10px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /*transform*/
@@ -1280,6 +1282,9 @@ p {
     padding-top: 1.6rem;
     padding-bottom: 2.4rem;
   }
+}
+.bs-sec.typ-pdp {
+  overflow: visible;
 }
 
 .btn {
