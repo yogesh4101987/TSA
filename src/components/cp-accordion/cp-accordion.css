@@ -7,6 +7,12 @@
 .cp-accordion .accord-wrap {
   border-bottom: 1px solid #DEDEDE;
   border-top: 1px solid #DEDEDE;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion .accord-wrap {
+    margin-inline: -1.6rem;
+  }
 }
 .cp-accordion .accord-wrap .question-wrap {
   width: 100%;
@@ -34,6 +40,52 @@
   display: none;
   padding: 0 1.5rem;
   margin-bottom: 1rem;
+}
+.cp-accordion .accord-wrap .answer-wrap .ans-des {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #333333;
+}
+.cp-accordion .accord-wrap .answer-wrap .list-wrap {
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cp-accordion .accord-wrap .answer-wrap .list-wrap .list-item:first-child {
+  display: flex;
+  align-items: center;
+}
+.cp-accordion .accord-wrap .answer-wrap .list-wrap .list-item .icon {
+  font-size: 2.4rem;
+}
+.cp-accordion .accord-wrap .answer-wrap .list-wrap .list-item .text-num {
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #333333;
+  margin-left: 4px;
+  margin-right: 8px;
+}
+.cp-accordion .accord-wrap .answer-wrap .list-wrap .helpful {
+  font-family: "Poppins Medium";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #333333;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion .accord-wrap .answer-wrap .list-wrap .helpful {
+    display: none;
+  }
+}
+.cp-accordion .accord-wrap .answer-wrap .list-wrap .helpful .count-text {
+  background-color: #d8e5f8;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
 }
 .cp-accordion .accord-wrap.clicked {
   background-color: #fff6f2;

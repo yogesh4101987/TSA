@@ -939,6 +939,27 @@ p {
   color: #333333;
   border: 1px solid #333333;
 }
+.btn.btn-ask {
+  color: #333333;
+  background-color: #FFFFFF;
+  border: 1px solid #333333;
+  width: 100%;
+}
+.btn.btn-ask.typ-btn-mob {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .btn.btn-ask.typ-btn-mob {
+    display: block;
+    margin-top: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btn.btn-ask.typ-btn-desk {
+    display: none;
+  }
+}
 
 /* colors */
 /*font family*/

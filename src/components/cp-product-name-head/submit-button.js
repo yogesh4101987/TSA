@@ -1,4 +1,8 @@
-
+$(document).ready(function () {
+  sumitButton();
+  reviewStarSubmit();
+  selectStar();
+});
 
 function sumitButton() {
   $(".js-question-form").each(function () {
@@ -18,7 +22,7 @@ function sumitButton() {
 }
 
 function reviewStarSubmit() {
-  // $(".js-star-review").each(function () {
+ 
     // for title and review
     $("#title, #review").on("input", function () {
       let title = $("#title").val().trim();
@@ -30,7 +34,6 @@ function reviewStarSubmit() {
         $("#starSubmit").attr("disabled", true).addClass("disabled");
       }
     });
-  // });
 }
 
 // function selectStar() {
@@ -67,7 +70,7 @@ function reviewStarSubmit() {
 
 
 function selectStar() {
-  $(".js-star-review").on("click", ".icon", function () {
+  $(".js-star-review").Off().on("click", ".icon", function () {
     var starSelected = $(this).hasClass("star-selected");
 
     if (starSelected) {
@@ -83,8 +86,4 @@ function selectStar() {
 }
 
 
-$(document).ready(function () {
-  sumitButton();
-  reviewStarSubmit();
-  selectStar();
-});
+

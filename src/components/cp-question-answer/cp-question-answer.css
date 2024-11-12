@@ -13,11 +13,6 @@
   border: 1px solid #333333;
   width: 100%;
 }
-@media only screen and (max-width: 768px) {
-  .cp-question-answer .btn-ask {
-    display: none;
-  }
-}
 .cp-question-answer .btn-ask.typ-btn-mob {
   display: none;
 }
@@ -26,6 +21,11 @@
     display: block;
     margin-top: 2.4rem;
     margin-bottom: 0.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-question-answer .btn-ask.typ-btn-desk {
+    display: none;
   }
 }
 .cp-question-answer .question-title {

@@ -29,6 +29,10 @@
       rel="stylesheet"
       href="/components/cp-question-answer/cp-question-answer.css"
     />
+    <link
+      rel="stylesheet"
+      href="/components/cp-product-name-head/cp-product-name-head.css"
+    />
   </head>
 
   <body>
@@ -64,186 +68,225 @@
             <p class="sec-desc"><span>22</span> Questions</p>
           </div>
           <div class="sec-cont">
-            <div class="cp-question-answer">
-              <div class="lyt-review">
-                <div class="grid-col-lht">
-                  <div class="cp-product-name-head">
-                    <div class="product-brand">
-                      <div class="img-wrap">
-                        <picture>
-                          <source
-                            media="(max-width:768px)"
-                            srcset="
-                              /components/cp-ask-question/images/superlink_1.png
-                            "
-                          />
-                          <source
-                            media="(max-width:991px)"
-                            srcset="
-                              /components/cp-ask-question/images/superlink_1.png
-                            "
-                          />
-                          <img
-                            src="/components/cp-ask-question/images/superlink_1.png"
-                            alt="product_img"
-                          />
-                        </picture>
-                      </div>
-                      <div class="product-detail">
-                        <h3 class="brand-name">Agrico</h3>
-                        <span class="product-name">High Tensile Fastners</span>
-                      </div>
+            <div class="lyt-review">
+              <div class="grid-col-lht">
+                <div class="cp-product-name-head">
+                  <div class="product-brand">
+                    <div class="img-wrap">
+                      <picture>
+                        <source
+                          media="(max-width:768px)"
+                          srcset="
+                            /components/cp-product-name-head/images/superlink_1.png
+                          "
+                        />
+                        <source
+                          media="(max-width:991px)"
+                          srcset="
+                            /components/cp-product-name-head/images/superlink_1.png
+                          "
+                        />
+                        <img
+                          src=" /components/cp-product-name-head/images/superlink_1.png"
+                          alt="product_img"
+                        />
+                      </picture>
                     </div>
-                    <button class="btn btn-ask">Ask a question</button>
+                    <div class="product-detail">
+                      <h3 class="brand-name">Agrico</h3>
+                      <span class="product-name">High Tensile Fastners</span>
+                    </div>
+                  </div>
+                  <button class="btn btn-ask typ-btn-desk">
+                    Ask a question
+                  </button>
+                </div>
+              </div>
+              <div class="grid-col-rht">
+                <div class="cp-search typ-full-width">
+                  <div class="search-wrap">
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Search QnA here"
+                    />
+                    <span class="search-icon icon-search"></span>
                   </div>
                 </div>
-                <div class="grid-col-rht">
-                  <div class="cp-search typ-full-width">
-                    <div class="search-wrap">
-                      <input
-                        type="text"
-                        class="search-input"
-                        placeholder="Search QnA here"
-                      />
-                      <span class="search-icon icon-search"></span>
-                    </div>
-                  </div>
+
+                <div class="cp-tab typ-question-answer">
                   <h3 class="question-title">
                     Questions <span class="question-count">22</span>
                   </h3>
                   <h4 class="sort-title">Sort by</h4>
-                  <div class="cp-tab">
-                    <ul class="tab-list">
-                      <li class="tab-item active" data-target="#tab1">
-                        <h3 class="title typ-capital">Input text</h3>
-                      </li>
-                      <li class="tab-item" data-target="#tab2">
-                        <h3 class="title typ-capital">Relevance</h3>
-                      </li>
-                      <li class="tab-item" data-target="#tab3">
-                        <h3 class="title typ-capital">Date added</h3>
-                      </li>
-                      <li class="tab-item" data-target="#tab4">
-                        <h3 class="title typ-capital">Latest on top</h3>
-                      </li>
-                    </ul>
-                    <button class="btn btn-ask typ-btn-mob">
-                      Ask a question
-                    </button>
-                    <div class="tab-container js-accordion">
-                      <div class="tab-content active" id="tab1">
-                        <div class="cp-accordion">
-                          <div class="accord-wrap">
-                            <div class="question-wrap">
-                              <h3 class="question-text">
-                                Order cancellation policy
-                              </h3>
-                            </div>
-                            <div class="answer-wrap">
-                              <h4>Pay now options</h4>
-                              <p>
-                                The amount will be refunded to the customer’s
-                                bank account (used for the payment) after
-                                deducting standard payment gateway transaction
-                                charges.
-                              </p>
-                              <p>
-                                Cancellation requests made after 24 hours or
-                                after dispatch will be rejected, and the
-                                customer must take the material.
-                              </p>
-                              <p>
-                                If the cancellation request is accepted, the
-                                refund will be processed within 10 working days.
-                              </p>
-                            </div>
+                  <ul class="tab-list">
+                    <li class="tab-item active" data-target="#tab1">
+                      <h3 class="title typ-capital">Input text</h3>
+                    </li>
+                    <li class="tab-item" data-target="#tab2">
+                      <h3 class="title typ-capital">Relevance</h3>
+                    </li>
+                    <li class="tab-item" data-target="#tab3">
+                      <h3 class="title typ-capital">Date added</h3>
+                    </li>
+                    <li class="tab-item" data-target="#tab4">
+                      <h3 class="title typ-capital">Latest on top</h3>
+                    </li>
+                  </ul>
+                  <button class="btn btn-ask typ-btn-mob">
+                    Ask a question
+                  </button>
+                  <div class="tab-container js-accordion">
+                    <div class="tab-content active" id="tab1">
+                      <div class="cp-accordion">
+                        <div class="accord-wrap">
+                          <div class="question-wrap">
+                            <h3 class="question-text">
+                              What is the order cancelation policy?
+                            </h3>
                           </div>
-                          <div class="accord-wrap">
-                            <div class="question-wrap">
-                              <h3 class="question-text">
-                                Return and refund policy
-                              </h3>
-                            </div>
-                            <div class="answer-wrap active">
-                              <h4>Pay now options</h4>
-                              <p>
-                                The amount will be refunded to the customer’s
-                                bank account (used for the payment) after
-                                deducting standard payment gateway transaction
-                                charges.
-                              </p>
-                              <p>
-                                Cancellation requests made after 24 hours or
-                                after dispatch will be rejected, and the
-                                customer must take the material.
-                              </p>
-                              <p>
-                                If the cancellation request is accepted, the
-                                refund will be processed within 10 working days.
-                              </p>
-                            </div>
+                          <div class="answer-wrap">
+                            <p class="ans-desc">In case the order has been placed through</p>
+                            <p class="ans-desc">< Pay Before Dispatch > option -The order can be
+                              cancelled by the customer (through the portal or
+                              toll-free number) before the order has been
+                              dispatched from the dealer's outlet or before the
+                              payment has been made by customer. Any
+                              cancellation request placed after that will be
+                              rejected."
+                            </p>
+                            <ul class="list-wrap">
+                              <li class="list-item">
+                                <span class="icon icon-like"></span>
+                                <span class="text-num">(4)</span>
+                                <span class="icon icon-dislike"></span>
+                                <span class="text-num">(4)</span>
+                                <span class="icon icon-flag"></span>
+                                <span class="text-num">Report</span> </li>
+                                <li class="list-iteam">
+                                <span class="helpful">
+                                  Helpful?<span class="count-text"
+                                    >yes<span class="count-number">(2)</span></span
+                                  >
+                                </span>
+                              </li>
+                            </ul>
                           </div>
-                          <div class="accord-wrap">
-                            <div class="question-wrap">
-                              <h3 class="question-text">Shipping policy</h3>
-                            </div>
-                            <div class="answer-wrap">
-                              <h4>Pay now options</h4>
-                              <p>
-                                The amount will be refunded to the customer’s
-                                bank account (used for the payment) after
-                                deducting standard payment gateway transaction
-                                charges.
-                              </p>
-                              <p>
-                                Cancellation requests made after 24 hours or
-                                after dispatch will be rejected, and the
-                                customer must take the material.
-                              </p>
-                              <p>
-                                If the cancellation request is accepted, the
-                                refund will be processed within 10 working days.
-                              </p>
-                            </div>
+                        </div>
+                        <div class="accord-wrap">
+                          <div class="question-wrap">
+                            <h3 class="question-text">
+                              Return and refund policy
+                            </h3>
                           </div>
-                          <div class="accord-wrap">
-                            <div class="question-wrap">
-                              <h3 class="question-text">
-                                Return and refund policy
-                              </h3>
-                            </div>
-                            <div class="answer-wrap active">
-                              <h4>Pay now options</h4>
-                              <p>
-                                The amount will be refunded to the customer’s
-                                bank account (used for the payment) after
-                                deducting standard payment gateway transaction
-                                charges.
-                              </p>
-                              <p>
-                                Cancellation requests made after 24 hours or
-                                after dispatch will be rejected, and the
-                                customer must take the material.
-                              </p>
-                              <p>
-                                If the cancellation request is accepted, the
-                                refund will be processed within 10 working days.
-                              </p>
-                            </div>
+                          <div class="answer-wrap">
+                            <p class="ans-desc">In case the order has been placed through</p>
+                            <p class="ans-desc">< Pay Before Dispatch > option -The order can be
+                              cancelled by the customer (through the portal or
+                              toll-free number) before the order has been
+                              dispatched from the dealer's outlet or before the
+                              payment has been made by customer. Any
+                              cancellation request placed after that will be
+                              rejected."
+                            </p>
+                            <ul class="list-wrap">
+                              <li class="list-item">
+                                <span class="icon icon-like"></span>
+                                <span class="text-num">(4)</span>
+                                <span class="icon icon-dislike"></span>
+                                <span class="text-num">(4)</span>
+                                <span class="icon icon-flag"></span>
+                                <span class="text-num">Report</span> </li>
+                                <li class="list-iteam">
+                                <span class="helpful">
+                                  Helpful?<span class="count-text"
+                                    >yes<span class="count-number">(2)</span></span
+                                  >
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="accord-wrap">
+                          <div class="question-wrap">
+                            <h3 class="question-text">Shipping policy</h3>
+                          </div>
+                          <div class="answer-wrap">
+                            <p class="ans-desc">In case the order has been placed through</p>
+                            <p class="ans-desc">< Pay Before Dispatch > option -The order can be
+                              cancelled by the customer (through the portal or
+                              toll-free number) before the order has been
+                              dispatched from the dealer's outlet or before the
+                              payment has been made by customer. Any
+                              cancellation request placed after that will be
+                              rejected."
+                            </p>
+                            <ul class="list-wrap">
+                              <li class="list-item">
+                                <span class="icon icon-like"></span>
+                                <span class="text-num">(4)</span>
+                                <span class="icon icon-dislike"></span>
+                                <span class="text-num">(4)</span>
+                                <span class="icon icon-flag"></span>
+                                <span class="text-num">Report</span> </li>
+                                <li class="list-iteam">
+                                <span class="helpful">
+                                  Helpful?<span class="count-text"
+                                    >yes<span class="count-number">(2)</span></span
+                                  >
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="accord-wrap">
+                          <div class="question-wrap">
+                            <h3 class="question-text">
+                              Return and refund policy
+                            </h3>
+                          </div>
+                          <div class="answer-wrap">
+                            <p class="ans-desc">In case the order has been placed through</p>
+                            <p class="ans-desc">< Pay Before Dispatch > option -The order can be
+                              cancelled by the customer (through the portal or
+                              toll-free number) before the order has been
+                              dispatched from the dealer's outlet or before the
+                              payment has been made by customer. Any
+                              cancellation request placed after that will be
+                              rejected."
+                            </p>
+                            <ul class="list-wrap">
+                              <li class="list-item">
+                                <span class="icon icon-like"></span>
+                                <span class="text-num">(4)</span>
+                                <span class="icon icon-dislike"></span>
+                                <span class="text-num">(4)</span>
+                                <span class="icon icon-flag"></span>
+                                <span class="text-num">Report</span> </li>
+                                <li class="list-iteam">
+                                <span class="helpful">
+                                  Helpful?<span class="count-text"
+                                    >yes<span class="count-number">(2)</span></span
+                                  >
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="tab-content" id="tab2">
-                      <h3 class="content">tab-content 2</h3>
-                    </div>
-                    <div class="tab-content" id="tab3"></div>
-                    <div class="tab-content" id="tab4">
-                      <h3 class="content">tab-content 4</h3>
-                    </div>
-                    <div class="btn-wrap">
-                        <button class="btn btn-link btn-load-more ">Load More</button>
-                    </div>
+                  </div>
+                  <div class="tab-content" id="tab2">
+                    <h3 class="content">tab-content 2</h3>
+                  </div>
+                  <div class="tab-content" id="tab3"></div>
+                  <div class="tab-content" id="tab4">
+                    <h3 class="content">tab-content 4</h3>
+                  </div>
+                  <div class="btn-wrap">
+                    <button class="btn btn-link btn-load-more">
+                      Load More
+                    </button>
                   </div>
                 </div>
               </div>

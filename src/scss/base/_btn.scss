@@ -96,4 +96,25 @@
         color: $clr-base;
         border: 1px solid $clr-base;
     }
+
+    &.btn-ask {
+        color: $clr-base;
+        background-color: $clr-root;
+        border: 1px solid $clr-base;
+        width: 100%;
+    
+        &.typ-btn-mob {
+          display: none;
+          @media only screen and (max-width: $media-mobile) {
+            display: block;
+            margin-top: 2.4rem;
+            margin-bottom: 0.8rem;
+          }
+        }
+        &.typ-btn-desk {
+          @media only screen and (max-width: $media-mobile) {
+            display: none;
+          }
+        }
+      }
 }

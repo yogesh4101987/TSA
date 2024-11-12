@@ -20,15 +20,15 @@
   display: flex;
   align-items: flex-start;
   gap: 1.2rem;
-  background-color: #FFFBF3;
-  border: 1px solid #FFE399;
+  background-color: #fffbf3;
+  border: 1px solid #ffe399;
   border-radius: 1.6rem;
   margin-bottom: 3.2rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-product-name-head .product-brand {
-    border-top: 1px solid #FFE399;
-    border-bottom: 1px solid #FFE399;
+    border-top: 1px solid #ffe399;
+    border-bottom: 1px solid #ffe399;
     border-radius: 0;
   }
 }
@@ -80,8 +80,8 @@
   margin-bottom: 2.4rem;
 }
 .form-wrapper .disabled {
-  background-color: #EDEDED;
-  color: #B3B3B3;
+  background-color: #ededed;
+  color: #b3b3b3;
   border: none;
 }
 .form-wrapper.typ-review-star .star-label,
@@ -105,10 +105,10 @@
 }
 .form-wrapper.typ-review-star .star-rating .icon {
   font-size: 4.8rem;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 .form-wrapper.typ-review-star .star-rating .star-selected {
-  color: #FFB800;
+  color: #ffb800;
 }
 .form-wrapper.typ-review-star .title {
   padding: 1.2rem 1.6rem;
