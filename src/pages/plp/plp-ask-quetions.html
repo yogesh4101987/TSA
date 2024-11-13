@@ -15,10 +15,7 @@
       rel="stylesheet"
       href="../components/cp-product-name-head/cp-product-name-head.css"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="/components/cp-ask-question/cp-ask-question.css"
-    /> -->
+    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
   </head>
 
   <body>
@@ -26,18 +23,21 @@
       <!--quetion and asnwer starts -->
       <section class="bs-sec">
         <div class="sec-cont">
-          <!-- <div class="cp-ask-question"> -->
-            <div class="cp-product-name-head typ-review-stars">
-             <div class="product-brand">
+          <div class="cp-product-name-head typ-review-stars">
+            <div class="product-brand">
               <div class="img-wrap">
                 <picture>
                   <source
                     media="(max-width:768px)"
-                    srcset="/components/cp-product-name-head/images/superlink_1.png"
+                    srcset="
+                      /components/cp-product-name-head/images/superlink_1.png
+                    "
                   />
                   <source
                     media="(max-width:991px)"
-                    srcset="/components/cp-product-name-head/images/superlink_1.png"
+                    srcset="
+                      /components/cp-product-name-head/images/superlink_1.png
+                    "
                   />
                   <img
                     src="/components/cp-product-name-head/images/superlink_1.png"
@@ -49,93 +49,41 @@
                 <h3 class="brand-name">Agrico</h3>
                 <span class="product-name">High Tensile Fastners</span>
               </div>
-              </div>
             </div>
           </div>
         </div>
         <div class="container">
           <div class="sec-cont">
-            <form action="#" class="form-wrapper js-question-form">
-              <label class="form-label" for="question">Question</label>
-              <input
-                type="text"
-                id="question"
-                class="question"
-                placeholder="Write your question"
-                required
-              />
-              <button
-                class="btn btn-submit disabled"
-                type="submit"
-                disabled="true"
-              >
-                Submit
-              </button>
+            <form action="#" class="cp-form js-question-form">
+              <div class="feedback-personal-data">
+                <div class="form-group">
+                  <label class="form-label" for="askQuestion">Question</label>
+                  <input
+                    type="text"
+                    id="askQuestion"
+                    class="form-control"
+                    placeholder="Write your question"
+                    required
+                  />
+                  <span class="err-mgs"></span>
+                </div>
+              </div>
+              <div class="act-wrap">
+                <button
+                  class="btn btn-submit disabled"
+                  type="submit"
+                  disabled="true"
+                  id="askQuestionbtn"
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
-        <!-- </div> -->
+        </div>
       </section>
       <!--quetion and asnwer ends -->
-      <!-- star rating quetions starts -->
-      <section class="bs-sec">
-        <div class="sec-cont">
-          <div class="cp-product-name-head">
-            <div class="product-brand">
-              <div class="img-wrap">
-                <picture>
-                  <source
-                    media="(max-width:768px)"
-                    srcset="/components/cp-ask-question/images/superlink_1.png"
-                  />
-                  <source
-                    media="(max-width:991px)"
-                    srcset="/components/cp-ask-question/images/superlink_1.png"
-                  />
-                  <img
-                    src="/components/cp-ask-question/images/superlink_1.png"
-                    alt="product_img"
-                  />
-                </picture>
-              </div>
-              <div class="product-name">
-                <h3 class="brand-name">Agrico</h3>
-                <span class="product-name">High Tensile Fastners</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="sec-cont">
-            <form action="#" class="form-wrapper typ-review-star js-star-review">
-              <label class="star-label" for="starRatings">Star ratings</label>
-              <div class="star-rating" id="starRatings">
-                <span class="icon icon-star"></span>
-                <span class="icon icon-star"></span>
-                <span class="icon icon-star"></span>
-                <span class="icon icon-star"></span>
-                <span class="icon icon-star"></span>
-              </div>
-              <label class="title-label" for="title">Review Title</label>
-              <input type="text" class="title" id="title" placeholder="Enter Text" required>
-
-
-              <label class="review-label" for="review">Review Title</label>
-              <textarea type="text" class="review" id="review" placeholder="Enter Text" required></textarea>
-
-              <button
-                class="btn btn-submit disabled"
-                type="submit"
-                disabled="true"
-                id="starSubmit"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- star rating questions ends -->
+    
     </main>
 
     <!-- build:js assets/js/vendor.js -->
@@ -147,6 +95,6 @@
     <script src="../components/cp-product-card/cp-product-card.js"></script>
     <script src="/components/cp-accordion/cp-accordion.js"></script>
     <!-- endbuild -->
-    <script src="/components/cp-product-name-head/submit-button.js"></script>
+    <script src="/components/cp-form/cp-form.js"></script>
   </body>
 </html>
