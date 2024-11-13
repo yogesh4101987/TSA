@@ -49,23 +49,50 @@
     }
   }
 
+  &.typ-customer-review,
   &.typ-product-details,
   &.typ-review-stars {
     @media only screen and (max-width: $media-mobile) {
       display: block;
     }
   }
-  &.typ-product-details{
-     border-radius: 1.6rem;
-     .product-brand {
+  &.typ-product-details {
+    border-radius: 1.6rem;
+    .product-brand {
       align-items: center;
       @media only screen and (max-width: $media-mobile) {
         border-radius: 1.6rem;
       }
-     }
+    }
   }
 
+  &.typ-customer-review {
+    @media only screen and (max-width: $media-mobile) {
+      margin-inline: -1.6rem;
+      border-bottom: 1px solid #ffe399;
+      border-top: 1px solid #ffe399;
+    }
+
+    .review-wrap {
+      border: 1px solid $clr-border;
+      border-radius: 1.6rem;
+      margin-bottom: 3.2rem;
+      overflow:hidden;
+
+      @media only screen and (max-width: $media-mobile) {
+        border-width: 0;
+        margin-bottom: 0;
+      }
+      .product-brand {
+        border: 0;
+        border-bottom: 1px solid #ffe399;
+        border-radius: 0;
+      }
+    }
+  }
 }
+
+// wrap for form element in drower
 
 .form-wrapper {
   display: flex;
