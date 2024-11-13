@@ -11,11 +11,11 @@ $(window).resize(function() {
 function productCount(){
     var num;
 
-$('.btn-minus').click(function(){
-  num = parseInt($('input:text').val());
+$(document).on("click",'.btn-minus', function(){
+  num = parseInt($('.cp-counter input:text').val());
   if (num > 1) {
-    $('input:text').val(num - 1);
-  }
+    $('.cp-counter input:text').val(num - 1);
+  } 
   if (num == 2) {
     $('.btn-minus').prop('disabled', true);
   }
@@ -24,10 +24,10 @@ $('.btn-minus').click(function(){
   }
 });
 
-$('.btn-plus').click(function(){
-  num = parseInt($('input:text').val());
-  if (num < 10) {
-    $('input:text').val(num + 1);
+$(document).on("click",'.btn-plus',function(){
+  num = parseInt($('.cp-counter input:text').val());
+  if (num < 10) { 
+    $('.cp-counter input:text').val(num + 1);
   }
   if (num > 0) {
     $('.btn-minus').prop('disabled', false);
