@@ -16,9 +16,6 @@
   transition: all 0.8s ease-in-out;
   -webkit-transition: all 0.8s ease-in-out;
   -moz-transition: all 0.8s ease-in-out;
-  border-radius: 2.4rem 0 0 2.4rem;
-  -webkit-border-radius: 2.4rem 0 0 2.4rem;
-  -moz-border-radius: 2.4rem 0 0 2.4rem;
   overflow: hidden;
   overflow-y: auto;
 }
