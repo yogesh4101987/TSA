@@ -2,16 +2,15 @@
 @import "../config/mixin";
 
 .cp-accordion {
-
   .acc-item {
     border-bottom: 1px solid $clr-border;
     border-top: 1px solid $clr-border;
     cursor: pointer;
     @media only screen and (max-width: $media-mobile) {
-     margin-inline: -1.6rem;
+      margin-inline: -1.6rem;
     }
 
-    .acc-head{
+    .acc-head {
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -19,13 +18,13 @@
       padding: 2rem;
       position: relative;
 
-      .title{
+      .title {
         font-family: $font-regular;
         font-size: 1.4rem;
         line-height: 2rem;
         @media only screen and (max-width: $media-mobile) {
           max-width: 90%;
-         }
+        }
       }
 
       &::after {
@@ -99,8 +98,8 @@
       background-color: #fff6f2;
       border-bottom: 1px solid #f8b499;
       border-top: 1px solid #f8b499;
-      .acc-head{
-        .title{
+      .acc-head {
+        .title {
           font-family: $font-semiBold;
           color: $clr-base;
         }
@@ -108,19 +107,46 @@
           content: "\e922";
         }
       }
-    }
+    }   
   }
-
-  &.typ-policy{
+  &.typ-policy {
     .acc-item {
       .acc-head {
         &::after {
-         color: $clr-primary;
+          color: $clr-primary;
+        }
+      }
+      .acc-cont {
+        .acc-cont-wrap {
+          .acc-cont-list {
+            margin-bottom: 2rem;
+            .acc-subTitle {
+              font-family: $font-semiBold;
+              font-size: 1.4rem;
+              line-height: 2rem;
+              color: $clr-base;
+              margin-bottom: 0.8rem;
+            }
+            .cont-desc-wrap {
+              
+              .cont-desc-list {
+                padding: 1rem 0;
+                border-bottom: 1px solid $clr-border;
+                .acc-desc {
+                  font-family: $font-regular;
+                  font-size: 1.4rem;
+                  line-height: 2rem;
+                  color: $clr-base;
+                }
+              }
+            }
+          }
         }
       }
       &.active {
-        background-color:#F3F4F6;
-        ;
+        background-color: #f3f4f6;
+        border-bottom: 1px solid $clr-border;;
+        border-top: 1px solid $clr-border;;
       }
     }
   }

@@ -5,7 +5,6 @@ $(document).ready(function () {
 });
 
 function sumitButton() {
-  $(".js-question-form").each(function () {
     $(".question").on("input", function () {
       if ($(".question").val().trim() !== "") {
         $(this)
@@ -18,7 +17,6 @@ function sumitButton() {
         $(this).next(".btn-submit").attr("disabled", true).addClass("disabled");
       }
     });
-  });
 }
 
 function reviewStarSubmit() {

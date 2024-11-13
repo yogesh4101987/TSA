@@ -107,8 +107,30 @@
 .cp-accordion.typ-policy .acc-item .acc-head::after {
   color: #3D7EDB;
 }
+.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list {
+  margin-bottom: 2rem;
+}
+.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .acc-subTitle {
+  font-family: "Poppins Semibold";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 0.8rem;
+}
+.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .cont-desc-wrap .cont-desc-list {
+  padding: 1rem 0;
+  border-bottom: 1px solid #DEDEDE;
+}
+.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .cont-desc-wrap .cont-desc-list .acc-desc {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+}
 .cp-accordion.typ-policy .acc-item.active {
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
+  border-bottom: 1px solid #DEDEDE;
+  border-top: 1px solid #DEDEDE;
 }
 
 .star-review {
