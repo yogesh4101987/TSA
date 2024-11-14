@@ -4,9 +4,9 @@ var winHeight = $(window).height();
 $(document).ready(function() {
     tabFunction();
     commonPopup();
-    // if ($('.js-bg').length != 0) {
-    //     bgImg();
-    // };
+    if ($('.js-bg').length != 0) {
+        bgImg();
+    };
 });
 
 
@@ -45,7 +45,8 @@ function bgImg() {
         var imgSrc = $(this).find('.bg-img img').attr('src');
         $(this).css({
             'background-image': 'url(' + imgSrc + ')',
-            'background-size': 'cover'
+            'background-size': 'cover',
+            'background-repeat': 'no-repeat'
         });
     })
 }

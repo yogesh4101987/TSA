@@ -529,5 +529,18 @@
 .cp-product-card.typ-list-view .bs-swiper.typ-plp-slider .child-pagination {
   display: none;
 }
+.cp-product-card.typ-img {
+  padding: 0;
+  height: 50.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-card.typ-img {
+    height: 34.3rem;
+    padding: 2.4rem 0;
+  }
+}
+.cp-product-card.typ-img.typ-list-view {
+  height: 28rem;
+}
 
 /*# sourceMappingURL=cp-product-card.css.map */

@@ -512,4 +512,15 @@
             }
         }
     }
+    &.typ-img{
+        padding: 0;
+        height: 50.6rem;
+        @media only screen and (max-width: $media-mobile) {
+            height: 34.3rem;
+            padding: 2.4rem 0;
+        } 
+        &.typ-list-view{
+            height: 28rem;
+        }
+    }
 }
