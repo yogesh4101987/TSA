@@ -1,0 +1,18 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-progress-bar .progress-bar-item {
+  margin-bottom: 2rem;
+}
+.cp-progress-bar .item-label,
+.cp-progress-bar .item-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=cp-progress-bar.css.map */

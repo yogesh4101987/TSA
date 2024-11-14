@@ -23,7 +23,6 @@
   background-color: #fffbf3;
   border: 1px solid #ffe399;
   border-radius: 1.6rem;
-  margin-bottom: 3.2rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-product-name-head .product-brand {
@@ -55,7 +54,7 @@
   line-height: 2.8rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-product-name-head.typ-product-details, .cp-product-name-head.typ-review-stars {
+  .cp-product-name-head.typ-customer-review, .cp-product-name-head.typ-product-details, .cp-product-name-head.typ-review-stars {
     display: block;
   }
 }
@@ -69,6 +68,30 @@
   .cp-product-name-head.typ-product-details .product-brand {
     border-radius: 1.6rem;
   }
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-name-head.typ-customer-review {
+    margin-inline: -1.6rem;
+    border-bottom: 1px solid #ffe399;
+    border-top: 1px solid #ffe399;
+  }
+}
+.cp-product-name-head.typ-customer-review .review-wrap {
+  border: 1px solid #DEDEDE;
+  border-radius: 1.6rem;
+  margin-bottom: 3.2rem;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-name-head.typ-customer-review .review-wrap {
+    border-width: 0;
+    margin-bottom: 0;
+  }
+}
+.cp-product-name-head.typ-customer-review .review-wrap .product-brand {
+  border: 0;
+  border-bottom: 1px solid #ffe399;
+  border-radius: 0;
 }
 
 .form-wrapper {

@@ -15,12 +15,12 @@
       rel="stylesheet"
       href="../components/cp-product-name-head/cp-product-name-head.css"
     />
-    <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+    <link rel="stylesheet" href="../components/cp-form/cp-form.css"/>
   </head>
 
   <body>
     <main class="main">
-      <!--quetion and asnwer starts -->
+      <!-- star rating quetions starts -->
       <section class="bs-sec">
         <div class="sec-cont">
           <div class="cp-product-name-head typ-review-stars">
@@ -29,15 +29,11 @@
                 <picture>
                   <source
                     media="(max-width:768px)"
-                    srcset="
-                      /components/cp-product-name-head/images/superlink_1.png
-                    "
+                    srcset="/components/cp-product-name-head/images/superlink_1.png"
                   />
                   <source
                     media="(max-width:991px)"
-                    srcset="
-                      /components/cp-product-name-head/images/superlink_1.png
-                    "
+                    srcset="/components/cp-product-name-head/images/superlink_1.png"
                   />
                   <img
                     src="/components/cp-product-name-head/images/superlink_1.png"
@@ -54,17 +50,40 @@
         </div>
         <div class="container">
           <div class="sec-cont">
-            <form action="#" class="cp-form js-question-form">
+            <form action="#" class="cp-form typ-review-star js-star-review">
+              <h3 class="feedback-title">Star ratings</h3>
+              <div class="star-rating" id="starRatings">
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+              </div>
               <div class="feedback-personal-data">
                 <div class="form-group">
-                  <label class="form-label" for="askQuestion">Question</label>
+                  <label class="form-label" for="feedbackQuestion"
+                    >Review title</label
+                  >
                   <input
                     type="text"
-                    id="askQuestion"
+                    id="feedbackQuestion"
                     class="form-control"
                     placeholder="Write your question"
                     required
                   />
+                  <span class="err-mgs"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-review"
+                    >Write your review</label
+                  >
+                  <textarea
+                    type="text"
+                    id="form-review"
+                    class="form-textarea"
+                    placeholder="Write your question"
+                    required
+                  ></textarea>
                   <span class="err-mgs"></span>
                 </div>
               </div>
@@ -73,7 +92,7 @@
                   class="btn btn-submit disabled"
                   type="submit"
                   disabled="true"
-                  id="askQuestionbtn"
+                  id="starReviewSumbit"
                 >
                   Submit
                 </button>
@@ -82,8 +101,8 @@
           </div>
         </div>
       </section>
-      <!--quetion and asnwer ends -->
-    
+
+      <!-- star rating questions ends -->
     </main>
 
     <!-- build:js assets/js/vendor.js -->

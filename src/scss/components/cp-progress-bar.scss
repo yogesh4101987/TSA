@@ -1,0 +1,15 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-progress-bar{
+    .progress-bar-item {
+        margin-bottom: 2rem;
+    }
+    .item-label, 
+    .item-value {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+}

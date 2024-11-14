@@ -5,28 +5,25 @@ $(document).ready(function () {
 });
 
 function sumitButton() {
-  $(".js-question-form").each(function () {
-    $(".question").on("input", function () {
-      if ($(".question").val().trim() !== "") {
+    $(".form-control").on("input", function () {
+      if ($(".form-control").val().trim() !== "") {
         $(this)
           .next(".btn-submit")
           .attr("disabled", false)
           .removeClass("disabled");
-        console.log("enterd");
       } else {
-        console.log("no value");
+        
         $(this).next(".btn-submit").attr("disabled", true).addClass("disabled");
       }
     });
-  });
 }
 
 function reviewStarSubmit() {
  
     // for title and review
     $("#title, #review").on("input", function () {
-      let title = $("#title").val().trim();
-      let review = $("#review").val().trim();
+      let title = $("#form-review").val().trim();
+      let review = $("#form-review").val().trim();
 
       if (title !== "" && review !== "") {
         $("#starSubmit").attr("disabled", false).removeClass("disabled");
