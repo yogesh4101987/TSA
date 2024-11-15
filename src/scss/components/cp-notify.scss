@@ -84,6 +84,7 @@
             min-width: 12.3rem;
         }
     }
+    &.typ-notification,
     &.typ-need-expert{
         padding: 2.4rem;
         flex-direction: column;
@@ -229,5 +230,17 @@
         font-size: 1.4rem;
         line-height: 2rem;
     }
-  }
+    }
+    &.typ-notification{
+        background: #ECF2FB;
+        .notify-icon{
+            color: #D8E5F8;
+        }
+        .notify-title{
+            color: $clr-base;
+        }
+        .notify-desc{
+            color: $clr-para;
+        }
+    }
 }
