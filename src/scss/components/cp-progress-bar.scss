@@ -1,0 +1,69 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-progress-bar{
+    padding: 2.4rem 2rem;
+    .grid-x{
+        display: flex;
+        align-items: center;
+    }
+    .progress-bar-item {
+        margin-bottom: 2rem;
+    }
+    .item-label, 
+    .item-value {
+        font-size: 1.4rem;
+        color: $clr-base;
+        margin-bottom: 0.5rem;
+        font-family: $font-medium;
+    }
+    .icon-star{
+        color:  #FFB800;
+        font-size: 1.1rem;
+
+    }
+    .item-value {
+		font-weight: 400;
+	}
+    .item-bar {
+        position: relative;
+        height: 0.6rem;
+        width: 70%;
+        background-color: #DEDEDE;
+        border-radius: 4px;
+        margin-left: 1rem;
+        .progress {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 0;
+			height: 0.6rem;
+			margin: 0;
+            border-radius: 4px;
+            transition: width 100ms ease;
+            &.red{
+                background: #EE4400;
+
+            }
+            &.yellow{
+                background: #FFB800;
+
+            }
+            &.green{
+                background: #00A441;
+
+
+            }
+        }
+    }
+    .count{
+        position: absolute;
+        right: -52px;
+        top: -9px;
+        font-size: 1.4rem;
+        font-family: $font-medium;
+        color: $clr-base;
+    }
+
+}

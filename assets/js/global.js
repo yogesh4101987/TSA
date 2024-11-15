@@ -3,9 +3,10 @@ var winHeight = $(window).height();
 
 $(document).ready(function() {
     tabFunction();
-    // if ($('.js-bg').length != 0) {
-    //     bgImg();
-    // };
+    commonPopup();
+    if ($('.js-bg').length != 0) {
+        bgImg();
+    };
 });
 
 
@@ -44,7 +45,31 @@ function bgImg() {
         var imgSrc = $(this).find('.bg-img img').attr('src');
         $(this).css({
             'background-image': 'url(' + imgSrc + ')',
-            'background-size': 'cover'
+            'background-size': 'cover',
+            'background-repeat': 'no-repeat'
         });
     })
 }
+
+
+// modalPopup js start
+
+function commonPopup() {
+    $(document).on('click', '.model-open[data-toggle="modal"]', function() {
+        var abc = $(this).attr('data-modal-id');
+        abc = abc.replace("#", "");
+        // alert(abc);
+        $('.bs-modal#' + abc).addClass('modal-show show');
+        $('.cm-overlay').addClass('active');
+        $('body').css('overflow', 'hidden');
+    });
+    $(document).on('click', '.js-close, .cm-overlay', function() {
+        $('.bs-modal').removeClass('modal-show show');
+        $('body').css('overflow', 'auto');
+        $('.cm-overlay').removeClass('active');
+        $('#youtubevideo').attr('src', '');
+    });
+}
+// modalPopup js end
+
+

@@ -14,8 +14,11 @@
 .cp-tab .tab-list::-webkit-scrollbar {
   display: none;
 }
+.cp-tab .tab-list .tab-item {
+  flex-shrink: 0;
+}
 .cp-tab .tab-list .tab-item .title {
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
   font-family: "Poppins Regular";
   font-size: 1.4rem;
   line-height: 1.8rem;
@@ -31,8 +34,11 @@
   -moz-transition: all 2s ease;
   padding: 0.6rem 1.6rem;
 }
+.cp-tab .tab-list .tab-item .title.typ-capital {
+  text-transform: capitalize;
+}
 .cp-tab .tab-list .tab-item:hover .title, .cp-tab .tab-list .tab-item.active .title {
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
   font-family: "Poppins Semibold";
   color: #FFFFFF;
   background: #3D7EDB;
@@ -59,6 +65,56 @@
 }
 .cp-tab.typ-calculate .tab-list {
   padding: 0 2.4rem 0;
+}
+.cp-tab.typ-question-answer .question-title {
+  font-family: "Poppins Semibold";
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-question-answer .question-title {
+    display: none;
+  }
+}
+.cp-tab.typ-question-answer .question-title .question-count {
+  padding-inline: 1.2rem;
+  background-color: #D2042D;
+  color: #FFFFFF;
+  border-radius: 2.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-question-answer .question-title .question-count {
+    display: block;
+    background: none;
+    color: #666666;
+    font-family: "Poppins Regular";
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+.cp-tab.typ-question-answer .sort-title {
+  font-family: "Poppins Medium";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-question-answer .sort-title {
+    margin-top: 2.4rem;
+  }
+}
+.cp-tab.typ-question-answer .btn-wrap {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-question-answer .btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=cp-tab.css.map */
