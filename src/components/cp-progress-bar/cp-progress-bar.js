@@ -1,17 +1,17 @@
 var winWidth = $(window).width();
 
 $(document).ready(function () { 
-    progress_bar()
+    progressBar()
 });
 
 $(window).resize(function () {  
-    progress_bar()
+    progressBar()
 });
 
 
-function progress_bar() {
+function progressBar() {
 	var speed = 30;
-	var items = $('.cp-progress-bar').find('.cp-progress-bar-item');
+	var items = $('.cp-progress-bar').find('.progress-bar-item');
 	
     items.each(function() {
         var item = $(this).find('.progress');

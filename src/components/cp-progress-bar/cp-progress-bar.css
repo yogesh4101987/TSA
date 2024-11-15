@@ -4,15 +4,65 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
+.cp-progress-bar {
+  padding: 2.4rem 2rem;
+}
+.cp-progress-bar .grid-x {
+  display: flex;
+  align-items: center;
+}
 .cp-progress-bar .progress-bar-item {
   margin-bottom: 2rem;
 }
 .cp-progress-bar .item-label,
 .cp-progress-bar .item-value {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
+  font-size: 1.4rem;
+  color: #333333;
   margin-bottom: 0.5rem;
+  font-family: "Poppins Medium";
+}
+.cp-progress-bar .icon-star {
+  color: #FFB800;
+  font-size: 1.1rem;
+}
+.cp-progress-bar .item-value {
+  font-weight: 400;
+}
+.cp-progress-bar .item-bar {
+  position: relative;
+  height: 0.6rem;
+  width: 70%;
+  background-color: #DEDEDE;
+  border-radius: 4px;
+  margin-left: 1rem;
+}
+.cp-progress-bar .item-bar .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.6rem;
+  margin: 0;
+  border-radius: 4px;
+  transition: width 100ms ease;
+}
+.cp-progress-bar .item-bar .progress.red {
+  background: #EE4400;
+}
+.cp-progress-bar .item-bar .progress.yellow {
+  background: #FFB800;
+}
+.cp-progress-bar .item-bar .progress.green {
+  background: #00A441;
+}
+.cp-progress-bar .count {
+  position: absolute;
+  right: -52px;
+  top: -9px;
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #333333;
 }
 
 /*# sourceMappingURL=cp-progress-bar.css.map */
