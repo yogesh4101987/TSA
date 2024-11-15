@@ -1463,6 +1463,9 @@ p {
     display: none;
   }
 }
+.btn.typ-wiron-cat {
+  min-width: 34.3rem;
+}
 
 /* colors */
 /*font family*/
