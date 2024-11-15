@@ -59,5 +59,8 @@
   width: 16rem;
   height: 10.4rem;
 }
+.cp-trade-hand-tool-card.typ-why-wiron:hover .title {
+  color: #333333;
+}
 
 /*# sourceMappingURL=cp-trade-hand-tool-card.css.map */

@@ -52,6 +52,11 @@ justify-content: center;
         width: 16.0rem;
         height: 10.4rem;
     }
-  
+    &:hover{
+        .title{
+            color:$clr-base;
+        }
+       
+    }
 }
 }
