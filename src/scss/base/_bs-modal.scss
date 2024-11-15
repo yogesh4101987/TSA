@@ -1,0 +1,135 @@
+.bs-modal {
+    position: relative;
+    height: 100%;
+    &.fade {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 11;
+        opacity: 0;
+        visibility: hidden;
+        // display: none;
+        // overflow-x: hidden;
+        outline: 0;
+    }
+    &.modal-show {
+        opacity: 1;
+        visibility: visible;
+        top: 20%;
+        left: 50%;
+        @include transform(translate(-50%, -20%));
+        transition: opacity 0.1s ease-in-out;
+        -webkit-transition: opacity 0.1s ease-in-out;
+        -moz-transition: opacity 0.1s ease-in-out;
+        @media only screen and (max-width: $media-mobile)  {
+            width: 100%;
+        }
+        .modal-dialog {
+            @include transform(translate(-50%, -50%));
+        }
+    }
+    .modal-body {
+        flex: none;
+        padding: 0;
+        height: 100%;
+        .highlightText {
+            display: inline-block;
+            color: $clr-para;
+            font-family: $font-bold;
+        }
+    }
+    .modal-dialog {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -75%));
+        transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        background: $clr-root;
+        border-radius: 0px;
+        padding: 1.5rem;
+    }
+    .modal-content {
+        height: auto;
+        border: 0;
+       
+    }
+    .close-btn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 2.4rem;
+        color: #000000;
+        padding: 0;
+        z-index: 5;
+        @media only screen and (max-width: $media-mobile) {
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+    }
+    &.type-md {
+        .small-title {
+            font-size: 4rem;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 2.4rem;
+            }
+        }
+        .modal-dialog {
+            padding: 3rem;
+            max-width: 47rem;
+            @media only screen and (max-width: $media-mobile) {
+                padding: 2rem 1.5rem;
+                height: 100%;
+            }
+        }
+    }
+    &.type-lg {
+        .small-title {
+            font-size: 2rem;
+            font-family: $font-semiBold;
+            border-bottom: 1px solid #dedede;
+            padding: 1.6rem ;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 2.4rem;
+            }
+        }
+        .modal-body{
+            padding: 3rem;
+        }
+        .modal-dialog {
+            padding: 0;
+            max-width: 82rem;
+            @media only screen and (max-width: $media-mobile) {
+                height: 100%;
+            }
+        }
+        .modal-content{
+            @media only screen and (max-width: $media-mobile) {
+                height: 100%;
+            }
+        }
+    }
+    &.type-prod-thumb{
+        .modal-body{
+            padding: 0;
+        }
+    }
+   
+   
+    .bs-applicant-form {
+        @media only screen and (max-width: $media-mobile) {
+            .title {
+                font-size: 2rem;
+            }
+            .sub-title {
+                font-size: 1.6rem;
+            }
+        }
+    }
+ 
+   
+}

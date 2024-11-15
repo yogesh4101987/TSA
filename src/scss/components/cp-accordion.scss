@@ -1,0 +1,71 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-accordion {
+    margin-bottom: 3rem;
+    .acc-item {
+        border-bottom: solid 1px $clr-border;
+        @include transition(all, 0.5s, ease);
+        &.active{
+            background: #FFF6F2;
+            .acc-head {
+                padding-bottom: 1.6rem;
+                &:before {
+                    content: "\e922";
+                }
+            }
+            .acc-cont {
+                display: block;
+                @include transition(all, 0.5s, ease);
+            }
+        }
+    }
+    .acc-head {
+        position: relative;
+        cursor: pointer;
+        font-family: $font-semiBold;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: $clr-base;
+        padding: 2.2rem 4rem 2.2rem 2rem;
+        &:before {
+            content: "\e921";
+            font-family: 'icomoon';
+            position: absolute;
+            font-size: 2.2rem;
+            line-height: 2.4rem;
+            color:$clr-primary;
+            top: 50%;
+            right: 2rem;
+            transform: translateY(-50%);
+            @include transition(all, 0.5s, ease);
+            @media only screen and (max-width: $media-sm) {
+                font-size: 2rem;
+                line-height: 2.2rem;
+            }
+        }
+    }
+    .acc-cont {
+        display: none;
+        padding: 0 2rem 2rem;
+        .content {
+            font-family: $font-regular;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $clr-base;
+            margin-bottom: 1.6rem;
+        }
+    }
+    &.typ-policy{
+      .acc-item{
+        border-top: 1px solid #dedede;
+        border-bottom: 0;
+        &.active{
+          background-color: #f3f4f6;
+        }
+        &:last-child{
+          border-bottom: 1px solid #dedede;
+        }
+      }
+    }
+}
