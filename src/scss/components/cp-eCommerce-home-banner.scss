@@ -273,4 +273,20 @@
             
         }
     }
+    &.typ-wiron{
+        .feature-item{
+            &:nth-child(6){
+                width: 100%;
+                .feature-card{
+                    background: #F3F4F6;
+
+                .f-img{
+                    &::after{
+                        background: #CCCCCC;
+                    }
+                }
+                }
+            }
+        }
+    }
 }
