@@ -27,6 +27,10 @@
     <link rel="stylesheet" href="/components/cp-add-info-list/cp-add-info-list.css" />
     <link rel="stylesheet" href="/components/cp-product-details/cp-product-details.css" />
     <link rel="stylesheet" href="/components/cp-offers/cp-offers.css" />
+    <link rel="stylesheet" href="/components/cp-counter/cp-counter.css" />
+    <link rel="stylesheet" href="/components/cp-box/cp-box.css" />
+    <link rel="stylesheet" href="/components/cp-prod-size/cp-prod-size.css" />
+    <link rel="stylesheet" href="/components/cp-select/cp-select.css" />
   </head>
 
   <body>
@@ -1249,7 +1253,72 @@
                     </div>
                   </div>
                 </li>
-              </ul>            
+              </ul>   
+              <div class="cp-prod-size">
+                <h3 class="title">Size</h3>
+                <!--radio button start-->
+                <div class="radio-wrap">
+                  <div class="bs-radio">
+                    <input id="radio1" name="size" type="radio">
+                    <label for="radio1" class="custom-radio">
+                      14X12X25 mm
+                      <span class="price">₹1,279</span>
+                    </label>
+                  </div>
+                  <div class="bs-radio">
+                    <input id="radio2" name="size" type="radio">
+                    <label for="radio2" class="custom-radio">
+                      14X12X25 mm
+                      <span class="price">₹1,279</span>
+                    </label>
+                  </div>
+                  <div class="bs-radio">
+                    <input id="radio3" name="size" type="radio">
+                    <label for="radio3" class="custom-radio">
+                      14X12X25 mm
+                      <span class="price">₹1,279</span>
+                    </label>
+                  </div>
+                </div>      
+              </div>
+              <!--radio button end-->
+              <div class="cp-select">
+                <div class="select-dropdown">
+                  <button href="#" role="button" data-value="" class="select-dropdown-button">
+                    <span class="select-text">SELECT ITEMS </span> <i class="zmdi zmdi-chevron-down"></i>
+                  </button>
+                  <ul class="select-dropdown-list">
+                    <li class="dropdown-item">
+                      <span data-value="1" class="select-dropdown-list-item">12-14X25MM</span>
+                      <span>₹1,279</span>
+                    </li>
+                    <li class="dropdown-item">
+                      <span  data-value="2" class="select-dropdown-list-item">15-14X25MM</span>
+                      <span>₹1,279</span>
+                        
+                      </li>
+                    <li class="dropdown-item">
+                      <span data-value="3" class="select-dropdown-list-item">14-14X25MM</span>
+                      <span>₹1,279</span>
+                    </li>
+                    <li class="dropdown-item">
+                      <span data-value="4" class="select-dropdown-list-item">13-14X25MM</span>  	
+                      <span>₹1,279</span></li>
+                  </ul>
+                </div>
+              
+              </div>        
+              <!--Product size end-->       
+              <!--product counter start-->              
+              <div class="cp-box type-quntity">
+                <h3 class="title">Quantity</h3>
+                <div class="cp-counter">
+                  <button class="btn-count no-active btn-minus" disabled>-</button>
+                  <input type="text" readonly class="number-product" value="1">
+                  <button class="btn-count btn-plus">+</button>
+                </div>
+              </div>
+              <!--product counter end-->         
               <div class="action-wrap">
                 <button class="btn btn-primary js-drawer" data-id="productDetail">Add to cart</button>
               </div>
@@ -1396,6 +1465,8 @@
     <script src="/components/cp-product-card/cp-product-plp-card.js"></script>
     <script src="/components/cp-product-details/cp-product-details.js"></script>
     <script src="/components/cp-drawer/cp-drawer.js"></script>
+    <script src="/components/cp-counter/cp-counter.js"></script>
+    <script src="/components/cp-select/cp-select.js"></script>
     <!-- endbuild -->
   </body>
 </html>

@@ -72,5 +72,18 @@
 .cp-drawer.typ-prod-detail {
   padding-top: 4rem;
 }
+.cp-drawer.typ-prod-detail .cp-add-info-list {
+  margin-bottom: 3.2rem;
+}
+.cp-drawer.typ-prod-detail .radio-wrap {
+  gap: 1.2rem;
+  justify-content: flex-start;
+}
+.cp-drawer.typ-prod-detail .radio-wrap .bs-radio {
+  margin-bottom: 0;
+}
+.cp-drawer.typ-prod-detail .cp-box.type-quntity {
+  margin-top: 3.2rem;
+}
 
 /*# sourceMappingURL=cp-drawer.css.map */
