@@ -110,7 +110,7 @@
     min-width: 12.3rem;
   }
 }
-.cp-notify.typ-need-expert {
+.cp-notify.typ-notification, .cp-notify.typ-need-expert {
   padding: 2.4rem;
   flex-direction: column;
   align-items: flex-start;
@@ -118,35 +118,35 @@
   margin-top: 0;
 }
 @media only screen and (max-width: 768px) {
-  .cp-notify.typ-need-expert {
+  .cp-notify.typ-notification, .cp-notify.typ-need-expert {
     padding: 1.6rem;
     gap: 0;
   }
 }
-.cp-notify.typ-need-expert .notify-title {
+.cp-notify.typ-notification .notify-title, .cp-notify.typ-need-expert .notify-title {
   margin-bottom: 0.8rem;
 }
-.cp-notify.typ-need-expert .notify-btn {
+.cp-notify.typ-notification .notify-btn, .cp-notify.typ-need-expert .notify-btn {
   min-width: auto;
   background: transparent;
 }
-.cp-notify.typ-need-expert .notify-btn.btn-white {
+.cp-notify.typ-notification .notify-btn.btn-white, .cp-notify.typ-need-expert .notify-btn.btn-white {
   background: #FFFFFF;
   color: #333333;
 }
-.cp-notify.typ-need-expert .notify-icon {
+.cp-notify.typ-notification .notify-icon, .cp-notify.typ-need-expert .notify-icon {
   font-size: 11.6rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-notify.typ-need-expert .notify-icon {
+  .cp-notify.typ-notification .notify-icon, .cp-notify.typ-need-expert .notify-icon {
     font-size: 9.6rem;
   }
 }
-.cp-notify.typ-need-expert .notify-icon.icon-brochure {
+.cp-notify.typ-notification .notify-icon.icon-brochure, .cp-notify.typ-need-expert .notify-icon.icon-brochure {
   font-size: 8.6rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-notify.typ-need-expert .notify-icon.icon-brochure {
+  .cp-notify.typ-notification .notify-icon.icon-brochure, .cp-notify.typ-need-expert .notify-icon.icon-brochure {
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
@@ -157,7 +157,7 @@
     font-size: 8.6rem;
   }
 }
-.cp-notify.typ-need-expert .btn-wrap {
+.cp-notify.typ-notification .btn-wrap, .cp-notify.typ-need-expert .btn-wrap {
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -267,7 +267,7 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-notify.typ-download-brochure .notify-icon {
-    top: 4.2rem;
+    top: 1.2rem;
     right: 0rem;
     font-size: 8.6rem;
   }
@@ -279,6 +279,18 @@
   min-width: 19.6rem;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+.cp-notify.typ-notification {
+  background: #ECF2FB;
+}
+.cp-notify.typ-notification .notify-icon {
+  color: #D8E5F8;
+}
+.cp-notify.typ-notification .notify-title {
+  color: #333333;
+}
+.cp-notify.typ-notification .notify-desc {
+  color: #666666;
 }
 
 /*# sourceMappingURL=cp-notify.css.map */

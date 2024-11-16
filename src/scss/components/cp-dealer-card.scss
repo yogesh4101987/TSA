@@ -76,7 +76,22 @@
                     text-align: center;
                     margin-right: 1rem;
                 }
+                &.typ-green{
+                    background: #00A441;
+                }
             }
+        }
+    }
+}
+
+.btn-wrap {
+    &.typ-dealer{
+        margin-top: 1.6rem;
+        text-align: center;
+        @media only screen and (max-width: $media-mobile) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding: 1.1rem 1.2rem;
         }
     }
 }

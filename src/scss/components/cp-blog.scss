@@ -2,7 +2,7 @@
 @import "../config/mixin";
 
 .cp-blog{
-    max-width: 29.6rem;
+    // max-width: 29.6rem;
     @include border-radius(1.6rem);
     border: 1px solid $clr-border;
     background-color: $clr-root;
