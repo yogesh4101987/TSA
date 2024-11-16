@@ -1403,7 +1403,6 @@ p {
   border-radius: 1px;
 }
 .btn.btn-icon {
-  background: transparent;
   border: 1px solid #FFFFFF;
   display: flex;
   align-items: center;

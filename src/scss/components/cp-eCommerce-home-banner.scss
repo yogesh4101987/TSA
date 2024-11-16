@@ -34,6 +34,7 @@
         .feature-item {
             width: 25%; /* Adjust width to account for 20px gutter */
             height: 14rem;    
+            overflow: hidden;
             display: flex;  
             margin: 0 ; 
             &:nth-child(2) { order: 1; } //STRUCTURE
@@ -90,16 +91,6 @@
         @media only screen and (max-width: $media-mobile) {
             padding: 1rem;
         }
-        // &.typ-resized{
-        //     .f-img{
-        //         max-width: 14.3rem;
-        //         max-height: 13.6rem;
-        //         @media only screen and (max-width: $media-mobile) {
-        //             max-width: 8rem;
-        //             max-height: 8rem;
-        //         }
-        //     }            
-        // }
         &:hover,
         &.active{
             box-shadow: 0px 8px 24px 0px #00000014;
@@ -184,12 +175,12 @@
                     z-index: -1;
                 }
                }
-            &:nth-child(2){
+            &:nth-child(1){
                 .feature-card{
                     background: #E5F6EC;
                 }
             }
-            &:nth-child(3){
+            &:nth-child(2){
                 .feature-card{
                     background: #FFF8E5;
                 .f-img{
@@ -200,7 +191,7 @@
                 
                 }
             }
-            &:nth-child(4){
+            &:nth-child(3){
                 
                 .feature-card{
                     background: #FAE6EA;
@@ -212,7 +203,7 @@
                 }
                 }
             }
-            &:nth-child(5){
+            &:nth-child(4){
                 
                 .feature-card{
                     background: #ECF2FB;
@@ -225,7 +216,7 @@
                 }
                 }
             }
-            &:nth-child(6){
+            &:nth-child(5){
                
                 .feature-card{
                     background: #FDECE5;
@@ -239,7 +230,7 @@
                 }
                 }
             }
-            &:nth-child(7){
+            &:nth-child(6){
                 
                 .feature-card{
                     background: #F3F4F6;
@@ -264,12 +255,12 @@
                
                 
             }
-            &:nth-child(2) { order: 1; } //TRADE HAND TOOL
-            &:nth-child(3) { order: 1; } //DIY TOOL KITS
-            &:nth-child(4) { order: 4; } //AGRI TOOL
-            &:nth-child(5) { order: 3; } //FILLING TOOL
-            &:nth-child(6) { order: 5; } //GARDEN TOOL
-            &:nth-child(7) { order: 6; } //INDUSTRIAL & HARDWARE
+            &:nth-child(1) { order: 1; } //TRADE HAND TOOL
+            &:nth-child(2) { order: 1; } //DIY TOOL KITS
+            &:nth-child(3) { order: 4; } //AGRI TOOL
+            &:nth-child(4) { order: 3; } //FILLING TOOL
+            &:nth-child(5) { order: 5; } //GARDEN TOOL
+            &:nth-child(6) { order: 6; } //INDUSTRIAL & HARDWARE
             
         }
     }
@@ -287,6 +278,10 @@
                 }
                 }
             }
+        }
+        .act-wrap{
+            margin-top: 2rem;
+            text-align: center;
         }
     }
 }
