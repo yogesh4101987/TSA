@@ -58,6 +58,8 @@
 .cp-trade-hand-tool-card.typ-why-wiron .img-wrap {
   width: 16rem;
   height: 10.4rem;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .cp-trade-hand-tool-card.typ-why-wiron:hover .title {
   color: #333333;

@@ -51,6 +51,8 @@ justify-content: center;
     .img-wrap{
         width: 16.0rem;
         height: 10.4rem;
+        border-radius: 12px;
+        overflow: hidden;
     }
     &:hover{
         .title{
