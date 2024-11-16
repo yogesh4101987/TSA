@@ -2061,6 +2061,23 @@ p {
   width: 10.6rem !important;
   margin-right: 1.2rem;
 }
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-why-wiron {
+    margin-right: -2rem;
+  }
+}
+.bs-swiper.typ-why-wiron .swiper-slide {
+  width: 19.1rem;
+  height: 14rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-why-wiron .swiper-slide {
+    width: 16rem;
+    height: 14.8rem;
+    margin-right: 1.2rem;
+  }
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;
