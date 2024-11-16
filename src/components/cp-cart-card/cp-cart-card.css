@@ -1,0 +1,15 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-cart-card .cart-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cp-cart-card .cart-list .list-item {
+  width: 30%;
+}
+
+/*# sourceMappingURL=cp-cart-card.css.map */
