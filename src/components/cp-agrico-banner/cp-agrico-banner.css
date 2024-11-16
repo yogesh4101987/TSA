@@ -11,6 +11,9 @@
   width: 100%;
   height: 28rem;
 }
+.cp-agrico-banner .img-wrap img {
+  height: 100%;
+}
 @media only screen and (max-width: 768px) {
   .cp-agrico-banner .img-wrap {
     height: 19.2rem;

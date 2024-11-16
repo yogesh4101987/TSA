@@ -2049,6 +2049,18 @@ p {
     border-bottom: none;
   }
 }
+.bs-swiper.typ-prod-types {
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-prod-types {
+    margin-right: -1.6rem;
+  }
+}
+.bs-swiper.typ-prod-types .swiper-slide {
+  width: 10.6rem !important;
+  margin-right: 1.2rem;
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;

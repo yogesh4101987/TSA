@@ -498,9 +498,7 @@
         width: 34.4rem !important;
       }
     }   
-  }
-
- 
+  } 
 
   &.typ-plp-slider{
     width: 29.6rem;
@@ -526,5 +524,16 @@
         border-bottom: none;
       }
     }   
+  }
+
+  &.typ-prod-types{
+    margin-bottom: 1.6rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-right: -1.6rem;
+    }
+    .swiper-slide{
+      width: 10.6rem !important;
+      margin-right: 1.2rem;     
+    } 
   }
 }
