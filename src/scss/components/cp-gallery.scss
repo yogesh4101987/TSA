@@ -1,0 +1,58 @@
+@import "../config/mixin.scss";
+@import "../config/variables.scss";
+
+.cp-gallery{
+    .gallery-card{
+        @include border-radius(1.2rem);
+        overflow: hidden;
+        .img-wrap{            
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .content-wrap{            
+            padding: 1.6rem 1.6rem 1.6rem 1.2rem;
+            .title{
+                font-family: $font-medium;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: $clr-base;
+                margin-bottom: 0.2rem;
+            }
+            .desc{
+                font-family: $font-regular;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                color: $clr-para;
+                margin-bottom: 1.2rem;
+            }
+            .btn{
+                min-width: 18.1rem;
+            }
+        }
+        &.typ-details{
+            margin-top: 1.2rem;
+            background: #F3F4F6;
+            border: 1px solid $clr-border;
+            display: flex;
+            justify-content: space-between;
+            .img-wrap{
+                width: 39.3%;
+            }
+            .content-wrap{  
+                width: 60%;
+            }
+        }
+    }
+    .btn-wrap{
+        text-align: center;
+        margin-top: 2.4rem;
+        .btn{
+            min-width: 16.6rem;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding: 1.1rem 1.2rem;
+        }
+    }
+}
