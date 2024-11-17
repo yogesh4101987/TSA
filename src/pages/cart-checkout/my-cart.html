@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="/components/cp-other-info/cp-other-info.css" />
     <link rel="stylesheet" href="../../components/cp-price/cp-price.css" />
     <link rel="stylesheet" href="../../components/cp-cart-card/cp-cart-card.css" />
+    <link rel="stylesheet" href="../../components/cp-counter/cp-counter.css" />
+    <link rel="stylesheet" href="/components/cp-product-card/cp-product-card.css" />
 
   </head>
 
@@ -140,45 +142,166 @@
 
                 <!--cart card start-->
                 <div class="cart-prod-wrapper">
-                    <ul class="prod-head">
-                    <li class="prod-item">
-                        <div class="logo-wrap">
-                            <img src="/components/cp-cart/images/Icon.png" alt="logo">
-                        </div>
-                        <h3>Tiscon</h3>
-                    </li>
-                    <li class="prod-item">
-                        <span>₹ 23,25,848</span>
-                    </li>
-                    </ul>
-
-                    <div class="coupon-code-info">
-                        <span class="code-info">Add ₹5,000 and get 2% off on Tiscon products</span>
-                        <span class="code">CODE-TISCON2%</span>
-                        <a href="#" class="btn-link">Apply</a>
-                    </div>
-
-                    <div class="cp-cart-card">
+                    <div class="sec-cont">
                         <ul class="prod-head">
-                            <li class="prod-item typ-grey">
+                            <li class="prod-item">
                                 <div class="logo-wrap">
-                                    <img src="/components/cp-cart/images/rebars.png" alt="logo">
+                                    <img src="/components/cp-cart/images/Icon.png" alt="logo">
                                 </div>
-                                <h3>Rebars</h3>
-                                <p class="desc">Silver iron rods CDS 145</p>
+                                <h3>Tiscon</h3>
                             </li>
-                            <li class="prod-item typ-grey">
+                            <li class="prod-item">
                                 <span>₹ 23,25,848</span>
                             </li>
                             </ul>
-                         <ul class="cart-list">
-                            <li class="list-item">Size</li>
-                            <li class="list-item">Price</li>
-                            <li class="list-item">Quantity</li>
-                            <li class="list-item">8mm</li>
-                            <li class="list-item">₹220/piece</li>
-                         </ul>   
                     </div>
+                   
+                    <div class="sec-cont">
+                        <div class="coupon-code-info">
+                            <span class="code-info">Add ₹5,000 and get 2% off on Tiscon products</span>
+                            <span class="code">CODE-TISCON2%</span>
+                            <a href="#" class="btn-link">Apply</a>
+                        </div>
+                    </div>
+                    
+                    <div class="sec-cont">
+                        <div class="cp-cart-card">
+                            <ul class="prod-head">
+                                <li class="prod-item typ-grey">
+                                    <div class="logo-wrap">
+                                        <img src="/components/cp-cart/images/rebars.png" alt="logo">
+                                    </div>
+                                    <h3>Rebars
+                                        <span class="desc">Silver iron rods CDS 145</span>   
+                                    </h3>
+                                  
+                                </li>
+                                <li class="prod-item typ-grey">
+                                    <span>₹ 23,25,848</span>
+                                </li>
+                                </ul>
+                             <ul class="cart-list">
+                                <li class="list-item list-head">Size</li>
+                                <li class="list-item list-head">Price</li>
+                                <li class="list-item list-head">Quantity</li>
+                                <li class="list-item">8mm</li>
+                                <li class="list-item">₹220/piece</li>
+                                <li class="list-item">
+                                    <div class="cp-counter typ-cart">
+                                    <button class="btn-count no-active btn-minus" disabled>-</button>
+                                    <input type="text" readonly class="number-product" value="1">
+                                    <button class="btn-count btn-plus">+</button>
+                                  </div>
+                                </li>
+                                <li class="list-item">12mm</li>
+                                <li class="list-item">₹220/piece</li>
+                                <li class="list-item">
+                                    <div class="cp-counter typ-cart">
+                                    <button class="btn-count no-active btn-minus" disabled>-</button>
+                                    <input type="text" readonly class="number-product" value="1">
+                                    <button class="btn-count btn-plus">+</button>
+                                  </div>
+                                </li>
+                                <li class="list-item">16mm</li>
+                                <li class="list-item">₹220/piece</li>
+                                <li class="list-item">
+                                    <div class="cp-counter typ-cart">
+                                    <button class="btn-count no-active btn-minus" disabled>-</button>
+                                    <input type="text" readonly class="number-product" value="1">
+                                    <button class="btn-count btn-plus">+</button>
+                                  </div>
+                                </li>
+                             </ul>  
+                             <ul class="bottom-link-list">
+                                <li  class="link-item">
+                                  <span class="icon icon-heart-fill"></span>
+                                  <h3 class="link-text">Save for later</h3> 
+                                   
+                                </li>
+                                <li class="link-item">
+                                    <span class="icon icon-delate"></span>
+                                    <h3 class="link-text">Remove</h3>
+                                </li>
+                                <li class="link-item">
+                                    <span class="icon icon-plus"></span>
+                                    <h3 class="link-text">Add sizes</h3>
+                                </li>
+                             </ul> 
+                        </div>
+                    </div>
+                    
+                    <div class="sec-cont">
+                        <div class="sec-head">
+                            <h3 class="sec-title">Complete your requirements</h3>
+                        </div>
+                        <div class="requirment-wrap">
+                            <div class="cp-product-card typ-cart">
+                                <div class="lhs">
+                                  <div class="img-wrap">
+                                    <picture>
+                                      <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                      <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                                    </picture>
+                                  </div>
+                                </div>
+                                <div class="rhs">
+                                  <h3 class="prod-title">Binding wires</h3>
+                                  <h4 class="size-code">0.91mm</h4>
+                                  
+                                  <div class="price-wrap">
+                                    <p class="discounted-price"><span class="amt">₹280</span> piece</p>
+                                    <a href="#" class="select-text">Select</a>
+                                  </div>
+                                </div>
+                              </div>
+    
+                              <div class="cp-product-card typ-cart">
+                                <div class="lhs">
+                                  <div class="img-wrap">
+                                    <picture>
+                                      <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                      <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                                    </picture>
+                                  </div>
+                                </div>
+                                <div class="rhs">
+                                  <h3 class="prod-title">Binding wires</h3>
+                                  <h4 class="size-code">0.91mm</h4>
+                                  
+                                  <div class="price-wrap">
+                                    <p class="discounted-price"><span class="amt">₹280</span> piece</p>
+                                    <a href="#" class="select-text">Select</a>
+                                  </div>
+                                </div>
+                              </div>
+    
+                              <div class="cp-product-card typ-cart">
+                                <div class="lhs">
+                                  <div class="img-wrap">
+                                    <picture>
+                                      <source media="(max-width:768px)" srcset="../components/cp-product-card/images/product-1.png">
+                                      <img src="../components/cp-product-card/images/product-vertical-1.png" alt="product_img" />
+                                    </picture>
+                                  </div>
+                                </div>
+                                <div class="rhs">
+                                  <h3 class="prod-title">Binding wires</h3>
+                                  <h4 class="size-code">0.91mm</h4>
+                                  
+                                  <div class="price-wrap">
+                                    <p class="discounted-price"><span class="amt">₹280</span> piece</p>
+                                    <a href="#" class="select-text">Select</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bottom-notify">
+                    <span class="icon icon-bell"></span>
+                    <p class="notify-text">65% of customers reorder rebars 4-5 times. We'll remind you to reorder!</p>
+                    <a href="#" class="notify-link">Set reminder</a>
                 </div>
                 <!--cart card end-->
               </div>
@@ -264,6 +387,8 @@
     <!-- build:js assets/js/custom.min.js -->
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
+    <script src="../../components/cp-counter/cp-counter.js"></script>
+
     <!-- endbuild -->
   </body>
 </html>

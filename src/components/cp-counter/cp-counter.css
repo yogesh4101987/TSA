@@ -13,12 +13,14 @@
   color: #333333;
   display: flex;
   overflow: hidden;
+  font-family: "Poppins Medium";
 }
 .cp-counter .btn-count {
   width: 4.8rem;
   height: 4.8rem;
   background-color: #ECF2FB;
   font-size: 2.4rem;
+  font-family: "Poppins Medium";
 }
 .cp-counter .number-product {
   width: 4.8rem;
@@ -26,6 +28,17 @@
   text-align: center;
   border-left: 1px solid #dedede;
   border-right: 1px solid #dedede;
+}
+.cp-counter.typ-cart {
+  max-width: 11.1rem;
+}
+.cp-counter.typ-cart .btn-count {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.cp-counter.typ-cart .number-product {
+  width: 4.5rem;
+  height: 3.2rem;
 }
 
 /*# sourceMappingURL=cp-counter.css.map */

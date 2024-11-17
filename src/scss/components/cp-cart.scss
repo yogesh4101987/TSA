@@ -47,12 +47,18 @@
     border-radius: 16px;
     padding:1.6rem 2.4rem;
     margin-top: 2.6rem;
+    position: relative;
+    z-index: 2;
     @media only screen and (max-width: $media-mobile){
         padding: 1.6rem 1.2rem;
     }
     .prod-head{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 1.2rem;
+        @media only screen and (max-width: $media-mobile){
+            align-items: flex-start;
+        }
         .prod-item{
             display: flex;
             align-items: center;
@@ -112,6 +118,54 @@
             bottom: 12px;
             font-size: 1.4rem;
             font-family: $font-medium;
+        }
+    }
+  }
+  .requirment-wrap{
+    display: flex;
+    gap:2rem;
+  }
+  .bottom-notify{
+    background: #5A245A;
+    display: flex;
+    padding: 5rem 2.4rem 2rem;
+    border-radius: 0 0 12px 12px;
+    margin-top: -1rem;
+    position: relative;
+    z-index: 1;
+    top: -2rem;
+    align-items: center;
+    gap:1.2rem;
+    @media only screen and (max-width: $media-mobile){
+        padding: 4.5rem 1rem 3.5rem;
+    }
+    .icon{
+        width: 3.6rem;
+    height: 3.6rem;
+    background: $clr-root;
+    border-radius: 50%;
+    color: #5A245A;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .notify-text{
+        color: $clr-root;
+        font-size: 1.4rem;
+        font-family: $font-regular;
+        width: 80%;
+
+    }
+    .notify-link{
+        color: $clr-root;
+        text-decoration: underline;
+        font-size: 1.4rem;
+        @media only screen and (max-width: $media-mobile){
+            position: absolute;
+            bottom: 11px;
+            left: 57px;
         }
     }
   }
