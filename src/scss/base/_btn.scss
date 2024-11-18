@@ -132,6 +132,7 @@
           }
         }
         &.typ-btn-desk {
+            margin-top: 3.2rem;
           @media only screen and (max-width: $media-mobile) {
             display: none;
           }

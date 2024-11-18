@@ -56,6 +56,10 @@
       display: block;
     }
   }
+  .typ-review-stars{
+    @media only screen and (max-width: $media-mobile) {
+      margin-inline: -1.6rem;
+    }}
   &.typ-product-details {
     border-radius: 1.6rem;
     .product-brand {
@@ -69,7 +73,6 @@
   &.typ-customer-review {
     @media only screen and (max-width: $media-mobile) {
       margin-inline: -1.6rem;
-      border-bottom: 1px solid #ffe399;
       border-top: 1px solid #ffe399;
     }
 
@@ -92,83 +95,3 @@
   }
 }
 
-// wrap for form element in drower
-
-.form-wrapper {
-  display: flex;
-  flex-direction: column;
-  .form-label {
-    font-family: $font-regular;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .question {
-    padding: 1.2rem 1.6rem;
-    border: 1px solid $clr-border;
-    font-family: $font-regular;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    border-radius: 1.2rem;
-    margin-bottom: 2.4rem;
-  }
-
-  .disabled {
-    background-color: #ededed;
-    color: #b3b3b3;
-    border: none;
-  }
-
-  &.typ-review-star {
-    .star-label,
-    .review-label,
-    .title-label {
-      font-family: $font-regular;
-      font-size: 1.4rem;
-      line-height: 2rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .star-label {
-      font-family: $font-medium;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .star-rating {
-      padding-bottom: 2.4rem;
-      border-bottom: 1px solid $clr-border;
-      margin-bottom: 2.4rem;
-      .icon {
-        font-size: 4.8rem;
-        color: #cccccc;
-      }
-      .star-selected {
-        color: #ffb800;
-      }
-    }
-
-    .title {
-      padding: 1.2rem 1.6rem;
-      border: 1px solid $clr-border;
-      font-family: $font-regular;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      border-radius: 1.2rem;
-      margin-bottom: 2.4rem;
-    }
-
-    .review {
-      padding: 1.2rem 1.6rem;
-      border: 1px solid $clr-border;
-      font-family: $font-regular;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      border-radius: 1.2rem;
-      margin-bottom: 2.4rem;
-      min-height: 15.6rem;
-    }
-  }
-}

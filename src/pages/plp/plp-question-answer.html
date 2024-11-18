@@ -18,11 +18,15 @@
     <link rel="stylesheet" href="/components/cp-ask-question/cp-ask-question.css"/>
     <link rel="stylesheet" href="/components/cp-breadcrumb/cp-breadcrumb.css" />
     <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
-    
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+
     <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
     <link rel="stylesheet" href="/components/cp-accordion/cp-accordion.css" />
     <link rel="stylesheet" href="/components/cp-question-answer/cp-question-answer.css"/>
     <link rel="stylesheet" href="/components/cp-product-name-head/cp-product-name-head.css"/>
+  <link rel="stylesheet" href="/components/cp-form/cp-form.css" />
+  <link rel="stylesheet" href="/components/cp-like-dislike/cp-like-dislike.css" />
+
   </head>
 
   <body>
@@ -116,7 +120,7 @@
     <!-- Header end -->
     <main class="main">
       <!-- breadcrumb starts -->
-      <section class="bs-sec typ-first-sec">
+      <section class="bs-sec typ-first-sec pd-bottom-8">
         <div class="container">
           <div class="sec-cont">
             <ul class="cp-breadcrumb">
@@ -139,7 +143,7 @@
       <!-- breadcrumb ends -->
       <!--quetion and asnwer starts -->
 
-      <section class="bs-sec typ-question-answer">
+      <section class="bs-sec typ-question-answer pd-top-8">
         <div class="container">
           <div class="sec-head">
             <h2 class="sec-title">Question & answers</h2>
@@ -175,7 +179,7 @@
                       <span class="product-name">High Tensile Fastners</span>
                     </div>
                   </div>
-                  <button class="btn btn-ask typ-btn-desk">
+                  <button class="btn btn-ask typ-btn-desk js-drawer" data-id="ask-a-question">
                     Ask a question
                   </button>
                 </div>
@@ -211,7 +215,7 @@
                       <h3 class="title typ-capital">Latest on top</h3>
                     </li>
                   </ul>
-                  <button class="btn btn-ask typ-btn-mob">
+                  <button class="btn btn-ask typ-btn-mob js-drawer" data-id="ask-a-question">
                     Ask a question
                   </button>
                   <div class="tab-container js-accordion">
@@ -224,8 +228,8 @@
                             </h3>
                           </div>
                           <div class="acc-cont">
-                            <p class="ans-desc">In case the order has been placed through</p>
-                            <p class="ans-desc">< Pay Before Dispatch > option -The order can be
+                            <p class="acc-desc">In case the order has been placed through</p>
+                            <p class="acc-desc">< Pay Before Dispatch > option -The order can be
                               cancelled by the customer (through the portal or
                               toll-free number) before the order has been
                               dispatched from the dealer's outlet or before the
@@ -233,22 +237,25 @@
                               cancellation request placed after that will be
                               rejected."
                             </p>
-                            <ul class="list-wrap">
-                              <li class="list-item">
-                                <span class="icon icon-like"></span>
-                                <span class="text-num">(4)</span>
-                                <span class="icon icon-dislike"></span>
-                                <span class="text-num">(4)</span>
-                                <span class="icon icon-flag"></span>
-                                <span class="text-num">Report</span> </li>
-                                <li class="list-iteam">
-                                <span class="helpful">
-                                  Helpful?<span class="count-text"
-                                    >yes<span class="count-number">(2)</span></span
-                                  >
-                                </span>
-                              </li>
-                            </ul>
+                            <div class="cp-like-dislike">
+                              <ul class="list-wrap">
+                                <li class="list-item">
+                                  <span class="icon icon-like"></span>
+                                  <span class="text-num">(4)</span>
+                                  <span class="icon icon-dislike"></span>
+                                  <span class="text-num">(4)</span>
+                                  <span class="icon icon-flag no-mob"></span>
+                                  <span class="text-num no-mob">Report</span> </li>
+                                  <li class="list-iteam no-mob">
+                                  <span class="helpful">
+                                    Helpful?<span class="count-text"
+                                      >yes<span class="count-number">(2)</span></span
+                                    >
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                           
                           </div>
                         </div>
                         <div class="acc-item">
@@ -258,8 +265,8 @@
                             </h3>
                           </div>
                           <div class="acc-cont">
-                            <p class="ans-desc">In case the order has been placed through</p>
-                            <p class="ans-desc">< Pay Before Dispatch > option -The order can be
+                            <p class="acc-desc">In case the order has been placed through</p>
+                            <p class="acc-desc">< Pay Before Dispatch > option -The order can be
                               cancelled by the customer (through the portal or
                               toll-free number) before the order has been
                               dispatched from the dealer's outlet or before the
@@ -267,15 +274,16 @@
                               cancellation request placed after that will be
                               rejected."
                             </p>
+                            <div class="cp-like-dislike">
                             <ul class="list-wrap">
                               <li class="list-item">
                                 <span class="icon icon-like"></span>
                                 <span class="text-num">(4)</span>
                                 <span class="icon icon-dislike"></span>
                                 <span class="text-num">(4)</span>
-                                <span class="icon icon-flag"></span>
-                                <span class="text-num">Report</span> </li>
-                                <li class="list-iteam">
+                                <span class="icon icon-flag no-mob"></span>
+                                  <span class="text-num no-mob">Report</span> </li>
+                                  <li class="list-iteam no-mob">
                                 <span class="helpful">
                                   Helpful?<span class="count-text"
                                     >yes<span class="count-number">(2)</span></span
@@ -283,6 +291,7 @@
                                 </span>
                               </li>
                             </ul>
+                            </div>
                           </div>
                         </div>
                         <div class="acc-item">
@@ -290,8 +299,8 @@
                             <h3 class="title">What Tata Steel brands can I buy on Tata Steel Aashiyana?</h3>
                           </div>
                           <div class="acc-cont">
-                            <p class="ans-desc">In case the order has been placed through</p>
-                            <p class="ans-desc">< Pay Before Dispatch > option -The order can be
+                            <p class="acc-desc">In case the order has been placed through</p>
+                            <p class="acc-desc">< Pay Before Dispatch > option -The order can be
                               cancelled by the customer (through the portal or
                               toll-free number) before the order has been
                               dispatched from the dealer's outlet or before the
@@ -299,15 +308,16 @@
                               cancellation request placed after that will be
                               rejected."
                             </p>
+                            <div class="cp-like-dislike">
                             <ul class="list-wrap">
                               <li class="list-item">
                                 <span class="icon icon-like"></span>
                                 <span class="text-num">(4)</span>
                                 <span class="icon icon-dislike"></span>
                                 <span class="text-num">(4)</span>
-                                <span class="icon icon-flag"></span>
-                                <span class="text-num">Report</span> </li>
-                                <li class="list-iteam">
+                                <span class="icon icon-flag no-mob"></span>
+                                  <span class="text-num no-mob">Report</span> </li>
+                                  <li class="list-iteam no-mob">
                                 <span class="helpful">
                                   Helpful?<span class="count-text"
                                     >yes<span class="count-number">(2)</span></span
@@ -315,6 +325,7 @@
                                 </span>
                               </li>
                             </ul>
+                            </div>
                           </div>
                         </div>
                         <div class="acc-item">
@@ -324,8 +335,8 @@
                             </h3>
                           </div>
                           <div class="acc-cont">
-                            <p class="ans-desc">In case the order has been placed through</p>
-                            <p class="ans-desc">< Pay Before Dispatch > option -The order can be
+                            <p class="acc-desc">In case the order has been placed through</p>
+                            <p class="acc-desc">< Pay Before Dispatch > option -The order can be
                               cancelled by the customer (through the portal or
                               toll-free number) before the order has been
                               dispatched from the dealer's outlet or before the
@@ -333,15 +344,16 @@
                               cancellation request placed after that will be
                               rejected."
                             </p>
+                            <div class="cp-like-dislike">
                             <ul class="list-wrap">
                               <li class="list-item">
                                 <span class="icon icon-like"></span>
                                 <span class="text-num">(4)</span>
                                 <span class="icon icon-dislike"></span>
                                 <span class="text-num">(4)</span>
-                                <span class="icon icon-flag"></span>
-                                <span class="text-num">Report</span> </li>
-                                <li class="list-iteam">
+                                <span class="icon icon-flag no-mob"></span>
+                                <span class="text-num no-mob">Report</span> </li>
+                                <li class="list-iteam no-mob">
                                 <span class="helpful">
                                   Helpful?<span class="count-text"
                                     >yes<span class="count-number">(2)</span></span
@@ -349,6 +361,7 @@
                                 </span>
                               </li>
                             </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -372,8 +385,76 @@
           </div>
         </div>            
       </section>
+
+
      
     </main>
+<!---review detail drawer end-->
+    <div class="cp-drawer" id="ask-a-question">
+      <div class="head-sec">
+        <h2 class="drawer-title">Ask a Question</h2>
+        <a href="#" class="icon icon-close js-close-btn"></a>
+      </div>
+      <div class="sec-cont">
+        <div class="cp-product-name-head typ-customer-review">
+          <div class="product-brand">
+            <div class="img-wrap">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="
+                    /components/cp-product-name-head/images/superlink_1.png
+                  "
+                />
+                <source
+                  media="(max-width:991px)"
+                  srcset="
+                    /components/cp-product-name-head/images/superlink_1.png
+                  "
+                />
+                <img
+                  src="/components/cp-product-name-head/images/superlink_1.png"
+                  alt="product_img"
+                />
+              </picture>
+            </div>
+            <div class="product-detail">
+              <h3 class="brand-name">Agrico</h3>
+              <span class="product-name">High Tensile Fastners</span>
+            </div>
+          </div>
+        </div>
+            <form action="#" class="cp-form js-question-form">
+              <div class="feedback-personal-data">
+                <div class="form-group">
+                  <label class="form-label" for="askQuestion">Question</label>
+                  <input
+                    type="text"
+                    id="askQuestion"
+                    class="form-control"
+                    placeholder="Write your question"
+                    required
+                  />
+                  <span class="err-mgs"></span>
+                </div>
+              </div>
+              <div class="act-wrap">
+                <button
+                  class="btn btn-submit disabled"
+                  type="submit"
+                  disabled="true"
+                  id="askQuestionbtn"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+   
+    </div>
+
+<!---review detail drawer end-->
+    <div class="cm-overlay"></div>
 
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.1.1.min.js"></script>
@@ -383,6 +464,9 @@
     <script src="/js/global.js"></script>
     <script src="../components/cp-product-card/cp-product-card.js"></script>
     <script src="/components/cp-accordion/cp-accordion.js"></script>
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
+    <script src="/components/cp-form/cp-form.js"></script>
+
     <!-- endbuild -->
   </body>
 </html>

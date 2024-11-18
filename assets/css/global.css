@@ -1313,6 +1313,22 @@ p {
     display: block;
   }
 }
+.bs-sec.pd-top-8 {
+  padding-top: 2.8rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.pd-top-8 {
+    padding-top: 0.8rem;
+  }
+}
+.bs-sec.pd-bottom-8 {
+  padding-bottom: 2.8rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.pd-bottom-8 {
+    padding-bottom: 0.8rem;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -1457,6 +1473,9 @@ p {
     margin-top: 2.4rem;
     margin-bottom: 0.8rem;
   }
+}
+.btn.btn-ask.typ-btn-desk {
+  margin-top: 3.2rem;
 }
 @media only screen and (max-width: 768px) {
   .btn.btn-ask.typ-btn-desk {
@@ -1803,7 +1822,12 @@ p {
   }
 }
 .bs-swiper.type-thumb {
-  margin-top: 1.2rem;
+  margin-top: 2.1rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.type-thumb {
+    margin-top: 1.2rem;
+  }
 }
 .bs-swiper.type-thumb .swiper-wrapper {
   gap: 2.1rem;
