@@ -27,6 +27,12 @@
             color: $clr-base;
             text-align: center;
         }
+        &.active{
+            .prod-name{
+                font-family: $font-semiBold;
+                color: $clr-primary;
+            }            
+        }
     }
     .btn-wrap{
         text-align: center;
@@ -35,6 +41,14 @@
             font-size: 1.6rem;
             line-height: 2.4rem;
             padding: 1.1rem 1.2rem;
+        }
+    }
+
+    &.typ-category{
+        background: $clr-root;
+        padding: 0;
+        .typ-card{
+            height: 100%;
         }
     }
 }

@@ -1,31 +1,23 @@
-
 var winWidth = $(window).width();
 var swiper;
 
-
 $(document).ready(function () { 
-    tradeHandSlider();  
+  tradeHandSlider();  
 });
 
 $(window).resize(function () {
-  if ($(window).width() < 769) {
-
-    tradeHandSlider();
-  }
+  tradeHandSlider();
 });
 
 function tradeHandSlider() {
-
-  if ($(window).width() < 769) {
+  if (winWidth < 769) {
     // Initialize Swiper only if it hasn't been initialized
-    if (!swiper) {
-      swiper = new Swiper(".js-tradeHandSlider", {
-        slidesPerView: "auto",
-        loop: true,
-      });
-    }
+    swiper = new Swiper(".js-tradeHandSlider", {
+      slidesPerView: "auto",
+      loop: true,
+    });
   } else {
-    // Destroy Swiper if it exists and the window width is >= 769
+    // Destroy Swiper if it exists and reset the variable
     if (swiper) {
       swiper.destroy(true, true);
       swiper = undefined;

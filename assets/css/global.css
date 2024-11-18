@@ -2078,6 +2078,16 @@ p {
     margin-right: 1.2rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-gallery {
+    margin-right: -2rem;
+  }
+}
+.bs-swiper.typ-gallery .swiper-slide {
+  width: 16rem;
+  height: 16rem;
+  margin-right: 1.2rem;
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;
