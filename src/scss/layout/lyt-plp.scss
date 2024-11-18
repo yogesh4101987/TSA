@@ -1,0 +1,56 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.lyt-plp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.9rem;
+  @media only screen and (max-width: $media-mobile) {
+    gap: 1.2rem;
+  }
+  .grid-col {
+    width: 23.7%;
+    @media only screen and (max-width: $media-mobile) {
+      width: 100%;
+    }
+  }
+  &.typ-list{
+    .grid-col {
+      width: 100%;
+    }
+  }
+}
+
+.lyt-list{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  @media only screen and (max-width: $media-mobile) {
+   display: none;
+  }
+  .lyt-item{   
+    .icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
+      @include border-radius(0.8rem);  
+      background: #F3F4F6;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      color: #999999;
+      &.icon-grid{
+        font-size: 2.2rem; 
+      }
+    }
+    &.active{
+      .icon{
+        background: #666666;
+        color: $clr-root;
+      }     
+    }    
+  }
+}

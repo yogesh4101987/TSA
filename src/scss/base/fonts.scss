@@ -87,7 +87,7 @@
     font-style: normal;
     font-display: block;
 }
-  
+
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
@@ -101,6 +101,24 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.icon-grid:before {
+  content: "\e942";
+}
+.icon-list:before {
+  content: "\e943";
+}
+.icon-percentage:before {
+  content: "\e940";
+}
+.icon-browse_gallery:before {
+  content: "\e941";
+}
+.icon-brochure:before {
+  content: "\e927";
+}
+.icon-fill-play:before {
+  content: "\e93f";
 }
 .icon-aashiyan:before {
   content: "\e93a";
@@ -242,9 +260,6 @@
 }
 .icon-like:before {
   content: "\e926";
-}
-.icon-book:before {
-  content: "\e927";
 }
 .icon-flag:before {
   content: "\e928";

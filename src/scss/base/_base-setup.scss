@@ -18,6 +18,7 @@ body {
   scrollbar-gutter: initial;
   position: relative;
   overflow-x: hidden;
+  
   &::-webkit-scrollbar {
     width: .8rem;
   }
@@ -87,16 +88,16 @@ p {
   left: 0;
   display: none;
   transition: 0.5s ease-in-out;
-  background: rgba(247, 247, 247, 0.7);
+  background: #000000;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   touch-action: auto;
   -ms-touch-action: auto;
   &.active {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.8;
     display: block;
-    z-index: 4;
+    z-index: 8;
     touch-action: none;
     -ms-touch-action: none;
   }
@@ -140,6 +141,10 @@ p {
   font-family: $font-bold;
 }
 
+.cm-semi-bold {
+  font-family: $font-semiBold;
+}
+
 .cm-medium {
   font-family: $font-medium;
 }
@@ -154,4 +159,12 @@ p {
 
 .hide {
   display: none !important;
+}
+
+.cm-sticky{
+  position: sticky; 
+position: -webkit-sticky;
+  bottom: 10px;
+  width: 90%;
+  margin: 0 auto;
 }

@@ -68,6 +68,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-grid:before {
+  content: "\e942";
+}
+
+.icon-list:before {
+  content: "\e943";
+}
+
+.icon-percentage:before {
+  content: "\e940";
+}
+
+.icon-browse_gallery:before {
+  content: "\e941";
+}
+
+.icon-brochure:before {
+  content: "\e927";
+}
+
+.icon-fill-play:before {
+  content: "\e93f";
+}
+
 .icon-aashiyan:before {
   content: "\e93a";
 }
@@ -256,10 +280,6 @@
   content: "\e926";
 }
 
-.icon-book:before {
-  content: "\e927";
-}
-
 .icon-flag:before {
   content: "\e928";
 }
@@ -319,3 +339,5 @@
 .icon-search:before {
   content: "\e936";
 }
+
+/*# sourceMappingURL=fonts.css.map */

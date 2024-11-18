@@ -1,0 +1,23 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.lyt-review {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  @media only screen and (max-width: $media-mobile) {
+    flex-direction: column;
+  }
+  .grid-col-lht {
+    width: 34.25%;
+    @media only screen and (max-width: $media-mobile) {
+      width: 100%;
+    }
+  }
+  .grid-col-rht {
+    width: 70%;
+    @media only screen and (max-width: $media-mobile) {
+      width: 100%;
+    }
+  }
+}

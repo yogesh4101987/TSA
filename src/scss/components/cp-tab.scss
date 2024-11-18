@@ -1,61 +1,112 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-tab{
-    .tab-list{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 0.8rem;
-        overflow-x: auto;
-        &::-webkit-scrollbar {
-            display: none;
-        }
-        .tab-item{
-            .title{
-                border: 1px solid #DEDEDE;
-                font-family: $font-regular;
-                font-size: 1.4rem;
-                line-height: 1.8rem;
-                color: $clr-para;
-                background: $clr-root;
-                cursor: pointer;
-                text-transform: uppercase;
-                @include border-radius(50px);
-                @include transition(all, 2s, ease);
-                padding: 0.6rem 1.6rem;
-            }
-            &:hover,
-            &.active{
-                .title{
-                    border: 1px solid #DEDEDE;
-                    font-family: $font-semiBold;
-                    color: $clr-root;
-                    background: $clr-primary;
-                }
-            }
-        }        
+.cp-tab {
+  .tab-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.8rem;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
     }
-    .tab-container{
-        padding-top: 2.4rem;
-        @media only screen and (max-width: $media-sm) {
-          padding-top: 1.6rem;
+    .tab-item {
+      flex-shrink: 0;
+      .title {
+        border: 1px solid #dedede;
+        font-family: $font-regular;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: $clr-para;
+        background: $clr-root;
+        cursor: pointer;
+        text-transform: uppercase;
+        @include border-radius(50px);
+        @include transition(all, 2s, ease);
+        padding: 0.6rem 1.6rem;
+        &.typ-capital {
+          text-transform: capitalize;
         }
-        .tab-content{
-            @include transition(all, 2s, ease);
-            display: none;
-            &.active{
-                display: block;
-            }
+      }
+      &:hover,
+      &.active {
+        .title {
+          border: 1px solid #dedede;
+          font-family: $font-semiBold;
+          color: $clr-root;
+          background: $clr-primary;
         }
-        .content{
-            font-size: 3rem;
-        }
+      }
     }
-    &.typ-calculate{
-        .tab-list{
-            padding: 0 2.4rem 0;
-        }
-        
+  }
+  .tab-container {
+    padding-top: 2.4rem;
+    @media only screen and (max-width: $media-sm) {
+      padding-top: 1.6rem;
     }
+    .tab-content {
+      @include transition(all, 2s, ease);
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    .content {
+      font-size: 3rem;
+    }
+  }
+  &.typ-calculate {
+    .tab-list {
+      padding: 0 2.4rem 0;
+    }
+  }
+  &.typ-question-answer {    
+      .question-title {
+        font-family: $font-semiBold;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-top: 3.2rem;
+        margin-bottom: 1.2rem;
+        @media only screen and (max-width: $media-mobile) {
+          display: none;
+        }
+        .question-count {
+          padding-inline: 1.2rem;
+          background-color: $clr-secondary;
+          color: $clr-root;
+          border-radius: 2.6rem;
+    
+          @media only screen and (max-width: $media-mobile) {
+            display: block;
+            background: none;
+            color: $clr-para;
+            font-family: $font-regular;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+          }
+        }
+      }
+      .sort-title {
+        font-family: $font-medium;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.6rem;
+        @media only screen and (max-width: $media-mobile) {
+          margin-top: 2.4rem;
+        }
+      }
+      .btn-wrap {
+         display: none;
+          @media only screen and (max-width: $media-mobile) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+          }
+        .btn-load-more {
+         
+        }
+      }
+  }
 }

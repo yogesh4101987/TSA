@@ -1,0 +1,35 @@
+.bs-radio{
+    margin-bottom: 1.6rem;
+    .custom-radio{
+        cursor: pointer;
+        border: 1px solid #DEDEDE;
+        font-size: 1.4rem;
+        font-family: $font-regular;
+        color:$clr-para;
+        background: $clr-root;
+        border-radius: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        min-width: 19.4rem; 
+        padding: 0.4rem 0;
+        @media only screen and (max-width: $media-sm) {
+            min-width: 16.5rem;    
+        }
+    }
+    input[type="radio"]:checked + .custom-radio{
+        border: 2px solid $clr-primary;
+        background: $clr-bg;
+        color: $clr-primary;
+        .price{
+            font-family: $font-semiBold;
+    
+        }
+
+    }
+    input[type="radio"]{
+        opacity: 0;
+        display: none;
+    }
+}

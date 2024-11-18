@@ -7,24 +7,23 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            cwd: 'src/scss',
-            src: ['global.scss'],
+            cwd: 'src/scss/base',
+            src: ['**/fonts.scss'],
             dest: 'assets/css',
             ext: '.css'
           },
           {
             expand: true,
-            cwd: 'src/scss',
-            src: ['home.scss'],
+            cwd: 'src/scss',  
+            src: ['*.scss'],
             dest: 'assets/css',
-            ext: '.css'
-          },
-          {
-            expand: true,
-            cwd: 'src/scss',
-            src: ['vendor.scss'],
-            dest: 'assets/css',
-            ext: '.css'
+            ext: '.css',
+            rename: function(dest, src) {
+              const layoutName = src.split('.')[0];
+              const outputPath = `${dest}/${layoutName}.css`;
+              // console.log(`Compiling ${src} to ${outputPath}`);
+              return outputPath;
+            }
           },
           {
             expand: true,
@@ -35,7 +34,7 @@ module.exports = function(grunt) {
             rename: function(dest, src) {
               const componentName = src.split('.')[0];
               const outputPath = `${dest}/${componentName}/${componentName}.css`;
-              console.log(`Compiling ${src} to ${outputPath}`);
+              // console.log(`Compiling ${src} to ${outputPath}`);
               return outputPath;
             }
           },
@@ -48,7 +47,7 @@ module.exports = function(grunt) {
             rename: function(dest, src) {
               const layoutName = src.split('.')[0];
               const outputPath = `${dest}/${layoutName}.css`;
-              console.log(`Compiling ${src} to ${outputPath}`);
+              // console.log(`Compiling ${src} to ${outputPath}`);
               return outputPath;
             }
           }
@@ -66,10 +65,9 @@ module.exports = function(grunt) {
           open: true,
           middleware: function(connect, options, middlewares) {
             middlewares.unshift(function(req, res, next) {
-              console.log(`Received request for ${req.url}`); // Log every request
               if (req.url.endsWith('.css')) {
                 res.setHeader('Content-Type', 'text/css');
-                console.log(`Serving ${req.url} with Content-Type: text/css`);
+                // console.log(`Serving ${req.url} with Content-Type: text/css`);
               }
               return next();
             });

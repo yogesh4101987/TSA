@@ -76,11 +76,15 @@
     &.btn-icon{
         border: 1px solid $clr-root;
         display: flex;
-        align-items: center;        
+        align-items: center;      
+        justify-content: center;  
         .icon{
-            margin-left: 0.5rem;
+            margin: 0 0.5rem;
             font-size: 1.8rem;
             line-height: 2rem;
+            @media only screen and (max-width: $media-sm) {
+                font-size: 1.6rem;
+            }
         }
     }
     &.btn-white{
@@ -93,4 +97,44 @@
         color: $clr-base;
         border: 1px solid $clr-base;
     }
+    &.typ-add-cart{
+       min-width: 34.3rem;
+       @media only screen and (max-width: $media-mobile){
+        width: 100%;
+       }
+        &.fixedBtn{
+            @media only screen and (max-width: $media-sm) {
+                position: sticky;
+                bottom: 0; /* Stick to the bottom of the parent container */
+                left: 50%;
+                transform: translateX(-50%); /* Center horizontally */
+                z-index: 10; /* Ensure it's above other content */
+                background-color: #fff; /* Optional: Add a background to prevent overlap with content */
+                width: 90%; /* Adjust the width of the button */
+                padding: 15px; 
+            }
+        }
+        
+    }
+
+    &.btn-ask {
+        color: $clr-base;
+        background-color: $clr-root;
+        border: 1px solid $clr-base;
+        width: 100%;
+    
+        &.typ-btn-mob {
+          display: none;
+          @media only screen and (max-width: $media-mobile) {
+            display: block;
+            margin-top: 2.4rem;
+            margin-bottom: 0.8rem;
+          }
+        }
+        &.typ-btn-desk {
+          @media only screen and (max-width: $media-mobile) {
+            display: none;
+          }
+        }
+      }
 }
