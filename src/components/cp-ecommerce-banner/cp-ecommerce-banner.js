@@ -1,12 +1,12 @@
 var winWidth = $(window).width();
 
-$(document).on('ready', function() { 
+$(document).ready(function() {    
     
         ecomHomeBannerSlider();
     
 });
 
-$(window).on('resize', function() {
+$(window).resize(function() {
     if ($(window).width() < 769) {
         ecomHomeBannerSlider();
     }

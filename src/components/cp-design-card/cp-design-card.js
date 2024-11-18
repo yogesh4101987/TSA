@@ -4,7 +4,7 @@ $(document).ready(function() {
     homeStyleSlider();
 });
 
-$(window).on('resize', function() {
+$(window).resize(function() {
     homeStyleSlider();
 });
 
