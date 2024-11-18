@@ -5,7 +5,7 @@ $(document).ready(function() {
     blogSlider();
 });
 
-$(window).resize(function() {
+$(window).on('resize', function() {
     blogSlider();
 });
 

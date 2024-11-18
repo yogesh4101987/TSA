@@ -1,6 +1,6 @@
 var winWidth = $(window).width();
 
-$(document).ready(function() {    
+$(document).on('ready', function() { 
     if ($(window).width() < 768) {
         $('<div class="grid-sizer"></div>').appendTo('.feature');
         homeBannerFeatureMobile();
@@ -14,7 +14,7 @@ $(document).ready(function() {
     };
 });
 
-$(window).resize(function() {
+$(window).on('resize', function() {
     if ($(window).width() < 768) {
         $('<div class="grid-sizer"></div>').appendTo('.feature');
         homeBannerFeatureMobile();

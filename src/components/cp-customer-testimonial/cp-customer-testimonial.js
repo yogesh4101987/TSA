@@ -1,12 +1,12 @@
 var winWidth = $(window).width();
 
-$(document).ready(function() {    
+$(document).on('ready', function() { 
     if ($(window).width() < 769) {
         homeTestimonialSlider();
     }
 });
 
-$(window).resize(function() {
+$(window).on('resize', function() {
     if ($(window).width() < 769) {
         homeTestimonialSlider();
     }

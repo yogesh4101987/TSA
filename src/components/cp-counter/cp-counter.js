@@ -4,7 +4,7 @@ $(document).ready(function () {
   productCount();
 });
 
-$(window).resize(function() {
+$(window).on('resize', function() {
   productCount()
 });
 

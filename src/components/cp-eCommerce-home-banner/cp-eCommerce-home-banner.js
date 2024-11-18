@@ -1,6 +1,6 @@
 var winWidth = $(window).width();
 
-$(document).ready(function() {    
+$(document).on('ready', function() { 
     if ($(window).width() <= 991) {
         bannerFeatureMobile();
     } 
@@ -9,7 +9,7 @@ $(document).ready(function() {
     }
 });
 
-$(window).resize(function() {
+$(window).on('resize', function() {
     if ($(window).width() <= 991) {
         bannerFeatureMobile();
     } else{
