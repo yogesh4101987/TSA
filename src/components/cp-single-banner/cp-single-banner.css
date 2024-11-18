@@ -86,5 +86,10 @@
     min-width: 8rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  .cp-single-banner.typ-plp {
+    height: 6rem;
+  }
+}
 
 /*# sourceMappingURL=cp-single-banner.css.map */

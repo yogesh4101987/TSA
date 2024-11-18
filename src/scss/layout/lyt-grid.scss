@@ -45,4 +45,15 @@
       }
     }
   }
+  &.typ-category{
+    gap: 1.2rem;
+    @media only screen and (max-width: $media-mobile) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+    .grid-col {
+      width: 30.8%;
+    }
+  }
 }
