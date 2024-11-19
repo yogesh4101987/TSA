@@ -83,6 +83,12 @@
 .cp-dealer-card .dealer-info .rating-sec .rating-cont.typ-green {
   background: #00A441;
 }
+.cp-dealer-card.typ-dealer-near-me .top-band .band-tag {
+  margin-bottom: 0rem;
+}
+.cp-dealer-card.typ-dealer-near-me .dealer-info .location-sec {
+  margin-top: 0.8rem;
+}
 
 .btn-wrap.typ-dealer {
   margin-top: 1.6rem;

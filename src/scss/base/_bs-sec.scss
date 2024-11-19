@@ -392,4 +392,9 @@
        display:block ;      }
     }
   }
+  &.typ-mg-24{
+    @media only screen and (max-width: $media-sm) {
+      margin-block: 2.4rem;
+    }
+  }
 }

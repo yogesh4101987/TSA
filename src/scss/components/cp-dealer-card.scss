@@ -82,6 +82,19 @@
             }
         }
     }
+
+    &.typ-dealer-near-me{
+        .top-band{
+            .band-tag{
+                margin-bottom: 0rem;
+            }
+        }
+        .dealer-info{
+            .location-sec{
+                margin-top: 0.8rem;
+            }
+        }
+    }
 }
 
 .btn-wrap {
