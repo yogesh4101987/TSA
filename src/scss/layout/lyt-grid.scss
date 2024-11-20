@@ -26,6 +26,17 @@
       }
     }
   }
+  &.typ-blog{
+    .grid-col{
+      .slick-slider-blog{
+        display: flex;
+        gap: 1.8rem;
+        @media only screen and (max-width: $media-mobile) {
+          gap: 0;
+        }
+      }
+    }
+  }
   &.typ-explore {
     align-items: center;
     justify-content: space-around;
