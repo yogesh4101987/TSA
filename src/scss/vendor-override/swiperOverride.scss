@@ -320,7 +320,10 @@
     }
   }
   &.type-thumb{
-    margin-top: 1.2rem;
+    margin-top: 2.1rem;
+    @media only screen and (max-width: $media-mobile){
+      margin-top: 1.2rem;
+    }
     .swiper-wrapper{
       gap: 2.1rem;
       @media only screen and (max-width: $media-mobile){

@@ -392,4 +392,17 @@
        display:block ;      }
     }
   }
+
+  &.pd-top-8{
+    padding-top:2.8rem;
+    @media only screen and (max-width: $media-sm){
+      padding-top:0.8rem;
+    }
+  }
+  &.pd-bottom-8{
+    padding-bottom:2.8rem;
+    @media only screen and (max-width: $media-sm){
+      padding-bottom:0.8rem;
+    }
+  }
 }

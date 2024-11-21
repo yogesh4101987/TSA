@@ -5,20 +5,33 @@
 /*opacity*/
 /*opacity- end*/
 .cp-progress-bar {
-  padding: 2.4rem 2rem;
+  padding: 0rem 2rem;
+  margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-progress-bar {
+    padding: 1.6rem 2rem;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 2.4rem;
+  }
 }
 .cp-progress-bar .grid-x {
   display: flex;
   align-items: center;
 }
 .cp-progress-bar .progress-bar-item {
-  margin-bottom: 2rem;
+  min-height: 2.8rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-progress-bar .progress-bar-item {
+    min-height: 2.4rem;
+  }
 }
 .cp-progress-bar .item-label,
 .cp-progress-bar .item-value {
   font-size: 1.4rem;
   color: #333333;
-  margin-bottom: 0.5rem;
   font-family: "Poppins Medium";
 }
 .cp-progress-bar .icon-star {

@@ -49,19 +49,32 @@
 }
 .cp-product-details .cont-wrap .prod-title {
   font-family: "Poppins Semibold";
-  font-size: 2rem;
-  line-height: 2.8rem;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
   color: #333333;
   margin-bottom: 0.2rem;
   max-width: 80%;
 }
+@media only screen and (max-width: 768px) {
+  .cp-product-details .cont-wrap .prod-title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
 .cp-product-details .cont-wrap .prod-code {
   font-family: "Poppins Regular";
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
   color: #333333;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
   max-width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-details .cont-wrap .prod-code {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.4rem;
+  }
 }
 .cp-product-details .cont-wrap .cm-medium {
   color: #5A245A;
@@ -117,11 +130,19 @@
   margin-bottom: 0.2rem;
 }
 .cp-product-details .cont-wrap .price-wrap .discounted-price {
+  display: inline-block;
+  margin-right: 1.6rem;
   font-family: "Poppins Regular";
   font-size: 2rem;
   line-height: 2.8rem;
   color: #666666;
-  margin-bottom: 0.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-product-details .cont-wrap .price-wrap .discounted-price {
+    display: block;
+    margin-right: 0rem;
+    margin-bottom: 0.6rem;
+  }
 }
 .cp-product-details .cont-wrap .price-wrap .discounted-price .amt {
   font-family: "Poppins Semibold";

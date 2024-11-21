@@ -5,7 +5,13 @@
 /*opacity*/
 /*opacity- end*/
 .cp-rating {
-  padding: 2.4rem 2rem;
+  padding: 1.6rem 2rem;
+  padding-top: 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-rating {
+    padding: 1.6rem;
+  }
 }
 .cp-rating .rating-number-sec {
   display: flex;
