@@ -1,6 +1,8 @@
-var winWidth = $(window).width();
-
 $(document).ready(function() {
+    drawerFunc();
+});
+
+$(document).resize(function() {
     drawerFunc();
 });
 
