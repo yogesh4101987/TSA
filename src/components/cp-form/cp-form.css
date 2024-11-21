@@ -4,6 +4,9 @@
 /* colors */
 /*font family*/
 /* breakpoints */
+.cp-form {
+  margin-top: 3.2rem;
+}
 .cp-form .feedback-title {
   font-family: "Poppins Medium";
   font-size: 1.6rem;
@@ -44,10 +47,8 @@
   margin-bottom: 2.4rem;
   display: block;
 }
-@media only screen and (max-width: 768px) {
-  .cp-form .act-wrap .btn-submit {
-    width: 100%;
-  }
+.cp-form .act-wrap .btn-submit {
+  width: 100%;
 }
 .cp-form .disabled {
   background-color: #ededed;

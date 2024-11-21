@@ -129,7 +129,7 @@
         }
     }
   }
-
+  &.typ-fabricators,
   &.typ-architect {   
     padding-bottom:9.6rem;
     @media only screen and (max-width: $media-mobile) {
@@ -150,6 +150,10 @@
         display: none;
       }
     }
+  }
+
+  &.typ-fabricators{
+    padding-bottom: 1.2rem;
   }
 
   &.typ-ecomm-banner {
@@ -316,7 +320,10 @@
     }
   }
   &.type-thumb{
-    margin-top: 1.2rem;
+    margin-top: 2.1rem;
+    @media only screen and (max-width: $media-mobile){
+      margin-top: 1.2rem;
+    }
     .swiper-wrapper{
       gap: 2.1rem;
       @media only screen and (max-width: $media-mobile){
@@ -542,14 +549,27 @@
     }
     .swiper-slide{  
       width: 19.1rem;
-    height: 14rem;
-    margin-right: 2rem;
+      height: 14rem;
+      margin-right: 2rem;
       @media only screen and (max-width: $media-mobile) {
         width: 16.0rem;
         height: 14.8rem;
         margin-right: 1.2rem;
       }
      
+    }
+  }
+  &.typ-gallery{
+    @media only screen and (max-width: $media-mobile){
+      margin-right: -2rem;
+    }
+    .swiper-slide{  
+      width: 29.5rem;
+      margin-right: 2rem;  
+      @media only screen and (max-width: $media-mobile){
+        width: 16rem;
+        margin-right: 1.2rem;  
+      }    
     }
   }
 }

@@ -51,5 +51,18 @@
 .lyt-grid.typ-explore .grid-col:last-child .cp-icon-details::after {
   display: none;
 }
+.lyt-grid.typ-category {
+  gap: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-category {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+.lyt-grid.typ-category .grid-col {
+  width: 30.8%;
+}
 
 /*# sourceMappingURL=lyt-grid.css.map */

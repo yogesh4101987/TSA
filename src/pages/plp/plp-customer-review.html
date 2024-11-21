@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="/components/cp-product-name-head/cp-product-name-head.css"/>
     <link rel="stylesheet" href="/components/cp-rating/cp-rating.css"/>
     <link rel="stylesheet" href="../../components/cp-progress-bar/cp-progress-bar.css"/>
-
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="../components/cp-form/cp-form.css"/>
+    
   </head>
 
   <body>
@@ -118,7 +120,7 @@
     <!-- Header end -->
     <main class="main">
       <!-- breadcrumb starts -->
-      <section class="bs-sec typ-first-sec">
+      <section class="bs-sec typ-first-sec pd-bottom-8">
         <div class="container">
           <div class="sec-cont">
             <ul class="cp-breadcrumb">
@@ -140,7 +142,7 @@
       </section>
       <!-- breadcrumb ends -->
       <!--Products start -->
-      <section class="bs-sec">
+      <section class="bs-sec pd-top-8">
         <div class="container">
           <div class="sec-head">
             <h2 class="sec-title">Customer Review</h2>
@@ -249,41 +251,10 @@
                   </div>
 
                   </div>
-              
-                    <!-- <div class="container">
-                      <div class="cp-customer-review">
-                        <div class="review-star">
-                          <span class="icon icon-star typ-active"></span>
-                          <span class="icon icon-star typ-active"></span>
-                          <span class="icon icon-star typ-active"></span>
-                          <span class="icon icon-star typ-active"></span>
-                          <span class="icon icon-star"></span>
-                        </div>
-                        <span class="post-date">Posted on 28-09-2024</span>
-                        <h3 class="title">Strong and useful</h3>
-                        <p class="desc">
-                          "Tata Steel Aashiyana” made my home’s renovation
-                          extremely easy for me. Daily rate updates of the
-                          products made it possible that I could buy building
-                          material for my home at the best rates.
-                        </p>
-                        <ul class="customer-detail">
-                          <li>
-                            <h3 class="customer-name">Hemant Biswas</h3>
-                            <span class="verified">Verified purchase</span>
-                          </li>
-                          <li>
-                            <span class="helpful">
-                              Helpful?<span class="count-text"
-                                >yes<span class="count-number">(2)</span></span
-                              >
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div> -->
                   </div>
-                  <button class="btn btn-ask">Write a review</button>
+                  <div class="container">
+                    <button class="btn btn-ask js-drawer" data-id="you-are-reviewing">Write a review</button>
+                  </div>
                 </div>
               </div>
               <ul class="grid-col-rht">
@@ -421,8 +392,97 @@
         </div>
       </section>
     </main>
+
+
+    <!---customer review detail drawer end-->
+    <div class="cp-drawer" id="you-are-reviewing">
+      <div class="head-sec">
+        <h2 class="drawer-title">you are reviewing</h2>
+        <a href="#" class="icon icon-close js-close-btn"></a>
+      </div>
+      <div class="sec-cont">
+        <div class="cp-product-name-head typ-customer-review">
+          <div class="product-brand">
+            <div class="img-wrap">
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="/components/cp-product-name-head/images/superlink_1.png"
+                />
+                <source
+                  media="(max-width:991px)"
+                  srcset="/components/cp-product-name-head/images/superlink_1.png"
+                />
+                <img
+                  src="/components/cp-product-name-head/images/superlink_1.png"
+                  alt="product_img"
+                />
+              </picture>
+            </div>
+            <div class="product-detail">
+              <h3 class="brand-name">Agrico</h3>
+              <span class="product-name">High Tensile Fastners</span>
+            </div>
+          </div>
+        </div>
+          <div class="sec-cont">
+            <form action="#" class="cp-form typ-review-star js-star-review">
+              <h3 class="feedback-title">Star ratings</h3>
+              <div class="star-rating" id="starRatings">
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+                <span class="icon icon-star"></span>
+              </div>
+              <div class="feedback-personal-data">
+                <div class="form-group">
+                  <label class="form-label" for="feedbackQuestion"
+                    >Review title</label
+                  >
+                  <input
+                    type="text"
+                    id="feedbackQuestion"
+                    class="form-control"
+                    placeholder="Write your question"
+                    required
+                  />
+                  <span class="err-mgs"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-review"
+                    >Write your review</label
+                  >
+                  <textarea
+                    type="text"
+                    id="form-review"
+                    class="form-textarea"
+                    placeholder="Write your question"
+                    required
+                  ></textarea>
+                  <span class="err-mgs"></span>
+                </div>
+              </div>
+              <div class="act-wrap">
+                <button
+                  class="btn btn-submit disabled"
+                  type="submit"
+                  disabled="true"
+                  id="starReviewSumbit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+
+<!---customer review drawer end-->
+    <div class="cm-overlay"></div>
+
     <!-- build:js assets/js/vendor.js -->
-    <script src="/js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/custom.min.js -->
@@ -431,6 +491,9 @@
     <script src="../components/cp-product-details/cp-product-details.js"></script>
     <script src="../components/cp-drawer/cp-drawer.js"></script>
     <script src="../../components/cp-progress-bar/cp-progress-bar.js"></script>
+    <script src="/components/cp-form/cp-form.js"></script>
+
+
     <!-- endbuild -->
   </body>
 </html>

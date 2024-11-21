@@ -2,19 +2,31 @@
 @import "../config/mixin";
 
 .cp-progress-bar{
-    padding: 2.4rem 2rem;
+    padding: 0rem 2rem;
+    margin-bottom:2.4rem;
+    
+    @media only screen and (max-width: $media-sm){
+        padding: 1.6rem 2rem;
+        border-top: 1px solid $clr-border;
+        border-bottom: 1px solid $clr-border;
+        margin-bottom:2.4rem;
+    }
+   
     .grid-x{
         display: flex;
         align-items: center;
     }
     .progress-bar-item {
-        margin-bottom: 2rem;
+        min-height: 2.8rem;
+        @media only screen and (max-width: $media-sm){
+            min-height: 2.4rem;
+        }
+       
     }
     .item-label, 
     .item-value {
         font-size: 1.4rem;
         color: $clr-base;
-        margin-bottom: 0.5rem;
         font-family: $font-medium;
     }
     .icon-star{

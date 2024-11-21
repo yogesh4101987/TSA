@@ -4,6 +4,13 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
+.cp-select .select-label {
+  font-family: "Poppins Regular";
+  font-size: 14px;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 0.8rem;
+}
 .cp-select .select-dropdown {
   position: relative;
   display: inline-block;
@@ -24,8 +31,16 @@
 }
 .cp-select .select-dropdown .select-dropdown-button .zmdi-chevron-down {
   position: absolute;
-  right: 10px;
-  top: 12px;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cp-select .select-dropdown .select-dropdown-button .zmdi-chevron-down::after {
+  content: "\e90e";
+  font-family: "icomoon";
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #333333;
 }
 .cp-select .select-dropdown .select-dropdown-button .select-text {
   font-size: 1.6rem;
@@ -79,6 +94,9 @@
 }
 .cp-select .dropdown-item:hover {
   background: #ECF2FB;
+}
+.cp-select.typ-category {
+  margin-bottom: 1.6rem;
 }
 
 /*# sourceMappingURL=cp-select.css.map */

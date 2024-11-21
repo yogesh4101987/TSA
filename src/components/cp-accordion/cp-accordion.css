@@ -13,6 +13,11 @@
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
 }
+@media only screen and (max-width: 768px) {
+  .cp-accordion .acc-item {
+    margin-inline: -1.6rem;
+  }
+}
 .cp-accordion .acc-item.active {
   background: #FFF6F2;
 }
@@ -21,12 +26,6 @@
 }
 .cp-accordion .acc-item.active .acc-head:before {
   content: "\e922";
-}
-.cp-accordion .acc-item.active .acc-cont {
-  display: block;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
 }
 .cp-accordion .acc-head {
   position: relative;
@@ -61,22 +60,40 @@
   display: none;
   padding: 0 2rem 2rem;
 }
-.cp-accordion .acc-cont .content {
+.cp-accordion .acc-cont .acc-desc {
   font-family: "Poppins Regular";
   font-size: 1.4rem;
   line-height: 2rem;
   color: #333333;
   margin-bottom: 1.6rem;
 }
-.cp-accordion.typ-policy .acc-item {
-  border-top: 1px solid #dedede;
-  border-bottom: 0;
+.cp-accordion.typ-policy .acc-item .acc-head::after {
+  color: #3D7EDB;
+}
+.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list {
+  margin-bottom: 2rem;
+}
+.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .acc-subTitle {
+  font-family: "Poppins Semibold";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 0.8rem;
+}
+.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .cont-desc-wrap .cont-desc-list {
+  padding: 1rem 0;
+  border-bottom: 1px solid #DEDEDE;
+}
+.cp-accordion.typ-policy .acc-item .acc-cont .acc-cont-wrap .acc-cont-list .cont-desc-wrap .cont-desc-list .acc-desc {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333333;
 }
 .cp-accordion.typ-policy .acc-item.active {
   background-color: #f3f4f6;
-}
-.cp-accordion.typ-policy .acc-item:last-child {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #DEDEDE;
+  border-top: 1px solid #DEDEDE;
 }
 
 /*# sourceMappingURL=cp-accordion.css.map */

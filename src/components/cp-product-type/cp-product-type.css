@@ -34,6 +34,10 @@
   color: #333333;
   text-align: center;
 }
+.cp-product-type .typ-card.active .prod-name {
+  font-family: "Poppins Semibold";
+  color: #3D7EDB;
+}
 .cp-product-type .btn-wrap {
   text-align: center;
 }
@@ -42,6 +46,13 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   padding: 1.1rem 1.2rem;
+}
+.cp-product-type.typ-category {
+  background: #FFFFFF;
+  padding: 0;
+}
+.cp-product-type.typ-category .typ-card {
+  height: 100%;
 }
 
 /*# sourceMappingURL=cp-product-type.css.map */
