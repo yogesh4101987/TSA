@@ -962,10 +962,12 @@ p {
   position: relative;
   padding: 0rem;
   margin-bottom: 4rem;
+  height: 36rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-sec.typ-product {
     margin-bottom: 2.4rem;
+    height: 19.2rem;
   }
 }
 .bs-sec.typ-product .cont-wrap {
@@ -988,7 +990,7 @@ p {
 }
 .bs-sec.typ-tataicon {
   margin: 4rem 0;
-  padding: 4.8rem 0;
+  padding: 4.8rem 0 0;
 }
 @media only screen and (max-width: 991px) {
   .bs-sec.typ-tataicon {
