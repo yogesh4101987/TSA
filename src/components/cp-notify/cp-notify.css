@@ -101,6 +101,10 @@
 .cp-notify .notify-btn {
   padding: 1.1rem 1.6rem;
   min-width: 14rem;
+  background: transparent;
+}
+.cp-notify .notify-btn:hover {
+  color: #FFFFFF;
 }
 @media only screen and (max-width: 768px) {
   .cp-notify .notify-btn {
