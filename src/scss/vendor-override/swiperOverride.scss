@@ -129,7 +129,7 @@
         }
     }
   }
-
+  &.typ-fabricators,
   &.typ-architect {   
     padding-bottom:9.6rem;
     @media only screen and (max-width: $media-mobile) {
@@ -150,6 +150,10 @@
         display: none;
       }
     }
+  }
+
+  &.typ-fabricators{
+    padding-bottom: 1.2rem;
   }
 
   &.typ-ecomm-banner {
@@ -557,9 +561,12 @@
       margin-right: -2rem;
     }
     .swiper-slide{  
-      width: 16rem;
-      height: 16rem;
-      margin-right: 1.2rem;      
+      width: 29.5rem;
+      margin-right: 2rem;  
+      @media only screen and (max-width: $media-mobile){
+        width: 16rem;
+        margin-right: 1.2rem;  
+      }    
     }
   }
 }

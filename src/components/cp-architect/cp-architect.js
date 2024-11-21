@@ -22,3 +22,11 @@ function architectSlider() {
     },
   });
 }
+
+function fabricatorsSlider() {
+  var swiper = new Swiper(".js-fabricators", {
+    slidesPerView: "auto",
+    loop: false,
+  });
+}
+

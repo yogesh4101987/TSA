@@ -66,6 +66,27 @@
     width: 100%;
   }
 }
+.cp-architect.typ-fabricators {
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-architect.typ-fabricators {
+    padding-bottom: 0;
+  }
+}
+.cp-architect.typ-fabricators .btn-wrap {
+  width: 100%;
+}
+.cp-architect.typ-fabricators .arch-left .title {
+  margin-bottom: 1.6rem;
+}
+.cp-architect.typ-fabricators .service-btn {
+  min-width: 29.5rem;
+}
+.cp-architect.typ-fabricators .service-btn.btn-link {
+  min-width: auto;
+}
 @media only screen and (max-width: 768px) {
   .cp-architect.typ-fabricators .arch-left {
     display: flex;
