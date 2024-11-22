@@ -80,5 +80,20 @@
   text-align: center;
   margin-right: 1rem;
 }
+.cp-dealer-card .dealer-info .rating-sec .rating-cont.typ-green {
+  background: #00A441;
+}
+
+.btn-wrap.typ-dealer {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .btn-wrap.typ-dealer {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 1.1rem 1.2rem;
+  }
+}
 
 /*# sourceMappingURL=cp-dealer-card.css.map */

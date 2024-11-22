@@ -2,10 +2,10 @@ var winWidth = $(window).width();
 
 $(document).ready(function() {    
     if ($(window).width() < 768) {
-        $('.grid-sizer').show();
+        $('<div class="grid-sizer"></div>').appendTo('.feature');
         homeBannerFeatureMobile();
     } else{
-        $('.grid-sizer').hide();
+        $('.grid-sizer').remove();
         destroyIsotope();
     }
 
@@ -16,10 +16,10 @@ $(document).ready(function() {
 
 $(window).resize(function() {
     if ($(window).width() < 768) {
-        $('.grid-sizer').show();
+        $('<div class="grid-sizer"></div>').appendTo('.feature');
         homeBannerFeatureMobile();
     } else{
-        $('.grid-sizer').hide();
+        $('.grid-sizer').remove();
         destroyIsotope();
     }
     if ($('.js-home-bg').length != 0) {

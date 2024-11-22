@@ -6,6 +6,9 @@
     .acc-item {
         border-bottom: solid 1px $clr-border;
         @include transition(all, 0.5s, ease);
+        @media only screen and (max-width: $media-mobile) {
+           margin-inline: -1.6rem;
+          }
         &.active{
             background: #FFF6F2;
             .acc-head {
@@ -14,10 +17,10 @@
                     content: "\e922";
                 }
             }
-            .acc-cont {
-                display: block;
-                @include transition(all, 0.5s, ease);
-            }
+            // .acc-cont {
+            //     display: block;
+            //     @include transition(all, 0.5s, ease);
+            // }
         }
     }
     .acc-head {
@@ -48,7 +51,7 @@
     .acc-cont {
         display: none;
         padding: 0 2rem 2rem;
-        .content {
+        .acc-desc {
             font-family: $font-regular;
             font-size: 1.4rem;
             line-height: 2rem;
@@ -56,16 +59,46 @@
             margin-bottom: 1.6rem;
         }
     }
-    &.typ-policy{
-      .acc-item{
-        border-top: 1px solid #dedede;
-        border-bottom: 0;
-        &.active{
-          background-color: #f3f4f6;
-        }
-        &:last-child{
-          border-bottom: 1px solid #dedede;
+
+    &.typ-policy {
+        .acc-item {
+          .acc-head {
+            &::after {
+              color: $clr-primary;
+            }
+          }
+          .acc-cont {
+            .acc-cont-wrap {
+              .acc-cont-list {
+                margin-bottom: 2rem;
+                .acc-subTitle {
+                  font-family: $font-semiBold;
+                  font-size: 1.4rem;
+                  line-height: 2rem;
+                  color: $clr-base;
+                  margin-bottom: 0.8rem;
+                }
+                .cont-desc-wrap {
+                  
+                  .cont-desc-list {
+                    padding: 1rem 0;
+                    border-bottom: 1px solid $clr-border;
+                    .acc-desc {
+                      font-family: $font-regular;
+                      font-size: 1.4rem;
+                      line-height: 2rem;
+                      color: $clr-base;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &.active {
+            background-color: #f3f4f6;
+            border-bottom: 1px solid $clr-border;;
+            border-top: 1px solid $clr-border;;
+          }
         }
       }
-    }
 }
