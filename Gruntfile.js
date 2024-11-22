@@ -60,7 +60,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 8000,
-          base: ['assets', 'assets/css', 'assets/js', 'assets/images', 'src', 'src/pages'],
+          base: ['assets', 'assets/css', 'assets/js', 'assets/images','assets/json', 'src', 'src/pages'],
           livereload: true,
           open: true,
           middleware: function(connect, options, middlewares) {
@@ -68,6 +68,8 @@ module.exports = function(grunt) {
               if (req.url.endsWith('.css')) {
                 res.setHeader('Content-Type', 'text/css');
                 // console.log(`Serving ${req.url} with Content-Type: text/css`);
+              } else if (req.url.endsWith('.json')) {
+                res.setHeader('Content-Type', 'application/json');
               }
               return next();
             });
