@@ -27,12 +27,12 @@ function productSelectList(){
 
 
 function selectDropdown(){
-    if ($('.bs-radio').length > 4) {
+    if ($('.bs-radio').length >= 4) {
         // Show cp-select if bs-radio elements are more than 4
-        $('.cp-select typ-pdp').show();
+        $('.cp-select.typ-pdp').show();
         $('.radio-wrap').hide();
       }
       else{
-        $('.cp-select typ-pdp').hide();
+        $('.cp-select.typ-pdp').hide();
       }
 }

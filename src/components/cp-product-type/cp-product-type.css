@@ -80,5 +80,10 @@
 .cp-product-type.typ-category .typ-card {
   height: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .cp-product-type.typ-wiron-plp {
+    padding: 1.6rem 0 2.4rem;
+  }
+}
 
 /*# sourceMappingURL=cp-product-type.css.map */
