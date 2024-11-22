@@ -1,0 +1,15 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-dimensions{
+display: flex;
+.img-wrap{
+    width: 15.0rem;
+    height: 23.6rem;
+}
+.list-item{
+    &:nth-child(2){
+        padding: 1.6rem;
+    }
+}
+}

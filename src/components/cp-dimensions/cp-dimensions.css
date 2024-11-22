@@ -1,0 +1,18 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-dimensions {
+  display: flex;
+}
+.cp-dimensions .img-wrap {
+  width: 15rem;
+  height: 23.6rem;
+}
+.cp-dimensions .list-item:nth-child(2) {
+  padding: 1.6rem;
+}
+
+/*# sourceMappingURL=cp-dimensions.css.map */

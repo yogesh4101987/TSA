@@ -105,4 +105,19 @@
     &.typ-category {
         margin-bottom: 1.6rem;
     }
+    .title{
+        font-size: 1.4rem;
+        font-family: $font-regular;
+        color: $clr-para;
+    }
+    &.typ-structura-pdp{
+        .select-dropdown-button {
+            @media only screen and (max-width: $media-sm) {
+                width: 19.3rem;
+                height: 4.8rem;
+                margin-bottom: 2.4rem;
+            }
+           
+        }
+    }
 }

@@ -4,6 +4,12 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
+.select-size-quntity-wrap {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
 .cp-trade-hand-tool-card {
   display: flex;
   align-items: center;
@@ -63,6 +69,11 @@
 }
 .cp-trade-hand-tool-card.typ-why-wiron:hover .title {
   color: #333333;
+}
+@media only screen and (max-width: 768px) {
+  .cp-trade-hand-tool-card.typ-struct-pdp {
+    width: 10.6rem;
+  }
 }
 
 /*# sourceMappingURL=cp-trade-hand-tool-card.css.map */

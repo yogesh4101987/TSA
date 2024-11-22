@@ -926,6 +926,16 @@ p {
     line-height: 3.2rem;
   }
 }
+.bs-sec .sec-sub-title {
+  font-family: "Poppins Medium";
+  color: #333333;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec .sec-sub-title {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+}
 .bs-sec .sec-desc {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -1334,6 +1344,14 @@ p {
   .bs-sec.pd-bottom-8 {
     padding-bottom: 0.8rem;
   }
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-structura-pdp .sec-head {
+    padding: 2.4rem 0;
+  }
+}
+.bs-sec.typ-structura-pdp .sec-head .sec-desc {
+  font-style: italic;
 }
 
 .btn {

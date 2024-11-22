@@ -45,6 +45,7 @@
         font-family: $font-semiBold;
         font-size: 2rem;
         line-height: 2.8rem;
+        color: $clr-base;
       }
     }
   }
@@ -91,6 +92,11 @@
         border-bottom: 1px solid #ffe399;
         border-radius: 0;
       }
+    }
+  }
+  &.typ-structura-pdp{
+    .img-wrap{
+      background: $clr-root;
     }
   }
 }

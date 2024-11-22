@@ -37,6 +37,14 @@
       line-height: 3.2rem;
     }
   }
+  .sec-sub-title{
+    font-family: $font-medium;
+    color: $clr-base;
+    @media only screen and (max-width: $media-mobile){
+        font-size: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+  }
   .sec-desc {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -46,6 +54,7 @@
       color: $clr-root;
     }
   }
+  
   .sec-cont {
   }
   &.typ-gray-bg {
@@ -403,6 +412,17 @@
     padding-bottom:2.8rem;
     @media only screen and (max-width: $media-sm){
       padding-bottom:0.8rem;
+    }
+  }
+  &.typ-structura-pdp{
+    .sec-head{
+      @media only screen and (max-width: $media-sm){
+        padding: 2.4rem 0;
+
+      }
+      .sec-desc{
+        font-style: italic;
+      }
     }
   }
 }
