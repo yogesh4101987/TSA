@@ -8,7 +8,7 @@
     margin-bottom: 2.4rem;
     @media only screen and (max-width: $media-mobile) {
         margin-block: 3.2rem;
-        }
+    }
     .other-info-list{
         .other-info-item{
             border-radius: 12px;
@@ -69,22 +69,34 @@
         bottom: 20px;
     }
     &.typ-icon{
+        margin: 0;
         .other-info-list{
+            display: flex;
             align-items: center;
             justify-content: space-between;
             flex-direction: row;
             gap: 2rem;
+            @media only screen and (max-width: $media-mobile) {               
+                flex-direction: column;
+            }
             .other-info-item{
                 align-items: center;
                 justify-content: flex-start;
                 flex-direction: row;
                 gap: 1.2rem;
                 width: 50%;
+                margin-bottom: 0;
+                font-size: 2rem;
+                line-height: 2.8rem;
+                padding: 2.7rem 4rem 2.7rem 2.4rem;               
                 @media only screen and (max-width: $media-mobile) {
                     width: 100%;
+                    padding: 1.6rem 4rem 1.6rem 1.6rem;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
                 }
                 .icon {
-                    font-size: 2.4rem;
+                    font-size: 2.6rem;
                     line-height: 2.6rem;
                     color: $clr-primary;
                 }

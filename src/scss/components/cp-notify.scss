@@ -24,6 +24,8 @@
     }
     .btn-wrap{
         flex-grow: 1;
+        z-index: 2;
+        position: relative;
     }
     .notify-icon {
         position: absolute;
@@ -195,6 +197,7 @@
         }
     }
     &.typ-download-brochure{
+        margin-top: 0;
         padding: 2.4rem;
         justify-content: space-between;
         align-items: center;
@@ -246,6 +249,14 @@
         }
         .notify-desc{
             color: $clr-para;
+        }
+        &.typ-wiron{
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;      
+            .btn-wrap{
+                flex-grow: 0;
+            }     
         }
     }
 }

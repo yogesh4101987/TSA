@@ -1,9 +1,7 @@
 var winWidth = $(window).width();
 
-$(document).ready(function () {
- 
-  architectSlider();
-  
+$(document).ready(function () { 
+  architectSlider();  
 });
 
 $(window).resize(function () {
@@ -27,6 +25,10 @@ function fabricatorsSlider() {
   var swiper = new Swiper(".js-fabricators", {
     slidesPerView: "auto",
     loop: false,
+    navigation: {
+      nextEl: ".swiper-button-next.fabricators-next",
+      prevEl: ".swiper-button-prev.fabricators-prev",
+    },
   });
 }
 

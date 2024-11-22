@@ -69,6 +69,7 @@
 .cp-architect.typ-fabricators {
   flex-wrap: wrap;
   padding-left: 0;
+  position: relative;
 }
 @media only screen and (max-width: 768px) {
   .cp-architect.typ-fabricators {
@@ -77,6 +78,15 @@
 }
 .cp-architect.typ-fabricators .btn-wrap {
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-architect.typ-fabricators .btn-wrap {
+    text-align: center;
+    position: relative;
+  }
 }
 .cp-architect.typ-fabricators .arch-left .title {
   margin-bottom: 1.6rem;

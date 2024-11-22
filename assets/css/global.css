@@ -988,6 +988,22 @@ p {
 .bs-sec.typ-build-cal {
   padding-bottom: 2.4rem;
 }
+.bs-sec.typ-mb-4 {
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-mb-4 {
+    margin-bottom: 2.4rem;
+  }
+}
+.bs-sec.typ-ext-margin {
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-ext-margin {
+    margin-bottom: 4.8rem;
+  }
+}
 .bs-sec.typ-tataicon {
   margin: 4rem 0;
   padding: 4.8rem 0 0;
@@ -1013,6 +1029,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+.bs-sec.typ-dealer .sec-cont {
+  position: relative;
 }
 .bs-sec.typ-calculate .sec-head {
   padding: 2.4rem 2.4rem 0;
@@ -1668,8 +1687,13 @@ p {
     display: none;
   }
 }
-.bs-swiper.typ-fabricators {
-  padding-bottom: 1.2rem;
+.bs-swiper.typ-fabricators .swiper-nav {
+  right: 0;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-fabricators .swiper-nav {
+    display: none;
+  }
 }
 .bs-swiper.typ-ecomm-banner .swiper-wrapper {
   position: relative;
@@ -2076,16 +2100,22 @@ p {
   }
 }
 .bs-swiper.typ-prod-types {
-  margin-bottom: 1.6rem;
+  margin-bottom: 4.8rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-prod-types {
+    margin-bottom: 1.6rem;
     margin-right: -1.6rem;
   }
 }
 .bs-swiper.typ-prod-types .swiper-slide {
-  width: 10.6rem !important;
+  width: 13.1rem !important;
   margin-right: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-prod-types .swiper-slide {
+    width: 10.6rem !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-why-wiron {
@@ -2093,14 +2123,12 @@ p {
   }
 }
 .bs-swiper.typ-why-wiron .swiper-slide {
-  width: 19.1rem;
-  height: 14rem;
+  width: 29.5rem;
   margin-right: 2rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-why-wiron .swiper-slide {
     width: 16rem;
-    height: 14.8rem;
     margin-right: 1.2rem;
   }
 }

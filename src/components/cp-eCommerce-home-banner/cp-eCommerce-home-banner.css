@@ -270,6 +270,17 @@
 .cp-eCommerce-home-banner.typ-color-change .feature-item:nth-child(6) {
   order: 6;
 }
+.cp-eCommerce-home-banner.typ-wiron .feature {
+  justify-content: flex-start;
+}
+.cp-eCommerce-home-banner.typ-wiron .feature-item {
+  width: 15.4%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner.typ-wiron .feature-item {
+    width: 48%;
+  }
+}
 .cp-eCommerce-home-banner.typ-wiron .feature-item:nth-child(6) {
   width: 100%;
 }
@@ -280,8 +291,13 @@
   background: #CCCCCC;
 }
 .cp-eCommerce-home-banner.typ-wiron .act-wrap {
-  margin-top: 2rem;
+  margin-top: 3.2rem;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner.typ-wiron .act-wrap {
+    margin-top: 1.6rem;
+  }
 }
 
 /*# sourceMappingURL=cp-eCommerce-home-banner.css.map */

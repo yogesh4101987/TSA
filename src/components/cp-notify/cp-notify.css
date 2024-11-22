@@ -32,6 +32,8 @@
 }
 .cp-notify .btn-wrap {
   flex-grow: 1;
+  z-index: 2;
+  position: relative;
 }
 .cp-notify .notify-icon {
   position: absolute;
@@ -238,6 +240,7 @@
   background-color: #FFFFFF;
 }
 .cp-notify.typ-download-brochure {
+  margin-top: 0;
   padding: 2.4rem;
   justify-content: space-between;
   align-items: center;
@@ -295,6 +298,14 @@
 }
 .cp-notify.typ-notification .notify-desc {
   color: #666666;
+}
+.cp-notify.typ-notification.typ-wiron {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.cp-notify.typ-notification.typ-wiron .btn-wrap {
+  flex-grow: 0;
 }
 
 /*# sourceMappingURL=cp-notify.css.map */

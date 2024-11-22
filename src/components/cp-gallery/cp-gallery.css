@@ -73,7 +73,7 @@
 @media only screen and (max-width: 768px) {
   .cp-gallery .gallery-card.typ-details .img-wrap {
     width: 39.3%;
-    max-height: auto;
+    max-height: 19.4rem;
   }
 }
 .cp-gallery .gallery-card.typ-details .content-wrap {

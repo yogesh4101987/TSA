@@ -91,6 +91,18 @@
   &.typ-build-cal {
     padding-bottom: 2.4rem;
   }
+  &.typ-mb-4{
+    margin-bottom: 4rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-bottom: 2.4rem;
+    }
+  }
+  &.typ-ext-margin{ 
+    margin-bottom: 6.4rem;
+    @media only screen and (max-width: $media-mobile) {
+      margin-bottom: 4.8rem;
+    }
+  }
 
   &.typ-tataicon {
     margin: 4rem 0;
@@ -115,6 +127,9 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+    }
+    .sec-cont{
+      position: relative;
     }
   }
 

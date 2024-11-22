@@ -265,7 +265,14 @@
         }
     }
     &.typ-wiron{
-        .feature-item{
+        .feature{
+            justify-content: flex-start;
+        }
+        .feature-item{            
+            width: 15.4%; 
+            @media only screen and (max-width: 768px) {
+                width:  48%;
+            }
             &:nth-child(6){
                 width: 100%;
                 .feature-card{
@@ -280,8 +287,11 @@
             }
         }
         .act-wrap{
-            margin-top: 2rem;
+            margin-top: 3.2rem;
             text-align: center;
+            @media only screen and (max-width: 768px) {
+                margin-top: 1.6rem;
+            }
         }
     }
 }

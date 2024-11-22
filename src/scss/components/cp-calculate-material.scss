@@ -1,7 +1,6 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-
 .cp-calculate-material{
     display: flex;
     justify-content: space-between;
@@ -18,28 +17,63 @@
     .rhs{
         width: 50%;
         @media only screen and (max-width: $media-tab) {
+            width: 100%;
             display: none;
-        }
-        .calculate-img-list{
-            display: flex;
-            justify-content: space-between;
-            .img-item{
-               &:nth-child(1){
+        }        
+    }
+    .calculate-img-list{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        .img-item{
+            &:nth-child(1){
                 .img-first{
                     height: 14.4rem;
                     margin-bottom: 2rem;
                 }
                 img{
                     height: 24.4rem;
-
                 }
-               }
+            }
+            img{
+                @include border-radius(1.6rem);
+                width: 29.7rem;
+                height: 40.8rem;
+            }
+        }
+    }
+    &.typ-wiron{
+        .sec-head{
+            padding: 0;
+            @media only screen and (max-width: $media-tab) { 
+                padding: 0 1.6rem;
+            }
+        }
+        @media only screen and (max-width: $media-tab) { 
+            .rhs{
+                display: block;
+                width: 100%;
+            }
+            .lhs{
+                display: none;
+            }
+        }
+        .calculate-img-list{
+            .img-item{
+                &:nth-child(1){
+                    .img-first{
+                        height: 14rem;
+                        margin-bottom: 2rem;
+                    }
+                    img{
+                        height: 24rem;    
+                    }
+                }
                 img{
-                    border-radius: 16px;
+                    @include border-radius(1.6rem);
                     width: 29.7rem;
-                    height: 40.8rem;
-                }
-               
+                    height: 40rem;
+                }           
             }
         }
     }

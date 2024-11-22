@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/vendor.css" />
+    <link rel="stylesheet" href="/css/home.css" />
     <link rel="stylesheet" href="/components/cp-header/cp-header.css" />
     <link rel="stylesheet" href="/components/cp-footer/cp-footer.css" />
     <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
@@ -31,6 +32,7 @@
     <link rel="stylesheet" href="/components/cp-product-type/cp-product-type.css" />
     <link rel="stylesheet" href="/components/cp-trade-hand-tool-card/cp-trade-hand-tool-card.css" />
     <link rel="stylesheet" href="/components/cp-gallery/cp-gallery.css" />
+    <link rel="stylesheet" href="/components/cp-calculate-material/cp-calculate-material.css" />
   </head>
 
   <body>   
@@ -177,7 +179,7 @@
             <div class="sec-cont">
                 <div class="container">
                     <!-- logo and  search component starts -->
-                    <div class="cp-agrico-search">
+                    <div class="cp-agrico-search typ-wiron">
                         <div class="left-wrapper">
                             <div class="logo">
                             <img
@@ -187,7 +189,19 @@
                             </div>
                             <span class="brand-title">Wiron</span>
                         </div>
+                        <!--  starts search Wiron   -->  
+                    <div class="cp-search typ-wiron-home">
+                        <div class="search-wrap">
+                            <input
+                            type="text"
+                            class="search-input"
+                            placeholder="Search for Wiron products"
+                            />
+                            <span class="search-icon icon-search"></span>
+                        </div>                   
                     </div>
+                    <!--  ends search Wiron   -->   
+                    </div>                    
                 </div>
                 <!--  starts Wiron Banner  -->
                 <div class="bs-swiper swiper typ-agrico-banner js-agrico-banner">
@@ -296,20 +310,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
                 <!--  ends Wiron Banner  -->  
-                <!--  starts search Wiron   -->  
-                <div class="container">
-                    <div class="cp-search typ-wiron-home">
-                        <div class="search-wrap">
-                            <input
-                            type="text"
-                            class="search-input"
-                            placeholder="Search for Wiron products"
-                            />
-                            <span class="search-icon icon-search"></span>
-                        </div>
-                    </div>
-                </div>             
-                <!--  ends search Wiron   -->    
+                
             </div>
         </section>
         <!-- First Section end -->
@@ -405,87 +406,75 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="cp-trade-hand-tool-card typ-why-wiron">
-                                    <a href="#">
-                                        <div class="img-wrap">
-                                            <picture>
-                                                <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                                <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                                <img src="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                            </picture> 
-                                        </div>
-                                        <h3 class="title">Durable and long-lasting</h3>
-                                    </a>
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                            <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                            <img src="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                        </picture> 
+                                    </div>
+                                    <h3 class="title">Durable and long-lasting</h3>
                                 </div>
                             </div>              
                             <div class="swiper-slide">
                                 <div class="cp-trade-hand-tool-card typ-why-wiron">
-                                    <a href="#">
-                                        <div class="img-wrap">
-                                            <picture>
-                                                <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
-                                                <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
-                                                <img src="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
-                                            </picture>    
-                                        </div>
-                                        <h3 class="title">Resistant to corrosion</h3>
-                                    </a>
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
+                                            <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
+                                            <img src="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
+                                        </picture>
+                                    </div>
+                                    <h3 class="title">Resistant to corrosion</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="cp-trade-hand-tool-card typ-why-wiron">
-                                    <a href="#">
-                                        <div class="img-wrap">
-                                            <picture>
-                                                <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
-                                                <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
-                                                <img src="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
-                                            </picture>                              
-                                        </div>
-                                        <h3 class="title">Durable and long-lasting</h3>
-                                    </a>
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
+                                            <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
+                                            <img src="/components/cp-trade-hand-tool-card/images/why-wiron02.png">
+                                        </picture>
+                                    </div>
+                                    <h3 class="title">Durable and long-lasting</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="cp-trade-hand-tool-card typ-why-wiron">
-                                    <a href="#">
-                                        <div class="img-wrap">
-                                            <picture>
-                                                <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                                <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                                <img src="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                            </picture>                            
-                                        </div>
-                                        <h3 class="title">Durable and long-lasting</h3>
-                                    </a>
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                            <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                            <img src="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                        </picture>
+                                    </div>
+                                    <h3 class="title">Durable and long-lasting</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="cp-trade-hand-tool-card typ-why-wiron">
-                                    <a href="#">
-                                        <div class="img-wrap">
-                                            <picture>
-                                                <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                                <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                                <img src="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                            </picture>  
-                                            
-                                        </div>
-                                        <h3 class="title">Durable and long-lasting</h3>
-                                    </a>
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                            <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                            <img src="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                        </picture>  
+                                        
+                                    </div>
+                                    <h3 class="title">Durable and long-lasting</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="cp-trade-hand-tool-card typ-why-wiron">
-                                    <a href="#">
-                                        <div class="img-wrap">
-                                            <picture>
-                                                <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                                <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                                <img src="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
-                                            </picture> 
-                                        </div>
-                                        <h3 class="title">Durable and long-lasting</h3>
-                                    </a>
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                            <source media="(max-width:991px)" srcset="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                            <img src="/components/cp-trade-hand-tool-card/images/why-wiron01.png">
+                                        </picture> 
+                                    </div>
+                                    <h3 class="title">Durable and long-lasting</h3>
                                 </div>
                             </div>                  
                         </div>
@@ -576,108 +565,132 @@
         </section>
         <!--our iconic stories wiron end-->
         <!-- Estimate fencing start -->
-        <section class="bs-sec typ-no-top-padding">
-            <div class="sec-head">
-                <div class="container">
-                    <h2 class="sec-title">Estimate fencing</h2>
-                </div>
-            </div>
-            <div class="sec-cont">
-                <div class="cp-product-type">
-                    <div class="container">
-                        <h2 class="title">Choose your fence type</h2>
-                        <div class="bs-swiper swiper typ-prod-types js-prod-types">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                            <div class="typ-card">
-                                <div class="img-wrap">
+        <section class="bs-sec typ-calculate typ-no-top-padding">
+            <div class="container">				
+                <div class="cp-calculate-material typ-wiron">
+                    <div class="lhs">
+                        <ul class="calculate-img-list">
+                            <li class="img-item">
+                                <span>
+                                    <picture>
+                                        <source media="(max-width:768px)" srcset="/images/calculate-img1.jpeg">
+                                        <img src="/images/calculate-img1.jpeg" class="img-first" alt="Calculate material cost" />
+                                    </picture>
+                                </span>
+                                <span>
+                                    <picture>
+                                        <source media="(max-width:768px)" srcset="/images/calculate-img2.jpeg">
+                                        <img src="/images/calculate-img2.jpeg" class="img-second" alt="Calculate material cost" />
+                                    </picture>
+                                </span>
+                            </li>
+                            <li class="img-item">
                                 <picture>
-                                    <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-1.png">
-                                    <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-1.png">
-                                    <img src="../../components/cp-product-type/images/prod-typ-1.png" alt="prod-typ-image" class="img"/>
+                                    <source media="(max-width:768px)" srcset="/images/calculate-img3.jpeg">
+                                    <img src="/images/calculate-img3.jpeg" class="img-third" alt="Calculate material cost" />
                                 </picture>
-                                </div>
-                                <h3 class="prod-name">Knotted fence</h3>
-                            </div>
-                            </div>
-                            <div class="swiper-slide">
-                            <div class="typ-card">
-                                <div class="img-wrap">
-                                <picture>
-                                    <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-2.png">
-                                    <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-2.png">
-                                    <img src="../../components/cp-product-type/images/prod-typ-2.png" alt="prod-typ-image" class="img"/>
-                                </picture>
-                                </div>
-                                <h3 class="prod-name">Barbed wire</h3>
-                            </div>
-                            </div>
-                            <div class="swiper-slide">
-                            <div class="typ-card">
-                                <div class="img-wrap">
-                                <picture>
-                                    <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-3.png">
-                                    <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-3.png">
-                                    <img src="../../components/cp-product-type/images/prod-typ-3.png" alt="prod-typ-image" class="img"/>
-                                </picture>
-                                </div>
-                                <h3 class="prod-name">Chain link</h3>
-                            </div>
-                            </div>
-                            <div class="swiper-slide">
-                            <div class="typ-card">
-                                <div class="img-wrap">
-                                <picture>
-                                    <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-4.png">
-                                    <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-4.png">
-                                    <img src="../../components/cp-product-type/images/prod-typ-4.png" alt="prod-typ-image" class="img"/>
-                                </picture>
-                                </div>
-                                <h3 class="prod-name">Knotted fence</h3>
-                            </div>
-                            </div>
-                            <div class="swiper-slide">
-                            <div class="typ-card">
-                                <div class="img-wrap">
-                                <picture>
-                                    <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-5.png">
-                                    <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-5.png">
-                                    <img src="../../components/cp-product-type/images/prod-typ-5.png" alt="prod-typ-image" class="img"/>
-                                </picture>
-                                </div>
-                                <h3 class="prod-name">Barbed wire</h3>
-                            </div>
-                            </div>
-                            <div class="swiper-slide">
-                            <div class="typ-card">
-                                <div class="img-wrap">
-                                <picture>
-                                    <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-6.png">
-                                    <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-6.png">
-                                    <img src="../../components/cp-product-type/images/prod-typ-6.png" alt="prod-typ-image" class="img"/>
-                                </picture>
-                                </div>
-                                <h3 class="prod-name">Chain link</h3>
-                            </div>
-                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rhs">
+                        <div class="sec-head">
+                            <h2 class="sec-title">Calculate material cost</h2>
                         </div>
-                        </div>
-                        <div class="btn-wrap">
-                        <button class="btn btn-white">Start calculating</button>
+                        <div class="cp-product-type">                    
+                            <h2 class="title">Choose your fence type</h2>
+                            <div class="bs-swiper swiper typ-prod-types js-prod-types">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-1.png">
+                                            <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-1.png">
+                                            <img src="../../components/cp-product-type/images/prod-typ-1.png" alt="prod-typ-image" class="img"/>
+                                        </picture>
+                                        </div>
+                                        <h3 class="prod-name">Knotted fence</h3>
+                                    </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-2.png">
+                                            <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-2.png">
+                                            <img src="../../components/cp-product-type/images/prod-typ-2.png" alt="prod-typ-image" class="img"/>
+                                        </picture>
+                                        </div>
+                                        <h3 class="prod-name">Barbed wire</h3>
+                                    </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-3.png">
+                                            <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-3.png">
+                                            <img src="../../components/cp-product-type/images/prod-typ-3.png" alt="prod-typ-image" class="img"/>
+                                        </picture>
+                                        </div>
+                                        <h3 class="prod-name">Chain link</h3>
+                                    </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-4.png">
+                                            <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-4.png">
+                                            <img src="../../components/cp-product-type/images/prod-typ-4.png" alt="prod-typ-image" class="img"/>
+                                        </picture>
+                                        </div>
+                                        <h3 class="prod-name">Knotted fence</h3>
+                                    </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-5.png">
+                                            <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-5.png">
+                                            <img src="../../components/cp-product-type/images/prod-typ-5.png" alt="prod-typ-image" class="img"/>
+                                        </picture>
+                                        </div>
+                                        <h3 class="prod-name">Barbed wire</h3>
+                                    </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <div class="typ-card">
+                                        <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../../components/cp-product-type/images/prod-typ-6.png">
+                                            <source media="(max-width:991px)" srcset="../../components/cp-product-type/images/prod-typ-6.png">
+                                            <img src="../../components/cp-product-type/images/prod-typ-6.png" alt="prod-typ-image" class="img"/>
+                                        </picture>
+                                        </div>
+                                        <h3 class="prod-name">Chain link</h3>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn btn-white">Start calculating</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Estimate fencing end -->
-        <!-- Architects section starts -->
+        <!-- Top fabricators in your area starts -->
 		<section class="bs-sec typ-gray-bg typ-curve typ-inner-spacing">
             <div class="container">
                 <div class="sec-cont">
                     <div class="cp-architect typ-fabricators">
                         <div class="arch-left">
                             <h2 class="title"> Top fabricators in your area</h2>
-                            <a class="btn btn-link service-btn">View all</a>                        
+                            <a class="btn btn-link service-btn"> View all contractors</a>
                         </div>
                         <div class="arch-right">
                             <div class="bs-swiper swiper typ-fabricators js-fabricators">
@@ -828,6 +841,10 @@
                                         </div>
                                     </div>					
                                 </div>
+                                <div class="swiper-nav">
+                                    <div class="swiper-button-prev fabricators-prev"></div>
+                                    <div class="swiper-button-next fabricators-next"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="btn-wrap">
@@ -837,7 +854,7 @@
                 </div>
             </div>			
 		</section>
-		<!-- Architect section ends -->
+		<!-- Top fabricators in your area ends -->
         <!-- Inspiration start -->
         <section class="bs-sec">
             <div class="container">
@@ -1127,7 +1144,7 @@
                             <div class="swiper-button-next"></div>
                         </div>
                     </div>
-                    <div class="btn-wrap typ-dealer">
+                    <div class="btn-wrap typ-dealer typ-wiron">
                         <button class="btn btn-outline">
                             Register as a dealer
                         </button>
@@ -1283,7 +1300,7 @@
 		</section>
 		<!-- What our customers are saying end -->
         <!-- Become a partner start -->
-        <section class="bs-sec">
+        <section class="bs-sec typ-mb-4">
             <div class="container">
                 <div class="sec-head">
                     <h2 class="sec-title">Become a partner</h2>
@@ -1302,7 +1319,7 @@
         </section>
         <!-- Become a partner end -->
         <!-- Best Selling Products start -->
-        <section class="bs-sec typ-curve typ-best-selling">
+        <section class="bs-sec typ-curve typ-best-selling typ-ext-margin">
             <div class="container">
             <div class="sec-head">
                 <h2 class="sec-title">Best selling products</h2>
@@ -1632,7 +1649,7 @@
         </section>
         <!-- Best Selling Products end -->
         <!--Recently viewed start -->
-        <section class="bs-sec typ-curve typ-review-product">
+        <section class="bs-sec typ-curve typ-review-product typ-ext-margin">
             <div class="container">
                 <div class="sec-head">
                     <h2 class="sec-title">Recently viewed</h2>
@@ -1965,10 +1982,10 @@
         <section class="bs-sec">
             <div class="sec-cont">
                 <div class="container">
-                    <div class="cp-notify typ-notification">
+                    <div class="cp-notify typ-notification typ-wiron">
                         <div class="cont-wrap">
                             <h3 class="notify-title">Need help?</h3>
-                            <p class="notify-desc">Can't figure out what to buy first? <br/>Let us help you</p>
+                            <p class="notify-desc">Let’s make your home-building journey smoother-our experts are here to assist you.</p>
                         </div>
                         <div class="btn-wrap">
                             <button class="btn btn-icon btn-outline notify-btn">Start a chat <span class="icon icon-message"></span></button>
@@ -2004,133 +2021,114 @@
         </section>
         <!-- Download brochure end -->
         <!-- All product categories start -->
-		<section class="bs-sec">
-			<div class="sec-cont">
-				<div class="cp-home-banner js-home-bg">
-					<div class="container">
-						<h2	class="banner-title">What are you looking for?</h2>
-						<div class="feature">
-							<div class="grid-sizer"></div>
-							<div class="feature-item">
-								<a href="#" class="feature-card">
-									<h2 class="f-title">PLANS</h2>
-									<p class="f-desc">layouts & 3D views</p>
-									<div class="f-img">
-										<picture>
-											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-3.png">
-											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-3.png">
-											<img src="../components/cp-home-banner/images/feature-3.png" alt="feature" />
-										</picture>
-									</div>
-								</a>
-							</div>
-							<div class="feature-item">
-								<a href="#" class="feature-card">
-									<h2 class="f-title">SHOP</h2>
-									<p class="f-desc">products</p>
-									<div class="f-img">
-										<picture>
-											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-8.png">
-											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-8.png">
-											<img src="../components/cp-home-banner/images/feature-8.png" alt="feature" />
-										</picture>
-									</div>
-								</a>
-							</div>
-							<div class="feature-item typ-resize">
-								<a href="#" class="feature-card typ-resized">
-									<h2 class="f-title">REBARS</h2>
-									<p class="f-desc">sariya</p>
-									<span class="f-offer">Get 10% OFF</span>
-									<div class="f-img">
-										<picture>
-											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-1.png">
-											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-1.png">
-											<img src="../components/cp-home-banner/images/feature-1.png" alt="feature" />
-										</picture>
-									</div>
-								</a>
-							</div>
-							<div class="feature-item">
-								<a href="#" class="feature-card">
-									<h2 class="f-title">ARCHITECTS</h2>
-									<p class="f-desc">search</p>
-									<div class="f-img">
-										<picture>
-											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-4.png">
-											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-4.png">
-											<img src="../components/cp-home-banner/images/feature-4.png" alt="feature" />
-										</picture>
-									</div>
-								</a>
-							</div>
-							<div class="feature-item typ-resize">
-								<a href="#" class="feature-card typ-resized">
-									<h2 class="f-title">CALCULATOR</h2>
-									<p class="f-desc">cost estimator</p>
-									<div class="f-img">
-										<picture>
-											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-2.png">
-											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-2.png">
-											<img src="../components/cp-home-banner/images/feature-2.png" alt="feature" />
-										</picture>
-									</div>
-								</a>
-							</div>
-							
-							<div class="feature-item">
-								<a href="#" class="feature-card">
-									<h2 class="f-title">BUDGET</h2>
-									<p class="f-desc">tracker</p>
-									<div class="f-img">
-										<picture>
-											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-6.png">
-											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-6.png">
-											<img src="../components/cp-home-banner/images/feature-6.png" alt="feature" />
-										</picture>
-									</div>
-								</a>
-							</div>
-								
-							<div class="feature-item">
-								<a href="#" class="feature-card">
-									<h2 class="f-title">INSPIRATION</h2>
-									<p class="f-desc">design styles</p>
-									<div class="f-img">
-										<picture>
-											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-5.png">
-											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-5.png">
-											<img src="../components/cp-home-banner/images/feature-5.png" alt="feature" />
-										</picture>
-									</div>
-								</a>
-							</div>
-							<div class="feature-item">
-								<a href="#" class="feature-card">
-									<h2 class="f-title">CAUTION</h2>
-									<p class="f-desc">scam alert</p>
-									<div class="f-img">
-										<picture>
-											<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/feature-7.png">
-											<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/feature-7.png">
-											<img src="../components/cp-home-banner/images/feature-7.png" alt="feature" />
-										</picture>
-									</div>
-								</a>
-							</div>
-							
-						</div>
-						<div class="bg-img">
-							<picture>
-								<source media="(max-width:768px)" srcset="../components/cp-home-banner/images/banner-img.png">
-								<source media="(max-width:991px)" srcset="../components/cp-home-banner/images/banner-img.png">
-								<img src="../components/cp-home-banner/images/banner-img.png" alt="bg-img"/>
-							</picture>
-						</div>						
-					</div>
-				</div>
-			</div>
-		</section>
+		<section class="bs-sec typ-eCommerce-banner">
+            <div class="sec-cont">
+                <div class="cp-eCommerce-home-banner">
+                    <div class="container">
+                        <h2	class="banner-title">All product categories</h2>
+                        <div class="feature">
+                            <div class="grid-sizer"></div>
+                            <div class="feature-item typ-resize">
+                                <a href="#" class="feature-card typ-resized">
+                                    <h2 class="f-title">REBARS</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../components/cp-eCommerce-home-banner/images/feature-1.png">
+                                            <source media="(max-width:991px)" srcset="../components/cp-eCommerce-home-banner/images/feature-1.png">
+                                            <img src="../components/cp-eCommerce-home-banner/images/feature-1.png" alt="feature-img" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">ROOFING & SHEETS</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../components/cp-eCommerce-home-banner/images/feature-2.png">
+                                            <source media="(max-width:991px)" srcset="../components/cp-eCommerce-home-banner/images/feature-2.png">
+                                            <img src="../components/cp-eCommerce-home-banner/images/feature-2.png" alt="feature-img" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">FENCING & PROTECTION</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../components/cp-eCommerce-home-banner/images/feature-4.png">
+                                            <source media="(max-width:991px)" srcset="../components/cp-eCommerce-home-banner/images/feature-4.png">
+                                            <img src="../components/cp-eCommerce-home-banner/images/feature-4.png" alt="feature-img" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">Hand <br/>Tools</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../components/cp-eCommerce-home-banner/images/feature-3.png">
+                                            <source media="(max-width:991px)" srcset="../components/cp-eCommerce-home-banner/images/feature-3.png">
+                                            <img src="../components/cp-eCommerce-home-banner/images/feature-3.png" alt="feature-img" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>	
+                            <div class="feature-item typ-resize">
+                                <a href="#" class="feature-card typ-resized">
+                                    <h2 class="f-title">GARDENING Tools</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../components/cp-eCommerce-home-banner/images/feature-6.png">
+                                            <source media="(max-width:991px)" srcset="../components/cp-eCommerce-home-banner/images/feature-6.png">
+                                            <img src="../components/cp-eCommerce-home-banner/images/feature-6.png" alt="feature-img" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">DOORS & WINDOWS</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../components/cp-eCommerce-home-banner/images/feature-5.png">
+                                            <source media="(max-width:991px)" srcset="../components/cp-eCommerce-home-banner/images/feature-5.png">
+                                            <img src="../components/cp-eCommerce-home-banner/images/feature-5.png" alt="feature-img" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>  
+                            <!-- <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">BRICK</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../components/cp-eCommerce-home-banner/images/feature-5.png">
+                                            <source media="(max-width:991px)" srcset="../components/cp-eCommerce-home-banner/images/feature-5.png">
+                                            <img src="../components/cp-eCommerce-home-banner/images/feature-5.png" alt="feature-img" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>  
+                            <div class="feature-item">
+                                <a href="#" class="feature-card">
+                                    <h2 class="f-title">HOLLOw SECTIONS</h2>
+                                    <div class="f-img">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="../components/cp-eCommerce-home-banner/images/feature-5.png">
+                                            <source media="(max-width:991px)" srcset="../components/cp-eCommerce-home-banner/images/feature-5.png">
+                                            <img src="../components/cp-eCommerce-home-banner/images/feature-5.png" alt="feature-img" />
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>                             -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 		<!-- All product categories end -->
     </div>
     <!-- Footer Start -->
