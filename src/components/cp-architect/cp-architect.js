@@ -1,9 +1,7 @@
 var winWidth = $(window).width();
 
-$(document).ready(function () {
- 
+$(document).ready(function () { 
   architectSlider();
-  
 });
 
 $(window).resize(function () {
