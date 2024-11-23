@@ -43,6 +43,7 @@
             height: 11rem;    
             display: flex;  
             margin: 0 ;  
+            overflow: hidden;
             &:nth-child(1) { order: 3; } //PLANS
             &:nth-child(2) { order: 8; } //SHOP
             &:nth-child(3) { order: 1; } //REBARS
