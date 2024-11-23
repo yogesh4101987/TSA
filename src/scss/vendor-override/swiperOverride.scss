@@ -527,4 +527,10 @@
       }
     }   
   }
+  &.typ-feature-banner{
+    padding-bottom: 8rem;
+    .swiper-slide{
+      width: 19rem;      
+    }
+  }
 }

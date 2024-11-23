@@ -2,38 +2,41 @@ var winWidth = $(window).width();
 
 $(document).ready(function() {    
     if ($(window).width() < 768) {
-        $('.grid-sizer').show();
+        $('<div class="grid-sizer"></div>').appendTo('.feature');
         homeBannerFeatureMobile();
     } else{
-        $('.grid-sizer').hide();
+        $('.grid-sizer').remove();
         destroyIsotope();
     }
 
     if ($('.js-home-bg').length != 0) {
         bgHomeImg();
-    };
+    }
 });
 
 $(window).resize(function() {
-    if ($(window).width() < 768) {
-        $('.grid-sizer').show();
+    if (winWidth < 768) {
+        $('<div class="grid-sizer"></div>').appendTo('.feature');
         homeBannerFeatureMobile();
     } else{
-        $('.grid-sizer').hide();
+        $('.grid-sizer').remove();
         destroyIsotope();
     }
     if ($('.js-home-bg').length != 0) {
         bgHomeImg();
-    };
+    }
 });
 
 function homeBannerFeatureMobile() {
-    var $grid = $('.feature').isotope({
+    // Select the grid container element
+    const grid = document.querySelector('.feature');
+    // Initialize Isotope with options
+    const iso = new Isotope(grid, {
         itemSelector: '.feature-item',
-        // layoutMode: 'masonry',
+        layoutMode: 'masonry',
         masonry: {
-            columnWidth: '.grid-sizer',  
-            gutter: 12 
+            columnWidth: '.grid-sizer',
+            gutter: 12
         }
     });
 }
@@ -48,7 +51,7 @@ function destroyIsotope() {
 function bgHomeImg() {
     $('.js-home-bg').each(function() {
         var imgSrc = $(this).find('.bg-img img').attr('src');
-        if ($(window).width() < 768) {
+        if (winWidth < 768) {
             $(this).css({
                 'background': '#F3F4F6',   
             });

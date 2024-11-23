@@ -2030,6 +2030,12 @@ p {
     border-bottom: none;
   }
 }
+.bs-swiper.typ-feature-banner {
+  padding-bottom: 8rem;
+}
+.bs-swiper.typ-feature-banner .swiper-slide {
+  width: 19rem;
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;
