@@ -8,8 +8,9 @@
     @media only screen and (max-width: 768px) {
         padding: 2.4rem 0 1.2rem;
         margin-bottom: 2.4rem;
+        background: #F3F4F6 ;
     }
-
+    .cmp-title,
     .banner-title {
         font-size: 4rem;
         line-height: 5.2rem;
@@ -36,22 +37,22 @@
         @media only screen and (max-width: 768px) {
             width: 100%;
             gap: 1.2rem;
-        }
-        
+        }        
         
         .feature-item {
             width: 31%; /* Adjust width to account for 20px gutter */
             height: 11rem;    
             display: flex;  
-            margin: 0 ;            
-            &:nth-child(2) { order: 9; } //PLANS
-            &:nth-child(3) { order: 8; } //SHOP
-            &:nth-child(4) { order: 1; } //REBARS
-            &:nth-child(5) { order: 4; } //ARCHITECTS
-            &:nth-child(6) { order: 2; } //CALCULATOR
-            &:nth-child(7) { order: 6; } //BUDGET
-            &:nth-child(8) { order: 5; } //INSPIRATION
-            &:nth-child(9) { order: 7; } //CAUTION
+            margin: 0 ;  
+            overflow: hidden;
+            &:nth-child(1) { order: 3; } //PLANS
+            &:nth-child(2) { order: 8; } //SHOP
+            &:nth-child(3) { order: 1; } //REBARS
+            &:nth-child(4) { order: 4 } //ARCHITECTS
+            &:nth-child(5) { order: 2; } //CALCULATOR
+            &:nth-child(6) { order: 6; } //BUDGET
+            &:nth-child(7) { order: 5; } //INSPIRATION
+            &:nth-child(8) { order: 7; } //CAUTION 
             @media only screen and (max-width: 768px) {
                 width:  48%;
                 height: 9.2rem;
@@ -69,13 +70,13 @@
                 }
                 .cmp-teaser,
                 .feature-card{
-                    &__image,
+                    .cmp-image,
                     .f-img{
                         max-width: 14.3rem;
                         max-height: 13.6rem;
                         @media only screen and (max-width: $media-mobile) {
-                            max-width: 8rem;
-                            max-height: 8rem;
+                            width: 8rem;
+                            height: 8rem;
                         }
                     }            
                 }
@@ -86,6 +87,9 @@
             height: 11rem;    
             display: none;
             order: 0; 
+            @media only screen and (max-width: 1024px) {
+              width: 31%;
+            }
             @media only screen and (max-width: 768px) {
                 display: block; 
                 width:  48%;
@@ -109,7 +113,7 @@
             box-shadow: 0px 8px 24px 0px #00000014;
             border: 2px solid $clr-border
         }
-        &__pretitle,
+        .cmp-teaser__pretitle,
         .f-title{
             font-family: $font-semiBold;
             font-size: 1.4rem;
@@ -121,7 +125,7 @@
                 line-height: 2.4rem;
             }
         }
-        &__title,
+        .cmp-teaser__title,
         .f-desc{
             font-family: $font-regular;
             font-size: 1.2rem;
@@ -130,7 +134,7 @@
             margin-bottom: 0.6rem;
             max-width: 65%;
         }
-        &__desc,
+        .cmp-teaser__description p ,
         .f-offer{
             background: $clr-secondary;
             padding: .2rem 0.8rem;
@@ -139,8 +143,9 @@
             font-size: 1rem;
             line-height: 1.2rem;
             @include border-radius(2.6rem);
+            display: inline-block;
         }
-        &__image,
+        .cmp-image,
         .f-img{
             position: absolute;
             bottom: 0;
@@ -148,9 +153,15 @@
             max-width: 9.4rem;
             max-height: 9.4rem;
             @media only screen and (max-width: $media-mobile) {
-                max-width: 8rem;
-                max-height: 8rem;
+                width: 8rem;
+                height: 8rem;
             }
         }
+    }
+
+    .cmp-image__image{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 }
