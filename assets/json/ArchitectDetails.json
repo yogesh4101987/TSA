@@ -1,0 +1,196 @@
+[
+  {
+    "tabTitle": "modern",
+    "modern": [
+      {
+        "cardId": "prasinos",
+        "name": "Prasinos",
+        "desc": "Description for Card 1",
+        "detail": [
+          {
+            "title": "Area",
+            "data": "3150 Sq. ft."
+          },
+          {
+            "title": "Floors",
+            "data": "2"
+          },
+          {
+            "title": "Type",
+            "data": "5 BHK"
+          },
+          {
+            "title": "Est. budget",
+            "data": "32.5 lacs"
+          }
+        ]
+      },
+      {
+        "cardId": "Natachandra",
+        "name": "Natachandra",
+        "desc": "Description for Card",
+        "detail": [
+          {
+            "title": "Area",
+            "data": "3150 Sq. ft."
+          },
+          {
+            "title": "Floors",
+            "data": "2"
+          },
+          {
+            "title": "Type",
+            "data": "5 BHK"
+          },
+          {
+            "title": "Est. budget",
+            "data": "32.5 lacs"
+          }
+        ]
+      },
+      {
+        "cardId": "Arcadia",
+        "name": "Arcadia",
+        "desc": "Description for Card 1",
+        "detail": [
+          {
+            "title": "Area",
+            "data": "3150 Sq. ft."
+          },
+          {
+            "title": "Floors",
+            "data": "2"
+          },
+          {
+            "title": "Type",
+            "data": "5 BHK"
+          },
+          {
+            "title": "Est. budget",
+            "data": "32.5 lacs"
+          }
+        ]
+      },
+      {
+        "cardId": "Hasta",
+        "name": "Hasta - Hand of god",
+        "desc": "Description for Card 1",
+        "detail": [
+          {
+            "title": "Area",
+            "data": "3150 Sq. ft."
+          },
+          {
+            "title": "Floors",
+            "data": "2"
+          },
+          {
+            "title": "Type",
+            "data": "5 BHK"
+          },
+          {
+            "title": "Est. budget",
+            "data": "32.5 lacs"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tabTitle": "EUROPEAN",
+    "EUROPEAN": [
+      {
+        "cardId": "prasinos",
+        "name": "Prasinos",
+        "desc": "Description for Card 1",
+        "detail": [
+          {
+            "title": "Area",
+            "data": "3150 Sq. ft."
+          },
+          {
+            "title": "Floors",
+            "data": "2"
+          },
+          {
+            "title": "Type",
+            "data": "5 BHK"
+          },
+          {
+            "title": "Est. budget",
+            "data": "32.5 lacs"
+          }
+        ]
+      },
+      {
+        "cardId": "Natachandra",
+        "name": "Natachandra",
+        "desc": "Description for Card",
+        "detail": [
+          {
+            "title": "Area",
+            "data": "3150 Sq. ft."
+          },
+          {
+            "title": "Floors",
+            "data": "2"
+          },
+          {
+            "title": "Type",
+            "data": "5 BHK"
+          },
+          {
+            "title": "Est. budget",
+            "data": "32.5 lacs"
+          }
+        ]
+      },
+      {
+        "cardId": "Arcadia",
+        "name": "Arcadia",
+        "desc": "Description for Card 1",
+        "detail": [
+          {
+            "title": "Area",
+            "data": "3150 Sq. ft."
+          },
+          {
+            "title": "Floors",
+            "data": "2"
+          },
+          {
+            "title": "Type",
+            "data": "5 BHK"
+          },
+          {
+            "title": "Est. budget",
+            "data": "32.5 lacs"
+          }
+        ]
+      },
+      {
+        "cardId": "Hasta",
+        "name": "Hasta - Hand of god",
+        "desc": "Description for Card 1",
+        "detail": [
+          {
+            "title": "Area",
+            "data": "3150 Sq. ft."
+          },
+          {
+            "title": "Floors",
+            "data": "2"
+          },
+          {
+            "title": "Type",
+            "data": "5 BHK"
+          },
+          {
+            "title": "Est. budget",
+            "data": "32.5 lacs"
+          }
+        ]
+      }
+    ]
+  }
+]
