@@ -2,11 +2,13 @@ var winWidth = $(window).width();
 
 $(document).ready(function () { 
   architectSlider();  
+  fabricatorsSlider();
 });
 
 $(window).resize(function () {
   if ($(window).width() < 769) {
     architectSlider();
+    fabricatorsSlider();
   }
 });
 
