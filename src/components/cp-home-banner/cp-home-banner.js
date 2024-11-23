@@ -15,7 +15,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    if ($(window).width() < 768) {
+    if (winWidth < 768) {
         $('<div class="grid-sizer"></div>').appendTo('.feature');
         homeBannerFeatureMobile();
     } else{
