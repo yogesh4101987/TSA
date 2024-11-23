@@ -2117,6 +2117,12 @@ p {
     margin-right: 1.2rem;
   }
 }
+.bs-swiper.typ-feature-banner {
+  padding-bottom: 8rem;
+}
+.bs-swiper.typ-feature-banner .swiper-slide {
+  width: 19rem;
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;

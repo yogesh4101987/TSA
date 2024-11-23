@@ -8,8 +8,9 @@
     @media only screen and (max-width: 768px) {
         padding: 2.4rem 0 1.2rem;
         margin-bottom: 2.4rem;
-        background: #F3F4F6;
+        background: #F3F4F6 ;
     }
+    .cmp-title,
     .banner-title {
         font-size: 4rem;
         line-height: 5.2rem;
@@ -36,13 +37,21 @@
         @media only screen and (max-width: 768px) {
             width: 100%;
             gap: 1.2rem;
+<<<<<<< HEAD
         }
+=======
+        }        
+>>>>>>> origin/ready-to-integration
         
         .feature-item {
             width: 31%; /* Adjust width to account for 20px gutter */
             height: 11rem;    
             display: flex;  
             margin: 0 ;  
+<<<<<<< HEAD
+=======
+            overflow: hidden;
+>>>>>>> origin/ready-to-integration
             &:nth-child(1) { order: 3; } //PLANS
             &:nth-child(2) { order: 8; } //SHOP
             &:nth-child(3) { order: 1; } //REBARS
@@ -67,12 +76,16 @@
                     width:  48%; /* Adjust width and gutter for mobile */
                 }
                 .feature-card{
+<<<<<<< HEAD
+=======
+                    .cmp-image,
+>>>>>>> origin/ready-to-integration
                     .f-img{
                         max-width: 14.3rem;
                         max-height: 13.6rem;
                         @media only screen and (max-width: $media-mobile) {
-                            max-width: 8rem;
-                            max-height: 8rem;
+                            width: 8rem;
+                            height: 8rem;
                         }
                     }            
                 }
@@ -83,6 +96,9 @@
             height: 11rem;    
             display: none;
             order: 0; 
+            @media only screen and (max-width: 1024px) {
+              width: 31%;
+            }
             @media only screen and (max-width: 768px) {
                 display: block; 
                 width:  48%;
@@ -105,6 +121,10 @@
             box-shadow: 0px 8px 24px 0px #00000014;
             border: 2px solid $clr-border
         }
+<<<<<<< HEAD
+=======
+        .cmp-teaser__pretitle,
+>>>>>>> origin/ready-to-integration
         .f-title{
             font-family: $font-semiBold;
             font-size: 1.4rem;
@@ -116,6 +136,10 @@
                 line-height: 2.4rem;
             }
         }
+<<<<<<< HEAD
+=======
+        .cmp-teaser__title,
+>>>>>>> origin/ready-to-integration
         .f-desc{
             font-family: $font-regular;
             font-size: 1.2rem;
@@ -124,6 +148,10 @@
             margin-bottom: 0.6rem;
             max-width: 65%;
         }
+<<<<<<< HEAD
+=======
+        .cmp-teaser__description p ,
+>>>>>>> origin/ready-to-integration
         .f-offer{
             background: $clr-secondary;
             padding: .2rem 0.8rem;
@@ -134,6 +162,10 @@
             @include border-radius(2.6rem);
             display: inline-block;
         }
+<<<<<<< HEAD
+=======
+        .cmp-image,
+>>>>>>> origin/ready-to-integration
         .f-img{
             position: absolute;
             bottom: 0;
@@ -141,14 +173,22 @@
             max-width: 9.4rem;
             max-height: 9.4rem;
             @media only screen and (max-width: $media-mobile) {
-                max-width: 8rem;
-                max-height: 8rem;
+                width: 8rem;
+                height: 8rem;
             }
         }
     }
+<<<<<<< HEAD
     &.typ-2{
         .feature{
             width: 100%;
         }
+=======
+
+    .cmp-image__image{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+>>>>>>> origin/ready-to-integration
     }
 }
