@@ -38,5 +38,14 @@
   font-size: 1.4rem;
   font-family: "Poppins Medium";
 }
+.cp-coupon-code.typ-structura-pdp .btn-outline {
+  width: 100%;
+}
+.cp-coupon-code.typ-structura-pdp .apply-btn {
+  min-width: 9.2rem;
+  padding: 0.1rem 0;
+  margin-left: 0.4rem;
+  font-size: 1.2rem;
+}
 
 /*# sourceMappingURL=cp-coupon-code.css.map */

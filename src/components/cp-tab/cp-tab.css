@@ -60,6 +60,24 @@
 .cp-tab .tab-container .tab-content.active {
   display: block;
 }
+.cp-tab .tab-container .tab-content .list-sec {
+  display: flex;
+}
+.cp-tab .tab-container .tab-content .list-sec .list-item {
+  width: 50%;
+}
+.cp-tab .tab-container .tab-content .list-sec .list-item .bold-text {
+  font-family: "Poppins Semibold";
+  font-size: 2rem;
+  color: #333333;
+  display: block;
+}
+.cp-tab .tab-container .tab-content .list-sec .list-item .normal-text {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  color: #666666;
+  display: block;
+}
 .cp-tab .tab-container .content {
   font-size: 3rem;
 }
@@ -115,6 +133,28 @@
     align-items: center;
     margin-top: 2rem;
   }
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-struct-pdp {
+    margin-bottom: 2.4rem;
+  }
+}
+.cp-tab.typ-struct-pdp .tab-list {
+  background: #ECF2FB;
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+.cp-tab.typ-struct-pdp .tab-list .tab-item.active .title {
+  background: #FFFFFF;
+  color: #3D7EDB;
+  border: 0;
+  font-family: "Poppins Medium";
+}
+.cp-tab.typ-struct-pdp .tab-list .title {
+  border-radius: 8px;
+  background: transparent;
+  border: 0;
+  padding: 1rem 4.5rem;
 }
 
 /*# sourceMappingURL=cp-tab.css.map */

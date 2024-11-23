@@ -877,6 +877,10 @@ p {
   margin: 0 auto;
 }
 
+.cm-text-right {
+  text-align: right;
+}
+
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -1515,6 +1519,9 @@ p {
     line-height: 2.4rem;
     padding: 1.1rem 1.2rem;
   }
+}
+.btn.full-width {
+  width: 100%;
 }
 
 /* colors */

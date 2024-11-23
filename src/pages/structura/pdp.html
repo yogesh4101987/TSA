@@ -21,10 +21,13 @@
     <link rel="stylesheet" href="../components/cp-product-name-head/cp-product-name-head.css"/>
     <link rel="stylesheet" href="/components/cp-rating/cp-rating.css"/>
     <link rel="stylesheet" href="/components/cp-trade-hand-tool-card/cp-trade-hand-tool-card.css" />
-    <link rel="stylesheet" href="../../components/cp-select/cp-select.css" />
-    <link rel="stylesheet" href="../../components/cp-dimensions/cp-dimensions.css" />
-    <link rel="stylesheet" href="../../components/cp-price/cp-price.css" />
-    <link rel="stylesheet" href="../../components/cp-coupon-code/cp-coupon-code.css" />
+    <link rel="stylesheet" href="/components/cp-select/cp-select.css" />
+    <link rel="stylesheet" href="/components/cp-dimensions/cp-dimensions.css" />
+    <link rel="stylesheet" href="/components/cp-price/cp-price.css" />
+    <link rel="stylesheet" href="/components/cp-coupon-code/cp-coupon-code.css" />
+    <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
+    <link rel="stylesheet" href="/components/cp-counter/cp-counter.css" />
+
 
 </head>
 
@@ -265,7 +268,7 @@
                         <h3 class="title">Thickness</h3>
                         <div class="select-dropdown">
                           <button href="#" role="button" data-value="" class="select-dropdown-button">
-                            <span class="select-text">SELECT ITEMS </span> <i class="zmdi zmdi-chevron-down"></i>
+                            <span class="select-text">Select </span> <i class="zmdi zmdi-chevron-down"></i>
                           </button>
                           <ul class="select-dropdown-list">
                             <li class="dropdown-item">
@@ -291,7 +294,7 @@
                         <h3 class="title">Diameter</h3>
                         <div class="select-dropdown">
                           <button href="#" role="button" data-value="" class="select-dropdown-button">
-                            <span class="select-text">SELECT ITEMS </span> <i class="zmdi zmdi-chevron-down"></i>
+                            <span class="select-text">Select</span> <i class="zmdi zmdi-chevron-down"></i>
                           </button>
                           <ul class="select-dropdown-list">
                             <li class="dropdown-item">
@@ -315,12 +318,73 @@
             </ul>
         </div>
         <div class="sec-cont">
-          <button class="btn btn-outline" type="button">+ Add one more shape/size</button>
-          <div class="cp-coupon-code">
-            <span class="code-info">Add ₹5,000 and get 2% off on Tiscon products</span>
-            <span class="code">STRUCTURA2%</span>
-            <a href="#" class="btn-link js-drawer" data-id="availableOffers">Apply</a>
+          <div class="container">
+            <h3 class="sec-sub-title">Order by</h3>
+            <div class="cp-tab typ-struct-pdp">
+
+              <ul class="tab-list">
+                <li class="tab-item active" data-target="#tab1">
+                  <h3 class="title">Quantity</h3>
+                </li>
+                <li class="tab-item" data-target="#tab2">
+                  <h3 class="title">Weight</h3>
+                </li>
+              </ul>
+              <div class="tab-container">
+                <div class="tab-content active" id="tab1">
+                  <h3 class="sec-sub-title">Quantity</h3>
+
+                <ul class="list-sec">
+                  <li class="list-item">
+                    <div class="cp-counter">
+                      <button class="btn-count no-active btn-minus" disabled>-</button>
+                      <input type="text"  class="number-product" value="1">
+                      <button class="btn-count btn-plus">+</button>
+                    </div>
+                    <span class="normal-text">~ 56.5 Kg </span>
+                  </li>
+                  <li class="list-item">
+                    <span class="bold-text cm-text-right">
+                    ₹54,552 </span>
+                    <span class="normal-text cm-text-right">₹1,380 per piece</span>
+                  </li>
+                 
+                </ul>
+                </div>
+                <div class="tab-content" id="tab2">
+                  <h3 class="sec-sub-title">Weight (in kg)</h3>
+                  <ul class="list-sec">
+                    <li class="list-item">
+                      <div class="cp-counter">
+                        <button class="btn-count no-active btn-minus" disabled>-</button>
+                        <input type="text"  class="number-product" value="1">
+                        <button class="btn-count btn-plus">+</button>
+                      </div>
+                      <span class="normal-text">~ 10 units (5.65 kg) </span>
+                    </li>
+                    <li class="list-item">
+                      <span class="bold-text cm-text-right">
+                        ₹15,800 </span>
+                      <span class="normal-text cm-text-right">₹1,580 per piece</span>
+                    </li>
+                   
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="sec-cont">
+          <div class="container">  
+            <button class="btn btn-outline full-width" type="button">+ Add one more shape/size</button>
+          <div class="cp-coupon-code typ-structura-pdp">
+            <span class="code-info">Get 5% OFF on all Structura products</span>
+            <span class="code">STRUCTURA2%</span>
+            <a href="#" class="btn apply-btn" data-id="availableOffers"> Apply code</a>
+        </div>
+        </div>
+
         </div>
         <div class="sec-cont">
             <div class="cp-price typ-struct-pdp">
@@ -329,6 +393,13 @@
                     <li class="price-list-item typ-minimum">
                         <span class="icon"></span>
                         <p class="desc">Minimum order quantity for Structura should be ₹15000.00</p>
+                    </li>
+                    <li class="price-list-item total-price">
+                        <span>Total price<span class="sub-text">(Inclusive of all Taxes)</span></span>
+                        <span class="bold-text">
+                            ₹54,552
+                            <span class="sub-text">₹1,380 per piece</span>
+                        </span>
                     </li>
                     <li class="price-list-item total-price">
                         <span>Total price<span class="sub-text">(Inclusive of all Taxes)</span></span>

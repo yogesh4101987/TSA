@@ -8,28 +8,31 @@ $(window).resize(function() {
   productCount()
 });
 
-function productCount(){
-  $(document).on('click', '.btn-plus', function(e) {
-    let count = parseInt($('.number-product').val());
+function productCount() {
+  $(document).on('click', '.btn-plus', function () {
+    alert("hi")
+    // Find the counter container specific to this button
+    const $counter = $(this).siblings('.number-product'); 
+    let count = parseInt($counter.val());
+
+    // Increment logic
     if (count < 10) {
-      $('.number-product').val(count + 1);
-    }
-    if (count >= 0) {
-      $('.btn-minus').prop('disabled', false);
-    }
-    if (count === 9) {
-      $(this).prop('disabled', true);
+      $counter.val(count + 1); // Update the value
+      $(this).prop('disabled', count + 1 === 10); // Disable this button if max reached
+      $(this).siblings('.btn-minus').prop('disabled', false); // Enable minus button
     }
   });
 
-  $(document).on('click', '.btn-minus', function(e) {
-    let count = parseInt($('.number-product').val());
+  $(document).on('click', '.btn-minus', function () {
+    // Find the counter container specific to this button
+    const $counter = $(this).siblings('.number-product'); 
+    let count = parseInt($counter.val());
+
+    // Decrement logic
     if (count > 1) {
-      $('.number-product').val(count - 1);
-      $('.btn-plus').prop('disabled', false);
-    }
-    if (count - 1 === 1) {
-      $(this).prop('disabled', true);
+      $counter.val(count - 1); // Update the value
+      $(this).prop('disabled', count - 1 === 1); // Disable this button if min reached
+      $(this).siblings('.btn-plus').prop('disabled', false); // Enable plus button
     }
   });
 }

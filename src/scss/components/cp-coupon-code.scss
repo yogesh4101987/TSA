@@ -36,4 +36,15 @@
             font-size: 1.4rem;
             font-family: $font-medium;
         }
+    &.typ-structura-pdp{
+        .btn-outline{
+            width: 100%;
+        }
+        .apply-btn{
+            min-width: 9.2rem;
+            padding: 0.1rem 0;
+            margin-left: 0.4rem;
+            font-size: 1.2rem;
+        }
     }
+}
