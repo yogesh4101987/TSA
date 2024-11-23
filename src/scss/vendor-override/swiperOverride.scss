@@ -582,4 +582,17 @@
       }    
     }
   }
+  &.typ-feature-banner{
+    padding-bottom: 8rem;
+    @media only screen and (max-width: $media-mobile){
+      padding-bottom: 0;
+    }
+    .swiper-slide{
+      // width: 19rem !important;
+      width: 25% !important;
+      @media only screen and (max-width: $media-mobile){
+        width: 48% !important;
+      }
+    }
+  }
 }

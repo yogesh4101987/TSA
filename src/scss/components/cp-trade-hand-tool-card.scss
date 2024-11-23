@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    border-radius: 12px;
+    @include border-radius(1.2rem);
     border: 2px solid #dedede;
     height: 14.0rem;
     overflow: hidden;
@@ -30,9 +30,10 @@
     }
     .title{
         font-size: 1.6rem;
-    color: $clr-base;
+        color: $clr-base;
         font-family: $font-semiBold;
         padding-top: 0.8rem;
+        text-align: left;
         @media only screen and (max-width: $media-mobile){
             font-size: 1.4rem;
         }

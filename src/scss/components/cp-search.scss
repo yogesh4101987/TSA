@@ -30,7 +30,8 @@
   &.typ-agrico-home {
     width: 50.4rem;
     @media only screen and (max-width: $media-mobile) {
-      width: 34.3rem;
+      // width: 34.3rem;
+      width: 100%;
     }
     .search-wrap {
         height: 4.8rem;
@@ -68,10 +69,10 @@
      
     }
 
-    &.typ-wiron-home{
-      // margin-top: 3rem;
-      @media only screen and (max-width: $media-mobile) {
-        margin-top: 4.8rem;
-      }
-    }
+    // &.typ-wiron-home{
+    //   // margin-top: 3rem;
+    //   @media only screen and (max-width: $media-mobile) {
+    //     margin-top: 4.8rem;
+    //   }
+    // }
 }

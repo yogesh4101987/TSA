@@ -33,7 +33,6 @@
 }
 .cp-eCommerce-home-banner .feature {
   display: flex;
-  justify-content: space-between;
   gap: 2rem;
 }
 @media only screen and (max-width: 768px) {
@@ -48,23 +47,35 @@
   display: flex;
   margin: 0;
 }
-.cp-eCommerce-home-banner .feature .feature-item:nth-child(2) {
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(1) {
   order: 1;
 }
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(2) {
+  order: 2;
+}
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(3) {
-  order: 4;
+  order: 3;
 }
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(4) {
-  order: 2;
+  order: 4;
 }
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(5) {
   order: 5;
 }
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(6) {
-  order: 3;
+  order: 6;
 }
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(7) {
-  order: 6;
+  order: 7;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(8) {
+  order: 8;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(9) {
+  order: 9;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(10) {
+  order: 10;
 }
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature .feature-item {
