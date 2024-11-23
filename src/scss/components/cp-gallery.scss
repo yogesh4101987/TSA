@@ -5,7 +5,7 @@
     .gallery-card{
         @include border-radius(1.2rem);
         overflow: hidden;
-        .img-wrap{           
+        .img-wrap{
             max-height: 26rem; 
             @media only screen and (max-width: $media-mobile){
                 max-height: 16rem;
@@ -15,7 +15,7 @@
                 object-fit: cover;
             }
         }
-        .content-wrap{            
+        .content-wrap{
             padding: 1.6rem 1.6rem 1.6rem 1.2rem;
             .title{
                 font-family: $font-medium;
@@ -65,6 +65,11 @@
                 @media only screen and (max-width: $media-mobile) {
                     width: 60%;
                 }
+            }
+        }
+        &.typ-drawer{
+            .img-wrap{           
+                max-height: 29.6rem;                
             }
         }
     }

@@ -45,12 +45,21 @@ function toggleLayout() {
 
 // Function to initialize or destroy Swiper based on the layout
 function plpSlider() {
-  const innerCardSlider = new Swiper('.js-plp-slider', {
-    pagination: {
-      el: '.child-pagination',
-      clickable: true,
-    },
-    slidesPerView: 1,
-  }); 
-}
+  const currentWidth = $(window).width();
+  var innerCardSlider;
 
+  if (currentWidth < 768) {
+    innerCardSlider = new Swiper('.js-plp-slider', {
+      pagination: {
+        el: '.child-pagination',
+        clickable: true,
+      },
+      slidesPerView: 1,
+    }); 
+  } else{
+    if (innerCardSlider) {
+      innerCardSlider.destroy(true, true);
+      innerCardSlider = undefined;
+    }
+  }
+}

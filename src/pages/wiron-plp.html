@@ -403,16 +403,16 @@
                   </button>
                   <ul class="select-dropdown-list">
                     <li class="dropdown-item">
-                      <span data-value="1" class="select-dropdown-list-item">12-14X25MM</span>
+                      <span data-value="1" class="select-dropdown-list-item">Mumbai</span>
                     </li>
                     <li class="dropdown-item">
-                      <span  data-value="2" class="select-dropdown-list-item">15-14X25MM</span>                          
+                      <span  data-value="2" class="select-dropdown-list-item">Rajasthan</span>                          
                       </li>
                     <li class="dropdown-item">
-                      <span data-value="3" class="select-dropdown-list-item">14-14X25MM</span>
+                      <span data-value="3" class="select-dropdown-list-item">Delhi</span>
                     </li>
                     <li class="dropdown-item">
-                      <span data-value="4" class="select-dropdown-list-item">13-14X25MM</span>  
+                      <span data-value="4" class="select-dropdown-list-item">Chennai</span>  
                   </ul>
                 </div>
               
@@ -420,7 +420,7 @@
               <div class="bs-swiper swiper typ-gallery js-gallery">
                   <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                          <div class="gallery-card">
+                          <div class="gallery-card js-drawer" data-id="producGallery">
                               <div class="img-wrap">
                               <picture>
                                   <source media="(max-width:768px)" srcset="../../components/cp-gallery/images/gallery-1.png">
@@ -430,7 +430,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="swiper-slide">
+                      <div class="swiper-slide js-drawer" data-id="producGallery">
                           <div class="gallery-card">
                               <div class="img-wrap">
                               <picture>
@@ -441,7 +441,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="swiper-slide">
+                      <div class="swiper-slide js-drawer" data-id="producGallery">
                           <div class="gallery-card">
                               <div class="img-wrap">
                               <picture>
@@ -452,7 +452,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="swiper-slide">
+                      <div class="swiper-slide js-drawer" data-id="producGallery">
                           <div class="gallery-card">
                               <div class="img-wrap">
                               <picture>
@@ -1591,6 +1591,89 @@
         </div>
       </div>
       <!-- offer drawer end -->
+
+      <!-- Gallery start-->
+      <div class="cp-drawer typ-gallery" id="producGallery">
+        <div class="head-sec">
+          <h2 class="drawer-title">Gallery</h2>
+          <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrap">
+          <div class="cp-gallery">
+            <div class="cp-select typ-category">
+              <div class="select-dropdown">
+                <button href="#" role="button" data-value="" class="select-dropdown-button">
+                  <span class="select-text">SELECT ITEMS </span> <i class="zmdi zmdi-chevron-down"></i>
+                </button>
+                <ul class="select-dropdown-list">
+                  <li class="dropdown-item">
+                    <span data-value="1" class="select-dropdown-list-item">Mumbai</span>
+                  </li>
+                  <li class="dropdown-item">
+                    <span  data-value="2" class="select-dropdown-list-item">Rajasthan</span>                          
+                    </li>
+                  <li class="dropdown-item">
+                    <span data-value="3" class="select-dropdown-list-item">Delhi</span>
+                  </li>
+                  <li class="dropdown-item">
+                    <span data-value="4" class="select-dropdown-list-item">Chennai</span>  
+                </ul>
+              </div>
+            
+            </div>
+            <div class="bs-swiper swiper typ-drawer-gallery js-drawer-gallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-card typ-drawer">
+                            <div class="img-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="../../components/cp-gallery/images/gallery-1.png">
+                                <source media="(max-width:991px)" srcset="../../components/cp-gallery/images/gallery-1.png">
+                                <img src="../../components/cp-gallery/images/gallery-1.png" alt="gallery-image" class="img"/>
+                            </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-card typ-drawer">
+                            <div class="img-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="../../components/cp-gallery/images/gallery-2.png">
+                                <source media="(max-width:991px)" srcset="../../components/cp-gallery/images/gallery-2.png">
+                                <img src="../../components/cp-gallery/images/gallery-2.png" alt="gallery-image" class="img"/>
+                            </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-card typ-drawer">
+                            <div class="img-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="../../components/cp-gallery/images/gallery-1.png">
+                                <source media="(max-width:991px)" srcset="../../components/cp-gallery/images/gallery-1.png">
+                                <img src="../../components/cp-gallery/images/gallery-1.png" alt="gallery-image" class="img"/>
+                            </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-card typ-drawer">
+                            <div class="img-wrap">
+                            <picture>
+                                <source media="(max-width:768px)" srcset="../../components/cp-gallery/images/gallery-2.png">
+                                <source media="(max-width:991px)" srcset="../../components/cp-gallery/images/gallery-2.png">
+                                <img src="../../components/cp-gallery/images/gallery-2.png" alt="gallery-image" class="img"/>
+                            </picture>
+                            </div>
+                        </div>
+                    </div>               
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>            
+          </div>
+        </div>        
+      </div>
+      <!-- Gallery end-->
     </main>
     <!-- Footer Start -->
     <footer>

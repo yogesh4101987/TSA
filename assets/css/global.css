@@ -2156,12 +2156,18 @@ p {
   }
 }
 .bs-swiper.typ-feature-banner .swiper-slide {
-  width: 25% !important;
+  width: 15.4% !important;
 }
 @media only screen and (max-width: 768px) {
   .bs-swiper.typ-feature-banner .swiper-slide {
     width: 48% !important;
   }
+}
+.bs-swiper.typ-drawer-gallery {
+  padding-bottom: 3.6rem;
+}
+.bs-swiper.typ-drawer-gallery .swiper-slide {
+  width: 34.3rem !important;
 }
 
 .bs-radio {

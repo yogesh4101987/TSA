@@ -1,5 +1,6 @@
 $(document).ready(function () { 
   gallerySlider();  
+  drawerGallerySlider();
   if ($('.cp-product-type.typ-category').length != 0) {
     findCategory();
   };
@@ -30,3 +31,15 @@ function findCategory() {
     }
   });
 }
+
+function drawerGallerySlider() {
+  var swiper = new Swiper(".js-drawer-gallery", {
+    slidesPerView: 1,
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+

@@ -589,10 +589,16 @@
     }
     .swiper-slide{
       // width: 19rem !important;
-      width: 25% !important;
+      width: 15.4% !important;
       @media only screen and (max-width: $media-mobile){
         width: 48% !important;
       }
+    }
+  }
+  &.typ-drawer-gallery{
+    padding-bottom: 3.6rem;
+    .swiper-slide{     
+      width: 34.3rem !important;      
     }
   }
 }
