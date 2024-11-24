@@ -8,9 +8,21 @@ text-align: center;
     font-size: 1.6rem;
     font-family: $font-semiBold;
     color: $clr-base;
+    padding-bottom: 1.6rem;
+}
+.icon{
+    font-size: 6.4rem;
+    display: block;
+    width: 6.4rem;
+    height: 6.4rem;
+
 }
 .act-wrap{
     display: flex;
     justify-content: space-between;
+    gap: 1.6rem;
+    .typ-model-btn{
+        min-width: 14rem;
+    }
 }
 }

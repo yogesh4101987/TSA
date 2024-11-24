@@ -118,6 +118,13 @@
             padding: 0;
         }
     }
+    &.typ-small{
+        max-width: 343px;
+        max-height: 240px;
+        .modal-dialog {
+            border-radius: 12px;
+        }
+    }
    
    
     .bs-applicant-form {

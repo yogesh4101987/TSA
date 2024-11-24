@@ -881,6 +881,11 @@ p {
   text-align: right;
 }
 
+.cm-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -2188,6 +2193,10 @@ p {
   opacity: 0;
   display: none;
 }
+.bs-radio.typ-structura-pdp .custom-radio {
+  min-width: 10.9rem;
+  padding: 1.2rem 0;
+}
 
 .bs-modal {
   position: relative;
@@ -2324,6 +2333,13 @@ p {
 }
 .bs-modal.type-prod-thumb .modal-body {
   padding: 0;
+}
+.bs-modal.typ-small {
+  max-width: 343px;
+  max-height: 240px;
+}
+.bs-modal.typ-small .modal-dialog {
+  border-radius: 12px;
 }
 @media only screen and (max-width: 768px) {
   .bs-modal .bs-applicant-form .title {
