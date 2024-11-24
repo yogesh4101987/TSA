@@ -96,6 +96,19 @@
         background: transparent;
         color: $clr-base;
         border: 1px solid $clr-base;
+        &.typ-2{
+            border: 1px solid #dedede;
+            color: #B3B3B3;
+        }
+
+    }
+    &.btn-grey{
+        background: #EDEDED;
+        color: #B3B3B3;
+        font-size: 1.6rem;
+        border: 1px solid #dedede;
+
+
     }
     &.typ-add-cart{
        min-width: 34.3rem;

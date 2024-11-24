@@ -1,0 +1,20 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-model-content {
+  text-align: center;
+}
+.cp-model-content .desc {
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+}
+.cp-model-content .act-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=cp-model-content.css.map */

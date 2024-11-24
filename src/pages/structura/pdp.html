@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="/components/cp-coupon-code/cp-coupon-code.css" />
     <link rel="stylesheet" href="/components/cp-tab/cp-tab.css" />
     <link rel="stylesheet" href="/components/cp-counter/cp-counter.css" />
-
+    <link rel="stylesheet" href="/components/cp-product-info/cp-product-info.css" />
 
 </head>
 
@@ -201,6 +201,36 @@
                 <p class="sec-desc">All come in standard length of 6mts</p>
             </div>
            </div>
+        </div>
+        <div class="sec-cont">
+          <div class="container">
+            <div class="cp-product-info">
+              <div class="img-wrap">
+                <picture>
+                  <source media="(max-width:768px)" srcset="/components/cp-product-info/images/superlink_1 1.png">
+                  <source media="(max-width:991px)" srcset="/components/cp-product-info/images/superlink_1 1.png">
+                  <img src="/components/cp-product-info/images/superlink_1 1.png" alt="product" />
+                </picture>
+              </div>
+              <div class="con-wrap">
+                <h3 class="product-title">Rectangular steel hollow sections</h3>
+                <p class="desc">20 mm X 1.6 mm X 25 mm</p>
+                <ul class="list-wrap">
+                  <li class="list-item">
+                    <span class="cm-regular">Qty:</span>
+                    <span class="cm-semi-bold">10 nos</span>
+                  </li>
+                    <li class="list-item">
+                    <span class="cm-semi-bold"> ₹15,400</span>
+                  </li>
+                </ul>
+                <div class="act-wrap">
+                  <a href="#" class="btn btn-link">Change</a>
+                  <a href="#" class="btn btn-link model-open" data-toggle="modal" data-modal-id="#remove">Delete</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="sec-cont">
             <div class="container">
@@ -401,15 +431,12 @@
                             <span class="sub-text">₹1,380 per piece</span>
                         </span>
                     </li>
-                    <li class="price-list-item total-price">
-                        <span>Total price<span class="sub-text">(Inclusive of all Taxes)</span></span>
-                        <span class="bold-text">
-                            ₹54,552
-                            <span class="sub-text">₹1,380 per piece</span>
-                        </span>
-                    </li>
                 </ul>
-               
+               <div class="act-wrap">
+                <button class="btn btn-outline typ-2" type="button">Add to cart</button> 
+                <button class="btn btn-grey">Buy now</button>
+
+               </div>
              </div>
         </div>
 
@@ -473,7 +500,27 @@
     <!---bottom Sticky End-->
  
 
-
+   <!--model pop up start-->
+   <div id="remove" tabindex="-1 " role="dialog " class="bs-modal type-lg fade">
+    <div class="modal-dialog ">
+      <h3 class="small-title ">High Tensile Fastners</h3>
+        <div class="modal-body ">
+            <div class="modal-content ">
+            
+                <button class="close-btn icon-close js-close " type="button "></button>
+             <div class="cp-model-content">
+              <span class="icon"></span>
+              <p class="desc">Are you sure you want to remove this product?</p>
+              <div class="act-wrap">
+                <button class="btn btn-outline" type="button">No, cancel</button>
+                <button class="btn btn"  type="button">Yes, delete</button>
+              </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!--model pop up end-->
 
 
     <div class="cm-overlay"></div>

@@ -98,5 +98,15 @@
 .cp-price.typ-struct-pdp .total-price {
   margin-top: 0;
 }
+.cp-price.typ-struct-pdp .act-wrap {
+  display: flex;
+  background: #FFFFFF;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1.6rem;
+}
+.cp-price.typ-struct-pdp .act-wrap .btn {
+  min-width: 16.3rem;
+}
 
 /*# sourceMappingURL=cp-price.css.map */

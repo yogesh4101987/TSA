@@ -6,6 +6,9 @@
 /*opacity- end*/
 .cp-dimensions {
   display: flex;
+  margin-bottom: 3.2rem;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
 }
 .cp-dimensions .img-wrap {
   width: 15rem;

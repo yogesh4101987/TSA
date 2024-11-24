@@ -8,31 +8,52 @@ $(window).resize(function() {
   productCount()
 });
 
+const minCount = 1; // Minimum counter value
+ const maxCount = 100; // Maximum counter value (optional)
+
 function productCount() {
-  $(document).on('click', '.btn-plus', function () {
-    alert("hi")
-    // Find the counter container specific to this button
-    const $counter = $(this).siblings('.number-product'); 
-    let count = parseInt($counter.val());
+  $(".cp-counter").each(function () {
+    const counter = $(this); // Scope to the specific counter element
 
-    // Increment logic
-    if (count < 10) {
-      $counter.val(count + 1); // Update the value
-      $(this).prop('disabled', count + 1 === 10); // Disable this button if max reached
-      $(this).siblings('.btn-minus').prop('disabled', false); // Enable minus button
-    }
-  });
+    // Increment button
+    counter.find(".btn-plus").click(function () {
+      const input = counter.find(".number-product");
+      let value = parseInt(input.val());
+      value = isNaN(value) ? minCount : value + 1;
 
-  $(document).on('click', '.btn-minus', function () {
-    // Find the counter container specific to this button
-    const $counter = $(this).siblings('.number-product'); 
-    let count = parseInt($counter.val());
+      if (value <= maxCount) {
+        input.val(value);
+        counter.find(".btn-minus").removeAttr("disabled");
+      }
+    });
 
-    // Decrement logic
-    if (count > 1) {
-      $counter.val(count - 1); // Update the value
-      $(this).prop('disabled', count - 1 === 1); // Disable this button if min reached
-      $(this).siblings('.btn-plus').prop('disabled', false); // Enable plus button
-    }
+    // Decrement button
+    counter.find(".btn-minus").click(function () {
+      const input = counter.find(".number-product");
+      let value = parseInt(input.val());
+      value = isNaN(value) ? minCount : value - 1;
+
+      if (value >= minCount) {
+        input.val(value);
+        if (value === minCount) {
+          $(this).attr("disabled", "disabled");
+        }
+      }
+    });
+
+    // Editable input
+    counter.find(".number-product").on("input", function () {
+      const input = $(this);
+      let value = parseInt(input.val());
+
+      if (isNaN(value) || value < minCount) {
+        value = minCount;
+      } else if (value > maxCount) {
+        value = maxCount;
+      }
+
+      input.val(value);
+      counter.find(".btn-minus").attr("disabled", value <= minCount);
+    });
   });
 }

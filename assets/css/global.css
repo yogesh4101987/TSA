@@ -1466,6 +1466,16 @@ p {
   color: #333333;
   border: 1px solid #333333;
 }
+.btn.btn-outline.typ-2 {
+  border: 1px solid #dedede;
+  color: #B3B3B3;
+}
+.btn.btn-grey {
+  background: #EDEDED;
+  color: #B3B3B3;
+  font-size: 1.6rem;
+  border: 1px solid #dedede;
+}
 .btn.typ-add-cart {
   min-width: 34.3rem;
 }
