@@ -44,7 +44,8 @@
   }
 }
 .cp-eCommerce-home-banner .feature .feature-item {
-  width: 25%; /* Adjust width to account for 20px gutter */
+  width: 25%;
+  /* Adjust width to account for 20px gutter */
   height: 14rem;
   overflow: hidden;
   display: flex;
@@ -137,7 +138,7 @@
   }
 }
 .cp-eCommerce-home-banner .feature-card:hover, .cp-eCommerce-home-banner .feature-card.active {
-  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 8px 24px 0px #00000014;
   border: 2px solid #DEDEDE;
 }
 .cp-eCommerce-home-banner .feature-card .f-title {
