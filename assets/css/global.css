@@ -900,9 +900,10 @@ p {
 
 @media only screen and (max-width: 768px) {
   .seperator {
-    border: 1px solid #dedede;
+    background: #dedede;
     width: 117%;
     margin: 2.4rem -4rem;
+    height: 1px;
   }
 }
 
@@ -1394,6 +1395,9 @@ p {
   float: right;
   min-width: 34.3rem;
   margin-top: 2.3rem;
+}
+.bs-sec.typ-tiscon-pdp .sec-sub-title {
+  position: relative;
 }
 
 .btn {

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/css/lyt-comman-grid.css" />
     <link rel="stylesheet" href="../../components/cp-cart-card/cp-cart-card.css" />
     <link rel="stylesheet" href="../../components/cp-breadcrumb/cp-breadcrumb.css" />
+    <link rel="stylesheet" href="/components/cp-rating/cp-rating.css" />
 
 
 
@@ -142,7 +143,7 @@
       </section>
       <!-- breadcrumbs ends -->  
       <!--product card start-->
-      <section  class="bs-sec">
+      <section  class="bs-sec typ-tiscon-pdp">
         <div class="container">
             <div class="lyt-grid typ-4">
                 <div class="grid-col">
@@ -188,43 +189,7 @@
                     <div class="sec-cont">
                         <div class="cp-cart-card cm-box typ-tiscon-pdp">
                             <h3 class="sec-sub-title">Select quantity</h3>
-                             <!-- <ul class="cart-list">
-                                <li class="list-item list-head tex-left">Size</li>
-                                <li class="list-item list-head text-center">Price</li>
-                                <li class="list-item list-head text-center">Quantity</li>
-                                <li class="list-item list-head text-center">weight</li>
-                                <li class="list-item list-head text-center">cost</li>
-                                <li class="list-item text-left">8mm</li>
-                                <li class="list-item text-center">₹220/piece</li>
-                                <li class="list-item text-center">
-                                    <div class="cp-counter typ-cart">
-                                    <button class="btn-count no-active btn-minus" disabled>-</button>
-                                    <input type="text" readonly class="number-product" value="1">
-                                    <button class="btn-count btn-plus">+</button>
-                                  </div>
-                                </li>
-                                <li class="list-item text-center">-500.7kg</li>
-                                <li class="list-item tex-right">₹220/piece</li>
-                                <li class="list-item">12mm</li>
-                                <li class="list-item">₹220/piece</li>
-                                <li class="list-item">
-                                    <div class="cp-counter typ-cart">
-                                    <button class="btn-count no-active btn-minus" disabled>-</button>
-                                    <input type="text" readonly class="number-product" value="1">
-                                    <button class="btn-count btn-plus">+</button>
-                                  </div>
-                                </li>
-                                <li class="list-item">16mm</li>
-                                <li class="list-item">₹220/piece</li>
-                                <li class="list-item">
-                                    <div class="cp-counter typ-cart">
-                                    <button class="btn-count no-active btn-minus" disabled>-</button>
-                                    <input type="text" readonly class="number-product" value="1">
-                                    <button class="btn-count btn-plus">+</button>
-                                  </div>
-                                </li>
-                             </ul>   -->
-                             <table class="cart-table cart-list">
+                             <table class="cart-list">
                                 <thead>
                                     <tr>
                                         <th class="text-left list-head list-item">Size</th>
@@ -251,40 +216,101 @@
                                     </tr>
                                     
                                     <!-- Item 2 -->
-                                    <tr>
+                                    <tr class="sepretor">
                                         <td class="text-left list-item">12mm</td>
-                                        <td class="text-center link-item">₹220/piece</td>
-                                        <td class="text-center">
+                                        <td class="text-center list-item">₹220/piece</td>
+                                        <td class="list-item text-center">
                                             <div class="cp-counter typ-cart">
                                                 <button class="btn-count no-active btn-minus" disabled>-</button>
                                                 <input type="text" readonly class="number-product" value="1">
                                                 <button class="btn-count btn-plus">+</button>
                                             </div>
                                         </td>
-                                        <td class="text-center">-600.8kg</td>
-                                        <td class="text-right">₹220/piece</td>
+                                        <td class="list-item text-center">-600.8kg</td>
+                                        <td class="list-item text-right">₹220/piece</td>
                                     </tr>
                             
                                     <!-- Item 3 -->
                                     <tr>
-                                        <td class="text-left">16mm</td>
-                                        <td class="text-center">₹220/piece</td>
-                                        <td class="text-center">
+                                        <td class="list-item text-left">16mm</td>
+                                        <td class="list-item text-center">₹220/piece</td>
+                                        <td class="list-item text-center">
                                             <div class="cp-counter typ-cart">
                                                 <button class="btn-count no-active btn-minus" disabled>-</button>
                                                 <input type="text" readonly class="number-product" value="1">
                                                 <button class="btn-count btn-plus">+</button>
                                             </div>
                                         </td>
-                                        <td class="text-center">-700.9kg</td>
-                                        <td class="text-right">₹220/piece</td>
+                                        <td class="list-item text-center">-700.9kg</td>
+                                        <td class="list-item text-right">₹220/piece</td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <h3 class="sec-sub-title">Binding wires
+                              <span class="tag-label">Also bought together
+                              </span>
+                            </h3>
                             
-                            
+                            <table class="cart-list">
+                               <thead>
+                                   <tr>
+                                       <th class="text-left list-head list-item">Size</th>
+                                       <th class="text-center list-head list-item">Price</th>
+                                       <th class="text-center list-head list-item">Quantity</th>
+                                       <th class="text-center list-head list-item">Weight</th>
+                                       <th class="text-right list-head list-item">Cost</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <!-- Item 1 -->
+                                   <tr class="sepretor">
+                                       <td class="text-left list-item">8mm</td>
+                                       <td class="text-center list-item">₹220/piece</td>
+                                       <td class="text-center list-item">
+                                           <div class="cp-counter typ-cart">
+                                               <button class="btn-count no-active btn-minus" disabled>-</button>
+                                               <input type="text" readonly class="number-product" value="1">
+                                               <button class="btn-count btn-plus">+</button>
+                                           </div>
+                                       </td>
+                                       <td class="text-center list-item">-500.7kg</td>
+                                       <td class="text-right list-item">₹220/piece</td>
+                                   </tr>
+                                   
+                                   <!-- Item 2 -->
+                                   <tr class="sepretor">
+                                       <td class="text-left list-item">12mm</td>
+                                       <td class="text-center list-item">₹220/piece</td>
+                                       <td class="list-item text-center">
+                                           <div class="cp-counter typ-cart">
+                                               <button class="btn-count no-active btn-minus" disabled>-</button>
+                                               <input type="text" readonly class="number-product" value="1">
+                                               <button class="btn-count btn-plus">+</button>
+                                           </div>
+                                       </td>
+                                       <td class="list-item text-center">-600.8kg</td>
+                                       <td class="list-item text-right">₹220/piece</td>
+                                   </tr>
+                           
+                                   <!-- Item 3 -->
+                                   <tr>
+                                       <td class="list-item text-left">16mm</td>
+                                       <td class="list-item text-center">₹220/piece</td>
+                                       <td class="list-item text-center">
+                                           <div class="cp-counter typ-cart">
+                                               <button class="btn-count no-active btn-minus" disabled>-</button>
+                                               <input type="text" readonly class="number-product" value="1">
+                                               <button class="btn-count btn-plus">+</button>
+                                           </div>
+                                       </td>
+                                       <td class="list-item text-center">-700.9kg</td>
+                                       <td class="list-item text-right">₹220/piece</td>
+                                   </tr>
+                               </tbody>
+                           </table>
                         </div>
                     </div>
+                   
                 </div>
                 <div class="grid-col">
                     <div class="sec-cont">

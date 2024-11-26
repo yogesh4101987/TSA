@@ -92,6 +92,9 @@
   border-bottom: 1px solid #ffe399;
   border-radius: 0;
 }
+.cp-product-name-head.typ-structura-pdp {
+  margin-bottom: 1.6rem;
+}
 @media only screen and (max-width: 768px) {
   .cp-product-name-head.typ-structura-pdp {
     margin: 0 -1.6rem;

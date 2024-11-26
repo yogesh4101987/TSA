@@ -19,6 +19,7 @@
   flex-wrap: wrap;
   border-bottom: 1px solid #dedede;
   padding-bottom: 1.4rem;
+  position: relative;
 }
 .cp-cart-card .cart-list .list-item {
   width: 38%;
@@ -101,9 +102,15 @@
 }
 .cp-cart-card.typ-tiscon-pdp .cart-list {
   display: block;
+  border-bottom: 0;
+  margin: 1.6rem 0 2.4rem;
 }
 .cp-cart-card.typ-tiscon-pdp .cart-list .list-item {
   width: 20%;
+  padding: 1.6rem;
+}
+.cp-cart-card.typ-tiscon-pdp .cart-list .list-item .list-head {
+  padding: 0.6rem;
 }
 .cp-cart-card.typ-tiscon-pdp .cart-list .list-item.text-center {
   text-align: center;
@@ -116,6 +123,33 @@
 }
 .cp-cart-card.typ-tiscon-pdp .cart-list .sepretor {
   border-bottom: 1px solid #dedede;
+}
+.cp-cart-card.typ-tiscon-pdp .cart-list::after {
+  background-color: #dedede;
+  width: 106%;
+  position: absolute;
+  left: -23px;
+  bottom: 0;
+  content: "";
+  height: 1px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-cart-card.typ-tiscon-pdp .cart-list::after {
+    width: 109%;
+    left: -15px;
+  }
+}
+.cp-cart-card.typ-tiscon-pdp .tag-label {
+  border-radius: 26px;
+  background: #D2042D;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  text-align: center;
+  padding: 0.2rem 0.8rem;
+  position: absolute;
+  left: 150px;
+  top: 10px;
 }
 
 /*# sourceMappingURL=cp-cart-card.css.map */
