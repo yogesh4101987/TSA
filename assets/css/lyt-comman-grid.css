@@ -4,82 +4,6 @@
 /*transform*/
 /*opacity*/
 /*opacity- end*/
-.lyt-pdp {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 1.9rem;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-pdp {
-    gap: 1.2rem;
-    flex-wrap: wrap;
-  }
-}
-.lyt-pdp .grid-col {
-  width: 50%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-pdp .grid-col {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .lyt-pdp .grid-col:nth-child(2) {
-    display: grid;
-  }
-}
-
-.feature-wrapper {
-  width: 50%;
-  margin-top: -8rem;
-}
-@media only screen and (max-width: 768px) {
-  .feature-wrapper {
-    margin-top: 0;
-    width: 100%;
-  }
-}
-
-/* colors */
-/*font family*/
-/* breakpoints */
-/*transform*/
-/*opacity*/
-/*opacity- end*/
-.lyt-review {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-review {
-    flex-direction: column;
-  }
-}
-.lyt-review .grid-col-lht {
-  width: 34.25%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-review .grid-col-lht {
-    width: 100%;
-  }
-}
-.lyt-review .grid-col-rht {
-  width: 70%;
-}
-@media only screen and (max-width: 768px) {
-  .lyt-review .grid-col-rht {
-    width: 100%;
-  }
-}
-
-/* colors */
-/*font family*/
-/* breakpoints */
-/*transform*/
-/*opacity*/
-/*opacity- end*/
 .lyt-grid {
   display: flex;
   justify-content: space-between;
@@ -147,4 +71,4 @@
   width: 30.3%;
 }
 
-/*# sourceMappingURL=pdp.css.map */
+/*# sourceMappingURL=lyt-comman-grid.css.map */

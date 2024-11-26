@@ -33,8 +33,10 @@
 }
 .cp-eCommerce-home-banner .feature {
   display: flex;
-  justify-content: space-between;
   gap: 2rem;
+}
+.cp-eCommerce-home-banner .feature.swiper-wrapper {
+  gap: 0;
 }
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature {
@@ -42,29 +44,42 @@
   }
 }
 .cp-eCommerce-home-banner .feature .feature-item {
-  width: 25%; /* Adjust width to account for 20px gutter */
+  width: 25%;
+  /* Adjust width to account for 20px gutter */
   height: 14rem;
   overflow: hidden;
   display: flex;
   margin: 0;
 }
-.cp-eCommerce-home-banner .feature .feature-item:nth-child(2) {
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(1) {
   order: 1;
 }
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(2) {
+  order: 2;
+}
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(3) {
-  order: 4;
+  order: 3;
 }
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(4) {
-  order: 2;
+  order: 4;
 }
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(5) {
   order: 5;
 }
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(6) {
-  order: 3;
+  order: 6;
 }
 .cp-eCommerce-home-banner .feature .feature-item:nth-child(7) {
-  order: 6;
+  order: 7;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(8) {
+  order: 8;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(9) {
+  order: 9;
+}
+.cp-eCommerce-home-banner .feature .feature-item:nth-child(10) {
+  order: 10;
 }
 @media only screen and (max-width: 768px) {
   .cp-eCommerce-home-banner .feature .feature-item {
@@ -75,16 +90,16 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  .cp-eCommerce-home-banner .feature .feature-item.typ-resize {
+  .cp-eCommerce-home-banner .feature .feature-item.typ-resized {
     height: 13rem;
   }
 }
-.cp-eCommerce-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+.cp-eCommerce-home-banner .feature .feature-item.typ-resized .feature-card .f-img {
   max-width: 14.3rem;
   max-height: 13.6rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-eCommerce-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
+  .cp-eCommerce-home-banner .feature .feature-item.typ-resized .feature-card .f-img {
     max-width: 8rem;
     max-height: 8rem;
   }
@@ -123,7 +138,7 @@
   }
 }
 .cp-eCommerce-home-banner .feature-card:hover, .cp-eCommerce-home-banner .feature-card.active {
-  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 8px 24px 0px #00000014;
   border: 2px solid #DEDEDE;
 }
 .cp-eCommerce-home-banner .feature-card .f-title {

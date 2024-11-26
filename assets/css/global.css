@@ -886,6 +886,11 @@ p {
   justify-content: space-between;
 }
 
+.cm-box {
+  border: 1px solid #dedede;
+  border-radius: 16px;
+}
+
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -1492,12 +1497,17 @@ p {
 @media only screen and (max-width: 991px) {
   .btn.typ-add-cart.fixedBtn {
     position: sticky;
-    bottom: 0; /* Stick to the bottom of the parent container */
+    bottom: 0;
+    /* Stick to the bottom of the parent container */
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    z-index: 10; /* Ensure it's above other content */
-    background-color: #fff; /* Optional: Add a background to prevent overlap with content */
-    width: 90%; /* Adjust the width of the button */
+    transform: translateX(-50%);
+    /* Center horizontally */
+    z-index: 10;
+    /* Ensure it's above other content */
+    background-color: #fff;
+    /* Optional: Add a background to prevent overlap with content */
+    width: 90%;
+    /* Adjust the width of the button */
     padding: 15px;
   }
 }
@@ -2156,6 +2166,12 @@ p {
     width: 16rem;
     margin-right: 1.2rem;
   }
+}
+.bs-swiper.typ-feature-banner {
+  padding-bottom: 8rem;
+}
+.bs-swiper.typ-feature-banner .swiper-slide {
+  width: 19rem;
 }
 
 .bs-radio {

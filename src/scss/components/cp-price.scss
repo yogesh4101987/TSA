@@ -54,6 +54,21 @@
                     font-family: $font-medium;
                     color: #A77800;
                     }
+                border-bottom: 1px solid #FFD466;
+                gap: 0.8rem;
+                padding: 1.2rem;
+                align-items: center;
+                @media only screen and (max-width: $media-mobile){
+                    border-top: 1px solid #FFD466;
+                }
+                .icon{
+                    font-size: 2.4rem;
+                    color: #A77800;
+                }
+                .desc{
+                    font-size: 1.4rem;
+                    font-family: $font-medium;
+                    color: #A77800;
                 }
             }
         }
@@ -78,6 +93,7 @@
             }
         }
     }
+    &.typ-tiscon-pdp,
     &.typ-struct-pdp{
         @media only screen and (max-width: $media-mobile){
             position: fixed;
@@ -87,6 +103,8 @@
         }
         .total-price{
             margin-top: 0;
+            font-size: 2rem;
+            padding: 1.2rem;
         }
         .act-wrap{
             display: flex;
@@ -99,4 +117,5 @@
             }
         }
     }
+}
 }

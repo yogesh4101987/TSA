@@ -57,6 +57,12 @@
   border-top: 1px solid #FFD466;
   border-bottom: 1px solid #FFD466;
 }
+.cp-price .price-list-item.typ-minimum .desc {
+  border-bottom: 1px solid #FFD466;
+  gap: 0.8rem;
+  padding: 1.2rem;
+  align-items: center;
+}
 @media only screen and (max-width: 768px) {
   .cp-price .price-list-item.typ-minimum .desc {
     font-size: 1.4rem;
@@ -64,48 +70,64 @@
     color: #A77800;
   }
 }
-.cp-price .bold-text {
+@media only screen and (max-width: 768px) {
+  .cp-price .price-list-item.typ-minimum .desc {
+    border-top: 1px solid #FFD466;
+  }
+}
+.cp-price .price-list-item.typ-minimum .desc .icon {
+  font-size: 2.4rem;
+  color: #A77800;
+}
+.cp-price .price-list-item.typ-minimum .desc .desc {
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #A77800;
+}
+.cp-price .price-list-item .bold-text {
   color: #333333;
   font-family: "Poppins Medium";
 }
-.cp-price .bold-text.typ-green {
+.cp-price .price-list-item .bold-text.typ-green {
   color: #00A441;
 }
-.cp-price .cancel-price {
+.cp-price .price-list-item .cancel-price {
   text-decoration: line-through;
   font-family: "Poppins Regular";
   color: #808080;
 }
-.cp-price .cart-act-wrap {
+.cp-price .price-list-item .cart-act-wrap {
   margin-top: 1.6rem;
 }
-.cp-price .cart-act-wrap .btn {
+.cp-price .price-list-item .cart-act-wrap .btn {
   min-width: 40rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-price .cart-act-wrap .btn {
+  .cp-price .price-list-item .cart-act-wrap .btn {
     min-width: 34.3rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  .cp-price.typ-struct-pdp {
+  .cp-price .price-list-item.typ-tiscon-pdp, .cp-price .price-list-item.typ-struct-pdp {
     position: fixed;
     bottom: 63px;
     left: 0;
     z-index: 1;
   }
 }
-.cp-price.typ-struct-pdp .total-price {
+.cp-price .price-list-item.typ-tiscon-pdp .total-price, .cp-price .price-list-item.typ-struct-pdp .total-price {
   margin-top: 0;
+  font-size: 2rem;
+  padding: 1.2rem;
 }
-.cp-price.typ-struct-pdp .act-wrap {
+.cp-price .price-list-item.typ-tiscon-pdp .act-wrap, .cp-price .price-list-item.typ-struct-pdp .act-wrap {
   display: flex;
   background: #FFFFFF;
   justify-content: center;
   gap: 1.2rem;
   padding: 1.6rem;
 }
-.cp-price.typ-struct-pdp .act-wrap .btn {
+.cp-price .price-list-item.typ-tiscon-pdp .act-wrap .btn, .cp-price .price-list-item.typ-struct-pdp .act-wrap .btn {
   min-width: 16.3rem;
 }
 

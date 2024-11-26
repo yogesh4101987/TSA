@@ -56,4 +56,14 @@
       width: 30.8%;
     }
   }
+  &.typ-4{
+    .grid-col{
+      &:first-child{
+        width: 66.2%;
+      }
+      &:last-child{
+        width: 30.3%;
+      }
+    }
+  }
 }

@@ -9,6 +9,13 @@
         background: $clr-root;
         margin-top: 1.2rem;
         position: relative;
+        position: relative;
+        margin-bottom: 1.6rem;
+        margin-top: 0.2rem;
+        @media only screen and (max-width: $media-mobile) {
+            margin-top: 1.2rem;
+
+        }
         .code-info{
             font-size: 1.2rem;
             color: $clr-base;

@@ -11,6 +11,14 @@
   background: #FFFFFF;
   margin-top: 1.2rem;
   position: relative;
+  position: relative;
+  margin-bottom: 1.6rem;
+  margin-top: 0.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-coupon-code {
+    margin-top: 1.2rem;
+  }
 }
 .cp-coupon-code .code-info {
   font-size: 1.2rem;
