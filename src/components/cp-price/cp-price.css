@@ -54,80 +54,81 @@
 }
 .cp-price .price-list-item.typ-minimum {
   background: #FFF8E5;
-  border-top: 1px solid #FFD466;
   border-bottom: 1px solid #FFD466;
-}
-.cp-price .price-list-item.typ-minimum .desc {
   border-bottom: 1px solid #FFD466;
   gap: 0.8rem;
   padding: 1.2rem;
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
-  .cp-price .price-list-item.typ-minimum .desc {
-    font-size: 1.4rem;
-    font-family: "Poppins Medium";
-    color: #A77800;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-price .price-list-item.typ-minimum .desc {
+  .cp-price .price-list-item.typ-minimum {
     border-top: 1px solid #FFD466;
+    padding: 0.5rem 1.6rem;
   }
 }
-.cp-price .price-list-item.typ-minimum .desc .icon {
-  font-size: 2.4rem;
-  color: #A77800;
-}
-.cp-price .price-list-item.typ-minimum .desc .desc {
+.cp-price .price-list-item.typ-minimum .desc {
   font-size: 1.4rem;
   font-family: "Poppins Medium";
   color: #A77800;
 }
-.cp-price .price-list-item .bold-text {
+@media only screen and (max-width: 768px) {
+  .cp-price .price-list-item.typ-minimum {
+    border-top: 1px solid #FFD466;
+  }
+}
+.cp-price .price-list-item.typ-minimum .icon {
+  font-size: 2.4rem;
+  color: #A77800;
+}
+.cp-price .price-list-item.typ-minimum .desc {
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #A77800;
+}
+.cp-price .bold-text {
   color: #333333;
   font-family: "Poppins Medium";
 }
-.cp-price .price-list-item .bold-text.typ-green {
+.cp-price .bold-text.typ-green {
   color: #00A441;
 }
-.cp-price .price-list-item .cancel-price {
+.cp-price .cancel-price {
   text-decoration: line-through;
   font-family: "Poppins Regular";
   color: #808080;
 }
-.cp-price .price-list-item .cart-act-wrap {
+.cp-price .cart-act-wrap {
   margin-top: 1.6rem;
 }
-.cp-price .price-list-item .cart-act-wrap .btn {
+.cp-price .cart-act-wrap .btn {
   min-width: 40rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-price .price-list-item .cart-act-wrap .btn {
+  .cp-price .cart-act-wrap .btn {
     min-width: 34.3rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  .cp-price .price-list-item.typ-tiscon-pdp, .cp-price .price-list-item.typ-struct-pdp {
+  .cp-price.typ-tiscon-pdp, .cp-price.typ-struct-pdp {
     position: fixed;
     bottom: 63px;
     left: 0;
     z-index: 1;
   }
 }
-.cp-price .price-list-item.typ-tiscon-pdp .total-price, .cp-price .price-list-item.typ-struct-pdp .total-price {
+.cp-price.typ-tiscon-pdp .total-price, .cp-price.typ-struct-pdp .total-price {
   margin-top: 0;
   font-size: 2rem;
   padding: 1.2rem;
 }
-.cp-price .price-list-item.typ-tiscon-pdp .act-wrap, .cp-price .price-list-item.typ-struct-pdp .act-wrap {
+.cp-price.typ-tiscon-pdp .act-wrap, .cp-price.typ-struct-pdp .act-wrap {
   display: flex;
   background: #FFFFFF;
   justify-content: center;
   gap: 1.2rem;
   padding: 1.6rem;
 }
-.cp-price .price-list-item.typ-tiscon-pdp .act-wrap .btn, .cp-price .price-list-item.typ-struct-pdp .act-wrap .btn {
+.cp-price.typ-tiscon-pdp .act-wrap .btn, .cp-price.typ-struct-pdp .act-wrap .btn {
   min-width: 16.3rem;
 }
 

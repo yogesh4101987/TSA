@@ -179,4 +179,18 @@ position: -webkit-sticky;
 .cm-box{
   border: 1px solid #dedede;
   border-radius: 16px;
+  padding: 1.6rem 3.2rem;
+  @media only screen and (max-width: $media-mobile) {
+    border: 0;
+    padding: 2.4rem 0 0;
+  }
+}
+
+.seperator{
+  @media only screen and (max-width: $media-mobile) {
+
+  border: 1px solid #dedede;
+  width: 117%;
+  margin: 2.4rem -4rem;
+  }
 }

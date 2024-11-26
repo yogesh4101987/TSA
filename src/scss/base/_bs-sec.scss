@@ -40,6 +40,7 @@
   .sec-sub-title{
     font-family: $font-medium;
     color: $clr-base;
+    font-size: 2rem;
     @media only screen and (max-width: $media-mobile){
         font-size: 1.6rem;
         padding-bottom: 1.6rem;
@@ -416,13 +417,23 @@
   }
   &.typ-structura-pdp{
     .sec-head{
-      @media only screen and (max-width: $media-sm){
-        padding: 2.4rem 0;
-
+        padding:0;
+      
+      .sec-title{
+        font-size: 2rem;
+        line-height: 24px;
+        @media only screen and (max-width: $media-sm){
+          font-size: 2.4rem;
+        }
       }
       .sec-desc{
         font-style: italic;
       }
+    }
+    .add-btn{
+      float: right;
+      min-width: 34.3rem;
+      margin-top: 2.3rem;
     }
   }
 }

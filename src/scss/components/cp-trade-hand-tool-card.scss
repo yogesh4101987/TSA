@@ -68,8 +68,11 @@ justify-content: center;
     }
 }
 &.typ-struct-pdp{
+    width: 19.0rem;
+    height: 14.0rem;
     @media only screen and (max-width: $media-mobile){
         width: 10.6rem;
+        height: 9.6rem;
     }
 }
 }

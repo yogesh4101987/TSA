@@ -107,6 +107,7 @@
 @media only screen and (max-width: 991px) {
   .cp-select.typ-structura-pdp .select-dropdown {
     margin-bottom: 2.4rem;
+    max-width: unset;
   }
 }
 @media only screen and (max-width: 991px) {

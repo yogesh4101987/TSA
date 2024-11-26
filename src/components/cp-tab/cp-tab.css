@@ -136,13 +136,14 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-tab.typ-struct-pdp {
-    margin-bottom: 2.4rem;
+    margin-bottom: 0rem;
   }
 }
 .cp-tab.typ-struct-pdp .tab-list {
   background: #ECF2FB;
   border-radius: 12px;
   padding: 0.8rem;
+  max-width: 34.3rem;
 }
 .cp-tab.typ-struct-pdp .tab-list .tab-item.active .title {
   background: #FFFFFF;

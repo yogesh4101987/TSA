@@ -4,13 +4,29 @@
 .cp-dimensions{
 display: flex;
 margin-bottom: 3.2rem;
-border-top: 1px solid #dedede;
+border: 1px solid #dedede;
+border-radius: 12px;
+@media only screen and (max-width: $media-sm){
+    border-top: 1px solid #dedede;
 border-bottom: 1px solid #dedede;
+border-radius: 0;
+margin: 0 -1.6rem;
+}
+
 .img-wrap{
-    width: 15.0rem;
-    height: 23.6rem;
+    width: 36.3rem;
+    height: 20rem;
+    @media only screen and (max-width: $media-sm){
+        width: 15.0rem;
+        height: 23.6rem;
+    }
+   
 }
 .list-item{
+    width: 50%;
+    @media only screen and (max-width: $media-mobile) {
+        width: 40%;
+    }
     &:nth-child(2){
         padding: 1.6rem;
     }

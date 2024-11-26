@@ -889,6 +889,21 @@ p {
 .cm-box {
   border: 1px solid #dedede;
   border-radius: 16px;
+  padding: 1.6rem 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cm-box {
+    border: 0;
+    padding: 2.4rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .seperator {
+    border: 1px solid #dedede;
+    width: 117%;
+    margin: 2.4rem -4rem;
+  }
 }
 
 /*transform*/
@@ -943,6 +958,7 @@ p {
 .bs-sec .sec-sub-title {
   font-family: "Poppins Medium";
   color: #333333;
+  font-size: 2rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-sec .sec-sub-title {
@@ -1359,13 +1375,25 @@ p {
     padding-bottom: 0.8rem;
   }
 }
+.bs-sec.typ-structura-pdp .sec-head {
+  padding: 0;
+}
+.bs-sec.typ-structura-pdp .sec-head .sec-title {
+  font-size: 2rem;
+  line-height: 24px;
+}
 @media only screen and (max-width: 991px) {
-  .bs-sec.typ-structura-pdp .sec-head {
-    padding: 2.4rem 0;
+  .bs-sec.typ-structura-pdp .sec-head .sec-title {
+    font-size: 2.4rem;
   }
 }
 .bs-sec.typ-structura-pdp .sec-head .sec-desc {
   font-style: italic;
+}
+.bs-sec.typ-structura-pdp .add-btn {
+  float: right;
+  min-width: 34.3rem;
+  margin-top: 2.3rem;
 }
 
 .btn {
@@ -1545,8 +1573,10 @@ p {
     padding: 1.1rem 1.2rem;
   }
 }
-.btn.full-width {
-  width: 100%;
+@media only screen and (max-width: 768px) {
+  .btn.full-width {
+    width: 100%;
+  }
 }
 
 /* colors */

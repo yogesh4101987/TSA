@@ -70,9 +70,14 @@
 .cp-trade-hand-tool-card.typ-why-wiron:hover .title {
   color: #333333;
 }
+.cp-trade-hand-tool-card.typ-struct-pdp {
+  width: 19rem;
+  height: 14rem;
+}
 @media only screen and (max-width: 768px) {
   .cp-trade-hand-tool-card.typ-struct-pdp {
     width: 10.6rem;
+    height: 9.6rem;
   }
 }
 

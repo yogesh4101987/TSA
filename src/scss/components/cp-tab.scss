@@ -128,12 +128,13 @@
   }
   &.typ-struct-pdp{
     @media only screen and (max-width: $media-mobile) {
-      margin-bottom: 2.4rem;
+      margin-bottom: 0rem;
     }
     .tab-list{
       background: $clr-bg;
       border-radius: 12px;
       padding: 0.8rem;
+      max-width: 34.3rem;
       .tab-item{
         &.active{
           .title{

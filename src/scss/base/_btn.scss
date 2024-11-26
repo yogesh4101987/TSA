@@ -160,6 +160,8 @@
         }
     }
     &.full-width{
+        @media only screen and (max-width: $media-mobile) {
         width: 100%;
+        }
     }
 }

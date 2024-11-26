@@ -115,6 +115,7 @@
         .select-dropdown{
             @media only screen and (max-width: $media-sm){
                 margin-bottom: 2.4rem;
+                max-width: unset;
             }
         }
         .select-dropdown-button {
