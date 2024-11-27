@@ -16,6 +16,7 @@
     background: #F3F4F6;
   }
 }
+.cp-home-banner .cmp-title,
 .cp-home-banner .banner-title {
   font-size: 4rem;
   line-height: 5.2rem;
@@ -24,6 +25,7 @@
   margin-bottom: 3.2rem;
 }
 @media only screen and (max-width: 768px) {
+  .cp-home-banner .cmp-title,
   .cp-home-banner .banner-title {
     font-size: 2.4rem;
     line-height: 3.2rem;
@@ -95,12 +97,16 @@
     width: 48%; /* Adjust width and gutter for mobile */
   }
 }
+.cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .cmp-image,
+.cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .f-img,
 .cp-home-banner .feature .feature-item.typ-resize .feature-card .cmp-image,
 .cp-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
   max-width: 14.3rem;
   max-height: 13.6rem;
 }
 @media only screen and (max-width: 768px) {
+  .cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .cmp-image,
+  .cp-home-banner .feature .feature-item.typ-resize .cmp-teaser .f-img,
   .cp-home-banner .feature .feature-item.typ-resize .feature-card .cmp-image,
   .cp-home-banner .feature .feature-item.typ-resize .feature-card .f-img {
     max-width: 8rem;
@@ -120,6 +126,7 @@
     height: 9.2rem;
   }
 }
+.cp-home-banner .cmp-teaser,
 .cp-home-banner .feature-card {
   border: 1px solid #DEDEDE;
   background: #FFFFFF;
@@ -135,10 +142,14 @@
   width: 100%;
   height: 100%;
 }
-.cp-home-banner .feature-card:hover, .cp-home-banner .feature-card.active {
+.cp-home-banner .cmp-teaser:hover, .cp-home-banner .cmp-teaser.active,
+.cp-home-banner .feature-card:hover,
+.cp-home-banner .feature-card.active {
   box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.0784313725);
   border: 2px solid #DEDEDE;
 }
+.cp-home-banner .cmp-teaser .cmp-teaser__pretitle,
+.cp-home-banner .cmp-teaser .f-title,
 .cp-home-banner .feature-card .cmp-teaser__pretitle,
 .cp-home-banner .feature-card .f-title {
   font-family: "Poppins Semibold";
@@ -148,12 +159,16 @@
   text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
+  .cp-home-banner .cmp-teaser .cmp-teaser__pretitle,
+  .cp-home-banner .cmp-teaser .f-title,
   .cp-home-banner .feature-card .cmp-teaser__pretitle,
   .cp-home-banner .feature-card .f-title {
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
 }
+.cp-home-banner .cmp-teaser .cmp-teaser__title,
+.cp-home-banner .cmp-teaser .f-desc,
 .cp-home-banner .feature-card .cmp-teaser__title,
 .cp-home-banner .feature-card .f-desc {
   font-family: "Poppins Regular";
@@ -163,6 +178,8 @@
   margin-bottom: 0.6rem;
   max-width: 65%;
 }
+.cp-home-banner .cmp-teaser .cmp-teaser__description p,
+.cp-home-banner .cmp-teaser .f-offer,
 .cp-home-banner .feature-card .cmp-teaser__description p,
 .cp-home-banner .feature-card .f-offer {
   background: #D2042D;
@@ -176,6 +193,8 @@
   -moz-border-radius: 2.6rem;
   display: inline-block;
 }
+.cp-home-banner .cmp-teaser .cmp-image,
+.cp-home-banner .cmp-teaser .f-img,
 .cp-home-banner .feature-card .cmp-image,
 .cp-home-banner .feature-card .f-img {
   position: absolute;
@@ -185,6 +204,8 @@
   max-height: 9.4rem;
 }
 @media only screen and (max-width: 768px) {
+  .cp-home-banner .cmp-teaser .cmp-image,
+  .cp-home-banner .cmp-teaser .f-img,
   .cp-home-banner .feature-card .cmp-image,
   .cp-home-banner .feature-card .f-img {
     max-width: 8rem;
