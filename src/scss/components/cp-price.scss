@@ -8,7 +8,7 @@
         overflow: hidden;
         @media only screen and (max-width: $media-mobile) {
             border: 0;
-            margin: 0 -2rem;
+            border-radius: 0;
         }
     }
         .price-list-item{
@@ -34,6 +34,7 @@
                 @media only screen and (max-width: $media-mobile){
                     font-size: 2rem;
                     margin-top: 3.2rem;
+                    padding: 1.6rem 2rem;
                 }
                 .sub-text{
                     font-size: 1.4rem;
@@ -43,6 +44,38 @@
                 }
 
             }
+            &.typ-minimum{
+                background: #FFF8E5;
+                border-bottom: 1px solid #FFD466;
+                @media only screen and (max-width: $media-mobile){
+                    border-top: 1px solid #FFD466;
+                    padding: 0.5rem 1.6rem;
+                    border-bottom: 1px solid #FFD466;
+                    gap: 0.8rem;
+                    padding: 1.2rem;
+                    align-items: center;
+
+                }
+                .desc{
+
+                    font-size: 1.4rem;
+                    font-family: $font-medium;
+                    color: #A77800;
+                    }
+                
+                @media only screen and (max-width: $media-mobile){
+                    border-top: 1px solid #FFD466;
+                }
+                .icon{
+                    font-size: 2.4rem;
+                    color: #A77800;
+                }
+                .desc{
+                    font-size: 1.4rem;
+                    font-family: $font-medium;
+                    color: #A77800;
+                }
+            }
         }
         .bold-text{
             color: $clr-base;
@@ -51,6 +84,7 @@
                 color: #00A441;
             }
         }
+    
         .cancel-price{
             text-decoration: line-through;
             font-family: $font-regular;
@@ -62,6 +96,30 @@
             min-width: 40rem;
             @media only screen and (max-width: $media-mobile){
                 min-width: 34.3rem;
+            }
+        }
+    }
+    &.typ-tiscon-pdp,
+    &.typ-struct-pdp{
+        @media only screen and (max-width: $media-mobile){
+            position: fixed;
+            bottom: 63px;
+            left: 0;
+            z-index: 1;
+        }
+        .total-price{
+            margin-top: 0;
+            font-size: 2rem;
+            padding: 1.2rem;
+        }
+        .act-wrap{
+            display: flex;
+            background: $clr-root;
+            justify-content: center;
+            gap: 1.2rem;
+            padding: 1.6rem;
+            .btn{
+                min-width: 16.3rem;
             }
         }
     }

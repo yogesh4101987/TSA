@@ -45,4 +45,31 @@
       }
     }
   }
+  &.typ-category{
+    gap: 1.2rem;
+    @media only screen and (max-width: $media-mobile) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+    .grid-col {
+      width: 30.8%;
+    }
+  }
+  &.typ-4{
+    .grid-col{
+      &:first-child{
+        width: 66.2%;
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
+      }
+      &:last-child{
+        width: 30.3%;
+        @media only screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

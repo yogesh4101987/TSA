@@ -3,7 +3,6 @@
 
 .cp-cart-card{
     background: $clr-root;
-    margin: 1.2rem -2.4rem;
     padding: 1.6rem 2.4rem;
     @media only screen and (max-width: $media-mobile){
         margin: 1.2rem -1.2rem;
@@ -14,6 +13,8 @@
         flex-wrap: wrap;
         border-bottom: 1px solid #dedede;
         padding-bottom: 1.4rem;
+        position: relative;
+
         .list-item{
             width: 38%;
             font-size: 1.4rem;
@@ -87,6 +88,57 @@
                     display: none;
                 }
             }
+        }
+    }
+    &.typ-tiscon-pdp{
+        .cart-list{
+            display: block;
+            border-bottom: 0;
+            margin: 1.6rem 0 2.4rem;
+            .list-item{
+                width: 20%;
+                padding: 1.6rem;
+               & .list-head{
+                padding: 0.6rem;
+                }
+                &.text-center{
+                    text-align: center;
+                }
+                &.text-left{
+                    text-align: left;
+                }
+                &.text-right{
+                    text-align: right;
+                }
+            }
+            .sepretor{
+                border-bottom: 1px solid #dedede;
+            }
+            &::after{
+                background-color: #dedede;
+                width: 106%;
+                position: absolute;
+                left: -23px;
+                bottom: 0;
+                content: '';
+                height: 1px;
+                @media only screen and (max-width: $media-mobile){
+                    width: 109%;
+                    left: -15px;
+                }
+            }
+        }
+        .tag-label{
+            border-radius: 26px;
+            background: $clr-secondary;
+            color: $clr-root;
+            font-size: 1.2rem;
+            font-family: $font-medium;
+            text-align: center;
+            padding: 0.2rem 0.8rem;
+            position: absolute;
+            left: 150px;
+            top:10px;
         }
     }
 }

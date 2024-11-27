@@ -2,7 +2,11 @@
 @import "../config/mixin";
 
 .cp-rating{
-    padding: 2.4rem 2rem;
+    padding: 1.6rem 2rem;
+    padding-top: 2.4rem;
+    @media only screen and (max-width: $media-sm){
+        padding: 1.6rem;
+    }
     .rating-number-sec{
         display: flex;
         justify-content: flex-start;
@@ -44,5 +48,20 @@
             }
           
         }   
+    }
+    &.typ-structura-pdp{
+        padding: 0;
+        .review-text{
+            .review-count{
+                color: $clr-primary;
+                &:first-child{
+                    &:after{
+                        background: $clr-primary;
+                    }
+                }
+                
+            }
+        }
+        
     }
 }

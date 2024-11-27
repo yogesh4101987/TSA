@@ -5,7 +5,13 @@
 /*opacity*/
 /*opacity- end*/
 .cp-rating {
-  padding: 2.4rem 2rem;
+  padding: 1.6rem 2rem;
+  padding-top: 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .cp-rating {
+    padding: 1.6rem;
+  }
 }
 .cp-rating .rating-number-sec {
   display: flex;
@@ -44,6 +50,15 @@
   height: 14px;
   background-color: #666666;
   content: "";
+}
+.cp-rating.typ-structura-pdp {
+  padding: 0;
+}
+.cp-rating.typ-structura-pdp .review-text .review-count {
+  color: #3D7EDB;
+}
+.cp-rating.typ-structura-pdp .review-text .review-count:first-child:after {
+  background: #3D7EDB;
 }
 
 /*# sourceMappingURL=cp-rating.css.map */

@@ -1,0 +1,31 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-model-content {
+  text-align: center;
+}
+.cp-model-content .desc {
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+  color: #333333;
+  padding-bottom: 1.6rem;
+}
+.cp-model-content .icon {
+  font-size: 6.4rem;
+  display: block;
+  width: 6.4rem;
+  height: 6.4rem;
+}
+.cp-model-content .act-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+.cp-model-content .act-wrap .typ-model-btn {
+  min-width: 14rem;
+}
+
+/*# sourceMappingURL=cp-model-content.css.map */

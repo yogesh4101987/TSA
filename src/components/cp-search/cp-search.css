@@ -29,19 +29,19 @@
   right: 12px;
   cursor: pointer;
 }
-.cp-search.typ-agrico-home {
+.cp-search.typ-wiron-home, .cp-search.typ-agrico-home {
   width: 50.4rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-search.typ-agrico-home {
+  .cp-search.typ-wiron-home, .cp-search.typ-agrico-home {
     width: 34.3rem;
   }
 }
-.cp-search.typ-agrico-home .search-wrap {
+.cp-search.typ-wiron-home .search-wrap, .cp-search.typ-agrico-home .search-wrap {
   height: 4.8rem;
 }
 @media only screen and (max-width: 768px) {
-  .cp-search.typ-agrico-home .search-wrap {
+  .cp-search.typ-wiron-home .search-wrap, .cp-search.typ-agrico-home .search-wrap {
     display: block;
     width: 100%;
     min-width: 34.3rem;
@@ -71,10 +71,13 @@
     min-width: 34.3rem;
   }
 }
-.cp-search .apply-link {
-  font-size: 1.4rem;
-  text-decoration: underline;
-  color: #b3b3b3;
+.cp-search.typ-wiron-home {
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-search.typ-wiron-home {
+    margin-top: 4.8rem;
+  }
 }
 
 /*# sourceMappingURL=cp-search.css.map */

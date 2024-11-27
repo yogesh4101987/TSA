@@ -7,27 +7,6 @@
 .cp-question-answer {
   position: relative;
 }
-.cp-question-answer .btn-ask {
-  color: #333333;
-  background-color: #FFFFFF;
-  border: 1px solid #333333;
-  width: 100%;
-}
-.cp-question-answer .btn-ask.typ-btn-mob {
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  .cp-question-answer .btn-ask.typ-btn-mob {
-    display: block;
-    margin-top: 2.4rem;
-    margin-bottom: 0.8rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-question-answer .btn-ask.typ-btn-desk {
-    display: none;
-  }
-}
 .cp-question-answer .question-title {
   font-family: "Poppins Semibold";
   font-size: 2.4rem;

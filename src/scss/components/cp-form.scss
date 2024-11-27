@@ -2,6 +2,7 @@
 @import "../config/variables.scss";
 
 .cp-form {
+  margin-top: 3.2rem;
   .feedback-title {
     font-family: $font-medium;
     font-size: 1.6rem;
@@ -53,10 +54,7 @@
   }
   .act-wrap {
     .btn-submit {
-     
-      @media only screen and (max-width: 768px) {
-        width: 100%;
-      }
+      width: 100%;
     }
   }
   .disabled {

@@ -2,18 +2,18 @@ var winWidth = $(window).width();
 
 $(document).ready(function () { 
   topDealSlider();  
-  bestSellingSlider();
+  bestSellingProdSlider();
 });
 
 $(window).resize(function () {  
   topDealSlider();
-  bestSellingSlider();
+  bestSellingProdSlider();
 });
 
 function topDealSlider() {
   var swiper = new Swiper(".js-top-deals", {
     slidesPerView: "auto",
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".swiper-button-next.button-next",
       prevEl: ".swiper-button-prev.button-prev",
@@ -21,10 +21,10 @@ function topDealSlider() {
   });
 }
 
-function bestSellingSlider() {
+function bestSellingProdSlider() {
   var swiper = new Swiper(".js-best-selling", {
     slidesPerView: "auto",
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".swiper-button-next.best-selling-next",
       prevEl: ".swiper-button-prev.best-selling-prev",
