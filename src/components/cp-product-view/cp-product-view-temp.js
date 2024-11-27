@@ -1,7 +1,18 @@
+const jsonUrl = 'http://localhost:8000/json/TopDealProduct.json'; // JSON file URL
 Handlebars.registerHelper('eq', function (a, b) {
     return a === b;
 });
-const jsonUrl = 'http://localhost:8000/json/ProductDetails.json'; // JSON file URL
+
+Handlebars.registerHelper('renderStars', function (rating) {
+    let stars = '';
+    // Add active stars based on rating
+    for (let i = 1; i <= 5; i++) {
+        stars += `<li class="rating-item">
+                    <span class="icon icon-star ${i <= rating ? 'active' : ''}"></span>
+                  </li>`;
+    }
+    return new Handlebars.SafeString(stars); // Return safe HTML
+});
   
 $(document).ready(function () {
     fetch(jsonUrl)

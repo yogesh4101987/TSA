@@ -1,0 +1,176 @@
+{
+  "data": {
+    "product": [
+      {
+        "name": "COMBINATION PLIERS 7 Inch - PLC002",
+        "sku": "AGRC-1",
+        "price": "100",
+        "special": "90",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/productno_selection",
+        "rating": 3,
+        "url_key": "agrc-1",
+        "categories": [
+          {
+            "uid": "Mg==",
+            "url_key": "default-category",
+            "name": "Default Category",
+            "is_brand": "1"
+          }
+        ]
+      },
+      {
+        "name": "COMBINATION PLIERS 6 Inch - PLC001",
+        "sku": "AGRC-2",
+        "price": "110",
+        "special": "100",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/product/p/r/product_1331_1538646865.jpg",
+        "rating": 3,
+        "url_key": "agrc-2",
+        "categories": [
+          {
+            "uid": "MjU1",
+            "url_key": "pliers-cutters",
+            "name": "Pliers & Cutters",
+            "is_brand": "1"
+          }
+        ]
+      },
+      {
+        "name": "STILLSON PIPE WRENCH 8 Inch - WRS001",
+        "sku": "AGRC-3",
+        "price": "120",
+        "special": "110",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/product/p/r/product_1367_1538649163.jpg",
+        "rating": 5,
+        "url_key": "agrc-3",
+        "categories": [
+          {
+            "uid": "MjQ5",
+            "url_key": "wrenche",
+            "name": "Wrench",
+            "is_brand": "1"
+          }
+        ]
+      },
+      {
+        "name": "ADJUSTABLE WRENCH 12 Inch - WRA003",
+        "sku": "AGRC-4",
+        "price": "130",
+        "special": "120",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/product/p/r/product_1366_1538649119.jpg",
+        "url_key": "agrc-4",
+        "rating": 4,
+        "categories": [
+          {
+            "uid": "MjQ5",
+            "url_key": "wrenche",
+            "name": "Wrench",
+            "is_brand": "1"
+          }
+        ]
+      },
+      {
+        "name": "STILLSON PIPE WRENCH 12 Inch - WRS003",
+        "sku": "AGRC-6",
+        "price": "180",
+        "special": "160",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/product/p/r/product_1369_1538649229.jpg",
+        "url_key": "agrc-6",
+        "rating": 2,
+        "categories": [
+          {
+            "uid": "MjI=",
+            "url_key": "tata-agrico",
+            "name": "Tata Agrico",
+            "is_brand": "1"
+          }
+        ]
+      },
+      {
+        "name": "STILLSON PIPE WRENCH 10 Inch - WRS002",
+        "sku": "AGRC-7",
+        "price": "160",
+        "special": "150",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/product/p/r/product_1368_1538649191.jpg",
+        "url_key": "agrc-7",
+        "rating": 4,
+        "categories": [
+          {
+            "uid": "MjI=",
+            "url_key": "tata-agrico",
+            "name": "Tata Agrico",
+            "is_brand": "1"
+          }
+        ]
+      },
+      {
+        "name": "STILLSON PIPE WRENCH 14 Inch - WRS004",
+        "sku": "AGRC-8",
+        "price": "170",
+        "special": "160",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/product/p/r/product_1370_1538649249.jpg",
+        "url_key": "agrc-8",
+        "rating": 3,
+        "categories": [
+          {
+            "uid": "MjI=",
+            "url_key": "tata-agrico",
+            "name": "Tata Agrico",
+            "is_brand": "1"
+          }
+        ]
+      },
+      {
+        "name": "GREASE GUN - 340 MM - GGN002",
+        "sku": "AGRC-9",
+        "price": "180",
+        "special": "170",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/product/p/r/product_1373_1538646218.jpg",
+        "url_key": "agrc-9",
+        "rating": 4,
+        "categories": [
+          {
+            "uid": "Mzg=",
+            "url_key": "spanners",
+            "name": "Spanners",
+            "is_brand": "1"
+          }
+        ]
+      },
+      {
+        "name": "GREASE GUN - 250 MM - GGN003",
+        "sku": "AGRC-10",
+        "price": "190",
+        "special": "180",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/product/p/r/product_1374_1538646240.jpg",
+        "url_key": "agrc-10",
+        "rating": 3,
+        "categories": [
+          {
+            "uid": "MjQz",
+            "url_key": "trade-hand-tools",
+            "name": "Trade Hand tools",
+            "is_brand": "1"
+          }
+        ]
+      },
+      {
+        "name": "GREASE GUN - 500 GMS LEVERTYPE -RIGID + FLEXIBLE EXT. - GGN006",
+        "sku": "AGRC-11",
+        "price": "200",
+        "special": "190",
+        "image": "https://mcstaging2.aashiyana.tatasteel.com/media/catalog/product/p/r/product_1377_1538646352.jpg",
+        "url_key": "agrc-11",
+        "rating": 5,
+        "categories": [
+          {
+            "uid": "Mzk=",
+            "url_key": "sockets-grease-guns",
+            "name": " Sockets & Grease Guns",
+            "is_brand": "1"
+          }
+        ]
+      }
+    ]
+  }
+}
