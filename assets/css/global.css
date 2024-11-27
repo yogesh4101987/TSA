@@ -974,6 +974,12 @@ p {
   vertical-align: middle;
   transform: translateY(-50%);
 }
+.bs-sec.typ-no-padding {
+  padding: 0;
+}
+.bs-sec.typ-no-bottom-padding {
+  padding-bottom: 0;
+}
 .bs-sec.typ-no-top-padding {
   padding-top: 0;
 }
@@ -1313,6 +1319,22 @@ p {
     display: block;
   }
 }
+.bs-sec.pd-top-8 {
+  padding-top: 2.8rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.pd-top-8 {
+    padding-top: 0.8rem;
+  }
+}
+.bs-sec.pd-bottom-8 {
+  padding-bottom: 2.8rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.pd-bottom-8 {
+    padding-bottom: 0.8rem;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -1325,7 +1347,7 @@ p {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
-  padding: 1.2rem 1.6rem;
+  padding: 1.1rem 1.6rem;
   font-size: 1.6rem;
   line-height: 2.4rem;
   border-radius: 0.8rem;
@@ -1458,9 +1480,22 @@ p {
     margin-bottom: 0.8rem;
   }
 }
+.btn.btn-ask.typ-btn-desk {
+  margin-top: 3.2ren;
+}
 @media only screen and (max-width: 768px) {
   .btn.btn-ask.typ-btn-desk {
     display: none;
+  }
+}
+.btn.typ-wiron-cat {
+  min-width: 34.3rem;
+}
+@media only screen and (max-width: 768px) {
+  .btn.typ-wiron-cat {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 1.1rem 1.2rem;
   }
 }
 
@@ -1579,7 +1614,7 @@ p {
   }
 }
 .bs-swiper.typ-blog .swiper-slide {
-  width: auto !important;
+  width: 29.6rem !important;
   margin-right: 1.8rem;
 }
 @media only screen and (max-width: 768px) {
@@ -1605,31 +1640,34 @@ p {
     margin-right: 1.2rem;
   }
 }
-.bs-swiper.typ-architect {
+.bs-swiper.typ-fabricators, .bs-swiper.typ-architect {
   padding-bottom: 9.6rem;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-architect {
+  .bs-swiper.typ-fabricators, .bs-swiper.typ-architect {
     padding-bottom: 0;
   }
 }
-.bs-swiper.typ-architect .swiper-slide {
+.bs-swiper.typ-fabricators .swiper-slide, .bs-swiper.typ-architect .swiper-slide {
   width: auto !important;
   margin-right: 2rem;
   min-width: 29.6rem;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-architect .swiper-slide {
+  .bs-swiper.typ-fabricators .swiper-slide, .bs-swiper.typ-architect .swiper-slide {
     margin-right: 1.2rem;
   }
 }
-.bs-swiper.typ-architect .swiper-nav {
+.bs-swiper.typ-fabricators .swiper-nav, .bs-swiper.typ-architect .swiper-nav {
   right: 9%;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-architect .swiper-nav {
+  .bs-swiper.typ-fabricators .swiper-nav, .bs-swiper.typ-architect .swiper-nav {
     display: none;
   }
+}
+.bs-swiper.typ-fabricators {
+  padding-bottom: 1.2rem;
 }
 .bs-swiper.typ-ecomm-banner .swiper-wrapper {
   position: relative;
@@ -1803,7 +1841,12 @@ p {
   }
 }
 .bs-swiper.type-thumb {
-  margin-top: 1.2rem;
+  margin-top: 2.1rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.type-thumb {
+    margin-top: 1.2rem;
+  }
 }
 .bs-swiper.type-thumb .swiper-wrapper {
   gap: 2.1rem;
@@ -2028,6 +2071,50 @@ p {
   .bs-swiper.typ-plp-slider .swiper-slide {
     width: 11.8rem !important;
     border-bottom: none;
+  }
+}
+.bs-swiper.typ-prod-types {
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-prod-types {
+    margin-right: -1.6rem;
+  }
+}
+.bs-swiper.typ-prod-types .swiper-slide {
+  width: 10.6rem !important;
+  margin-right: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-why-wiron {
+    margin-right: -2rem;
+  }
+}
+.bs-swiper.typ-why-wiron .swiper-slide {
+  width: 19.1rem;
+  height: 14rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-why-wiron .swiper-slide {
+    width: 16rem;
+    height: 14.8rem;
+    margin-right: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-gallery {
+    margin-right: -2rem;
+  }
+}
+.bs-swiper.typ-gallery .swiper-slide {
+  width: 29.5rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-gallery .swiper-slide {
+    width: 16rem;
+    margin-right: 1.2rem;
   }
 }
 .bs-swiper.typ-feature-banner {

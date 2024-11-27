@@ -4,11 +4,16 @@
 
 
 .cp-other-info{
+    margin-top: 4.8rem;
+    margin-bottom: 2.4rem;
+    @media only screen and (max-width: $media-mobile) {
+        margin-block: 3.2rem;
+        }
     .other-info-list{
         .other-info-item{
             border-radius: 12px;
             border: 1px solid #DEDEDE;
-            padding: 1.6rem;
+            padding: 1.6rem 4rem 1.6rem 1.6rem;
             font-size: 1.6rem;
             color: $clr-base;
             display: flex;
@@ -62,6 +67,29 @@
     .act-wrap{
         position: sticky;
         bottom: 20px;
+    }
+    &.typ-icon{
+        .other-info-list{
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 2rem;
+            .other-info-item{
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                gap: 1.2rem;
+                width: 50%;
+                @media only screen and (max-width: $media-mobile) {
+                    width: 100%;
+                }
+                .icon {
+                    font-size: 2.4rem;
+                    line-height: 2.6rem;
+                    color: $clr-primary;
+                }
+            }
+        }
     }
 }
 

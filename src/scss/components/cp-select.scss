@@ -2,6 +2,13 @@
 @import "../config/mixin";
 
 .cp-select{
+    .select-label{
+        font-family: $font-regular;
+        font-size: 14px;
+        line-height: 2rem;
+        color: $clr-base;
+        margin-bottom: 0.8rem;
+    }
     .select-dropdown {
         position: relative;
         display: inline-block;
@@ -23,8 +30,16 @@
     
             .zmdi-chevron-down {
                 position: absolute;
-                right: 10px;
-                top: 12px;
+                right: 1.2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                &::after{
+                    content: "\e90e";
+                    font-family: 'icomoon';
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    color: $clr-base;
+                }
             }
             .select-text{
                 font-size: 1.6rem;
@@ -86,5 +101,8 @@
             background: #ECF2FB;
 
         }
+    }
+    &.typ-category {
+        margin-bottom: 1.6rem;
     }
 }
