@@ -71,5 +71,10 @@
     min-width: 34.3rem;
   }
 }
+.cp-search .apply-link {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  color: #b3b3b3;
+}
 
 /*# sourceMappingURL=cp-search.css.map */

@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="../../components/cp-cart-card/cp-cart-card.css" />
     <link rel="stylesheet" href="../../components/cp-counter/cp-counter.css" />
     <link rel="stylesheet" href="/components/cp-product-card/cp-product-card.css" />
+    <link rel="stylesheet" href="../components/cp-drawer/cp-drawer.css" />
+    <link rel="stylesheet" href="/components/cp-offers/cp-offers.css" />
+    <link rel="stylesheet" href="/components/cp-search/cp-search.css" />
 
   </head>
 
@@ -160,7 +163,7 @@
                         <div class="coupon-code-info">
                             <span class="code-info">Add ₹5,000 and get 2% off on Tiscon products</span>
                             <span class="code">CODE-TISCON2%</span>
-                            <a href="#" class="btn-link">Apply</a>
+                            <a href="#" class="btn-link js-drawer" data-id="availableOffers">Apply</a>
                         </div>
                     </div>
                     
@@ -379,6 +382,89 @@
         </div>
       </footer>
       <!-- Footer end -->
+
+
+      <!---offer drawer start-->
+      <div class="cp-drawer" id="availableOffers">
+        <div class="head-sec">
+          <h2 class="drawer-title">Offers & discounts</h2>
+          <a href="#" class="icon icon-close js-close-btn"></a>
+        </div>
+        <div class="cont-wrap">
+          <div class="cp-search">
+            <div class="search-wrap">
+                <input type="text"class="search-input" placeholder="Enter coupon code">
+                <span class="apply-link">Apply</span>
+            </div>
+        </div>
+          <ul class="offers-list">
+            <li class="offers-item">
+              <div class="cp-offers">
+                  <div class="lft typ-blue">
+                    <span>Discount</span> 
+                  </div>
+                  <div class="rht typ-blue-border">
+                      <h3 class="title">Navratri special</h3>
+                      <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+                      <span class="offer-valid">Valid till 31 Oct 2024</span>
+                  </div>
+              </div>
+            </li>
+            <li class="offers-item">
+              <div class="cp-offers">
+                  <div class="lft typ-red">
+                     <span>FLAT OFF</span> 
+                  </div>
+                  <div class="rht typ-red-border">
+                      <h3 class="title">B1G1 surprise</h3>
+                      <p class="desc">Buy any 1 product and get a surprise product for free. Minimum value of product should be Rs. 5,000</p>
+                      <span class="offer-valid">Valid till 31 Oct 2024</span>
+                  </div>
+              </div>
+            </li>
+            <li class="offers-item">
+              <div class="cp-offers">
+                  <div class="lft typ-green">
+                    <span>CASHBACK</span>  
+                  </div>
+                  <div class="rht typ-green-border">
+                      <h3 class="title">Instant cashback</h3>
+                      <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+                      <span class="offer-valid">Valid till 31 Oct 2024</span>
+                  </div>
+              </div>
+            </li>
+            <li class="offers-item">
+              <div class="cp-offers">
+                  <div class="lft typ-green">
+                      <span>CASHBACK</span> 
+                  </div>
+                  <div class="rht typ-green-border">
+                      <h3 class="title">Instant cashback</h3>
+                      <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+                      <span class="offer-valid">Valid till 31 Oct 2024</span>
+                  </div>
+              </div>
+            </li>
+           
+            <li class="offers-item">
+              <div class="cp-offers">
+                  <div class="lft typ-yellow">
+                    <span>Discount</span> 
+                  </div>
+                  <div class="rht typ-yellow-border">
+                      <h3 class="title">Navratri special</h3>
+                      <p class="desc">Get 5% off on all products sitewide, on the purchase of min Rs. 10,000</p>
+                      <span class="offer-valid">Valid till 31 Oct 2024</span>
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!---offer drawer end-->
+      <div class="cm-overlay"></div>
+
     <!-- build:js assets/js/vendor.js -->
     <script src="/js/vendor/jquery-3.1.1.min.js"></script>
     <script src="/js/vendor/swiper-bundle.min.js"></script>
@@ -388,7 +474,7 @@
     <script src="/js/global.js"></script>
     <script src="/components/cp-header/cp-header.js"></script>
     <script src="../../components/cp-counter/cp-counter.js"></script>
-
+    <script src="../components/cp-drawer/cp-drawer.js"></script>
     <!-- endbuild -->
   </body>
 </html>
