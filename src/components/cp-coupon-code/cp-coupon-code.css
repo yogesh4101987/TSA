@@ -38,6 +38,14 @@
   display: inline-block;
   margin-top: 0.8rem;
 }
+.cp-coupon-code .code.remove-code {
+  background: #00A441;
+  color: #FFFFFF;
+  border: 0;
+}
+.cp-coupon-code .code.remove-code .icon {
+  font-size: 1.3rem;
+}
 .cp-coupon-code .btn-link {
   text-decoration: underline;
   position: absolute;

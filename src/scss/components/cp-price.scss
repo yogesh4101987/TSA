@@ -47,6 +47,10 @@
             &.typ-minimum{
                 background: #FFF8E5;
                 border-bottom: 1px solid #FFD466;
+                border-bottom: 1px solid #FFD466;
+                gap: 0.8rem;
+                padding: 1.2rem;
+                align-items: center;
                 @media only screen and (max-width: $media-mobile){
                     border-top: 1px solid #FFD466;
                     padding: 0.5rem 1.6rem;
@@ -58,10 +62,7 @@
                     font-family: $font-medium;
                     color: #A77800;
                     }
-                border-bottom: 1px solid #FFD466;
-                gap: 0.8rem;
-                padding: 1.2rem;
-                align-items: center;
+               
                 @media only screen and (max-width: $media-mobile){
                     border-top: 1px solid #FFD466;
                 }
