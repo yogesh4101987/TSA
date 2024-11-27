@@ -147,12 +147,6 @@
   z-index: 1;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 768px) {
-  .cp-eCommerce-home-banner .feature-card .f-title {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-}
 .cp-eCommerce-home-banner .feature-card .f-desc {
   font-family: "Poppins Regular";
   font-size: 1.2rem;
@@ -292,21 +286,45 @@
     width: 48%;
   }
 }
-.cp-eCommerce-home-banner.typ-wiron .feature-item:nth-child(6) {
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(2) .feature-card {
+  background: #E5F6EC;
+}
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(2) .feature-card .f-img::after {
+  background: #99DAB3;
+}
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(3) .feature-card {
+  background: #FFF8E5;
+}
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(3) .feature-card .f-img::after {
+  background: #FFE399;
+}
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(4) .feature-card {
+  background: #FAE6EA;
+}
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(4) .feature-card .f-img::after {
+  background: #ED9BAB;
+}
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(5) .feature-card {
+  background: #ECF2FB;
+}
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(5) .feature-card .f-img::after {
+  background: #B1CBF1;
+}
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(6) {
   width: 100%;
 }
-.cp-eCommerce-home-banner.typ-wiron .feature-item:nth-child(6) .feature-card {
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(6) .feature-card {
   background: #F3F4F6;
 }
-.cp-eCommerce-home-banner.typ-wiron .feature-item:nth-child(6) .feature-card .f-img::after {
+.cp-eCommerce-home-banner.typ-wiron-catagory .feature-item:nth-child(6) .feature-card .f-img::after {
   background: #CCCCCC;
 }
-.cp-eCommerce-home-banner.typ-wiron .act-wrap {
+.cp-eCommerce-home-banner.typ-wiron-catagory .act-wrap {
   margin-top: 3.2rem;
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
-  .cp-eCommerce-home-banner.typ-wiron .act-wrap {
+  .cp-eCommerce-home-banner.typ-wiron-catagory .act-wrap {
     margin-top: 1.6rem;
   }
 }

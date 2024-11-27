@@ -1356,6 +1356,11 @@ p {
     padding-bottom: 0.8rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-mg-24 {
+    margin-block: 2.4rem;
+  }
+}
 
 .btn {
   display: inline-block;
