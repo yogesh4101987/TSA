@@ -153,4 +153,43 @@
       }
     }
   }
+  &.typ-tisco-cat{
+    .video-sec{
+      display: flex;
+      gap: 2rem;
+    }
+    .tab-list{
+      border-bottom: 1px solid #dedede;
+
+      .tab-item{
+        .title{
+          border: 0;
+          position: relative;
+          padding: 1.6rem;
+          &::after{
+            position: absolute;
+            content: '';
+            background: #D2042D;
+            width: 0%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+            transition: all ease-in 0.3s;
+          }
+        }
+        &:hover,
+        &.active{
+          .title{
+            background: none;
+            color: $clr-base;
+            font-family: $font-semiBold;
+          &::after{
+            width: 100%;
+          }
+           
+          }
+        }
+      }
+    }
+  }
 }
