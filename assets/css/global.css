@@ -907,6 +907,15 @@ p {
   }
 }
 
+.m-bottom {
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .m-bottom {
+    margin-bottom: 4.8rem;
+  }
+}
+
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -2201,6 +2210,16 @@ p {
 }
 .bs-swiper.typ-feature-banner .swiper-slide {
   width: 19rem;
+}
+.bs-swiper.typ-why-tiscon .swiper-slide {
+  width: 29.5rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-why-tiscon .swiper-slide {
+    width: 16rem;
+    margin-right: 1.2rem;
+  }
 }
 
 .bs-radio {

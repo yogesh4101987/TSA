@@ -297,9 +297,21 @@
   margin-top: 2rem;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner.typ-select .feature {
+    gap: 1.2rem;
+  }
+}
 .cp-eCommerce-home-banner.typ-select .feature-item {
   width: 19.1rem;
   height: 14rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-eCommerce-home-banner.typ-select .feature-item {
+    width: 16.6rem;
+    height: 13rem;
+    gap: 1.2rem;
+  }
 }
 .cp-eCommerce-home-banner.typ-select .feature-item .f-img {
   width: 18.8rem;

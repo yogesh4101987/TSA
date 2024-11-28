@@ -157,6 +157,15 @@
   border: 0;
   padding: 1rem 4.5rem;
 }
+.cp-tab.typ-tisco-cat {
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-tisco-cat .tab-container {
+    padding-top: 13rem;
+    padding-bottom: 2rem;
+  }
+}
 .cp-tab.typ-tisco-cat .video-sec {
   display: flex;
   gap: 2rem;
@@ -186,6 +195,43 @@
 }
 .cp-tab.typ-tisco-cat .tab-list .tab-item:hover .title::after, .cp-tab.typ-tisco-cat .tab-list .tab-item.active .title::after {
   width: 100%;
+}
+.cp-tab .category-content {
+  max-width: 28.9rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content {
+    right: auto;
+    top: 13%;
+    transform: translateY(-13%);
+  }
+}
+.cp-tab .category-content .title {
+  font-size: 4rem;
+  color: #333333;
+  font-family: "Poppins Semibold";
+  padding-bottom: 0.8rem;
+  line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content .title {
+    font-size: 2.4rem;
+  }
+}
+.cp-tab .category-content .desc {
+  font-size: 1.6rem;
+  font-family: #666666;
+  font-family: "Poppins Regular";
+  padding-bottom: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content .desc {
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=cp-tab.css.map */

@@ -195,3 +195,10 @@ position: -webkit-sticky;
   height: 1px;
   }
 }
+.m-bottom{
+  margin-bottom: 6.4rem;
+  @media only screen and (max-width: $media-mobile) {
+    margin-bottom: 4.8rem;
+
+  }
+}

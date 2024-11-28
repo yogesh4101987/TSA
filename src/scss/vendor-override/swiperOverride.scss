@@ -578,4 +578,15 @@
       width: 19rem;      
     }
   }
+  &.typ-why-tiscon{
+    
+    .swiper-slide{
+      width: 29.5rem;
+      margin-right: 2rem;
+      @media only screen and (max-width: $media-mobile){
+        width: 16.0rem;
+        margin-right: 1.2rem;
+      }
+    }
+  }
 }

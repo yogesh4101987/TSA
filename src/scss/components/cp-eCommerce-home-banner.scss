@@ -291,9 +291,19 @@
         }
     }
     &.typ-select{
+        .feature{
+            @media only screen and (max-width: $media-mobile){
+                gap: 1.2rem;
+            }
+        }
         .feature-item {
             width: 19.1rem;
             height: 14.0rem;
+            @media only screen and (max-width: $media-mobile){
+                width: 16.6rem;
+                height: 13.0rem;
+                gap: 1.2rem;
+            }
             .f-img{
                 width: 18.8rem;
                 height: 97.2rem;

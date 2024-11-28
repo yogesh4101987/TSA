@@ -95,5 +95,21 @@
   line-height: 2.6rem;
   color: #3D7EDB;
 }
+.cp-other-info.typ-tiscon .other-info-list {
+  display: flex;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .cp-other-info.typ-tiscon .other-info-list {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-other-info.typ-tiscon .other-info-list .other-info-item {
+    margin-bottom: 0;
+  }
+}
 
 /*# sourceMappingURL=cp-other-info.css.map */
