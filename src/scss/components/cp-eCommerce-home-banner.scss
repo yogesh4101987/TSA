@@ -328,11 +328,38 @@
             &:nth-child(2){
                 .feature-card{
                     background-color: #E5F6EC;
-                
+                .f-img{
+                    &::after{
+                        background-color: #99DAB3;
+                    }
+                }
                 &.active{
                     border: 3px solid #33B667;
                     .icon{
                         color:#33B667;
+                    }
+                }
+                
+                }
+                
+               .f-img{
+                &::after{
+                    background-color: #99DAB3;
+                }
+               }
+            }
+            &:nth-child(3){
+                .feature-card{
+                    background-color:#F3F4F6;
+                .f-img{
+                    &::after{
+                        background: #CCCCCC;
+                    }
+                }
+                &.active{
+                    border: 3px solid #808080;
+                    .icon{
+                        color: #808080;
                     }
                 }
                 

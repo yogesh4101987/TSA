@@ -196,6 +196,20 @@
 .cp-tab.typ-tisco-cat .tab-list .tab-item:hover .title::after, .cp-tab.typ-tisco-cat .tab-list .tab-item.active .title::after {
   width: 100%;
 }
+.cp-tab.typ-struct .category-content {
+  position: relative;
+  max-width: 100%;
+  left: 0;
+  top: 0;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+}
+.cp-tab.typ-struct .category-content .act-buy {
+  min-width: 34.3rem;
+  display: inline-block;
+  margin: 3.2rem auto 0;
+}
 .cp-tab .category-content {
   max-width: 28.9rem;
   position: absolute;

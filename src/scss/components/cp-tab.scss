@@ -199,6 +199,22 @@
       }
     }
   }
+  &.typ-struct{
+    .category-content{
+      position: relative;
+      max-width: 100%;
+      left: 0;
+      top: 0;
+      transform: none;
+      display: flex;
+      flex-direction: column;
+      .act-buy{
+        min-width: 34.3rem;
+        display: inline-block;
+        margin: 3.2rem auto 0;
+      }
+    }
+  }
   .category-content{
     max-width: 28.9rem;
     position: absolute;

@@ -332,6 +332,9 @@
 .cp-eCommerce-home-banner.typ-select .feature-item:nth-child(2) .feature-card {
   background-color: #E5F6EC;
 }
+.cp-eCommerce-home-banner.typ-select .feature-item:nth-child(2) .feature-card .f-img::after {
+  background-color: #99DAB3;
+}
 .cp-eCommerce-home-banner.typ-select .feature-item:nth-child(2) .feature-card.active {
   border: 3px solid #33B667;
 }
@@ -339,6 +342,21 @@
   color: #33B667;
 }
 .cp-eCommerce-home-banner.typ-select .feature-item:nth-child(2) .f-img::after {
+  background-color: #99DAB3;
+}
+.cp-eCommerce-home-banner.typ-select .feature-item:nth-child(3) .feature-card {
+  background-color: #F3F4F6;
+}
+.cp-eCommerce-home-banner.typ-select .feature-item:nth-child(3) .feature-card .f-img::after {
+  background: #CCCCCC;
+}
+.cp-eCommerce-home-banner.typ-select .feature-item:nth-child(3) .feature-card.active {
+  border: 3px solid #808080;
+}
+.cp-eCommerce-home-banner.typ-select .feature-item:nth-child(3) .feature-card.active .icon {
+  color: #808080;
+}
+.cp-eCommerce-home-banner.typ-select .feature-item:nth-child(3) .f-img::after {
   background-color: #99DAB3;
 }
 .cp-eCommerce-home-banner.typ-select .feature-item .active .f-title {
