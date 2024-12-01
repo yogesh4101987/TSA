@@ -308,6 +308,11 @@
                 width: 18.8rem;
                 height: 97.2rem;
             }
+            .feature-card{
+                .f-title{
+                    max-width: 77%;
+                }
+            }
             &:nth-child(1){
                 .feature-card{
                     background-color: #FFF8E5;

@@ -317,6 +317,9 @@
   width: 18.8rem;
   height: 97.2rem;
 }
+.cp-eCommerce-home-banner.typ-select .feature-item .feature-card .f-title {
+  max-width: 77%;
+}
 .cp-eCommerce-home-banner.typ-select .feature-item:nth-child(1) .feature-card {
   background-color: #FFF8E5;
 }

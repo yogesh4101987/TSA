@@ -200,6 +200,13 @@
     }
   }
   &.typ-struct{
+    .tab-list{
+      .tab-item{
+        .title{
+          padding: 1.6rem 4rem;
+        }
+      }
+    }
     .tab-container{
       @media only screen and (max-width: $media-mobile) {
         padding-top: 2.4rem;

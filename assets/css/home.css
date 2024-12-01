@@ -133,5 +133,8 @@
     width: 48%;
   }
 }
+.lyt-grid.typ-structure {
+  justify-content: flex-start;
+}
 
 /*# sourceMappingURL=home.css.map */

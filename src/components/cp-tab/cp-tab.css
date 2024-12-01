@@ -196,6 +196,9 @@
 .cp-tab.typ-tisco-cat .tab-list .tab-item:hover .title::after, .cp-tab.typ-tisco-cat .tab-list .tab-item.active .title::after {
   width: 100%;
 }
+.cp-tab.typ-struct .tab-list .tab-item .title {
+  padding: 1.6rem 4rem;
+}
 @media only screen and (max-width: 768px) {
   .cp-tab.typ-struct .tab-container {
     padding-top: 2.4rem;
