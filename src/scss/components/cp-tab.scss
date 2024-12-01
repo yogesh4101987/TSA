@@ -200,6 +200,12 @@
     }
   }
   &.typ-struct{
+    .tab-container{
+      @media only screen and (max-width: $media-mobile) {
+        padding-top: 2.4rem;
+      }
+
+    }
     .category-content{
       position: relative;
       max-width: 100%;
@@ -212,6 +218,12 @@
         min-width: 34.3rem;
         display: inline-block;
         margin: 3.2rem auto 0;
+      }
+    }
+                          
+    .category-content{
+      .title{
+        padding-bottom: 3.2rem;
       }
     }
   }

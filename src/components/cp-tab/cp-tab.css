@@ -196,6 +196,11 @@
 .cp-tab.typ-tisco-cat .tab-list .tab-item:hover .title::after, .cp-tab.typ-tisco-cat .tab-list .tab-item.active .title::after {
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-struct .tab-container {
+    padding-top: 2.4rem;
+  }
+}
 .cp-tab.typ-struct .category-content {
   position: relative;
   max-width: 100%;
@@ -209,6 +214,9 @@
   min-width: 34.3rem;
   display: inline-block;
   margin: 3.2rem auto 0;
+}
+.cp-tab.typ-struct .category-content .title {
+  padding-bottom: 3.2rem;
 }
 .cp-tab .category-content {
   max-width: 28.9rem;

@@ -80,5 +80,19 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ5 {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+.lyt-grid.typ5 .grid-col {
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ5 .grid-col {
+    width: 48%;
+  }
+}
 
 /*# sourceMappingURL=lyt-comman-grid.css.map */

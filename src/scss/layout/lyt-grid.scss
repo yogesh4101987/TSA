@@ -72,4 +72,16 @@
       }
     }
   }
+  &.typ5{
+    @media only screen and (max-width: $media-mobile){
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .grid-col{
+      width: 25%;
+      @media only screen and (max-width: $media-mobile) {
+        width: 48%;
+      }
+    }
+  }
 }

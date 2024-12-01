@@ -442,4 +442,23 @@
       position: relative;
     }
   }
+  &.typ-pro-featur-bg{
+    .bg-pro{
+      background-color: #F7B592;
+      img{
+      max-width: 37.5rem;
+      height: 48.9rem;
+      margin: 0 auto;
+      width: 100%;
+      }
+    }
+    
+  }
+  &.typ-steel-wood-frame{
+    background-color: #F3F4F6;
+    padding-bottom: 4rem;
+    @media only screen and (max-width: $media-sm){
+      display: none;
+    }
+  }
 }

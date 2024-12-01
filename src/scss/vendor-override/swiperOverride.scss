@@ -589,4 +589,17 @@
       }
     }
   }
+  &.typ-application{
+    .swiper-slide{
+      width: 29.7rem;
+      height: 26.0rem;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-right: 1.2rem;
+      @media only screen and (max-width: $media-mobile){
+        width: 16.0rem;
+        height: 16.0rem;
+      }
+    }
+  }
 }

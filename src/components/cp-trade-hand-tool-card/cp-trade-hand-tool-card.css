@@ -80,5 +80,26 @@
     height: 9.6rem;
   }
 }
+.cp-trade-hand-tool-card.typ-why-structure {
+  border: 0;
+  height: 295px;
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .cp-trade-hand-tool-card.typ-why-structure {
+    height: 188px;
+    width: 166px;
+  }
+}
+.cp-trade-hand-tool-card.typ-why-structure .img-wrap {
+  width: 295px;
+  height: 260px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-trade-hand-tool-card.typ-why-structure .img-wrap {
+    height: 160px;
+    width: 166px;
+  }
+}
 
 /*# sourceMappingURL=cp-trade-hand-tool-card.css.map */

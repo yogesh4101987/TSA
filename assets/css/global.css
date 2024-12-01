@@ -916,6 +916,10 @@ p {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -1407,6 +1411,24 @@ p {
 }
 .bs-sec.typ-tiscon-pdp .sec-sub-title {
   position: relative;
+}
+.bs-sec.typ-pro-featur-bg .bg-pro {
+  background-color: #F7B592;
+}
+.bs-sec.typ-pro-featur-bg .bg-pro img {
+  max-width: 37.5rem;
+  height: 48.9rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.bs-sec.typ-steel-wood-frame {
+  background-color: #F3F4F6;
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-steel-wood-frame {
+    display: none;
+  }
 }
 
 .btn {
@@ -2219,6 +2241,19 @@ p {
   .bs-swiper.typ-why-tiscon .swiper-slide {
     width: 16rem;
     margin-right: 1.2rem;
+  }
+}
+.bs-swiper.typ-application .swiper-slide {
+  width: 29.7rem;
+  height: 26rem;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-application .swiper-slide {
+    width: 16rem;
+    height: 16rem;
   }
 }
 

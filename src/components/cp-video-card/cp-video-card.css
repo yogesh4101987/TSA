@@ -51,5 +51,11 @@
   width: 29.7rem;
   height: 52.8rem;
 }
+.cp-video-card.typ-application .cont-sec {
+  background: 180deg, rgba(0, 0, 0, 0) 0%, #000000 100%;
+}
+.cp-video-card.typ-application .cont-sec .video-title {
+  bottom: 23px;
+}
 
 /*# sourceMappingURL=cp-video-card.css.map */
