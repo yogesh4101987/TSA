@@ -22,10 +22,34 @@ function addedFavorite() {
     }); 
 }
 
-function blogSlider() {
-    var swiper = new Swiper(".js-blog", {
-        slidesPerView: 'auto',
-        loop: false,
-        navigation: false
-    });
+// function blogSlider() {
+//     var swiper = new Swiper(".js-blog", {
+//         slidesPerView: 'auto',
+//         loop: false,
+//         navigation: false
+//     });
+// }
+
+function blogSlider(){
+
+    if (winWidth < 767) {
+        $(".js-blog-slick-slider").slick({
+            slidesToShow: 1.2   ,
+            infinite:false,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+              // dots: false, Boolean
+             arrows: false, Boolean
+           });
+
+        }
+        else{
+            if ($('.js-blog-slick-slider').hasClass('slick-initialized')) {
+                $('.js-blog-slick-slider').slick('unslick');
+            }
+				
+        }
+
+  
 }

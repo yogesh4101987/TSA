@@ -63,6 +63,15 @@
     width: 100%;
   }
 }
+.lyt-grid.typ-blog .grid-col .slick-slider-blog {
+  display: flex;
+  gap: 1.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-blog .grid-col .slick-slider-blog {
+    gap: 0;
+  }
+}
 .lyt-grid.typ-explore {
   align-items: center;
   justify-content: space-around;
