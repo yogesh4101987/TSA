@@ -635,15 +635,7 @@
 						<p class="desc">Panchayawala, Jaipur. Rajasthan - 302020</p>
 					</div>
 					<div class="sec-cont">
-						<div class="bs-swiper swiper typ-top-deals js-top-deals" >
-							<div class="swiper-wrapper" id="topSellingProduct">
-								
-							</div>
-							<div class="swiper-nav">
-								<div class="swiper-button-prev button-prev"></div>
-								<div class="swiper-button-next button-next"></div>
-							</div>
-						</div>
+						<div id="topSellingProduct"></div>
 					</div>
 				</div>
 			</section>
@@ -810,16 +802,8 @@
 						<h2 class="sec-title">Best-selling products</h2>
 						<p class="desc">Panchayawala, Jaipur. Rajasthan - 302020</p>
 					</div>
-					<div class="sec-cont">
-						<div class="bs-swiper swiper typ-best-selling js-best-selling">
-							<div class="swiper-wrapper" id="bestSellingProduct">
-								
-							</div>
-							<div class="swiper-nav">
-								<div class="swiper-button-prev best-selling-prev"></div>
-								<div class="swiper-button-next best-selling-next"></div>
-							</div>
-						</div>	
+					<div class="sec-cont">						
+						<div id="bestSellingProduct"></div>
 					</div>
 				</div>
 			</section>
@@ -1270,36 +1254,31 @@
 			<!-- handle bar start -->
 			<!-- Handlebars Template start -->
 			<script id="productSellingTemp" type="text/x-handlebars-template">
-				{{#each product}}
-					<div class="swiper-slide">
+				<div class="bs-swiper typ-best-selling js-best-selling">
+				  	{{#each productRecommendationResponse}}
 						<div class="cp-product-view">
 							<div class="img-wrap">
-								<picture>
-									<source media="(max-width:768px)" srcset="{{image}}">
-									<source media="(max-width:991px)" srcset="{{image}}">
-									<img src="{{image}}" alt="{{name}}" />
-								</picture>
+								<a href="{{productRedirection}}" class="product-link">
+									<picture>
+										<source media="(max-width:768px)" srcset="{{productImageUrl}}">
+										<source media="(max-width:991px)" srcset="{{productImageUrl}}">
+										<img src="{{productImageUrl}}" alt="{{productTitle}}" />
+									</picture>
+								</a>
 							</div>
 							<div class="content-wrap">
-								<h3 class="brand-name">
-									{{#each categories}}
-										{{#if (eq is_brand "1")}}
-											{{name}}
-										{{/if}}
-									{{/each}}
-								</h3>
-								<h4 class="product-title">{{name}}</h4>
+								<h3 class="brand-name">{{categoryName}}</h3>
+								<h4 class="product-title">{{productTitle}}</h4>
 								<ul class="rating-list">
 									{{renderStars rating}}
 								</ul>
-								<p class="cancel-amt">₹{{price}} per piece</p>
-								<p class="current-amt"><span class="amt">₹{{special}}</span> per piece</p>
+								<p class="cancel-amt">₹{{productPrice}} per piece</p>
+								<p class="current-amt"><span class="amt">₹{{specialPrice}}</span> per piece</p>
 							</div>
 						</div>
-					</div>
-				{{/each}}
-			</script>
-			
+					{{/each}}
+				</div>
+			</script>			  
 			<!-- Handlebars Template end -->
 		</main>
 		<!-- Footer Start -->
@@ -1316,6 +1295,7 @@
 
 		<!-- build:js assets/js/vendor.js -->
 		<script src="/js/vendor/jquery-3.7.1.min.js"></script>
+		<script src="/js/vendor/slick.min.js"></script>
 		<script src="/js/vendor/swiper-bundle.min.js"></script>
 		<script src="/js/vendor/isotope.pkgd.min.js"></script>
 		<script src="/js/vendor/handlebars.js"></script>

@@ -3,7 +3,7 @@ var winWidth = $(window).width();
 $(document).ready(function () {  
   addedFavorite();
   if ($(window).width() < 769) {
-    bestSellingSlider();
+    best2SellingSlider();
     reviewProductSlider();
     vegetablePatchSlider();
   }
@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 $(window).resize(function () {    
   if ($(window).width() < 769) {
-    bestSellingSlider();
+    best2SellingSlider();
     reviewProductSlider();
     vegetablePatchSlider();
   }
@@ -37,7 +37,7 @@ function addedFavorite() {
   }); 
 }
 
-function bestSellingSlider() {
+function best2SellingSlider() {
   var swiper = new Swiper(".js-selling-product", {
     slidesPerView: "auto",
     loop: false,

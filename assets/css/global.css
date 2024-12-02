@@ -1532,6 +1532,40 @@ p {
     margin-right: -2rem;
   }
 }
+.bs-swiper .slick-arrow {
+  position: absolute;
+  top: auto;
+  bottom: -59px;
+  left: 7px;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  color: var(--black);
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.bs-swiper .slick-arrow:before {
+  font-size: 1rem;
+  display: block;
+  font-family: "icomoon";
+  color: var(--black);
+}
+.bs-swiper .slick-arrow.slick-prev:before {
+  content: "\e91f";
+}
+.bs-swiper .slick-arrow.slick-next {
+  left: 82px;
+}
+.bs-swiper .slick-arrow.slick-next:before {
+  content: "\e921";
+}
+.bs-swiper .slick-arrow:hover:before, .bs-swiper .slick-arrow:focus:before {
+  font-size: 2rem;
+}
 .bs-swiper .swiper-pagination-fraction,
 .bs-swiper .swiper-pagination-custom,
 .bs-swiper .swiper-horizontal > .swiper-pagination-bullets,
@@ -1824,13 +1858,12 @@ p {
     margin-right: -1.6rem;
   }
 }
-.bs-swiper.typ-best-selling .swiper-slide, .bs-swiper.typ-top-deals .swiper-slide {
-  width: auto !important;
+.bs-swiper.typ-best-selling .slick-slide, .bs-swiper.typ-top-deals .slick-slide {
   margin-right: 2rem;
-  min-width: 29.5rem;
+  max-width: 29.5rem;
 }
 @media only screen and (max-width: 768px) {
-  .bs-swiper.typ-best-selling .swiper-slide, .bs-swiper.typ-top-deals .swiper-slide {
+  .bs-swiper.typ-best-selling .slick-slide, .bs-swiper.typ-top-deals .slick-slide {
     margin-right: 1.2rem;
     min-width: 20rem;
   }

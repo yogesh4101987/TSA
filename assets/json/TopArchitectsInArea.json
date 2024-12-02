@@ -1,0 +1,46 @@
+{
+  "data": {
+    "serviceprovider": {
+      "serviceproviderList": [
+        {
+          "id": 143712,
+          "first_name": "Dhirendra Kumar Sharma",
+          "serviceprovider_city": "Delhi",
+          "experience": "5",
+          "url_key": "Delhi-West-Delhi-Dhirendra-Kumar-Sharma",
+          "image_desktop": "http://localhost:8000/components/cp-architect/images/istockphoto-1.png",
+          "image_mobile": "http://localhost:8000/components/cp-architect/images/istockphoto-1.png"
+        },
+        {
+          "id": 143715,
+          "first_name": "Rajneesh Kumar",
+          "serviceprovider_city": "Delhi",
+          "serviceprovider_website": null,
+          "experience": "3.3",
+          "url_key": "Delhi-West-Delhi-Rajneesh-Kumar",
+          "image_desktop": "http://localhost:8000/components/cp-architect/images/istockphoto-1.png",
+          "image_mobile": "http://localhost:8000/components/cp-architect/images/istockphoto-1.png"
+        },
+        {
+          "id": 143712,
+          "first_name": "Dhirendra Kumar Sharma",
+          "serviceprovider_city": "Delhi",
+          "experience": "5",
+          "url_key": "Delhi-West-Delhi-Dhirendra-Kumar-Sharma",
+          "image_desktop": "http://localhost:8000/components/cp-architect/images/istockphoto-1.png",
+          "image_mobile": "http://localhost:8000/components/cp-architect/images/istockphoto-1.png"
+        },
+        {
+          "id": 143715,
+          "first_name": "Rajneesh Kumar",
+          "serviceprovider_city": "Delhi",
+          "serviceprovider_website": null,
+          "experience": "3.3",
+          "url_key": "Delhi-West-Delhi-Rajneesh-Kumar",
+          "image_desktop": "http://localhost:8000/components/cp-architect/images/istockphoto-1.png",
+          "image_mobile": "http://localhost:8000/components/cp-architect/images/istockphoto-1.png"
+        }
+      ]
+    }
+  }
+}

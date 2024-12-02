@@ -15,6 +15,13 @@ Handlebars.registerHelper('renderStars', function (rating) {
 });
   
 $(document).ready(function () {
+    bestSellingHandlebars();
+});
+$(window).resize(function () {  
+    bestSellingSlider();
+});
+
+function bestSellingHandlebars(){
     fetch(jsonUrl)
     .then((response) => {
         if (!response.ok) {
@@ -27,13 +34,14 @@ $(document).ready(function () {
         
         const source = $('#productSellingTemp').html();
         const template = Handlebars.compile(source);
-        const html = template(data.data);
+        const html = template(data);
   
         // Append to swiper-wrapper
         $('#bestSellingProduct').html(html);
         $('#topSellingProduct').html(html);
+        bestSellingSlider()
     })
     .catch((error) => {
         console.error('Error:', error);
-    });  
-});
+    }); 
+}

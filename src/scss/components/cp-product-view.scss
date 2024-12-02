@@ -2,7 +2,7 @@
 @import "../config/mixin";
 
 .cp-product-view{
-    max-width: 29.5rem;
+    // max-width: 29.5rem;
     @include border-radius(1.6rem);
     border: 1px solid $clr-border;
     background: $clr-root;
