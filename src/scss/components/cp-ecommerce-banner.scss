@@ -109,4 +109,14 @@
       }
     }
   }  
+  &.typ-durashine{
+    .container{
+      position: relative;
+    }
+    .btn-link{
+      position: absolute;
+      right: 0;
+      top: 1rem;
+    }
+  }
 }

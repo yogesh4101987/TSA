@@ -82,6 +82,7 @@
   height: 6.4rem;
   overflow: hidden;
   border-radius: 12px;
+  background: #FFFFFF;
 }
 .cp-content-info.typ-struct-pdp .cont-wrap {
   padding: 0 1.2rem;
