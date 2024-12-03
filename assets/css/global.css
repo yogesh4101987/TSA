@@ -1154,6 +1154,14 @@ p {
   padding: 0;
   background-color: #f3f4f6;
 }
+.bs-sec.typ-eCommerce-banner.typ2 {
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-eCommerce-banner.typ2 {
+    margin-bottom: 4.4rem;
+  }
+}
 .bs-sec.typ-quick-buy {
   position: relative;
   padding: 0;
@@ -1412,6 +1420,9 @@ p {
 .bs-sec.typ-tiscon-pdp .sec-sub-title {
   position: relative;
 }
+.bs-sec.typ-pro-featur-bg {
+  text-align: center;
+}
 .bs-sec.typ-pro-featur-bg .bg-pro {
   background-color: #F7B592;
 }
@@ -1421,6 +1432,10 @@ p {
   margin: 0 auto;
   width: 100%;
 }
+.bs-sec.typ-pro-featur-bg .btn {
+  margin-top: 3.2rem;
+  min-width: 34.3rem;
+}
 .bs-sec.typ-steel-wood-frame {
   background-color: #F3F4F6;
   padding-bottom: 4rem;
@@ -1428,6 +1443,14 @@ p {
 @media only screen and (max-width: 991px) {
   .bs-sec.typ-steel-wood-frame {
     display: none;
+  }
+}
+.bs-sec.typ-architect {
+  margin-top: 6.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-architect {
+    margin-top: 4.4rem;
   }
 }
 

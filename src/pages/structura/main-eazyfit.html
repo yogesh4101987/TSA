@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="../../components/cp-trade-hand-tool-card/cp-trade-hand-tool-card.css" />
     <link rel="stylesheet" href="../../components/cp-icon-details/cp-icon-details.css" />
     <link rel="stylesheet" href="../../components/cp-video-card/cp-video-card.css" />
+    <link rel="stylesheet" href="../../components/cp-single-banner/cp-single-banner.css" />
 
 
   </head>
@@ -128,25 +129,56 @@
 
      <!-- agrico quick banner starts -->
      <section class="bs-sec typ-first-sec">
-
-        <!-- breadcrums starts-->
-        <div class="container">
-          <div class="sec-cont">
-            <ul class="cp-breadcrumb">
-              <li class="breadcrumb-items">
-                <a href="#" class="breadcrumb-link">Home</a>
-              </li>
-              <li class="breadcrumb-items">
-                <a href="#" class="breadcrumb-link">Product</a>
-              </li>
-              <li class="breadcrumb-items">
-                <a href="#" class="breadcrumb-link active">Tiscon</a>
-              </li>
-            </ul>
-          </div>
+       <!-- First Section start -->
+       <section class="bs-sec typ-first-sec typ-no-bottom-padding">
+        <div class="sec-cont">
+            <!-- agrico quick banner starts -->    
+            <div class="cp-single-banner js-bg">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="cont-wrap">
+                        <h2 class="sec-title">10% off on all Agrico products.</h2>
+                        </div>
+                        <div class="btn-wrap ">
+                        <button class="coupon js-coupon">AGRICO10</button>
+                        </div>
+                    </div>
+                    <div class="bg-img">
+                        <picture>
+                            <source
+                            media="(max-width:768px)"
+                            srcset="/components/cp-single-banner/images/sleek_banner_mobile1.jpg"
+                            />
+                            <source
+                            media="(max-width:991px)"
+                            srcset="/components/cp-single-banner/images/sleek_banner_mobile1.jpg"
+                            />
+                            <img
+                            src="/components/cp-single-banner/images/Sleek_banner_desktop.jpg"
+                            alt="Sleek banner_desktop"
+                            />
+                        </picture>
+                    </div>
+                </div> 
+            </div>
+            <!-- agrico quick banner ends -->
+            <div class="container">
+                <!-- breadcrums starts-->
+                <ul class="cp-breadcrumb">
+                    <li class="breadcrumb-items">
+                        <a href="#" class="breadcrumb-link">Home</a>
+                    </li>
+                    <li class="breadcrumb-items">
+                        <a href="#" class="breadcrumb-link">Product</a>
+                    </li>
+                    <li class="breadcrumb-items">
+                        <a href="#" class="breadcrumb-link active">Agrico</a>
+                    </li>
+                </ul>
+                <!-- breadcrums ends -->
+            </div>
         </div>
-        <!-- breadcrums ends -->
-
+      </section>
         <!-- logo and  search component starts -->
         <div class="container">
           <div class="sec-cont">
@@ -283,7 +315,6 @@
         <section class="bs-sec">
             <div class="container">
                 <div class="cp-eCommerce-home-banner typ-color-change typ-select">
-                    <h2	class="banner-title">Categories</h2>
                     <div class="feature">
                         <div class="feature-item ">
                             <a href="#" class="feature-card active">
@@ -500,7 +531,7 @@
         <!---door frame end-->
 
         <!--product structure start-->
-        <section class="bs-sec typ-pro-featur-bg">
+        <section class="bs-sec typ-pro-featur-bg typ-no-padding">
         <div class="container">
             <div class="sec-head">
             <h2 class="sec-title">Product features</h2>
@@ -512,6 +543,7 @@
             <img src="/images/prod-feature.png">
           </picture>  
           </div>
+          <a href="#" class="btn">Buy now</a>
         </div>
         </section>
          <!--product structure end-->
@@ -588,84 +620,7 @@
         </div>
          <!--wood frame end-->
 
-         <!--application start-->
-         <section class="bs-sec">
-          <div class="container">
-            <div class="sec-head">
-              <h2 class="sec-title">Applications</h2>
-            </div>
-            <div class="sec-cont">
-              <div class="bs-swiper swiper js-real-stories typ-application">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="cp-video-card typ-application">
-                            <div class="img-wrap">
-                                <picture>
-                                    <source media="(max-width:768px)" srcset="/components/cp-video-card/images/application01.png">
-                                    <source media="(max-width:991px)" srcset="/components/cp-video-card/images/application01.png">
-                                    <img src="/components/cp-video-card/images/application01.png" alt="Real stories"/>
-                                </picture>
-                               
-                            </div>
-                            <div class="cont-sec">
-                                <h3 class="video-title">Roofs & sheds</h3>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="swiper-slide">
-                      <div class="cp-video-card typ-application">
-                        <div class="img-wrap">
-                            <picture>
-                                <source media="(max-width:768px)" srcset="/components/cp-video-card/images/application01.png">
-                                <source media="(max-width:991px)" srcset="/components/cp-video-card/images/application01.png">
-                                <img src="/components/cp-video-card/images/application01.png" alt="Real stories"/>
-                            </picture>
-                           
-                        </div>
-                        <div class="cont-sec">
-                            <h3 class="video-title">Roofs & sheds</h3>
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="cp-video-card typ-application">
-                      <div class="img-wrap">
-                          <picture>
-                              <source media="(max-width:768px)" srcset="/components/cp-video-card/images/application01.png">
-                              <source media="(max-width:991px)" srcset="/components/cp-video-card/images/application01.png">
-                              <img src="/components/cp-video-card/images/application01.png" alt="Real stories"/>
-                          </picture>
-                         
-                      </div>
-                      <div class="cont-sec">
-                          <h3 class="video-title">Roofs & sheds</h3>
-                      </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cp-video-card typ-application">
-                    <div class="img-wrap">
-                        <picture>
-                            <source media="(max-width:768px)" srcset="/components/cp-video-card/images/application01.png">
-                            <source media="(max-width:991px)" srcset="/components/cp-video-card/images/application01.png">
-                            <img src="/components/cp-video-card/images/application01.png" alt="Real stories"/>
-                        </picture>
-                       
-                    </div>
-                    <div class="cont-sec">
-                        <h3 class="video-title">Roofs & sheds</h3>
-                    </div>
-                </div>
-              </div>
-
-                    </div>
-            </div>
-            </div>
-          </div>
-         </section>
-         <!-- application end-->
         <!---steel frame start-->
         <section class="bs-sec typ-steel-wood-frame" >
           <div class="container">
@@ -707,8 +662,86 @@
           </div>
         </section>
         <!---steel frame end-->
+                 <!--application start-->
+                 <section class="bs-sec">
+                  <div class="container">
+                    <div class="sec-head">
+                      <h2 class="sec-title">Applications</h2>
+                    </div>
+                    <div class="sec-cont">
+                      <div class="bs-swiper swiper js-real-stories typ-application">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cp-video-card typ-application">
+                                    <div class="img-wrap">
+                                        <picture>
+                                            <source media="(max-width:768px)" srcset="/components/cp-video-card/images/application01.png">
+                                            <source media="(max-width:991px)" srcset="/components/cp-video-card/images/application01.png">
+                                            <img src="/components/cp-video-card/images/application01.png" alt="Real stories"/>
+                                        </picture>
+                                       
+                                    </div>
+                                    <div class="cont-sec">
+                                        <h3 class="video-title">Roofs & sheds</h3>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                              <div class="cp-video-card typ-application">
+                                <div class="img-wrap">
+                                    <picture>
+                                        <source media="(max-width:768px)" srcset="/components/cp-video-card/images/application01.png">
+                                        <source media="(max-width:991px)" srcset="/components/cp-video-card/images/application01.png">
+                                        <img src="/components/cp-video-card/images/application01.png" alt="Real stories"/>
+                                    </picture>
+                                   
+                                </div>
+                                <div class="cont-sec">
+                                    <h3 class="video-title">Roofs & sheds</h3>
+                                </div>
+                            </div>
+                          </div>
+        
+                          <div class="swiper-slide">
+                            <div class="cp-video-card typ-application">
+                              <div class="img-wrap">
+                                  <picture>
+                                      <source media="(max-width:768px)" srcset="/components/cp-video-card/images/application01.png">
+                                      <source media="(max-width:991px)" srcset="/components/cp-video-card/images/application01.png">
+                                      <img src="/components/cp-video-card/images/application01.png" alt="Real stories"/>
+                                  </picture>
+                                 
+                              </div>
+                              <div class="cont-sec">
+                                  <h3 class="video-title">Roofs & sheds</h3>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="cp-video-card typ-application">
+                            <div class="img-wrap">
+                                <picture>
+                                    <source media="(max-width:768px)" srcset="/components/cp-video-card/images/application01.png">
+                                    <source media="(max-width:991px)" srcset="/components/cp-video-card/images/application01.png">
+                                    <img src="/components/cp-video-card/images/application01.png" alt="Real stories"/>
+                                </picture>
+                               
+                            </div>
+                            <div class="cont-sec">
+                                <h3 class="video-title">Roofs & sheds</h3>
+                            </div>
+                        </div>
+                      </div>
+        
+                            </div>
+                    </div>
+                    </div>
+                  </div>
+                 </section>
+                 <!-- application end-->
          <!--need help-->
-         <section class="bs-sec">
+         <section class="bs-sec typ-no-padding">
           <div class="container">
               <div class="sec-cont">
                   <div class="cp-notify typ-grey-bg">
@@ -764,7 +797,7 @@
         </section>
        <!--faq section end-->
         <!--explore our production-->
-        <section class="bs-sec">
+        <section class="bs-sec typ-no-padding">
           <div class="container">
             <div class="sec-cont">
               <div class="cp-notify typ-download-brochure">
