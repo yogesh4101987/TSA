@@ -42,6 +42,36 @@
   height: 56px;
   margin-right: 3.2rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .lhs .location-wrap {
+    width: 100%;
+  }
+}
+.cp-header .top-sec .lhs .map-icon {
+  font-size: 1.5rem;
+}
+.cp-header .top-sec .lhs .location-text {
+  font-size: 1.4rem;
+  color: #333333;
+  font-family: "Poppins Regular";
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .lhs .location-text {
+    width: 90%;
+  }
+}
+.cp-header .top-sec .lhs .update-location {
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  color: #3D7EDB;
+  text-decoration: underline;
+  padding-right: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .lhs .update-location {
+    display: none;
+  }
+}
 .cp-header .top-sec .rhs {
   display: flex;
   justify-content: space-between;
@@ -56,36 +86,6 @@
     padding-left: 0;
     width: 100%;
     z-index: 1;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .cp-header .top-sec .rhs .location-wrap {
-    width: 100%;
-  }
-}
-.cp-header .top-sec .rhs .map-icon {
-  font-size: 1.5rem;
-}
-.cp-header .top-sec .rhs .location-text {
-  font-size: 1.4rem;
-  color: #333333;
-  font-family: "Poppins Regular";
-}
-@media only screen and (max-width: 768px) {
-  .cp-header .top-sec .rhs .location-text {
-    width: 90%;
-  }
-}
-.cp-header .top-sec .rhs .update-location {
-  font-size: 1.2rem;
-  font-family: "Poppins Medium";
-  color: #3D7EDB;
-  text-decoration: underline;
-  padding-right: 2.4rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-header .top-sec .rhs .update-location {
-    display: none;
   }
 }
 .cp-header .top-sec .rhs .icon {
@@ -108,6 +108,58 @@
 @media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs .btn-order {
     display: none;
+  }
+}
+.cp-header .top-sec .rhs .quick-link-list {
+  display: flex;
+  padding-left: 13rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .rhs .quick-link-list {
+    position: absolute;
+    top: 27px;
+    right: 0;
+  }
+}
+.cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item {
+  position: relative;
+  padding: 1.8rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item {
+    padding: 0;
+  }
+}
+.cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:first-child {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:first-child {
+    display: block;
+  }
+}
+.cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:last-child .quick-link-item::after {
+  content: "";
+  height: 2.4rem;
+  background-color: #CCCCCC;
+  width: 1px;
+  position: absolute;
+  left: 0;
+  top: 17px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:last-child .quick-link-item::after {
+    top: 0;
+  }
+}
+.cp-header .top-sec .rhs .quick-link-list .quick-link-item {
+  font-size: 2.4rem;
+  color: #999;
+  padding: 0 1.3rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .rhs .quick-link-list .quick-link-item {
+    padding: 0 0.8rem;
   }
 }
 .cp-header .bottom-sec {
@@ -142,17 +194,52 @@
 }
 .cp-header .bottom-sec .nav-list .nav-item {
   position: relative;
-  padding: 1.8rem 0;
+  padding: 1.8rem 1rem;
+  display: flex;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .nav-list .nav-item {
     margin-bottom: 2rem;
   }
 }
+.cp-header .bottom-sec .nav-list .nav-item .nav-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  align-items: center;
+}
+.cp-header .bottom-sec .nav-list .nav-item .nav-icon.typ1 {
+  background: #FFF1CC;
+  color: #A77800;
+}
+.cp-header .bottom-sec .nav-list .nav-item .nav-icon.typ2 {
+  background: #F6CDD5;
+  color: #D2042D;
+}
+.cp-header .bottom-sec .nav-list .nav-item .nav-icon.typ3 {
+  background: #CCEDD9;
+  color: #00A441;
+}
+.cp-header .bottom-sec .nav-list .nav-item .nav-icon.typ4 {
+  background: #FCDACC;
+  color: #EE4400;
+}
+.cp-header .bottom-sec .nav-list .nav-item .nav-icon.typ5 {
+  background: #D8E5F8;
+  color: #3D7EDB;
+}
+.cp-header .bottom-sec .nav-list .nav-item .nav-icon.typ6 {
+  background: #DED3DE;
+  color: #5A245A;
+}
 .cp-header .bottom-sec .nav-list .nav-item .nav-link {
   font-size: 1.4rem;
   font-family: "Poppins Semibold";
-  padding: 0 2.4rem;
+  padding: 0 2rem;
   position: relative;
   background-size: 200% 100%;
   background-position: -100%;
@@ -183,9 +270,6 @@
 .cp-header .bottom-sec .nav-list .nav-item .nav-link:hover {
   background-position: 0;
 }
-.cp-header .bottom-sec .nav-list .nav-item:first-child .nav-link {
-  padding-left: 0;
-}
 .cp-header .bottom-sec .nav-list .nav-item:last-child .nav-link::after {
   display: none;
 }
@@ -202,58 +286,6 @@
 }
 .cp-header .bottom-sec .nav-list .nav-item:hover .sub-nav-menu {
   display: block;
-}
-.cp-header .bottom-sec .quick-link-list {
-  display: flex;
-  padding-left: 15.2rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-header .bottom-sec .quick-link-list {
-    position: absolute;
-    top: 27px;
-    right: 0;
-  }
-}
-.cp-header .bottom-sec .quick-link-list .quick-link-icon-item {
-  position: relative;
-  padding: 1.8rem 0;
-}
-@media only screen and (max-width: 768px) {
-  .cp-header .bottom-sec .quick-link-list .quick-link-icon-item {
-    padding: 0;
-  }
-}
-.cp-header .bottom-sec .quick-link-list .quick-link-icon-item:first-child {
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  .cp-header .bottom-sec .quick-link-list .quick-link-icon-item:first-child {
-    display: block;
-  }
-}
-.cp-header .bottom-sec .quick-link-list .quick-link-icon-item:last-child .quick-link-item::after {
-  content: "";
-  height: 2.4rem;
-  background-color: #CCCCCC;
-  width: 1px;
-  position: absolute;
-  left: 0;
-  top: 17px;
-}
-@media only screen and (max-width: 768px) {
-  .cp-header .bottom-sec .quick-link-list .quick-link-icon-item:last-child .quick-link-item::after {
-    top: 0;
-  }
-}
-.cp-header .bottom-sec .quick-link-list .quick-link-item {
-  font-size: 2.4rem;
-  color: #999;
-  padding: 0 1.3rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-header .bottom-sec .quick-link-list .quick-link-item {
-    padding: 0 0.8rem;
-  }
 }
 .cp-header .hamburger-menu {
   display: none;
