@@ -2,11 +2,14 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-    .cp-brand{
+.cp-brand{
         display: flex;
+        padding-bottom: 9rem;
         @media only screen and (max-width: $media-mobile) {
         flex-wrap: wrap;
+        padding-bottom: 4.5rem;
         }
+        // .brand-list-item,
         .brand-list-item{
         background: $clr-root;
         width: 190px;
@@ -20,8 +23,8 @@
         margin-right: 2rem;
         padding: 3rem;
         @media only screen and (max-width: $media-mobile) {
-            width: 10.6rem;
-            height: 10.6rem;
+            width: 10rem;
+            height: 10rem;
             margin-right: 1rem;
             padding: 1rem;
             margin-bottom: 2rem;
@@ -35,5 +38,10 @@
             }
         }
     }
+    .slick-slide {
+        display: flex; 
+        flex-wrap: wrap;
     }
-    
+    }
+   
+      

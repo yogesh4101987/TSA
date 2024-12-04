@@ -6,10 +6,12 @@
 /*opacity- end*/
 .cp-brand {
   display: flex;
+  padding-bottom: 9rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-brand {
     flex-wrap: wrap;
+    padding-bottom: 4.5rem;
   }
 }
 .cp-brand .brand-list-item {
@@ -27,8 +29,8 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-brand .brand-list-item {
-    width: 10.6rem;
-    height: 10.6rem;
+    width: 10rem;
+    height: 10rem;
     margin-right: 1rem;
     padding: 1rem;
     margin-bottom: 2rem;
@@ -43,6 +45,10 @@
     width: 8.8rem;
     height: 6.3rem;
   }
+}
+.cp-brand .slick-slide {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=cp-brand.css.map */

@@ -99,3 +99,48 @@
 		display: none;
 	}
 }
+.slick-dots{
+	position: absolute;
+	left: 68%;
+	right: 0;
+	bottom: 52px;
+	margin: 0 auto;
+	text-align: center;
+	transform: translateX(-65%);
+	display: flex;
+	@media only screen and (max-width: 768px) {
+		bottom: 35px;
+	}
+	li{
+		width: 0.8rem;
+		height: 0.8rem;
+		background-color: #808080;
+		border-radius: 50%;
+		margin: 0 8px;
+		transform: none;
+		transition: none;
+		opacity: 1;
+		position: relative;
+		font-size: 0;
+		&::after{
+		  width: 1.6rem;
+		  height: 1.6rem;
+		  border: 1px solid transparent;
+		  background: transparent;
+		  border-radius: 50%;
+		  top:-4px;
+		  left: -4px;
+		  content: '';
+		  position: absolute;
+		}
+		&.slick-active{
+			background-color: #D2042D;;
+			width: 0.8rem;
+			height: 0.8rem;
+			border-radius: 50%;
+			&::after{
+			  border: 1px solid #D2042D;;
+			}
+		}
+	}
+}
