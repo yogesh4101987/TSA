@@ -461,4 +461,11 @@
       display: none;
     }
   }
+  &.typ-durshine-category{
+    margin: 6.4rem 0;
+    @media only screen and (max-width: $media-sm){
+      margin: 4rem 0;
+
+    }
+  }
 }

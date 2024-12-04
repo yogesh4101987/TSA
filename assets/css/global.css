@@ -1449,6 +1449,14 @@ p {
     display: none;
   }
 }
+.bs-sec.typ-durshine-category {
+  margin: 6.4rem 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-durshine-category {
+    margin: 4rem 0;
+  }
+}
 
 .btn {
   display: inline-block;

@@ -395,4 +395,19 @@
             } 
         }
     }
+    &.typ-durashine{
+        .view-btn{
+            position: absolute;
+            right: 0;
+            top: 20px;
+            @media only screen and (max-width: $media-mobile){
+                left: 0;
+                right: 0;
+                width: 34%;
+                margin: 0 auto;
+                top: auto;
+                bottom: -23px;
+            }
+        }
+    }
 }
