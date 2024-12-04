@@ -151,5 +151,10 @@
   left: 150px;
   top: 10px;
 }
+.cp-cart-card.typ-tiscon-pdp .btn.delete-btn::after {
+  width: 90%;
+  left: auto;
+  right: 0;
+}
 
 /*# sourceMappingURL=cp-cart-card.css.map */

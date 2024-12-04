@@ -174,7 +174,9 @@ position: -webkit-sticky;
 }
 .cm-flex{
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  gap: 1.2rem;
 }
 .cm-box{
   border: 1px solid #dedede;

@@ -108,4 +108,9 @@ overflow: hidden;
         justify-content: flex-end;
     }
 }
+.typ3-mobile{
+    @media only screen and (max-width: $media-sm) {
+        width: 50%;
+    } 
+}
 }
