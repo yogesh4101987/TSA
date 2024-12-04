@@ -176,7 +176,7 @@
 .cp-tab.typ-tisco-cat .tab-list .tab-item .title {
   border: 0;
   position: relative;
-  padding: 1.6rem;
+  padding: 1.6rem 4rem;
 }
 .cp-tab.typ-tisco-cat .tab-list .tab-item .title::after {
   position: absolute;
@@ -227,6 +227,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 2;
 }
 @media only screen and (max-width: 768px) {
   .cp-tab .category-content {
@@ -239,7 +240,7 @@
   font-size: 4rem;
   color: #333333;
   font-family: "Poppins Semibold";
-  padding-bottom: 0.8rem;
+  padding-bottom: 1.6rem;
   line-height: 24px;
 }
 @media only screen and (max-width: 768px) {

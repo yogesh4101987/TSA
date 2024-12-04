@@ -70,6 +70,7 @@
   background-color: #ECF2FB;
   padding: 1.6rem;
   border: 1px solid #B1CBF1;
+  margin-bottom: 1.6rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-content-info.typ-struct-pdp {

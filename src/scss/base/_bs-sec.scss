@@ -45,6 +45,11 @@
         font-size: 1.6rem;
         padding-bottom: 1.6rem;
     }
+    &.typ-tiscon-qunty{
+      @media only screen and (max-width: $media-mobile){
+        font-size: 2.4rem;
+      }
+    }
   }
   .sec-desc {
     font-size: 1.6rem;
@@ -450,6 +455,9 @@
   }
   &.typ-pro-featur-bg{
     text-align: center;
+    .sec-title{
+      text-align: left;
+    }
     .bg-pro{
       background-color: #F7B592;
       img{

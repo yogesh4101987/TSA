@@ -17,7 +17,7 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-coupon-code {
-    margin-top: 1.2rem;
+    margin: 0;
   }
 }
 .cp-coupon-code .code-info {

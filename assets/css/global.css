@@ -980,6 +980,11 @@ p {
     padding-bottom: 1.6rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .bs-sec .sec-sub-title.typ-tiscon-qunty {
+    font-size: 2.4rem;
+  }
+}
 .bs-sec .sec-desc {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -1422,6 +1427,9 @@ p {
 }
 .bs-sec.typ-pro-featur-bg {
   text-align: center;
+}
+.bs-sec.typ-pro-featur-bg .sec-title {
+  text-align: left;
 }
 .bs-sec.typ-pro-featur-bg .bg-pro {
   background-color: #F7B592;
@@ -2460,8 +2468,19 @@ p {
   padding: 0;
 }
 .bs-modal.typ-small {
-  max-width: 343px;
-  max-height: 240px;
+  max-width: 400px;
+  max-height: 328px;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-small {
+    max-width: 343px;
+    max-height: 240px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-small .modal-body {
+    padding: 2.4rem;
+  }
 }
 .bs-modal.typ-small .modal-dialog {
   border-radius: 12px;

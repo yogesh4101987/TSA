@@ -56,6 +56,7 @@ overflow: hidden;
     background-color: $clr-bg;
     padding: 1.6rem;
     border: 1px solid #B1CBF1;
+    margin-bottom: 1.6rem;
     @media only screen and (max-width: $media-mobile){
         flex-wrap: nowrap;
     }
