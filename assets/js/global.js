@@ -2,6 +2,11 @@ var winWidth = $(window).width();
 var winHeight = $(window).height();
 
 $(document).ready(function() {
+    console.log('jQuery is working!');
+
+    $('.model-open').on('click', function () {
+        console.log('Modal open clicked!');
+    });
     tabFunction();
     commonPopup();
     if ($('.js-bg').length != 0) {
@@ -23,21 +28,26 @@ $(window).on('scroll', function(event) {
 });
 
 function tabFunction() {
-    // Hide all tab contents except the active one
-    $('.tab-content').hide();
-    $('.tab-content.active').show();
-
-    // Tab click handler
-    $('.tab-item').click(function() {
-        // Remove 'active' class from all tab items and contents
-        $('.tab-item').removeClass('active');
-        $('.tab-content').removeClass('active').fadeOut(200);
-
-        // Add 'active' class to clicked tab and show corresponding content
-        const target = $(this).data('target');
-        $(this).addClass('active');
-        $(target).addClass('active').fadeIn(200);
-    });    
+    $('.cp-tab').each(function () {
+        const $tabContainer = $(this); // Reference to the current tab container
+    
+        // Hide all tab contents except the active one within the current tab container
+        $tabContainer.find('.tab-content').hide();
+        $tabContainer.find('.tab-content.active').show();
+    
+        // Tab click handler
+        $tabContainer.find('.tab-item').click(function () {
+            // Remove 'active' class from all tab items and contents within the current tab container
+            $tabContainer.find('.tab-item').removeClass('active');
+            $tabContainer.find('.tab-content').removeClass('active').fadeOut(200);
+    
+            // Add 'active' class to clicked tab and show corresponding content
+            const target = $(this).data('target');
+            $(this).addClass('active');
+            $tabContainer.find(target).addClass('active').fadeIn(200);
+        });
+    });
+     
 }
 
 function bgImg() {
@@ -53,23 +63,26 @@ function bgImg() {
 
 
 // modalPopup js start
-
 function commonPopup() {
-    $(document).on('click', '.model-open[data-toggle="modal"]', function() {
-        var abc = $(this).attr('data-modal-id');
-        abc = abc.replace("#", "");
-        // alert(abc);
-        $('.bs-modal#' + abc).addClass('modal-show show');
+    // Open modal
+   
+    $('.model-open').on('click', function (e) {
+        e.preventDefault();
+        const modalId = $(this).data('modal-id');
+        console.log('Modal ID:', modalId);
+        $(modalId).addClass('modal-show');
         $('.cm-overlay').addClass('active');
-        $('body').css('overflow', 'hidden');
     });
-    $(document).on('click', '.js-close, .cm-overlay', function() {
-        $('.bs-modal').removeClass('modal-show show');
-        $('body').css('overflow', 'auto');
+
+    // Close modal
+    $('.js-close, .cm-overlay').on('click',function() {
+        console.log('Close clicked');
+        $('.bs-modal').removeClass('modal-show');
         $('.cm-overlay').removeClass('active');
-        $('#youtubevideo').attr('src', '');
     });
 }
+
+
 // modalPopup js end
 
 
