@@ -944,6 +944,14 @@ p {
   display: block;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -1492,6 +1500,10 @@ p {
   .bs-sec.typ-durshine-category {
     margin: 4rem 0;
   }
+}
+.bs-sec.typ-size-quantity .size-btn {
+  min-width: 34.3rem;
+  margin-top: 1.6rem;
 }
 
 .btn {
