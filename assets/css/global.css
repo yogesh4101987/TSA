@@ -885,6 +885,10 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.cm-flex.typ-2 {
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
 
 .cm-box {
   border: 1px solid #dedede;
@@ -973,11 +977,11 @@ p {
   font-family: "Poppins Medium";
   color: #333333;
   font-size: 2rem;
+  padding-bottom: 1.6rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-sec .sec-sub-title {
     font-size: 1.6rem;
-    padding-bottom: 1.6rem;
   }
 }
 @media only screen and (max-width: 768px) {

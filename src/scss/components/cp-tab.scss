@@ -29,6 +29,13 @@
           text-transform: capitalize;
         }
       }
+      .desc{
+        font-size: 1.2rem;
+        color: $clr-base;
+        font-family: $font-regular;
+        padding-bottom: 2.4rem;
+       
+      }
       &:hover,
       &.active {
         .title {
@@ -263,6 +270,40 @@
       padding-bottom: 2.4rem;
       @media only screen and (max-width: $media-mobile) {
         font-size: 1.4rem;
+      }
+    }
+   
+  }
+  &.typ-select{
+    .tab-list{
+      .tab-item{
+        .title{
+          border: 1px solid #dedede;
+          font-family: $font-regular;
+          color: $clr-para;
+          border-radius: 12px;
+          padding: 1.5rem 1rem;
+          background: $clr-root;
+          width: 187px;
+          position: relative;
+          text-align: center;
+        }
+        .desc{
+          position: absolute;
+        }
+        &:hover,
+        &.active{
+          .title{
+            border: 2px solid $clr-primary;
+            background: $clr-bg;
+            color: $clr-primary;
+            font-family: $font-medium;
+          &::after{
+            width: 100%;
+          }
+           
+          }
+        }
       }
     }
   }

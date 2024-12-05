@@ -175,6 +175,10 @@ position: -webkit-sticky;
 .cm-flex{
   display: flex;
   justify-content: space-between;
+  &.typ-2{
+    justify-content:flex-start;
+    gap:0.8rem;
+  }
 }
 .cm-box{
   border: 1px solid #dedede;

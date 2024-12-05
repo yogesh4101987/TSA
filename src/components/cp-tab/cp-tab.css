@@ -37,6 +37,12 @@
 .cp-tab .tab-list .tab-item .title.typ-capital {
   text-transform: capitalize;
 }
+.cp-tab .tab-list .tab-item .desc {
+  font-size: 1.2rem;
+  color: #333333;
+  font-family: "Poppins Regular";
+  padding-bottom: 2.4rem;
+}
 .cp-tab .tab-list .tab-item:hover .title, .cp-tab .tab-list .tab-item.active .title {
   border: 1px solid #dedede;
   font-family: "Poppins Semibold";
@@ -258,6 +264,29 @@
   .cp-tab .category-content .desc {
     font-size: 1.4rem;
   }
+}
+.cp-tab.typ-select .tab-list .tab-item .title {
+  border: 1px solid #dedede;
+  font-family: "Poppins Regular";
+  color: #666666;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  background: #FFFFFF;
+  width: 187px;
+  position: relative;
+  text-align: center;
+}
+.cp-tab.typ-select .tab-list .tab-item .desc {
+  position: absolute;
+}
+.cp-tab.typ-select .tab-list .tab-item:hover .title, .cp-tab.typ-select .tab-list .tab-item.active .title {
+  border: 2px solid #3D7EDB;
+  background: #ECF2FB;
+  color: #3D7EDB;
+  font-family: "Poppins Medium";
+}
+.cp-tab.typ-select .tab-list .tab-item:hover .title::after, .cp-tab.typ-select .tab-list .tab-item.active .title::after {
+  width: 100%;
 }
 
 /*# sourceMappingURL=cp-tab.css.map */
