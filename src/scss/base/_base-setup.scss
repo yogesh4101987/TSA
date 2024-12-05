@@ -173,12 +173,14 @@ position: -webkit-sticky;
   text-align: right;
 }
 .cm-flex{
-  display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  gap: 1.2rem;
   &.typ-2{
     justify-content:flex-start;
     gap:0.8rem;
   }
+ 
 }
 .cm-box{
   border: 1px solid #dedede;
@@ -208,4 +210,25 @@ position: -webkit-sticky;
 }
 .text-center{
   text-align: center;
+}
+
+.list-sec{
+  display: flex;
+
+  .list-item{
+    width: 50%;
+    .bold-text{
+      font-family: $font-semiBold;
+    font-size: 2rem;
+    color: $clr-base;
+    display: block;
+    }
+    .normal-text{
+      font-family: $font-regular;
+    font-size: 1.4rem;
+    color: $clr-para;
+    display: block;
+    }
+    
+  }
 }

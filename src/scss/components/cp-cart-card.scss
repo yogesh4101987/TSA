@@ -149,5 +149,12 @@
             left: 150px;
             top:10px;
         }
+        .btn.delete-btn{
+            &::after{
+                width: 90%;
+                left: auto;
+                right: 0;
+            }
+        }
     }
 }

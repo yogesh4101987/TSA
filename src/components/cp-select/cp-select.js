@@ -2,11 +2,11 @@ var winWidth = $(window).width();
 
 $(document).ready(function () { 
     productSelectList(); // Initialize dropdown functionality
-    selectDropdown(); // Check radio count and toggle visibility
+    //selectDropdown(); // Check radio count and toggle visibility
 });
 
 $(window).resize(function () {  
-    selectDropdown(); // Only call selectDropdown on resize
+   //selectDropdown(); // Only call selectDropdown on resize
 });
 
 function productSelectList() {

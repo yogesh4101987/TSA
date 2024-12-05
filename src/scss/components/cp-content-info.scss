@@ -66,6 +66,7 @@ overflow: hidden;
         height: 6.4rem;
         overflow: hidden;
         border-radius: 12px;
+        background: $clr-root;
     }
     .cont-wrap{
         padding: 0 1.2rem;
@@ -107,5 +108,10 @@ overflow: hidden;
         gap: 1.6rem;
         justify-content: flex-end;
     }
+}
+.typ3-mobile{
+    @media only screen and (max-width: $media-sm) {
+        width: 50%;
+    } 
 }
 }

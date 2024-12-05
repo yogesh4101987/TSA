@@ -40,6 +40,9 @@
     width: 100%;
   }
 }
+.feature-wrapper.typ-durashine {
+  margin-top: 3rem;
+}
 
 /* colors */
 /*font family*/
@@ -141,7 +144,7 @@
   width: 30.8%;
 }
 .lyt-grid.typ-4 .grid-col:first-child {
-  width: 66.2%;
+  width: 70%;
 }
 @media only screen and (max-width: 768px) {
   .lyt-grid.typ-4 .grid-col:first-child {
@@ -149,7 +152,7 @@
   }
 }
 .lyt-grid.typ-4 .grid-col:last-child {
-  width: 30.3%;
+  width: 30%;
 }
 @media only screen and (max-width: 768px) {
   .lyt-grid.typ-4 .grid-col:last-child {

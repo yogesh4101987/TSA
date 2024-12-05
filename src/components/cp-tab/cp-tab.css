@@ -69,23 +69,31 @@
 .cp-tab .tab-container .tab-content .list-sec {
   display: flex;
 }
-.cp-tab .tab-container .tab-content .list-sec .list-item {
-  width: 50%;
-}
-.cp-tab .tab-container .tab-content .list-sec .list-item .bold-text {
-  font-family: "Poppins Semibold";
-  font-size: 2rem;
-  color: #333333;
-  display: block;
-}
-.cp-tab .tab-container .tab-content .list-sec .list-item .normal-text {
-  font-family: "Poppins Regular";
-  font-size: 1.4rem;
-  color: #666666;
-  display: block;
-}
 .cp-tab .tab-container .content {
   font-size: 3rem;
+}
+.cp-tab .tab-container .list-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cp-tab .tab-container .list-wrap .list-item {
+  width: 48%;
+}
+@media only screen and (max-width: 991px) {
+  .cp-tab .tab-container .list-wrap .list-item {
+    width: 100%;
+  }
+}
+.cp-tab .tab-container .list-wrap .list-item .img-wrap {
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 991px) {
+  .cp-tab .tab-container .list-wrap .list-item .img-wrap {
+    border: 0;
+  }
 }
 .cp-tab.typ-calculate .tab-list {
   padding: 0 2.4rem 0;
@@ -201,6 +209,9 @@
 }
 .cp-tab.typ-tisco-cat .tab-list .tab-item:hover .title::after, .cp-tab.typ-tisco-cat .tab-list .tab-item.active .title::after {
   width: 100%;
+}
+.cp-tab.typ-struct .tab-container {
+  padding-top: 6.4rem;
 }
 .cp-tab.typ-struct .tab-list .tab-item .title {
   padding: 1.6rem 4rem;

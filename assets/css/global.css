@@ -882,8 +882,9 @@ p {
 }
 
 .cm-flex {
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.2rem;
 }
 .cm-flex.typ-2 {
   justify-content: flex-start;
@@ -922,6 +923,25 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.list-sec {
+  display: flex;
+}
+.list-sec .list-item {
+  width: 50%;
+}
+.list-sec .list-item .bold-text {
+  font-family: "Poppins Semibold";
+  font-size: 2rem;
+  color: #333333;
+  display: block;
+}
+.list-sec .list-item .normal-text {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  color: #666666;
+  display: block;
 }
 
 /*transform*/
@@ -1463,6 +1483,14 @@ p {
 @media only screen and (max-width: 991px) {
   .bs-sec.typ-architect {
     margin-top: 4.4rem;
+  }
+}
+.bs-sec.typ-durshine-category {
+  margin: 6.4rem 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-durshine-category {
+    margin: 4rem 0;
   }
 }
 
@@ -2333,6 +2361,102 @@ p {
 .bs-radio.typ-structura-pdp .custom-radio {
   min-width: 10.9rem;
   padding: 1.2rem 0;
+}
+.bs-radio.typ2 {
+  margin-bottom: 0;
+}
+.bs-radio.typ2 .dot {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: #F1F3E6;
+  flex: 0 0 1.4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.bs-radio.typ2 .dot.c-blue {
+  background-color: #007ABD;
+}
+.bs-radio.typ2 .dot.n-blue {
+  background-color: #004A8E;
+}
+.bs-radio.typ2 .dot.b-green {
+  background-color: #038562;
+}
+.bs-radio.typ2 .dot.p-green {
+  background-color: #007654;
+}
+.bs-radio.typ2 .dot.p-red {
+  background-color: #BC1627;
+}
+.bs-radio.typ2 .dot.s-grey {
+  background-color: #46484E;
+}
+.bs-radio.typ2 .dot.c-red {
+  background-color: #851013;
+}
+.bs-radio.typ2 .dot.ca-red {
+  background-color: #A7352B;
+}
+.bs-radio.typ2 .ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+}
+.bs-radio.typ2 .custom-radio {
+  padding: 1.3rem 0.8rem;
+  flex-direction: row;
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  min-width: 10.9rem;
+  color: #333333;
+  gap: 0.8rem;
+  border: none;
+  position: relative;
+}
+.bs-radio.typ2 .custom-radio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #DEDEDE;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ2 .custom-radio {
+    min-width: 100%;
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+  }
+}
+.bs-radio.typ2 input[type=radio]:checked + .custom-radio {
+  border: none;
+  background: #fff;
+  color: #333333;
+  position: relative;
+}
+.bs-radio.typ2 input[type=radio]:checked + .custom-radio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 2px solid #3D7EDB;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ2 {
+    width: 31%;
+    white-space: nowrap;
+  }
 }
 
 .bs-modal {

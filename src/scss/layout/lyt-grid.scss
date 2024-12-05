@@ -59,13 +59,13 @@
   &.typ-4{
     .grid-col{
       &:first-child{
-        width: 66.2%;
+        width: 70%;
         @media only screen and (max-width: $media-mobile) {
           width: 100%;
         }
       }
       &:last-child{
-        width: 30.3%;
+        width: 30%;
         @media only screen and (max-width: $media-mobile) {
           width: 100%;
         }
