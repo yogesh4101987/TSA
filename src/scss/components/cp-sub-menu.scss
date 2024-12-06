@@ -1,0 +1,23 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-sub-menu{
+    .title{
+        font-size: 2rem;
+        color: $clr-base;
+        font-family: $font-semiBold;
+        border-bottom: 1px solid #dedede;
+        padding-bottom: 1.6rem;
+        margin-bottom: 2.4rem;
+    }
+.top-sec{
+    display: flex;
+    
+    .lhs{
+        width: 70%;
+    }
+    .rhs{
+        width: 30%;
+    }
+}
+}

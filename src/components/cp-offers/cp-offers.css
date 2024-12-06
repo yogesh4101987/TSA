@@ -76,5 +76,11 @@
   flex-direction: column;
   gap: 1.6rem;
 }
+.offers-list.typ-sub-menu {
+  flex-direction: row;
+}
+.offers-list.typ-sub-menu .offers-item {
+  width: 34.3rem;
+}
 
 /*# sourceMappingURL=cp-offers.css.map */

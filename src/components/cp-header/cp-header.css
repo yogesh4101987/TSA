@@ -40,11 +40,40 @@
 .cp-header .top-sec .lhs .logo-wrap {
   width: 120px;
   height: 56px;
-  margin-right: 3.2rem;
+  margin-right: 5rem;
+  position: relative;
+}
+.cp-header .top-sec .lhs .logo-wrap::after {
+  content: "";
+  position: absolute;
+  background: #dedede;
+  right: -12px;
+  top: 11px;
+  height: 37px;
+  width: 2px;
+}
+.cp-header .top-sec .lhs .location-wrap {
+  margin-right: 4rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-header .top-sec .lhs .location-wrap {
     width: 100%;
+    position: absolute;
+    bottom: -31px;
+    left: 0;
+    margin-right: 0;
+  }
+}
+.cp-header .top-sec .lhs .icon-edit {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .lhs .icon-edit {
+    font-size: 1.8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
   }
 }
 .cp-header .top-sec .lhs .map-icon {
@@ -66,6 +95,7 @@
   color: #3D7EDB;
   text-decoration: underline;
   padding-right: 2.4rem;
+  display: block;
 }
 @media only screen and (max-width: 768px) {
   .cp-header .top-sec .lhs .update-location {
@@ -76,8 +106,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
-  padding-left: 14rem;
+  padding-left: 3rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs {
@@ -112,30 +141,27 @@
 }
 .cp-header .top-sec .rhs .quick-link-list {
   display: flex;
-  padding-left: 13rem;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs .quick-link-list {
     position: absolute;
-    top: 27px;
+    top: -88px;
     right: 0;
   }
 }
 .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item {
   position: relative;
-  padding: 1.8rem 0;
+  padding: 0 1.2rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item {
     padding: 0;
   }
 }
-.cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:first-child {
-  display: none;
-}
 @media only screen and (max-width: 768px) {
-  .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:first-child {
-    display: block;
+  .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:nth-child(1), .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:nth-child(2), .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:nth-child(3) {
+    display: none;
   }
 }
 .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:last-child .quick-link-item::after {
@@ -145,22 +171,18 @@
   width: 1px;
   position: absolute;
   left: 0;
-  top: 17px;
+  top: 0;
 }
 @media only screen and (max-width: 768px) {
   .cp-header .top-sec .rhs .quick-link-list .quick-link-icon-item:last-child .quick-link-item::after {
-    top: 0;
+    top: -2px;
+    height: 3rem;
+    left: -8px;
   }
 }
 .cp-header .top-sec .rhs .quick-link-list .quick-link-item {
   font-size: 2.4rem;
   color: #999;
-  padding: 0 1.3rem;
-}
-@media only screen and (max-width: 768px) {
-  .cp-header .top-sec .rhs .quick-link-list .quick-link-item {
-    padding: 0 0.8rem;
-  }
 }
 .cp-header .bottom-sec {
   border-top: 1px solid #DEDEDE;
@@ -274,15 +296,15 @@
   display: none;
 }
 .cp-header .bottom-sec .nav-list .nav-item .sub-nav-menu {
-  display: none;
-  background-color: #3D7EDB;
-  width: 200px;
-  height: 200px;
+  display: block;
+  background-color: #FFFFFF;
   transition: all ease 0.3s;
   position: absolute;
   top: 44px;
   left: 0;
   z-index: 2;
+  width: 124rem;
+  padding: 2.4rem;
 }
 .cp-header .bottom-sec .nav-list .nav-item:hover .sub-nav-menu {
   display: block;

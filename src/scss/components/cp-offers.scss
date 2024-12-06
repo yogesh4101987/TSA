@@ -77,4 +77,10 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 1.6rem;
+    &.typ-sub-menu{
+        flex-direction: row;
+        .offers-item{
+            width: 34.3rem;
+        }
+    }
 }

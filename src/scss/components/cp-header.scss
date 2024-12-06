@@ -31,12 +31,37 @@
             .logo-wrap{
                 width: 120px;
                 height: 56px;
-                margin-right: 3.2rem;
+                margin-right: 5rem;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background: #dedede;
+                    right: -12px;
+                    top: 11px;
+                    height: 37px;
+                    width: 2px;
+                }
             }
             .location-wrap{
+                margin-right: 4rem;
                 @media only screen and (max-width: $media-mobile) {
                     width: 100%;
+                    position: absolute;
+                    bottom: -31px;
+                    left: 0;
+                    margin-right: 0;
 
+                }
+            }
+            .icon-edit{
+                display: none;
+                @media only screen and (max-width: $media-mobile) {
+                    font-size: 1.8rem;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display: block;
                 }
             }
             .map-icon{
@@ -56,6 +81,7 @@
                 color: $clr-primary;
                 text-decoration: underline;
                 padding-right: 2.4rem;
+                display: block;
                 @media only screen and (max-width: $media-mobile) {
                     display: none;
                 }
@@ -64,9 +90,8 @@
         .rhs{
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            align-items: center;
-            padding-left: 14rem;
+            align-items:center;
+            padding-left: 3rem;
             @media only screen and (max-width: $media-mobile) {
                position: absolute;
                bottom: -33px;
@@ -95,22 +120,23 @@
             }
             .quick-link-list{
                 display: flex;
-                padding-left: 13rem;
+                align-items: center;
                 @media only screen and (max-width: $media-mobile) {
                     position: absolute;
-                    top:27px;
+                    top:-88px;
                     right: 0;
                 }
                 .quick-link-icon-item{
                     position: relative;
-                    padding: 1.8rem 0;
+                    padding: 0 1.2rem;
                     @media only screen and (max-width: $media-mobile) {
                         padding: 0;
                     }
-                    &:first-child{
-                        display: none;
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3){
                         @media only screen and (max-width: $media-mobile) {
-                            display: block;
+                            display: none;
                         }
                     }
                     &:last-child{
@@ -122,9 +148,11 @@
                             width: 1px;
                             position: absolute;
                             left: 0;
-                            top:17px;
+                            top:0;
                             @media only screen and (max-width: $media-mobile) {
-                                top:0;
+                                top:-2px;
+                                height: 3rem;
+                                left: -8px;
                             }
                         }
                     }
@@ -133,10 +161,7 @@
                 .quick-link-item{
                     font-size:2.4rem;
                     color: #999;
-                    padding: 0 1.3rem;
-                    @media only screen and (max-width: $media-mobile) {
-                        padding: 0 0.8rem;
-                    }
+                    
                 }
             }
         }
@@ -262,15 +287,15 @@
                 }
             } 
             .sub-nav-menu{
-                display: none;
-                background-color: $clr-primary;
-                width: 200px;
-                height: 200px;
+                display: block;
+                background-color: $clr-root;
                 transition: all ease 0.3s;
                 position: absolute;
                 top: 44px;
                 left: 0;
                 z-index: 2;
+                width: 124rem;
+                padding: 2.4rem;
             }
             &:hover{
                 .sub-nav-menu{
