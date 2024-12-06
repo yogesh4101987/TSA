@@ -300,4 +300,23 @@
   width: 100%;
 }
 
+.cp-inside-tab .tab-list {
+  background: #ECF2FB;
+  border-radius: 12px;
+  padding: 0.8rem;
+  max-width: 40rem;
+}
+.cp-inside-tab .tab-list .tab-item.active .title {
+  background: #FFFFFF;
+  color: #3D7EDB;
+  border: 0;
+  font-family: "Poppins Medium";
+}
+.cp-inside-tab .tab-list .title {
+  border-radius: 8px;
+  background: transparent;
+  border: 0;
+  padding: 1rem 4.5rem;
+}
+
 /*# sourceMappingURL=cp-tab.css.map */

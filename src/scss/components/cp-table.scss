@@ -9,6 +9,7 @@
     border-collapse: unset;
     @media only screen and (max-width: $media-mobile){
         width: 100%;
+        
     }
     .list-item{
         font-size: 1.4rem;
@@ -42,6 +43,7 @@
         }
     }
     &.typ2{
+        border: 0;
         .list-item{
             &:nth-child(3n-1){
                 @media only screen and (max-width: $media-mobile){

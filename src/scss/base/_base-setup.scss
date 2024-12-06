@@ -177,6 +177,7 @@ position: -webkit-sticky;
   flex-wrap: wrap;
   gap: 1.2rem;
   &.typ-2{
+    display: flex;
     justify-content:flex-start;
     gap:0.8rem;
   }
@@ -238,4 +239,8 @@ position: -webkit-sticky;
 }
 .text-center{
   text-align: center;
+}
+
+.M-top16{
+  margin-top: 1.6rem;
 }

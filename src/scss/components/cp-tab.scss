@@ -315,3 +315,28 @@
     }
   }
 }
+
+.cp-inside-tab {
+  .tab-list{
+    background: $clr-bg;
+    border-radius: 12px;
+    padding: 0.8rem;
+    max-width: 40rem;
+    .tab-item{
+      &.active{
+        .title{
+          background: $clr-root;
+          color: $clr-primary;
+          border: 0;
+          font-family: $font-medium;
+        }
+      }
+    }
+    .title{
+      border-radius: 8px;
+      background: transparent;
+      border: 0;
+      padding: 1rem 4.5rem;
+    }
+  }
+}

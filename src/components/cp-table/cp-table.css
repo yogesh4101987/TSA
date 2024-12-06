@@ -42,6 +42,9 @@
 .cp-table.typ1 .list-item {
   width: 45%;
 }
+.cp-table.typ2 {
+  border: 0;
+}
 @media only screen and (max-width: 768px) {
   .cp-table.typ2 .list-item:nth-child(3n-1) {
     display: none;

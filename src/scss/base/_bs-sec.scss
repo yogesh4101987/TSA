@@ -49,6 +49,7 @@
     &.typ-tiscon-qunty{
       @media only screen and (max-width: $media-mobile){
         font-size: 2.4rem;
+        padding-left: 1rem;
       }
     }
   }
@@ -499,5 +500,14 @@
       min-width: 34.3rem;
       margin-top: 1.6rem;
     }
+  }
+  &.typ-customers{
+    margin-top: 6.4rem;
+    @media only screen and (max-width: $media-sm){
+      margin-top: 4.4rem;
+
+
+    }
+
   }
 }

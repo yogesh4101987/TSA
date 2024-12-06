@@ -887,6 +887,7 @@ p {
   gap: 1.2rem;
 }
 .cm-flex.typ-2 {
+  display: flex;
   justify-content: flex-start;
   gap: 0.8rem;
 }
@@ -952,6 +953,10 @@ p {
   text-align: center;
 }
 
+.M-top16 {
+  margin-top: 1.6rem;
+}
+
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -1015,6 +1020,7 @@ p {
 @media only screen and (max-width: 768px) {
   .bs-sec .sec-sub-title.typ-tiscon-qunty {
     font-size: 2.4rem;
+    padding-left: 1rem;
   }
 }
 .bs-sec .sec-desc {
@@ -1504,6 +1510,14 @@ p {
 .bs-sec.typ-size-quantity .size-btn {
   min-width: 34.3rem;
   margin-top: 1.6rem;
+}
+.bs-sec.typ-customers {
+  margin-top: 6.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-customers {
+    margin-top: 4.4rem;
+  }
 }
 
 .btn {
