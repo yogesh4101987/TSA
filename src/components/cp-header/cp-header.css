@@ -305,6 +305,7 @@
   z-index: 2;
   width: 124rem;
   padding: 2.4rem;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .cp-header .bottom-sec .nav-list .nav-item:hover .sub-nav-menu {
   display: block;
