@@ -287,22 +287,45 @@
                 }
             } 
             .sub-nav-menu{
-                display: block;
+                display: none;
                 background-color: $clr-root;
                 transition: all ease 0.3s;
-                position: absolute;
-                top: 44px;
-                left: 0;
+                position: fixed;
+                top: 34%;
+                left: 6%;
                 z-index: 2;
                 width: 124rem;
                 padding: 2.4rem;
                 box-shadow: 0px 8px 20px 0px #00000026;
+                border-radius: 24px;
+                @media only screen and (max-width: $media-laptop){
+                    top: 34%;
 
+                }
             }
             &:hover{
                 .sub-nav-menu{
                     display: block;
                 }
+                .arrow{
+                    display: block;
+                }
+            }
+            .arrow{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-right: 25px solid transparent;
+            border-left: 25px solid transparent;
+            border-bottom: 35px solid $clr-root;
+            border-top: 0;
+            display: none;
+            position: absolute;
+            left: 35%;
+            bottom: -38%;
+            @media only screen and (max-width: $media-laptop){
+                bottom: -30%;
+            }
             }
         }
         

@@ -1,0 +1,130 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.lyt-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid {
+    gap: 1.2rem;
+    flex-direction: column;
+  }
+}
+.lyt-grid.typ-col-2 .grid-col {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-col-2 .grid-col {
+    width: 100%;
+  }
+}
+.lyt-grid.typ-col-3 .grid-col {
+  width: 33%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-col-3 .grid-col {
+    width: 100%;
+  }
+}
+.lyt-grid.typ-explore {
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 4.8rem;
+  border-bottom: 1px solid #DEDEDE;
+  gap: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-explore {
+    flex-direction: row;
+    padding-bottom: 2.4rem;
+  }
+}
+.lyt-grid.typ-explore .grid-col {
+  width: 33%;
+}
+.lyt-grid.typ-explore .grid-col:last-child .cp-icon-details::after {
+  display: none;
+}
+.lyt-grid.typ-category {
+  gap: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-category {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+.lyt-grid.typ-category .grid-col {
+  width: 30.8%;
+}
+
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.lyt-plp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.9rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-plp {
+    gap: 1.2rem;
+  }
+}
+.lyt-plp .grid-col {
+  width: 23.7%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-plp .grid-col {
+    width: 100%;
+  }
+}
+.lyt-plp.typ-list .grid-col {
+  width: 100%;
+}
+
+.lyt-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-list {
+    display: none;
+  }
+}
+.lyt-list .lyt-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  background: #F3F4F6;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #999999;
+}
+.lyt-list .lyt-item .icon.icon-grid {
+  font-size: 2.2rem;
+}
+.lyt-list .lyt-item.active .icon {
+  background: #666666;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=plp.css.map */

@@ -1,0 +1,91 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-sub-menu .title {
+  font-size: 2rem;
+  color: #333333;
+  font-family: "Poppins Semibold";
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
+  width: 100%;
+}
+.cp-sub-menu .top-sec {
+  display: flex;
+  align-items: flex-start;
+}
+.cp-sub-menu .top-sec .lhs {
+  width: 70%;
+  position: relative;
+  display: block;
+}
+.cp-sub-menu .top-sec .lhs .cat-grid {
+  display: flex;
+}
+.cp-sub-menu .top-sec .lhs .cat-grid .col {
+  display: flex;
+}
+.cp-sub-menu .top-sec .lhs .cat-grid .col .img-wrap {
+  position: relative;
+  width: 194px;
+  height: 64px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cp-sub-menu .top-sec .lhs .cat-grid .col .img-wrap::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.cp-sub-menu .top-sec .lhs .cat-grid .col .img-wrap .col-title {
+  position: absolute;
+  left: 8px;
+  bottom: 30px;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  font-family: "Poppins Semibold";
+  line-height: 24px;
+  position: relative;
+  z-index: 1;
+}
+.cp-sub-menu .top-sec .rhs {
+  width: 30%;
+  display: block;
+}
+.cp-sub-menu .top-sec .rhs .menu-list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.4rem;
+}
+.cp-sub-menu .top-sec .rhs .menu-list .menu-item {
+  margin-bottom: 1.2rem;
+}
+.cp-sub-menu .top-sec .rhs .menu-list .menu-item .menu-link {
+  font-size: 1.4rem;
+  font-family: "Poppins Medium";
+  color: #333333;
+  position: relative;
+}
+.cp-sub-menu .top-sec .rhs .menu-list .menu-item.active .menu-link, .cp-sub-menu .top-sec .rhs .menu-list .menu-item:hover .menu-link {
+  background: #ECF2FB;
+  color: #3D7EDB;
+  padding: 0.6rem 1.2rem;
+}
+.cp-sub-menu .top-sec .rhs .menu-list .menu-item.active .menu-link::after, .cp-sub-menu .top-sec .rhs .menu-list .menu-item:hover .menu-link::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background: #3D7EDB;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+/*# sourceMappingURL=cp-sub-menu.css.map */
