@@ -57,19 +57,25 @@ function bgImg() {
 function commonPopup() {
     $(document).on('click', '.model-open[data-toggle="modal"]', function() {
         var abc = $(this).attr('data-modal-id');
+        var videoId = $(this).attr('data-video-id');
+
         abc = abc.replace("#", "");
         // alert(abc);
         $('.bs-modal#' + abc).addClass('modal-show show');
         $('.cm-overlay').addClass('active');
         $('body').css('overflow', 'hidden');
+         // Dynamically set YouTube video URL with autoplay
+    if (videoId) {
+        $('#youtube-iframe').attr('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+    }
     });
     $(document).on('click', '.js-close, .cm-overlay', function() {
         $('.bs-modal').removeClass('modal-show show');
         $('body').css('overflow', 'auto');
         $('.cm-overlay').removeClass('active');
-        $('#youtubevideo').attr('src', '');
+        var iframe = $('#youtube-iframe');
+    iframe.attr('src', ''); // Clear the src to stop the video
     });
 }
 // modalPopup js end
-
 

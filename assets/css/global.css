@@ -2297,11 +2297,27 @@ p {
   padding: 0;
 }
 @media only screen and (max-width: 768px) {
+  .bs-modal.type-testi-video .modal-dialog {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
   .bs-modal .bs-applicant-form .title {
     font-size: 2rem;
   }
   .bs-modal .bs-applicant-form .sub-title {
     font-size: 1.6rem;
+  }
+}
+.bs-modal .video-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal .video-wrap {
+    padding: 5rem 2.4rem;
   }
 }
 

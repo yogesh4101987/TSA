@@ -18,8 +18,18 @@ function stickyHeader(){
 
 function hamburgerMenu(){
   $(".open-menu").click(function () {
-    $(this).toggleClass("active");
-    $(".nav-list").toggleClass("active")
-    $("body").toggleClass("cm-overflow-hidden")
+    //$(this).toggleClass("active");
+    $(".nav-list").addClass("active")
+    $(".bottom-sec").addClass("active")
+
+    //$(".cm-overlay").toggleClass("active")
+    $("body").addClass("cm-overflow-hidden")
+
   });
+  $(".close").click(function () {
+    $(".nav-list").removeClass("active")
+    $(".bottom-sec").removeClass("active")
+    $("body").removeClass("cm-overflow-hidden")
+
+  })
 }
