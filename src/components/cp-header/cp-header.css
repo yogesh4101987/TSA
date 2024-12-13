@@ -29,7 +29,6 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-header .top-sec {
-    justify-content: flex-start;
     position: relative;
   }
 }
@@ -51,6 +50,11 @@
   top: 11px;
   height: 37px;
   width: 2px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .top-sec .lhs .logo-wrap::after {
+    display: none;
+  }
 }
 .cp-header .top-sec .lhs .location-wrap {
   margin-right: 4rem;
@@ -231,7 +235,11 @@
 }
 @media only screen and (max-width: 768px) {
   .cp-header .bottom-sec .nav-list .nav-item {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid #dedede;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .cp-header .bottom-sec .nav-list .nav-item .nav-icon {
@@ -332,6 +340,11 @@
   .cp-header .bottom-sec .nav-list .nav-item .sub-nav-menu {
     border-radius: 0;
     box-shadow: none;
+    padding: 0;
+    left: auto;
+    top: 0;
+    position: relative;
+    width: 100%;
   }
 }
 .cp-header .bottom-sec .nav-list .nav-item:hover .sub-nav-menu {
@@ -357,6 +370,14 @@
   .cp-header .bottom-sec .nav-list .nav-item .arrow {
     bottom: -30%;
     display: none;
+  }
+}
+.cp-header .bottom-sec .cp-search {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .cp-header .bottom-sec .cp-search {
+    display: block;
   }
 }
 @media only screen and (max-width: 768px) {

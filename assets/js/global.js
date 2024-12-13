@@ -52,30 +52,41 @@ function bgImg() {
 }
 
 
+
 // modalPopup js start
 
 function commonPopup() {
-    $(document).on('click', '.model-open[data-toggle="modal"]', function() {
-        var abc = $(this).attr('data-modal-id');
-        var videoId = $(this).attr('data-video-id');
+    // Handle modal open event
+    $(document).on('click', '.model-open[data-toggle="modal"]', function () {
+        const modalId = $(this).attr('data-modal-id'); // Get the modal ID
+        const videoId = $(this).attr('data-video-id'); // Get the video ID
+        
+        if (modalId) {
+            const modalSelector = `.bs-modal#${modalId.replace("#", "")}`;
+            
+            // Show the modal and overlay
+            $(modalSelector).addClass('modal-show show');
+            $('.cm-overlay').addClass('active');
+            $('body').css('overflow', 'hidden');
 
-        abc = abc.replace("#", "");
-        // alert(abc);
-        $('.bs-modal#' + abc).addClass('modal-show show');
-        $('.cm-overlay').addClass('active');
-        $('body').css('overflow', 'hidden');
-         // Dynamically set YouTube video URL with autoplay
-    if (videoId) {
-        $('#youtube-iframe').attr('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
-    }
+            // Dynamically set YouTube video URL with autoplay
+            if (videoId) {
+                $('#youtube-iframe').attr('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+            }
+        }
     });
-    $(document).on('click', '.js-close, .cm-overlay', function() {
+
+    // Handle modal close event
+    $(document).on('click', '.js-close, .cm-overlay', function () {
+        // Hide the modal and overlay
         $('.bs-modal').removeClass('modal-show show');
-        $('body').css('overflow', 'auto');
         $('.cm-overlay').removeClass('active');
-        var iframe = $('#youtube-iframe');
-    iframe.attr('src', ''); // Clear the src to stop the video
+        $('body').css('overflow', 'auto');
+
+        // Clear the YouTube iframe src to stop the video
+        $('#youtube-iframe').attr('src', '');
     });
 }
+
 // modalPopup js end
 

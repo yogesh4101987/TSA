@@ -79,6 +79,9 @@
     gap: 1.6rem;
     &.typ-sub-menu{
         flex-direction: row;
+        @media only screen and (max-width: $media-mobile) {
+            display: none;
+        }
         .offers-item{
             width: 34.3rem;
         }
