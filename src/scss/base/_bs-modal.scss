@@ -70,6 +70,20 @@
             top: 1.5rem;
             right: 1.5rem;
         }
+        &.video-close{
+            right: 0;
+            left: 0;
+            bottom: 18px;
+            font-size: 1.6rem;
+            text-decoration: underline;
+            font-family: $font-medium;
+            color: $clr-primary;
+            top:auto;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.2rem;
+                bottom: 5px;
+            }
+        }
     }
     &.type-md {
         .small-title {
@@ -120,10 +134,33 @@
     }
     &.type-testi-video{
         .modal-dialog{
+            width: 896px;
+            max-width: 98rem;
             @media only screen and (max-width: $media-mobile) {
-                height: auto;
+                height: auto; 
+                width: 375px;
+                max-width: 38rem;
+
             }
         }
+        .modal-body{
+            padding: 3rem 0 5rem;
+            @media only screen and (max-width: $media-mobile) {
+                padding-bottom: 3rem;
+            }
+        }
+        .video-wrap{
+            padding: 0;
+            iframe{
+                height: 477px;
+                width: 848px;
+                @media only screen and (max-width: $media-mobile) {
+                    height: 198px;
+                    width: 343px;
+                }
+            }
+        }
+       
     }
    
     .bs-applicant-form {

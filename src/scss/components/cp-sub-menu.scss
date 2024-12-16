@@ -10,11 +10,15 @@
         padding-bottom: 1.6rem;
         margin-bottom: 2.4rem;
         width: 100%;
+
         @media only screen and (max-width: $media-mobile) {
             font-size: 1.4rem;
             padding: 1.5rem 1rem;
             margin-bottom: 0;
             border: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
             
         }
         &.typ2{
@@ -27,6 +31,13 @@
                 background: $clr-bg;
             }
         }
+    }
+    .header-icon{
+        color: $clr-primary;
+        font-size: 2rem;
+        padding-right: 0.2rem;
+
+
     }
 .top-sec{
     display: flex;
@@ -43,7 +54,6 @@
         display: block; 
         @media only screen and (max-width: $media-mobile) {
             width: 100%;
-            margin: 3rem 0 0;
         }
         .cat-grid{
             display: flex;
@@ -163,8 +173,6 @@
             position: relative;
             left: 0;
             bottom: 0;
-            margin: 3rem 0 ;
-
         }
         .menu-list{
             display: flex;

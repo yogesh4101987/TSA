@@ -2247,6 +2247,22 @@ p {
     right: 1.5rem;
   }
 }
+.bs-modal .close-btn.video-close {
+  right: 0;
+  left: 0;
+  bottom: 18px;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  font-family: "Poppins Medium";
+  color: #3D7EDB;
+  top: auto;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal .close-btn.video-close {
+    font-size: 1.2rem;
+    bottom: 5px;
+  }
+}
 .bs-modal.type-md .small-title {
   font-size: 4rem;
 }
@@ -2296,9 +2312,36 @@ p {
 .bs-modal.type-prod-thumb .modal-body {
   padding: 0;
 }
+.bs-modal.type-testi-video .modal-dialog {
+  width: 896px;
+  max-width: 98rem;
+}
 @media only screen and (max-width: 768px) {
   .bs-modal.type-testi-video .modal-dialog {
     height: auto;
+    width: 375px;
+    max-width: 38rem;
+  }
+}
+.bs-modal.type-testi-video .modal-body {
+  padding: 3rem 0 5rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.type-testi-video .modal-body {
+    padding-bottom: 3rem;
+  }
+}
+.bs-modal.type-testi-video .video-wrap {
+  padding: 0;
+}
+.bs-modal.type-testi-video .video-wrap iframe {
+  height: 477px;
+  width: 848px;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.type-testi-video .video-wrap iframe {
+    height: 198px;
+    width: 343px;
   }
 }
 @media only screen and (max-width: 768px) {
