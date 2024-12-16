@@ -2324,11 +2324,11 @@ p {
   }
 }
 .bs-modal.type-testi-video .modal-body {
-  padding: 3rem 0 5rem;
+  padding: 2rem 0 5rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-modal.type-testi-video .modal-body {
-    padding-bottom: 3rem;
+    padding: 1.5rem 0 3rem;
   }
 }
 .bs-modal.type-testi-video .video-wrap {
