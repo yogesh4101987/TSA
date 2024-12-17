@@ -315,6 +315,14 @@
       }
     }
   }
+  &.typ-offer {
+    .tab-container {
+      @media only screen and (max-width: $media-mobile) {
+        padding-top: 0rem;
+      }
+ 
+    }
+  }
 }
 
 .cp-inside-tab {
@@ -340,4 +348,5 @@
       padding: 1rem 4.5rem;
     }
   }
+ 
 }

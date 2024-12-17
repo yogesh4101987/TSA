@@ -299,6 +299,11 @@
 .cp-tab.typ-select .tab-list .tab-item:hover .title::after, .cp-tab.typ-select .tab-list .tab-item.active .title::after {
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-offer .tab-container {
+    padding-top: 0rem;
+  }
+}
 
 .cp-inside-tab .tab-list {
   background: #ECF2FB;
