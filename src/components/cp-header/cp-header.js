@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // stickyHeader();
     hamburgerMenu();
+    mobileNavigation();
 });
 
 function stickyHeader(){
@@ -32,4 +33,12 @@ function hamburgerMenu(){
     $("body").removeClass("cm-overflow-hidden")
 
   })
+}
+
+function mobileNavigation(){
+  $(".js-inner-menu").click(function () {
+    //$(this).toggleClass("active");
+    $(".open-inner-menu").addClass("active")
+
+  });
 }

@@ -69,6 +69,15 @@
     flex-direction: column;
     gap: 1rem;
     display: none;
+    position: fixed;
+    top: 91px;
+    background: #fff;
+    height: 100%;
+    z-index: 2;
+    width: 100%;
+  }
+  .cp-sub-menu .top-sec .lhs .cat-grid.active {
+    display: block;
   }
 }
 .cp-sub-menu .top-sec .lhs .cat-grid .col {
@@ -135,6 +144,11 @@
   flex-direction: column;
   padding-top: 1.2rem;
 }
+@media only screen and (max-width: 768px) {
+  .cp-sub-menu .top-sec .lhs .cat-grid .col .cont-wrap {
+    display: none;
+  }
+}
 .cp-sub-menu .top-sec .lhs .cat-grid .col .cont-wrap .inner-menu-item {
   margin-bottom: 1rem;
 }
@@ -196,6 +210,13 @@
 @media only screen and (max-width: 768px) {
   .cp-sub-menu .top-sec .rhs .menu-list {
     display: none;
+    position: fixed;
+    background: #fff;
+    top: 99px;
+    z-index: 3;
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
   }
 }
 .cp-sub-menu .top-sec .rhs .menu-list .menu-item {
@@ -207,10 +228,23 @@
   color: #333333;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .cp-sub-menu .top-sec .rhs .menu-list .menu-item .menu-link {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}
 .cp-sub-menu .top-sec .rhs .menu-list .menu-item.active .menu-link, .cp-sub-menu .top-sec .rhs .menu-list .menu-item:hover .menu-link {
   background: #ECF2FB;
   color: #3D7EDB;
   padding: 0.6rem 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-sub-menu .top-sec .rhs .menu-list .menu-item.active .menu-link, .cp-sub-menu .top-sec .rhs .menu-list .menu-item:hover .menu-link {
+    background: none;
+    padding: 0;
+  }
 }
 .cp-sub-menu .top-sec .rhs .menu-list .menu-item.active .menu-link::after, .cp-sub-menu .top-sec .rhs .menu-list .menu-item:hover .menu-link::after {
   content: "";
@@ -220,6 +254,18 @@
   left: 0;
   top: 0;
   height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .cp-sub-menu .top-sec .rhs .menu-list .menu-item.active .menu-link::after, .cp-sub-menu .top-sec .rhs .menu-list .menu-item:hover .menu-link::after {
+    display: none;
+  }
+}
+.cp-sub-menu .top-sec .rhs .menu-list .brand-logo {
+  width: 64px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 0.8rem;
+  border: 1px solid #dedede;
 }
 .cp-sub-menu .top-sec .rhs.typ3 .img-wrap {
   width: 20.8rem;
