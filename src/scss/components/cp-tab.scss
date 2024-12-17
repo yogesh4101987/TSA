@@ -40,9 +40,10 @@
       &.active {
         .title {
           border: 1px solid #dedede;
-          font-family: $font-semiBold;
+          // font-family: $font-semiBold;
           color: $clr-root;
           background: $clr-primary;
+          text-shadow: #333333 0.9px 0 0.9px;
         }
       }
     }

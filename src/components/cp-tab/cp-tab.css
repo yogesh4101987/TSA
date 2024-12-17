@@ -45,9 +45,9 @@
 }
 .cp-tab .tab-list .tab-item:hover .title, .cp-tab .tab-list .tab-item.active .title {
   border: 1px solid #dedede;
-  font-family: "Poppins Semibold";
   color: #FFFFFF;
   background: #3D7EDB;
+  text-shadow: #333333 0.9px 0 0.9px;
 }
 .cp-tab .tab-container {
   padding-top: 2.4rem;
