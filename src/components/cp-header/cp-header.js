@@ -109,7 +109,6 @@ function navigationDropdown() {
       $(".menu-list.open-inner-menu").fadeOut(300).removeClass("active");
     });
 
- 
     $(document).on("click", ".js-category-menu", function (e) {
       e.preventDefault();
       var $categoryMenu = $(this).parent().find(".open-category-menu").first();
@@ -120,9 +119,13 @@ function navigationDropdown() {
       }
     });
 
+    // Close Navigation with "js-close-nav"
+    $(document).on("click", ".js-close-nav", function (e) {
+      e.stopPropagation(); // Prevent the click from bubbling up
+      $(".sub-nav-menu, .cat-grid, .menu-list, .offers-list").fadeOut(300).removeClass("active");
+    });
   }
 }
-
 
 
 
