@@ -98,6 +98,9 @@
                 width: 1px;
                 height: 100%;
                 background: #dedede;
+                @media only screen and (max-width: $media-mobile) {
+                    display: none;
+                }
             }
         }
        
@@ -336,11 +339,14 @@
                     position: relative;
                     width: 100%;
                     }
-            }
-            &:hover{
-                .sub-nav-menu{
+                &.active{
                     display: block;
                 }
+            }
+            &:hover{
+                // .sub-nav-menu{
+                //     display: block;
+                // }
                 .arrow{
                     display: block;
                 }
@@ -362,6 +368,7 @@
                 display: none;
             }
             }
+            
         }
         
         }
@@ -450,4 +457,16 @@
         }
         
     }
+}
+
+.sub-nav-menu,
+.open-inner-menu,
+.open-category-menu {
+    display: none; /* Hide by default */
+}
+
+.sub-nav-menu.active,
+.open-inner-menu.active,
+.open-category-menu.active {
+    display: block; /* Show when active */
 }
