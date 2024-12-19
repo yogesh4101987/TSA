@@ -83,6 +83,12 @@
                 font-size: 1.2rem;
                 bottom: 5px;
             }
+            .cmp-button__text{
+                font-size: 1.6rem;
+            text-decoration: underline;
+            font-family: $font-medium;
+            color: $clr-primary;
+            }
         }
     }
     &.type-md {
@@ -151,14 +157,17 @@
         }
         .video-wrap{
             padding: 0;
-            iframe{
-                height: 477px;
-                width: 848px;
-                @media only screen and (max-width: $media-mobile) {
-                    height: 198px;
-                    width: 343px;
+            .video-container{
+                iframe{
+                    height: 477px;
+                    width: 848px;
+                    @media only screen and (max-width: $media-mobile) {
+                        height: 198px;
+                        width: 343px;
+                    }
                 }
             }
+           
         }
        
     }
@@ -177,7 +186,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2.4rem;
+        padding-bottom: 4rem;
         @media only screen and (max-width: $media-mobile) {
             padding: 5rem 2.4rem;
         }

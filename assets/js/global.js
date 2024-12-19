@@ -56,37 +56,101 @@ function bgImg() {
 // modalPopup js start
 
 function commonPopup() {
-    // Handle modal open event
-    $(document).on('click', '.model-open[data-toggle="modal"]', function () {
-        const modalId = $(this).attr('data-modal-id'); // Get the modal ID
-        const videoId = $(this).attr('data-video-id'); // Get the video ID
-        
-        if (modalId) {
-            const modalSelector = `.bs-modal#${modalId.replace("#", "")}`;
-            
-            // Show the modal and overlay
-            $(modalSelector).addClass('modal-show show');
-            $('.cm-overlay').addClass('active');
-            $('body').css('overflow', 'hidden');
+    let modalCounter = 0; // This counter will create a unique ID for each modal
 
-            // Dynamically set YouTube video URL with autoplay
-            if (videoId) {
-                $('#youtube-iframe').attr('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+    // Handle modal open event for any button
+    $(document).on('click', '.model-open[data-toggle="modal"]', function () {
+        const videoUrl = $(this).attr('data-video-url'); // Get the video URL for the current modal
+        modalCounter++; // Increment counter to generate a new unique modal ID
+
+        const modalId = `testi-video-${modalCounter}`; // Generate dynamic modal ID
+        const videoContainerId = `video-embed-container-${modalCounter}`; // Generate dynamic video container ID
+
+        // Create modal dynamically
+        const modalHtml = `
+            <div id="${modalId}" tabindex="-1" role="dialog" class="bs-modal type-lg fade type-testi-video">
+                <div class="modal-dialog">
+                    <div class="modal-body">
+                        <div class="modal-content">
+                            <div class="video-wrap">
+                                <div class="video-container" id="${videoContainerId}">
+                                    <!-- The iframe will be dynamically inserted here -->
+                                </div>
+                                <button class="close-btn js-close video-close" type="button">Close Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Append the modal to the body or a specific container
+        $('body').append(modalHtml);
+
+        // Show the modal and overlay
+        $(`#${modalId}`).addClass('modal-show show');
+        $('.cm-overlay').addClass('active');
+        $('body').css('overflow', 'hidden');
+
+        // Dynamically set the video URL
+        if (videoUrl) {
+            const embedUrl = generateEmbedUrl(videoUrl);
+            if (embedUrl) {
+                // Determine the iframe width and height for desktop and mobile
+                let iframeWidth = '688'; // Default width for desktop
+                let iframeHeight = '550'; // Default height for desktop
+
+                // Check if the device is mobile using window width
+                if ($(window).width() <= 768) {
+                    iframeWidth = '100%'; // Full width for mobile
+                    iframeHeight = 'auto'; // Adjust height for mobile
+                }
+
+                // Insert the iframe for the specific modal with dynamic width and height
+                const iframeHtml = `<iframe src="${embedUrl}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen width="${iframeWidth}" height="${iframeHeight}"></iframe>`;
+                $(`#${videoContainerId}`).html(iframeHtml); // Insert iframe into the corresponding modal
+            } else {
+                console.error('Invalid video URL provided.');
             }
         }
     });
 
-    // Handle modal close event
-    $(document).on('click', '.js-close, .cm-overlay', function () {
-        // Hide the modal and overlay
-        $('.bs-modal').removeClass('modal-show show');
+    // Handle modal close event only when the close button is clicked
+    $(document).on('click', '.js-close', function () {
+        const modalId = $(this).closest('.bs-modal').attr('id'); // Get the modal ID
+        const videoContainerId = `video-embed-container-${modalId.split('-')[2]}`; // Get the video container ID
+
+        // Hide the modal and the overlay
+        $(`#${modalId}`).removeClass('modal-show show');
         $('.cm-overlay').removeClass('active');
         $('body').css('overflow', 'auto');
 
-        // Clear the YouTube iframe src to stop the video
-        $('#youtube-iframe').attr('src', '');
+        // Clear the iframe content to stop the video (without removing the image)
+        $(`#${videoContainerId}`).html(''); // Remove iframe from the modal
     });
+
+    // Function to generate embed URL based on video type (YouTube, Vimeo)
+    function generateEmbedUrl(url) {
+        console.log('Generating embed URL for:', url);
+
+        // YouTube video URL pattern
+        const youtubeMatch = url.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+        if (youtubeMatch) {
+            return `https://www.youtube.com/embed/${youtubeMatch[1]}?autoplay=1`;
+        }
+
+        // Vimeo video URL pattern
+        const vimeoMatch = url.match(/(?:https?:\/\/)?(?:www\.)?vimeo\.com\/(\d+)/);
+        if (vimeoMatch) {
+            return `https://player.vimeo.com/video/${vimeoMatch[1]}?autoplay=1`;
+        }
+
+        console.error('Unsupported video platform.');
+        return null; // Return null if URL doesn't match known platforms
+    }
 }
+
+
 
 // modalPopup js end
 

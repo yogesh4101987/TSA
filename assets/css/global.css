@@ -2263,6 +2263,12 @@ p {
     bottom: 5px;
   }
 }
+.bs-modal .close-btn.video-close .cmp-button__text {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  font-family: "Poppins Medium";
+  color: #3D7EDB;
+}
 .bs-modal.type-md .small-title {
   font-size: 4rem;
 }
@@ -2334,12 +2340,12 @@ p {
 .bs-modal.type-testi-video .video-wrap {
   padding: 0;
 }
-.bs-modal.type-testi-video .video-wrap iframe {
+.bs-modal.type-testi-video .video-wrap .video-container iframe {
   height: 477px;
   width: 848px;
 }
 @media only screen and (max-width: 768px) {
-  .bs-modal.type-testi-video .video-wrap iframe {
+  .bs-modal.type-testi-video .video-wrap .video-container iframe {
     height: 198px;
     width: 343px;
   }
@@ -2356,7 +2362,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.4rem;
+  padding-bottom: 4rem;
 }
 @media only screen and (max-width: 768px) {
   .bs-modal .video-wrap {
