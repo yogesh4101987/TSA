@@ -50,10 +50,19 @@
     background: #ECF2FB;
   }
 }
+.cp-sub-menu .inner-heading {
+  display: none;
+}
 .cp-sub-menu .header-icon {
   color: #3D7EDB;
   font-size: 2rem;
   padding-right: 0.2rem;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .cp-sub-menu .header-icon {
+    display: block;
+  }
 }
 .cp-sub-menu .inside-icon {
   transform: rotate(226deg);

@@ -46,11 +46,17 @@
             }
         }
     }
+    .inner-heading{
+        display: none;
+    }
     .header-icon{
         color: $clr-primary;
         font-size: 2rem;
         padding-right: 0.2rem;
-
+        display: none;
+        @media only screen and (max-width: $media-mobile) {
+            display: block;
+        }
 
     }
     .inside-icon{

@@ -145,12 +145,17 @@ function commonPopup() {
             return `https://player.vimeo.com/video/${vimeoMatch[1]}?autoplay=1`;
         }
 
+    // Local video file pattern
+    if (url.endsWith('.mp4') || url.endsWith('.webm') || url.endsWith('.ogg')) {
+        return `<video controls autoplay width="100%">
+                    <source src="${url}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>`;
+    }   
         console.error('Unsupported video platform.');
         return null; // Return null if URL doesn't match known platforms
     }
 }
-
-
 
 // modalPopup js end
 
