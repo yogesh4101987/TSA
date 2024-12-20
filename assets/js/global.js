@@ -156,6 +156,9 @@ function commonPopup() {
         return null; // Return null if URL doesn't match known platforms
     }
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 // modalPopup js end
 
