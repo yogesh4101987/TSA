@@ -7,6 +7,7 @@ $(document).ready(function() {
     if ($('.js-bg').length != 0) {
         bgImg();
     };
+    youtubePopup();
 });
 
 
@@ -51,15 +52,36 @@ function bgImg() {
     })
 }
 
-
-
 // modalPopup js start
-
 function commonPopup() {
+    // Open modal
+   
+    $('.model-open').on('click', function (e) {
+        e.preventDefault();
+        const modalId = $(this).data('modal-id');
+        console.log('Modal ID:', modalId);
+        $(modalId).addClass('modal-show');
+        $('.cm-overlay').addClass('active');
+    });
+
+    // Close modal
+    $('.js-close, .cm-overlay').on('click',function() {
+        console.log('Close clicked');
+        $('.bs-modal').removeClass('modal-show');
+        $('.cm-overlay').removeClass('active');
+    });
+}
+
+
+// modalPopup js end
+
+// youtubePopup js start
+
+function youtubePopup() {
     let modalCounter = 0; // This counter will create a unique ID for each modal
 
     // Handle modal open event for any button
-    $(document).on('click', '.model-open[data-toggle="modal"]', function () {
+    $(document).on('click', '.model-youtube-open[data-toggle="modal"]', function () {
         const videoUrl = $(this).attr('data-video-url'); // Get the video URL for the current modal
         modalCounter++; // Increment counter to generate a new unique modal ID
 
@@ -156,9 +178,6 @@ function commonPopup() {
         return null; // Return null if URL doesn't match known platforms
     }
 }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
-// modalPopup js end
+// youtubePopup js end
 
