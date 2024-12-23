@@ -73,5 +73,9 @@
   left: auto;
   text-align: right;
 }
+.cp-agrico-banner.typ-pravesh .title {
+  max-width: 62rem;
+  top: 10rem;
+}
 
 /*# sourceMappingURL=cp-agrico-banner.css.map */

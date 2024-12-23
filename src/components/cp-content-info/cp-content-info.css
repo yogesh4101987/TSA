@@ -123,6 +123,27 @@
   gap: 1.6rem;
   justify-content: flex-end;
 }
+.cp-content-info.typ-paresh-pdp {
+  background-color: #F3F4F6;
+  padding: 7rem 1.6rem;
+  border: 0;
+}
+@media only screen and (max-width: 991px) {
+  .cp-content-info.typ-paresh-pdp {
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 0;
+  }
+}
+.cp-content-info.typ-paresh-pdp .img-wrap {
+  width: 54%;
+  margin: auto;
+}
+@media only screen and (max-width: 991px) {
+  .cp-content-info.typ-paresh-pdp .img-wrap {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 991px) {
   .cp-content-info .typ3-mobile {
     width: 50%;

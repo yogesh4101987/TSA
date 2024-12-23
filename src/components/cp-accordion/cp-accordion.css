@@ -95,5 +95,57 @@
   border-bottom: 1px solid #DEDEDE;
   border-top: 1px solid #DEDEDE;
 }
+.cp-accordion .acc-item-card .acc-head-card {
+  position: relative;
+  border-bottom: 1px solid #DEDEDE;
+  padding-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion .acc-item-card .acc-head-card {
+    padding: 1.2rem 1.2rem;
+  }
+}
+.cp-accordion .acc-item-card .acc-head-card:before {
+  content: none;
+  font-family: "icomoon";
+  position: absolute;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  color: #333333;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+@media only screen and (max-width: 991px) {
+  .cp-accordion .acc-item-card .acc-head-card:before {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    content: "\e90e";
+  }
+}
+.cp-accordion .acc-item-card.active .acc-head-card:before {
+  content: none;
+}
+@media only screen and (max-width: 991px) {
+  .cp-accordion .acc-item-card.active .acc-head-card:before {
+    content: "\e92a";
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion .acc-cont-card {
+    padding: 0 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-accordion .typ-pravesh-card {
+    padding: 0;
+  }
+}
+.cp-accordion .typ-pravesh-card .sec-sub-title {
+  padding-bottom: 0;
+}
 
 /*# sourceMappingURL=cp-accordion.css.map */

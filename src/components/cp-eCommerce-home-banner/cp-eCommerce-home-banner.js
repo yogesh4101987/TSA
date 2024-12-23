@@ -2,6 +2,7 @@ let swiper;
 
 $(document).ready(function () {
     handleResponsiveFeatures();
+    category()
 });
 
 $(window).resize(function () {
@@ -55,6 +56,31 @@ function bannerFeatureDesktop() {
             },
         });
     }
+}
+
+function category() {
+    swiper = new Swiper(".js-category", {
+        slidesPerView: 6,
+        spaceBetween: 20,
+        loop: false,
+        navigation: {
+            nextEl: ".swiper-button-next.feature-next",
+            prevEl: ".swiper-button-prev.feature-prev",
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            1920: {
+                slidesPerView: 6,
+            },
+            1028: {
+                slidesPerView: 6,
+            },
+            375: {
+                slidesPerView: 2.3,
+            }
+        }
+    });
+
 }
 
 function destroySwiper() {

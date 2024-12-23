@@ -47,6 +47,31 @@
   min-width: 34.3rem;
   margin-top: 4rem;
 }
+.feature-wrapper.typ-warranty {
+  display: flex;
+  border: 1px solid #DEDEDE;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .feature-wrapper.typ-warranty {
+    display: block;
+  }
+}
+.feature-wrapper.typ-warranty .warranty-wrap {
+  background-color: #EDEDED;
+  padding: 2rem 4.4rem;
+  flex: 0 0 auto;
+  height: 100%;
+}
+.feature-wrapper.typ-warranty.typ-warranty-plp {
+  margin-top: 0;
+}
 
 /* colors */
 /*font family*/
@@ -179,6 +204,24 @@
 }
 .lyt-grid.typ-structure {
   justify-content: flex-start;
+}
+.lyt-grid.typ-6 .grid-col:first-child {
+  width: 40%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-6 .grid-col:first-child {
+    width: 100%;
+    padding: 0 1.6rem 1.6rem;
+    background-color: #FFFBF2;
+  }
+}
+.lyt-grid.typ-6 .grid-col:last-child {
+  width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-6 .grid-col:last-child {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=pdp.css.map */
