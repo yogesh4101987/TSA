@@ -208,8 +208,20 @@
 .lyt-grid.typ-6 .grid-col:first-child {
   width: 40%;
 }
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-6 .grid-col:first-child {
+    width: 100%;
+    padding: 0 1.6rem 1.6rem;
+    background-color: #FFFBF2;
+  }
+}
 .lyt-grid.typ-6 .grid-col:last-child {
   width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-grid.typ-6 .grid-col:last-child {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=pdp.css.map */

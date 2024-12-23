@@ -836,6 +836,24 @@ p {
   }
 }
 
+.table-cell-mobile {
+  display: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .table-cell-mobile {
+    display: table-cell !important;
+  }
+}
+
+.inline-mobile {
+  display: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .inline-mobile {
+    display: inline !important;
+  }
+}
+
 .cm-desktop {
   display: block !important;
 }
@@ -843,6 +861,10 @@ p {
   .cm-desktop {
     display: none !important;
   }
+}
+
+.d-none {
+  display: none !important;
 }
 
 .cm-bold {
@@ -951,6 +973,10 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .M-top16 {
@@ -1609,12 +1635,23 @@ p {
 .bs-sec.mt-2 {
   margin-top: 2.4rem;
 }
+@media only screen and (max-width: 991px) {
+  .bs-sec.mt-2 {
+    margin-top: 0;
+  }
+}
 .bs-sec.mb-2 {
   margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.mb-2 {
+    margin-bottom: 0;
+  }
 }
 .bs-sec.typ-pravesh-pdp {
   position: relative;
   padding-top: 0;
+  padding-bottom: 0;
 }
 .bs-sec.typ-pravesh-pdp::before {
   content: "";
@@ -1627,12 +1664,25 @@ p {
   background-color: #FFFBF2;
   z-index: -1;
 }
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp::before {
+    content: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp .container {
+    padding: 0;
+  }
+}
 .bs-sec.typ-pravesh-pdp .sec-head .sec-title {
   font-size: 2rem;
   line-height: 24px;
 }
 .bs-sec.request-recieve {
   background-color: #FFFBF2;
+}
+.bs-sec.typ-windows-pro .sec-title {
+  font-size: 2rem;
 }
 
 .btn {
@@ -2230,6 +2280,16 @@ p {
   overflow: hidden;
   margin-right: 1.2rem;
 }
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-pravesh-stories {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-pravesh-stories .swiper-slide {
+    margin: auto;
+  }
+}
 .bs-swiper.typ-patch-banner {
   display: none;
 }
@@ -2459,6 +2519,9 @@ p {
     width: 16rem;
     height: 16rem;
   }
+}
+.bs-swiper.right-space {
+  margin-right: -2rem;
 }
 
 .bs-radio {

@@ -2,60 +2,133 @@
 @import "../config/mixin";
 
 
-.cp-table{
+.cp-table {
     border: 1px solid #dedede;
     position: relative;
     border-radius: 12px;
     border-collapse: unset;
-    @media only screen and (max-width: $media-mobile){
+
+    @media only screen and (max-width: $media-mobile) {
         width: 100%;
-        
+
     }
-    .list-item{
+
+    .list-item {
         font-size: 1.4rem;
         font-family: $font-medium;
         color: $clr-base;
         padding: 1rem 1.6rem;
         border-bottom: 1px solid #dedede;
-        @media only screen and (max-width: $media-mobile){
-            width: 50%;
-        } 
-        &.no-border{
-            border: 0;
-        } 
-     
-    &.list-head{
-        background: #F3F4F6;
-        font-family: $font-semiBold;
 
+        @media only screen and (max-width: $media-mobile) {
+            width: 50%;
+        }
+
+        &.no-border {
+            border: 0;
+        }
+
+        &.list-head {
+            background: #F3F4F6;
+            font-family: $font-semiBold;
+
+        }
     }
-    }
-    
-    .small-text{
+
+    .small-text {
         font-size: 1.2rem;
         font-family: $font-regular;
         color: $clr-para;
     }
-    
-    &.typ1{
-        .list-item{
+
+    &.typ1 {
+        .list-item {
             width: 45%;
         }
     }
-    &.typ2{
+
+    &.typ2 {
         border: 0;
-        .list-item{
-            &:nth-child(3n-1){
-                @media only screen and (max-width: $media-mobile){
+
+        .list-item {
+            &:nth-child(3n-1) {
+                @media only screen and (max-width: $media-mobile) {
                     display: none;
-                }  
+                }
             }
-            &:nth-child(3n){
+
+            &:nth-child(3n) {
                 width: 23%;
-                @media only screen and (max-width: $media-mobile){
+
+                @media only screen and (max-width: $media-mobile) {
                     width: 50%;
-                }  
+                }
             }
         }
+
+        .text-typ-1 {
+            font-family: $font-semiBold;
+
+            .grey-text {
+                @media only screen and (max-width: $media-mobile) {
+                    color: $clr-para;
+                    font-family: $font-regular;
+                }
+            }
+
+        }
+
+        .text-typ-2 {
+            font-size: 2rem;
+            font-family: $font-semiBold;
+
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &.summary {
+
+        .list-item {
+            &.border-b-0 {
+                @media only screen and (max-width: $media-mobile) {
+                    border-bottom: 0;
+                }
+            }
+
+            &.list-head {
+                @media only screen and (max-width: $media-mobile) {
+                    font-family: $font-medium;
+                }
+            }
+        }
+    }
+
+    &.typ-pravesh-pdp {
+        width: 100%;
+
+        .list-item {
+            border: none;
+            padding: 0.8rem 0;
+
+            &:nth-child(3n-1) {
+                @media only screen and (max-width: $media-mobile) {
+                    display: table-cell;
+                }
+            }
+        }
+
+        .small-text {
+            display: block;
+        }
+
+        .text {
+            display: block;
+        }
+    }
+
+    &.w-100 {
+        width: 100%;
     }
 }

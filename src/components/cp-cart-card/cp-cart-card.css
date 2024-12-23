@@ -126,5 +126,52 @@
   left: auto;
   right: 0;
 }
+@media only screen and (max-width: 768px) {
+  .cp-cart-card.typ-pravesh-card {
+    margin-left: 0;
+    border-bottom: 0.8rem #F3F4F6 solid;
+    border-radius: 0;
+  }
+}
+.cp-cart-card.typ-pravesh-card.mr-t {
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-cart-card.typ-pravesh-card.mr-t {
+    margin-top: 0;
+  }
+}
+.cp-cart-card.typ-pravesh-card .sec-sub-title {
+  font-family: "Poppins Semibold";
+}
+.cp-cart-card.typ-pravesh-card .border-b {
+  border-bottom: 1px solid #DEDEDE;
+}
+@media only screen and (max-width: 768px) {
+  .cp-cart-card.typ-pravesh {
+    padding: 1.6rem 1.2rem;
+    display: flex;
+    gap: 1.6rem;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-cart-card.typ-pravesh .sec-head {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-cart-card.typ-pravesh .sec-desc {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-cart-card.typ-pravesh .sec-cont {
+    flex: 0 0 60px;
+  }
+}
+.cp-cart-card.typ-pravesh .action-wrap .icon.active {
+  color: #D2042D;
+}
 
 /*# sourceMappingURL=cp-cart-card.css.map */

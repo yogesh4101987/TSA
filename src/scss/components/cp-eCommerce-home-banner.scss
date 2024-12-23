@@ -28,7 +28,9 @@
         position: relative;
     }
 
-    .feature {
+    .feature,
+    .feature-type-2
+     {
         display: flex;
         gap: 2rem;
 
@@ -544,11 +546,6 @@
         width: 15%;
         order: initial !important;
         @media only screen and (max-width: $media-mobile) {  width: 48%;}
-        &:nth-child(1){
-            @media only screen and (max-width: $media-mobile) {
-                width: 15.2rem !important;
-            }
-        }
         &:nth-child(3) {
             .feature-card {
                 background-color: #ECF2FB;

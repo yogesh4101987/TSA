@@ -1,13 +1,8 @@
 let swiper;
 
-document.addEventListener("DOMContentLoaded", () => {
-    initializeCategorySlider();
-});
-
-
 $(document).ready(function () {
     handleResponsiveFeatures();
-
+    category()
 });
 
 $(window).resize(function () {
@@ -63,50 +58,34 @@ function bannerFeatureDesktop() {
     }
 }
 
-
-function initializeCategorySlider() {
-    // Check if Swiper container exists
-    const swiperContainer = document.querySelector(".js-category-banner");
-    if (!swiperContainer) {
-        console.error("Swiper container (.js-category-banner) not found!");
-        return;
-    }
-
-    // Validate Swiper wrapper
-    const wrapper = swiperContainer.querySelector(".swiper-wrapper");
-    if (!wrapper) {
-        console.error("Swiper wrapper (.swiper-wrapper) not found inside .js-category-banner!");
-        return;
-    }
-
-    // Validate Swiper slides
-    const slides = wrapper.querySelectorAll(".swiper-slide");
-    if (slides.length === 0) {
-        console.error("No slides (.swiper-slide) found inside .swiper-wrapper!");
-        return;
-    }
-
-    // Initialize Swiper
-    try {
-        swiper = new Swiper(".js-category-banner", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: false,
-            navigation: {
-                nextEl: ".swiper-button-next.feature-next",
-                prevEl: ".swiper-button-prev.feature-prev",
+function category() {
+    swiper = new Swiper(".js-category", {
+        slidesPerView: 6,
+        spaceBetween: 20,
+        loop: false,
+        navigation: {
+            nextEl: ".swiper-button-next.feature-next",
+            prevEl: ".swiper-button-prev.feature-prev",
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            1920: {
+                slidesPerView: 6,
             },
-        });
-        console.log("Swiper initialized successfully!");
-    } catch (error) {
-        console.error("Error initializing Swiper:", error);
-    }
+            1028: {
+                slidesPerView: 6,
+            },
+            375: {
+                slidesPerView: 2.3,
+            }
+        }
+    });
+
 }
 
 function destroySwiper() {
     if (swiper) {
         swiper.destroy(true, true);
         swiper = undefined;
-        console.log("Swiper destroyed.");
     }
 }

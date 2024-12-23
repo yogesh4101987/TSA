@@ -171,6 +171,30 @@
     height: 16rem;
   }
 }
+.cp-blog.typ-window .img-wrap {
+  height: 18.4rem;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 1.6rem 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-blog.typ-window .img-wrap {
+    height: 11.4rem;
+  }
+}
+.cp-blog.typ-window .content-wrap .c-title {
+  font-size: 1.6rem;
+  color: #666666;
+  margin-bottom: 0;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 768px) {
+  .cp-blog.typ-window .content-wrap .c-title {
+    font-size: 1.2rem;
+  }
+}
 
 .blog-btn-wrap {
   margin-top: 3.2rem;
