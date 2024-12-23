@@ -1,0 +1,39 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.rebar-size-container{
+    display: flex;
+}
+.cp-size-wrap{display: flex;  gap: 2rem;}
+.cp-size-description {
+    border: 1px solid #FFE399;
+    background-color: #FFFBF2;
+    width: 33.33%;
+    @include border-radius(12px);
+
+    .size-header {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        font-size: 1.6rem;
+        font-family: $font-medium;
+        border-bottom: 1px solid #FFE399;
+        color: $clr-black;
+        padding: 1.2rem 1.6rem;
+
+        .icon {
+            width: 4rem;
+            height: 4rem;
+            background-color: #FFB800;
+            @include border-radius(50%);
+            padding: 0.8rem;
+            font-size: 2.4rem;
+
+        }
+    }
+
+    .size-details {
+        padding: 1.6rem 1.6rem;
+
+    }
+}
