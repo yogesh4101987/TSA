@@ -15,6 +15,7 @@
     @media only screen and (max-width: $media-mobile) {
       width: 100%;
     }
+    &.typ100{  width: 100%;}
   }
   &.typ-list{
     .grid-col {

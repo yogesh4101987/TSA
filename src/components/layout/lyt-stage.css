@@ -36,5 +36,13 @@
     width: 100%;
   }
 }
+.lyt-stage.typ-pravesh .stage-item {
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .lyt-stage.typ-pravesh .stage-item {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=lyt-stage.css.map */

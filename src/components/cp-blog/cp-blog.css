@@ -163,6 +163,14 @@
 .cp-blog.typ-durashine .content-wrap {
   height: 89px;
 }
+.cp-blog.typ-inspired .img-wrap {
+  height: 29.7rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-blog.typ-inspired .img-wrap {
+    height: 16rem;
+  }
+}
 
 .blog-btn-wrap {
   margin-top: 3.2rem;

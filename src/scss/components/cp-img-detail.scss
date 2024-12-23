@@ -1,48 +1,54 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-img-detail{
+.cp-img-detail {
     @include border-radius(1.6rem);
     border: 1px solid $clr-border;
     background: $clr-root;
     overflow: hidden;
+
     @media only screen and (max-width: $media-mobile) {
         @include border-radius(1.2rem);
     }
 
-    .img-wrap{
+    .img-wrap {
         @include border-radius(1.6rem);
         height: 16.8rem;
         overflow: hidden;
-        display: block;    
+        display: block;
+
         img {
             height: 100%;
             @include border-radius(1.6rem);
             object-fit: cover;
         }
+
         @media only screen and (max-width: $media-mobile) {
             height: 14.4rem;
             @include border-radius(1.2rem);
-            img{
+
+            img {
                 @include border-radius(1.2rem);
             }
         }
     }
 
-    .detail-wrap{
+    .detail-wrap {
         padding: 2.4rem;
+
         @media only screen and (max-width: $media-mobile) {
             padding: 1.6rem;
         }
 
-        .detail-tile{
+        .detail-tile {
             font-family: $font-semiBold;
             font-size: 1.6rem;
             line-height: 2.4rem;
             color: $clr-base;
             margin-bottom: 0.8rem;
         }
-        .detail-desc{
+
+        .detail-desc {
             font-family: $font-regular;
             font-size: 1.6rem;
             line-height: 2.4rem;
@@ -54,73 +60,148 @@
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
-        .btn.btn-link{
+
+        .btn.btn-link {
             line-height: 2.2rem;
         }
     }
+
     &.type-structura {
         height: 100%;
+
         .detail-wrap {
             height: 100%;
             padding: 1.6rem;
+
             .detail-tile {
                 display: flex;
                 align-items: start;
                 gap: 1.2rem;
                 margin-bottom: 0;
- 
+
                 .number {
                     font-size: 4rem;
                     font-family: $font-semiBold;
                     margin-top: 7px;
- 
+
                     @media only screen and (max-width: $media-mobile) {
                         font-size: 3.6rem;
                     }
                 }
- 
+
                 .description {
                     font-family: $font-medium;
                     font-size: 1.4rem;
                     color: $clr-base;
                 }
             }
- 
+
             &.blue-bg {
                 background-color: #ECF2FB;
- 
+
                 .number {
                     color: #8BB2E9;
                 }
             }
- 
+
             &.pink-bg {
                 background-color: #FAE6EA;
- 
+
                 .number {
                     color: #E46881;
                 }
             }
- 
+
             &.yellow-bg {
                 background-color: #FFF8E5;
- 
+
                 .number {
                     color: #FFD466;
                 }
             }
-        }
- 
-        .img-wrap {
-            border-bottom-left-radius:0;
-            border-bottom-right-radius:0;
- 
-            img {
-                border-bottom-left-radius:0;
-                border-bottom-right-radius:0;
+
+            &.green-bg {
+                background-color: #E5F6EC;
+
+                .number {
+                    color: #66C88D;
+
+                }
             }
         }
- 
- 
+
+        .img-wrap {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+            img {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+
+
+    }
+
+    &.typ-pravesh {
+        border: none;
+        .detail-wrap {
+            @media only screen and (max-width: $media-mobile) { padding: 0;}
+            .detail-tile {
+                display: block;
+
+                @media only screen and (max-width: $media-mobile) {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    height: 85px;
+                    gap:0;
+                    justify-content: center;
+                }
+
+                .title {
+                    margin-top: 0.8rem;
+                    margin-bottom: 0.4rem;
+                    display: block;
+                    color: $clr-base ;
+                    font-size: 1.6rem;
+                    font-family: $font-semiBold;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        width: calc(94% - 6.4rem);
+                        margin: 0;
+                    }
+                }
+
+                .number {
+                    display: block;
+                    border-bottom: 2px solid #FFFFFF;
+                    padding-bottom: 0.4rem;
+                    line-height: 5.2rem;
+                 
+
+                    @media only screen and (max-width: $media-mobile) {
+                        flex-basis: 100%;
+                        border-right: 2px solid #FFFFFF;
+                        border-bottom: none;
+                        line-height: normal;
+                        width: 6.4rem;
+                        padding: 1rem 1rem;
+                        margin: 0;
+                        margin-right: 1rem;
+
+                    }
+                }
+
+                .description {
+                    color: $clr-para;
+                    font-family: $font-regular;
+
+                    @media only screen and (max-width: $media-mobile) {
+                        width: calc(94% - 6.4rem);
+                    }
+                }
+            }
+        }
     }
 }

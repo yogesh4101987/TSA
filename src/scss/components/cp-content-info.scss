@@ -109,6 +109,12 @@ overflow: hidden;
         justify-content: flex-end;
     }
 }
+&.typ-paresh-pdp{
+    background-color: #F3F4F6;
+    padding: 7rem 1.6rem;
+    border: 0;
+    .img-wrap { width: 60%; margin: auto;}
+}
 .typ3-mobile{
     @media only screen and (max-width: $media-sm) {
         width: 50%;

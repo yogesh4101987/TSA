@@ -1,0 +1,38 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-request-recieve {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cp-request-recieve .icon {
+  width: 10rem;
+  height: 10rem;
+  font-size: 10rem;
+  color: #00A441;
+  margin-bottom: 0.4rem;
+}
+.cp-request-recieve .title {
+  color: #333333;
+  font-size: 3.6rem;
+  font-family: "Poppins Semibold";
+  margin-bottom: 0.4rem;
+}
+.cp-request-recieve .ref-no {
+  color: #333333;
+  font-family: "Poppins Medium";
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+.cp-request-recieve .desc {
+  color: #666666;
+  font-size: 1.6rem;
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=cp-request-recieve.css.map */

@@ -97,6 +97,12 @@
 .lyt-grid.typ-structure {
   justify-content: flex-start;
 }
+.lyt-grid.typ-6 .grid-col:first-child {
+  width: 40%;
+}
+.lyt-grid.typ-6 .grid-col:last-child {
+  width: 60%;
+}
 
 /* colors */
 /*font family*/
@@ -123,6 +129,9 @@
   .lyt-plp .grid-col {
     width: 100%;
   }
+}
+.lyt-plp .grid-col.typ100 {
+  width: 100%;
 }
 .lyt-plp.typ-list .grid-col {
   width: 100%;

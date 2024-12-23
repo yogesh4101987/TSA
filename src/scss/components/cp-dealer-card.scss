@@ -1,24 +1,28 @@
 @import "../config/variables";
 @import "../config/mixin";
 
-.cp-dealer-card{
+.cp-dealer-card {
     border: 1px solid #dedede;
     border-radius: 16px;
     padding: 2.2rem;
     transition: box-shadow 2s;
+    background-color: $clr-root;
 
     @media only screen and (max-width: $media-mobile) {
         padding: 1.6rem;
     }
-    &:hover{
+
+    &:hover {
         box-shadow: 0px 8px 24px 0px #00000014;
         border: 2px solid #DEDEDE;
     }
-    .top-band{
+
+    .top-band {
         display: flex;
         margin-bottom: 1.5rem;
         flex-wrap: wrap;
-        .band-tag{
+
+        .band-tag {
             background: #D8E5F8;
             border-radius: 4px;
             text-align: center;
@@ -30,25 +34,29 @@
             margin-bottom: 0.9rem;
         }
     }
-    .dealer-info{
-        .title{
+
+    .dealer-info {
+        .title {
             font-family: $font-semiBold;
             font-size: 1.6rem;
             color: $clr-base;
         }
-        .location-sec{
+
+        .location-sec {
             display: flex;
             flex-wrap: wrap;
             max-width: 28rem;
             margin-top: 0.5rem;
-            .location-text{
+
+            .location-text {
                 font-size: 1.2rem;
                 font-family: $font-regular;
                 color: #808080;
                 position: relative;
                 padding-right: 1rem;
-                &:nth-child(1){
-                    &::after{
+
+                &:nth-child(1) {
+                    &::after {
                         background-color: #808080;
                         width: 1px;
                         height: 12px;
@@ -60,14 +68,17 @@
                 }
             }
         }
-        .rating-sec{
+
+        .rating-sec {
             display: flex;
-            .rating-cont{
+
+            .rating-cont {
                 font-size: 1.2rem;
                 font-family: $font-regular;
                 color: #808080;
                 margin-top: 1.2rem;
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     background: #D2042D;
                     font-size: 1.2rem;
                     color: $clr-root;
@@ -76,18 +87,89 @@
                     text-align: center;
                     margin-right: 1rem;
                 }
-                &.typ-green{
+
+                &.typ-green {
                     background: #00A441;
+                }
+            }
+        }
+    }
+
+    &.typ-2 {
+        .location-sec {
+            margin: 0.8rem 0 1.2rem;
+        }
+
+        .top-band {
+            align-items: center;
+
+            .brand-title {
+                color: #808080;
+                font-size: 1.2rem;
+                padding-right: 0.8rem;
+            }
+
+            .band-tag {
+                margin-bottom: 0;
+                background-color: #F3F4F6;
+                padding: 0.2rem 0.8rem;
+            }
+        }
+
+        .action-wrap {
+            border-top: 1px solid #DEDEDE;
+            padding-top: 1.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.8rem;
+
+
+            .link {
+                color: $clr-primary;
+                font-size: 1.4rem;
+                font-family: $font-medium;
+                position: relative;
+                width: 50%;
+                text-align: center;
+                text-decoration: underline;
+
+                &::before {
+                    content: '';
+                    background: #DEDEDE;
+                    width: 1px;
+                    height: 2.5rem;
+                    position: absolute;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                    left: 0;
+                }
+
+                &:first-child {
+                    &::before {
+                        display: none;
+                        padding-left: 0;
+                    }
                 }
             }
         }
     }
 }
 
+.typ-store {
+    min-width: 15rem;
+    min-height: 4.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @media only screen and (max-width: $media-mobile) {position: relative; width: 100%; text-align: center; margin-top: 1.6rem;}
+}
+
 .btn-wrap {
-    &.typ-dealer{
+    &.typ-dealer {
         margin-top: 1.6rem;
         text-align: center;
+
         @media only screen and (max-width: $media-mobile) {
             font-size: 1.6rem;
             line-height: 2.4rem;

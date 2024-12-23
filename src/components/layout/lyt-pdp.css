@@ -47,5 +47,30 @@
   min-width: 34.3rem;
   margin-top: 4rem;
 }
+.feature-wrapper.typ-warranty {
+  display: flex;
+  border: 1px solid #DEDEDE;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .feature-wrapper.typ-warranty {
+    display: block;
+  }
+}
+.feature-wrapper.typ-warranty .warranty-wrap {
+  background-color: #EDEDED;
+  padding: 2rem 4.4rem;
+  flex: 0 0 auto;
+  height: 100%;
+}
+.feature-wrapper.typ-warranty.typ-warranty-plp {
+  margin-top: 0;
+}
 
 /*# sourceMappingURL=lyt-pdp.css.map */

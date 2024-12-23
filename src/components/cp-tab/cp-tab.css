@@ -163,7 +163,7 @@
   background: #FFFFFF;
   color: #3D7EDB;
   border: 0;
-  font-family: "Poppins Medium";
+  text-shadow: #333333 0.9px 0 0.9px;
 }
 .cp-tab.typ-struct-pdp .tab-list .title {
   border-radius: 8px;
@@ -205,7 +205,7 @@
 .cp-tab.typ-tisco-cat .tab-list .tab-item:hover .title, .cp-tab.typ-tisco-cat .tab-list .tab-item.active .title {
   background: none;
   color: #333333;
-  font-family: "Poppins Semibold";
+  text-shadow: #333333 0.9px 0 0.9px;
 }
 .cp-tab.typ-tisco-cat .tab-list .tab-item:hover .title::after, .cp-tab.typ-tisco-cat .tab-list .tab-item.active .title::after {
   width: 100%;
@@ -267,13 +267,57 @@
 }
 .cp-tab .category-content .desc {
   font-size: 1.6rem;
-  font-family: #666666;
+  color: #666666;
   font-family: "Poppins Regular";
   padding-bottom: 2.4rem;
 }
 @media only screen and (max-width: 768px) {
   .cp-tab .category-content .desc {
     font-size: 1.4rem;
+  }
+}
+.cp-tab .category-content.typ-2 {
+  max-width: 57rem;
+  position: static;
+  transform: initial;
+  padding: 5.6rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content.typ-2 {
+    order: 1;
+    padding: 0rem 0 0;
+  }
+}
+.cp-tab .category-content.typ-2 .title {
+  padding-bottom: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content.typ-2 .title {
+    padding-bottom: 1.2rem;
+  }
+}
+.cp-tab .category-content.typ-2 .small-title {
+  color: #666666;
+  font-size: 2.8rem;
+  padding-bottom: 2.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content.typ-2 .small-title {
+    padding-bottom: 1.2rem;
+    font-size: 1.6rem;
+  }
+}
+.cp-tab .category-content.typ-2 .desc {
+  color: #333333;
+  line-height: 2.8rem;
+}
+.cp-tab .category-content.typ-2 .cm-desktop {
+  display: inline-block !important;
+  min-width: 34.3rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab .category-content.typ-2 .cm-desktop {
+    display: none !important;
   }
 }
 .cp-tab.typ-select .tab-list .tab-item .title {
@@ -298,6 +342,43 @@
 }
 .cp-tab.typ-select .tab-list .tab-item:hover .title::after, .cp-tab.typ-select .tab-list .tab-item.active .title::after {
   width: 100%;
+}
+.cp-tab.typ-pravesh .tab-container {
+  background: #F3F4F6;
+  margin-top: 5.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-pravesh .tab-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 2.4rem;
+  }
+}
+.cp-tab.typ-pravesh .tab-container .container {
+  display: flex;
+  transform: initial;
+  gap: 13.7rem;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-pravesh .tab-container .container {
+    gap: 0;
+    align-items: normal;
+    flex-direction: column;
+    padding: 2.4rem 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-pravesh .tab-container .container .cp-eCommerce-home-banner {
+    order: 2;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cp-tab.typ-pravesh .tab-container .container .btn {
+    order: 3;
+    margin-top: 2.4rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .cp-tab.typ-offer .tab-container {

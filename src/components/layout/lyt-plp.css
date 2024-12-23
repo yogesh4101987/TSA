@@ -24,6 +24,9 @@
     width: 100%;
   }
 }
+.lyt-plp .grid-col.typ100 {
+  width: 100%;
+}
 .lyt-plp.typ-list .grid-col {
   width: 100%;
 }

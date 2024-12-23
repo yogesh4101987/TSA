@@ -985,6 +985,38 @@ p {
     margin-bottom: 1.6rem;
   }
 }
+.bs-sec .sec-head.typ-plp-pravesh {
+  margin-bottom: 0;
+}
+.bs-sec .sec-head .action-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+.bs-sec .sec-head .action-wrap .btn-icon {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  color: #999999;
+  min-width: auto;
+  background: #fff;
+  border: 1px solid #DEDEDE;
+}
+.bs-sec .sec-head .action-wrap .btn-icon.full-screen {
+  width: 11.5rem;
+}
+.bs-sec .sec-head .action-wrap .btn-icon.full-screen .icon {
+  font-size: 1.6rem;
+}
+.bs-sec .sec-head .action-wrap .btn-icon.full-screen .text {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+}
 .bs-sec .sec-title {
   font-size: 4rem;
   line-height: 5.2rem;
@@ -1004,6 +1036,17 @@ p {
   .bs-sec .sec-title {
     font-size: 2.4rem;
     line-height: 3.2rem;
+  }
+}
+.bs-sec .sec-title.offer-title-black {
+  color: #000000;
+}
+.bs-sec .sec-title.offer-title {
+  font-size: 3.6rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec .sec-title.offer-title {
+    font-size: 2.4rem;
   }
 }
 .bs-sec .sec-sub-title {
@@ -1518,6 +1561,78 @@ p {
   .bs-sec.typ-customers {
     margin-top: 4.4rem;
   }
+}
+.bs-sec.typ-offer-sec {
+  margin-top: 19rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-offer-sec {
+    margin-top: 15rem;
+  }
+}
+.bs-sec.typ-pravesh .sec-head {
+  align-items: center;
+}
+.bs-sec.typ-pravesh .sec-cont {
+  position: relative;
+}
+.bs-sec.typ-pravesh .sec-cont .view-btn {
+  position: absolute;
+  top: -7rem;
+  right: 0;
+  z-index: 1;
+  color: #FFFFFF;
+}
+.bs-sec.typ-pravesh .sec-cont .view-btn:hover {
+  color: #FFFFFF;
+}
+.bs-sec.typ-pravesh .sec-cont .btn-wrap .btn-outline {
+  min-width: 34.3rem;
+  margin-top: 1.7rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-pravesh .sec-cont .btn-wrap .btn-outline {
+    min-width: 12.4rem;
+    margin-top: 0rem;
+  }
+}
+.bs-sec.typ-pravesh2 .sec-head {
+  display: block;
+}
+.bs-sec.typ-pravesh2 .sec-head .desc {
+  color: #333333;
+  margin-top: 0.8rem;
+}
+.bs-sec.typ-vegetable-patch .view-btn {
+  color: #fff;
+}
+.bs-sec.mt-2 {
+  margin-top: 2.4rem;
+}
+.bs-sec.mb-2 {
+  margin-bottom: 2.4rem;
+}
+.bs-sec.typ-pravesh-pdp {
+  position: relative;
+  padding-top: 0;
+}
+.bs-sec.typ-pravesh-pdp::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 11.7rem;
+  background-color: #FFFBF2;
+  z-index: -1;
+}
+.bs-sec.typ-pravesh-pdp .sec-head .sec-title {
+  font-size: 2rem;
+  line-height: 24px;
+}
+.bs-sec.request-recieve {
+  background-color: #FFFBF2;
 }
 
 .btn {
@@ -2483,6 +2598,71 @@ p {
     width: 31%;
     white-space: nowrap;
   }
+}
+.bs-radio.typ-pravesh {
+  width: 47%;
+}
+.bs-radio.typ-pravesh .custom-radio {
+  padding: 0.6rem 0.8rem;
+}
+.bs-radio.typ-pravesh .dot {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: 0 0 2.4rem;
+  font-family: "Poppins Regular";
+  color: #666666;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.bs-radio.typ-pravesh .dot img {
+  object-fit: none;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-shade {
+    width: auto;
+  }
+}
+.bs-radio.typ-shade .custom-radio {
+  padding: 4px;
+  min-width: auto;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+}
+.bs-radio.typ-shade .custom-radio .dot {
+  height: 2.4rem;
+  width: 2.4rem;
+  flex: 0 0 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-shade .custom-radio .dot {
+    height: 2rem;
+    width: 2rem;
+    flex: 0 0 2rem;
+  }
+}
+.bs-radio.typ-shade .custom-radio .dot.shade1 {
+  background-color: #4D311C;
+}
+.bs-radio.typ-shade .custom-radio .dot.shade2 {
+  background-color: #E0E0E0;
+}
+.bs-radio.typ-shade .custom-radio .dot.shade3 {
+  background-color: #C8672D;
+}
+.bs-radio.typ-shade .custom-radio .dot.shade4 {
+  background-color: #FCD5AD;
+}
+.bs-radio.typ-shade .custom-radio::after {
+  border-radius: 50% !important;
+}
+.bs-radio.typ-shade .custom-radio input[type=radio]:checked + .custom-radio::after {
+  border-radius: 50%;
 }
 
 .bs-modal {

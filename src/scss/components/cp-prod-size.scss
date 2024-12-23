@@ -2,24 +2,60 @@
 @import "../config/mixin";
 
 
-.cp-prod-size{
-    .title{
+.cp-prod-size {
+    .title {
         font-size: 1.6rem;
-        color:$clr-base;
+        color: $clr-base;
         font-family: $font-medium;
         line-height: 24px;
         padding-bottom: 1.6rem;
     }
-    .radio-wrap{
-        display:flex;
-        justify-content: space-between; 
-        flex-wrap: wrap;  
-        &.typ2{ justify-content: start; gap: 1.3rem; margin-bottom: 1.6rem;
+
+    .radio-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &.typ2 {
+            justify-content: start;
+            gap: 1.3rem;
+            margin-bottom: 1.6rem;
+
             @media only screen and (max-width: $media-sm) {
                 gap: 1.2rem
             }
         }
 
     }
-    
+
+    &.typ-pravesh {
+        margin-bottom: 1.2rem;
+        .radio-wrap {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 1.4rem;
+            padding-bottom:0.4rem;
+        }
+
+        .add-feature {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1.2rem;
+
+            & li+li::before{
+                content: '|';
+                font-size: 1.2rem;
+                padding-inline: 0.8rem;
+                @media only screen and (max-width: $media-sm) {
+                    font-size: 1.2rem;
+                }
+            }
+            .feature {
+                color: $clr-para;
+                font-size: 1.2rem;
+            }
+        }
+    }
 }
