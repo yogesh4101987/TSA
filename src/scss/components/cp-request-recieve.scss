@@ -1,0 +1,45 @@
+@import "../config/variables";
+@import "../config/mixin";
+
+.cp-request-recieve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .icon {
+        width: 10rem;
+        height: 10rem;
+        font-size: 10rem;
+        color: #00A441;
+        margin-bottom: 0.4rem;
+        @media only screen and (max-width: $media-mobile) {
+            width: 6rem;
+            height: 6rem;
+            font-size: 6rem;
+        }
+    }
+
+    .title {
+        color: $clr-base;
+        font-size: 3.6rem;
+        font-family: $font-semiBold;
+        margin-bottom: 0.4rem;
+        @media only screen and (max-width: $media-mobile) { font-size: 2.4rem;}
+    }
+
+    .ref-no {
+        color: $clr-base;
+        font-family: $font-medium;
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+        @media only screen and (max-width: $media-mobile) { font-size: 1.6rem;}
+    }
+
+    .desc {
+        color: $clr-para;
+        font-size: 1.6rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}

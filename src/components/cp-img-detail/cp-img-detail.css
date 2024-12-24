@@ -77,5 +77,127 @@
 .cp-img-detail .detail-wrap .btn.btn-link {
   line-height: 2.2rem;
 }
+.cp-img-detail.type-structura {
+  height: 100%;
+}
+.cp-img-detail.type-structura .detail-wrap {
+  height: 100%;
+  padding: 1.6rem;
+}
+.cp-img-detail.type-structura .detail-wrap .detail-tile {
+  display: flex;
+  align-items: start;
+  gap: 1.2rem;
+  margin-bottom: 0;
+}
+.cp-img-detail.type-structura .detail-wrap .detail-tile .number {
+  font-size: 4rem;
+  font-family: "Poppins Semibold";
+  margin-top: 7px;
+}
+@media only screen and (max-width: 768px) {
+  .cp-img-detail.type-structura .detail-wrap .detail-tile .number {
+    font-size: 3.6rem;
+  }
+}
+.cp-img-detail.type-structura .detail-wrap .detail-tile .description {
+  font-family: "Poppins Medium";
+  font-size: 1.4rem;
+  color: #333333;
+}
+.cp-img-detail.type-structura .detail-wrap.blue-bg {
+  background-color: #ECF2FB;
+}
+.cp-img-detail.type-structura .detail-wrap.blue-bg .number {
+  color: #8BB2E9;
+}
+.cp-img-detail.type-structura .detail-wrap.pink-bg {
+  background-color: #FAE6EA;
+}
+.cp-img-detail.type-structura .detail-wrap.pink-bg .number {
+  color: #E46881;
+}
+.cp-img-detail.type-structura .detail-wrap.yellow-bg {
+  background-color: #FFF8E5;
+}
+.cp-img-detail.type-structura .detail-wrap.yellow-bg .number {
+  color: #FFD466;
+}
+.cp-img-detail.type-structura .detail-wrap.green-bg {
+  background-color: #E5F6EC;
+}
+.cp-img-detail.type-structura .detail-wrap.green-bg .number {
+  color: #66C88D;
+}
+.cp-img-detail.type-structura .img-wrap {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.cp-img-detail.type-structura .img-wrap img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.cp-img-detail.typ-pravesh {
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .cp-img-detail.typ-pravesh .detail-wrap {
+    padding: 0;
+  }
+}
+.cp-img-detail.typ-pravesh .detail-wrap .detail-tile {
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .cp-img-detail.typ-pravesh .detail-wrap .detail-tile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 85px;
+    gap: 0;
+    justify-content: center;
+  }
+}
+.cp-img-detail.typ-pravesh .detail-wrap .detail-tile .title {
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  display: block;
+  color: #333333;
+  font-size: 1.6rem;
+  font-family: "Poppins Semibold";
+}
+@media only screen and (max-width: 768px) {
+  .cp-img-detail.typ-pravesh .detail-wrap .detail-tile .title {
+    width: calc(94% - 6.4rem);
+    margin: 0;
+  }
+}
+.cp-img-detail.typ-pravesh .detail-wrap .detail-tile .number {
+  display: block;
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 0.4rem;
+  line-height: 5.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cp-img-detail.typ-pravesh .detail-wrap .detail-tile .number {
+    flex-basis: 100%;
+    border-right: 2px solid #FFFFFF;
+    border-bottom: none;
+    line-height: normal;
+    width: 6.4rem;
+    padding: 1rem 1rem;
+    margin: 0;
+    margin-right: 1rem;
+  }
+}
+.cp-img-detail.typ-pravesh .detail-wrap .detail-tile .description {
+  color: #666666;
+  font-family: "Poppins Regular";
+}
+@media only screen and (max-width: 768px) {
+  .cp-img-detail.typ-pravesh .detail-wrap .detail-tile .description {
+    width: calc(94% - 6.4rem);
+  }
+}
 
 /*# sourceMappingURL=cp-img-detail.css.map */

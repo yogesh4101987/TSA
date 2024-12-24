@@ -836,6 +836,24 @@ p {
   }
 }
 
+.table-cell-mobile {
+  display: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .table-cell-mobile {
+    display: table-cell !important;
+  }
+}
+
+.inline-mobile {
+  display: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .inline-mobile {
+    display: inline !important;
+  }
+}
+
 .cm-desktop {
   display: block !important;
 }
@@ -843,6 +861,10 @@ p {
   .cm-desktop {
     display: none !important;
   }
+}
+
+.d-none {
+  display: none !important;
 }
 
 .cm-bold {
@@ -877,6 +899,90 @@ p {
   margin: 0 auto;
 }
 
+.cm-text-right {
+  text-align: right;
+}
+
+.cm-flex {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.cm-flex.typ-2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.cm-box {
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  padding: 1.6rem 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .cm-box {
+    border: 0;
+    padding: 2.4rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .seperator {
+    background: #dedede;
+    width: 117%;
+    margin: 2.4rem -4rem;
+    height: 1px;
+  }
+}
+
+.m-bottom {
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .m-bottom {
+    margin-bottom: 4.8rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list-sec {
+  display: flex;
+}
+.list-sec .list-item {
+  width: 50%;
+}
+.list-sec .list-item .bold-text {
+  font-family: "Poppins Semibold";
+  font-size: 2rem;
+  color: #333333;
+  display: block;
+}
+.list-sec .list-item .normal-text {
+  font-family: "Poppins Regular";
+  font-size: 1.4rem;
+  color: #666666;
+  display: block;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.M-top16 {
+  margin-top: 1.6rem;
+}
+
 /*transform*/
 /*opacity*/
 /*opacity- end*/
@@ -905,6 +1011,38 @@ p {
     margin-bottom: 1.6rem;
   }
 }
+.bs-sec .sec-head.typ-plp-pravesh {
+  margin-bottom: 0;
+}
+.bs-sec .sec-head .action-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+.bs-sec .sec-head .action-wrap .btn-icon {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  color: #999999;
+  min-width: auto;
+  background: #fff;
+  border: 1px solid #DEDEDE;
+}
+.bs-sec .sec-head .action-wrap .btn-icon.full-screen {
+  width: 11.5rem;
+}
+.bs-sec .sec-head .action-wrap .btn-icon.full-screen .icon {
+  font-size: 1.6rem;
+}
+.bs-sec .sec-head .action-wrap .btn-icon.full-screen .text {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+}
 .bs-sec .sec-title {
   font-size: 4rem;
   line-height: 5.2rem;
@@ -924,6 +1062,34 @@ p {
   .bs-sec .sec-title {
     font-size: 2.4rem;
     line-height: 3.2rem;
+  }
+}
+.bs-sec .sec-title.offer-title-black {
+  color: #000000;
+}
+.bs-sec .sec-title.offer-title {
+  font-size: 3.6rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec .sec-title.offer-title {
+    font-size: 2.4rem;
+  }
+}
+.bs-sec .sec-sub-title {
+  font-family: "Poppins Medium";
+  color: #333333;
+  font-size: 2rem;
+  padding-bottom: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec .sec-sub-title {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec .sec-sub-title.typ-tiscon-qunty {
+    font-size: 2.4rem;
+    padding-left: 1rem;
   }
 }
 .bs-sec .sec-desc {
@@ -1099,6 +1265,14 @@ p {
 .bs-sec.typ-eCommerce-banner {
   padding: 0;
   background-color: #f3f4f6;
+}
+.bs-sec.typ-eCommerce-banner.typ2 {
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-eCommerce-banner.typ2 {
+    margin-bottom: 4.4rem;
+  }
 }
 .bs-sec.typ-quick-buy {
   position: relative;
@@ -1335,6 +1509,181 @@ p {
     padding-bottom: 0.8rem;
   }
 }
+.bs-sec.typ-structura-pdp .sec-head {
+  padding: 0;
+}
+.bs-sec.typ-structura-pdp .sec-head .sec-title {
+  font-size: 2rem;
+  line-height: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-structura-pdp .sec-head .sec-title {
+    font-size: 2.4rem;
+  }
+}
+.bs-sec.typ-structura-pdp .sec-head .sec-desc {
+  font-style: italic;
+}
+.bs-sec.typ-structura-pdp .add-btn {
+  float: right;
+  min-width: 34.3rem;
+  margin-top: 2.3rem;
+}
+.bs-sec.typ-tiscon-pdp .sec-sub-title {
+  position: relative;
+}
+.bs-sec.typ-pro-featur-bg {
+  text-align: center;
+}
+.bs-sec.typ-pro-featur-bg .sec-title {
+  text-align: left;
+}
+.bs-sec.typ-pro-featur-bg .bg-pro {
+  background-color: #F7B592;
+}
+.bs-sec.typ-pro-featur-bg .bg-pro img {
+  max-width: 37.5rem;
+  height: 48.9rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.bs-sec.typ-pro-featur-bg .btn {
+  margin-top: 3.2rem;
+  min-width: 34.3rem;
+}
+.bs-sec.typ-steel-wood-frame {
+  background-color: #F3F4F6;
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-steel-wood-frame {
+    display: none;
+  }
+}
+.bs-sec.typ-architect {
+  margin-top: 6.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-architect {
+    margin-top: 4.4rem;
+  }
+}
+.bs-sec.typ-durshine-category {
+  margin: 6.4rem 0;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-durshine-category {
+    margin: 4rem 0;
+  }
+}
+.bs-sec.typ-size-quantity .size-btn {
+  min-width: 34.3rem;
+  margin-top: 1.6rem;
+}
+.bs-sec.typ-customers {
+  margin-top: 6.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-customers {
+    margin-top: 4.4rem;
+  }
+}
+.bs-sec.typ-offer-sec {
+  margin-top: 19rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-offer-sec {
+    margin-top: 15rem;
+  }
+}
+.bs-sec.typ-pravesh .sec-head {
+  align-items: center;
+}
+.bs-sec.typ-pravesh .sec-cont {
+  position: relative;
+}
+.bs-sec.typ-pravesh .sec-cont .view-btn {
+  position: absolute;
+  top: -7rem;
+  right: 0;
+  z-index: 1;
+  color: #FFFFFF;
+}
+.bs-sec.typ-pravesh .sec-cont .view-btn:hover {
+  color: #FFFFFF;
+}
+.bs-sec.typ-pravesh .sec-cont .btn-wrap .btn-outline {
+  min-width: 34.3rem;
+  margin-top: 1.7rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.typ-pravesh .sec-cont .btn-wrap .btn-outline {
+    min-width: 12.4rem;
+    margin-top: 0rem;
+  }
+}
+.bs-sec.typ-pravesh2 .sec-head {
+  display: block;
+}
+.bs-sec.typ-pravesh2 .sec-head .desc {
+  color: #333333;
+  margin-top: 0.8rem;
+}
+.bs-sec.typ-vegetable-patch .view-btn {
+  color: #fff;
+}
+.bs-sec.mt-2 {
+  margin-top: 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.mt-2 {
+    margin-top: 0;
+  }
+}
+.bs-sec.mb-2 {
+  margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-sec.mb-2 {
+    margin-bottom: 0;
+  }
+}
+.bs-sec.typ-pravesh-pdp {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.bs-sec.typ-pravesh-pdp::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 11.7rem;
+  background-color: #FFFBF2;
+  z-index: -1;
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp::before {
+    content: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-sec.typ-pravesh-pdp .container {
+    padding: 0;
+  }
+}
+.bs-sec.typ-pravesh-pdp .sec-head .sec-title {
+  font-size: 2rem;
+  line-height: 24px;
+}
+.bs-sec.request-recieve {
+  background-color: #FFFBF2;
+}
+.bs-sec.typ-windows-pro .sec-title {
+  font-size: 2rem;
+}
 
 .btn {
   display: inline-block;
@@ -1444,6 +1793,16 @@ p {
   color: #333333;
   border: 1px solid #333333;
 }
+.btn.btn-outline.typ-2 {
+  border: 1px solid #dedede;
+  color: #B3B3B3;
+}
+.btn.btn-grey {
+  background: #EDEDED;
+  color: #B3B3B3;
+  font-size: 1.6rem;
+  border: 1px solid #dedede;
+}
 .btn.typ-add-cart {
   min-width: 34.3rem;
 }
@@ -1496,6 +1855,11 @@ p {
     font-size: 1.6rem;
     line-height: 2.4rem;
     padding: 1.1rem 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btn.full-width {
+    width: 100%;
   }
 }
 
@@ -1916,6 +2280,16 @@ p {
   overflow: hidden;
   margin-right: 1.2rem;
 }
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-pravesh-stories {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-pravesh-stories .swiper-slide {
+    margin: auto;
+  }
+}
 .bs-swiper.typ-patch-banner {
   display: none;
 }
@@ -2123,6 +2497,32 @@ p {
 .bs-swiper.typ-feature-banner .swiper-slide {
   width: 19rem;
 }
+.bs-swiper.typ-why-tiscon .swiper-slide {
+  width: 29.5rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-why-tiscon .swiper-slide {
+    width: 16rem;
+    margin-right: 1.2rem;
+  }
+}
+.bs-swiper.typ-application .swiper-slide {
+  width: 29.7rem;
+  height: 26rem;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 1.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-swiper.typ-application .swiper-slide {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+.bs-swiper.right-space {
+  margin-right: -2rem;
+}
 
 .bs-radio {
   margin-bottom: 1.6rem;
@@ -2158,6 +2558,174 @@ p {
 .bs-radio input[type=radio] {
   opacity: 0;
   display: none;
+}
+.bs-radio.typ-structura-pdp {
+  display: block;
+}
+.bs-radio.typ-structura-pdp .custom-radio {
+  min-width: 10.9rem;
+  padding: 1.2rem 0;
+}
+.bs-radio.typ2 {
+  margin-bottom: 0;
+}
+.bs-radio.typ2 .dot {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: #F1F3E6;
+  flex: 0 0 1.4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.bs-radio.typ2 .dot.c-blue {
+  background-color: #007ABD;
+}
+.bs-radio.typ2 .dot.n-blue {
+  background-color: #004A8E;
+}
+.bs-radio.typ2 .dot.b-green {
+  background-color: #038562;
+}
+.bs-radio.typ2 .dot.p-green {
+  background-color: #007654;
+}
+.bs-radio.typ2 .dot.p-red {
+  background-color: #BC1627;
+}
+.bs-radio.typ2 .dot.s-grey {
+  background-color: #46484E;
+}
+.bs-radio.typ2 .dot.c-red {
+  background-color: #851013;
+}
+.bs-radio.typ2 .dot.ca-red {
+  background-color: #A7352B;
+}
+.bs-radio.typ2 .ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+}
+.bs-radio.typ2 .custom-radio {
+  padding: 1.3rem 0.8rem;
+  flex-direction: row;
+  font-size: 1.2rem;
+  font-family: "Poppins Medium";
+  min-width: 10.9rem;
+  color: #333333;
+  gap: 0.8rem;
+  border: none;
+  position: relative;
+}
+.bs-radio.typ2 .custom-radio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #DEDEDE;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ2 .custom-radio {
+    min-width: 100%;
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+  }
+}
+.bs-radio.typ2 input[type=radio]:checked + .custom-radio {
+  border: none;
+  background: #fff;
+  color: #333333;
+  position: relative;
+}
+.bs-radio.typ2 input[type=radio]:checked + .custom-radio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 2px solid #3D7EDB;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ2 {
+    width: 31%;
+    white-space: nowrap;
+  }
+}
+.bs-radio.typ-pravesh {
+  width: 47%;
+}
+.bs-radio.typ-pravesh .custom-radio {
+  padding: 0.6rem 0.8rem;
+}
+.bs-radio.typ-pravesh .dot {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: 0 0 2.4rem;
+  font-family: "Poppins Regular";
+  color: #666666;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.bs-radio.typ-pravesh .dot img {
+  object-fit: none;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-shade {
+    width: auto;
+  }
+}
+.bs-radio.typ-shade .custom-radio {
+  padding: 4px;
+  min-width: auto;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+}
+.bs-radio.typ-shade .custom-radio .dot {
+  height: 2.4rem;
+  width: 2.4rem;
+  flex: 0 0 2.4rem;
+}
+@media only screen and (max-width: 991px) {
+  .bs-radio.typ-shade .custom-radio .dot {
+    height: 2rem;
+    width: 2rem;
+    flex: 0 0 2rem;
+  }
+}
+.bs-radio.typ-shade .custom-radio .dot.shade1 {
+  background-color: #4D311C;
+}
+.bs-radio.typ-shade .custom-radio .dot.shade2 {
+  background-color: #E0E0E0;
+}
+.bs-radio.typ-shade .custom-radio .dot.shade3 {
+  background-color: #C8672D;
+}
+.bs-radio.typ-shade .custom-radio .dot.shade4 {
+  background-color: #FCD5AD;
+}
+.bs-radio.typ-shade .custom-radio::after {
+  border-radius: 50% !important;
+}
+.bs-radio.typ-shade .custom-radio input[type=radio]:checked + .custom-radio::after {
+  border-radius: 50%;
 }
 
 .bs-modal {
@@ -2349,6 +2917,24 @@ p {
     height: 198px;
     width: 343px;
   }
+}
+.bs-modal.typ-small {
+  max-width: 400px;
+  max-height: 328px;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-small {
+    max-width: 343px;
+    max-height: 240px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.typ-small .modal-body {
+    padding: 2.4rem;
+  }
+}
+.bs-modal.typ-small .modal-dialog {
+  border-radius: 12px;
 }
 @media only screen and (max-width: 768px) {
   .bs-modal .bs-applicant-form .title {

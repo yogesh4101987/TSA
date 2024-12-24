@@ -5,6 +5,7 @@
 .bs-sec {
   padding: 4rem 0rem;
   position: relative;
+
   @media only screen and (max-width: $media-sm) {
     padding: 2.4rem 0rem;
   }
@@ -12,64 +13,147 @@
   .top-padd {
     margin-top: 4rem;
   }
+
   .sec-head {
     margin-bottom: 3.2rem;
     position: relative;
     z-index: 1;
+
     @media only screen and (max-width: $media-sm) {
       margin-bottom: 1.6rem;
     }
+
+    &.typ-plp-pravesh {
+      margin-bottom: 0;
+    }
+
+    .action-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+
+      .btn-icon {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+        @include border-radius(0.8rem);
+        color: #999999;
+        min-width: auto;
+        background: #fff;
+        border: 1px solid #DEDEDE;
+
+        &.full-screen {
+          width: 11.5rem;
+
+          .icon {
+            font-size: 1.6rem;
+          }
+
+          .text {
+            font-size: 1.4rem;
+            font-family: $font-regular ;
+          }
+        }
+      }
+    }
   }
+
   .sec-title {
     font-size: 4rem;
     line-height: 5.2rem;
     font-family: $font-semiBold;
     color: $clr-base;
+
     &.typ-white {
       color: $clr-root;
       margin-bottom: 2.4rem;
+
       @media only screen and (max-width: $media-mobile) {
         margin-bottom: 1.2rem;
       }
     }
+
     @media only screen and (max-width: $media-sm) {
       font-size: 2.4rem;
       line-height: 3.2rem;
     }
+
+    &.offer-title-black {
+      color: $clr-black ;
+    }
+
+    &.offer-title {
+      font-size: 3.6rem;
+
+      @media only screen and (max-width: $media-sm) {
+        font-size: 2.4rem;
+      }
+    }
   }
+
+  .sec-sub-title {
+    font-family: $font-medium;
+    color: $clr-base;
+    font-size: 2rem;
+    padding-bottom: 1.6rem;
+
+    @media only screen and (max-width: $media-mobile) {
+      font-size: 1.6rem;
+
+    }
+
+    &.typ-tiscon-qunty {
+      @media only screen and (max-width: $media-mobile) {
+        font-size: 2.4rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+
   .sec-desc {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-family: $font-regular;
     color: $clr-para;
+
     &.typ-white {
       color: $clr-root;
     }
   }
-  .sec-cont {
-  }
+
+  .sec-cont {}
+
   &.typ-gray-bg {
     background: #ecf2fb;
   }
+
   &.typ-curve {
     @include border-radius(4.8rem 4.8rem 0 0);
+
     @media only screen and (max-width: $media-mobile) {
       @include border-radius(2.4rem 2.4rem 0 0);
     }
   }
+
   &.typ-inner-spacing {
     padding: 5.8rem 0;
+
     @media only screen and (max-width: $media-mobile) {
       padding: 2.4rem 0;
     }
   }
+
   &.typ-product {
     position: relative;
     padding: 0rem;
     margin-bottom: 4rem;
+
     @media only screen and (max-width: $media-mobile) {
       margin-bottom: 2.4rem;
     }
+
     .cont-wrap {
       position: absolute;
       top: 50%;
@@ -77,15 +161,19 @@
       transform: translateY(-50%);
     }
   }
-  &.typ-no-padding{
+
+  &.typ-no-padding {
     padding: 0;
   }
+
   &.typ-no-bottom-padding {
     padding-bottom: 0;
   }
+
   &.typ-no-top-padding {
     padding-top: 0;
   }
+
   &.typ-build-cal {
     padding-bottom: 2.4rem;
   }
@@ -93,16 +181,20 @@
   &.typ-tataicon {
     margin: 4rem 0;
     padding: 4.8rem 0;
+
     @media only screen and (max-width: $media-sm) {
       margin: 2.4rem 0;
       padding: 0;
     }
+
     .sec-head {
       margin-bottom: 4.8rem;
+
       @media only screen and (max-width: $media-sm) {
         margin-bottom: 2.4rem;
       }
     }
+
     .sec-title {
       text-align: center;
     }
@@ -120,6 +212,7 @@
     .sec-head {
       padding: 2.4rem 2.4rem 0;
     }
+
     .container {
       @media only screen and (max-width: $media-sm) {
         margin: 0;
@@ -127,13 +220,16 @@
       }
     }
   }
+
   &.typ-first-sec {
     margin-top: 15rem;
     padding-top: 0;
+
     @media only screen and (max-width: $media-sm) {
       margin-top: 13rem;
     }
   }
+
   &.typ-commerce-blog,
   &.typ-vegetable-patch,
   &.typ-similar-prod {
@@ -143,10 +239,12 @@
     margin-top: 8rem;
     @include border-radius(4.8rem 4.8rem 0 0);
     overflow: hidden;
+
     @media only screen and (max-width: $media-mobile) {
       @include border-radius(2.4rem 2.4rem 0 0);
       margin-top: 4.8rem;
     }
+
     &::before {
       content: "";
       width: 100%;
@@ -156,57 +254,77 @@
       top: 0;
       left: 0;
       right: 0;
+
       @media only screen and (max-width: $media-mobile) {
         height: 24.4rem;
       }
     }
+
     .sec-head {
       z-index: 1;
       position: relative;
     }
+
     .sec-title,
     .sec-desc {
       color: $clr-root;
     }
   }
-  &.typ-vegetable-patch{ 
+
+  &.typ-vegetable-patch {
     margin-bottom: 6.4rem;
+
     @media only screen and (max-width: $media-mobile) {
       margin-bottom: 4.8rem;
 
     }
-    .product-title{
+
+    .product-title {
       font-family: $font-medium;
       font-size: 1.6rem;
       line-height: 2.4rem;
       color: #F3F4F6;
       margin-bottom: 1.2rem;
+
       @media only screen and (max-width: $media-mobile) {
         margin-bottom: 0.8rem;
-      }      
+      }
     }
   }
-  &.typ-similar-prod{
+
+  &.typ-similar-prod {
     margin-top: 0;
   }
+
   &.typ-eCommerce-banner {
     padding: 0;
     background-color: #f3f4f6;
+
+    &.typ2 {
+      margin-bottom: 6.4rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        margin-bottom: 4.4rem;
+      }
+    }
   }
 
   &.typ-quick-buy {
     position: relative;
     padding: 0;
+
     .sec-title {
       font-size: 2.4rem;
       line-height: 3.2rem;
       margin-bottom: 0.4rem;
+
       @media only screen and (max-width: $media-sm) {
         font-size: 1.6rem;
         line-height: 2.4rem;
         margin-bottom: 0.2rem;
       }
     }
+
     .sec-desc {
       @media only screen and (max-width: $media-sm) {
         font-size: 1.2rem;
@@ -230,44 +348,54 @@
     .cont-wrap {
       width: 70%;
     }
+
     .btn-wrap {
       width: 30%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
+
     .btn {
       min-width: 10.2rem;
       padding: 0.7rem 1rem;
+
       @media only screen and (max-width: $media-sm) {
         font-size: 1.2rem;
         line-height: 1.6rem;
         min-width: 8rem;
       }
     }
-    .img-wrap{
+
+    .img-wrap {
       min-height: 12rem;
       height: 100%;
+
       @media only screen and (max-width: $media-sm) {
         max-height: 9rem;
         min-height: auto;
       }
     }
   }
+
   &.typ-eBanner {
     padding: 8rem 0;
+
     @media only screen and (max-width: $media-sm) {
       padding: 4.8rem 0;
     }
   }
-  &.typ-plp{
+
+  &.typ-plp {
+
     .sec-title,
-    .sec-head{
+    .sec-head {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }    
-    .count{
+    }
+
+    .count {
       @include border-radius(2.6rem);
       background: $clr-secondary;
       padding: 0.2rem 1.2rem;
@@ -279,52 +407,59 @@
     }
   }
 
-  &.typ-trade-hand-tool{
+  &.typ-trade-hand-tool {
     overflow: hidden;
     padding: 0;
     background: #FFF4D7;
     padding: 2.4rem 0;
-    .container{
+
+    .container {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      @media only screen and (max-width: $media-sm){
+
+      @media only screen and (max-width: $media-sm) {
         display: block;
       }
     }
   }
-  
-  &.typ-stories{
+
+  &.typ-stories {
     margin: 6.4rem 0;
+
     @media only screen and (max-width: $media-mobile) {
       margin-bottom: 4.8rem;
 
     }
-    .sec-desc{
+
+    .sec-desc {
       @media only screen and (max-width: $media-sm) {
-        padding-top:1rem;
+        padding-top: 1rem;
       }
     }
   }
 
-  &.typ-best-selling{
+  &.typ-best-selling {
     overflow: hidden;
     background: #FFFBF2;
-    &::after{
+
+    &::after {
       content: "\e900";
       font-family: 'icomoon';
       font-size: 13.4rem;
       color: #FFE399;
       position: absolute;
       top: 2.2rem;
-      right: 9rem;  
-      @media only screen and (max-width: $media-sm){
+      right: 9rem;
+
+      @media only screen and (max-width: $media-sm) {
         font-size: 5rem;
         top: 1.2rem;
         right: 3rem;
       }
     }
-    &::before{
+
+    &::before {
       content: "";
       width: 44rem;
       height: 44rem;
@@ -333,7 +468,8 @@
       position: absolute;
       top: -12.6rem;
       right: -10rem;
-      @media only screen and (max-width: $media-sm){
+
+      @media only screen and (max-width: $media-sm) {
         width: 16rem;
         height: 16rem;
         top: -4.6rem;
@@ -341,10 +477,12 @@
       }
     }
   }
-  &.typ-review-product{
+
+  &.typ-review-product {
     overflow: hidden;
-    background: #FFF6F2;   
-    &::before{
+    background: #FFF6F2;
+
+    &::before {
       content: "";
       width: 44rem;
       height: 44rem;
@@ -353,56 +491,283 @@
       position: absolute;
       top: -12.6rem;
       right: -10rem;
-      @media only screen and (max-width: $media-sm){
+
+      @media only screen and (max-width: $media-sm) {
         width: 16rem;
         height: 16rem;
         top: -4.6rem;
         right: -5.6rem;
       }
     }
-    &::after{
+
+    &::after {
       content: "\e941";
       font-family: 'icomoon';
       font-size: 13.4rem;
       color: #FCDACC;
       position: absolute;
       top: 2.2rem;
-      right: 9rem;  
-      @media only screen and (max-width: $media-sm){
+      right: 9rem;
+
+      @media only screen and (max-width: $media-sm) {
         font-size: 5rem;
         top: 1rem;
         right: 1rem;
       }
     }
   }
-  &.typ-patch-banner{
+
+  &.typ-patch-banner {
     padding: 0;
+
     @media only screen and (max-width: $media-sm) {
       padding-top: 1.6rem;
       padding-bottom: 2.4rem;
     }
   }
-  &.typ-pdp{
+
+  &.typ-pdp {
     overflow: visible;
   }
-  &.typ-question-answer{
-    .sec-desc{
+
+  &.typ-question-answer {
+    .sec-desc {
       display: none;
+
       @media only screen and (max-width: $media-sm) {
-       display:block ;      }
+        display: block;
+      }
     }
   }
 
-  &.pd-top-8{
-    padding-top:2.8rem;
-    @media only screen and (max-width: $media-sm){
-      padding-top:0.8rem;
+  &.pd-top-8 {
+    padding-top: 2.8rem;
+
+    @media only screen and (max-width: $media-sm) {
+      padding-top: 0.8rem;
     }
   }
-  &.pd-bottom-8{
-    padding-bottom:2.8rem;
-    @media only screen and (max-width: $media-sm){
-      padding-bottom:0.8rem;
+
+  &.pd-bottom-8 {
+    padding-bottom: 2.8rem;
+
+    @media only screen and (max-width: $media-sm) {
+      padding-bottom: 0.8rem;
+    }
+  }
+
+  &.typ-structura-pdp {
+    .sec-head {
+      padding: 0;
+
+      .sec-title {
+        font-size: 2rem;
+        line-height: 24px;
+
+        @media only screen and (max-width: $media-sm) {
+          font-size: 2.4rem;
+        }
+      }
+
+      .sec-desc {
+        font-style: italic;
+      }
+    }
+
+    .add-btn {
+      float: right;
+      min-width: 34.3rem;
+      margin-top: 2.3rem;
+    }
+  }
+
+  &.typ-tiscon-pdp {
+    .sec-sub-title {
+      position: relative;
+    }
+  }
+
+  &.typ-pro-featur-bg {
+    text-align: center;
+
+    .sec-title {
+      text-align: left;
+    }
+
+    .bg-pro {
+      background-color: #F7B592;
+
+      img {
+        max-width: 37.5rem;
+        height: 48.9rem;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    .btn {
+      margin-top: 3.2rem;
+      min-width: 34.3rem;
+    }
+
+  }
+
+  &.typ-steel-wood-frame {
+    background-color: #F3F4F6;
+    padding-bottom: 4rem;
+
+    @media only screen and (max-width: $media-sm) {
+      display: none;
+    }
+  }
+
+  &.typ-architect {
+    margin-top: 6.4rem;
+
+    @media only screen and (max-width: $media-sm) {
+      margin-top: 4.4rem;
+    }
+  }
+
+  &.typ-durshine-category {
+    margin: 6.4rem 0;
+
+    @media only screen and (max-width: $media-sm) {
+      margin: 4rem 0;
+
+    }
+  }
+
+  &.typ-size-quantity {
+    .size-btn {
+      min-width: 34.3rem;
+      margin-top: 1.6rem;
+    }
+  }
+
+  &.typ-customers {
+    margin-top: 6.4rem;
+
+    @media only screen and (max-width: $media-sm) {
+      margin-top: 4.4rem;
+
+
+    }
+
+  }
+
+  &.typ-offer-sec {
+    margin-top: 19rem;
+
+    @media only screen and (max-width: $media-sm) {
+      margin-top: 15rem;
+    }
+  }
+
+  &.typ-pravesh {
+    .sec-head {
+      align-items: center;
+    }
+
+    .sec-cont {
+      position: relative;
+
+      .view-btn {
+        position: absolute;
+        top: -7rem;
+        right: 0;
+        z-index: 1;
+        color: $clr-root;
+
+        &:hover {
+          color: $clr-root;
+        }
+      }
+
+      .btn-wrap {
+        .btn-outline {
+          min-width: 34.3rem;
+          margin-top: 1.7rem;
+
+          @media only screen and (max-width: $media-sm) {
+            min-width: 12.4rem;
+            margin-top: 0rem;
+          }
+        }
+      }
+    }
+
+  }
+
+  &.typ-pravesh2 {
+    .sec-head {
+      display: block;
+
+      .desc {
+        color: $clr-base;
+        margin-top: 0.8rem;
+      }
+    }
+  }
+
+  &.typ-vegetable-patch {
+    .view-btn {
+      color: #fff;
+    }
+  }
+
+  &.mt-2 {
+    margin-top: 2.4rem;
+    @media only screen and (max-width: $media-sm) {  margin-top: 0;}
+  }
+
+  &.mb-2 {
+    margin-bottom: 2.4rem;
+    @media only screen and (max-width: $media-sm) {  margin-bottom: 0;}
+  }
+
+  &.typ-pravesh-pdp {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 11.7rem;
+      background-color: #FFFBF2;
+      z-index: -1;
+
+      @media only screen and (max-width: $media-mobile) {
+        content: none;
+      }
+    }
+
+    .container {
+      @media only screen and (max-width: $media-mobile) {
+        padding: 0;
+      }
+    }
+
+    .sec-head {
+      .sec-title {
+        font-size: 2rem;
+        line-height: 24px;
+      }
+    }
+  }
+
+  &.request-recieve {
+    background-color: #FFFBF2;
+  }
+
+  &.typ-windows-pro {
+    .sec-title {
+      font-size: 2rem;
     }
   }
 }

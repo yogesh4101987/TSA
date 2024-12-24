@@ -22,4 +22,21 @@
             }
         }
     }
+    &.type2 {
+        .stage-item {
+           width: 33.333333%;
+           @media only screen and (max-width: $media-mobile) {
+            width: 100%;
+        }
+        }
+    }
+    &.typ-pravesh{
+
+        .stage-item {
+            width: 25%;
+            @media only screen and (max-width: $media-mobile) {
+             width: 100%;
+         }
+         }
+    }
 }

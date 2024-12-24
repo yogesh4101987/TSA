@@ -1,31 +1,33 @@
 @import "../config/variables";
 
 .bs-swiper {
-  padding-bottom:7.6rem;
+  padding-bottom: 7.6rem;
+
   @media only screen and (max-width: $media-mobile) {
-    padding-bottom:0;
+    padding-bottom: 0;
     margin-right: -2rem;
   }
 
-  .swiper-pagination-fraction, 
-  .swiper-pagination-custom, 
-  .swiper-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal{
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 1px;
   }
+
   .swiper-pagination-custom,
-  .swiper-pagination-fraction{
+  .swiper-pagination-fraction {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-family: $font-medium;
     color: $clr-root;
-    top: 0; 
+    top: 0;
     left: auto;
     right: 1.6rem;
     width: auto;
   }
 
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     width: 0.8rem;
     height: 0.8rem;
     background-color: #808080;
@@ -35,43 +37,48 @@
     transition: none;
     opacity: 1;
     position: relative;
-    &::after{
+
+    &::after {
       width: 1.6rem;
       height: 1.6rem;
       border: 1px solid transparent;
       background: transparent;
       border-radius: 50%;
-      top:-4px;
+      top: -4px;
       left: -4px;
       content: '';
       position: absolute;
     }
   }
-  .swiper-pagination-bullet-active{
+
+  .swiper-pagination-bullet-active {
     background-color: $clr-secondary;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
-    &::after{
+
+    &::after {
       border: 1px solid $clr-secondary;
     }
   }
- 
- 
 
 
-  .swiper-nav{
+
+
+  .swiper-nav {
     min-width: 13rem;
     min-height: 4.8rem;
     position: absolute;
     bottom: 0;
-    right: 0; 
+    right: 0;
+
     @media only screen and (max-width: $media-mobile) {
       display: none;
-    } 
-    .swiper-button-next, 
-    .swiper-button-prev{     
-      color: $clr-base;     
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: $clr-base;
       cursor: pointer;
       z-index: 1;
       width: 4.8rem;
@@ -80,79 +87,93 @@
       top: 0;
       border: 1px solid $clr-base;
       border-radius: 50%;
+
       &.swiper-button-disabled {
         color: #b3b3b3;
         opacity: 0.5;
       }
+
       &:after {
         font-size: 2.4rem;
-        font-weight: normal; 
-        font-family: 'icomoon'; 
+        font-weight: normal;
+        font-family: 'icomoon';
         position: absolute;
         top: 50%;
         left: 50%;
         @include transform(translate(-50%, -50%));
       }
     }
+
     .swiper-button-prev:after {
       content: "\e91e";
     }
-    .swiper-button-next:after{
-      content:'\e91d';
+
+    .swiper-button-next:after {
+      content: '\e91d';
     }
-  }
- 
-  &.typ-blog{
-      @media only screen and (max-width: $media-mobile) {
-          margin-right: -1.6rem;
-      }
-      .swiper-slide{
-          width: 29.6rem !important;
-          margin-right: 1.8rem;
-          @media only screen and (max-width: $media-mobile) {
-            margin-right: 1.2rem;
-        }
-      }
   }
 
-  &.typ-home-testimonial{
-    padding-bottom: 0;
+  &.typ-blog {
     @media only screen and (max-width: $media-mobile) {
-      margin-right: -2rem;
+      margin-right: -1.6rem;
     }
-    .swiper-slide{
-        width: auto !important;
-        margin-right: 2rem;
-        min-width: 29.6rem;
-        @media only screen and (max-width: $media-mobile) {
-            margin-right: 1.2rem;
-        }
+
+    .swiper-slide {
+      width: 29.6rem !important;
+      margin-right: 1.8rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        margin-right: 1.2rem;
+      }
     }
   }
-  &.typ-fabricators,
-  &.typ-architect {   
-    padding-bottom:9.6rem;
+
+  &.typ-home-testimonial {
+    padding-bottom: 0;
+
     @media only screen and (max-width: $media-mobile) {
-      padding-bottom:0;
+      margin-right: -2rem;
     }
 
     .swiper-slide {
       width: auto !important;
       margin-right: 2rem;
       min-width: 29.6rem;
+
       @media only screen and (max-width: $media-mobile) {
         margin-right: 1.2rem;
       }
     }
-    .swiper-nav{
-      right: 9%; 
+  }
+
+  &.typ-fabricators,
+  &.typ-architect {
+    padding-bottom: 9.6rem;
+
+    @media only screen and (max-width: $media-mobile) {
+      padding-bottom: 0;
+    }
+
+    .swiper-slide {
+      width: auto !important;
+      margin-right: 2rem;
+      min-width: 29.6rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        margin-right: 1.2rem;
+      }
+    }
+
+    .swiper-nav {
+      right: 9%;
+
       @media only screen and (max-width: $media-mobile) {
         display: none;
       }
     }
   }
 
-  &.typ-fabricators{
+  &.typ-fabricators {
     padding-bottom: 1.2rem;
   }
 
@@ -160,10 +181,12 @@
     .swiper-wrapper {
       position: relative;
       padding-bottom: 4rem;
+
       @media only screen and (max-width: $media-mobile) {
         padding-bottom: 3.2rem;
       }
     }
+
     .swiper-slide {
       width: 100% !important;
       max-height: 36rem;
@@ -176,47 +199,53 @@
       left: 50%;
       transform: translateX(-50%);
     }
+
     .swiper-pagination-bullet {
       width: 0.8rem;
       height: 0.8rem;
       background-color: #808080;
 
-      &::before{
+      &::before {
         content: '';
         position: absolute;
-        opacity: 1;       
-        width: 1.6rem ;
-        height: 1.6rem ;
+        opacity: 1;
+        width: 1.6rem;
+        height: 1.6rem;
         background: transparent;
         border-radius: 50%;
-        transform: translate(-50%,-25%);
+        transform: translate(-50%, -25%);
       }
     }
+
     .swiper-pagination-bullet-active {
       background-color: $clr-secondary;
       width: 0.8rem;
       height: 0.8rem;
       border-radius: 50%;
       opacity: 1;
-      &::before{
+
+      &::before {
         border: 1px solid $clr-secondary;
         z-index: 1;
       }
     }
-   
-    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-    .swiper-pagination-horizontal.swiper-pagination-bullets
-      .swiper-pagination-bullet {
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
       margin: 0 6px;
     }
   }
-  &.typ-brand{
+
+  &.typ-brand {
     padding-bottom: 4rem;
+
     @media only screen and (max-width: $media-mobile) {
       padding-bottom: 16rem;
     }
-    .swiper-slide{
-      display: flex ;
+
+    .swiper-slide {
+      display: flex;
+
       @media only screen and (max-width: $media-mobile) {
         width: 37.5rem !important;
         height: 10.6rem !important;
@@ -224,31 +253,37 @@
         flex-wrap: wrap;
       }
     }
-    
+
   }
-  &.typ-home-style{
+
+  &.typ-home-style {
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: auto !important;
       margin-right: 2rem;
       min-width: 29.5rem;
+
       @media only screen and (max-width: $media-mobile) {
-          margin-right: 1.2rem;
+        margin-right: 1.2rem;
       }
     }
   }
 
-  &.typ-dealer{
+  &.typ-dealer {
     padding-bottom: 8rem;
+
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
       padding-bottom: 0;
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: 40rem;
       margin-right: 2rem;
+
       @media only screen and (max-width: $media-mobile) {
         width: 29.6rem;
         margin-right: 1.2rem;
@@ -257,100 +292,120 @@
     }
   }
 
-  &.typ-agrico-banner{
+  &.typ-agrico-banner {
     padding-bottom: 4.8rem;
+
     @media only screen and (max-width: $media-mobile) {
       padding-bottom: 3.2rem;
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: auto;
       height: 28rem;
-     
+
       @media only screen and (max-width: $media-mobile) {
         height: 19.2rem;
       }
     }
   }
-  
+
   &.typ-best-selling,
-  &.typ-top-deals{ 
-    padding-bottom:7.6rem;
+  &.typ-top-deals {
+    padding-bottom: 7.6rem;
+
     @media only screen and (max-width: $media-mobile) {
-      padding-bottom:0;
+      padding-bottom: 0;
       margin-right: -1.6rem;
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: auto !important;
       margin-right: 2rem;
       min-width: 29.5rem;
+
       @media only screen and (max-width: $media-mobile) {
         margin-right: 1.2rem;
         min-width: 20rem;
       }
     }
   }
-  &.type-big-img-slider{ 
+
+  &.type-big-img-slider {
     border: 1px solid #dedede;
     border-radius: 12px;
     width: 60.8rem;
     height: 42.6rem;
     margin: 0;
+
     @media only screen and (max-width: $media-mobile) {
       width: 34.3rem;
       height: 24.0rem;
     }
-    .swiper-wrapper{
+
+    .swiper-wrapper {
       display: flex;
       align-items: center;
-     
+
     }
-    .swiper-slide{
+
+    .swiper-slide {
       display: flex;
-     align-items: center;
-    justify-content: center;
+      align-items: center;
+      justify-content: center;
 
 
     }
-    &.typ-popup{
+
+    &.typ-popup {
       border: 0;
-        @media only screen and (max-width: $media-mobile) {
-          width: 37.5rem;
-          height: 75%;
-        }
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 37.5rem;
+        height: 75%;
+      }
     }
   }
-  &.type-thumb{
+
+  &.type-thumb {
     margin-top: 2.1rem;
-    @media only screen and (max-width: $media-mobile){
+
+    @media only screen and (max-width: $media-mobile) {
       margin-top: 1.2rem;
     }
-    .swiper-wrapper{
+
+    .swiper-wrapper {
       gap: 2.1rem;
-      @media only screen and (max-width: $media-mobile){
+
+      @media only screen and (max-width: $media-mobile) {
         gap: 1rem;
       }
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: 8.3rem !important;
       height: 8.3rem;
       border-radius: 8px;
       border: 1px solid #dedede;
       overflow: hidden;
-      @media only screen and (max-width: $media-mobile){
+
+      @media only screen and (max-width: $media-mobile) {
         width: 4.7rem !important;
         height: 4.7rem;
       }
-      &:hover{
-        border-color:$clr-primary;
+
+      &:hover {
+        border-color: $clr-primary;
       }
     }
-    &.typ-popup{
-      .swiper-wrapper{
+
+    &.typ-popup {
+      .swiper-wrapper {
         justify-content: center;
-        border-top:1px solid #dedede;
+        border-top: 1px solid #dedede;
         padding-top: 2.2rem;
       }
-      .swiper-slide{
+
+      .swiper-slide {
         width: 4.8rem !important;
         height: 4.8rem;
       }
@@ -359,31 +414,35 @@
 
 
 
-  &.typ-trade-hand-tool{
+  &.typ-trade-hand-tool {
     overflow: visible;
-    @media only screen and (max-width: $media-mobile){
+
+    @media only screen and (max-width: $media-mobile) {
       padding: 1.6rem 0;
       margin-right: -1.6rem;
       display: block;
       overflow: hidden;
     }
-   
-    .swiper-slide{
+
+    .swiper-slide {
       width: 19.1rem;
       height: 14.0rem;
       margin-right: 2rem;
-      @media only screen and (max-width: $media-mobile){
-      width: 10.6rem;
-      height: 9.6rem;
-      margin-right: 0.6rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 10.6rem;
+        height: 9.6rem;
+        margin-right: 0.6rem;
       }
     }
   }
-  &.typ-real-stories{
-    @media only screen and (max-width: $media-mobile){
+
+  &.typ-real-stories {
+    @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: 29.7rem;
       height: 52.8rem;
       border-radius: 12px;
@@ -393,189 +452,275 @@
     }
   }
 
-  &.typ-patch-banner{
+  &.typ-pravesh-stories {
+    @media only screen and (max-width: $media-mobile) {    margin: 0;}
+
+
+    .swiper-slide {
+      @media only screen and (max-width: $media-mobile) {
+        margin: auto;}
+    }
+  }
+
+  &.typ-patch-banner {
     display: none;
+
     @media only screen and (max-width: $media-mobile) {
-      padding-bottom:3.2rem;
+      padding-bottom: 3.2rem;
       display: block;
     }
-    .swiper-slide{
+
+    .swiper-slide {
       // width: auto !important;
       width: 100%;
+
       @media only screen and (max-width: $media-mobile) {
-       height: 19.2rem;
+        height: 19.2rem;
       }
     }
   }
+
   &.typ-review-product,
-  &.typ-selling-product{
+  &.typ-selling-product {
     padding-bottom: 4rem;
+
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
     }
-    .swiper-slide{
-      width: 29.5rem !important;      
+
+    .swiper-slide {
+      width: 29.5rem !important;
       margin-right: 1.9rem;
+
       @media only screen and (max-width: $media-mobile) {
         width: 34.3rem !important;
         margin-right: 1.6rem;
       }
     }
   }
+
   &.typ-similar-product,
-  &.typ-vegetable-patch{
+  &.typ-vegetable-patch {
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
-    }  
-    .swiper-slide{
+    }
+
+    .swiper-slide {
       width: 29.6rem !important;
       margin-right: 2rem;
-      &.swiper-slide-next{
-        .product-title{
+
+      &.swiper-slide-next {
+        .product-title {
           color: #3D7EDB;
         }
       }
+
       @media only screen and (max-width: $media-mobile) {
         margin-right: 1.2rem;
       }
     }
   }
-  &.typ-inner-card-slider{
+
+  &.typ-inner-card-slider {
     width: 29.6rem;
     padding-bottom: 2.2rem;
-    .swiper-pagination-bullet::after{
+
+    .swiper-pagination-bullet::after {
       border: 0;
     }
-    .child-pagination{
+
+    .child-pagination {
       width: 29.6rem
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: 29.6rem !important;
       border-bottom: 1px solid $clr-border;
       margin-right: 0;
-    }   
+    }
   }
-  &.typ-product-inner-slider{   
+
+  &.typ-product-inner-slider {
     padding-bottom: 2.2rem;
     width: 29.5rem;
+
     @media only screen and (max-width: $media-mobile) {
       padding: 0;
       width: 13.4rem;
     }
-    .swiper-pagination-bullet::after{
+
+    .swiper-pagination-bullet::after {
       border: 0;
     }
-    .child-pagination{
+
+    .child-pagination {
       width: 29.5rem;
+
       @media only screen and (max-width: $media-mobile) {
         display: none;
       }
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: 29.5rem !important;
       border-bottom: 1px solid $clr-border;
       margin-right: 0;
+
       @media only screen and (max-width: $media-mobile) {
         width: 13.4rem !important;
         border: 0;
       }
-    } 
+    }
   }
-  &.typ-drawer-card-slider{
+
+  &.typ-drawer-card-slider {
     // width: 43.6rem;   
     padding-bottom: 2.2rem;
+
     // @media only screen and (max-width: $media-mobile) {
     //   width: 34.4rem;
     // }
-    .swiper-pagination-bullet::after{
+    .swiper-pagination-bullet::after {
       border: 0;
     }
-    .drawer-pagination{
+
+    .drawer-pagination {
       width: 43.6rem;
+
       @media only screen and (max-width: $media-mobile) {
         width: 34.4rem;
       }
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: 43.6rem !important;
-      margin-right: 0;     
-      border: 1px solid $clr-border; 
+      margin-right: 0;
+      border: 1px solid $clr-border;
       @include border-radius(1.2rem);
+
       @media only screen and (max-width: $media-mobile) {
         width: 34.4rem !important;
       }
-    }   
-  } 
+    }
+  }
 
-  &.typ-plp-slider{
+  &.typ-plp-slider {
     width: 29.6rem;
     padding-bottom: 2.2rem;
+
     @media only screen and (max-width: $media-mobile) {
       width: 11.8rem;
     }
-    .swiper-pagination-bullet::after{
+
+    .swiper-pagination-bullet::after {
       border: 0;
     }
-    .child-pagination{
+
+    .child-pagination {
       width: 29.6rem;
+
       @media only screen and (max-width: $media-mobile) {
         display: none;
       }
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: 29.6rem !important;
       border-bottom: 1px solid $clr-border;
       margin-right: 0;
+
       @media only screen and (max-width: $media-mobile) {
         width: 11.8rem !important;
         border-bottom: none;
       }
-    }   
+    }
   }
 
-  &.typ-prod-types{
+  &.typ-prod-types {
     margin-bottom: 1.6rem;
+
     @media only screen and (max-width: $media-mobile) {
       margin-right: -1.6rem;
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: 10.6rem !important;
-      margin-right: 1.2rem;     
-    } 
+      margin-right: 1.2rem;
+    }
   }
-  &.typ-why-wiron{
-    @media only screen and (max-width: $media-mobile){
+
+  &.typ-why-wiron {
+    @media only screen and (max-width: $media-mobile) {
       margin-right: -2rem;
     }
-    .swiper-slide{  
+
+    .swiper-slide {
       width: 19.1rem;
       height: 14rem;
       margin-right: 2rem;
+
       @media only screen and (max-width: $media-mobile) {
         width: 16.0rem;
         height: 14.8rem;
         margin-right: 1.2rem;
       }
-     
+
     }
   }
-  &.typ-gallery{
-    @media only screen and (max-width: $media-mobile){
+
+  &.typ-gallery {
+    @media only screen and (max-width: $media-mobile) {
       margin-right: -2rem;
     }
-    .swiper-slide{  
+
+    .swiper-slide {
       width: 29.5rem;
-      margin-right: 2rem;  
-      @media only screen and (max-width: $media-mobile){
+      margin-right: 2rem;
+
+      @media only screen and (max-width: $media-mobile) {
         width: 16rem;
-        margin-right: 1.2rem;  
-      }    
+        margin-right: 1.2rem;
+      }
     }
   }
-  &.typ-feature-banner{
+
+  &.typ-feature-banner {
     padding-bottom: 8rem;
-    .swiper-slide{
-      width: 19rem;      
+
+    .swiper-slide {
+      width: 19rem;
     }
+  }
+
+  &.typ-why-tiscon {
+
+    .swiper-slide {
+      width: 29.5rem;
+      margin-right: 2rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 16.0rem;
+        margin-right: 1.2rem;
+      }
+    }
+  }
+
+  &.typ-application {
+    .swiper-slide {
+      width: 29.7rem;
+      height: 26.0rem;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-right: 1.2rem;
+
+      @media only screen and (max-width: $media-mobile) {
+        width: 16.0rem;
+        height: 16.0rem;
+      }
+    }
+  }
+
+  &.right-space {
+    margin-right: -2rem;
   }
 }
