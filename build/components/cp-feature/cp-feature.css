@@ -1,0 +1,39 @@
+/* colors */
+/*font family*/
+/* breakpoints */
+/*transform*/
+/*opacity*/
+/*opacity- end*/
+.cp-feature .feature-title {
+  color: #333333;
+  line-height: 2.8rem;
+  padding-bottom: 1.6rem;
+  font-size: 2.4rem;
+  font-family: "Poppins Medium";
+}
+@media only screen and (max-width: 768px) {
+  .cp-feature .feature-title {
+    font-size: 2rem;
+  }
+}
+.cp-feature .feature-item {
+  font-size: 1.4rem;
+  font-family: "Poppins Regular";
+  color: #333333;
+  padding-left: 2.4rem;
+  padding-bottom: 1.6rem;
+  position: relative;
+}
+.cp-feature .feature-item:before {
+  width: 16px;
+  height: 16px;
+  color: #00A441;
+  content: "\e91a";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  border-radius: 50%;
+  font-family: "icomoon";
+}
+
+/*# sourceMappingURL=cp-feature.css.map */

@@ -423,6 +423,30 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-youtube:before {
+  content: "\e947";
+}
+
+.icon-insta:before {
+  content: "\e948";
+}
+
+.icon-face-book:before {
+  content: "\e949";
+}
+
+.icon-full-screen:before {
+  content: "\e946";
+}
+
+.icon-check_circle:before {
+  content: "\e944";
+}
+
+.icon-assistance-available:before {
+  content: "\e945";
+}
+
 .icon-grid:before {
   content: "\e942";
 }
@@ -915,7 +939,7 @@ p {
 }
 
 .cm-box {
-  border: 1px solid #dedede;
+  border: 1px solid #DEDEDE;
   border-radius: 16px;
   padding: 1.6rem 3.2rem;
 }
@@ -928,7 +952,7 @@ p {
 
 @media only screen and (max-width: 768px) {
   .seperator {
-    background: #dedede;
+    background: #DEDEDE;
     width: 117%;
     margin: 2.4rem -4rem;
     height: 1px;
@@ -1794,14 +1818,14 @@ p {
   border: 1px solid #333333;
 }
 .btn.btn-outline.typ-2 {
-  border: 1px solid #dedede;
+  border: 1px solid #DEDEDE;
   color: #B3B3B3;
 }
 .btn.btn-grey {
   background: #EDEDED;
   color: #B3B3B3;
   font-size: 1.6rem;
-  border: 1px solid #dedede;
+  border: 1px solid #DEDEDE;
 }
 .btn.typ-add-cart {
   min-width: 34.3rem;
@@ -2174,7 +2198,7 @@ p {
   }
 }
 .bs-swiper.type-big-img-slider {
-  border: 1px solid #dedede;
+  border: 1px solid #DEDEDE;
   border-radius: 12px;
   width: 60.8rem;
   height: 42.6rem;
@@ -2224,7 +2248,7 @@ p {
   width: 8.3rem !important;
   height: 8.3rem;
   border-radius: 8px;
-  border: 1px solid #dedede;
+  border: 1px solid #DEDEDE;
   overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
@@ -2238,7 +2262,7 @@ p {
 }
 .bs-swiper.type-thumb.typ-popup .swiper-wrapper {
   justify-content: center;
-  border-top: 1px solid #dedede;
+  border-top: 1px solid #DEDEDE;
   padding-top: 2.2rem;
 }
 .bs-swiper.type-thumb.typ-popup .swiper-slide {
@@ -2815,6 +2839,28 @@ p {
     right: 1.5rem;
   }
 }
+.bs-modal .close-btn.video-close {
+  right: 0;
+  left: 0;
+  bottom: 18px;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  font-family: "Poppins Medium";
+  color: #3D7EDB;
+  top: auto;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal .close-btn.video-close {
+    font-size: 1.2rem;
+    bottom: 5px;
+  }
+}
+.bs-modal .close-btn.video-close .cmp-button__text {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  font-family: "Poppins Medium";
+  color: #3D7EDB;
+}
 .bs-modal.type-md .small-title {
   font-size: 4rem;
 }
@@ -2836,7 +2882,7 @@ p {
 .bs-modal.type-lg .small-title {
   font-size: 2rem;
   font-family: "Poppins Semibold";
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #DEDEDE;
   padding: 1.6rem;
 }
 @media only screen and (max-width: 768px) {
@@ -2864,6 +2910,38 @@ p {
 .bs-modal.type-prod-thumb .modal-body {
   padding: 0;
 }
+.bs-modal.type-testi-video .modal-dialog {
+  width: 896px;
+  max-width: 98rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.type-testi-video .modal-dialog {
+    height: auto;
+    width: 375px;
+    max-width: 38rem;
+  }
+}
+.bs-modal.type-testi-video .modal-body {
+  padding: 2rem 0 5rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.type-testi-video .modal-body {
+    padding: 1.5rem 0 3rem;
+  }
+}
+.bs-modal.type-testi-video .video-wrap {
+  padding: 0;
+}
+.bs-modal.type-testi-video .video-wrap .video-container iframe {
+  height: 477px;
+  width: 848px;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal.type-testi-video .video-wrap .video-container iframe {
+    height: 198px;
+    width: 343px;
+  }
+}
 .bs-modal.typ-small {
   max-width: 400px;
   max-height: 328px;
@@ -2888,6 +2966,17 @@ p {
   }
   .bs-modal .bs-applicant-form .sub-title {
     font-size: 1.6rem;
+  }
+}
+.bs-modal .video-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .bs-modal .video-wrap {
+    padding: 5rem 2.4rem;
   }
 }
 

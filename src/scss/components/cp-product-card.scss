@@ -56,12 +56,12 @@
 
         &.rhs-pravesh {
             .price-wrap {
-                border-bottom: #DEDEDE 1px solid;
+                border-bottom: $clr-border 1px solid;
                 padding-bottom: 0.8rem;
             }
 
             .cp-prod-size {
-                border-bottom: #DEDEDE 1px solid;
+                border-bottom: $clr-border 1px solid;
                 padding-bottom: 0rem;
             }
         }
@@ -686,7 +686,7 @@
         }
 
         .action-wrap {
-            border-top: 1px solid #DEDEDE;
+            border-top: 1px solid $clr-border;
             padding-top: 1.4rem;
 
             .link {
@@ -698,7 +698,7 @@
 
                 &::before {
                     content: '';
-                    background: #DEDEDE;
+                    background: $clr-border;
                     width: 1px;
                     height: 2.5rem;
                     position: absolute;

@@ -92,10 +92,10 @@
   text-align: right;
 }
 .cp-cart-card.typ-tiscon-pdp .cart-list .sepretor {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #DEDEDE;
 }
 .cp-cart-card.typ-tiscon-pdp .cart-list::after {
-  background-color: #dedede;
+  background-color: #DEDEDE;
   width: 106%;
   position: absolute;
   left: -23px;

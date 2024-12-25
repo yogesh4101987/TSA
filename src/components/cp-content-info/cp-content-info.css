@@ -7,7 +7,7 @@
 .cp-content-info {
   display: flex;
   border-radius: 16px;
-  border: 1px solid #dedede;
+  border: 1px solid #DEDEDE;
   overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
@@ -78,7 +78,7 @@
   }
 }
 .cp-content-info.typ-struct-pdp .img-wrap {
-  border: 1px solid #dedede;
+  border: 1px solid #DEDEDE;
   width: 6.4rem;
   height: 6.4rem;
   overflow: hidden;

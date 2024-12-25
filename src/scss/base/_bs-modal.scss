@@ -70,6 +70,26 @@
             top: 1.5rem;
             right: 1.5rem;
         }
+        &.video-close{
+            right: 0;
+            left: 0;
+            bottom: 18px;
+            font-size: 1.6rem;
+            text-decoration: underline;
+            font-family: $font-medium;
+            color: $clr-primary;
+            top:auto;
+            @media only screen and (max-width: $media-mobile) {
+                font-size: 1.2rem;
+                bottom: 5px;
+            }
+            .cmp-button__text{
+                font-size: 1.6rem;
+            text-decoration: underline;
+            font-family: $font-medium;
+            color: $clr-primary;
+            }
+        }
     }
     &.type-md {
         .small-title {
@@ -91,7 +111,7 @@
         .small-title {
             font-size: 2rem;
             font-family: $font-semiBold;
-            border-bottom: 1px solid #dedede;
+            border-bottom: 1px solid $clr-border;
             padding: 1.6rem ;
             @media only screen and (max-width: $media-mobile) {
                 font-size: 2.4rem;
@@ -118,6 +138,39 @@
             padding: 0;
         }
     }
+    &.type-testi-video{
+        .modal-dialog{
+            width: 896px;
+            max-width: 98rem;
+            @media only screen and (max-width: $media-mobile) {
+                height: auto; 
+                width: 375px;
+                max-width: 38rem;
+
+            }
+        }
+        .modal-body{
+            padding: 2rem 0 5rem;
+            @media only screen and (max-width: $media-mobile) {
+                padding: 1.5rem 0 3rem;
+            }
+        }
+        .video-wrap{
+            padding: 0;
+            .video-container{
+                iframe{
+                    height: 477px;
+                    width: 848px;
+                    @media only screen and (max-width: $media-mobile) {
+                        height: 198px;
+                        width: 343px;
+                    }
+                }
+            }
+           
+        }
+       
+    }
     &.typ-small{
         max-width: 400px;
         max-height: 328px;
@@ -134,8 +187,7 @@
             border-radius: 12px;
         }
     }
-   
-   
+      
     .bs-applicant-form {
         @media only screen and (max-width: $media-mobile) {
             .title {
@@ -146,6 +198,14 @@
             }
         }
     }
- 
+    .video-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+        @media only screen and (max-width: $media-mobile) {
+            padding: 5rem 2.4rem;
+        }
+    }
    
 }

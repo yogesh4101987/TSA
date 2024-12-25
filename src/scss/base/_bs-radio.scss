@@ -3,7 +3,7 @@
 
     .custom-radio {
         cursor: pointer;
-        border: 1px solid #DEDEDE;
+        border: 1px solid $clr-border;
         font-size: 1.4rem;
         font-family: $font-regular;
         color: $clr-para;
@@ -116,7 +116,7 @@
                 right: 0;
                 top: 0;
                 bottom: 0;
-                border: 1px solid #DEDEDE;
+                border: 1px solid $clr-border;
                 width: 100%;
                 height: 100%;
                 border-radius: 12px;

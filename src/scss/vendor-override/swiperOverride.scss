@@ -331,7 +331,7 @@
   }
 
   &.type-big-img-slider {
-    border: 1px solid #dedede;
+    border: 1px solid $clr-border;
     border-radius: 12px;
     width: 60.8rem;
     height: 42.6rem;
@@ -385,7 +385,7 @@
       width: 8.3rem !important;
       height: 8.3rem;
       border-radius: 8px;
-      border: 1px solid #dedede;
+      border: 1px solid $clr-border;
       overflow: hidden;
 
       @media only screen and (max-width: $media-mobile) {
@@ -401,7 +401,7 @@
     &.typ-popup {
       .swiper-wrapper {
         justify-content: center;
-        border-top: 1px solid #dedede;
+        border-top: 1px solid $clr-border;
         padding-top: 2.2rem;
       }
 
