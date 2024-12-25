@@ -111,7 +111,7 @@
         .small-title {
             font-size: 2rem;
             font-family: $font-semiBold;
-            border-bottom: 1px solid #dedede;
+            border-bottom: 1px solid $clr-border;
             padding: 1.6rem ;
             @media only screen and (max-width: $media-mobile) {
                 font-size: 2.4rem;

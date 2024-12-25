@@ -4,7 +4,7 @@
 .cp-content-info{
 display: flex;
 border-radius: 16px;
-border: 1px solid #dedede;
+border: 1px solid $clr-border;
 overflow: hidden;
 @media only screen and (max-width: $media-mobile){
     flex-wrap: wrap;
@@ -61,7 +61,7 @@ overflow: hidden;
         flex-wrap: nowrap;
     }
     .img-wrap{
-        border: 1px solid #dedede;
+        border: 1px solid $clr-border;
         width: 6.4rem;
         height: 6.4rem;
         overflow: hidden;

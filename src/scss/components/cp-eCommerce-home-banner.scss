@@ -690,4 +690,82 @@
             }
         }
     }
+    &.typ-sub-menu {
+        display: flex;
+        flex-direction: row;
+    }
+    &.typ-header{
+        padding: 0;
+        background: $clr-root;
+        @media only screen and (max-width: $media-mobile) {  
+            display: none;
+        }
+        .feature {
+            // flex-wrap: wrap;
+            overflow-x: scroll;
+            width: 100%;
+            .feature-item {
+                width: 14%;
+                height: 9.6rem;
+                order: initial;
+                @media only screen and (max-width: $media-mobile) {  
+                    width: 48%;
+                    display: none;
+                }
+                
+            }        
+            .feature-card {
+                &.typ-2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    
+                    .f-img{
+                        width: 8.5rem;
+                        height: 8.5rem;    
+                        top: 0;
+                        bottom: auto;
+                    }
+                    .f-title{
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        font-family: $font-regular;
+                    }
+                    .f-desc{
+                        margin-bottom: 0;
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                        font-family: $font-semiBold;
+                    }
+                }
+                &.typ-purple{
+                    border: 1px solid #5A245A;
+                    background: #5A245A;
+                    .f-title,
+                    .f-desc{
+                        color: $clr-root;
+                    }
+                }
+            }
+        }
+        .grid-sizer{
+            display: none;
+        }
+        &.typ-2{
+            .feature {
+                flex-direction: column;
+                width: 100%;
+                @media only screen and (max-width: $media-mobile) { 
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .feature-item {
+                    width: 14.1rem;
+                    height: 11.6rem;
+                    order: initial;
+                }
+            }
+        }
+    }
+    
 }

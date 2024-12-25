@@ -17,7 +17,7 @@
       flex-shrink: 0;
 
       .title {
-        border: 1px solid #dedede;
+        border: 1px solid $clr-border;
         font-family: $font-regular;
         font-size: 1.4rem;
         line-height: 1.8rem;
@@ -45,11 +45,11 @@
       &:hover,
       &.active {
         .title {
-          border: 1px solid #dedede;
+          border: 1px solid $clr-border;
           // font-family: $font-semiBold;
           color: $clr-root;
           background: $clr-primary;
-          text-shadow: #333333 0.9px 0 0.9px;
+          text-shadow: $clr-base 0.9px 0 0.9px;
         }
       }
     }
@@ -93,7 +93,7 @@
         }
 
         .img-wrap {
-          border: 1px solid #dedede;
+          border: 1px solid $clr-border;
           border-radius: 16px;
           overflow: hidden;
 
@@ -182,7 +182,7 @@
             color: $clr-primary;
             border: 0;
             // font-family: $font-medium;
-            text-shadow: #333333 0.9px 0 0.9px;
+            text-shadow: $clr-base 0.9px 0 0.9px;
           }
         }
       }
@@ -212,7 +212,7 @@
     }
 
     .tab-list {
-      border-bottom: 1px solid #dedede;
+      border-bottom: 1px solid $clr-border;
 
       .tab-item {
         .title {
@@ -238,7 +238,7 @@
             background: none;
             color: $clr-base;
             // font-family: $font-semiBold;
-            text-shadow: #333333 0.9px 0 0.9px;
+            text-shadow: $clr-base 0.9px 0 0.9px;
 
             &::after {
               width: 100%;
@@ -380,7 +380,7 @@
     .tab-list {
       .tab-item {
         .title {
-          border: 1px solid #dedede;
+          border: 1px solid $clr-border;
           font-family: $font-regular;
           color: $clr-para;
           border-radius: 12px;

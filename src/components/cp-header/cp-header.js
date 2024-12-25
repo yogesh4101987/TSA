@@ -1,11 +1,11 @@
 $(document).ready(function() {
   hamburgerMenu();
   navigationDropdown();
+  profileDropDown();
 });
 
 $(window).resize(function () {
   navigationDropdown();
-
 });
 
 function stickyHeader(){
@@ -119,14 +119,136 @@ function navigationDropdown() {
       }
     });
 
+    $(document).on("click", ".js-category-fabrication", function (e) {
+      e.preventDefault();
+      var $categoryMenu = $(this).find(".open-category-menu").first();
+
+      if ($categoryMenu.length) {
+        $(".open-category-menu").not($categoryMenu).fadeOut(300); // Close other submenus
+        $categoryMenu.stop(true, true).fadeToggle(300); // Toggle submenu
+      }
+    });
+
+    $(document).on("click", ".js-category-interiors", function (e) {
+      e.preventDefault();
+      var $categoryMenu = $(this).find(".open-category-menu").first();
+
+      if ($categoryMenu.length) {
+        $(".open-category-menu").not($categoryMenu).fadeOut(300); // Close other submenus
+        $categoryMenu.stop(true, true).fadeToggle(300); // Toggle submenu
+      }
+    });
+    $(document).on("click", ".js-category-tools", function (e) {
+      e.preventDefault();
+      var $categoryMenu = $(this).find(".open-category-menu").first();
+
+      if ($categoryMenu.length) {
+        $(".open-category-menu").not($categoryMenu).fadeOut(300); // Close other submenus
+        $categoryMenu.stop(true, true).fadeToggle(300); // Toggle submenu
+      }
+    });
+
+    $(document).on("click", ".js-home-guide-menu", function (e) {
+      e.stopPropagation(); // Prevent event from propagating to the parent elements
+  
+      // Select the .open-category-menu inside the same .lhs container
+      var $categoryGrid = $(this).closest(".lhs").find(".open-category-menu");
+  
+      if ($categoryGrid.length) {
+        $categoryGrid.stop(true, true).fadeToggle(300).toggleClass("active");
+      }
+  
+      // Close other sections (if any) when clicking on "Explore by stage"
+      $(".menu-list.open-inner-menu").fadeOut(300).removeClass("active");
+
+    // Handle the case where the user clicks outside and wants to close the menu
+      // if (!$(e.target).closest(".js-home-guide-menu, .open-category-menu").length) {
+      //   $(".open-category-menu").fadeOut(300).removeClass("active");
+      // }
+    });
+    $(document).on("click", ".js-home-guide-menu .inside-icon", function (e) {
+      alert()
+      e.preventDefault();
+      $(this).closest(".lhs").find(".open-category-menu").fadeOut(300).removeClass("active");
+    });
+
+    $(document).on("click", ".js-learning-center", function (e) {
+      e.stopPropagation(); // Prevent event from propagating to the parent elements
+  
+      // Select the .open-inner-menu inside the same .rhs container
+      var $menuList = $(this).closest(".rhs").find(".open-inner-menu");
+  
+      if ($menuList.length) {
+        alert("Toggling Learning Center Menu"); // Debugging alert, remove if not needed
+        $menuList.stop(true, true).fadeToggle(300).toggleClass("active");
+      }
+  
+      // Close other sections (if any) when clicking on "Learning Centre"
+      $(".menu-list.open-inner-menu").fadeOut(300).removeClass("active");
+
+      // Handle the case where the user clicks outside and wants to close the menu
+      if (!$(e.target).closest(".js-learning-center, .open-inner-menu").length) {
+        $(".open-inner-menu").fadeOut(300).removeClass("active");
+      }
+    });
+
+    $(document).on("click", ".js-region-menu", function (e) {
+      e.preventDefault();
+      var $regionMenu = $(this).parent().find(".open-region-menu").first();
+
+      if ($regionMenu.length) {
+        $(".open-region-menu").not($regionMenu).fadeOut(300); // Close other submenus
+        $regionMenu.stop(true, true).fadeToggle(300); // Toggle submenu
+      }
+    });
+
+    $(document).on("click", ".js-budget-menu", function (e) {
+      e.preventDefault();
+      var $budgetMenu = $(this).parent().find(".open-budget-menu").first();
+
+      if ($budgetMenu.length) {
+        $(".open-budget-menu").not($budgetMenu).fadeOut(300); // Close other submenus
+        $budgetMenu.stop(true, true).fadeToggle(300); // Toggle submenu
+      }
+    });
+
     // Close Navigation with "js-close-nav"
     $(document).on("click", ".js-close-nav", function (e) {
       e.stopPropagation(); // Prevent the click from bubbling up
       $(".sub-nav-menu, .cat-grid, .menu-list, .offers-list").fadeOut(300).removeClass("active");
     });
+
+    $(document).on("click", ".inside-icon", function (e) {
+      e.preventDefault();
+    
+      // Close any currently open .open-inner-menu
+      $(".open-inner-menu").fadeOut(300).removeClass("active");
+      $(this).parents(".open-inner-menu").fadeOut(300).removeClass("active");
+    
+    });
+    
+    
   }
 }
 
+function profileDropDown() {
+  $(document).on('click', '.js-profile-state', function() {
+    $(".profile-wrap").fadeIn();
+  });
+
+  $(document).on('click', '.profile-link', function(e) {
+    e.preventDefault();
+    $(".profile-link").removeClass("active");
+    $(this).addClass("active");
+    $(".profile-wrap").fadeOut();
+  });
+
+  $(document).on('click', function(event) {
+    if (!$(event.target).closest(".profile-wrap, .js-profile-state").length) {
+      $(".profile-wrap").fadeOut();
+    }
+  });
+}
 
 
 

@@ -212,7 +212,7 @@ p {
 }
 
 .cm-box {
-  border: 1px solid #dedede;
+  border: 1px solid $clr-border;
   border-radius: 16px;
   padding: 1.6rem 3.2rem;
 
@@ -225,7 +225,7 @@ p {
 .seperator {
   @media only screen and (max-width: $media-mobile) {
 
-    background: #dedede;
+    background: $clr-border;
     width: 117%;
     margin: 2.4rem -4rem;
     height: 1px;
